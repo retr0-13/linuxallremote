@@ -78,10 +78,11 @@ function Scarica
 
 function Warning
 {
-	echo "WARNING: this repo is not verified!"
-	echo "Do you want download it anyway"
-	read -p "Y/n (default n): " RSP
-	echo "$RSP"
+	read -p "WARNING: this repo is not verified! Do you want download it anyway? Y/n (default n) " RSP
+	if [[ "$RSP" != "" ]];
+	then
+		echo "$RSP"
+	fi
 }
 
 echo "linuxallremote, by FabioDefilippoSoftware"
