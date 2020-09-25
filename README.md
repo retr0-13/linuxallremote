@@ -14,7 +14,7 @@ Over 500 tools and utilities:
 - Reverse Engineering;
 - attack other OS, Android too;
 - Forensics and Anti-Forensics tools;
-
+- cracking password;
 
 and much more...
 
