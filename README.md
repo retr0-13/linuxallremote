@@ -12,6 +12,9 @@ Over 500 tools and utilities:
 - evasion and tunneling;
 - port forwarding;
 - Reverse Engineering;
+- attack other OS, Android too;
+- Forensics and Anti-Forensics tools;
+
 
 and much more...
 
