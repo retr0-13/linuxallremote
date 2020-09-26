@@ -149,7 +149,7 @@ while true; do
 	echo -ne " 463. Zapotek/cdpsnarf\n"
 	echo "$SEP"
 	echo "CMS"
-	echo -ne " 483. TheDevFromKer/CMS-Attack\t\t\t484. Dionach/CMSmap\n"
+	echo -ne " 483. TheDevFromKer/CMS-Attack\t\t\t484. Dionach/CMSmap\t\t\t\t\t\t\t234. n4xh4ck5/CMSsc4n\n"
 	echo "$SEP"
 	echo "CRACK - GUESSING"
 	echo -ne " 80. magnumripper/JohnTheRipper\t\t\t81. truongkma/ctf-tools/John\t\t\t\t82. SySS-Research/Seth\n"
@@ -388,7 +388,7 @@ while true; do
 	echo -ne " 188. GrrrDog/FlashAV\t\t\t\t191. m57/piescan\t\t\t\t\t192. projectdiscovery/naabu\n"
 	echo -ne " 193. ahervias77/portscanner\t\t\t206. lanjelot/patator\t\t\t\t\t208. gh0stwizard/p5-udp-scanner\n"
 	echo -ne " 210. liamg/furious\t\t\t\t211. anvie/port-scanner\t\t\t\t\t212. anrosent/portscan\n"
-	echo -ne " 234. n4xh4ck5/CMSsc4n\t\t\t\t235. shodansploit/shodansploit\t\t\t\t236. ninj4c0d3r/ShodanCli\n"
+	echo -ne " 235. shodansploit/shodansploit\t\t\t\t236. ninj4c0d3r/ShodanCli\n"
 	echo -ne " 266. google/tsunami-security-scanner\t\t267. deepsecurity-pe/GoGhost\t\t\t\t279. aabeling/portscan\n"
 	echo -ne " 299. brandonskerritt/RustScan\t\t\t363. projectdiscovery/nuclei\t\t\t\t448. m0nad/HellRaiser\n"
 	echo -ne " 449. RustScan/RustScan\t\t\t\t450. IFGHou/wapiti\t\t\t\t\t454. MrSqar-Ye/BadMod\n"
@@ -397,7 +397,7 @@ while true; do
 	echo -ne " 534. TheNittam/RPOscanner\t\t\t538. smackerdodi/CVE-bruter\n"
 	echo "$SEP"
 	echo "SHELL"
-	echo -ne " 70. sameera-madushan/Print-My-Shell\t\t71. flozz/p0wny-shell/shell.php\t\t\t\t87. rastating/slae\n"
+	echo -ne " 70. sameera-madushan/Print-My-Shell\t\t71. flozz/p0wny-shell/shell\t\t\t\t87. rastating/slae\n"
 	echo -ne " 95. TBGSecurity/splunk_shells\t\t\t281. berkgoksel/SierraTwo\t\t\t\t295. wintrmvte/Shellab\n"
 	echo -ne " 348. brimstone/go-shellcode\t\t\t349. TheBinitGhimire/Web-Shells/smevk\t\t\t432. offensive-security/exploitdb/shellcodes/android\n"
 	echo -ne " 433. offensive-security/exploitdb/shellcodes/linux\t\t\t\t\t434. offensive-security/exploitdb/master/shellcodes/linux_x86-64\n"
@@ -414,13 +414,13 @@ while true; do
 	echo -ne " 388. sharyer/GSMEvil/SmsEvil\n"
 	echo "$SEP"
 	echo "SMTP"
-	echo -ne " 418. pentestmonkey/smtp-user-enum\t\t419. altjx/ipwn/master/iSMTP\t\t\t\t421. tango-j/SMTP-Open-Relay-Attack-Test-Tool\n"
+	echo -ne " 418. pentestmonkey/smtp-user-enum\t\t419. altjx/ipwn/iSMTP\t\t\t\t421. tango-j/SMTP-Open-Relay-Attack-Test-Tool\n"
 	echo -ne " 422. crazywifi/SMTP_Relay_Phisher\t\t423. NickSanzotta/smbShakedown\t\t\t\t424. balaganeshgbhackers/Emailspoofing\n"
 	echo -ne " 425. RobinMeis/MITMsmtp\t\t\t426. mikechabot/smtp-email-spoofer-py\t\t\t525. jetmore/swaks\n"
 	echo "$SEP"
 	echo "SNMP"
-	echo -ne " 74. rastating/snmpwn\t\t\t\t75. etingof/pysnmp\t\t\t\t\t76. hatlord/snmpwn\n"
-	echo -ne " 77. InteliSecureLabs/SNMPPLUX\t\t\t78. cysboy/SnmpCrack\n"
+	echo -ne " 74. hatlord/snmpwn\t\t\t\t75. etingof/pysnmp\t\t\t\t\t77. InteliSecureLabs/SNMPPLUX\n"
+	echo -ne " 78. cysboy/SnmpCrack\n"
 	echo "$SEP"
 	echo "SOCIAL MEDIA"
 	echo -ne " 427. yasserjanah/ZeS0MeBr\n"
@@ -439,7 +439,7 @@ while true; do
 	echo -ne " 59. R4stl1n/SSH-Brute-Forcer\t\t\t152. matricali/brutekrag\t\t\t\t153. c0r3dump3d/osueta\n"
 	echo -ne " 155. W-GOULD/ssh-user-enumeration/ssh-check-username\t\t\t\t\t\t\t156. nccgroup/ssh_user_enum/ssh_enum\n"
 	echo -ne " 297. OffXec/fastssh\t\t\t\t368. Neetx/sshdodge\t\t\t\t\t369. trustedsec/meterssh\n"
-	echo -ne " 370. norksec/torcrack\t\t\t\t371. matricali/brutekrag\t\t\t\t372. aryanrtm/sshBrutal\n"
+	echo -ne " 370. norksec/torcrack\t\t\t\t372. aryanrtm/sshBrutal\n"
 	echo "$SEP"
 	echo "SSL"
 	echo -ne " 190. moxie0/sslstrip\t\t\t\t194. indutny/heartbleed\t\t\t\t\t195. roflcer/heartbleed-vuln/attack\n"
@@ -624,7 +624,7 @@ while true; do
 		fi
 	;;
 	"20")
-		echo "Digit a trustedsec repository name"
+		echo "Digit a trustedsec repository name from https://github.com/trustedsec"
 		read -p "(example unicorn): " NOMEFL
 		if [[ "$NOMEFL" != "" ]];
 		then
@@ -632,7 +632,7 @@ while true; do
 		fi
 	;;
 	"21")
-		echo "Digit a Hood3dRob1n repository name"
+		echo "Digit a Hood3dRob1n repository name from https://github.com/Hood3dRob1n"
 		read -p "(example BinGoo): " NOMEFL
 		if [[ "$NOMEFL" != "" ]];
 		then
@@ -760,7 +760,10 @@ while true; do
 		Clona "Ganapati/RsaCtfTool"
 	;;
 	"58")
-		Scarica "$ENTRAW""mvelazc0/Invoke-SMBLogin/master/smblogin.py"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Scarica "$ENTRAW""mvelazc0/Invoke-SMBLogin/master/smblogin.py"
+		fi
 	;;
 	"59")
 		Clona "R4stl1n/SSH-Brute-Forcer"
@@ -787,7 +790,10 @@ while true; do
 		Clona "ShawnDEvans/smbmap"
 	;;
 	"66")
-		Clona "cgrates/rpcclient"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Clona "cgrates/rpcclient"
+		fi
 	;;
 	"67")
 		Clona "byt3bl33d3r/CrackMapExec"
@@ -822,19 +828,19 @@ while true; do
 		Clona "OpenRCE/sulley"
 	;;
 	"74")
-		Clona "rastating/snmpwn"
+		Clona "hatlord/snmpwn"
 	;;
 	"75")
 		Clona "etingof/pysnmp"
-	;;
-	"76")
-		Clona "hatlord/snmpwn"
 	;;
 	"77")
 		Clona "InteliSecureLabs/SNMPPLUX"
 	;;
 	"78")
-		Scarica "$ENTRAW""cysboy/SnmpCrack/master/SnmpCrack.py"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Scarica "$ENTRAW""cysboy/SnmpCrack/master/SnmpCrack.py"
+		fi
 	;;
 	"79")
 		Clona "pablocelayes/rsa-wiener-attack"
@@ -1157,7 +1163,10 @@ while true; do
 		fi
 	;;
 	"155")
-		Scarica "$ENTRAW""W-GOULD/ssh-user-enumeration/master/ssh-check-username.py"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Scarica "$ENTRAW""W-GOULD/ssh-user-enumeration/master/ssh-check-username.py"
+		fi
 	;;
 	"156")
 		Scarica "$ENTRAW""nccgroup/ssh_user_enum/master/ssh_enum.py"
@@ -1169,11 +1178,14 @@ while true; do
 		Clona "gehaxelt/Python-dsstore"
 	;;
 	"159")
-		mkdir sqlcmd
-		cd sqlcmd
-		Scarica "$ENTRAW""ccpgames/sqlcmd/master/sqlcmd.py"
-		Scarica "$ENTRAW""ccpgames/sqlcmd/master/setup.py"
-		cd ..
+		if [[ $(Warning) == "Y" ]];
+		then
+			mkdir sqlcmd
+			cd sqlcmd
+			Scarica "$ENTRAW""ccpgames/sqlcmd/master/sqlcmd.py"
+			Scarica "$ENTRAW""ccpgames/sqlcmd/master/setup.py"
+			cd ..
+		fi
 	;;
 	"160")
 		Clona "sqlmapproject/sqlmap"
@@ -1286,7 +1298,10 @@ while true; do
 		Scarica "$ENTRAW""GrrrDog/TacoTaco/master/tacoflip.py"
 	;;
 	"188")
-		Clona "GrrrDog/FlashAV"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Clona "GrrrDog/FlashAV"
+		fi
 	;;
 	"189")
 		Scarica "$ENTRAW""GrrrDog/sni_bruter/master/sni_bruter.py"
@@ -1301,13 +1316,19 @@ while true; do
 		Clona "projectdiscovery/naabu"
 	;;
 	"193")
-		Scarica "$ENTRAW""ahervias77/portscanner/master/portscanner.py"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Scarica "$ENTRAW""ahervias77/portscanner/master/portscanner.py"
+		fi
 	;;
 	"194")
 		Clona "indutny/heartbleed"
 	;;
 	"195")
-		Scarica "$ENTRAW""roflcer/heartbleed-vuln/master/attack.py"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Scarica "$ENTRAW""roflcer/heartbleed-vuln/master/attack.py"
+		fi
 	;;
 	"196")
 		Clona "thelinuxchoice/spyeye"
@@ -1365,8 +1386,11 @@ while true; do
 		fi
 	;;
 	"208")
-		Scarica "$ENTRAW""gh0stwizard/p5-udp-scanner/master/udp-scan.pl"
-		Scarica "$ENTRAW""gh0stwizard/p5-udp-scanner/master/make.sh"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Scarica "$ENTRAW""gh0stwizard/p5-udp-scanner/master/udp-scan.pl"
+			Scarica "$ENTRAW""gh0stwizard/p5-udp-scanner/master/make.sh"
+		fi
 	;;
 	"209")
 		Clona "Knowledge-Wisdom-Understanding/recon"
@@ -1378,7 +1402,10 @@ while true; do
 		Clona "anvie/port-scanner"
 	;;
 	"212")
-		Scarica "$ENTRAW""anrosent/portscan/master/portscan.go"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Scarica "$ENTRAW""anrosent/portscan/master/portscan.go"
+		fi
 	;;
 	"213")
 		Clona "Arno0x/NtlmRelayToEWS"
@@ -1451,7 +1478,10 @@ while true; do
 		Clona "shodansploit/shodansploit"
 	;;
 	"236")
-		Clona "ninj4c0d3r/ShodanCli"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Clona "ninj4c0d3r/ShodanCli"
+		fi
 	;;
 	"237")
 		Clona "mnismt/CompressedCrack"
@@ -1466,10 +1496,16 @@ while true; do
 		Clona "fabianishere/brainfuck"
 	;;
 	"240")
-		Clona "luickk/gan-audio-generator"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Clona "luickk/gan-audio-generator"
+		fi
 	;;
 	"241")
-		Clona "rzbrk/mfv"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Clona "rzbrk/mfv"
+		fi
 	;;
 	"242")
 		Clona "smicallef/spiderfoot"
@@ -1580,8 +1616,11 @@ while true; do
 		Clona "daniellerch/aletheia"
 	;;
 	"272")
-		Scarica "$ENTRAW""Diefunction/stegbrute/master/stegbrute.py"
-		Scarica "$ENTRAW""Diefunction/stegbrute/master""$RQRM"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Scarica "$ENTRAW""Diefunction/stegbrute/master/stegbrute.py"
+			Scarica "$ENTRAW""Diefunction/stegbrute/master""$RQRM"
+		fi
 	;;
 	"273")
 		Scarica "$ENTRAW""dunossauro/PyRarCrack/master/pyrarcrack.py"
@@ -1649,7 +1688,10 @@ while true; do
 		Scarica "$ENTRAW""KALILINUXTRICKSYT/easymacchanger/master/easymacchanger"
 	;;
 	"292")
-		Scarica "$ENTRAW""sbdchd/macchanger/master/macchanger"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Scarica "$ENTRAW""sbdchd/macchanger/master/macchanger"
+		fi
 	;;
 	"293")
 		Scarica "$ENTRAW""OsandaMalith/PE2HTML/master/PE2HTML.c"
@@ -1664,7 +1706,10 @@ while true; do
 		Clona "Z4nzu/hackingtool"
 	;;
 	"297")
-		Scarica "$ENTRAW""OffXec/fastssh/master/fastssh.sh"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Scarica "$ENTRAW""OffXec/fastssh/master/fastssh.sh"
+		fi
 	;;
 	"298")
 		Clona "lanjelot/patator"
@@ -2069,7 +2114,10 @@ while true; do
 		echo "<?php system($_REQUESTS['cmd']); ?>" > cmd-reqs.php
 	;;
 	"368")
-		Clona "Neetx/sshdodge"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Clona "Neetx/sshdodge"
+		fi
 	;;
 	"369")
 		Clona "trustedsec/meterssh"
@@ -2077,11 +2125,11 @@ while true; do
 	"370")
 		Scarica "$ENTRAW""norksec/torcrack/master/torcrack.py"
 	;;
-	"371")
-		Clona "matricali/brutekrag"
-	;;
 	"372")
-		Scarica "$ENTRAW""aryanrtm/sshBrutal/master/sshbrutal.sh"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Scarica "$ENTRAW""aryanrtm/sshBrutal/master/sshbrutal.sh"
+		fi
 	;;
 	"373")
 		Clona "wuseman/WBRUTER"
@@ -2278,26 +2326,41 @@ while true; do
 		Clona "techgaun/github-dorks"
 	;;
 	"421")
-		Scarica "$ENTRAW""tango-j/SMTP-Open-Relay-Attack-Test-Tool/master/OpenRelay.py"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Scarica "$ENTRAW""tango-j/SMTP-Open-Relay-Attack-Test-Tool/master/OpenRelay.py"
+		fi
 	;;
 	"422")
-		Clona "crazywifi/SMTP_Relay_Phisher"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Clona "crazywifi/SMTP_Relay_Phisher"
+		fi
 	;;
 	"423")
 		Scarica "$ENTRAW""NickSanzotta/smbShakedown/master/smbShakedown.py"
 	;;
 	"424")
-		Scarica "$ENTRAW""balaganeshgbhackers/Emailspoofing/master/Smtprelay.py"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Scarica "$ENTRAW""balaganeshgbhackers/Emailspoofing/master/Smtprelay.py"
+		fi
 	;;
 	"425")
-		Clona "RobinMeis/MITMsmtp"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Clona "RobinMeis/MITMsmtp"
+		fi
 	;;
 	"426")
 		Clona "mikechabot/smtp-email-spoofer-py"
 	;;
 	"427")
-		Scarica "$ENTRAW""yasserjanah/ZeS0MeBr/master/ZeS0MeBr.py"
-		Scarica "$ENTRAW""yasserjanah/ZeS0MeBr/master""$RQRM"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Scarica "$ENTRAW""yasserjanah/ZeS0MeBr/master/ZeS0MeBr.py"
+			Scarica "$ENTRAW""yasserjanah/ZeS0MeBr/master""$RQRM"
+		fi
 	;;
 	"428")
 		Clona "tintinweb/striptls"
@@ -2463,7 +2526,10 @@ while true; do
 		Clona "s0md3v/Silver"
 	;;
 	"461")
-		Clona "haasosaurus/ace-voip"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Clona "haasosaurus/ace-voip"
+		fi
 	;;
 	"462")
 		Clona "royhills/arp-scan"
@@ -2710,7 +2776,10 @@ while true; do
 		Clona "securing/DumpsterDiver"
 	;;
 	"534")
-                Scarica "$ENTRAW""TheNittam/RPOscanner/master/rpo.py"
+		if [[ $(Warning) == "Y" ]];
+		then
+	                Scarica "$ENTRAW""TheNittam/RPOscanner/master/rpo.py"
+		fi
 	;;
 	"535")
 		Clona "nil0x42/cracking-utils"
@@ -2722,8 +2791,11 @@ while true; do
 		Clona "adnane-X-tebbaa/Katana"
 	;;
 	"538")
-                Scarica "$ENTRAW""smackerdodi/CVE-bruter/master/CVE-bruter.py"
-                Scarica "$ENTRAW""smackerdodi/CVE-bruter/master""$RQRM"
+		if [[ $(Warning) == "Y" ]];
+		then
+	                Scarica "$ENTRAW""smackerdodi/CVE-bruter/master/CVE-bruter.py"
+	                Scarica "$ENTRAW""smackerdodi/CVE-bruter/master""$RQRM"
+		fi
 	;;
 	"539")
 		ls
