@@ -497,6 +497,9 @@ while true; do
 	echo -ne " 395. JettChenT/scan-for-webcams\t\t396. entynetproject/entropy\t\t\t\t397. indexnotfound404/spycam\n"
 	echo -ne " 471. jimywork/shodanwave\t\t\t479. SuperBuker/CamHell\n"
 	echo "$SEP"
+	echo "WIFI"
+	echo -ne " 540. blunderbuss-wctf/wacker\n"
+	echo "$SEP"
 	echo "WINRM"
 	echo -ne " 42. Hackplayers/evil-winrm\n"
 	echo "$SEP"
@@ -2805,6 +2808,9 @@ while true; do
 		then
 			exiftool -all= "$PHT"
 		fi
+	;;
+	"540")
+		Clona "blunderbuss-wctf/wacker"
 	;;
 	*)
 		echo "error, invalid choice"
