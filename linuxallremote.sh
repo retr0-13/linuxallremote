@@ -505,6 +505,7 @@ while true; do
 	echo "$SEP"
 	echo "WORDLIST"
 	echo -ne " 51. danielmiessler/SecLists\t\t\t53. dariusztytko/words-scraper\t\t\t\t245. LandGrey/pydictor\n"
+	echo -ne " 542. digininja/CeWL\n"
 	echo -ne " 302. duyet/bruteforce-database\t\t\t318. digininja/pipal\t\t\t\t\t535. nil0x42/cracking-utils\n"
 	echo "$SEP"
 	echo "WORDPRESS"
@@ -2814,6 +2815,9 @@ while true; do
 	;;
 	"541")
 		Clona "wifiphisher/wifiphisher"
+	;;
+	"542")
+		Clona "digininja/CeWL"
 	;;
 	*)
 		echo "error, invalid choice"
