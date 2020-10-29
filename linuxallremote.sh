@@ -556,52 +556,82 @@ while true; do
 		Clona "ZecOps/CVE-2020-0796-RCE-POC"
 	;;
 	"10")
-		echo "Digit a file name from https://github.com/offensive-security/exploitdb/tree/master/exploits/linux/remote with extension"
-		read -p "(example exploit.py): " NOMEFL
-		if [[ "$NOMEFL" != "" ]];
-		then
-			Scarica "$ENTRAW""offensive-security/exploitdb/master/exploits/linux/remote/$NOMEFL"
-		fi
+		OFFSEC="offensive-security/exploitdb/"
+		MEX="master/exploits/"
+		ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""linux/remote/"
+		ENTTO="$ENTRAW""$OFFSEC""$MEX""linux/remote/"
+		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/master/exploits/linux/remote with extension"
+		echo "(example exploit.py)"
+		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/master/exploits/linux/remote" | grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+		do
+			wget "$ENTTO""$EXP"
+			break
+		done
 	;;
 	"11")
-		echo "Digit a file name from https://github.com/offensive-security/exploitdb/tree/master/exploits/linux_x86/remote with extension"
-		read -p "(example exploit.py): " NOMEFL
-		if [[ "$NOMEFL" != "" ]];
-		then
-			Scarica "$ENTRAW""offensive-security/exploitdb/tree/master/exploits/linux_x86/remote/$NOMEFL"
-		fi
+		OFFSEC="offensive-security/exploitdb/"
+		MEX="master/exploits/"
+		ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""linux_x86-64/remote/"
+		ENTTO="$ENTRAW""$OFFSEC""$MEX""linux_x86-64/remote/"
+		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/master/exploits/linux_x86-64/local with extension"
+		echo "(example exploit.py)"
+		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/master/exploits/linux_x86-64/remote" | grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+		do
+			wget "$ENTTO""$EXP"
+			break
+		done
 	;;
 	"12")
-		echo "Digit a file name from https://github.com/offensive-security/exploitdb/tree/master/exploits/linux_x86-64/remote with extension"
-		read -p "(example exploit.py): " NOMEFL
-		if [[ "$NOMEFL" != "" ]];
-		then
-			Scarica "$ENTRAW""offensive-security/exploitdb/tree/master/exploits/linux_x86-64/remote/$NOMEFL"
-		fi
+		OFFSEC="offensive-security/exploitdb/"
+		MEX="master/exploits/"
+		ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""linux_x86/local/"
+		ENTTO="$ENTRAW""$OFFSEC""$MEX""linux_x86/local/"
+		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/master/exploits/linux_x86/local with extension"
+		echo "(example exploit.py)"
+		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/master/exploits/linux_x86/local" | grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+		do
+			wget "$ENTTO""$EXP"
+			break
+		done
 	;;
 	"13")
-		echo "Digit a file name from https://github.com/offensive-security/exploitdb/tree/master/exploits/windows/remote with extension"
-		read -p "(example exploit.py): " NOMEFL
-		if [[ "$NOMEFL" != "" ]];
-		then
-			Scarica "$ENTRAW""offensive-security/exploitdb/master/exploits/windows/remote/$NOMEFL"
-		fi
+		OFFSEC="offensive-security/exploitdb/"
+		MEX="master/exploits/"
+		ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""windows/remote"
+		ENTTO="$ENTRAW""$OFFSEC""$MEX""windows/remote"
+		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/master/exploits/windows/remote with extension"
+		echo "(example exploit.py)"
+		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/master/exploits/windows/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+		do
+			wget "$ENTTO""$EXP"
+			break
+		done
 	;;
 	"14")
-		echo "Digit a file name from https://github.com/offensive-security/exploitdb/tree/master/exploits/windows_x86/remote with extension"
-		read -p "(example exploit.py): " NOMEFL
-		if [[ "$NOMEFL" != "" ]];
-		then
-			Scarica "$ENTRAW""offensive-security/exploitdb/master/exploits/windows_x86/remote/$NOMEFL"
-		fi
+		OFFSEC="offensive-security/exploitdb/"
+		MEX="master/exploits/"
+		ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""windows_x86/remote"
+		ENTTO="$ENTRAW""$OFFSEC""$MEX""windows_x86/remote"
+		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/master/exploits/windows_x86/remote with extension"
+		echo "(example exploit.py)"
+		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/master/exploits/windows_x86/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+		do
+			wget "$ENTTO""$EXP"
+			break
+		done
 	;;
 	"15")
-		echo "Digit a file name from https://github.com/offensive-security/exploitdb/tree/master/exploits/windows_x86-64/remote with extension"
-		read -p "(example exploit.py): " NOMEFL
-		if [[ "$NOMEFL" != "" ]];
-		then
-			Scarica "$ENTRAW""offensive-security/exploitdb/master/exploits/windows_x86-64/remote/$NOMEFL"
-		fi
+		OFFSEC="offensive-security/exploitdb/"
+		MEX="master/exploits/"
+		ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""windows_x86-64/remote"
+		ENTTO="$ENTRAW""$OFFSEC""$MEX""windows_x86-64/remote"
+		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/master/exploits/windows_x86-64/remote with extension"
+		echo "(example exploit.py)"
+		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/master/exploits/windows_x86-64/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+		do
+			wget "$ENTTO""$EXP"
+			break
+		done
 	;;
 	"16")
 		echo "Digit a file name from https://github.com/sundaysec/Android-Exploits/tree/master/remote with extension"
