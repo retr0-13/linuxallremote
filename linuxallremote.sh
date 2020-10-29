@@ -560,9 +560,9 @@ while true; do
 		MEX="master/exploits/"
 		ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""linux/remote/"
 		ENTTO="$ENTRAW""$OFFSEC""$MEX""linux/remote/"
-		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/master/exploits/linux/remote with extension"
+		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""linux/remote with extension"
 		echo "(example exploit.py)"
-		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/master/exploits/linux/remote" | grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""linux/remote" | grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 		do
 			wget "$ENTTO""$EXP"
 			break
@@ -573,9 +573,9 @@ while true; do
 		MEX="master/exploits/"
 		ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""linux_x86-64/remote/"
 		ENTTO="$ENTRAW""$OFFSEC""$MEX""linux_x86-64/remote/"
-		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/master/exploits/linux_x86-64/local with extension"
+		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""linux_x86-64/local with extension"
 		echo "(example exploit.py)"
-		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/master/exploits/linux_x86-64/remote" | grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""linux_x86-64/remote"| grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 		do
 			wget "$ENTTO""$EXP"
 			break
@@ -584,11 +584,11 @@ while true; do
 	"12")
 		OFFSEC="offensive-security/exploitdb/"
 		MEX="master/exploits/"
-		ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""linux_x86/local/"
-		ENTTO="$ENTRAW""$OFFSEC""$MEX""linux_x86/local/"
-		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/master/exploits/linux_x86/local with extension"
+		ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""linux_x86/remote/"
+		ENTTO="$ENTRAW""$OFFSEC""$MEX""linux_x86/remote/"
+		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""linux_x86/remote with extension"
 		echo "(example exploit.py)"
-		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/master/exploits/linux_x86/local" | grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""linux_x86/remote"| grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 		do
 			wget "$ENTTO""$EXP"
 			break
@@ -597,11 +597,11 @@ while true; do
 	"13")
 		OFFSEC="offensive-security/exploitdb/"
 		MEX="master/exploits/"
-		ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""windows/remote"
-		ENTTO="$ENTRAW""$OFFSEC""$MEX""windows/remote"
-		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/master/exploits/windows/remote with extension"
+		ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""windows/remote/"
+		ENTTO="$ENTRAW""$OFFSEC""$MEX""windows/remote/"
+		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""windows/remote with extension"
 		echo "(example exploit.py)"
-		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/master/exploits/windows/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""windows/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 		do
 			wget "$ENTTO""$EXP"
 			break
@@ -610,11 +610,11 @@ while true; do
 	"14")
 		OFFSEC="offensive-security/exploitdb/"
 		MEX="master/exploits/"
-		ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""windows_x86/remote"
-		ENTTO="$ENTRAW""$OFFSEC""$MEX""windows_x86/remote"
-		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/master/exploits/windows_x86/remote with extension"
+		ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""windows_x86/remote/"
+		ENTTO="$ENTRAW""$OFFSEC""$MEX""windows_x86/remote/"
+		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86/remote with extension"
 		echo "(example exploit.py)"
-		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/master/exploits/windows_x86/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree""$MEX""windows_x86/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 		do
 			wget "$ENTTO""$EXP"
 			break
@@ -623,39 +623,54 @@ while true; do
 	"15")
 		OFFSEC="offensive-security/exploitdb/"
 		MEX="master/exploits/"
-		ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""windows_x86-64/remote"
-		ENTTO="$ENTRAW""$OFFSEC""$MEX""windows_x86-64/remote"
-		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/master/exploits/windows_x86-64/remote with extension"
+		ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""windows_x86-64/remote/"
+		ENTTO="$ENTRAW""$OFFSEC""$MEX""windows_x86-64/remote/"
+		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86-64/remote with extension"
 		echo "(example exploit.py)"
-		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/master/exploits/windows_x86-64/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree""$MEX""windows_x86-64/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 		do
 			wget "$ENTTO""$EXP"
 			break
 		done
 	;;
 	"16")
-		echo "Digit a file name from https://github.com/sundaysec/Android-Exploits/tree/master/remote with extension"
-		read -p "(example exploit.py): " NOMEFL
-		if [[ "$NOMEFL" != "" ]];
-		then
-			Scarica "$ENTRAW""sundaysec/Android-Exploits/master/remote/$NOMEFL"
-		fi
+		OFFSEC="sundaysec/Android-Exploits/"
+		MEX="master/"
+		ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""remote/"
+		ENTTO="$ENTRAW""$OFFSEC""$MEX""remote/"
+		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/master/remote with extension"
+		echo "(example exploit.py)"
+		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+		do
+			wget "$ENTTO""$EXP"
+			break
+		done
 	;;
 	"17")
-		echo "Digit a file name from https://github.com/offensive-security/exploitdb/tree/master/exploits/android/remote with extension"
-		read -p "(example exploit.py): " NOMEFL
-		if [[ "$NOMEFL" != "" ]];
-		then
-			Scarica "$ENTRAW""offensive-security/exploitdb/master/exploits/android/remote/$NOMEFL"
-		fi
+		OFFSEC="offensive-security/exploitdb/"
+		MEX="master/exploits/"
+		ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""android/remote/"
+		ENTTO="$ENTRAW""$OFFSEC""$MEX""android/remote/"
+		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""android/remote with extension"
+		echo "(example exploit.py)"
+		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree""$MEX""android/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+		do
+			wget "$ENTTO""$EXP"
+			break
+		done
 	;;
 	"18")
-		echo "Digit a file name from https://github.com/offensive-security/exploitdb/tree/master/exploits/ios/remote with extension"
-		read -p "(example exploit.py): " NOMEFL
-		if [[ "$NOMEFL" != "" ]];
-		then
-			Scarica "$ENTRAW""offensive-security/exploitdb/master/exploits/ios/remote/$NOMEFL"
-		fi
+		OFFSEC="offensive-security/exploitdb/"
+		MEX="master/exploits/"
+		ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""ios/remote/"
+		ENTTO="$ENTRAW""$OFFSEC""$MEX""ios/remote/"
+		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""ios/remote with extension"
+		echo "(example exploit.py)"
+		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree""$MEX""android/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+		do
+			wget "$ENTTO""$EXP"
+			break
+		done
 	;;
 	"20")
 		echo "Digit a trustedsec repository name from https://github.com/trustedsec"
