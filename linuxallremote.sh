@@ -564,7 +564,7 @@ while true; do
 		echo "(example exploit.py)"
 		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""linux/remote" | grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 		do
-			wget "$ENTTO""$EXP"
+			Scarica "$ENTTO""$EXP"
 			break
 		done
 	;;
@@ -577,7 +577,7 @@ while true; do
 		echo "(example exploit.py)"
 		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""linux_x86-64/remote"| grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 		do
-			wget "$ENTTO""$EXP"
+			Scarica "$ENTTO""$EXP"
 			break
 		done
 	;;
@@ -590,7 +590,7 @@ while true; do
 		echo "(example exploit.py)"
 		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""linux_x86/remote"| grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 		do
-			wget "$ENTTO""$EXP"
+			Scarica "$ENTTO""$EXP"
 			break
 		done
 	;;
@@ -603,7 +603,7 @@ while true; do
 		echo "(example exploit.py)"
 		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""windows/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 		do
-			wget "$ENTTO""$EXP"
+			Scarica "$ENTTO""$EXP"
 			break
 		done
 	;;
@@ -616,7 +616,7 @@ while true; do
 		echo "(example exploit.py)"
 		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree""$MEX""windows_x86/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 		do
-			wget "$ENTTO""$EXP"
+			Scarica "$ENTTO""$EXP"
 			break
 		done
 	;;
@@ -629,7 +629,7 @@ while true; do
 		echo "(example exploit.py)"
 		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree""$MEX""windows_x86-64/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 		do
-			wget "$ENTTO""$EXP"
+			Scarica "$ENTTO""$EXP"
 			break
 		done
 	;;
@@ -642,7 +642,7 @@ while true; do
 		echo "(example exploit.py)"
 		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 		do
-			wget "$ENTTO""$EXP"
+			Scarica "$ENTTO""$EXP"
 			break
 		done
 	;;
@@ -655,7 +655,7 @@ while true; do
 		echo "(example exploit.py)"
 		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree""$MEX""android/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 		do
-			wget "$ENTTO""$EXP"
+			Scarica "$ENTTO""$EXP"
 			break
 		done
 	;;
@@ -668,7 +668,7 @@ while true; do
 		echo "(example exploit.py)"
 		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree""$MEX""android/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 		do
-			wget "$ENTTO""$EXP"
+			Scarica "$ENTTO""$EXP"
 			break
 		done
 	;;
