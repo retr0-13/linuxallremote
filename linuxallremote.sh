@@ -563,7 +563,7 @@ while true; do
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""linux/remote/"
 			ENTTO="$ENTRAW""$OFFSEC""$MEX""linux/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""linux/remote"
-			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""linux/remote" | grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""linux/remote" | grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$|\.go$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
 				Scarica "$ENTTO""$EXP"
 				break
@@ -585,7 +585,7 @@ while true; do
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""linux_x86-64/remote/"
 			ENTTO="$ENTRAW""$OFFSEC""$MEX""linux_x86-64/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""linux_x86-64/remote"
-			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""linux_x86-64/remote"| grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""linux_x86-64/remote"| grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$|\.go$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
 				Scarica "$ENTTO""$EXP"
 				break
@@ -607,7 +607,7 @@ while true; do
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""linux_x86/remote/"
 			ENTTO="$ENTRAW""$OFFSEC""$MEX""linux_x86/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""linux_x86/remote"
-			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""linux_x86/remote"| grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""linux_x86/remote"| grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$|\.go$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
 				Scarica "$ENTTO""$EXP"
 				break
@@ -629,7 +629,7 @@ while true; do
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""windows/remote/"
 			ENTTO="$ENTRAW""$OFFSEC""$MEX""windows/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""windows/remote"
-			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""windows/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""windows/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$|\.go$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
 				Scarica "$ENTTO""$EXP"
 				break
@@ -651,7 +651,7 @@ while true; do
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""windows_x86/remote/"
 			ENTTO="$ENTRAW""$OFFSEC""$MEX""windows_x86/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86/remote"
-			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$|\.go$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
 				Scarica "$ENTTO""$EXP"
 				break
@@ -673,7 +673,7 @@ while true; do
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""windows_x86-64/remote/"
 			ENTTO="$ENTRAW""$OFFSEC""$MEX""windows_x86-64/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86-64/remote"
-			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86-64/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86-64/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$|\.go$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
 				Scarica "$ENTTO""$EXP"
 				break
@@ -695,7 +695,7 @@ while true; do
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""remote/"
 			ENTTO="$ENTRAW""$OFFSEC""$MEX""remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/master/remote"
-			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$|\.go$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
 				Scarica "$ENTTO""$EXP"
 				break
@@ -717,7 +717,7 @@ while true; do
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""android/remote/"
 			ENTTO="$ENTRAW""$OFFSEC""$MEX""android/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""android/remote"
-			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""android/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""android/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$|\.go$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
 				Scarica "$ENTTO""$EXP"
 				break
@@ -739,7 +739,7 @@ while true; do
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""ios/remote/"
 			ENTTO="$ENTRAW""$OFFSEC""$MEX""ios/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""ios/remote"
-			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""ios/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""ios/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$|\.go$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
 				Scarica "$ENTTO""$EXP"
 				break
