@@ -657,7 +657,7 @@ while true; do
 		ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""ios/remote/"
 		ENTTO="$ENTRAW""$OFFSEC""$MEX""ios/remote/"
 		echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""ios/remote"
-		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""android/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""ios/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 		do
 			Scarica "$ENTTO""$EXP"
 			break
