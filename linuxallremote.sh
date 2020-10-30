@@ -614,7 +614,7 @@ while true; do
 		ENTTO="$ENTRAW""$OFFSEC""$MEX""windows_x86/remote/"
 		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86/remote with extension"
 		echo "(example exploit.py)"
-		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree""$MEX""windows_x86/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 		do
 			Scarica "$ENTTO""$EXP"
 			break
@@ -627,7 +627,7 @@ while true; do
 		ENTTO="$ENTRAW""$OFFSEC""$MEX""windows_x86-64/remote/"
 		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86-64/remote with extension"
 		echo "(example exploit.py)"
-		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree""$MEX""windows_x86-64/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86-64/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 		do
 			Scarica "$ENTTO""$EXP"
 			break
@@ -653,7 +653,7 @@ while true; do
 		ENTTO="$ENTRAW""$OFFSEC""$MEX""android/remote/"
 		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""android/remote with extension"
 		echo "(example exploit.py)"
-		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree""$MEX""android/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""android/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 		do
 			Scarica "$ENTTO""$EXP"
 			break
@@ -666,7 +666,7 @@ while true; do
 		ENTTO="$ENTRAW""$OFFSEC""$MEX""ios/remote/"
 		echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""ios/remote with extension"
 		echo "(example exploit.py)"
-		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree""$MEX""android/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+		select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""android/remote" |  grep -E "\.sh$|\.py$|\.c$|\.pl$|\.rb$|\.asm$|\.txt$|\.java$|\.php$|\.pas$|\.html$|\.md$" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 		do
 			Scarica "$ENTTO""$EXP"
 			break
