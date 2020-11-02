@@ -156,7 +156,7 @@ while true; do
 	echo -ne " 83. s0md3v/Hash-Buster\t\t\t\t120. NetSPI/PS_MultiCrack\t\t\t\t41. shmilylty/cheetah\n"
 	echo -ne " 126. timbo05sec/autocrack\t\t\t127. igorMatsunaga/autoCrack\t\t\t\t247. mufeedvh/basecrack\n"
 	echo -ne " 475. MS-WEB-BN/h4rpy\t\t\t\t506. Aarif123456/passwordCracker\t\t\t507. GauthamGoli/rar-Password-Cracker/bruteforce\n"
-	echo -ne " 543. praetorian-inc/trident_0.1.3_linux_i386\t\t\t544. praetorian-inc/trident_0.1.3_linux_x86_64\n"
+	echo -ne " 543. praetorian-inc/trident_0.1.3_linux_i386\t\t\t544. praetorian-inc/trident_0.1.3_linux_x86_64\t\t\t545. praetorian-inc/trident\n"
 	echo "$SEP"
 	echo "CSRF - XSRF"
 	echo -ne " 406. 0xInfection/XSRFProbe\n"
@@ -2951,6 +2951,9 @@ while true; do
 	;;
 	"544")
                 Scarica "$ENTSSL""praetorian-inc/trident/releases/download/v0.1.3/trident_0.1.3_linux_x86_64.tar.gz"
+	;;
+	"545")
+		Clona "praetorian-inc/trident"
 	;;
 	*)
 		echo "error, invalid choice"
