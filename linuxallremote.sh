@@ -395,7 +395,8 @@ while true; do
 	echo -ne " 449. RustScan/RustScan\t\t\t\t450. IFGHou/wapiti\t\t\t\t\t454. MrSqar-Ye/BadMod\n"
 	echo -ne " 455. future-architect/vuls\t\t\t456. almandin/fuxploider\t\t\t\t457. Moham3dRiahi/XAttacker\n"
 	echo -ne " 458. s0md3v/Corsy\t\t\t\t459. skavngr/rapidscan\t\t\t\t\t460. s0md3v/Silver\n"
-	echo -ne " 534. TheNittam/RPOscanner\t\t\t538. smackerdodi/CVE-bruter\n"
+	echo -ne " 534. TheNittam/RPOscanner\t\t\t538. smackerdodi/CVE-bruter\t\t\t\t546. tstillz/webshell-scan\n"
+	echo -ne " 547. jofpin/fuckshell\t\t\t\t548. followboy1999/webshell-scanner\t\t\t\t549. emposha/Shell-Detector\n"
 	echo "$SEP"
 	echo "SHELL"
 	echo -ne " 70. sameera-madushan/Print-My-Shell\t\t71. flozz/p0wny-shell/shell\t\t\t\t87. rastating/slae\n"
@@ -2954,6 +2955,18 @@ while true; do
 	;;
 	"545")
 		Clona "praetorian-inc/trident"
+	;;
+	"546")
+		Clona "tstillz/webshell-scan"
+	;;
+	"547")
+		Scarica "$ENTRAW""jofpin/fuckshell/master/fuckshell.py"
+	;;
+	"548")
+		Clona "followboy1999/webshell-scanner"
+	;;
+	"549")
+		Clona "emposha/Shell-Detector"
 	;;
 	*)
 		echo "error, invalid choice"
