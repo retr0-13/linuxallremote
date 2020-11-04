@@ -425,7 +425,7 @@ while true; do
 	echo -ne " 78. cysboy/SnmpCrack\n"
 	echo "$SEP"
 	echo "SOCIAL MEDIA"
-	echo -ne " 427. yasserjanah/ZeS0MeBr\n"
+	echo -ne " 427. yasserjanah/ZeS0MeBr\t\t\t551. Cyb0r9/SocialBox\n"
 	echo "$SEP"
 	echo "SPOOFING"
 	echo -ne " 290. initstring/evil-ssdp\t\t\t291. KALILINUXTRICKSYT/easymacchanger\t\t\t292. sbdchd/macchanger\n"
@@ -2970,6 +2970,10 @@ while true; do
 	;;
 	"550")
 		Clona "calebmadrigal/trackerjacker"
+	;;
+	"551")
+		Scarica "$ENTRAW""Cyb0r9/SocialBox/master/SocialBox.sh"
+		Scarica "$ENTRAW""Cyb0r9/SocialBox/master/install-sb.sh"
 	;;
 	*)
 		echo "error, invalid choice"
