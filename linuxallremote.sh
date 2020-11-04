@@ -500,7 +500,7 @@ while true; do
 	echo -ne " 471. jimywork/shodanwave\t\t\t479. SuperBuker/CamHell\n"
 	echo "$SEP"
 	echo "WIFI"
-	echo -ne " 540. blunderbuss-wctf/wacker\n"
+	echo -ne " 540. blunderbuss-wctf/wacker\t\t\t550. calebmadrigal/trackerjacker\n"
 	echo "$SEP"
 	echo "WINRM"
 	echo -ne " 42. Hackplayers/evil-winrm\n"
@@ -2967,6 +2967,9 @@ while true; do
 	;;
 	"549")
 		Clona "emposha/Shell-Detector"
+	;;
+	"550")
+		Clona "calebmadrigal/trackerjacker"
 	;;
 	*)
 		echo "error, invalid choice"
