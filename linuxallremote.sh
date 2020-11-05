@@ -109,7 +109,7 @@ while true; do
 	echo -ne "128. xtiankisutsa/MARA_Framework\t\t274. yasoob/nrc-exporter\t\t\t\t277. mzfr/slicer\n"
 	echo -ne " 323. ASHWIN990/ADB-Toolkit\t\t\t326. metachar/PhoneSploit\t\t\t\t327. xtiankisutsa/twiga\n"
 	echo -ne " 373. wuseman/WBRUTER\t\t\t\t405. bkerler/android_universal\n"
-	echo -ne " 410. mesquidar/adbsploit\t\t\t504. airbus-seclab/android_emuroot\n"
+	echo -ne " 410. mesquidar/adbsploit\t\t\t504. airbus-seclab/android_emuroot\t\t\t552. MobSF/Mobile-Security-Framework-MobSF\n"
 	echo "$SEP"
 	echo "ANTI-FORENSICS - SECURITY"
 	echo -ne " 480. AndyCyberSec/direncrypt\n"
@@ -239,10 +239,10 @@ while true; do
 	echo -ne " 364. opsdisk/pagodo\t\t\t\t179. BullsEye0/shodan-eye\t\t\t\t470. HatBashBR/ShodanHat\n"
 	echo -ne " 472. random-robbie/My-Shodan-Scripts\t\t473. woj-ciech/Kamerka-GUI\t\t\t\t474. m4ll0k/Shodanfy.py\n"
 	echo -ne " 477. gelim/censys\t\t\t\t478. twelvesec/gasmask\t\t\t\t\t476. sdnewhop/grinder\n"
-	echo -ne " 486. sowdust/tafferugli\t\t\t537. adnane-X-tebbaa/Katana\n"
+	echo -ne " 486. sowdust/tafferugli\t\t\t537. adnane-X-tebbaa/Katana\t\t\t\t555. m8r0wn/subscraper\n"
 	echo "$SEP"
 	echo "GIT - REPOS"
-	echo -ne " 487. arthaud/git-dumper\n"
+	echo -ne " 487. arthaud/git-dumper\t\t\t553. Ebryx/GitDump\n"
 	echo "$SEP"
 	echo "HOOKING - HIJACKING - INJECTION"
 	echo -ne " 140. zznop/drow\t\t\t\t173. J3wker/DLLicous-MaliciousDLL\t\t\t185. cybercitizen7/Ps1jacker\n"
@@ -312,6 +312,7 @@ while true; do
 	echo -ne " 485. r3dxpl0it/TheXFramework\t\t\t488. Taguar258/Raven-Storm\t\t\t\t514. maxlandon/wiregost\n"
 	echo -ne " 523. nerodtm/ReconCobra---Complete-Automated-Pentest-Framework-For-Information-Gathering\n"
 	echo -ne " 527. Moham3dRiahi/XAttacker\t\t\t529. riusksk/StrutScan\t\t\t\t\t530. AlisamTechnology/ATSCAN\n"
+	echo -ne " 554. FluxionNetwork/fluxion\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne "249. kgretzky/evilginx2\t\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
@@ -2974,6 +2975,18 @@ while true; do
 	"551")
 		Scarica "$ENTRAW""Cyb0r9/SocialBox/master/SocialBox.sh"
 		Scarica "$ENTRAW""Cyb0r9/SocialBox/master/install-sb.sh"
+	;;
+	"552")
+		Clona "MobSF/Mobile-Security-Framework-MobSF"
+	;;
+	"553")
+		Scarica "$ENTRAW""Ebryx/GitDump/master/git-dump.py"
+	;;
+	"554")
+		Clona "FluxionNetwork/fluxion"
+	;;
+	"555")
+		Clona "m8r0wn/subscraper"
 	;;
 	*)
 		echo "error, invalid choice"
