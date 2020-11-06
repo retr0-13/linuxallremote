@@ -312,7 +312,7 @@ while true; do
 	echo -ne " 485. r3dxpl0it/TheXFramework\t\t\t488. Taguar258/Raven-Storm\t\t\t\t514. maxlandon/wiregost\n"
 	echo -ne " 523. nerodtm/ReconCobra---Complete-Automated-Pentest-Framework-For-Information-Gathering\n"
 	echo -ne " 527. Moham3dRiahi/XAttacker\t\t\t529. riusksk/StrutScan\t\t\t\t\t530. AlisamTechnology/ATSCAN\n"
-	echo -ne " 554. FluxionNetwork/fluxion\n"
+	echo -ne " 554. FluxionNetwork/fluxion\t\t\t557. knassar702/scant3r\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne "249. kgretzky/evilginx2\t\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
@@ -369,6 +369,7 @@ while true; do
 	echo -ne " 131. leobeosab/sharingan\t\t\t94. samhaxr/recox\t\t\t\t\t129. sowdust/ffff\n"
 	echo -ne " 214. j3ssie/Osmedeus\t\t\t\t242. smicallef/spiderfoot\t\t\t\t308. yogeshojha/rengine\n"
 	echo -ne " 390. lanmaster53/recon-ng\t\t\t391. methos2016/recon-ng\t\t\t\t501. LukaSikic/subzy\n"
+	echo -ne " 556. LordNeoStark/tugarecon\n"
 	echo "$SEP"
 	echo "REVERSING"
 	echo -ne " 361. yeggor/UEFI_RETool\n"
@@ -2987,6 +2988,12 @@ while true; do
 	;;
 	"555")
 		Clona "m8r0wn/subscraper"
+	;;
+	"556")
+		Clona "LordNeoStark/tugarecon"
+	;;
+	"557")
+		Clona "knassar702/scant3r"
 	;;
 	*)
 		echo "error, invalid choice"
