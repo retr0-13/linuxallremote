@@ -312,7 +312,7 @@ while true; do
 	echo -ne " 485. r3dxpl0it/TheXFramework\t\t\t488. Taguar258/Raven-Storm\t\t\t\t514. maxlandon/wiregost\n"
 	echo -ne " 523. nerodtm/ReconCobra---Complete-Automated-Pentest-Framework-For-Information-Gathering\n"
 	echo -ne " 527. Moham3dRiahi/XAttacker\t\t\t529. riusksk/StrutScan\t\t\t\t\t530. AlisamTechnology/ATSCAN\n"
-	echo -ne " 554. FluxionNetwork/fluxion\t\t\t557. knassar702/scant3r\n"
+	echo -ne " 554. FluxionNetwork/fluxion\t\t\t557. knassar702/scant3r\t\t\t\t\t559. epi052/feroxbuster\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne "249. kgretzky/evilginx2\t\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
@@ -2998,9 +2998,12 @@ while true; do
 	"558")
 		Clona "dwisiswant0/findom-xss"
 	;;
+	"559")
+		Clona "epi052/feroxbuster"
+	;;
 	*)
 		echo "error, invalid choice"
 	;;
 	esac
-	echo -ne "\n$SEP\n"
+	echo -ne "\n$SEP\n\n"
 done
