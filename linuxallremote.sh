@@ -505,7 +505,7 @@ while true; do
 	echo "$SEP"
 	echo "WEBCAMS"
 	echo -ne " 395. JettChenT/scan-for-webcams\t\t396. entynetproject/entropy\t\t\t\t397. indexnotfound404/spycam\n"
-	echo -ne " 471. jimywork/shodanwave\t\t\t479. SuperBuker/CamHell\n"
+	echo -ne " 471. jimywork/shodanwave\t\t\t479. SuperBuker/CamHell\t\t\t\t\t564. vanhienfs/saycheese\n"
 	echo "$SEP"
 	echo "WEBSHELL"
 	echo -ne " 562. tennc/webshell\n"
@@ -3033,6 +3033,9 @@ while true; do
 		Scarica "$ENTRAW""Viralmaniar/Passhunt/master/passhunt.py"
 		Scarica "$ENTRAW""Viralmaniar/Passhunt/master""$RQRM"
 		Scarica "$ENTRAW""Viralmaniar/Passhunt/master/vendors.txt"
+	;;
+	"564")
+		Clona "vanhienfs/saycheese"
 	;;
 	*)
 		echo "error, invalid choice"
