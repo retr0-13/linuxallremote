@@ -157,6 +157,7 @@ while true; do
 	echo -ne " 126. timbo05sec/autocrack\t\t\t127. igorMatsunaga/autoCrack\t\t\t\t247. mufeedvh/basecrack\n"
 	echo -ne " 475. MS-WEB-BN/h4rpy\t\t\t\t506. Aarif123456/passwordCracker\t\t\t507. GauthamGoli/rar-Password-Cracker/bruteforce\n"
 	echo -ne " 543. praetorian-inc/trident_0.1.3_linux_i386\t\t\t544. praetorian-inc/trident_0.1.3_linux_x86_64\t\t\t545. praetorian-inc/trident\n"
+	echo -ne " 563. Viralmaniar/Passhunt\n"
 	echo "$SEP"
 	echo "CSRF - XSRF"
 	echo -ne " 406. 0xInfection/XSRFProbe\n"
@@ -3027,6 +3028,11 @@ while true; do
 	;;
 	"562")
 		Clona "tennc/webshell"
+	;;
+	"563")
+		Scarica "$ENTRAW""Viralmaniar/Passhunt/master/passhunt.py"
+		Scarica "$ENTRAW""Viralmaniar/Passhunt/master""$RQRM"
+		Scarica "$ENTRAW""Viralmaniar/Passhunt/master/vendors.txt"
 	;;
 	*)
 		echo "error, invalid choice"
