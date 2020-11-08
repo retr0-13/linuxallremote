@@ -408,9 +408,9 @@ while true; do
 	echo -ne " 70. sameera-madushan/Print-My-Shell\t\t71. flozz/p0wny-shell/shell\t\t\t\t87. rastating/slae\n"
 	echo -ne " 95. TBGSecurity/splunk_shells\t\t\t281. berkgoksel/SierraTwo\t\t\t\t295. wintrmvte/Shellab\n"
 	echo -ne " 348. brimstone/go-shellcode\t\t\t349. TheBinitGhimire/Web-Shells/smevk\t\t\t432. offensive-security/exploitdb/shellcodes/android\n"
-	echo -ne " 433. offensive-security/exploitdb/shellcodes/linux\t\t\t\t\t434. offensive-security/exploitdb/master/shellcodes/linux_x86-64\n"
-	echo -ne " 435. offensive-security/exploitdb/master/shellcodes/linux_x86\t\t\t\t436. offensive-security/exploitdb/master/shellcodes/windows\n"
-	echo -ne " 437. offensive-security/exploitdb/master/shellcodes/windows_x86-64\t\t\t438. offensive-security/exploitdb/master/shellcodes/windows_x86\n"
+	echo -ne " 433. offensive-security/exploitdb/shellcodes/linux\t\t\t\t\t434. offensive-security/exploitdb/shellcodes/linux_x86-64\n"
+	echo -ne " 435. offensive-security/exploitdb/shellcodes/linux_x86\t\t\t\t436. offensive-security/exploitdb/shellcodes/windows\n"
+	echo -ne " 437. offensive-security/exploitdb/shellcodes/windows_x86-64\t\t\t438. offensive-security/exploitdb/shellcodes/windows_x86\n"
 	echo "$SEP"
 	echo "SMB"
 	echo -ne " 68. m4ll0k/SMBrute\t\t\t\t58. mvelazc0/Invoke-SMBLogin/smblogin\t\t\t65. ShawnDEvans/smbmap\n"
@@ -505,6 +505,9 @@ while true; do
 	echo "WEBCAMS"
 	echo -ne " 395. JettChenT/scan-for-webcams\t\t396. entynetproject/entropy\t\t\t\t397. indexnotfound404/spycam\n"
 	echo -ne " 471. jimywork/shodanwave\t\t\t479. SuperBuker/CamHell\n"
+	echo "$SEP"
+	echo "WEBSHELL"
+	echo -ne " 562. tennc/webshell\n"
 	echo "$SEP"
 	echo "WIFI"
 	echo -ne " 540. blunderbuss-wctf/wacker\t\t\t550. calebmadrigal/trackerjacker\n"
@@ -3021,6 +3024,9 @@ while true; do
 				curl "$URL""php://filter/convert.base64-encode/resource=""$PAGE"
 			fi
 		fi
+	;;
+	"562")
+		Clona "tennc/webshell"
 	;;
 	*)
 		echo "error, invalid choice"
