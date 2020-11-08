@@ -89,7 +89,7 @@ echo "linuxallremote, by FabioDefilippoSoftware"
 
 while true; do
 	echo "$SEP"
-	echo "0. exit"
+	echo " 0. exit"
 	echo "$SEP"
 	echo "ACTIVE DIRECTORY"
 	echo -ne " 27. Greenwolf/Spray\t\t\t\t229. DanMcInerney/icebreaker\t\t\t\t283. optiv/Talon\n"
@@ -106,7 +106,7 @@ while true; do
 	echo -ne " 220. angr/angr\t\t\t\t\t224. cogent/origami-pdf\t\t\t\t\t451. Ettercap/ettercap\n"
 	echo "$SEP"
 	echo "ANDROID - APK"
-	echo -ne "128. xtiankisutsa/MARA_Framework\t\t274. yasoob/nrc-exporter\t\t\t\t277. mzfr/slicer\n"
+	echo -ne " 128. xtiankisutsa/MARA_Framework\t\t274. yasoob/nrc-exporter\t\t\t\t277. mzfr/slicer\n"
 	echo -ne " 323. ASHWIN990/ADB-Toolkit\t\t\t326. metachar/PhoneSploit\t\t\t\t327. xtiankisutsa/twiga\n"
 	echo -ne " 373. wuseman/WBRUTER\t\t\t\t405. bkerler/android_universal\n"
 	echo -ne " 410. mesquidar/adbsploit\t\t\t504. airbus-seclab/android_emuroot\t\t\t552. MobSF/Mobile-Security-Framework-MobSF\n"
