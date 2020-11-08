@@ -3012,7 +3012,7 @@ while true; do
 	"561")
 		echo "Digit an url with protocol and get parameter with equal sign"
 		read -p "(example, http://site.web/news.php?file=): " URL
-		if [[ "$NOMEFL" != "" ]];
+		if [[ "$URL" != "" ]];
 		then
 			echo "Digit the file name or path, even with directory traversal, to encode in base64"
 			read -p "(example, ../../etc/passwd or ./index.php): " PAGE
