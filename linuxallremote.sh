@@ -205,6 +205,9 @@ while true; do
 	echo -ne " 268. wintrmvte/SNOWCRASH\t\t\t275. CBHue/PyFuscation\t\t\t\t\t293. OsandaMalith/PE2HTML\n"
 	echo -ne " 309. mdsecactivebreach/Chameleon\n"
 	echo "$SEP"
+	echo "EXCHANGE"
+	echo -ne " 571. sensepost/ruler\n"
+	echo "$SEP"
 	echo "EXFILTRATION"
 	echo -ne " 314. danielwolfmann/Invoke-WordThief/logger\n"
 	echo "$SEP"
@@ -3055,6 +3058,9 @@ while true; do
 	;;
 	"570")
 		Clona "hegusung/RPCScan"
+	;;
+	"571")
+		Clona "sensepost/ruler"
 	;;
 	*)
 		echo "error, invalid choice"
