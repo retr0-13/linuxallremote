@@ -110,6 +110,7 @@ while true; do
 	echo -ne " 323. ASHWIN990/ADB-Toolkit\t\t\t326. metachar/PhoneSploit\t\t\t\t327. xtiankisutsa/twiga\n"
 	echo -ne " 373. wuseman/WBRUTER\t\t\t\t405. bkerler/android_universal\n"
 	echo -ne " 410. mesquidar/adbsploit\t\t\t504. airbus-seclab/android_emuroot\t\t\t552. MobSF/Mobile-Security-Framework-MobSF\n"
+	echo -ne " 572. 1N3/ReverseAPK\n"
 	echo "$SEP"
 	echo "ANTI-FORENSICS - SECURITY"
 	echo -ne " 480. AndyCyberSec/direncrypt\n"
@@ -3061,6 +3062,10 @@ while true; do
 	;;
 	"571")
 		Clona "sensepost/ruler"
+	;;
+	"572")
+		Scarica "$ENTRAW""1N3/ReverseAPK/master/reverse-apk"
+		Scarica "$ENTRAW""1N3/ReverseAPK/master/install"
 	;;
 	*)
 		echo "error, invalid choice"
