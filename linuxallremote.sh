@@ -387,7 +387,7 @@ while true; do
 	echo -ne " 145. threat9/routersploit\n"
 	echo "$SEP"
 	echo "RPC"
-	echo -ne " 233. aress31/xmlrpc-bruteforcer\t\t313. s4vitar/rpcenum\n"
+	echo -ne " 233. aress31/xmlrpc-bruteforcer\t\t313. s4vitar/rpcenum\t\t\t\t570. hegusung/RPCScan\n"
 	echo "$SEP"
 	echo "RSA"
 	echo -ne " 57. Ganapati/RsaCtfTool\t\t\t69. zweisamkeit/RSHack\n"
@@ -3052,6 +3052,9 @@ while true; do
 	;;
 	"569")
 		Clona "commixproject/commix"
+	;;
+	"570")
+		Clona "hegusung/RPCScan"
 	;;
 	*)
 		echo "error, invalid choice"
