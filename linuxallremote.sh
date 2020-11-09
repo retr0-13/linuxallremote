@@ -254,7 +254,7 @@ while true; do
 	echo -ne " 196. thelinuxchoice/spyeye\t\t\t353. ujjwal96/njaXt\t\t\t\t\t354. toxic-ig/SQL-XSS\n"
 	echo -ne " 355. swisskyrepo/SSRFmap\t\t\t453. zt2/sqli-hunter\t\t\t\t\t467. JohnTroony/Blisqy\n"
 	echo -ne " 518. chinarulezzz/pixload/bmp\t\t\t519. chinarulezzz/pixload/gif\t\t\t\t520. chinarulezzz/pixload/jpg\n"
-	echo -ne " 521. chinarulezzz/pixload/png\t\t\t522. chinarulezzz/pixload/webp\n"
+	echo -ne " 521. chinarulezzz/pixload/png\t\t\t522. chinarulezzz/pixload/webp\t\t\t\t569. commixproject/commix\n"
 	echo "$SEP"
 	echo "IIS"
 	echo -ne " 22. 0x09AL/IIS-Raid\t\t\t\t23. thelinuxchoice/evilreg\t\t\t\t24. thelinuxchoice/eviloffice\n"
@@ -317,7 +317,8 @@ while true; do
 	echo -ne " 485. r3dxpl0it/TheXFramework\t\t\t488. Taguar258/Raven-Storm\t\t\t\t514. maxlandon/wiregost\n"
 	echo -ne " 523. nerodtm/ReconCobra---Complete-Automated-Pentest-Framework-For-Information-Gathering\n"
 	echo -ne " 527. Moham3dRiahi/XAttacker\t\t\t529. riusksk/StrutScan\t\t\t\t\t530. AlisamTechnology/ATSCAN\n"
-	echo -ne " 554. FluxionNetwork/fluxion\t\t\t557. knassar702/scant3r\n"
+	echo -ne " 554. FluxionNetwork/fluxion\t\t\t557. knassar702/scant3r\t\t\t\t\t567. Leviathan36/kaboom\n"
+	echo -ne " 568. archerysec/archerysec\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
@@ -522,7 +523,7 @@ while true; do
 	echo -ne " 302. duyet/bruteforce-database\t\t\t318. digininja/pipal\t\t\t\t\t535. nil0x42/cracking-utils\n"
 	echo "$SEP"
 	echo "WORDPRESS"
-	echo -ne " 468. n00py/WPForce\t\t\t\t469. BlackXploits/WPBrute\n"
+	echo -ne " 468. n00py/WPForce\t\t\t\t469. BlackXploits/WPBrute\t\t\t\t566. 0xAbdullah/0xWPBF\n"
 	echo "$SEP"
 	echo "XSS"
 	echo -ne " 55. hahwul/dalfox\t\t\t\t164. s0md3v/XSStrike\t\t\t\t\t44. lc/gau\n"
@@ -3039,6 +3040,18 @@ while true; do
 	;;
 	"565")
 		Scarica "$ENTRAW""AnonymousAt3/cyberdoor/main/cyberdoor"
+	;;
+	"566")
+		Clona "0xAbdullah/0xWPBF"
+	;;
+	"567")
+		Clona "Leviathan36/kaboom"
+	;;
+	"568")
+		Clona "archerysec/archerysec"
+	;;
+	"569")
+		Clona "commixproject/commix"
 	;;
 	*)
 		echo "error, invalid choice"
