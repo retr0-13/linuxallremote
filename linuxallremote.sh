@@ -180,7 +180,7 @@ while true; do
 	echo -ne " 342. vivisect/vivisect\n"
 	echo "$SEP"
 	echo "DISCOVERING"
-	echo -ne " 559. epi052/feroxbuster\n"
+	echo -ne " 559. epi052/feroxbuster\t\t\t\t573. robre/scripthunter\n"
 	echo "$SEP"
 	echo "DNS"
 	echo -ne " 30. m57/dnsteal\t\t\t\t31. skelsec/jackdaw\t\t\t\t\t35. projectdiscovery/dnsprobe\n"
@@ -3066,6 +3066,9 @@ while true; do
 	"572")
 		Scarica "$ENTRAW""1N3/ReverseAPK/master/reverse-apk"
 		Scarica "$ENTRAW""1N3/ReverseAPK/master/install"
+	;;
+	"573")
+		Clona "robre/scripthunter"
 	;;
 	*)
 		echo "error, invalid choice"
