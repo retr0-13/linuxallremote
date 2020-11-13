@@ -513,7 +513,7 @@ while true; do
 	echo -ne " 471. jimywork/shodanwave\t\t\t479. SuperBuker/CamHell\t\t\t\t\t564. vanhienfs/saycheese\n"
 	echo "$SEP"
 	echo "WEBSHELL"
-	echo -ne " 562. tennc/webshell\n"
+	echo -ne " 562. tennc/webshell\t\t\t\t574. epinna/weevely3\n"
 	echo "$SEP"
 	echo "WIFI"
 	echo -ne " 540. blunderbuss-wctf/wacker\t\t\t550. calebmadrigal/trackerjacker\n"
@@ -3069,6 +3069,9 @@ while true; do
 	;;
 	"573")
 		Clona "robre/scripthunter"
+	;;
+	"574")
+		Clona "epinna/weevely3"
 	;;
 	*)
 		echo "error, invalid choice"
