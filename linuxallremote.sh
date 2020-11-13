@@ -387,6 +387,9 @@ while true; do
 	echo "REVSHELL"
 	echo -ne " 515. 3v4Si0N/HTTP-revshell\n"
 	echo "$SEP"
+	echo "ROGUE ACCESS POINT"
+	echo -ne " 575. MS-WEB-BN/c41n\n"
+	echo "$SEP"
 	echo "ROUTERS"
 	echo -ne " 145. threat9/routersploit\n"
 	echo "$SEP"
@@ -3072,6 +3075,9 @@ while true; do
 	;;
 	"574")
 		Clona "epinna/weevely3"
+	;;
+	"575")
+		Clona "MS-WEB-BN/c41n"
 	;;
 	*)
 		echo "error, invalid choice"
