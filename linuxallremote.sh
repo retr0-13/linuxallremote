@@ -425,7 +425,7 @@ while true; do
 	echo -ne " 68. m4ll0k/SMBrute\t\t\t\t58. mvelazc0/Invoke-SMBLogin/smblogin\t\t\t65. ShawnDEvans/smbmap\n"
 	echo -ne " 157. 0v3rride/Enum4LinuxPy\t\t\t8. ZecOps/CVE-2020-0796-RCE-POC\t\t\t\t91. NickSanzotta/smbShakedown\n"
 	echo -ne " 92. quickbreach/SMBetray\t\t\t93. aress31/smbaudit\t\t\t\t\t312. T-S-A/smbspider\n"
-	echo -ne " 333. CoreSecurity/impacket/smbserver\n"
+	echo -ne " 333. CoreSecurity/impacket/smbserver\t\t578. CiscoCXSecurity/creddump7\n"
 	echo "$SEP"
 	echo "SMS"
 	echo -ne " 388. sharyer/GSMEvil/SmsEvil\n"
@@ -3084,6 +3084,11 @@ while true; do
 	;;
 	"577")
 		Clona "KuroLabs/stegcloak"
+	;;
+	"578")
+		Scarica "$ENTRAW""CiscoCXSecurity/creddump7/master/cachedump.py"
+		Scarica "$ENTRAW""CiscoCXSecurity/creddump7/master/lsadump.py"
+		Scarica "$ENTRAW""CiscoCXSecurity/creddump7/master/pwdump.py"
 	;;
 	*)
 		echo "error, invalid choice"
