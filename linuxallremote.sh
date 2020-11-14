@@ -113,7 +113,7 @@ while true; do
 	echo -ne " 572. 1N3/ReverseAPK\n"
 	echo "$SEP"
 	echo "ANTI-FORENSICS - SECURITY"
-	echo -ne " 480. AndyCyberSec/direncrypt\n"
+	echo -ne " 480. AndyCyberSec/direncrypt\t\t\t577. KuroLabs/stegcloak\n"
 	echo "$SEP"
 	echo "APACHE"
 	echo -ne " 278. mgeeky/tomcatWarDeployer\t\t\t280. hypn0s/AJPy\n"
@@ -3081,6 +3081,9 @@ while true; do
 	;;
 	"576")
 		Clona "Veil-Framework/Veil"
+	;;
+	"577")
+		Clona "KuroLabs/stegcloak"
 	;;
 	*)
 		echo "error, invalid choice"
