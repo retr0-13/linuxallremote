@@ -368,6 +368,9 @@ while true; do
 	echo "RAR"
 	echo -ne " 273. dunossauro/PyRarCrack/pyrarcrack\n"
 	echo "$SEP"
+	echo "RASPBERRY"
+	echo -ne " 584. BusesCanFly/rpi-hunter\n"
+	echo "$SEP"
 	echo "RAT"
 	echo -ne " 536. Pure-L0G1C/Loki\n"
 	echo "$SEP"
@@ -3105,6 +3108,9 @@ while true; do
 	;;
 	"583")
 		Scarica "$ENTRAW""ammarx/ARP-spoofing/master/src/mmattack.py"
+	;;
+	"584")
+		Scarica "$ENTRAW""BusesCanFly/rpi-hunter/master/rpi-hunter.py"
 	;;
 	*)
 		echo "error, invalid choice"
