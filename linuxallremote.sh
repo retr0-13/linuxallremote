@@ -227,7 +227,7 @@ while true; do
 	echo "FOOTPRINTING - FINGERPRINTING"
 	echo -ne " 132. Zarcolio/sitedorks\t\t\t133. s0md3v/photon\t\t\t\t\t276. m3n0sd0n4ld/uDork\n"
 	echo -ne " 414. hhhrrrttt222111/Dorkify\t\t\t415. Chr0m0s0m3s/DeadTrap\t\t\t\t420. techgaun/github-dorks\n"
-	echo -ne " 531. CERT-Polska/hfinger\n"
+	echo -ne " 531. CERT-Polska/hfinger\t\t\t581. EnableSecurity/wafw00f\n"
 	echo "$SEP"
 	echo "FTP"
 	echo -ne " 147. WalderlanSena/ftpbrute\t\t\t149. AlphaRoy14/km985ytv-ftp-exploit\n"
@@ -3096,6 +3096,9 @@ while true; do
 	;;
 	"580")
 		Clona "JPaulMora/Pyrit"
+	;;
+	"581")
+		Clona "EnableSecurity/wafw00f"
 	;;
 	*)
 		echo "error, invalid choice"
