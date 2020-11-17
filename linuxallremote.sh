@@ -519,7 +519,7 @@ while true; do
 	echo -ne " 562. tennc/webshell\t\t\t\t574. epinna/weevely3\n"
 	echo "$SEP"
 	echo "WIFI"
-	echo -ne " 540. blunderbuss-wctf/wacker\t\t\t550. calebmadrigal/trackerjacker\n"
+	echo -ne " 540. blunderbuss-wctf/wacker\t\t\t550. calebmadrigal/trackerjacker\t\t\t\t580. JPaulMora/Pyrit\n"
 	echo "$SEP"
 	echo "WINRM"
 	echo -ne " 42. Hackplayers/evil-winrm\n"
@@ -3093,6 +3093,9 @@ while true; do
 	"579")
 		Scarica "$ENTRAW""AnonymousAt3/cybermap/main/cybermap.sh"
 		Scarica "$ENTRAW""AnonymousAt3/cybermap/main/ip-list.txt"
+	;;
+	"580")
+		Clona "JPaulMora/Pyrit"
 	;;
 	*)
 		echo "error, invalid choice"
