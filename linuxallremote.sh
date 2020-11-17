@@ -119,7 +119,7 @@ while true; do
 	echo -ne " 278. mgeeky/tomcatWarDeployer\t\t\t280. hypn0s/AJPy\n"
 	echo "$SEP"
 	echo "ARP"
-	echo -ne " 462. royhills/arp-scan\n"
+	echo -ne " 462. royhills/arp-scan\t\t\t\t582. byt3bl33d3r/arpspoof\n"
 	echo "$SEP"
 	echo "AZURE"
 	echo -ne " 32. dirkjanm/ROADtools\n"
@@ -3099,6 +3099,9 @@ while true; do
 	;;
 	"581")
 		Clona "EnableSecurity/wafw00f"
+	;;
+	"582")
+		Clona "byt3bl33d3r/arpspoof"
 	;;
 	*)
 		echo "error, invalid choice"
