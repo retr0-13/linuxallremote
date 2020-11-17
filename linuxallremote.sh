@@ -119,7 +119,7 @@ while true; do
 	echo -ne " 278. mgeeky/tomcatWarDeployer\t\t\t280. hypn0s/AJPy\n"
 	echo "$SEP"
 	echo "ARP"
-	echo -ne " 462. royhills/arp-scan\t\t\t\t582. byt3bl33d3r/arpspoof\n"
+	echo -ne " 462. royhills/arp-scan\t\t\t\t582. byt3bl33d3r/arpspoof\t\t\t\t\t583. ammarx/ARP-spoofing/mmattack\n"
 	echo "$SEP"
 	echo "AZURE"
 	echo -ne " 32. dirkjanm/ROADtools\n"
@@ -3102,6 +3102,9 @@ while true; do
 	;;
 	"582")
 		Clona "byt3bl33d3r/arpspoof"
+	;;
+	"583")
+		Scarica "$ENTRAW""ammarx/ARP-spoofing/master/src/mmattack.py"
 	;;
 	*)
 		echo "error, invalid choice"
