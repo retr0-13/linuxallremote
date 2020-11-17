@@ -322,7 +322,7 @@ while true; do
 	echo -ne " 523. nerodtm/ReconCobra---Complete-Automated-Pentest-Framework-For-Information-Gathering\n"
 	echo -ne " 527. Moham3dRiahi/XAttacker\t\t\t529. riusksk/StrutScan\t\t\t\t\t530. AlisamTechnology/ATSCAN\n"
 	echo -ne " 554. FluxionNetwork/fluxion\t\t\t557. knassar702/scant3r\t\t\t\t\t567. Leviathan36/kaboom\n"
-	echo -ne " 568. archerysec/archerysec\n"
+	echo -ne " 568. archerysec/archerysec\t\t\t579. AnonymousAt3/cybermap\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
@@ -3089,6 +3089,10 @@ while true; do
 		Scarica "$ENTRAW""CiscoCXSecurity/creddump7/master/cachedump.py"
 		Scarica "$ENTRAW""CiscoCXSecurity/creddump7/master/lsadump.py"
 		Scarica "$ENTRAW""CiscoCXSecurity/creddump7/master/pwdump.py"
+	;;
+	"579")
+		Scarica "$ENTRAW""AnonymousAt3/cybermap/main/cybermap.sh"
+		Scarica "$ENTRAW""AnonymousAt3/cybermap/main/ip-list.txt"
 	;;
 	*)
 		echo "error, invalid choice"
