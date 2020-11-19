@@ -93,7 +93,7 @@ while true; do
 	echo "$SEP"
 	echo "ACTIVE DIRECTORY"
 	echo -ne " 27. Greenwolf/Spray\t\t\t\t229. DanMcInerney/icebreaker\t\t\t\t283. optiv/Talon\n"
-	echo -ne " 524. tothi/rbcd-attack/rbcd\n"
+	echo -ne " 524. tothi/rbcd-attack/rbcd\t\t\t587. PaperMtn/lil-pwny\n"
 	echo "$SEP"
 	echo "ACQUISITION"
 	echo -ne " 171. Silv3rHorn/ArtifactExtractor\t\t172. SekoiaLab/Fastir_Collector\n"
@@ -3120,6 +3120,9 @@ while true; do
 	;;
 	"586")
 		Clona "saeeddhqan/evine"
+	;;
+	"587")
+		Clona "PaperMtn/lil-pwny"
 	;;
 	*)
 		echo "error, invalid choice"
