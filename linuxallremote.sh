@@ -251,7 +251,7 @@ while true; do
 	echo -ne " 472. random-robbie/My-Shodan-Scripts\t\t473. woj-ciech/Kamerka-GUI\t\t\t\t474. m4ll0k/Shodanfy.py\n"
 	echo -ne " 477. gelim/censys\t\t\t\t478. twelvesec/gasmask\t\t\t\t\t476. sdnewhop/grinder\n"
 	echo -ne " 486. sowdust/tafferugli\t\t\t537. adnane-X-tebbaa/Katana\t\t\t\t555. m8r0wn/subscraper\n"
-	echo -ne " 560. Datalux/Osintgram\t\t\t\t585. thewhiteh4t/FinalRecon\n"
+	echo -ne " 560. Datalux/Osintgram\t\t\t\t585. thewhiteh4t/FinalRecon\t\t\t\t588. AzizKpln/Moriarty-Project\n"
 	echo "$SEP"
 	echo "GIT - REPOS"
 	echo -ne " 487. arthaud/git-dumper\t\t\t553. Ebryx/GitDump\n"
@@ -3123,6 +3123,9 @@ while true; do
 	;;
 	"587")
 		Clona "PaperMtn/lil-pwny"
+	;;
+	"588")
+		Clona "AzizKpln/Moriarty-Project"
 	;;
 	*)
 		echo "error, invalid choice"
