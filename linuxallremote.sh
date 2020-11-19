@@ -160,6 +160,9 @@ while true; do
 	echo -ne " 543. praetorian-inc/trident_0.1.3_linux_i386\t\t\t544. praetorian-inc/trident_0.1.3_linux_x86_64\t\t\t545. praetorian-inc/trident\n"
 	echo -ne " 563. Viralmaniar/Passhunt\n"
 	echo "$SEP"
+	echo "CRAWLER"
+	echo -ne " 586. saeeddhqan/evine\n"
+	echo "$SEP"
 	echo "CSRF - XSRF"
 	echo -ne " 406. 0xInfection/XSRFProbe\n"
 	echo "$SEP"
@@ -3114,6 +3117,9 @@ while true; do
 	;;
 	"585")
 		Clona "thewhiteh4t/FinalRecon"
+	;;
+	"586")
+		Clona "saeeddhqan/evine"
 	;;
 	*)
 		echo "error, invalid choice"
