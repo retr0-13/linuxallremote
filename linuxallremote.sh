@@ -214,7 +214,6 @@ while true; do
 	echo "$SEP"
 	echo "EXFILTRATION"
 	echo -ne " 314. danielwolfmann/Invoke-WordThief/logger\t\t\t593. TryCatchHCF/PacketWhisper\n"
-
 	echo "$SEP"
 	echo "EXPLOIT"
         echo -ne " 10. exploit-db/linux - remote scripts\t\t11. exploit-db/linux_x86 - remote scripts\t\t12. exploit-db/linux_x86-64 - remote scripts\n"
