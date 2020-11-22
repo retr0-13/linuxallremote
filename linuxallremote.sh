@@ -213,7 +213,8 @@ while true; do
 	echo -ne " 571. sensepost/ruler\n"
 	echo "$SEP"
 	echo "EXFILTRATION"
-	echo -ne " 314. danielwolfmann/Invoke-WordThief/logger\n"
+	echo -ne " 314. danielwolfmann/Invoke-WordThief/logger\t\t\t593. TryCatchHCF/PacketWhisper\n"
+
 	echo "$SEP"
 	echo "EXPLOIT"
         echo -ne " 10. exploit-db/linux - remote scripts\t\t11. exploit-db/linux_x86 - remote scripts\t\t12. exploit-db/linux_x86-64 - remote scripts\n"
@@ -386,7 +387,7 @@ while true; do
 	echo -ne " 131. leobeosab/sharingan\t\t\t94. samhaxr/recox\t\t\t\t\t129. sowdust/ffff\n"
 	echo -ne " 214. j3ssie/Osmedeus\t\t\t\t242. smicallef/spiderfoot\t\t\t\t308. yogeshojha/rengine\n"
 	echo -ne " 390. lanmaster53/recon-ng\t\t\t391. methos2016/recon-ng\t\t\t\t501. LukaSikic/subzy\n"
-	echo -ne " 556. LordNeoStark/tugarecon\n"
+	echo -ne " 556. LordNeoStark/tugarecon\t\t\t594. r3vn/badKarma\n"
 	echo "$SEP"
 	echo "REVERSING"
 	echo -ne " 361. yeggor/UEFI_RETool\n"
@@ -527,6 +528,7 @@ while true; do
 	echo "$SEP"
 	echo "WIFI"
 	echo -ne " 540. blunderbuss-wctf/wacker\t\t\t550. calebmadrigal/trackerjacker\t\t\t\t580. JPaulMora/Pyrit\n"
+	echo -ne " 591. hash3liZer/WiFiBroot\t\t\t592. SValkanov/wifivoid\n"
 	echo "$SEP"
 	echo "WINRM"
 	echo -ne " 42. Hackplayers/evil-winrm\n"
@@ -3133,6 +3135,18 @@ while true; do
 	;;
 	"590")
 		Clona "1tayH/noisy"
+	;;
+	"591")
+		Clona "hash3liZer/WiFiBroot"
+	;;
+	"592")
+		Clona "SValkanov/wifivoid"
+	;;
+	"593")
+		Clona "TryCatchHCF/PacketWhisper"
+	;;
+	"594")
+		Clona "r3vn/badKarma"
 	;;
 	*)
 		echo "error, invalid choice"
