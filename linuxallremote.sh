@@ -3167,7 +3167,7 @@ while true; do
 				read -p "(example, admin or admin%password1234): " USR
 				if [[ "$USR" != "" ]];
 				then
-					smbget -R "smb://""$IP""/""$FLD" -U $USR
+					smbget -R "smb://""$IP""/""$FLD" -U "$USR"
 				fi
 			fi
 		fi
