@@ -511,6 +511,9 @@ while true; do
 	echo "VOIP"
 	echo -ne " 461. haasosaurus/ace-voip\n"
 	echo "$SEP"
+	echo "VPN"
+	echo -ne " 595. 7Elements/Fortigate\n"
+	echo "$SEP"
 	echo "WEBAPP"
 	echo -ne " 96. m4ll0k/WPSeku\t\t\t\t97. swisskyrepo/Wordpresscan\t\t\t\t98. RamadhanAmizudin/Wordpress-scanner\n"
 	echo -ne " 122. rezasp/joomscan\t\t\t\t123. rastating/joomlavs\t\t\t\t\t124. RedVirus0/BlackDir-Framework\n"
@@ -3146,6 +3149,10 @@ while true; do
 	;;
 	"594")
 		Clona "r3vn/badKarma"
+	;;
+	"595")
+		Scarica "$ENTRAW""7Elements/Fortigate/master/fortigate.py"
+		Scarica "$ENTRAW""7Elements/Fortigate/master""$RQRM"
 	;;
 	*)
 		echo "error, invalid choice"
