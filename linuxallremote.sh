@@ -3155,13 +3155,13 @@ while true; do
 		Scarica "$ENTRAW""7Elements/Fortigate/master""$RQRM"
 	;;
 	"596")
-		read -p "Digit an IP target" IP
+		read -p "Digit an IP target without protocol: " IP
 		if [[ "$IP" != "" ]];
 		then
-			read -p "Digit a folder shared im smb or samba from IP target" FLD
+			read -p "Digit a folder shared in smb or samba from IP target: " FLD
 			if [[ "$FLD" != "" ]];
 			then
-				read -p "Digit an useename of IP target" USR
+				read -p "Digit an username of IP target: " USR
 				if [[ "$USR" != "" ]];
 				then
 					smbget -R "smb://""$IP""/""$FLD" -U $USR
