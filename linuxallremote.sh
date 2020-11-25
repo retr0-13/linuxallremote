@@ -240,7 +240,7 @@ while true; do
 	echo "FUZZING"
 	echo -ne " 34. devanshbatham/ParamSpider\t\t\t56. jtpereyda/boofuzz\t\t\t\t\t50. fuzzdb-project/fuzzdb\n"
 	echo -ne " 130. google/AFL\t\t\t\t72. corelan/mona\t\t\t\t\t73. OpenRCE/sulley\n"
-	echo -ne " 465. wireghoul/dotdotpwn\t\t\t517. dwisiswant0/crlfuzz\n"
+	echo -ne " 465. wireghoul/dotdotpwn\t\t\t517. dwisiswant0/crlfuzz\t\t\t\t597. googleprojectzero/fuzzilli\n"
 	echo "$SEP"
 	echo "GATHERING - OSINT"
 	echo -ne " 168. Screetsec/Sudomy\t\t\t\t177. HightechSec/git-scanner/gitscanner\t\t\t89. urbanadventurer/WhatWeb\n"
@@ -3171,6 +3171,9 @@ while true; do
 				fi
 			fi
 		fi
+	;;
+	"597")
+		Clona "googleprojectzero/fuzzilli"
 	;;
 	*)
 		echo "error, invalid choice"
