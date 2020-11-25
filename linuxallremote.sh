@@ -139,7 +139,7 @@ while true; do
 	echo "$SEP"
 	echo "C2 - Command and Control"
 	echo -ne " 499. hyp3rlinx/DarkFinger-C2\t\t\t500. nettitude/PoshC2\t\t\t\t\t502. sensepost/godoh\n"
-	echo -ne " 503. lu4p/ToRat\n"
+	echo -ne " 503. lu4p/ToRat\t\t\t\t602. nil0x42/phpsploit\n"
 	echo "$SEP"
 	echo "CHAT ENCRYPTED"
 	echo -ne " 376. mjm918/python-AES-encryption-socket-secure-chat\t\t\t\t\t\t\t377. SusmithKrishnan/neuron\n"
@@ -3204,6 +3204,9 @@ while true; do
 	"601")
 		Scarica "$ENTRAW""UnaPibaGeek/ctfr/master/ctfr.py"
 		Scarica "$ENTRAW""UnaPibaGeek/ctfr/master/""$RQRM"
+	;;
+	"602")
+		Clona "nil0x42/phpsploit"
 	;;
 	*)
 		echo "error, invalid choice"
