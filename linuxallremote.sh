@@ -504,6 +504,7 @@ while true; do
 	echo -ne " 389. packets capture\t\t\t\t416. try to install repository\t\t\t\t417. get email addresses (mx data)\n"
 	echo -ne " 429. wipe an external device\t\t\t430. wipe a file\t\t\t\t\t431. shred a file\n"
 	echo -ne " 561. get a remote file in base64 encode\t596. download all files inside a folder shared via smb or samba\n"
+	echo -ne " 598. get some useful files from remote url or ip\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -3174,6 +3175,14 @@ while true; do
 	;;
 	"597")
 		Clona "googleprojectzero/fuzzilli"
+	;;
+	"598")
+		echo "Digit a remote URL or IP target with protocol"
+		read -p "(example, http://site.web or http://192.168.0.12): " URL
+		if [[ "$URL" != "" ]];
+		then
+			for FILE in "robots.txt" ".htaccess" "condig.php" "sitemap.xml" "phpinfo.php" "wp-config.php"; do wget "$URL""/""$FILE"; done
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
