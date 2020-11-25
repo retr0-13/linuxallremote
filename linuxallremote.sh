@@ -3203,7 +3203,7 @@ while true; do
 	;;
 	"601")
 		Scarica "$ENTRAW""UnaPibaGeek/ctfr/master/ctfr.py"
-		Scarica "$ENTRAW""UnaPibaGeek/ctfr/master/""$RQRM"
+		Scarica "$ENTRAW""UnaPibaGeek/ctfr/master""$RQRM"
 	;;
 	"602")
 		Clona "nil0x42/phpsploit"
