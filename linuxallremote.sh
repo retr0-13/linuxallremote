@@ -386,7 +386,7 @@ while true; do
 	echo -ne " 131. leobeosab/sharingan\t\t\t94. samhaxr/recox\t\t\t\t\t129. sowdust/ffff\n"
 	echo -ne " 214. j3ssie/Osmedeus\t\t\t\t242. smicallef/spiderfoot\t\t\t\t308. yogeshojha/rengine\n"
 	echo -ne " 390. lanmaster53/recon-ng\t\t\t391. methos2016/recon-ng\t\t\t\t501. LukaSikic/subzy\n"
-	echo -ne " 556. LordNeoStark/tugarecon\t\t\t594. r3vn/badKarma\n"
+	echo -ne " 556. LordNeoStark/tugarecon\t\t\t594. r3vn/badKarma\t\t\t\t\t599. utkusen/urlhunter\n"
 	echo "$SEP"
 	echo "REVERSING"
 	echo -ne " 361. yeggor/UEFI_RETool\n"
@@ -3183,6 +3183,9 @@ while true; do
 		then
 			for FILE in "robots.txt" ".htaccess" "condig.php" "sitemap.xml" "phpinfo.php" "wp-config.php"; do wget "$URL""/""$FILE"; done
 		fi
+	;;
+	"599")
+		Clona "utkusen/urlhunter"
 	;;
 	*)
 		echo "error, invalid choice"
