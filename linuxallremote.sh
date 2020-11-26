@@ -471,7 +471,7 @@ while true; do
 	echo "$SEP"
 	echo "STEGANALYSIS"
 	echo -ne " 270. Va5c0/Steghide-Brute-Force-Tool/steg_brute\t\t\t\t\t\t\t271. daniellerch/aletheia\n"
-	echo -ne " 272. Diefunction/stegbrute\n"
+	echo -ne " 272. Diefunction/stegbrute\t\t\t\t603. Paradoxis/StegCracker\n"
 	echo "$SEP"
 	echo "TACACS"
 	echo -ne " 187. GrrrDog/TacoTaco\n"
@@ -3207,6 +3207,9 @@ while true; do
 	;;
 	"602")
 		Clona "nil0x42/phpsploit"
+	;;
+	"603")
+		Clona "Paradoxis/StegCracker"
 	;;
 	*)
 		echo "error, invalid choice"
