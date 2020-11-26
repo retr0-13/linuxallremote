@@ -327,6 +327,7 @@ while true; do
 	echo -ne " 527. Moham3dRiahi/XAttacker\t\t\t529. riusksk/StrutScan\t\t\t\t\t530. AlisamTechnology/ATSCAN\n"
 	echo -ne " 554. FluxionNetwork/fluxion\t\t\t557. knassar702/scant3r\t\t\t\t\t567. Leviathan36/kaboom\n"
 	echo -ne " 568. archerysec/archerysec\t\t\t579. AnonymousAt3/cybermap\t\t\t\t604. qsecure-labs/overlord\n"
+	echo -ne " 606. Chudry/Xerror\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
@@ -3216,6 +3217,9 @@ while true; do
 	;;
 	"605")
 		Clona "shadowlabscc/Kaiten"
+	;;
+	"606")
+		Clona "Chudry/Xerror"
 	;;
 	*)
 		echo "error, invalid choice"
