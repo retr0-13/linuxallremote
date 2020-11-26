@@ -207,7 +207,7 @@ while true; do
 	echo "EVASION - BYPASSING"
 	echo -ne " 167. govolution/avet\t\t\t\t134. khalilbijjou/WAFNinja\t\t\t\t174. stormshadow07/HackTheWorld\n"
 	echo -ne " 268. wintrmvte/SNOWCRASH\t\t\t275. CBHue/PyFuscation\t\t\t\t\t293. OsandaMalith/PE2HTML\n"
-	echo -ne " 309. mdsecactivebreach/Chameleon\t\t\t576. Veil-Framework/Veil\n"
+	echo -ne " 309. mdsecactivebreach/Chameleon\t\t\t576. Veil-Framework/Veil\t\t\t\t605. shadowlabscc/Kaiten\n"
 	echo "$SEP"
 	echo "EXCHANGE"
 	echo -ne " 571. sensepost/ruler\n"
@@ -3213,6 +3213,9 @@ while true; do
 	;;
 	"604")
 		Clona "qsecure-labs/overlord"
+	;;
+	"605")
+		Clona "shadowlabscc/Kaiten"
 	;;
 	*)
 		echo "error, invalid choice"
