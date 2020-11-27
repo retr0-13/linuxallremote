@@ -367,7 +367,7 @@ while true; do
 	echo -ne " 303. KTN1990/PostgreSQL--Attack-on-default-password-AUTOEXPLOITING-/DB\n"
 	echo "$SEP"
 	echo "PROXY"
-	echo -ne " 162. fozavci/viproy-VoIPkit\n"
+	echo -ne " 162. fozavci/viproy-VoIPkit\t\t\t\t610. audibleblink/doxycannon\n"
 	echo "$SEP"
 	echo "RAINBOW TABLE"
 	echo -ne " 260. clu8/RainbowTable\t\t\t\t261. zcdziura/leprechaun\t\t\t\t262. CyberKnight00/RainbowHash\n"
@@ -3232,6 +3232,9 @@ while true; do
 	;;
 	"609")
 		Scarica "$ENTRAW""pentestmonkey/finger-user-enum/master/finger-user-enum.pl"
+	;;
+	"610")
+		Clona "audibleblink/doxycannon"
 	;;
 	*)
 		echo "error, invalid choice"
