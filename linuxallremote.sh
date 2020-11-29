@@ -158,7 +158,7 @@ while true; do
 	echo -ne " 126. timbo05sec/autocrack\t\t\t127. igorMatsunaga/autoCrack\t\t\t\t247. mufeedvh/basecrack\n"
 	echo -ne " 475. MS-WEB-BN/h4rpy\t\t\t\t506. Aarif123456/passwordCracker\t\t\t507. GauthamGoli/rar-Password-Cracker/bruteforce\n"
 	echo -ne " 543. praetorian-inc/trident_0.1.3_linux_i386\t\t\t544. praetorian-inc/trident_0.1.3_linux_x86_64\t\t\t545. praetorian-inc/trident\n"
-	echo -ne " 563. Viralmaniar/Passhunt\n"
+	echo -ne " 563. Viralmaniar/Passhunt\t\t\t611. jmk-foofus/medusa\n"
 	echo "$SEP"
 	echo "CRAWLER"
 	echo -ne " 586. saeeddhqan/evine\n"
@@ -3235,6 +3235,9 @@ while true; do
 	;;
 	"610")
 		Clona "audibleblink/doxycannon"
+	;;
+	"611")
+		Clona "jmk-foofus/medusa"
 	;;
 	*)
 		echo "error, invalid choice"
