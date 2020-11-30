@@ -525,7 +525,7 @@ while true; do
 	echo -ne " 122. rezasp/joomscan\t\t\t\t123. rastating/joomlavs\t\t\t\t\t124. RedVirus0/BlackDir-Framework\n"
 	echo -ne " 198. wpscanteam/wpscan\t\t\t\t199. swisskyrepo/Wordpresscan\t\t\t\t200. 04x/WpscaN/ICgWpScaNNer\n"
 	echo -ne " 201. The404Hacking/wpscan\t\t\t202. drego85/JoomlaScan\t\t\t\t\t287. boku7/LibreHealth-authRCE\n"
-	echo -ne " 466. FortyNorthSecurity/EyeWitness\n"
+	echo -ne " 466. FortyNorthSecurity/EyeWitness\t\t614. dariusztytko/jwt-key-id-injector\n"
 	echo "$SEP"
 	echo "WEBCAMS"
 	echo -ne " 395. JettChenT/scan-for-webcams\t\t396. entynetproject/entropy\t\t\t\t397. indexnotfound404/spycam\n"
@@ -3245,6 +3245,9 @@ while true; do
 	"613")
 		Scarica "$ENTRAW""bdblackhat/admin-panel-finder/master/admin_panel_finder.py"
 		Scarica "$ENTRAW""bdblackhat/admin-panel-finder/master/link.txt"
+	;;
+	"614")
+		Scarica "$ENTRAW""dariusztytko/jwt-key-id-injector/master/injector.py"
 	;;
 	*)
 		echo "error, invalid choice"
