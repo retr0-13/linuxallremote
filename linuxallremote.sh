@@ -510,6 +510,7 @@ while true; do
 	echo -ne " 429. wipe an external device\t\t\t430. wipe a file\t\t\t\t\t431. shred a file\n"
 	echo -ne " 561. get a remote file in base64 encode\t596. download all files inside a folder shared via smb or samba\n"
 	echo -ne " 598. get some useful files from remote url or ip\t\t\t\t\t\t600. upload a shell with PUT method\n"
+	echo -ne " 615. install metasploit\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -3248,6 +3249,9 @@ while true; do
 	;;
 	"614")
 		Scarica "$ENTRAW""dariusztytko/jwt-key-id-injector/master/injector.py"
+	;;
+	"615")
+		pkg update && pkg upgrade -y && pkg install curl wget tsu wget git && wget Auxilus.github.io/metasploit.sh && bash metasploit.sh
 	;;
 	*)
 		echo "error, invalid choice"
