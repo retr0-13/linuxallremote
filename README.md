@@ -15,6 +15,7 @@ Over 600 tools and utilities:
 - attack other OS, Android too;
 - Forensics and Anti-Forensics tools;
 - cracking password;
+- install all hacking tools in Android Termux;
 
 and much more...
 
