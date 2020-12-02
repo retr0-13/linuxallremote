@@ -219,7 +219,7 @@ while true; do
         echo -ne " 10. exploit-db/linux - remote scripts\t\t11. exploit-db/linux_x86 - remote scripts\t\t12. exploit-db/linux_x86-64 - remote scripts\n"
 	echo -ne " 13. exploit-db/windows - remote scripts\t14. exploit-db/windows_x86 - remote scripts\t\t15. exploit-db/windows_x86-64 - remote scripts\n"
 	echo -ne " 16. sundaysec/Android-Exploits/remote\t\t17. offensive-security/exploitdb/android/remote\n"
-	echo -ne " 18. offensive-security/exploitdb/ios\n"
+	echo -ne " 18. offensive-security/exploitdb/ios\t\t617. Download an exploit from exploit-db site web\n"
 	echo "$SEP"
 	echo "EXTRA"
 	echo -ne " 252. LionSec/katoolin\n"
