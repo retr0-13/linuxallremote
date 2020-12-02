@@ -3256,6 +3256,14 @@ while true; do
 	"616")
 		Clona "rajkumardusad/Tool-X"
 	;;
+	"617")
+		echo "Digit an exploit file name without extension"
+		read -p "(example, 460): " EXPL
+		if [[ "$EXPL" != "" ]];
+		then
+			Scarica "https://www.exploit-db.com/download/""$EXPL"
+		fi
+	;;
 	*)
 		echo "error, invalid choice"
 	;;
