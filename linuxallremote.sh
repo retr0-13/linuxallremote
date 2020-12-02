@@ -157,7 +157,7 @@ while true; do
 	echo -ne " 83. s0md3v/Hash-Buster\t\t\t\t120. NetSPI/PS_MultiCrack\t\t\t\t41. shmilylty/cheetah\n"
 	echo -ne " 126. timbo05sec/autocrack\t\t\t127. igorMatsunaga/autoCrack\t\t\t\t247. mufeedvh/basecrack\n"
 	echo -ne " 475. MS-WEB-BN/h4rpy\t\t\t\t506. Aarif123456/passwordCracker\t\t\t507. GauthamGoli/rar-Password-Cracker/bruteforce\n"
-	echo -ne " 543. praetorian-inc/trident_0.1.3_linux_i386\t\t\t544. praetorian-inc/trident_0.1.3_linux_x86_64\t\t\t545. praetorian-inc/trident\n"
+	echo -ne " 543. praetorian-inc/trident_0.1.3_linux_i386\t544. praetorian-inc/trident_0.1.3_linux_x86_64\t\t545. praetorian-inc/trident\n"
 	echo -ne " 563. Viralmaniar/Passhunt\t\t\t611. jmk-foofus/medusa\t\t\t\t612. openwall/john\n"
 	echo "$SEP"
 	echo "CRAWLER"
@@ -510,7 +510,7 @@ while true; do
 	echo -ne " 429. wipe an external device\t\t\t430. wipe a file\t\t\t\t\t431. shred a file\n"
 	echo -ne " 561. get a remote file in base64 encode\t596. download all files inside a folder shared via smb or samba\n"
 	echo -ne " 598. get some useful files from remote url or ip\t\t\t\t\t\t600. upload a shell with PUT method\n"
-	echo -ne " 615. install metasploit\n"
+	echo -ne " 615. install metasploit\t\t\t\t618. enum users with finger\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -3262,6 +3262,22 @@ while true; do
 		if [[ "$EXPL" != "" ]];
 		then
 			Scarica "https://www.exploit-db.com/download/""$EXPL"
+		fi
+	;;
+	"618")
+		echo "Digit a remote IP"
+		read -p "(example, 192.168.1.12): " TRG
+		if [[ "$TRG" != "" ]];
+		then
+			echo "Digit a wordlist usernames file path"
+			read -p "(example, /usr/share/wordlist/users.txt): " USRF
+			if [[ "$USRF" != "" ]];
+			then
+				if [[ -f "$USRF" ]];
+				then
+					for USERN in $(cat "$USRF"); do finger -l "$USRF""@""$TRG"; done
+				fi
+			fi
 		fi
 	;;
 	*)
