@@ -556,6 +556,7 @@ while true; do
 	echo -ne " 176. sullo/nikto\t\t\t\t180. faizann24/XssPy\n"
 	echo -ne " 181. secdec/xssmap\t\t\t\t182. gbrindisi/xsssniper\t\t\t\t183. pwn0sec/PwnXSS\n"
 	echo -ne " 184. lwzSoviet/NoXss\t\t\t\t394. Jewel591/xssmap\t\t\t\t\t558. dwisiswant0/findom-xss\n"
+	echo -ne " 620. hahwul/XSpear\n"
 	echo "$SEP"
 	echo "ZIP"
 	echo -ne " 43. The404Hacking/ZIP-Password-BruteForcer\t237. mnismt/CompressedCrack\n"
@@ -3311,6 +3312,9 @@ while true; do
 	"619")
 		Scarica "$ENTRAW""cddmp/enum4linux-ng/master/enum4linux-ng.py"
 		Scarica "$ENTRAW""cddmp/enum4linux-ng/master""$RQRM"
+	;;
+	"620")
+		Clona "hahwul/XSpear"
 	;;
 	*)
 		echo "error, invalid choice"
