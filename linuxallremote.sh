@@ -203,6 +203,7 @@ while true; do
 	echo "$SEP"
 	echo "ENUMERATION"
 	echo -ne " 163. luke-goddard/enumy\t\t\t209. Knowledge-Wisdom-Understanding/recon\n"
+	echo -ne " 619. cddmp/enum4linux-ng\n"
 	echo "$SEP"
 	echo "EVASION - BYPASSING"
 	echo -ne " 167. govolution/avet\t\t\t\t134. khalilbijjou/WAFNinja\t\t\t\t174. stormshadow07/HackTheWorld\n"
@@ -3306,6 +3307,10 @@ while true; do
 				fi
 			fi
 		fi
+	;;
+	"619")
+		Scarica "$ENTRAW""cddmp/enum4linux-ng/master/enum4linux-ng.py"
+		Scarica "$ENTRAW""cddmp/enum4linux-ng/master""$RQRM"
 	;;
 	*)
 		echo "error, invalid choice"
