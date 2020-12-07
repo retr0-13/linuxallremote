@@ -552,7 +552,7 @@ while true; do
 	echo "WORDPRESS"
 	echo -ne " 468. n00py/WPForce\t\t\t\t469. BlackXploits/WPBrute\t\t\t\t566. 0xAbdullah/0xWPBF\n"
 	echo "$SEP"
-	echo "XSS"
+	echo "XSS - XPATH"
 	echo -ne " 55. hahwul/dalfox\t\t\t\t164. s0md3v/XSStrike\t\t\t\t\t44. lc/gau\n"
 	echo -ne " 176. sullo/nikto\t\t\t\t180. faizann24/XssPy\n"
 	echo -ne " 181. secdec/xssmap\t\t\t\t182. gbrindisi/xsssniper\t\t\t\t183. pwn0sec/PwnXSS\n"
