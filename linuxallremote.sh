@@ -5,6 +5,7 @@
 
 ENTSSL="https://github.com/"
 ENTRAW="https://raw.githubusercontent.com/"
+ENTLAB="https://gitlab.com/"
 RQRM="/requirements.txt"
 SEP=$(for (( I=0 ; I<$(tput cols) ; I++ )); do printf '_'; done)
 
