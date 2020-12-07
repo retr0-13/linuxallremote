@@ -557,7 +557,7 @@ while true; do
 	echo -ne " 176. sullo/nikto\t\t\t\t180. faizann24/XssPy\n"
 	echo -ne " 181. secdec/xssmap\t\t\t\t182. gbrindisi/xsssniper\t\t\t\t183. pwn0sec/PwnXSS\n"
 	echo -ne " 184. lwzSoviet/NoXss\t\t\t\t394. Jewel591/xssmap\t\t\t\t\t558. dwisiswant0/findom-xss\n"
-	echo -ne " 620. hahwul/XSpear\n"
+	echo -ne " 620. hahwul/XSpear\t\t\t\t623. r0oth3x49/Xpath\n"
 	echo "$SEP"
 	echo "ZIP"
 	echo -ne " 43. The404Hacking/ZIP-Password-BruteForcer\t237. mnismt/CompressedCrack\n"
@@ -3322,6 +3322,9 @@ while true; do
 	;;
 	"622")
 		wget --no-check-certificate "$ENTRAW""1Tech-X/Auxilus.github.io/master/metasploit.sh" -O metasploit.sh && bash metasploit.sh
+	;;
+	"623")
+		Clona "r0oth3x49/Xpath"
 	;;
 	*)
 		echo "error, invalid choice"
