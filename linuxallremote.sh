@@ -482,7 +482,7 @@ while true; do
 	echo -ne " 187. GrrrDog/TacoTaco\n"
 	echo "$SEP"
 	echo "TERMUX"
-	echo -ne "615. install metasploit first method\t\t\t622. install metasploit second method\t\t\t624. install sudo in termux\n"
+	echo -ne "615. install metasploit first method\t\t\t622. install metasploit second method\t\t\t624. install sudo (no rooting phone)\n"
 	echo "$SEP"
 	echo "TLS"
 	echo -ne " 189. GrrrDog/sni_bruter\t\t\t428. tintinweb/striptls\n"
