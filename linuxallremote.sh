@@ -3384,5 +3384,6 @@ while true; do
 		echo "error, invalid choice"
 	;;
 	esac
+	read -p "press ENTER to continue"
 	echo -ne "\n$SEP\n\n"
 done
