@@ -257,7 +257,7 @@ while true; do
 	echo -ne " 477. gelim/censys\t\t\t\t478. twelvesec/gasmask\t\t\t\t\t476. sdnewhop/grinder\n"
 	echo -ne " 486. sowdust/tafferugli\t\t\t537. adnane-X-tebbaa/Katana\t\t\t\t555. m8r0wn/subscraper\n"
 	echo -ne " 560. Datalux/Osintgram\t\t\t\t585. thewhiteh4t/FinalRecon\t\t\t\t588. AzizKpln/Moriarty-Project\n"
-	echo -ne " 589. mxrch/GHunt\t\t\t\t613. bdblackhat/admin-panel-finder\n"
+	echo -ne " 589. mxrch/GHunt\t\t\t\t613. bdblackhat/admin-panel-finder\t\t\t\t625. TermuxHacking000/phonia\n"
 	echo "$SEP"
 	echo "GIT - REPOS"
 	echo -ne " 487. arthaud/git-dumper\t\t\t553. Ebryx/GitDump\n"
@@ -332,7 +332,7 @@ while true; do
 	echo -ne " 527. Moham3dRiahi/XAttacker\t\t\t529. riusksk/StrutScan\t\t\t\t\t530. AlisamTechnology/ATSCAN\n"
 	echo -ne " 554. FluxionNetwork/fluxion\t\t\t557. knassar702/scant3r\t\t\t\t\t567. Leviathan36/kaboom\n"
 	echo -ne " 568. archerysec/archerysec\t\t\t579. AnonymousAt3/cybermap\t\t\t\t604. qsecure-labs/overlord\n"
-	echo -ne " 606. Chudry/Xerror\t\t\t\t616. rajkumardusad/Tool-X\n"
+	echo -ne " 606. Chudry/Xerror\t\t\t\t616. rajkumardusad/Tool-X\t\t\t\t\t626. GoVanguard/legion\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
@@ -3334,6 +3334,14 @@ while true; do
 		wget --no-check-certificate "$ENTLAB""st42/termux-sudo/-/raw/master/sudo" -O /data/data/com.termux/files/usr/bin/sudo
 		chmod 700 /data/data/com.termux/files/usr/bin/sudo
 	;;
+	"625")
+		Scarica "$ENTRAW""TermuxHacking000/phonia/main/phonia.sh"
+		Scarica "$ENTSSL""TermuxHacking000/phonia/raw/main/phonia.zip"
+	;;
+	"626")
+		Clona "GoVanguard/legion"
+	;;
+
 	*)
 		echo "error, invalid choice"
 	;;
