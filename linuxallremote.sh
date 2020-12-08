@@ -3285,7 +3285,7 @@ while true; do
 		Scarica "$ENTRAW""dariusztytko/jwt-key-id-injector/master/injector.py"
 	;;
 	"615")
-		pkg update && pkg upgrade -y && pkg install curl wget tsu wget git && wget "$ENTRAW""Hax4us/Metasploit_termux/master/metasploit.sh" && bash metasploit.sh
+		pkg update && pkg upgrade -y && pkg install curl wget tsu wget git && wget --no-check-certificate "$ENTRAW""Hax4us/Metasploit_termux/master/metasploit.sh" -O metasploit.sh && bash metasploit.sh
 	;;
 	"616")
 		Clona "rajkumardusad/Tool-X"
