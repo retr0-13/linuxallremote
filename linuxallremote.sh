@@ -522,7 +522,7 @@ while true; do
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
 	echo "$SEP"
 	echo "VOIP"
-	echo -ne " 461. haasosaurus/ace-voip\n"
+	echo -ne " 461. haasosaurus/ace-voip\t\t\t629. voipmonitor/sniffer\n"
 	echo "$SEP"
 	echo "VPN"
 	echo -ne " 595. 7Elements/Fortigate\n"
@@ -3379,6 +3379,9 @@ while true; do
 				fi
 			fi
 		fi
+	;;
+	"629")
+		Clona "voipmonitor/sniffer"
 	;;
 	*)
 		echo "error, invalid choice"
