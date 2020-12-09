@@ -160,6 +160,7 @@ while true; do
 	echo -ne " 475. MS-WEB-BN/h4rpy\t\t\t\t506. Aarif123456/passwordCracker\t\t\t507. GauthamGoli/rar-Password-Cracker/bruteforce\n"
 	echo -ne " 543. praetorian-inc/trident_0.1.3_linux_i386\t544. praetorian-inc/trident_0.1.3_linux_x86_64\t\t545. praetorian-inc/trident\n"
 	echo -ne " 563. Viralmaniar/Passhunt\t\t\t611. jmk-foofus/medusa\t\t\t\t\t612. openwall/john\n"
+	echo -ne " 630. beurtschipper/Depix\n"
 	echo "$SEP"
 	echo "CRAWLER"
 	echo -ne " 586. saeeddhqan/evine\n"
@@ -3382,6 +3383,9 @@ while true; do
 	;;
 	"629")
 		Clona "voipmonitor/sniffer"
+	;;
+	"630")
+		Clona "beurtschipper/Depix"
 	;;
 	*)
 		echo "error, invalid choice"
