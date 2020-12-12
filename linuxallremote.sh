@@ -389,6 +389,7 @@ while true; do
 	echo "RDP"
 	echo -ne " 86. ekultek/bluekeep\t\t\t\t328. citronneur/rdpy\t\t\t\t\t329. aerissecure/rdpy\n"
 	echo -ne " 330. fhirschmann/rdp\t\t\t\t452. Vulnerability-scanner/Lazy-RDP\t\t\t636. xFreed0m/RDPassSpray\n"
+	echo -ne " 637. Viralmaniar/Remote-Desktop-Caching\n"
 	echo "$SEP"
 	echo "RECONIZING"
 	echo -ne " 131. leobeosab/sharingan\t\t\t94. samhaxr/recox\t\t\t\t\t129. sowdust/ffff\n"
@@ -3408,6 +3409,10 @@ while true; do
 	"636")
 		Scarica "$ENTRAW""xFreed0m/RDPassSpray/master/RDPassSpray.py"
 		Scarica "$ENTRAW""xFreed0m/RDPassSpray/master""$RQRM"
+	;;
+	"637")
+		Scarica "$ENTRAW""Viralmaniar/Remote-Desktop-Caching-/master/remotecache.py"
+		Scarica "$ENTRAW""Viralmaniar/Remote-Desktop-Caching-/master""$RQRM"
 	;;
 	*)
 		echo "error, invalid choice"
