@@ -487,7 +487,7 @@ while true; do
 	echo "$SEP"
 	echo "TERMUX"
 	echo -ne " 615. install metasploit first method\t\t\t622. install metasploit second method\t\t\t624. install sudo (no rooting phone)\n"
-	echo -ne " 633. TermuxHacking000/distrux\t\t634. TermuxHacking000/SysO-Termux\n"
+	echo -ne " 633. TermuxHacking000/distrux\t\t634. TermuxHacking000/SysO-Termux\t\t\t635. TermuxHacking000/PortmapSploit\n"
 	echo "$SEP"
 	echo "TLS"
 	echo -ne " 189. GrrrDog/sni_bruter\t\t\t428. tintinweb/striptls\n"
@@ -3400,6 +3400,10 @@ while true; do
 	;;
 	"634")
 		Clona "TermuxHacking000/SysO-Termux"
+	;;
+	"635")
+		Scarica "$ENTRAW""TermuxHacking000/PortmapSploit/master/PortmapSploit.sh"
+		Scarica "$ENTRAW""TermuxHacking000/PortmapSploit/master/Colors.sh"
 	;;
 	*)
 		echo "error, invalid choice"
