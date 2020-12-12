@@ -388,7 +388,7 @@ while true; do
 	echo "$SEP"
 	echo "RDP"
 	echo -ne " 86. ekultek/bluekeep\t\t\t\t328. citronneur/rdpy\t\t\t\t\t329. aerissecure/rdpy\n"
-	echo -ne " 330. fhirschmann/rdp\t\t\t\t452. Vulnerability-scanner/Lazy-RDP\n"
+	echo -ne " 330. fhirschmann/rdp\t\t\t\t452. Vulnerability-scanner/Lazy-RDP\t\t\t636. xFreed0m/RDPassSpray\n"
 	echo "$SEP"
 	echo "RECONIZING"
 	echo -ne " 131. leobeosab/sharingan\t\t\t94. samhaxr/recox\t\t\t\t\t129. sowdust/ffff\n"
@@ -3404,6 +3404,10 @@ while true; do
 	"635")
 		Scarica "$ENTRAW""TermuxHacking000/PortmapSploit/master/PortmapSploit.sh"
 		Scarica "$ENTRAW""TermuxHacking000/PortmapSploit/master/Colors.sh"
+	;;
+	"636")
+		Scarica "$ENTRAW""xFreed0m/RDPassSpray/master/RDPassSpray.py"
+		Scarica "$ENTRAW""xFreed0m/RDPassSpray/master""$RQRM"
 	;;
 	*)
 		echo "error, invalid choice"
