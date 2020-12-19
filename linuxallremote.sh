@@ -3226,7 +3226,7 @@ while true; do
 		read -p "(example, http://site.web or http://192.168.0.12): " URL
 		if [[ "$URL" != "" ]];
 		then
-			for FILE in "robots.txt" ".htaccess" "condig.php" "sitemap.xml" "phpinfo.php" "wp-config.php"; do wget "$URL""/""$FILE"; done
+			for FILE in "wp-includes/admin-bar.php" "robots.txt" ".htaccess" "condig.php" "sitemap.xml" "phpinfo.php" "wp-config.php"; do wget "$URL""/""$FILE"; done
 		fi
 	;;
 	"599")
