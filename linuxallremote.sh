@@ -370,6 +370,9 @@ while true; do
 	echo "POSTGRESQL"
 	echo -ne " 303. KTN1990/PostgreSQL--Attack-on-default-password-AUTOEXPLOITING-/DB\n"
 	echo "$SEP"
+	echo "PRINTER"
+	echo -ne " 639. RUB-NDS/PRET\n"
+	echo "$SEP"
 	echo "PROXY"
 	echo -ne " 162. fozavci/viproy-VoIPkit\t\t\t610. audibleblink/doxycannon\n"
 	echo "$SEP"
@@ -3421,6 +3424,9 @@ while true; do
 		then
 			echo 'stats items' | nc "$TIP" 11211 | grep -oe ':[0-9]*:' | grep -oe '[0-9]*' | sort | uniq | xargs -L1 -I{} bash -c 'echo "stats cachedump {} 1000" | nc localhost 11211'
 		fi
+	;;
+	"639")
+		Clona "RUB-NDS/PRET"
 	;;
 	*)
 		echo "error, invalid choice"
