@@ -462,7 +462,7 @@ while true; do
 	echo -ne " 78. cysboy/SnmpCrack\n"
 	echo "$SEP"
 	echo "SOCIAL MEDIA"
-	echo -ne " 427. yasserjanah/ZeS0MeBr\t\t\t551. Cyb0r9/SocialBox\n"
+	echo -ne " 427. yasserjanah/ZeS0MeBr\t\t\t551. Cyb0r9/SocialBox\t\t\t\t\t\t\t642. th3unkn0n/facebash-termux\n"
 	echo "$SEP"
 	echo "SPOOFING"
 	echo -ne " 290. initstring/evil-ssdp\t\t\t291. KALILINUXTRICKSYT/easymacchanger\t\t\t292. sbdchd/macchanger\n"
@@ -3436,6 +3436,10 @@ while true; do
 	;;
 	"641")
 		Clona "m4ll0k/Konan"
+	;;
+	"642")
+		Scarica "$ENTRAW""th3unkn0n/facebash-termux/master/facebash.sh"
+		Scarica "$ENTRAW""th3unkn0n/facebash-termux/master/install.sh"
 	;;
 	*)
 		echo "error, invalid choice"
