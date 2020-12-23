@@ -120,7 +120,7 @@ while true; do
 	echo -ne " 278. mgeeky/tomcatWarDeployer\t\t\t280. hypn0s/AJPy\n"
 	echo "$SEP"
 	echo "APPLE"
-	echo -ne " 644. Pr0x13/iDict\n"
+	echo -ne " 644. Pr0x13/iDict\t\t\t\t645. foozzi/iCloudBrutter\n"
 	echo "$SEP"
 	echo "ARP"
 	echo -ne " 462. royhills/arp-scan\t\t\t\t582. byt3bl33d3r/arpspoof\t\t\t\t\t583. ammarx/ARP-spoofing/mmattack\n"
@@ -3479,6 +3479,9 @@ while true; do
 	;;
 	"644")
 		Clona "Pr0x13/iDict"
+	;;
+	"645")
+		Clona "foozzi/iCloudBrutter"
 	;;
 	*)
 		echo "error, invalid choice"
