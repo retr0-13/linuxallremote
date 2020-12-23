@@ -525,7 +525,7 @@ while true; do
 	echo -ne " 561. get a remote file in base64 encode\t596. download all files inside a folder shared via smb or samba\n"
 	echo -ne " 598. get some useful files from remote url or ip\t\t\t\t\t\t\t600. upload a shell with PUT method\n"
 	echo -ne " 618. enum users with finger\t\t\t628. ssh dictionary remote attack with optional port forwarding\n"
-	echo -ne " 638. get all keys set in memcached remotely\n"
+	echo -ne " 638. get all keys set in memcached remotely\t643. get netmask infos\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -3440,6 +3440,39 @@ while true; do
 	"642")
 		Scarica "$ENTRAW""th3unkn0n/facebash-termux/master/facebash.sh"
 		Scarica "$ENTRAW""th3unkn0n/facebash-termux/master/install.sh"
+	;;
+	"643")
+		echo "Digit a remote domain target"
+		read -p "(example, example.com): " TDM
+		if [[ "$TDM" != "" ]];
+		then
+			echo "Select an output form"
+			echo -ne "0. standard\n1. range\n2. hex\n3. octal\n4. binary\n5. CIDR\n"
+			read -p "(example, 1): " OPT
+			if [[ "$OPT" != "" ]];
+			then
+				case "$OPT" in
+				"0")
+					netmask -s "$TDM"
+				;;
+				"1")
+					netmask -r "$TDM"
+				;;
+				"2")
+					netmask -x "$TDM"
+				;;
+				"3")
+					netmask -o "$TDM"
+				;;
+				"4")
+					netmask -b "$TDM"
+				;;
+				"5")
+					netmask -c "$TDM"
+				;;
+				esac
+			fi
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
