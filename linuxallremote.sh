@@ -529,7 +529,7 @@ while true; do
 	echo -ne " 561. get a remote file in base64 encode\t596. download all files inside a folder shared via smb or samba\n"
 	echo -ne " 598. get some useful files from remote url or ip\t\t\t\t\t\t\t600. upload a shell with PUT method\n"
 	echo -ne " 618. enum users with finger\t\t\t628. ssh dictionary remote attack with optional port forwarding\n"
-	echo -ne " 638. get all keys set in memcached remotely\t643. get netmask infos\n"
+	echo -ne " 638. get all keys set in memcached remotely\t643. get netmask infos\t\t\t\t649. extract tar.gz file\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -3492,6 +3492,14 @@ while true; do
 	;;
 	"648")
 		Clona "cyberark/KubiScan"
+	;;
+	"649")
+		echo "Digit a tar.gz file full path to extract"
+		read -p "(example, ./example.tar.gz): " FLTR
+		if [[ -f "$FLTR" ]];
+		then
+			tar zxvf "$FLTR"
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
