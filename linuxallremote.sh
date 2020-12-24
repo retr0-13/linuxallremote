@@ -307,6 +307,7 @@ while true; do
 	echo "$SEP"
 	echo "KUBERNETES"
 	echo -ne " 374. liggitt/audit2rbac\t\t\t375. mhausenblas/kaput\t\t\t\t\t647. vchinnipilli/kubestrike\n"
+	echo -ne " 648. cyberark/KubiScan\n"
 	echo "$SEP"
 	echo "LDAP"
 	echo -ne " 1. CasperGN/ActiveDirectoryEnumeration\t\t2. dirkjanm/ldapdomaindump\t\t\t\t4. ropnop/windapsearch\n"
@@ -3488,6 +3489,9 @@ while true; do
 	;;
 	"647")
 		Clona "vchinnipilli/kubestrike"
+	;;
+	"648")
+		Clona "cyberark/KubiScan"
 	;;
 	*)
 		echo "error, invalid choice"
