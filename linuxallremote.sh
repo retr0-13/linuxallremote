@@ -339,7 +339,7 @@ while true; do
 	echo -ne " 554. FluxionNetwork/fluxion\t\t\t557. knassar702/scant3r\t\t\t\t\t567. Leviathan36/kaboom\n"
 	echo -ne " 568. archerysec/archerysec\t\t\t579. AnonymousAt3/cybermap\t\t\t\t604. qsecure-labs/overlord\n"
 	echo -ne " 606. Chudry/Xerror\t\t\t\t616. rajkumardusad/Tool-X\t\t\t\t\t626. GoVanguard/legion\n"
-	echo -ne " 640. KALILINUXTRICKSYT/easysploit\t\t650. edoardottt/scilla\n"
+	echo -ne " 640. KALILINUXTRICKSYT/easysploit\t\t650. edoardottt/scilla\t\t\t\t651. leebaird/discover\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
@@ -3504,6 +3504,9 @@ while true; do
 	;;
 	"650")
 		Clona "edoardottt/scilla"
+	;;
+	"651")
+		Clona "leebaird/discover"
 	;;
 	*)
 		echo "error, invalid choice"
