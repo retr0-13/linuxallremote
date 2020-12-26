@@ -536,6 +536,7 @@ while true; do
 	echo -ne " 598. get some useful files from remote url or ip\t\t\t\t\t\t\t600. upload a shell with PUT method\n"
 	echo -ne " 618. enum users with finger\t\t\t628. ssh dictionary remote attack with optional port forwarding\n"
 	echo -ne " 638. get all keys set in memcached remotely\t643. get netmask infos\t\t\t\t649. extract tar.gz file\n"
+	echo -ne " 652. get docker version from IP\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -3513,6 +3514,14 @@ while true; do
 	;;
 	"651")
 		Clona "leebaird/discover"
+	;;
+	"652")
+		echo "Digit an IP target with protocol to get docker version"
+		read -p "(example, http://19.20.21.22): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			curl -s "$TIP"":2376/version" | python -m json.tool
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
