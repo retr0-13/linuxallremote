@@ -88,6 +88,12 @@ function Warning
 
 echo "linuxallremote, by FabioDefilippoSoftware"
 
+if [[ ! -f $(which lynx) ]];
+then
+	echo "For a better experience, please install lynx"
+	read -p "press ENTER to continue..."
+fi
+
 while true; do
 	echo "$SEP"
 	echo " 0. exit"
