@@ -3520,8 +3520,21 @@ while true; do
 		read -p "(example, http://19.20.21.22): " TIP
 		if [[ "$TIP" != "" ]];
 		then
-			curl -s "$TIP"":2376/version" | python -m json.tool
+			echo "Digit the Docker port target"
+			read -p "(default, 2376): " TTDP
+			TDP=2376
+			if [[ "$TTDP" != "" ]];
+			then
+				if [[ "$TTDP" =~ ^[0-9]+$ ]];
+				then
+					TDP="$TTDP"
+				fi
+			fi
+			curl -s "$TIP"":""$TDP""/version" | python -m json.tool
 		fi
+	;;
+	"653")
+		Clona "adnane-X-tebbaa/GRecon"
 	;;
 	*)
 		echo "error, invalid choice"
