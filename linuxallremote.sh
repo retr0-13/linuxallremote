@@ -3536,6 +3536,9 @@ while true; do
 	"653")
 		Clona "adnane-X-tebbaa/GRecon"
 	;;
+	"654")
+		Scarica "$ENTRAW""Rover141/Shellter/master/shellter"
+	;;
 	*)
 		echo "error, invalid choice"
 	;;
