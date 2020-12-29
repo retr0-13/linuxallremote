@@ -295,7 +295,7 @@ while true; do
 	echo "$SEP"
 	echo "IPCAM"
 	echo -ne " 398. CCrashBandicot/IPCam\t\t\t399. nathan242/ipcam-cctv\t\t\t\t400. Benehiko/GoNetworkCameraScanner\n"
-	echo -ne " 401. vanpersiexp/expcamera\n"
+	echo -ne " 401. vanpersiexp/expcamera\t\t\t656. spicesouls/reosploit\n"
 	echo "$SEP"
 	echo "iOS"
 	echo -ne " 360. tokyoneon/Arcane\t\t\t\t442. Flo354/iOSForensic\t\t\t\t\t443. as0ler/iphone-dataprotection\n"
@@ -3543,6 +3543,10 @@ while true; do
 	;;
 	"655")
 		Scarica "$ENTRAW""Moham3dRiahi/WPGrabInfo/master/WP-Grab.pl"
+	;;
+	"656")
+		Scarica "$ENTRAW""spicesouls/reosploit/main/reosploit.py"
+		Scarica "$ENTRAW""spicesouls/reosploit/main""$RQRM"
 	;;
 	*)
 		echo "error, invalid choice"
