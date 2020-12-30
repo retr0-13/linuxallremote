@@ -133,7 +133,7 @@ while true; do
 	echo "$SEP"
 	echo "AWS"
 	echo -ne " 657. sa7mon/S3Scanner\t\t\t\t659. aljazceru/s3-bucket-scanner\t\t\t\t660. ankane/s3tk\n"
-	echo -ne " 661. bear/s3scan\t\t\t\t662. haroonawanofficial/Amazon-AWS-Hack\n"
+	echo -ne " 661. bear/s3scan\t\t\t\t662. haroonawanofficial/Amazon-AWS-Hack\t\t\t\t663. nagwww/101-AWS-S3-Hacks\n"
 	echo "$SEP"
 	echo "AZURE"
 	echo -ne " 32. dirkjanm/ROADtools\n"
@@ -3572,6 +3572,9 @@ while true; do
 	;;
 	"662")
 		Clona "haroonawanofficial/Amazon-AWS-Hack"
+	;;
+	"663")
+		Clona "nagwww/101-AWS-S3-Hacks"
 	;;
 	*)
 		echo "error, invalid choice"
