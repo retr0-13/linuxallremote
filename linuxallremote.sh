@@ -164,7 +164,7 @@ while true; do
 	echo -ne " 463. Zapotek/cdpsnarf\n"
 	echo "$SEP"
 	echo "CLOUDS"
-	echo -ne " 658. SimplySecurity/SimplyEmail\n"
+	echo -ne " 658. SimplySecurity/SimplyEmail\t\t664. aquasecurity/cloudsploit\n"
 	echo "$SEP"
 	echo "CMS"
 	echo -ne " 483. TheDevFromKer/CMS-Attack\t\t\t484. Dionach/CMSmap\t\t\t\t\t\t234. n4xh4ck5/CMSsc4n\n"
@@ -3575,6 +3575,9 @@ while true; do
 	;;
 	"663")
 		Clona "nagwww/101-AWS-S3-Hacks"
+	;;
+	"664")
+		Clona "aquasecurity/cloudsploit"
 	;;
 	*)
 		echo "error, invalid choice"
