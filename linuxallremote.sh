@@ -133,6 +133,7 @@ while true; do
 	echo "$SEP"
 	echo "AWS"
 	echo -ne " 657. sa7mon/S3Scanner\t\t\t\t659. aljazceru/s3-bucket-scanner\t\t\t\t660. ankane/s3tk\n"
+ " 661. bear/s3scan\n"
 	echo "$SEP"
 	echo "AZURE"
 	echo -ne " 32. dirkjanm/ROADtools\n"
@@ -3565,6 +3566,9 @@ while true; do
 	;;
 	"660")
 		Clona "ankane/s3tk"
+	;;
+	"661")
+		Scarica "$ENTRAW""bear/s3scan/master/s3scan.py"
 	;;
 	*)
 		echo "error, invalid choice"
