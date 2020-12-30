@@ -131,6 +131,9 @@ while true; do
 	echo "ARP"
 	echo -ne " 462. royhills/arp-scan\t\t\t\t582. byt3bl33d3r/arpspoof\t\t\t\t\t583. ammarx/ARP-spoofing/mmattack\n"
 	echo "$SEP"
+	echo "AWS"
+	echo -ne " 657. sa7mon/S3Scanner\n"
+	echo "$SEP"
 	echo "AZURE"
 	echo -ne " 32. dirkjanm/ROADtools\n"
 	echo "$SEP"
@@ -158,6 +161,9 @@ while true; do
 	echo "$SEP"
 	echo "CISCO"
 	echo -ne " 463. Zapotek/cdpsnarf\n"
+	echo "$SEP"
+	echo "CLOUDS"
+	echo -ne " 658. SimplySecurity/SimplyEmail\n"
 	echo "$SEP"
 	echo "CMS"
 	echo -ne " 483. TheDevFromKer/CMS-Attack\t\t\t484. Dionach/CMSmap\t\t\t\t\t\t234. n4xh4ck5/CMSsc4n\n"
@@ -3547,6 +3553,12 @@ while true; do
 	"656")
 		Scarica "$ENTRAW""spicesouls/reosploit/main/reosploit.py"
 		Scarica "$ENTRAW""spicesouls/reosploit/main""$RQRM"
+	;;
+	"657")
+		Clona "sa7mon/S3Scanner"
+	;;
+	"658")
+		Clona "SimplySecurity/SimplyEmail"
 	;;
 	*)
 		echo "error, invalid choice"
