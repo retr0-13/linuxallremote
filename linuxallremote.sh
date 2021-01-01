@@ -588,6 +588,7 @@ while true; do
 	echo "WORDPRESS"
 	echo -ne " 468. n00py/WPForce\t\t\t\t469. BlackXploits/WPBrute\t\t\t\t566. 0xAbdullah/0xWPBF\n"
 	echo -ne " 655. Moham3dRiahi/WPGrabInfo\t\t\t667. ShayanDeveloper/WordPress-Hacker\n"
+	echo -ne " 668. Jamalc0m/wphunter\n"
 	echo "$SEP"
 	echo "XSS - XPATH"
 	echo -ne " 55. hahwul/dalfox\t\t\t\t164. s0md3v/XSStrike\t\t\t\t\t44. lc/gau\n"
@@ -3590,6 +3591,9 @@ while true; do
 	;;
 	"667")
 		Scarica "$ENTRAW""ShayanDeveloper/WordPress-Hacker/master/WordPress%20Hacker.py"
+	;;
+	"668")
+		Scarica "$ENTRAW""Jamalc0m/wphunter/master/wphunter.php"
 	;;
 	*)
 		echo "error, invalid choice"
