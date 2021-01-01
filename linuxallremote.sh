@@ -306,7 +306,7 @@ while true; do
 	echo "$SEP"
 	echo "iOS"
 	echo -ne " 360. tokyoneon/Arcane\t\t\t\t442. Flo354/iOSForensic\t\t\t\t\t443. as0ler/iphone-dataprotection\n"
-	echo -ne " 444. jantrim/iosbackupexaminer\n"
+	echo -ne " 444. jantrim/iosbackupexaminer\t\t666. yuejd/ios_Restriction_PassCode_Crack---Python-version\n"
 	echo "$SEP"
 	echo "iTUNES"
 	echo -ne " 665. jos666/itunes_hack\n"
@@ -3584,6 +3584,9 @@ while true; do
 	;;
 	"665")
 		Scarica "$ENTRAW""jos666/itunes_hack/master/itunes.py"
+	;;
+	"666")
+		Clona "yuejd/ios_Restriction_PassCode_Crack---Python-version"
 	;;
 	*)
 		echo "error, invalid choice"
