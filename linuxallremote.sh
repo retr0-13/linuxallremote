@@ -308,6 +308,9 @@ while true; do
 	echo -ne " 360. tokyoneon/Arcane\t\t\t\t442. Flo354/iOSForensic\t\t\t\t\t443. as0ler/iphone-dataprotection\n"
 	echo -ne " 444. jantrim/iosbackupexaminer\n"
 	echo "$SEP"
+	echo "iTUNES"
+	echo -ne " 665. jos666/itunes_hack\n"
+	echo "$SEP"
 	echo "JAVA"
 	echo -ne " 227. pxb1988/dex2jar\t\t\t\t346. benf/cfr\t\t\t\t\t\t356. java-decompiler/jd-gui\n"
 	echo "$SEP"
@@ -3578,6 +3581,9 @@ while true; do
 	;;
 	"664")
 		Clona "aquasecurity/cloudsploit"
+	;;
+	"665")
+		Scarica "$ENTRAW""jos666/itunes_hack/master/itunes.py"
 	;;
 	*)
 		echo "error, invalid choice"
