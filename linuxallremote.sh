@@ -561,7 +561,7 @@ while true; do
 	echo "WEBAPP"
 	echo -ne " 96. m4ll0k/WPSeku\t\t\t\t97. swisskyrepo/Wordpresscan\t\t\t\t98. RamadhanAmizudin/Wordpress-scanner\n"
 	echo -ne " 122. rezasp/joomscan\t\t\t\t123. rastating/joomlavs\t\t\t\t\t124. RedVirus0/BlackDir-Framework\n"
-	echo -ne " 198. wpscanteam/wpscan\t\t\t\t199. swisskyrepo/Wordpresscan\t\t\t\t200. 04x/WpscaN/ICgWpScaNNer\n"
+	echo -ne " 198. wpscanteam/wpscan\t\t\t\t200. 04x/WpscaN/ICgWpScaNNer\n"
 	echo -ne " 201. The404Hacking/wpscan\t\t\t202. drego85/JoomlaScan\t\t\t\t\t287. boku7/LibreHealth-authRCE\n"
 	echo -ne " 466. FortyNorthSecurity/EyeWitness\t\t614. dariusztytko/jwt-key-id-injector\n"
 	echo -ne " 621. s0md3v/Arjun\n"
@@ -588,7 +588,7 @@ while true; do
 	echo "WORDPRESS"
 	echo -ne " 468. n00py/WPForce\t\t\t\t469. BlackXploits/WPBrute\t\t\t\t566. 0xAbdullah/0xWPBF\n"
 	echo -ne " 655. Moham3dRiahi/WPGrabInfo\t\t\t667. ShayanDeveloper/WordPress-Hacker\n"
-	echo -ne " 668. Jamalc0m/wphunter\n"
+	echo -ne " 668. Jamalc0m/wphunter\t\t\t199. MrCl0wnLab/afdWordpress\n"
 	echo "$SEP"
 	echo "XSS - XPATH"
 	echo -ne " 55. hahwul/dalfox\t\t\t\t164. s0md3v/XSStrike\t\t\t\t\t44. lc/gau\n"
@@ -1577,7 +1577,7 @@ while true; do
 		Clona "wpscanteam/wpscan"
 	;;
 	"199")
-		Clona "swisskyrepo/Wordpresscan"
+		Clona "MrCl0wnLab/afdWordpress"
 	;;
 	"200")
 		Scarica "$ENTRAW""04x/WpscaN/master/ICgWpScaNNer.py"
