@@ -547,7 +547,7 @@ while true; do
 	echo -ne " 598. get some useful files from remote url or ip\t\t\t\t\t\t\t600. upload a shell with PUT method\n"
 	echo -ne " 618. enum users with finger\t\t\t628. ssh dictionary remote attack with optional port forwarding\n"
 	echo -ne " 638. get all keys set in memcached remotely\t643. get netmask infos\t\t\t\t649. extract tar.gz file\n"
-	echo -ne " 652. get docker version from IP\n"
+	echo -ne " 652. get docker version from IP\t\t669. analyze an executable file with strace and ltrace\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -3594,6 +3594,20 @@ while true; do
 	;;
 	"668")
 		Scarica "$ENTRAW""Jamalc0m/wphunter/master/wphunter.php"
+	;;
+	"669")
+		echo "Digit an executable file name to analyze"
+		read -p "(example, ./sysinfo): " EXF
+		if [[ -f "$EXF" ]];
+		then
+			echo "Digit a report file name"
+			read -p "(example, sysinfo): " RPF
+			if [[ "$RPF" != "" ]];
+			then
+				strace -f -i -o "$RPF"".strace" "$EXF"
+				ltrace -f -i -o "$RPF"".ltrace" "$EXF"
+			fi
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
