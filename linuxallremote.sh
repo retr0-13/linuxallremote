@@ -227,6 +227,7 @@ while true; do
 	echo -ne " 167. govolution/avet\t\t\t\t134. khalilbijjou/WAFNinja\t\t\t\t174. stormshadow07/HackTheWorld\n"
 	echo -ne " 268. wintrmvte/SNOWCRASH\t\t\t275. CBHue/PyFuscation\t\t\t\t\t293. OsandaMalith/PE2HTML\n"
 	echo -ne " 309. mdsecactivebreach/Chameleon\t\t576. Veil-Framework/Veil\t\t\t\t605. shadowlabscc/Kaiten\n"
+	echo -ne " 688. lobuhi/byp4xx\n"
 	echo "$SEP"
 	echo "EXCHANGE"
 	echo -ne " 571. sensepost/ruler\n"
@@ -263,6 +264,12 @@ while true; do
 	echo -ne " 34. devanshbatham/ParamSpider\t\t\t56. jtpereyda/boofuzz\t\t\t\t\t50. fuzzdb-project/fuzzdb\n"
 	echo -ne " 130. google/AFL\t\t\t\t72. corelan/mona\t\t\t\t\t73. OpenRCE/sulley\n"
 	echo -ne " 465. wireghoul/dotdotpwn\t\t\t517. dwisiswant0/crlfuzz\t\t\t\t597. googleprojectzero/fuzzilli\n"
+	echo -ne " 687. renatahodovan/grammarinator\t686. nccgroup/fuzzowski\t685. OblivionDev/fuzzdiff\n"
+	echo -ne " 684. nol13/fuzzball\t683. k0retux/fuddly\t682. nccgroup/FrisbeeLite\n"
+	echo -ne " 681. zznop/flyr\t680. wireghoul/doona\t679. googleprojectzero/domato\n"
+	echo -ne " 678. ernw/dizzy\t677. MozillaSecurity/dharma\t675. hadoocn/conscan\n"
+	echo -ne " 674. dobin/ffw\t673. CENSUS/choronzon\t672. RootUp/BFuzz\n"
+	echo -ne " 671. localh0t/backfuzz\t670. doyensec/ajpfuzzer\n"
 	echo "$SEP"
 	echo "GATHERING - OSINT"
 	echo -ne " 168. Screetsec/Sudomy\t\t\t\t177. HightechSec/git-scanner/gitscanner\t\t\t89. urbanadventurer/WhatWeb\n"
@@ -286,6 +293,7 @@ while true; do
 	echo -ne " 355. swisskyrepo/SSRFmap\t\t\t453. zt2/sqli-hunter\t\t\t\t\t467. JohnTroony/Blisqy\n"
 	echo -ne " 518. chinarulezzz/pixload/bmp\t\t\t519. chinarulezzz/pixload/gif\t\t\t\t520. chinarulezzz/pixload/jpg\n"
 	echo -ne " 521. chinarulezzz/pixload/png\t\t\t522. chinarulezzz/pixload/webp\t\t\t\t569. commixproject/commix\n"
+	echo -ne " 676. rudSarkar/crlf-injector\n"
 	echo "$SEP"
 	echo "IIS"
 	echo -ne " 22. 0x09AL/IIS-Raid\t\t\t\t23. thelinuxchoice/evilreg\t\t\t\t24. thelinuxchoice/eviloffice\n"
@@ -3608,6 +3616,63 @@ while true; do
 				ltrace -f -i -o "$RPF"".ltrace" "$EXF"
 			fi
 		fi
+	;;
+	"670")
+		Clona "doyensec/ajpfuzzer"
+	;;
+	"671")
+		Clona "localh0t/backfuzz"
+	;;
+	"672")
+		Clona "RootUp/BFuzz"
+	;;
+	"673")
+		Clona "CENSUS/choronzon"
+	;;
+	"674")
+		Clona "dobin/ffw"
+	;;
+	"675")
+		Clona "hadoocn/conscan"
+	;;
+	"676")
+		Clona "rudSarkar/crlf-injector"
+	;;
+	"677")
+		Clona "MozillaSecurity/dharma"
+	;;
+	"678")
+		Clona "ernw/dizzy"
+	;;
+	"679")
+		Clona "googleprojectzero/domato"
+	;;
+	"680")
+		Clona "wireghoul/doona"
+	;;
+	"681")
+		Clona "zznop/flyr"
+	;;
+	"682")
+		Clona "nccgroup/FrisbeeLite"
+	;;
+	"683")
+		Clona "k0retux/fuddly"
+	;;
+	"684")
+		Clona "nol13/fuzzball"
+	;;
+	"685")
+		Scarica "$ENTRAW""OblivionDev/fuzzdiff/master/fuzzdiff"
+	;;
+	"686")
+		Clona "nccgroup/fuzzowski"
+	;;
+	"687")
+		Clona "renatahodovan/grammarinator"
+	;;
+	"688")
+		Scarica "$ENTRAW""lobuhi/byp4xx/main/byp4xx.sh"
 	;;
 	*)
 		echo "error, invalid choice"
