@@ -269,7 +269,12 @@ while true; do
 	echo -ne " 681. zznop/flyr\t680. wireghoul/doona\t679. googleprojectzero/domato\n"
 	echo -ne " 678. ernw/dizzy\t677. MozillaSecurity/dharma\t675. hadoocn/conscan\n"
 	echo -ne " 674. dobin/ffw\t673. CENSUS/choronzon\t672. RootUp/BFuzz\n"
-	echo -ne " 671. localh0t/backfuzz\t670. doyensec/ajpfuzzer\n"
+	echo -ne " 671. localh0t/backfuzz\t670. doyensec/ajpfuzzer\t702. HSASec/ProFuzz\n"
+	echo -ne " 689. savio-code/hexorbase\t690. nccgroup/Hodor\t691. google/honggfuzz\n"
+	echo -ne " 692. tehmoon/http-fuzzer\t693. andresriancho/websocket-fuzzer\t694. twilsonb/jbrofuzz\n"
+	echo -ne " 695. cisco-sas/kitty\t696. mxmssh/manul\t697. IOActive/Melkor_ELF_Fuzzer\n"
+	echo -ne " 698. mazzoo/ohrwurm\t699. MozillaSecurity/peach\t700. calebstewart/peach\n"
+	echo -ne " 701. marcinguy/powerfuzzer\n"
 	echo "$SEP"
 	echo "GATHERING - OSINT"
 	echo -ne " 168. Screetsec/Sudomy\t\t\t\t177. HightechSec/git-scanner/gitscanner\t\t\t89. urbanadventurer/WhatWeb\n"
@@ -3673,6 +3678,48 @@ while true; do
 	;;
 	"688")
 		Scarica "$ENTRAW""lobuhi/byp4xx/main/byp4xx.sh"
+	;;
+	"689")
+		Clona "savio-code/hexorbase"
+	;;
+	"690")
+		Clona "nccgroup/Hodor"
+	;;
+	"691")
+		Clona "google/honggfuzz"
+	;;
+	"692")
+		Clona "tehmoon/http-fuzzer"
+	;;
+	"693")
+		Clona "andresriancho/websocket-fuzzer"
+	;;
+	"694")
+		Clona "twilsonb/jbrofuzz"
+	;;
+	"695")
+		Clona "cisco-sas/kitty"
+	;;
+	"696")
+		Clona "mxmssh/manul"
+	;;
+	"697")
+		Clona "IOActive/Melkor_ELF_Fuzzer"
+	;;
+	"698")
+		Clona "mazzoo/ohrwurm"
+	;;
+	"699")
+		Clona "MozillaSecurity/peach"
+	;;
+	"700")
+		Clona "calebstewart/peach"
+	;;
+	"701")
+		Clona "marcinguy/powerfuzzer"
+	;;
+	"702")
+		Clona "HSASec/ProFuzz"
 	;;
 	*)
 		echo "error, invalid choice"
