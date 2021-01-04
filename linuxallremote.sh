@@ -66,6 +66,10 @@ function Installa
 	fi
 }
 
+function ClonaLab
+{
+	git clone "$ENTLAB""$1"".git"
+}
 
 function Clona
 {
@@ -134,6 +138,7 @@ while true; do
 	echo "AWS"
 	echo -ne " 657. sa7mon/S3Scanner\t\t\t\t659. aljazceru/s3-bucket-scanner\t\t\t\t660. ankane/s3tk\n"
 	echo -ne " 661. bear/s3scan\t\t\t\t662. haroonawanofficial/Amazon-AWS-Hack\t\t\t\t663. nagwww/101-AWS-S3-Hacks\n"
+	echo -ne " 706. pbnj/s3-fuzzer\n"
 	echo "$SEP"
 	echo "AZURE"
 	echo -ne " 32. dirkjanm/ROADtools\n"
@@ -179,7 +184,7 @@ while true; do
 	echo -ne " 630. beurtschipper/Depix\t\t\t632. x90skysn3k/brutespray\n"
 	echo "$SEP"
 	echo "CRAWLER"
-	echo -ne " 586. saeeddhqan/evine\n"
+	echo -ne " 586. saeeddhqan/evine\t722. OWASP/OWASP-WebScarab\n"
 	echo "$SEP"
 	echo "CSRF - XSRF"
 	echo -ne " 406. 0xInfection/XSRFProbe\n"
@@ -274,7 +279,12 @@ while true; do
 	echo -ne " 692. tehmoon/http-fuzzer\t693. andresriancho/websocket-fuzzer\t694. twilsonb/jbrofuzz\n"
 	echo -ne " 695. cisco-sas/kitty\t696. mxmssh/manul\t697. IOActive/Melkor_ELF_Fuzzer\n"
 	echo -ne " 698. mazzoo/ohrwurm\t699. MozillaSecurity/peach\t700. calebstewart/peach\n"
-	echo -ne " 701. marcinguy/powerfuzzer\n"
+	echo -ne " 701. marcinguy/powerfuzzer\t703. hgascon/pulsar\n"
+	echo -ne " 704. mseclab/PyJFuzz\t705. akihe/radamsa\t707. Battelle/sandsifter\n"
+	echo -ne " 708. mfontanini/sloth-fuzzer\t709. nopper/archpwn\t711. landw1re/socketfuzz\n"
+	echo -ne " 712. allfro/sploitego\t715. rsmusllp/termineter\t716. droberson/thefuzz\n"
+	echo -ne " 717. kernelslacker/trinity\t718. PAGalaxyLab/uniFuzzer\t720. nullsecuritynet/uniofuzz\n"
+	echo -ne " 721. andresriancho/w3af\t723. wereallfeds/webshag\t724. samhocevar/zzuf\n"
 	echo "$SEP"
 	echo "GATHERING - OSINT"
 	echo -ne " 168. Screetsec/Sudomy\t\t\t\t177. HightechSec/git-scanner/gitscanner\t\t\t89. urbanadventurer/WhatWeb\n"
@@ -493,7 +503,7 @@ while true; do
 	echo "$SEP"
 	echo "SNMP"
 	echo -ne " 74. hatlord/snmpwn\t\t\t\t75. etingof/pysnmp\t\t\t\t\t77. InteliSecureLabs/SNMPPLUX\n"
-	echo -ne " 78. cysboy/SnmpCrack\n"
+	echo -ne " 78. cysboy/SnmpCrack\t710. LukasRypl/snmp-fuzzer\n"
 	echo "$SEP"
 	echo "SOCIAL MEDIA"
 	echo -ne " 427. yasserjanah/ZeS0MeBr\t\t\t551. Cyb0r9/SocialBox\t\t\t\t\t\t\t642. th3unkn0n/facebash-termux\n"
@@ -503,7 +513,7 @@ while true; do
 	echo "$SEP"
 	echo "SQL"
 	echo -ne " 159. ccpgames/sqlcmd\t\t\t\t160. sqlmapproject/sqlmap\n"
-	echo -ne " 161. payloadbox/sql-injection-payload-list\t347. kayak/pypika\n"
+	echo -ne " 161. payloadbox/sql-injection-payload-list\t347. kayak/pypika\t713. GDSSecurity/SQLBrute\n"
 	echo "$SEP"
 	echo "SS7"
 	echo -ne " 384. ernw/ss7MAPer\n"
@@ -512,7 +522,7 @@ while true; do
 	echo -ne " 59. R4stl1n/SSH-Brute-Forcer\t\t\t152. matricali/brutekrag\t\t\t\t153. c0r3dump3d/osueta\n"
 	echo -ne " 155. W-GOULD/ssh-user-enumeration/ssh-check-username\t\t\t\t\t\t\t156. nccgroup/ssh_user_enum/ssh_enum\n"
 	echo -ne " 297. OffXec/fastssh\t\t\t\t368. Neetx/sshdodge\t\t\t\t\t369. trustedsec/meterssh\n"
-	echo -ne " 370. norksec/torcrack\t\t\t\t372. aryanrtm/sshBrutal\n"
+	echo -ne " 370. norksec/torcrack\t\t\t\t372. aryanrtm/sshBrutal\t714. wireghoul/sploit-dev/sshfuzz\n"
 	echo "$SEP"
 	echo "SSL"
 	echo -ne " 190. moxie0/sslstrip\t\t\t\t194. indutny/heartbleed\t\t\t\t\t195. roflcer/heartbleed-vuln/attack\n"
@@ -527,6 +537,9 @@ while true; do
 	echo "TERMUX"
 	echo -ne " 615. install metasploit first method\t\t\t622. install metasploit second method\t\t\t624. install sudo (no rooting phone)\n"
 	echo -ne " 633. TermuxHacking000/distrux\t\t634. TermuxHacking000/SysO-Termux\t\t\t635. TermuxHacking000/PortmapSploit\n"
+	echo "$SEP"
+	echo "TFTP"
+	echo -ne " 719. nullsecuritynet/tftp-fuzz\n"
 	echo "$SEP"
 	echo "TLS"
 	echo -ne " 189. GrrrDog/sni_bruter\t\t\t428. tintinweb/striptls\n"
@@ -3720,6 +3733,73 @@ while true; do
 	;;
 	"702")
 		Clona "HSASec/ProFuzz"
+	;;
+	"703")
+		Clona "hgascon/pulsar"
+	;;
+	"704")
+		Clona "mseclab/PyJFuzz"
+	;;
+	"705")
+		ClonaLab "akihe/radamsa"
+	;;
+	"706")
+		Scarica "$ENTRAW""pbnj/s3-fuzzer/master/main.go"
+	;;
+	"707")
+		Clona "Battelle/sandsifter"
+	;;
+	"708")
+		Clona "mfontanini/sloth-fuzzer"
+	;;
+	"709")
+		Scarica "$ENTRAW""nopper/archpwn/master/repo/fuzzer/smtp-fuzz/smtp-fuzz.pl"
+	;;
+	"710")
+		Scarica "$ENTRAW""LukasRypl/snmp-fuzzer/master/snmp-fuzzer.py"
+		Scarica "$ENTSSL""LukasRypl/snmp-fuzzer/raw/master/exportedSNMPv1Trap"
+	;;
+	"711")
+		Scarica "$ENTRAW""landw1re/socketfuzz/master/socketfuzz.py"
+	;;
+	"712")
+		Clona "allfro/sploitego"
+	;;
+	"713')
+		Scarica "$ENTRAW""GDSSecurity/SQLBrute/master/sqlbrute.py"
+	;;
+	"714")
+		Scarica "$ENTRAW""wireghoul/sploit-dev/master/sshfuzz.pl"
+	;;
+	"715")
+		Clona "rsmusllp/termineter"
+	;;
+	"716")
+		Clona "droberson/thefuzz"
+	;;
+	"717")
+		Clona "kernelslacker/trinity"
+	;;
+	"718")
+		Clona "PAGalaxyLab/uniFuzzer"
+	;;
+	"719")
+		Scarica "$ENTRAW""nullsecuritynet/tools/master/fuzzer/tftp-fuzz/release/tftp-fuzz.py"
+	;;
+	"720")
+		Scarica "$ENTRAW""nullsecuritynet/tools/master/fuzzer/uniofuzz/source/uniofuzz.py"
+	;;
+	"721")
+		Clona "andresriancho/w3af"
+	;;
+	"722")
+		Clona "OWASP/OWASP-WebScarab"
+	;;
+	"723")
+		Clona "wereallfeds/webshag"
+	;;
+	"724")
+		Clona "samhocevar/zzuf"
 	;;
 	*)
 		echo "error, invalid choice"
