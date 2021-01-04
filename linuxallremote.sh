@@ -3765,7 +3765,7 @@ while true; do
 	"712")
 		Clona "allfro/sploitego"
 	;;
-	"713')
+	"713")
 		Scarica "$ENTRAW""GDSSecurity/SQLBrute/master/sqlbrute.py"
 	;;
 	"714")
