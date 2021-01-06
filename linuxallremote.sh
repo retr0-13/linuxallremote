@@ -317,7 +317,7 @@ while true; do
 	echo -ne " 251. irsdl/IIS-ShortName-Scanner\n"
 	echo "$SEP"
 	echo "IKE"
-	echo -ne " 526. 0x90/vpn-arsenal\n"
+	echo -ne " 526. 0x90/vpn-arsenal\t\t\t726. SpiderLabs/ikeforce\n"
 	echo "$SEP"
 	echo "IMAP"
 	echo -ne " 204. byt3bl33d3r/SprayingToolkit\t\t205. mrexodia/haxxmap\t\t\t\t\t207. iomoath/IMAP-Cracker\n"
@@ -3805,6 +3805,9 @@ while true; do
 	;;
 	"725")
 		Clona "alpkeskin/mosint"
+	;;
+	"726")
+		Clona "SpiderLabs/ikeforce"
 	;;
 	*)
 		echo "error, invalid choice"
