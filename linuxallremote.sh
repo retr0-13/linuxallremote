@@ -450,7 +450,7 @@ while true; do
 	echo -ne " 601. UnaPibaGeek/ctfr\t\t\t\t607. thewhiteh4t/seeker\t\t\t\t\t732. gotr00t0day/spyhunt\n"
 	echo "$SEP"
 	echo "REVERSING"
-	echo -ne " 361. yeggor/UEFI_RETool\n"
+	echo -ne " 361. yeggor/UEFI_RETool\t\t\t737. gotr00t0day/b1n4ryR3v3rs3\n"
 	echo "$SEP"
 	echo "REVSHELL"
 	echo -ne " 515. 3v4Si0N/HTTP-revshell\n"
@@ -3844,6 +3844,9 @@ while true; do
 	"736")
 		Scarica "$ENTRAW""gotr00t0day/VulnBanner/master/vulnbanner.py"
 		Scarica "$ENTRAW""gotr00t0day/VulnBanner/master/vulnbanners.txt"
+	;;
+	"737")
+		Scarica "$ENTRAW""gotr00t0day/b1n4ryR3v3rs3/master/binaryreverse.sh"
 	;;
 	*)
 		echo "error, invalid choice"
