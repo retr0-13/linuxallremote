@@ -527,6 +527,7 @@ while true; do
 	echo -ne " 155. W-GOULD/ssh-user-enumeration/ssh-check-username\t\t\t\t\t\t\t156. nccgroup/ssh_user_enum/ssh_enum\n"
 	echo -ne " 297. OffXec/fastssh\t\t\t\t368. Neetx/sshdodge\t\t\t\t\t369. trustedsec/meterssh\n"
 	echo -ne " 370. norksec/torcrack\t\t\t\t372. aryanrtm/sshBrutal\t\t\t\t\t714. wireghoul/sploit-dev/sshfuzz\n"
+	echo -ne " 738. gotr00t0day/SSHbrute\n"
 	echo "$SEP"
 	echo "SSL"
 	echo -ne " 190. moxie0/sslstrip\t\t\t\t194. indutny/heartbleed\t\t\t\t\t195. roflcer/heartbleed-vuln/attack\n"
@@ -3847,6 +3848,9 @@ while true; do
 	;;
 	"737")
 		Scarica "$ENTRAW""gotr00t0day/b1n4ryR3v3rs3/master/binaryreverse.sh"
+	;;
+	"738")
+		Scarica "$ENTRAW""gotr00t0day/SSHbrute/master/sshbrute.py"
 	;;
 	*)
 		echo "error, invalid choice"
