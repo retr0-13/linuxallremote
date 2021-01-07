@@ -232,7 +232,7 @@ while true; do
 	echo -ne " 167. govolution/avet\t\t\t\t134. khalilbijjou/WAFNinja\t\t\t\t174. stormshadow07/HackTheWorld\n"
 	echo -ne " 268. wintrmvte/SNOWCRASH\t\t\t275. CBHue/PyFuscation\t\t\t\t\t293. OsandaMalith/PE2HTML\n"
 	echo -ne " 309. mdsecactivebreach/Chameleon\t\t576. Veil-Framework/Veil\t\t\t\t605. shadowlabscc/Kaiten\n"
-	echo -ne " 688. lobuhi/byp4xx\n"
+	echo -ne " 688. lobuhi/byp4xx\t\t\t\t731. gotr00t0day/forbiddenpass\n"
 	echo "$SEP"
 	echo "EXCHANGE"
 	echo -ne " 571. sensepost/ruler\n"
@@ -3822,6 +3822,9 @@ while true; do
 	;;
 	"730")
 		Clona "gotr00t0day/IGF"
+	;;
+	"731")
+		Clona "gotr00t0day/forbiddenpass"
 	;;
 	*)
 		echo "error, invalid choice"
