@@ -353,6 +353,7 @@ while true; do
 	echo "LDAP"
 	echo -ne " 1. CasperGN/ActiveDirectoryEnumeration\t\t2. dirkjanm/ldapdomaindump\t\t\t\t4. ropnop/windapsearch\n"
 	echo -ne " 64. dinigalab/ldapsearch\t\t\t84. 3rdDegree/dapper\t\t\t\t\t85. m8r0wn/ldap_search\n"
+	echo -ne " 728. droope/ldap-brute\n"
 	echo "$SEP"
 	echo "MALWARE"
 	echo -ne " 407. avinashkranjan/Malware-with-Backdoor-and-Keylogger\n"
@@ -3811,6 +3812,9 @@ while true; do
 	;;
 	"727")
 		Clona "royhills/ike-scan"
+	;;
+	"728")
+		Clona "droope/ldap-brute"
 	;;
 	*)
 		echo "error, invalid choice"
