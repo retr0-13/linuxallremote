@@ -298,7 +298,7 @@ while true; do
 	echo -ne " 560. Datalux/Osintgram\t\t\t\t585. thewhiteh4t/FinalRecon\t\t\t\t588. AzizKpln/Moriarty-Project\n"
 	echo -ne " 589. mxrch/GHunt\t\t\t\t613. bdblackhat/admin-panel-finder\t\t\t625. TermuxHacking000/phonia\n"
 	echo -ne " 631. Anon-Exploiter/SiteBroker\t\t\t646. nandydark/grim\t\t\t\t\t653. adnane-X-tebbaa/GRecon\n"
-	echo -ne " 725. alpkeskin/mosint\t\t\t\t730. gotr00t0day/IGF\n"
+	echo -ne " 725. alpkeskin/mosint\t\t\t\t730. gotr00t0day/IGF\t\t\t\t\t734. gotr00t0day/subdomainbrute\n"
 	echo "$SEP"
 	echo "GIT - REPOS"
 	echo -ne " 487. arthaud/git-dumper\t\t\t553. Ebryx/GitDump\n"
@@ -3832,6 +3832,10 @@ while true; do
 	"733")
 		Scarica "$ENTRAW""gotr00t0day/spider00t/master/spider00t.py"
 		Scarica "$ENTRAW""gotr00t0day/spider00t/master""$RQRM"
+	;;
+	"734")
+		Scarica "$ENTRAW""gotr00t0day/subdomainbrute/master/subdomainbrute.py"
+		Scarica "$ENTRAW""gotr00t0day/subdomainbrute/master""$RQRM"
 	;;
 	*)
 		echo "error, invalid choice"
