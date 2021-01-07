@@ -206,7 +206,7 @@ while true; do
 	echo -ne " 342. vivisect/vivisect\n"
 	echo "$SEP"
 	echo "DISCOVERING"
-	echo -ne " 559. epi052/feroxbuster\t\t\t573. robre/scripthunter\n"
+	echo -ne " 559. epi052/feroxbuster\t\t\t573. robre/scripthunter\t\t\t\t\t729. chris408/ct-exposer\n"
 	echo "$SEP"
 	echo "DNS"
 	echo -ne " 30. m57/dnsteal\t\t\t\t31. skelsec/jackdaw\t\t\t\t\t35. projectdiscovery/dnsprobe\n"
@@ -3815,6 +3815,10 @@ while true; do
 	;;
 	"728")
 		Clona "droope/ldap-brute"
+	;;
+	"729")
+		Scarica "$ENTRAW""chris408/ct-exposer/master/ct-exposer.py"
+		Scarica "$ENTRAW""chris408/ct-exposer/master""$RQRM"
 	;;
 	*)
 		echo "error, invalid choice"
