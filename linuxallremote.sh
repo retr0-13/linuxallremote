@@ -207,6 +207,7 @@ while true; do
 	echo "$SEP"
 	echo "DISCOVERING"
 	echo -ne " 559. epi052/feroxbuster\t\t\t573. robre/scripthunter\t\t\t\t\t729. chris408/ct-exposer\n"
+	echo -ne " 736. gotr00t0day/VulnBanner\n"
 	echo "$SEP"
 	echo "DNS"
 	echo -ne " 30. m57/dnsteal\t\t\t\t31. skelsec/jackdaw\t\t\t\t\t35. projectdiscovery/dnsprobe\n"
@@ -3839,6 +3840,10 @@ while true; do
 	;;
 	"735")
 		Clona "gotr00t0day/oswalkpy"
+	;;
+	"736")
+		Scarica "$ENTRAW""gotr00t0day/VulnBanner/master/vulnbanner.py"
+		Scarica "$ENTRAW""gotr00t0day/VulnBanner/master/vulnbanners.txt"
 	;;
 	*)
 		echo "error, invalid choice"
