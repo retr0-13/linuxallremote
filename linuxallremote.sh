@@ -183,8 +183,8 @@ while true; do
 	echo -ne " 563. Viralmaniar/Passhunt\t\t\t611. jmk-foofus/medusa\t\t\t\t\t612. openwall/john\n"
 	echo -ne " 630. beurtschipper/Depix\t\t\t632. x90skysn3k/brutespray\n"
 	echo "$SEP"
-	echo "CRAWLER"
-	echo -ne " 586. saeeddhqan/evine\t722. OWASP/OWASP-WebScarab\n"
+	echo "CRAWLING - SPIDERING"
+	echo -ne " 586. saeeddhqan/evine\t722. OWASP/OWASP-WebScarab\t\t\t\t\t733. gotr00t0day/spider00t\n"
 	echo "$SEP"
 	echo "CSRF - XSRF"
 	echo -ne " 406. 0xInfection/XSRFProbe\n"
@@ -3828,6 +3828,10 @@ while true; do
 	;;
 	"732")
 		Clona "gotr00t0day/spyhunt"
+	;;
+	"733")
+		Scarica "$ENTRAW""gotr00t0day/spider00t/master/spider00t.py"
+		Scarica "$ENTRAW""gotr00t0day/spider00t/master""$RQRM"
 	;;
 	*)
 		echo "error, invalid choice"
