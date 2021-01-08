@@ -424,6 +424,9 @@ while true; do
 	echo "PROXY"
 	echo -ne " 162. fozavci/viproy-VoIPkit\t\t\t610. audibleblink/doxycannon\n"
 	echo "$SEP"
+	echo "PRY"
+	echo -ne " 743. deivid-rodriguez/pry-byebug\n"
+	echo "$SEP"
 	echo "RAINBOW TABLE"
 	echo -ne " 260. clu8/RainbowTable\t\t\t\t261. zcdziura/leprechaun\t\t\t\t262. CyberKnight00/RainbowHash\n"
 	echo -ne " 263. dgleebits/Double-Rainbow\t\t\t264. jtesta/rainbowcrackalack\t\t\t\t265. sepehrdaddev/hashcobra\n"
@@ -3884,6 +3887,9 @@ while true; do
 	;;
 	"742")
 		Clona "rajkumardusad/onex"
+	;;
+	"743")
+		Clona "deivid-rodriguez/pry-byebug"
 	;;
 	*)
 		echo "error, invalid choice"
