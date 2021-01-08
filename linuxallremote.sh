@@ -584,6 +584,7 @@ while true; do
 	echo -ne " 652. get docker version from IP\t\t669. analyze an executable file with strace and ltrace\n"
 	echo -ne " 739. install tor from torproject siteweb\t740. install tor via apt-transport-tor\n"
 	echo -ne " 744. get mx record from domain with dig\t745. get dns infos with host\t\t\t\t\t746. get ntp infos with ntpq\n"
+	echo -ne " 747. get netbios infos with nmblookup\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -3914,6 +3915,14 @@ while true; do
 		if [[ "$IP" != "" ]];
 		then
 			for CMD in "readlist" "readvar" "monlist" "peers" "listpeers" "associations" "sysinfo"; do ntpq -c "$CMD" "$IP"; done
+		fi
+	;;
+	"747")
+		echo "Digit a target IP"
+		read -p "(example, 10.11.12.13): " IP
+		if [[ "$IP" != "" ]];
+		then
+			nmblookup -A "$IP"
 		fi
 	;;
 	*)
