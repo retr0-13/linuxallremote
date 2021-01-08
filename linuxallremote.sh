@@ -583,6 +583,7 @@ while true; do
 	echo -ne " 638. get all keys set in memcached remotely\t643. get netmask infos\t\t\t\t\t649. extract tar.gz file\n"
 	echo -ne " 652. get docker version from IP\t\t669. analyze an executable file with strace and ltrace\n"
 	echo -ne " 739. install tor from torproject siteweb\t740. install tor via apt-transport-tor\n"
+	echo -ne " 744. get mx record from domain\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -3890,6 +3891,14 @@ while true; do
 	;;
 	"743")
 		Clona "deivid-rodriguez/pry-byebug"
+	;;
+	"744")
+		echo "Digit a domain with top domain"
+		read -p "(example, google.com): " DMN
+		if [[ "$DMN" != "" ]];
+		then
+			dig +short mx "$DMN"
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
