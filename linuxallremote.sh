@@ -579,6 +579,7 @@ while true; do
 	echo -ne " 618. enum users with finger\t\t\t628. ssh dictionary remote attack with optional port forwarding\n"
 	echo -ne " 638. get all keys set in memcached remotely\t643. get netmask infos\t\t\t\t\t649. extract tar.gz file\n"
 	echo -ne " 652. get docker version from IP\t\t669. analyze an executable file with strace and ltrace\n"
+	echo -ne " 739. install tor from torproject siteweb\t740. install tor via apt-transport-tor\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -3851,6 +3852,32 @@ while true; do
 	;;
 	"738")
 		Scarica "$ENTRAW""gotr00t0day/SSHbrute/master/sshbrute.py"
+	;;
+	"739")
+		echo "Digit the OS name"
+		uname -a
+		read -p "(example, stretch): " DSTR
+		if [[ "$DSTR" != "" ]];
+		then
+			echo "deb https://deb.torproject.org/torproject.org $DSTR main" >> /etc/apt/sources.list
+			echo "deb-src https://deb.torproject.org/torproject.org $DSTR main" >> /etc/apt/sources.list
+			curl https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | gpg --import
+			gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | apt-key add -
+			apt update
+			apt install tor deb.torproject.org-keyring
+		fi
+	;;
+	"740")
+		echo "Digit the OS name"
+		uname -a
+		read -p "(example, stretch): " DSTR
+		if [[ "$DSTR" != "" ]];
+		then
+			apt install apt-transport-tor
+			echo "deb tor://sdscoq7snqtznauu.onion/torproject.org $DSTR main" >> /etc/apt/sources.list
+			apt update
+			apt install tor
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
