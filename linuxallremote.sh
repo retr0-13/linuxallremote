@@ -3906,7 +3906,7 @@ while true; do
 		read -p "(example, google.com): " DMN
 		if [[ "$DMN" != "" ]];
 		then
-			host -t {a|txt|ns|mx} "$DMN"
+			for CMD in "a" "txt" "ns" "mx"; do host -t "$CMD" "$DMN"; done
 		fi
 	;;
 	"746")
