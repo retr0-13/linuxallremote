@@ -334,6 +334,9 @@ while true; do
 	echo -ne " 360. tokyoneon/Arcane\t\t\t\t442. Flo354/iOSForensic\t\t\t\t\t443. as0ler/iphone-dataprotection\n"
 	echo -ne " 444. jantrim/iosbackupexaminer\t\t\t666. yuejd/ios_Restriction_PassCode_Crack---Python-version\n"
 	echo "$SEP"
+	echo "IoT"
+	echo -ne " 748. SafeBreach-Labs/SirepRAT\n"
+	echo "$SEP"
 	echo "iTUNES"
 	echo -ne " 665. jos666/itunes_hack\n"
 	echo "$SEP"
@@ -3924,6 +3927,9 @@ while true; do
 		then
 			nmblookup -A "$IP"
 		fi
+	;;
+	"748")
+		Clona "SafeBreach-Labs/SirepRAT"
 	;;
 	*)
 		echo "error, invalid choice"
