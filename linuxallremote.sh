@@ -215,6 +215,7 @@ while true; do
 	echo -ne " 335. mschwager/fierce\t\t\t\t464. fwaeytens/dnsenum\t\t\t\t\t491. TeamFoxtrot-GitHub/DNSMap\n"
 	echo -ne " 492. darkoperator/dnsrecon\t\t\t493. neiltyagi/DNSRECON\t\t\t\t\t496. rs/dnstrace\n"
 	echo -ne " 497. redsift/dnstrace\t\t\t\t498. dkorunic/dnstrace\t\t\t\t\t528. mfocuz/DNS_Hunter\n"
+	echo -ne " 752. theMiddleBlue/DNSenum\t\t\t753. rbsec/dnscan\n"
 	echo "$SEP"
 	echo "DOCKER"
 	echo -ne " 351. cr0hn/dockerscan\t\t\t\t352. RhinoSecurityLabs/ccat\n"
@@ -589,6 +590,7 @@ while true; do
 	echo -ne " 744. get mx record from domain with dig\t745. get dns infos with host\t\t\t\t\t746. get ntp infos with ntpq\n"
 	echo -ne " 747. get netbios infos with nmblookup\t749. download all files from IP in ftp with anonymous creds\n"
 	echo -ne " 750. username and password dictionary attack with wget and ftp protocol\t\t751. RCE with finger\n"
+	echo -ne " 754. get RPC info\t\t\t\t755. get RPC connect\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -3975,6 +3977,28 @@ while true; do
 			then
 				finger "|$CMD@$IP"
 			fi
+		fi
+	;;
+	"752")
+		Clona "theMiddleBlue/DNSenum"
+	;;
+	"753")
+		Clona "rbsec/dnscan"
+	;;
+	"754")
+		echo "Digit a target IP or domain"
+		read -p "(example, 10.11.12.13 or domain.com): " IP
+		if [[ "$IP" != "" ]];
+		then
+			rpcinfo -p "$IP"
+		fi
+	;;
+	"755")
+		echo "Digit a target IP or domain"
+		read -p "(example, 10.11.12.13 or domain.com): " IP
+		if [[ "$IP" != "" ]];
+		then
+			rpcclient -U "" "$IP"
 		fi
 	;;
 	*)
