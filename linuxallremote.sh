@@ -174,14 +174,15 @@ while true; do
 	echo "CMS"
 	echo -ne " 483. TheDevFromKer/CMS-Attack\t\t\t484. Dionach/CMSmap\t\t\t\t\t234. n4xh4ck5/CMSsc4n\n"
 	echo "$SEP"
-	echo "CRACK - GUESSING"
+	echo "CRACKING - GUESSING"
 	echo -ne " 80. magnumripper/JohnTheRipper\t\t\t81. truongkma/ctf-tools/John\t\t\t\t82. SySS-Research/Seth\n"
 	echo -ne " 83. s0md3v/Hash-Buster\t\t\t\t120. NetSPI/PS_MultiCrack\t\t\t\t41. shmilylty/cheetah\n"
 	echo -ne " 126. timbo05sec/autocrack\t\t\t127. igorMatsunaga/autoCrack\t\t\t\t247. mufeedvh/basecrack\n"
 	echo -ne " 475. MS-WEB-BN/h4rpy\t\t\t\t506. Aarif123456/passwordCracker\t\t\t507. GauthamGoli/rar-Password-Cracker/bruteforce\n"
 	echo -ne " 543. praetorian-inc/trident_0.1.3_linux_i386\t544. praetorian-inc/trident_0.1.3_linux_x86_64\t\t545. praetorian-inc/trident\n"
 	echo -ne " 563. Viralmaniar/Passhunt\t\t\t611. jmk-foofus/medusa\t\t\t\t\t612. openwall/john\n"
-	echo -ne " 630. beurtschipper/Depix\t\t\t632. x90skysn3k/brutespray\n"
+	echo -ne " 630. beurtschipper/Depix\t\t\t632. x90skysn3k/brutespray\t\t\t\t762. f0cker/crackq\n"
+	echo -ne " 763. hashcrackq/Crackq\n"
 	echo "$SEP"
 	echo "CRAWLING - SPIDERING"
 	echo -ne " 586. saeeddhqan/evine\t722. OWASP/OWASP-WebScarab\t\t\t\t\t733. gotr00t0day/spider00t\n"
@@ -4053,6 +4054,12 @@ while true; do
 	;;
 	"761")
 		Clona "toniblyx/prowler"
+	;;
+	"762")
+		Clona "f0cker/crackq"
+	;;
+	"763")
+		Scarica "$ENTRAW""hashcrackq/Crackq/master/crackqcli.py"
 	;;
 	*)
 		echo "error, invalid choice"
