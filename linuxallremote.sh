@@ -312,7 +312,7 @@ while true; do
 	echo -ne " 355. swisskyrepo/SSRFmap\t\t\t453. zt2/sqli-hunter\t\t\t\t\t467. JohnTroony/Blisqy\n"
 	echo -ne " 518. chinarulezzz/pixload/bmp\t\t\t519. chinarulezzz/pixload/gif\t\t\t\t520. chinarulezzz/pixload/jpg\n"
 	echo -ne " 521. chinarulezzz/pixload/png\t\t\t522. chinarulezzz/pixload/webp\t\t\t\t569. commixproject/commix\n"
-	echo -ne " 676. rudSarkar/crlf-injector\t\t\t764. infobyte/evilgrade\n"
+	echo -ne " 676. rudSarkar/crlf-injector\t\t\t765. infobyte/evilgrade\n"
 	echo "$SEP"
 	echo "IIS"
 	echo -ne " 22. 0x09AL/IIS-Raid\t\t\t\t23. thelinuxchoice/evilreg\t\t\t\t24. thelinuxchoice/eviloffice\n"
