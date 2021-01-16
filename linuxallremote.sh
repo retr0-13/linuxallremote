@@ -392,6 +392,7 @@ while true; do
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
+	echo -ne " 764. Esser420/EvilTwinFramework\n"
 	echo "$SEP"
 	echo "MONGODB - NOSQL"
 	echo -ne " 230. youngyangyang04/NoSQLAttack\t\t231. codingo/NoSQLMap\t\t\t\t\t232. torque59/Nosql-Exploitation-Framework\n"
@@ -4060,6 +4061,9 @@ while true; do
 	;;
 	"763")
 		Scarica "$ENTRAW""hashcrackq/Crackq/master/crackqcli.py"
+	;;
+	"764")
+		Clona "Esser420/EvilTwinFramework"
 	;;
 	*)
 		echo "error, invalid choice"
