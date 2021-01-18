@@ -420,7 +420,7 @@ while true; do
 	echo "$SEP"
 	echo "PHISHING"
 	echo -ne " 385. blark/cli-phisher\t\t\t\t412. kurogai/nero-phishing-server\t\t\t413. KnightSec-Official/Phlexish\n"
-	echo -ne " 489. david3107/squatm3\t\t\t\t490. netevert/dnsmorph\n"
+	echo -ne " 489. david3107/squatm3\t\t\t\t490. netevert/dnsmorph\t\t\t\t\t767. htr-tech/zphisher\n"
 	echo "$SEP"
 	echo "POSTGRESQL"
 	echo -ne " 303. KTN1990/PostgreSQL--Attack-on-default-password-AUTOEXPLOITING-/DB\n"
@@ -4070,6 +4070,9 @@ while true; do
 	;;
 	"766")
 		Clona "helich0pper/Karkinos"
+	;;
+	"767")
+		Clona "htr-tech/zphisher"
 	;;
 	*)
 		echo "error, invalid choice"
