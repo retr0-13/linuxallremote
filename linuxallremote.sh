@@ -388,7 +388,7 @@ while true; do
 	echo -ne " 568. archerysec/archerysec\t\t\t579. AnonymousAt3/cybermap\t\t\t\t604. qsecure-labs/overlord\n"
 	echo -ne " 606. Chudry/Xerror\t\t\t\t616. rajkumardusad/Tool-X\t\t\t\t626. GoVanguard/legion\n"
 	echo -ne " 640. KALILINUXTRICKSYT/easysploit\t\t650. edoardottt/scilla\t\t\t\t742. rajkumardusad/onex\n"
-	echo -ne " 761. toniblyx/prowler\t\t\t\t766. helich0pper/Karkinos\n"
+	echo -ne " 761. toniblyx/prowler\t\t\t\t766. helich0pper/Karkinos\t\t\t\t\t770. Leviathan36/kaboom\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
@@ -4080,6 +4080,9 @@ while true; do
 	;;
 	"769")
 		Scarica "$ENTRAW""nahamsec/lazyrecon/master/lazyrecon.sh"
+	;;
+	"770")
+		Clona "Leviathan36/kaboom"
 	;;
 	*)
 		echo "error, invalid choice"
