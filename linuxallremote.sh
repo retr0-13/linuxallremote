@@ -458,6 +458,7 @@ while true; do
 	echo -ne " 390. lanmaster53/recon-ng\t\t\t391. methos2016/recon-ng\t\t\t\t501. LukaSikic/subzy\n"
 	echo -ne " 556. LordNeoStark/tugarecon\t\t\t594. r3vn/badKarma\t\t\t\t\t599. utkusen/urlhunter\n"
 	echo -ne " 601. UnaPibaGeek/ctfr\t\t\t\t607. thewhiteh4t/seeker\t\t\t\t\t732. gotr00t0day/spyhunt\n"
+	echo -ne " 768. capt-meelo/LazyRecon\t\t\t769. nahamsec/lazyrecon\n"
 	echo "$SEP"
 	echo "REDIS"
 	echo -ne " 759. Avinash-acid/Redis-Server-Exploit\n"
@@ -4073,6 +4074,12 @@ while true; do
 	;;
 	"767")
 		Clona "htr-tech/zphisher"
+	;;
+	"768")
+		Clona "capt-meelo/LazyRecon"
+	;;
+	"769")
+		Scarica "$ENTRAW""nahamsec/lazyrecon/master/lazyrecon.sh"
 	;;
 	*)
 		echo "error, invalid choice"
