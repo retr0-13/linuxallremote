@@ -153,6 +153,9 @@ while true; do
 	echo "BOT - AI"
 	echo -ne " 445. evilsocket/kitsune\n"
 	echo "$SEP"
+	echo "BOTNET"
+	echo -ne " 773. UBoat-Botnet/UBoat\n"
+	echo "$SEP"
 	echo "BRAINF**K"
 	echo -ne " 238. brain-lang/brainfuck\t\t\t239. fabianishere/brainfuck\n"
 	echo "$SEP"
@@ -198,7 +201,7 @@ while true; do
 	echo -ne " 332. Ciphey/Ciphey\n"
 	echo "$SEP"
 	echo "DIRBUSTERING"
-	echo -ne " 54. aboul3la/Sublist3r\t\t\t\t411. H4ckForJob/dirmap\n"
+	echo -ne " 54. aboul3la/Sublist3r\t\t\t\t411. H4ckForJob/dirmap\t\t\t\t\t774. nccgroup/dirble\n"
 	echo "$SEP"
 	echo "DISASSEMBLING"
 	echo -ne " 216. gdbinit/MachOView\t\t\t\t217. cseagle/fREedom\t\t\t\t\t218. google/binnavi\n"
@@ -389,6 +392,7 @@ while true; do
 	echo -ne " 606. Chudry/Xerror\t\t\t\t616. rajkumardusad/Tool-X\t\t\t\t626. GoVanguard/legion\n"
 	echo -ne " 640. KALILINUXTRICKSYT/easysploit\t\t650. edoardottt/scilla\t\t\t\t742. rajkumardusad/onex\n"
 	echo -ne " 761. toniblyx/prowler\t\t\t\t766. helich0pper/Karkinos\t\t\t\t\t770. jaeles-project/jaeles\n"
+	echo -ne " 775. aaaguirrep/offensive-docker\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
@@ -421,6 +425,7 @@ while true; do
 	echo "PHISHING"
 	echo -ne " 385. blark/cli-phisher\t\t\t\t412. kurogai/nero-phishing-server\t\t\t413. KnightSec-Official/Phlexish\n"
 	echo -ne " 489. david3107/squatm3\t\t\t\t490. netevert/dnsmorph\t\t\t\t\t767. htr-tech/zphisher\n"
+	echo -ne " 771. xxhax-team/vk-phishing\n"
 	echo "$SEP"
 	echo "POSTGRESQL"
 	echo -ne " 303. KTN1990/PostgreSQL--Attack-on-default-password-AUTOEXPLOITING-/DB\n"
@@ -458,7 +463,7 @@ while true; do
 	echo -ne " 390. lanmaster53/recon-ng\t\t\t391. methos2016/recon-ng\t\t\t\t501. LukaSikic/subzy\n"
 	echo -ne " 556. LordNeoStark/tugarecon\t\t\t594. r3vn/badKarma\t\t\t\t\t599. utkusen/urlhunter\n"
 	echo -ne " 601. UnaPibaGeek/ctfr\t\t\t\t607. thewhiteh4t/seeker\t\t\t\t\t732. gotr00t0day/spyhunt\n"
-	echo -ne " 768. capt-meelo/LazyRecon\t\t\t769. nahamsec/lazyrecon\n"
+	echo -ne " 768. capt-meelo/LazyRecon\t\t\t769. nahamsec/lazyrecon\t\t\t\t772. eslam3kl/3klCon\n"
 	echo "$SEP"
 	echo "REDIS"
 	echo -ne " 759. Avinash-acid/Redis-Server-Exploit\n"
@@ -4083,6 +4088,21 @@ while true; do
 	;;
 	"770")
 		Clona "jaeles-project/jaeles"
+	;;
+	"771")
+		Clona "xxhax-team/vk-phishing"
+	;;
+	"772")
+		Clona "eslam3kl/3klCon"
+	;;
+	"773")
+		Clona "UBoat-Botnet/UBoat"
+	;;
+	"774")
+		Clona "nccgroup/dirble"
+	;;
+	"775")
+		Clona "aaaguirrep/offensive-docker"
 	;;
 	*)
 		echo "error, invalid choice"
