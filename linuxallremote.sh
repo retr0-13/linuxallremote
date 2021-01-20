@@ -13,7 +13,7 @@ AZD="/storage/emulated/0/Download"
 
 function ScaricaIn
 {
-	wget --no-check-certificate "$1" -O "$2
+	wget --no-check-certificate "$1" -O "$2"
 	echo "Downloaded ""$2"
 }
 
