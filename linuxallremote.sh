@@ -4133,10 +4133,10 @@ while true; do
 	"777")
 		if [[ -d "$ALD" ]];
 		then
-			ScaricaIn "$ENTSSL""cSploit/android/releases/download/v1.6.6-rc.2/cSploit-release.apk" "$ALD""cSploit-release.apk"
+			ScaricaIn "$ENTSSL""routerkeygen/routerkeygenAndroid/releases/download/v4.0.2/routerkeygen-4-0-2.apk" "$ALD""routerkeygen-4-0-2.apk"
 		elif [[ -d "$AZD" ]];
 		then
-			ScaricaIn "$ENTSSL""cSploit/android/releases/download/v1.6.6-rc.2/cSploit-release.apk" "$AZD""cSploit-release.apk"
+			ScaricaIn "$ENTSSL""routerkeygen/routerkeygenAndroid/releases/download/v4.0.2/routerkeygen-4-0-2.apk" "$AZD""routerkeygen-4-0-2.apk"
 		else
 			ls /storage
 			echo "Digit where download, remember the slash at the end of the path"
