@@ -8,8 +8,8 @@ ENTRAW="https://raw.githubusercontent.com/"
 ENTLAB="https://gitlab.com/"
 RQRM="/requirements.txt"
 SEP=$(for (( I=0 ; I<$(tput cols) ; I++ )); do printf '_'; done)
-ALD="/storage/emulated/legacy/Download"
-AZD="/storage/emulated/0/Download"
+ALD="/storage/emulated/legacy/Download/"
+AZD="/storage/emulated/0/Download/"
 
 function ScaricaIn
 {
@@ -570,7 +570,7 @@ while true; do
 	echo "TERMUX"
 	echo -ne " 615. install metasploit first method\t\t622. install metasploit second method\t\t\t624. install sudo (no rooting phone)\n"
 	echo -ne " 633. TermuxHacking000/distrux\t\t\t634. TermuxHacking000/SysO-Termux\t\t\t635. TermuxHacking000/PortmapSploit\n"
-	echo -ne " 776. cSploit/android\n"
+	echo -ne " 776. cSploit/android\t\t\t777. routerkeygen/routerkeygenAndroid\n"
 	echo "$SEP"
 	echo "TFTP"
 	echo -ne " 719. nullsecuritynet/tftp-fuzz\n"
@@ -4122,11 +4122,28 @@ while true; do
 			ScaricaIn "$ENTSSL""cSploit/android/releases/download/v1.6.6-rc.2/cSploit-release.apk" "$AZD""cSploit-release.apk"
 		else
 			ls /storage
-			echo "Digit where download"
-			read -p "(example, /storage/emulated/legacy/Download): " ATD
+			echo "Digit where download, remember the slash at the end of the path"
+			read -p "(example, /storage/emulated/legacy/Download/): " ATD
 			if [[ -d "$ATD" ]];
 			then
 				ScaricaIn "$ENTSSL""cSploit/android/releases/download/v1.6.6-rc.2/cSploit-release.apk" "$ATD""cSploit-release.apk"
+			fi
+		fi
+	;;
+	"777")
+		if [[ -d "$ALD" ]];
+		then
+			ScaricaIn "$ENTSSL""cSploit/android/releases/download/v1.6.6-rc.2/cSploit-release.apk" "$ALD""cSploit-release.apk"
+		elif [[ -d "$AZD" ]];
+		then
+			ScaricaIn "$ENTSSL""cSploit/android/releases/download/v1.6.6-rc.2/cSploit-release.apk" "$AZD""cSploit-release.apk"
+		else
+			ls /storage
+			echo "Digit where download, remember the slash at the end of the path"
+			read -p "(example, /storage/emulated/legacy/Download/): " ATD
+			if [[ -d "$ATD" ]];
+			then
+				ScaricaIn "$ENTSSL""routerkeygen/routerkeygenAndroid/releases/download/v4.0.2/routerkeygen-4-0-2.apk" "$ATD""routerkeygen-4-0-2.apk"
 			fi
 		fi
 	;;
