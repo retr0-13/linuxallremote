@@ -13,7 +13,21 @@ AZD="/storage/emulated/0/Download/"
 
 function ScaricaIn
 {
-	wget --no-check-certificate "$1" -O "$2"
+	if [[ -d "$ALD" ]];
+	then
+		wget --no-check-certificate "$1" -O "$ALD""$2"
+	elif [[ -d "$AZD" ]];
+	then
+		wget --no-check-certificate "$1" -O "$AZD""$2"
+	else
+		ls /storage
+		echo "Digit where download, remember the slash at the end of the path"
+		read -p "(example, /storage/emulated/legacy/Download/): " ATD
+		if [[ -d "$ATD" ]];
+		then
+			wget --no-check-certificate "$1" -O "$ATD""$2"
+		fi
+	fi
 	echo "Downloaded ""$2"
 }
 
@@ -4115,41 +4129,25 @@ while true; do
 		Clona "aaaguirrep/offensive-docker"
 	;;
 	"776")
-		if [[ -d "$ALD" ]];
-		then
-			ScaricaIn "$ENTSSL""cSploit/android/releases/download/v1.6.6-rc.2/cSploit-release.apk" "$ALD""cSploit-release.apk"
-		elif [[ -d "$AZD" ]];
-		then
-			ScaricaIn "$ENTSSL""cSploit/android/releases/download/v1.6.6-rc.2/cSploit-release.apk" "$AZD""cSploit-release.apk"
-		else
-			ls /storage
-			echo "Digit where download, remember the slash at the end of the path"
-			read -p "(example, /storage/emulated/legacy/Download/): " ATD
-			if [[ -d "$ATD" ]];
-			then
-				ScaricaIn "$ENTSSL""cSploit/android/releases/download/v1.6.6-rc.2/cSploit-release.apk" "$ATD""cSploit-release.apk"
-			fi
-		fi
+		ScaricaIn "$ENTSSL""cSploit/android/releases/download/v1.6.6-rc.2/cSploit-release.apk" "cSploit-release.apk"
 	;;
 	"777")
-		if [[ -d "$ALD" ]];
-		then
-			ScaricaIn "$ENTSSL""routerkeygen/routerkeygenAndroid/releases/download/v4.0.2/routerkeygen-4-0-2.apk" "$ALD""routerkeygen-4-0-2.apk"
-		elif [[ -d "$AZD" ]];
-		then
-			ScaricaIn "$ENTSSL""routerkeygen/routerkeygenAndroid/releases/download/v4.0.2/routerkeygen-4-0-2.apk" "$AZD""routerkeygen-4-0-2.apk"
-		else
-			ls /storage
-			echo "Digit where download, remember the slash at the end of the path"
-			read -p "(example, /storage/emulated/legacy/Download/): " ATD
-			if [[ -d "$ATD" ]];
-			then
-				ScaricaIn "$ENTSSL""routerkeygen/routerkeygenAndroid/releases/download/v4.0.2/routerkeygen-4-0-2.apk" "$ATD""routerkeygen-4-0-2.apk"
-			fi
-		fi
+		ScaricaIn "$ENTSSL""routerkeygen/routerkeygenAndroid/releases/download/v4.0.2/routerkeygen-4-0-2.apk" "routerkeygen-4-0-2.apk"
 	;;
 	"778")
 		Clona "ethicalhackingplayground/SubNuke"
+	;;
+	"779")
+		Clona "ethicalhackingplayground/dorkX"
+	;;
+	"780")
+		Clona "capture0x/XSS-LOADER"
+	;;
+	"781")
+		Clona "E4rr0r4/XGDork"
+	;;
+	"782")
+		ScaricaIn "$ENTSSL""intercepter-ng/mirror/raw/master/Intercepter-NG.2.0.apk" "Intercepter-NG.2.0.apk"
 	;;
 	*)
 		echo "error, invalid choice"
