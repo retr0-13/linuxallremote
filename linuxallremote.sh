@@ -156,6 +156,7 @@ while true; do
 	echo "$SEP"
 	echo "ARP"
 	echo -ne " 462. royhills/arp-scan\t\t\t\t582. byt3bl33d3r/arpspoof\t\t\t\t583. ammarx/ARP-spoofing/mmattack\n"
+	echo -ne " 786. dracipn/arp-cache-poisoning\t\t787. EONRaider/Arp-Spoofer\t\t\t788. EmreOvunc/ARP-Poisoning-Tool\n"
 	echo "$SEP"
 	echo "AWS"
 	echo -ne " 657. sa7mon/S3Scanner\t\t\t\t659. aljazceru/s3-bucket-scanner\t\t\t660. ankane/s3tk\n"
@@ -242,6 +243,7 @@ while true; do
 	echo -ne " 492. darkoperator/dnsrecon\t\t\t493. neiltyagi/DNSRECON\t\t\t\t\t496. rs/dnstrace\n"
 	echo -ne " 497. redsift/dnstrace\t\t\t\t498. dkorunic/dnstrace\t\t\t\t\t528. mfocuz/DNS_Hunter\n"
 	echo -ne " 752. theMiddleBlue/DNSenum\t\t\t753. rbsec/dnscan\n"
+	echo -ne " 783. gr3yc4t/dns-poisoning-tool\t\t784. SemyonMakhaev/dns-poison\t785. ShanjinurIslam/Computer-Security-DNS-Cache-Poisoning\n"
 	echo "$SEP"
 	echo "DOCKER"
 	echo -ne " 351. cr0hn/dockerscan\t\t\t\t352. RhinoSecurityLabs/ccat\n"
@@ -4149,6 +4151,30 @@ while true; do
 	;;
 	"782")
 		ScaricaIn "$ENTSSL""intercepter-ng/mirror/raw/master/Intercepter-NG.2.0.apk" "Intercepter-NG.2.0.apk"
+	;;
+	"783")
+		Clona "gr3yc4t/dns-poisoning-tool"
+	;;
+	"784")
+		Clona "SemyonMakhaev/dns-poison"
+	;;
+	"785")
+		if [[ $(Warning) == "Y" ]];
+		then
+			Scarica "$ENTRAW""ShanjinurIslam/Computer-Security-DNS-Cache-Poisoning/master/main.py"
+		fi
+	;;
+	"786")
+		if [[ $(Warning) == "Y" ]];
+		then
+			Clona "dracipn/arp-cache-poisoning"
+		fi
+	;;
+	"787")
+		Clona "EONRaider/Arp-Spoofer"
+	;;
+	"788")
+		Clona "EmreOvunc/ARP-Poisoning-Tool"
 	;;
 	*)
 		echo "error, invalid choice"
