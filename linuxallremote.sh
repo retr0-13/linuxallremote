@@ -4176,6 +4176,4317 @@ while true; do
 	"788")
 		Clona "EmreOvunc/ARP-Poisoning-Tool"
 	;;
+	"789")
+		Clona "CoolerVoid/0d1n"
+	;;
+	"790")
+		Clona "hahwul/a2sv"
+	;;
+	"791")
+		Clona "MITRECND/abcd"
+	;;
+	"792")
+		Clona "LandGrey/abuse-ssl-bypass-waf"
+	;;
+	"793")
+		Clona "fox-it/aclpwn.py"
+	;;
+	"795")
+		Clona "sahakkhotsanyan/adfind"
+	;;
+	"796")
+		Clona "sshock/AFFLIBv3"
+	;;
+	"797")
+		Clona "CoreSecurity/Agafi"
+	;;
+	"798")
+		Clona "tintinweb/aggroArgs"
+	;;
+	"799")
+		Clona "blark/aiodnsbrute"
+	;;
+	"800")
+		Clona "v1s1t0r1sh3r3/airgeddon"
+	;;
+	"801")
+		Clona "Josue87/Airopy"
+	;;
+	"802")
+		Clona "lanjelot/albatar"
+	;;
+	"803")
+		Clona "infosec-au/altdns"
+	;;
+	"804")
+		Clona "EgeBalci/Amber"
+	;;
+	"805")
+		Clona "bdcht/amoco"
+	;;
+	"806")
+		Clona "dkovar/analyzeMFT"
+	;;
+	"807")
+		Clona "AndroBugs/AndroBugs_Framework"
+	;;
+	"808")
+		Clona "androguard/androguard"
+	;;
+	"809")
+		Clona "Flo354/Androick"
+	;;
+	"810")
+		Clona "bbqlinux/android-udev-rules"
+	;;
+	"811")
+		Clona "PentesterES/AndroidPINCrack"
+	;;
+	"812")
+		Clona "maaaaz/androwarn"
+	;;
+	"813")
+		Clona "salls/angrop"
+	;;
+	"814")
+		Clona "lewangbtcc/anti-XSS"
+	;;
+	"815")
+		Clona "Acey9/apacket"
+	;;
+	"816")
+		Clona "rednaga/APKiD"
+	;;
+	"817")
+		Clona "hexabin/APKStat"
+	;;
+	"818")
+		Clona "dpnishant/appmon"
+	;;
+	"819")
+		Clona "MooseDojo/apt2"
+	;;
+	"820")
+		Clona "michenriksen/aquatone"
+	;;
+	"821")
+		Clona "pirate/ArchiveBox"
+	;;
+	"822")
+		Clona "arduino/Arduino"
+	;;
+	"823")
+		Clona "P-H-C/phc-winner-argon2"
+	;;
+	"824")
+		Clona "tokyoneon/Armor"
+	;;
+	"825")
+		Clona "alexpark07/ARMSCGen"
+	;;
+	"826")
+		Clona "he2ss/arpstraw"
+	;;
+	"827")
+		Clona "Lab-Zjt/ARPTools"
+	;;
+	"828")
+		Clona "ntrippar/ARPwner"
+	;;
+	"829")
+		Clona "mthbernardes/ARTLAS"
+	;;
+	"830")
+		Clona "quarkslab/arybo"
+	;;
+	"831")
+		Clona "tomnomnom/assetfinder"
+	;;
+	"832")
+		Clona "flipkart-incubator/astra"
+	;;
+	"833")
+		Clona "NORMA-Inc/AtEar"
+	;;
+	"834")
+		Clona "m4ll0k/Atlas"
+	;;
+	"835")
+		Clona "AlisamTechnology/ATSCAN-V3.1"
+	;;
+	"836")
+		Clona "superhedgy/AttackSurfaceMapper"
+	;;
+	"837")
+		Clona "aemkei/aurebesh.js"
+	;;
+	"838")
+		Clona "Tylous/Auto_EAP"
+	;;
+	"839")
+		Clona "MRGEffitas/scripts"
+	;;
+	"840")
+		Clona "skahwah/automato"
+	;;
+	"841")
+		Clona "redteamsecurity/AutoNessus"
+	;;
+	"842")
+		Clona "m4ll0k/AutoNSE"
+	;;
+	"843")
+		Clona "nccgroup/autopwn"
+	;;
+	"844")
+		Clona "Tib3rius/AutoRecon"
+	;;
+	"845")
+		Clona "bharshbarger/AutOSINT"
+	;;
+	"846")
+		Clona "NullArray/AutoSploit"
+	;;
+	"847")
+		Clona "adtac/autovpn"
+	;;
+	"848")
+		Clona "icsharpcode/AvaloniaILSpy"
+	;;
+	"849")
+		Clona "microsoft/avml"
+	;;
+	"850")
+		Clona "VirtueSecurity/aws-extender-cli"
+	;;
+	"851")
+		Clona "nccgroup/aws-inventory"
+	;;
+	"852")
+		Clona "jordanpotti/AWSBucketDump"
+	;;
+	"853")
+		Clona "chokepoint/azazel"
+	;;
+	"854")
+		Clona "aliasrobotics/aztarna"
+	;;
+	"855")
+		Clona "mrjopino/backcookie"
+	;;
+	"856")
+		Clona "dana-at-cp/backdoor-apk"
+	;;
+	"857")
+		Clona "secretsquirrel/the-backdoor-factory"
+	;;
+	"858")
+		Clona "Kkevsterrr/backdoorme"
+	;;
+	"859")
+		Clona "r00txp10it/backdoorppt"
+	;;
+	"860")
+		Clona "l0gan/backHack"
+	;;
+	"861")
+		Clona "giuliocomi/backoori"
+	;;
+	"862")
+		Clona "deepzec/Bad-Pdf"
+	;;
+	"863")
+		Clona "ThunderGunExpress/BADministration"
+	;;
+	"864")
+		Clona "ChiChou/bagbak"
+	;;
+	"865")
+		Clona "bwall/BAMF"
+	;;
+	"866")
+		Clona "programa-stic/barf-project"
+	;;
+	"867")
+		Clona "NickstaDB/BaRMIe"
+	;;
+	"868")
+		Clona "Voulnet/barq"
+	;;
+	"869")
+		Clona "Bashfuscator/Bashfuscator"
+	;;
+	"870")
+		Clona "neohapsis/bbqsql"
+	;;
+	"871")
+		Clona "lijiejie/bbscan"
+	;;
+	"872")
+		Clona "secretsquirrel/BDFProxy"
+	;;
+	"873")
+		Clona "invictus1306/beebug"
+	;;
+	"874")
+		Clona "honeynet/beeswarm/"
+	;;
+	"875")
+		Clona "aancw/Belati"
+	;;
+	"876")
+		Clona "chokepoint/Beleth"
+	;;
+	"877")
+		Clona "bettercap/bettercap"
+	;;
+	"878")
+		Clona "bettercap/ui"
+	;;
+	"879")
+		Clona "mazen160/bfac"
+	;;
+	"880")
+		Clona "tmbinc/bgrep"
+	;;
+	"881")
+		Clona "GitHackTools/BillCipher"
+	;;
+	"882")
+		Clona "Vector35/binaryninja-python"
+	;;
+	"883")
+		Clona "elfmaster/binflow"
+	;;
+	"884")
+		Clona "Hood3dRob1n/BinGoo"
+	;;
+	"885")
+		Clona "nccgroup/BinProxy/"
+	;;
+	"886")
+		Clona "ReFirmLabs/binwalk"
+	;;
+	"887")
+		Clona "bmaia/binwally"
+	;;
+	"888")
+		Clona "sensepost/birp"
+	;;
+	"889")
+		Clona "nbshelton/bitdump"
+	;;
+	"890")
+		Clona "sepehrdaddev/blackbox"
+	;;
+	"891")
+		Clona "thelinuxchoice/blackeye"
+	;;
+	"892")
+		Clona "jedisct1/blacknurse"
+	;;
+	"893")
+		Clona "evilsocket/bleah"
+	;;
+	"894")
+		Clona "afrantzis/bless"
+	;;
+	"895")
+		Clona "libeclipse/blind-sql-bitshifting"
+	;;
+	"896")
+		Clona "missDronio/blindy"
+	;;
+	"897")
+		Clona "BloodHoundAD/BloodHound"
+	;;
+	"898")
+		Clona "jesusprubio/bluebox-ng"
+	;;
+	"899")
+		Clona "olivo/BluPhish"
+	;;
+	"900")
+		Clona "RandomStorm/Bluto"
+	;;
+	"901")
+		Clona "ANSSI-FR/bmc-tools"
+	;;
+	"902")
+		Clona "st9140927/BOF_Detector"
+	;;
+	"903")
+		Clona "Markus-Go/bonesi"
+	;;
+	"904")
+		Clona "M1ND-B3ND3R/BoopSuite"
+	;;
+	"905")
+		Clona "R3nt0n/bopscrk"
+	;;
+	"906")
+		Clona "brompwnie/botb"
+	;;
+	"907")
+		Clona "zcutlip/bowcaster"
+	;;
+	"908")
+		Clona "CapacitorSet/box-js"
+	;;
+	"909")
+		Clona "gabemarshall/Brosec"
+	;;
+	"910")
+		Clona "ex0dusx/brut3k1t"
+	;;
+	"911")
+		Clona "Matrix07ksa/Brute_Force"
+	;;
+	"912")
+		Clona "glv2/bruteforce-luks"
+	;;
+	"913")
+		Clona "glv2/bruteforce-salted-openssl"
+	;;
+	"914")
+		Clona "glv2/bruteforce-wallet"
+	;;
+	"915")
+		Clona "1N3/BruteX"
+	;;
+	"916")
+		Clona "shawarkhanethicalhacker/BruteXSS"
+	;;
+	"917")
+		Clona "enjoiz/BSQLinjector"
+	;;
+	"918")
+		Clona "virtualabs/btlejack"
+	;;
+	"919")
+		Clona "conorpp/btproxy"
+	;;
+	"920")
+		Clona "simsong/bulk_extractor"
+	;;
+	"921")
+		Clona "aanarchyy/bully"
+	;;
+	"922")
+		Clona "sham00n/buster"
+	;;
+	"923")
+		Clona "buttinsky/buttinsky"
+	;;
+	"924")
+		Clona "webpwnized/byepass"
+	;;
+	"925")
+		Clona "vincentcox/bypass-firewalls-by-DNS-history"
+	;;
+	"926")
+		Clona "Konloch/bytecode-viewer"
+	;;
+	"927")
+		Clona "auraltension/c5scan"
+	;;
+	"928")
+		Clona "Ullaakut/cameradar"
+	;;
+	"929")
+		Clona "securestate/camscan"
+	;;
+	"930")
+		Clona "linux-can/can-utils"
+	;;
+	"931")
+		Clona "schutzwerk/CANalyzat0r"
+	;;
+	"932")
+		Clona "deibit/cansina"
+	;;
+	"933")
+		Clona "CANToolz/CANToolz"
+	;;
+	"934")
+		Clona "MobSF/CapFuzz"
+	;;
+	"935")
+		Clona "itsmehacker/CardPwn"
+	;;
+	"936")
+		Clona "packetassailant/catnthecanary"
+	;;
+	"937")
+		Clona "ring0lab/catphish"
+	;;
+	"938")
+		Clona "lgandx/CCrawlDNS"
+	;;
+	"939")
+		Clona "nccgroup/CECster"
+	;;
+	"940")
+		Clona "0xPoly/Centry"
+	;;
+	"941")
+		Clona "lanrat/certgraph"
+	;;
+	"942")
+		Clona "emsec/ChameleonMini"
+	;;
+	"943")
+		Clona "ztgrace/changeme"
+	;;
+	"944")
+		Clona "TarlogicSecurity/Chankro"
+	;;
+	"945")
+		Clona "projectdiscovery/chaos-client"
+	;;
+	"946")
+		Clona "moxie0/chapcrack"
+	;;
+	"947")
+		Clona "slimm609/checksec.sh"
+	;;
+	"948")
+		Clona "0xbc/chiasm-shell"
+	;;
+	"949")
+		Clona "chipsec/chipsec"
+	;;
+	"950")
+		Clona "jpillora/chisel"
+	;;
+	"951")
+		Clona "MITRECND/chopshop"
+	;;
+	"952")
+		Clona "earthquake/chw00t"
+	;;
+	"953")
+		Clona "epsylon/cintruder"
+	;;
+	"954")
+		Clona "jvehent/cipherscan"
+	;;
+	"955")
+		Clona "OpenSecurityResearch/ciphertest"
+	;;
+	"956")
+		Clona "frohoff/ciphr"
+	;;
+	"957")
+		Clona "nccgroup/cisco-snmp-enumeration"
+	;;
+	"958")
+		Clona "nccgroup/cisco-snmp-slap"
+	;;
+	"959")
+		Clona "madrisan/cisco7crack"
+	;;
+	"960")
+		Clona "madrisan/cisco7crack"
+	;;
+	"961")
+		Clona "jakecreps/Citadel"
+	;;
+	"962")
+		Clona "enddo/CJExploiter"
+	;;
+	"963")
+		Clona "coreos/clair"
+	;;
+	"964")
+		Clona "raffaele-forte/climber"
+	;;
+	"965")
+		Clona "trycatchhcf/cloakify"
+	;;
+	"966")
+		Clona "SageHack/cloud-buster"
+	;;
+	"967")
+		Clona "m0rtem/CloudFail"
+	;;
+	"968")
+		Clona "mandatoryprogrammer/cloudflare_enum"
+	;;
+	"969")
+		Clona "eudemonics/cloudget"
+	;;
+	"970")
+		Clona "projectdiscovery/cloudlist"
+	;;
+	"971")
+		Clona "MrH0wl/Cloudmare"
+	;;
+	"972")
+		Clona "cloudsploit/scans"
+	;;
+	"973")
+		Clona "greycatz/CloudUnflare"
+	;;
+	"974")
+		Clona "hatRiot/clusterd"
+	;;
+	"975")
+		Clona "EgeBalci/Cminer/"
+	;;
+	"976")
+		Clona "FlorianHeigl/cms-explorer"
+	;;
+	"977")
+		Clona "Tuhinshubhra/CMSeeK"
+	;;
+	"978")
+		Clona "nahamsec/CMSFuzz"
+	;;
+	"979")
+		Clona "ajinabraham/CMSScan"
+	;;
+	"980")
+		Clona "wpscanteam/CMSScanner"
+	;;
+	"981")
+		Clona "packetassailant/cnamulator"
+	;;
+	"982")
+		Clona "bseb/cntlm"
+	;;
+	"984")
+		Clona "Intrinsec/comission"
+	;;
+	"985")
+		Clona "assetnote/commonspeak2"
+	;;
+	"986")
+		Clona "patpadgett/corkscrew"
+	;;
+	"987")
+		Clona "chenjj/CORScanner"
+	;;
+	"988")
+		Clona "RUB-NDS/CORStest"
+	;;
+	"989")
+		Clona "QKaiser/cottontail"
+	;;
+	"990")
+		Clona "joswr1ght/cowpatty"
+	;;
+	"991")
+		Clona "cpptest/cpptest/releases"
+	;;
+	"992")
+		Clona "D4Vinci/Cr3dOv3r"
+	;;
+	"993")
+		Clona "Hack-Hut/CrabStick"
+	;;
+	"994")
+		Clona "CoalfireLabs/crackHOR"
+	;;
+	"995")
+		Clona "mikeryan/crackle/"
+	;;
+	"996")
+		Clona "vnik5287/Crackq"
+	;;
+	"997")
+		Clona "averagesecurityguy/crack"
+	;;
+	"998")
+		Clona "Ganapati/Crawlic"
+	;;
+	"999")
+		Clona "codepr/creak"
+	;;
+	"1000")
+		Clona "oblique/create_ap"
+	;;
+	"1001")
+		Clona "moyix/creddump"
+	;;
+	"1002")
+		Clona "lightos/credmap"
+	;;
+	"1003")
+		Clona "DanMcInerney/creds.py"
+	;;
+	"1004")
+		Clona "ustayready/CredSniper"
+	;;
+	"1005")
+		Clona "http://github.com/ilektrojohn/creepy.git"
+	;;
+	"1006")
+		Clona "SpiderLabs/cribdrag"
+	;;
+	"1007")
+		Clona "m8r0wn/crosslinked"
+	;;
+	"1008")
+		Clona "galkan/crowbar"
+	;;
+	"1009")
+		Clona "crozono/crozono-free"
+	;;
+	"1010")
+		Clona "chokepoint/CryptHook"
+	;;
+	"1011")
+		Clona "taviso/ctypes.sh"
+	;;
+	"1012")
+		Clona "Beyarz/Cve-api"
+	;;
+	"1013")
+		Clona "sjvermeu/cvechecker"
+	;;
+	"1014")
+		Clona "chamli/CyberCrowl"
+	;;
+	"1015")
+		Clona "medbenali/CyberScan"
+	;;
+	"1016")
+		Clona "shawarkhanethicalhacker/D-TECT"
+	;;
+	"1017")
+		Clona "Ekultek/Dagon"
+	;;
+	"1018")
+		Clona "504ensicsLabs/DAMM"
+	;;
+	"1019")
+		Clona "SideChannelMarvels/Daredevil"
+	;;
+	"1020")
+		Clona "BlackArch/darkmysqli"
+	;;
+	"1021")
+		Clona "itsmehacker/DarkScrape"
+	;;
+	"1022")
+		Clona "M4cs/DarkSpiritz"
+	;;
+	"1023")
+		Clona "nccgroup/DatajackProxy"
+	;;
+	"1024")
+		Clona "upgoingstar/datasploit"
+	;;
+	"1025")
+		Clona "Graph-X/davscan"
+	;;
+	"1026")
+		Clona "thesp0nge/dawnscanner"
+	;;
+	"1027")
+		Clona "gitdurandal/dbd"
+	;;
+	"1028")
+		Clona "taviso/dbusmap"
+	;;
+	"1029")
+		Clona "kgretzky/dcrawl"
+	;;
+	"1030")
+		Clona "0xd4d/de4dot/"
+	;;
+	"1031")
+		Clona "byt3bl33d3r/DeathStar"
+	;;
+	"1032")
+		Clona "UndeadSec/Debinject"
+	;;
+	"1033")
+		Clona "SpiderLabs/deblaze"
+	;;
+	"1034")
+		Clona "UltimateHackers/Decodify"
+	;;
+	"1035")
+		Clona "takeshixx/deen"
+	;;
+	"1036")
+		Clona "nccgroup/demiguise"
+	;;
+	"1037")
+		Clona "galkan/depdep"
+	;;
+	"1038")
+		Clona "sensepost/det"
+	;;
+	"1039")
+		Clona "horsicq/DIE-engine/releases"
+	;;
+	"1040")
+		Clona "galkan/tools/tree/master/detect_sniffer"
+	;;
+	"1041")
+		Clona "spectresearch/detectem"
+	;;
+	"1042")
+		Clona "DanMcInerney/device-pharmer"
+	;;
+	"1043")
+		Clona "DexPatcher/dexpatcher-tool"
+	;;
+	"1044")
+		Clona "msuhanov/dfir_ntfs"
+	;;
+	"1045")
+		Clona "philarkwright/DGA-Detection"
+	;;
+	"1046")
+		Clona "elceef/dhcpf"
+	;;
+	"1047")
+		Clona "kamorin/DHCPig"
+	;;
+	"1048")
+		Clona "misje/dhcpoptinj"
+	;;
+	"1049")
+		Clona "DidierStevens/DidierStevensSuite"
+	;;
+	"1050")
+		Clona "digination/dirbuster-ng"
+	;;
+	"1051")
+		Clona "hahwul/dirhunt"
+	;;
+	"1052")
+		Clona "Cillian-Collins/dirscraper"
+	;;
+	"1053")
+		Clona "maurosoria/dirsearch"
+	;;
+	"1054")
+		Clona "stefanoj3/dirstalk"
+	;;
+	"1055")
+		Clona "gdabah/distorm"
+	;;
+	"1056")
+		Clona "Mr-Un1k0d3r/DKMC"
+	;;
+	"1057")
+		Clona "lorenzog/dns-parallel-prober"
+	;;
+	"1058")
+		Clona "StalkR/dns-reverse-proxy"
+	;;
+	"1059")
+		Clona "maurotfilho/dns-spoof"
+	;;
+	"1060")
+		Clona "d4rkcat/dnsbrute"
+	;;
+	"1061")
+		Clona "dmitescu/dnscobra"
+	;;
+	"1062")
+		Clona "leonjza/dnsfilexfer"
+	;;
+	"1063")
+		Clona "erbbysam/DNSGrep"
+	;;
+	"1064")
+		Clona "0xd4d/dnSpy/"
+	;;
+	"1065")
+		Clona "evilsocket/dnssearch"
+	;;
+	"1066")
+		Clona "elceef/dnstwist"
+	;;
+	"1067")
+		Clona "vortexau/dnsvalidator"
+	;;
+	"1068")
+		Clona "projectdiscovery/dnsx"
+	;;
+	"1069")
+		Clona "whitel1st/docem"
+	;;
+	"1070")
+		Clona "MarkBaggett/domain_stats"
+	;;
+	"1071")
+		Clona "coldfusion39/domi-owned"
+	;;
+	"1072")
+		Clona "vysecurity/DomLink"
+	;;
+	"1073")
+		Clona "TheWover/donut"
+	;;
+	"1074")
+		Clona "AeonDave/doork"
+	;;
+	"1075")
+		Clona "CoalfireLabs/crackHOR"
+	;;
+	"1076")
+		Clona "utiso/dorkbot"
+	;;
+	"1077")
+		Clona "blueudp/DorkMe"
+	;;
+	"1078")
+		Clona "NullArray/DorkNet"
+	;;
+	"1079")
+		Clona "insaneisnotfree/Blue-Sky-Information-Security"
+	;;
+	"1080")
+		Clona "ucsb-seclab/dr_checker"
+	;;
+	"1081")
+		Clona "D4Vinci/Dr0p1t-Framework"
+	;;
+	"1082")
+		Clona "screetsec/Dracnmap"
+	;;
+	"1083")
+		Clona "Shellntel/backdoors"
+	;;
+	"1084")
+		Clona "emptymonkey/drinkme"
+	;;
+	"1085")
+		Clona "dripcap/dripcap"
+	;;
+	"1086")
+		Clona "droope/droopescan"
+	;;
+	"1087")
+		Clona "mwrlabs/drozer"
+	;;
+	"1088")
+		Clona "Tethik/drupal-module-enumeration"
+	;;
+	"1089")
+		Clona "immunIT/drupwn"
+	;;
+	"1090")
+		Clona "dlang-community/D-Scanner"
+	;;
+	"1091")
+		Clona "szechyjs/dsd"
+	;;
+	"1092")
+		Clona "stamparm/DSFS"
+	;;
+	"1093")
+		Clona "USArmyResearchLab/Dshell"
+	;;
+	"1094")
+		Clona "stamparm/DSJS"
+	;;
+	"1095")
+		Clona "stamparm/DSSS"
+	;;
+	"1096")
+		Clona "anantshri/DS_Store_crawler_parser"
+	;;
+	"1097")
+		Clona "stamparm/DSXS"
+	;;
+	"1098")
+		Clona "fleetcaptain/dtp-spoof"
+	;;
+	"1099")
+		Clona "insomniacslk/dublin-traceroute"
+	;;
+	"1100")
+		Clona "kevthehermit/DuckToolkit"
+	;;
+	"1101")
+		Clona "0verl0ad/Dumb0"
+	;;
+	"1102")
+		Clona "MalcolmRobb/dump1090"
+	;;
+	"1103")
+		Clona "nil0x42/duplicut"
+	;;
+	"1104")
+		Clona "dungtv543/Dutas"
+	;;
+	"1105")
+		Clona "kost/dvcs-ripper"
+	;;
+	"1106")
+		Clona "iGio90/Dwarf"
+	;;
+	"1107")
+		Clona "DynamoRIO/dynamorio"
+	;;
+	"1108")
+		Clona "securestate/eapeak"
+	;;
+	"1109")
+		Clona "s0lst1c3/eaphammer"
+	;;
+	"1110")
+		Clona "brav0hax/easy-creds"
+	;;
+	"1111")
+		Clona "nccgroup/easyda"
+	;;
+	"1112")
+		Clona "elfmaster/ecfs"
+	;;
+	"1113")
+		Clona "eteran/edb-debugger/"
+	;;
+	"1114")
+		Clona "neoneggplant/EggShell"
+	;;
+	"1115")
+		Clona "jacob-baines/elfparser"
+	;;
+	"1116")
+		Clona "DeveloppSoft/EliDecode"
+	;;
+	"1117")
+		Clona "DanMcInerney/elite-proxy-finder"
+	;;
+	"1118")
+		Clona "martinvigo/email2phonenumber/"
+	;;
+	"1119")
+		Clona "BC-SECURITY/Empire"
+	;;
+	"1120")
+		Clona "cr0hn/enteletaor"
+	;;
+	"1121")
+		Clona "dejanlevaja/enum_shares"
+	;;
+	"1122")
+		Clona "Gilks/enumerid"
+	;;
+	"1123")
+		Clona "synacktiv/eos"
+	;;
+	"1124")
+		Clona "thorkill/eresi"
+	;;
+	"1125")
+		Clona "gteissier/erl-matter"
+	;;
+	"1126")
+		Clona "josh0xA/Espionage"
+	;;
+	"1127")
+		Clona "peterpt/eternal_scanner"
+	;;
+	"1128")
+		Clona "https://ettercap.github.com/ettercap/"
+	;;
+	"1129")
+		Clona "outflanknl/EvilClippy"
+	;;
+	"1130")
+		Clona "bitbrute/evillimiter"
+	;;
+	"1131")
+		Clona "saeeddhqan/evine.git"
+	;;
+	"1132")
+		Clona "yarox24/evtkit"
+	;;
+	"1133")
+		Clona "Exa-Networks/exabgp"
+	;;
+	"1134")
+		Clona "OsandaMalith/Exe2Image"
+	;;
+	"1135")
+		Clona "cysinfo/Exescan"
+	;;
+	"1136")
+		Clona "NullHypothesis/exitmap"
+	;;
+	"1137")
+		Clona "tr3w/ExpImp-Lookup"
+	;;
+	"1138")
+		Clona "juansacco/exploitpack"
+	;;
+	"1139")
+		Clona "ExpoSEJS/ExpoSE"
+	;;
+	"1140")
+		Clona "asciimoo/exrex"
+	;;
+	"1141")
+		Clona "Damian89/extended-ssrf-search"
+	;;
+	"1142")
+		Clona "bwall/ExtractHosts"
+	;;
+	"1143")
+		Clona "jschicht/ExtractUsnJrnl"
+	;;
+	"1144")
+		Clona "BishopFox/eyeballer"
+	;;
+	"1145")
+		Clona "ChrisTruncer/EyeWitness"
+	;;
+	"1146")
+		Clona "ysrc/F-Scrack"
+	;;
+	"1147")
+		Clona "thelinuxchoice/facebash"
+	;;
+	"1148")
+		Clona "tomoneill19/facebookOSINT"
+	;;
+	"1149")
+		Clona "pun1sh3r/facebot"
+	;;
+	"1150")
+		Clona "PowerScript/facebrok"
+	;;
+	"1151")
+		Clona "emerinohdz/FaceBrute"
+	;;
+	"1152")
+		Clona "ryosan/factordb-pycli"
+	;;
+	"1153")
+		Clona "Crypt0s/FakeDns"
+	;;
+	"1154")
+		Clona "fireeye/flare-fakenet-ng"
+	;;
+	"1155")
+		Clona "mubix/FakeNetBIOS"
+	;;
+	"1156")
+		Clona "evilsocket/fang"
+	;;
+	"1157")
+		Clona "pavel-odintsov/fastnetmon"
+	;;
+	"1158")
+		Clona "devanshbatham/FavFreak"
+	;;
+	"1159")
+		Clona "chinoogawa/fbht"
+	;;
+	"1160")
+		Clona "xHak9x/fbi"
+	;;
+	"1161")
+		Clona "guelfoweb/fbid"
+	;;
+	"1162")
+		Clona "chrispetrou/FDsploit"
+	;;
+	"1163")
+		Clona "nccgroup/featherduster"
+	;;
+	"1164")
+		Clona "fesh0r/fernflower"
+	;;
+	"1165")
+		Clona "stealth/fernmelder"
+	;;
+	"1166")
+		Clona "ffuf/ffuf"
+	;;
+	"1167")
+		Clona "sfan5/fi6s"
+	;;
+	"1168")
+		Clona "henshin/filebuster"
+	;;
+	"1169")
+		Clona "0blio/fileGPS"
+	;;
+	"1170")
+		Clona "keithjjones/fileintel"
+	;;
+	"1171")
+		Clona "subinacls/Filibuster"
+	;;
+	"1172")
+		Clona "manwhoami/findmyiphone"
+	;;
+	"1173")
+		Clona "Edu4rdSHL/findomain"
+	;;
+	"1174")
+		Clona "1N3/findsploit"
+	;;
+	"1175")
+		Clona "erwanlr/Fingerprinter"
+	;;
+	"1176")
+		Clona "BishopFox/firecat"
+	;;
+	"1177")
+		Clona "mazen160/Firefox-Security-Toolkit"
+	;;
+	"1178")
+		Clona "craigz28/firmwalker"
+	;;
+	"1179")
+		Clona "rampageX/firmware-mod-kit"
+	;;
+	"1180")
+		Clona "nccgroup/firstexecution"
+	;;
+	"1181")
+		Clona "tearsecurity/firstorder"
+	;;
+	"1182")
+		Clona "galkan/flashlight"
+	;;
+	"1183")
+		Clona "riusksk/FlashScanner"
+	;;
+	"1184")
+		Clona "thewhiteh4t/flashsploit"
+	;;
+	"1185")
+		Clona "7h3rAm/flowinspect"
+	;;
+	"1186")
+		Clona "tismayil/fockcache"
+	;;
+	"1187")
+		Clona "byt3smith/Forager"
+	;;
+	"1188")
+		Clona "ALSchwalm/foresight"
+	;;
+	"1189")
+		Clona "Owlz/formatStringExploiter"
+	;;
+	"1190")
+		Clona "kirei/fpdns"
+	;;
+	"1191")
+		Clona "stealth/fraud-bridge"
+	;;
+	"1192")
+		Clona "kylemcdonald/FreeWifi"
+	;;
+	"1193")
+		Clona "OALabs/frida-extract"
+	;;
+	"1194")
+		Clona "AloneMonkey/frida-ios-dump"
+	;;
+	"1195")
+		Clona "AndroidTamer/frida-push"
+	;;
+	"1196")
+		Clona "Nightbringer21/fridump"
+	;;
+	"1197")
+		Clona "miaouPlop/fs"
+	;;
+	"1198")
+		Clona "adtac/fssb"
+	;;
+	"1199")
+		Clona "RubenRocha/ftpscout"
+	;;
+	"1200")
+		Clona "lostincynicism/FuzzAP"
+	;;
+	"1201")
+		Clona "mdiazcl/fuzzbunch-debian"
+	;;
+	"1202")
+		Clona "JackOfMostTrades/gadgetinspector"
+	;;
+	"1203")
+		Clona "med0x2e/GadgetToJScript"
+	;;
+	"1204")
+		Clona "michaeltelford/gatecrasher"
+	;;
+	"1205")
+		Clona "lc/gau/"
+	;;
+	"1206")
+		Clona "byt3bl33d3r/gcat"
+	;;
+	"1207")
+		Clona "RhinoSecurityLabs/GCPBucketBrute"
+	;;
+	"1208")
+		Clona "GasparVardanyan/GCrypt"
+	;;
+	"1209")
+		Clona "cs01/gdbgui"
+	;;
+	"1210")
+		Clona "hugsy/gef"
+	;;
+	"1211")
+		Clona "0xrawsec/gene"
+	;;
+	"1212")
+		Clona "KarmaHostage/gethspoit"
+	;;
+	"1213")
+		Clona "vulnersCom/getsploit"
+	;;
+	"1214")
+		Clona "http://jeanphix.github.com/Ghost.py/"
+	;;
+	"1215")
+		Clona "s1egesystems/GhostDelivery"
+	;;
+	"1216")
+		Clona "bahamas10/node-git-dump"
+	;;
+	"1217")
+		Clona "tillson/git-hound"
+	;;
+	"1218")
+		Clona "obheda12/GitDorker"
+	;;
+	"1219")
+		Clona "mschwager/gitem"
+	;;
+	"1220")
+		Clona "hisxo/gitGraber"
+	;;
+	"1221")
+		Clona "lijiejie/githack"
+	;;
+	"1222")
+		Clona "mazen160/GithubCloner"
+	;;
+	"1223")
+		Clona "zricethezav/gitleaks"
+	;;
+	"1224")
+		Clona "giovanifss/gitmails"
+	;;
+	"1225")
+		Clona "danilovazb/GitMiner"
+	;;
+	"1226")
+		Clona "internetwache/GitTools"
+	;;
+	"1227")
+		Clona "joshDelta/Gloom-Framework"
+	;;
+	"1228")
+		Clona "OWASP/glue"
+	;;
+	"1229")
+		Clona "razc411/GoBD"
+	;;
+	"1230")
+		Clona "OJ/gobuster"
+	;;
+	"1231")
+		Clona "NetSPI/goddi"
+	;;
+	"1232")
+		Clona "jseidl/GoldenEye"
+	;;
+	"1233")
+		Clona "golismero/golismero"
+	;;
+	"1234")
+		Clona "anarcoder/google_explorer"
+	;;
+	"1235")
+		Clona "zombiesam/googlesub"
+	;;
+	"1236")
+		Clona "1N3/Goohak"
+	;;
+	"1237")
+		Clona "s0md3v/goop"
+	;;
+	"1238")
+		Clona "tarunkant/Gopherus"
+	;;
+	"1239")
+		Clona "gophish/gophish"
+	;;
+	"1240")
+		Clona "Nhoya/gOSINT"
+	;;
+	"1241")
+		Clona "jaeles-project/gospider"
+	;;
+	"1242")
+		Clona "MartinIngesen/gpocrack"
+	;;
+	"1243")
+		Clona "osqzss/gps-sdr-sim"
+	;;
+	"1244")
+		Clona "bistromath/gr-air-modes"
+	;;
+	"1245")
+		Clona "ptrkrysik/gr-gsm"
+	;;
+	"1246")
+		Clona "drmpeg/gr-paint"
+	;;
+	"1247")
+		Clona "black-brain/graBing"
+	;;
+	"1248")
+		Clona "Ekultek/Graffiti"
+	;;
+	"1249")
+		Clona "swisskyrepo/GraphQLmap"
+	;;
+	"1250")
+		Clona "wireghoul/graudit"
+	;;
+	"1251")
+		Clona "greenbone/gsa"
+	;;
+	"1252")
+		Clona "trailofbits/grr"
+	;;
+	"1253")
+		Clona "anchore/grype"
+	;;
+	"1254")
+		Clona "hackerschoice/gsocket"
+	;;
+	"1255")
+		Clona "mzfr/gtfo"
+	;;
+	"1256")
+		Clona "nccgroup/GTFOBLookup"
+	;;
+	"1257")
+		Clona "greenbone/gvmd/"
+	;;
+	"1258")
+		Clona "00xc/h2buster"
+	;;
+	"1259")
+		Clona "BishopFox/h2csmuggler"
+	;;
+	"1260")
+		Clona "summerwind/h2spec"
+	;;
+	"1261")
+		Clona "gildasio/h2t"
+	;;
+	"1262")
+		Clona "khast3x/h8mail"
+	;;
+	"1263")
+		Clona "portantier/habu"
+	;;
+	"1264")
+		Clona "Ridter/hackredis"
+	;;
+	"1265")
+		Clona "mossmann/hackrf"
+	;;
+	"1266")
+		Clona "haka-security/haka"
+	;;
+	"1267")
+		Clona "4shadoww/hakkuframework"
+	;;
+	"1268")
+		Clona "hakluke/hakrawler"
+	;;
+	"1269")
+		Clona "hakluke/hakrevdns"
+	;;
+	"1270")
+		Clona "Rich5/Harness"
+	;;
+	"1271")
+		Clona "Te-k/harpoon"
+	;;
+	"1272")
+		Clona "galkan/hasere"
+	;;
+	"1273")
+		Clona "UltimateHackers/Hash-Buster/"
+	;;
+	"1274")
+		Clona "iagox86/hash_extender"
+	;;
+	"1275")
+		Clona "blackploit/hash-identifier"
+	;;
+	"1276")
+		Clona "hashcat/hashcat-utils"
+	;;
+	"1277")
+		Clona "staz0t/hashcatch/releases"
+	;;
+	"1278")
+		Clona "NPS-DEEP/hashdb/"
+	;;
+	"1279")
+		Clona "jessek/hashdeep"
+	;;
+	"1280")
+		Clona "ChrisTruncer/Hasher"
+	;;
+	"1281")
+		Clona "rurapenthe/hashfind"
+	;;
+	"1282")
+		Clona "psypanda/hashID"
+	;;
+	"1283")
+		Clona "bwall/HashPump"
+	;;
+	"1284")
+		Clona "SmeegeSec/HashTag"
+	;;
+	"1285")
+		Clona "HatBashBR/HatCloud"
+	;;
+	"1286")
+		Clona "trustedsec/hate_crack"
+	;;
+	"1287")
+		Clona "trolldbois/python-haystack"
+	;;
+	"1288")
+		Clona "ZerBea/hcxdumptool"
+	;;
+	"1289")
+		Clona "ZerBea/hcxkeys"
+	;;
+	"1290")
+		Clona "ZerBea/hcxtools"
+	;;
+	"1291")
+		Clona "rjw57/hdcp-genkey"
+	;;
+	"1292")
+		Clona "ApertureLabsLtd/hdmi-sniff"
+	;;
+	"1293")
+		Clona "robertdavidgraham/heartleech"
+	;;
+	"1294")
+		Clona "ytisf/hemingway"
+	;;
+	"1295")
+		Clona "EgeBalci/HERCULES"
+	;;
+	"1296")
+		Clona "dstotijn/hetty"
+	;;
+	"1297")
+		Clona "sharkdp/hexyl"
+	;;
+	"1298")
+		Clona "4n4nk3/HikPwn"
+	;;
+	"1299")
+		Clona "stephenbradshaw/hlextend"
+	;;
+	"1300")
+		Clona "nccgroup/hodor"
+	;;
+	"1301")
+		Clona "hasherezade/hollows_hunter"
+	;;
+	"1302")
+		Clona "ElevenPaths/HomePWN"
+	;;
+	"1303")
+		Clona "DataSoft/Honeyd/"
+	;;
+	"1304")
+		Clona "foospidy/HoneyPy"
+	;;
+	"1305")
+		Clona "xme/hoover/"
+	;;
+	"1306")
+		Clona "gabamnml/hoper"
+	;;
+	"1307")
+		Clona "SpiderLabs/HostHunter"
+	;;
+	"1308")
+		Clona "schollz/howmanypeoplearearound"
+	;;
+	"1309")
+		Clona "rep/hpfeeds"
+	;;
+	"1310")
+		Clona "PaulSec/HQLmap"
+	;;
+	"1311")
+		Clona "riramar/hsecscan"
+	;;
+	"1312")
+		Clona "segment-srl/htcap"
+	;;
+	"1313")
+		Clona "lijiejie/htpwdScan"
+	;;
+	"1314")
+		Clona "lkarsten/htrosbif"
+	;;
+	"1315")
+		Clona "wireghoul/htshells"
+	;;
+	"1316")
+		Clona "Danladi/HttpPwnly"
+	;;
+	"1317")
+		Clona "tomnomnom/httprobe"
+	;;
+	"1318")
+		Clona "breenmachine/httpscreenshot"
+	;;
+	"1319")
+		Clona "larsbrinkhoff/httptunnel"
+	;;
+	"1320")
+		Clona "cthit/hubbIT-sniffer"
+	;;
+	"1321")
+		Clona "grafov/hulk"
+	;;
+	"1322")
+		Clona "nbuechler/hungry-interceptor"
+	;;
+	"1323")
+		Clona "CoolerVoid/Hyde"
+	;;
+	"1324")
+		Clona "vanhauser-thc/thc-hydra"
+	;;
+	"1325")
+		Clona "xiam/hyperfox"
+	;;
+	"1326")
+		Clona "hackappcom/ibrute/"
+	;;
+	"1327")
+		Clona "m4ll0k/iCloudBrutter"
+	;;
+	"1328")
+		Clona "inquisb/icmpsh"
+	;;
+	"1329")
+		Clona "BillyV4/ID-entify"
+	;;
+	"1330")
+		Clona "stamparm/identYwaf"
+	;;
+	"1331")
+		Clona "lijiejie/IIS_shortname_Scanner"
+	;;
+	"1332")
+		Clona "airbus-seclab/ilo4_toolbox"
+	;;
+	"1333")
+		Clona "coderofsalvation/imagegrep-bash"
+	;;
+	"1334")
+		Clona "jklmnn/imagejs"
+	;;
+	"1335")
+		Clona "ralphje/imagemounter"
+	;;
+	"1336")
+		Clona "WerWolv/ImHex"
+	;;
+	"1337")
+		Clona "LimerBoy/Impulse"
+	;;
+	"1338")
+		Clona "jschicht/Indx2Csv"
+	;;
+	"1339")
+		Clona "jschicht/IndxCarver"
+	;;
+	"1340")
+		Clona "m4ll0k/infoga"
+	;;
+	"1341")
+		Clona "BountyStrike/Injectus"
+	;;
+	"1342")
+		Clona "penafieljlm/inquisitor"
+	;;
+	"1343")
+		Clona "4w4k3/Insanity-Framework"
+	;;
+	"1344")
+		Clona "sc1341/InstagramOSINT/"
+	;;
+	"1345")
+		Clona "thelinuxchoice/instashell"
+	;;
+	"1346")
+		Clona "itsmehacker/IntelPlot"
+	;;
+	"1347")
+		Clona "Hnfull/Intensio-Obfuscator"
+	;;
+	"1348")
+		Clona "codingo/Interlace/releases"
+	;;
+	"1349")
+		Clona "carmaa/interrogate"
+	;;
+	"1350")
+		Clona "ohdae/Intersect.5"
+	;;
+	"1351")
+		Clona "danielbohannon/Invoke-CradleCrafter"
+	;;
+	"1352")
+		Clona "danielbohannon/Invoke-DOSfuscation"
+	;;
+	"1353")
+		Clona "danielbohannon/Invoke-Obfuscation"
+	;;
+	"1354")
+		Clona "takeshixx/ip-https-tools"
+	;;
+	"1355")
+		Clona "Rajkumrdusad/IP-Tracer"
+	;;
+	"1356")
+		Clona "AnarchyAngel/IPMIPWN"
+	;;
+	"1357")
+		Clona "OsandaMalith/IPObfuscator"
+	;;
+	"1358")
+		Clona "Hackplayers/iptodomain"
+	;;
+	"1359")
+		Clona "Pinperepette/IPTV"
+	;;
+	"1360")
+		Clona "milo2012/ipv4Bypass"
+	;;
+	"1361")
+		Clona "lavalamp-/ipv666"
+	;;
+	"1362")
+		Clona "bwall/ircsnapshot"
+	;;
+	"1363")
+		Clona "halitalptekin/isip"
+	;;
+	"1364")
+		Clona "juphoff/issniff"
+	;;
+	"1365")
+		Clona "salesforce/ja3"
+	;;
+	"1366")
+		Clona "flankerhqd/JAADAS/"
+	;;
+	"1367")
+		Clona "skylot/jadx"
+	;;
+	"1368")
+		Clona "stasinopoulos/jaidam"
+	;;
+	"1369")
+		Clona "mikehacksthings/jast"
+	;;
+	"1370")
+		Clona "SpiderLabs/jboss-autopwn"
+	;;
+	"1371")
+		Clona "kwart/jd-cli"
+	;;
+	"1372")
+		Clona "frohoff/jdeserialize/"
+	;;
+	"1373")
+		Clona "SideChannelMarvels/JeanGrey"
+	;;
+	"1374")
+		Clona "utkusen/jeopardize"
+	;;
+	"1375")
+		Clona "joaomatosf/jexboss"
+	;;
+	"1376")
+		Clona "rastating/jooforce"
+	;;
+	"1377")
+		Clona "jindrapetrik/jpexs-decompiler"
+	;;
+	"1378")
+		Clona "incogbyte/jsearch"
+	;;
+	"1379")
+		Clona "aemkei/jsfuck"
+	;;
+	"1380")
+		Clona "s0md3v/JShell"
+	;;
+	"1381")
+		Clona "zigoo0/JSONBee"
+	;;
+	"1382")
+		Clona "nahamsec/JSParser"
+	;;
+	"1383")
+		Clona "ron190/jsql-injection"
+	;;
+	"1384")
+		Clona "mindedsecurity/JStillery"
+	;;
+	"1385")
+		Clona "ohpe/juicy-potato"
+	;;
+	"1386")
+		Clona "securactive/junkie"
+	;;
+	"1387")
+		Clona "telerik/JustDecompileEngine/releases"
+	;;
+	"1388")
+		Clona "katjahahn/JWScan"
+	;;
+	"1389")
+		Clona "brendan-rius/c-jwt-cracker"
+	;;
+	"1390")
+		Clona "ticarpi/jwt_tool"
+	;;
+	"1391")
+		Clona "aress31/jwtcat"
+	;;
+	"1392")
+		Clona "galkan/kacak"
+	;;
+	"1393")
+		Clona "P0cL4bs/Kadimus"
+	;;
+	"1394")
+		Clona "steve-m/kalibrate-rtl"
+	;;
+	"1395")
+		Clona "woj-ciech/kamerka"
+	;;
+	"1396")
+		Clona "samratashok/Kautilya/releases"
+	;;
+	"1397")
+		Clona "xtaci/kcptun"
+	;;
+	"1398")
+		Clona "gentilkiwi/kekeo"
+	;;
+	"1399")
+		Clona "spencerdodd/kernelpop"
+	;;
+	"1400")
+		Clona "clirimemini/Keye"
+	;;
+	"1401")
+		Clona "k4m4/kickthemout"
+	;;
+	"1402")
+		Clona "thewhiteh4t/killcast"
+	;;
+	"1403")
+		Clona "riverloopsec/killerbee"
+	;;
+	"1404")
+		Clona "ChaitanyaHaritash/kimi"
+	;;
+	"1405")
+		Clona "desaster/kippo"
+	;;
+	"1406")
+		Clona "klee/klee"
+	;;
+	"1407")
+		Clona "guelfoweb/knock"
+	;;
+	"1408")
+		Clona "ernw/knxmap"
+	;;
+	"1409")
+		Clona "dirkjanm/krbrelayx"
+	;;
+	"1410")
+		Clona "aquasecurity/kube-hunter"
+	;;
+	"1411")
+		Clona "averonesis/kubolt"
+	;;
+	"1412")
+		Clona "sensepost/kwetza"
+	;;
+	"1413")
+		Clona "roissy/l0l"
+	;;
+	"1414")
+		Clona "takeshixx/laf"
+	;;
+	"1415")
+		Clona "http://github.com/rflynn/lanmap2"
+	;;
+	"1416")
+		Clona "DanMcInerney/LANs.py"
+	;;
+	"1417")
+		Clona "nccgroup/LazyDroid"
+	;;
+	"1418")
+		Clona "wireghoul/lbmap"
+	;;
+	"1419")
+		Clona "sduverger/ld-shatner"
+	;;
+	"1420")
+		Clona "franc-pentest/ldeep"
+	;;
+	"1421")
+		Clona "woj-ciech/LeakLooker"
+	;;
+	"1422")
+		Clona "mmicu/leena"
+	;;
+	"1423")
+		Clona "carlospolop/legion"
+	;;
+	"1424")
+		Clona "leo-editor/leo-editor/"
+	;;
+	"1425")
+		Clona "captainhooligan/Leroy-Jenkins"
+	;;
+	"1426")
+		Clona "codewhitesec/LethalHTA"
+	;;
+	"1427")
+		Clona "onthefrontline/LetMeFuckIt-Scanner"
+	;;
+	"1428")
+		Clona "leviathan-framework/leviathan"
+	;;
+	"1429")
+		Clona "galkan/levye"
+	;;
+	"1430")
+		Clona "OsandaMalith/LFiFreak/"
+	;;
+	"1431")
+		Clona "aepereyra/lfimap/"
+	;;
+	"1432")
+		Clona "D35m0nd142/LFISuite"
+	;;
+	"1433")
+		Clona "williballenthin/LfLe"
+	;;
+	"1434")
+		Clona "blindfuzzy/LHF"
+	;;
+	"1435")
+		Clona "libyal/libbde"
+	;;
+	"1436")
+		Clona "niklasb/libc-database"
+	;;
+	"1437")
+		Clona "libyal/libfvde"
+	;;
+	"1438")
+		Clona "libparistraceroute/libparistraceroute"
+	;;
+	"1439")
+		Clona "mfontanini/libtins"
+	;;
+	"1440")
+		Clona "mzfr/liffy/"
+	;;
+	"1441")
+		Clona "lightbulb-framework/lightbulb-framework"
+	;;
+	"1442")
+		Clona "kd8bny/LiMEaide"
+	;;
+	"1443")
+		Clona "rebootuser/LinEnum"
+	;;
+	"1444")
+		Clona "portcullislabs/linikatz"
+	;;
+	"1445")
+		Clona "initstring/linkedin2username"
+	;;
+	"1446")
+		Clona "GerbenJavado/LinkFinder"
+	;;
+	"1447")
+		Clona "vk496/linset"
+	;;
+	"1448")
+		Clona "PenturaLabs/Linux_Exploit_Suggester"
+	;;
+	"1449")
+		Clona "mzet-/linux-exploit-suggester"
+	;;
+	"1450")
+		Clona "gaffe23/linux-inject"
+	;;
+	"1451")
+		Clona "diego-treitos/linux-smart-enumeration"
+	;;
+	"1452")
+		Clona "ant4g0nist/lisa.py"
+	;;
+	"1453")
+		Clona "lulz3xploit/LittleBrother"
+	;;
+	"1454")
+		Clona "taviso/loadlibrary"
+	;;
+	"1455")
+		Clona "lightfaith/locasploit"
+	;;
+	"1456")
+		Clona "jschicht/LogFileParser"
+	;;
+	"1457")
+		Clona "kernc/logkeys"
+	;;
+	"1458")
+		Clona "NewEraCracker/LOIC"
+	;;
+	"1459")
+		Clona "Neo23x0/Loki"
+	;;
+	"1460")
+		Clona "api0cradle/LOLBAS"
+	;;
+	"1461")
+		Clona "GuerrillaWarfare/Loot"
+	;;
+	"1462")
+		Clona "kismetwireless/lorcon"
+	;;
+	"1463")
+		Clona "jensvoid/lorg"
+	;;
+	"1464")
+		Clona "Evrytania/LTE-Cell-Scanner"
+	;;
+	"1465")
+		Clona "lateralblast/lunar"
+	;;
+	"1466")
+		Clona "deathmarine/Luyten"
+	;;
+	"1467")
+		Clona "initstring/lyricpass"
+	;;
+	"1468")
+		Clona "infosecn1nja/MaliciousMacroMSBuild"
+	;;
+	"1469")
+		Clona "HurricaneLabs/machinae"
+	;;
+	"1470")
+		Clona "paraxor/maclookup"
+	;;
+	"1471")
+		Clona "steverobbins/magescan"
+	;;
+	"1472")
+		Clona "GoSecure/malboxes"
+	;;
+	"1473")
+		Clona "tomchop/malcom"
+	;;
+	"1474")
+		Clona "maliceio/malice"
+	;;
+	"1475")
+		Clona "justmao945/mallory"
+	;;
+	"1476")
+		Clona "Ice3man543/MalScan"
+	;;
+	"1477")
+		Clona "stamparm/maltrail"
+	;;
+	"1478")
+		Clona "technoskald/maltrieve"
+	;;
+	"1479")
+		Clona "sensepost/mana"
+	;;
+	"1480")
+		Clona "z0noxz/mando.me"
+	;;
+	"1481")
+		Clona "trailofbits/manticore"
+	;;
+	"1482")
+		Clona "ApertureLabsLtd/marc4dasm"
+	;;
+	"1483")
+		Clona "saeeddhqan/Maryam"
+	;;
+	"1484")
+		Clona "1N3/Sn1per"
+	;;
+	"1485")
+		Clona "robertdavidgraham/masscan"
+	;;
+	"1486")
+		Clona "trevordavenport/MasscanAutomation"
+	;;
+	"1487")
+		Clona "blechschmidt/massdns"
+	;;
+	"1488")
+		Clona "jm33-m0/massExpConsole"
+	;;
+	"1489")
+		Clona "fgrimme/Matroschka"
+	;;
+	"1490")
+		Clona "evanmiller/mdbtools"
+	;;
+	"1491")
+		Clona "aircrack-ng/mdk4"
+	;;
+	"1492")
+		Clona "chadillac/mdns_recon"
+	;;
+	"1493")
+		Clona "platomav/MEAnalyzer"
+	;;
+	"1494")
+		Clona "tomnomnom/meg"
+	;;
+	"1495")
+		Clona "sc0tfree/mentalist"
+	;;
+	"1496")
+		Clona "Ne0nd0g/merlin"
+	;;
+	"1497")
+		Clona "j3ssie/metabigor"
+	;;
+	"1498")
+		Clona "a0rtega/metame"
+	;;
+	"1499")
+		Clona "hahwul/metasploit-autopwn"
+	;;
+	"1500")
+		Clona "jschicht/Mft2Csv"
+	;;
+	"1501")
+		Clona "jschicht/MftCarver"
+	;;
+	"1502")
+		Clona "jschicht/MftRcrd"
+	;;
+	"1503")
+		Clona "jschicht/MftRef2Name"
+	;;
+	"1504")
+		Clona "Screetsec/Microsploit"
+	;;
+	"1505")
+		Clona "kost/mikrotik-npk"
+	;;
+	"1506")
+		Clona "daehee/mildew"
+	;;
+	"1507")
+		Clona "gentilkiwi/mimikatz"
+	;;
+	"1508")
+		Clona "huntergregal/mimipenguin"
+	;;
+	"1509")
+		Clona "kamalmostafa/minimodem"
+	;;
+	"1510")
+		Clona "Th3Hurrican3/mitm"
+	;;
+	"1511")
+		Clona "jrmdev/mitm_relay"
+	;;
+	"1512")
+		Clona "fox-it/mitm6"
+	;;
+	"1513")
+		Clona "xdavidhu/mitmAP"
+	;;
+	"1514")
+		Clona "husam212/MITMer"
+	;;
+	"1515")
+		Clona "byt3bl33d3r/MITMf"
+	;;
+	"1516")
+		Clona "fox-it/mkYARA"
+	;;
+	"1517")
+		Clona "aol/moloch"
+	;;
+	"1518")
+		Clona "stampery/mongoaudit"
+	;;
+	"1519")
+		Clona "RedTeamPentesting/monsoon"
+	;;
+	"1520")
+		Clona "vortexau/mooscan"
+	;;
+	"1521")
+		Clona "r00txp10it/morpheus"
+	;;
+	"1522")
+		Clona "CoolerVoid/Mosca"
+	;;
+	"1523")
+		Clona "koto/mosquito"
+	;;
+	"1524")
+		Clona "kevinkoo001/MotS"
+	;;
+	"1525")
+		Clona "waytoalpit/ManOnTheSideAttack-DNS-Spoofing"
+	;;
+	"1526")
+		Clona "iamckn/mousejack_transmit"
+	;;
+	"1527")
+		Clona "Neohapsis/mptcp-abuse"
+	;;
+	"1528")
+		Clona "meliht/mr.sip"
+	;;
+	"1529")
+		Clona "YoshiyukiYamauchi/mrtparse"
+	;;
+	"1530")
+		Clona "g0tmi1k/mpc"
+	;;
+	"1531")
+		Clona "BlackArch/msfdb"
+	;;
+	"1532")
+		Clona "wez3/msfenum"
+	;;
+	"1533")
+		Clona "kkonradpl/mtscan"
+	;;
+	"1534")
+		Clona "EliasOenal/multimon-ng"
+	;;
+	"1535")
+		Clona "mitre/multiscanner"
+	;;
+	"1536")
+		Clona "covertcodes/multitun"
+	;;
+	"1537")
+		Clona "Neo23x0/munin"
+	;;
+	"1538")
+		Clona "muraenateam/muraena"
+	;;
+	"1539")
+		Clona "falcon-lnhg/mwebfp"
+	;;
+	"1540")
+		Clona "rek7/mXtract"
+	;;
+	"1541")
+		Clona "MooseDojo/myBFF"
+	;;
+	"1542")
+		Clona "mBouamama/MyJWT"
+	;;
+	"1543")
+		Clona "mehrdadrad/mylg"
+	;;
+	"1544")
+		Clona "https://gist.github.com/esperlu/943776"
+	;;
+	"1545")
+		Clona "FSecureLABS/N1QLMap"
+	;;
+	"1546")
+		Clona "carmaa/nacker"
+	;;
+	"1547")
+		Clona "tcstool/nasnum.git"
+	;;
+	"1548")
+		Clona "resurrecting-open-source-projects/nbtscan"
+	;;
+	"1549")
+		Clona "PentesterES/Necromant"
+	;;
+	"1550")
+		Clona "mwrlabs/needle"
+	;;
+	"1551")
+		Clona "GuerrillaWarfare/neglected"
+	;;
+	"1552")
+		Clona "PherricOxide/Neighbor-Cache-Fingerprinter"
+	;;
+	"1553")
+		Clona "troglobit/nemesis"
+	;;
+	"1554")
+		Clona "L-codes/Neo-reGeorg"
+	;;
+	"1555")
+		Clona "DanMcInerney/net-creds"
+	;;
+	"1556")
+		Clona "chrizator/netattack2"
+	;;
+	"1557")
+		Clona "evilsocket/netcommander"
+	;;
+	"1558")
+		Clona "NytroRST/NetRipper"
+	;;
+	"1559")
+		Clona "walchko/netscan2"
+	;;
+	"1560")
+		Clona "PherricOxide/Network-App-Stress-Tester"
+	;;
+	"1561")
+		Clona "lorenzog/NetworkMap"
+	;;
+	"1562")
+		Clona "hdm/nextnet"
+	;;
+	"1563")
+		Clona "bonsaiviking/NfSpy"
+	;;
+	"1564")
+		Clona "jpr5/ngrep/"
+	;;
+	"1565")
+		Clona "niloofarkheirkhah/nili"
+	;;
+	"1566")
+		Clona "andresriancho/nimbostratus"
+	;;
+	"1567")
+		Clona "GouveaHeitor/nipe"
+	;;
+	"1568")
+		Clona "hahwul/nmap-parse-output"
+	;;
+	"1569")
+		Clona "flipchan/Nohidy"
+	;;
+	"1570")
+		Clona "hiddenillusion/NoMoreXOR"
+	;;
+	"1571")
+		Clona "Rurik/Noriben"
+	;;
+	"1572")
+		Clona "Charlie-belmer/nosqli"
+	;;
+	"1573")
+		Clona "an0nlk/Nosql-MongoDB-injection-username-password-enumeration"
+	;;
+	"1574")
+		Clona "tcstool/NoSQLMap.git"
+	;;
+	"1575")
+		Clona "chrisallenlane/novahot"
+	;;
+	"1576")
+		Clona "nray-scanner/nray"
+	;;
+	"1577")
+		Clona "JKO/nsearch"
+	;;
+	"1578")
+		Clona "anonion0/nsec3map"
+	;;
+	"1579")
+		Clona "jonasdn/nsntrace"
+	;;
+	"1580")
+		Clona "csababarta/ntdsxtract"
+	;;
+	"1581")
+		Clona "jschicht/NtfsFileExtractor"
+	;;
+	"1582")
+		Clona "b17zr/ntlm_challenger"
+	;;
+	"1583")
+		Clona "preempt/ntlm-scanner"
+	;;
+	"1584")
+		Clona "sachinkamath/ntlmrecon"
+	;;
+	"1585")
+		Clona "sepehrdaddev/ntpdos"
+	;;
+	"1586")
+		Clona "projectdiscovery/nuclei-templates.git"
+	;;
+	"1587")
+		Clona "m8r0wn/nullinux"
+	;;
+	"1588")
+		Clona "Hadi999/NXcrypt"
+	;;
+	"1589")
+		Clona "blackarch-cracker|BL4CKvGHOST/Ob3vil1on"
+	;;
+	"1590")
+		Clona "wetw0rk/objdump2shellcode"
+	;;
+	"1591")
+		Clona "0xdeadbeefJERKY/Office-DDE-Payloads"
+	;;
+	"1592")
+		Clona "amlight/ofp_sniffer"
+	;;
+	"1593")
+		Clona "mIcHyAmRaNe/okadminfinder3"
+	;;
+	"1594")
+		Clona "RUB-SysSec/OMEN"
+	;;
+	"1595")
+		Clona "InQuest/omnibus"
+	;;
+	"1596")
+		Clona "Miserlou/omnihash"
+	;;
+	"1597")
+		Clona "D4Vinci/One-Lin3r"
+	;;
+	"1598")
+		Clona "superkojiman/onetwopunch"
+	;;
+	"1599")
+		Clona "k4m4/onioff"
+	;;
+	"1600")
+		Clona "s-rah/onionscan"
+	;;
+	"1601")
+		Clona "megadose/OnionSearch"
+	;;
+	"1602")
+		Clona "micahflee/onionshare"
+	;;
+	"1603")
+		Clona "stanislav-web/OpenDoor"
+	;;
+	"1604")
+		Clona "regit/opensvp"
+	;;
+	"1605")
+		Clona "greenbone/openvas/"
+	;;
+	"1606")
+		Clona "graniet/operative-framework"
+	;;
+	"1607")
+		Clona "gdelugre/origami"
+	;;
+	"1608")
+		Clona "orjail/orjail"
+	;;
+	"1609")
+		Clona "segofensiva/OSfooler-ng"
+	;;
+	"1610")
+		Clona "th3unkn0n/osi.ig"
+	;;
+	"1611")
+		Clona "SharadKumar97/OSINT-SPY"
+	;;
+	"1612")
+		Clona "guitarmanj/OSINTerator"
+	;;
+	"1613")
+		Clona "pstavirs/ostinato/"
+	;;
+	"1614")
+		Clona "lijiejie/OutLook_WebAPP_Brute"
+	;;
+	"1615")
+		Clona "depasonico/OWASP-ByWaf"
+	;;
+	"1616")
+		Clona "zscproject/OWASP-ZSC"
+	;;
+	"1617")
+		Clona "hashicorp/packer"
+	;;
+	"1618")
+		Clona "DNS-OARC/PacketQ"
+	;;
+	"1619")
+		Clona "dannagle/PacketSender"
+	;;
+	"1620")
+		Clona "RhinoSecurityLabs/pacu"
+	;;
+	"1621")
+		Clona "bniemczyk/pacumen"
+	;;
+	"1622")
+		Clona "Dionach/PANhunt"
+	;;
+	"1623")
+		Clona "lightos/Panoptic"
+	;;
+	"1624")
+		Clona "roglew/pappy-proxy"
+	;;
+	"1625")
+		Clona "mak-/parameth"
+	;;
+	"1626")
+		Clona "Bo0oM/ParamPamPam"
+	;;
+	"1627")
+		Clona "KasperskyLab/ForensicsTools"
+	;;
+	"1628")
+		Clona "behindthefirewalls/Parsero"
+	;;
+	"1629")
+		Clona "http://github.com/jensp/passcracking"
+	;;
+	"1630")
+		Clona "Dionach/PassHunt"
+	;;
+	"1631")
+		Clona "gamelinux/passivedns"
+	;;
+	"1632")
+		Clona "D4Vinci/PasteJacker"
+	;;
+	"1633")
+		Clona "isaudits/pasv-agrsv"
+	;;
+	"1634")
+		Clona "lunixbochs/patchkit"
+	;;
+	"1635")
+		Clona "ShotokanZH/Pa-th-zuzu"
+	;;
+	"1636")
+		Clona "CoolerVoid/payloadmask"
+	;;
+	"1637")
+		Clona "swisskyrepo/PayloadsAllTheThings/"
+	;;
+	"1638")
+		Clona "gvb84/pbscan"
+	;;
+	"1639")
+		Clona "vikwin/pcapfex"
+	;;
+	"1640")
+		Clona "Srinivas11789/PcapXray"
+	;;
+	"1641")
+		Clona "ufrisk/pcileech/releases"
+	;;
+	"1642")
+		Clona "Big5-sec/pcode2code"
+	;;
+	"1643")
+		Clona "lgandx/PCredz"
+	;;
+	"1644")
+		Clona "SecurityRiskAdvisors/PDBlaster"
+	;;
+	"1645")
+		Clona "c0decave/pdfgrab"
+	;;
+	"1646")
+		Clona "gdelugre/pdfwalker"
+	;;
+	"1647")
+		Clona "hasherezade/pe-bear"
+	;;
+	"1648")
+		Clona "hasherezade/pe-sieve"
+	;;
+	"1649")
+		Clona "Caleb1994/peach"
+	;;
+	"1650")
+		Clona "carlospolop/privilege-escalation-awesome-scripts-suite"
+	;;
+	"1651")
+		Clona "longld/peda"
+	;;
+	"1652")
+		Clona "guelfoweb/peframe"
+	;;
+	"1653")
+		Clona "robertdavidgraham/pemcrack"
+	;;
+	"1654")
+		Clona "bwall/pemcracker.git"
+	;;
+	"1655")
+		Clona "praetorian-inc/pentestly"
+	;;
+	"1656")
+		Clona "GinjaChris/pentmenu"
+	;;
+	"1657")
+		Clona "woj-ciech/pepe"
+	;;
+	"1658")
+		Clona "Th3Hurrican3/PEpper"
+	;;
+	"1659")
+		Clona "petoolse/petools"
+	;;
+	"1660")
+		Clona "facebook/pfff"
+	;;
+	"1661")
+		Clona "idiom/pftriage"
+	;;
+	"1662")
+		Clona "kstrauser/pgdbf"
+	;;
+	"1663")
+		Clona "nccgroup/phantap"
+	;;
+	"1664")
+		Clona "oddcod3/Phantom-Evasion"
+	;;
+	"1665")
+		Clona "Dionach/PhEmail"
+	;;
+	"1666")
+		Clona "ryhanson/phishery"
+	;;
+	"1667")
+		Clona "t4d/PhishingKitHunter"
+	;;
+	"1668")
+		Clona "entynetproject/phonia"
+	;;
+	"1669")
+		Clona "s0md3v/Photon"
+	;;
+	"1670")
+		Clona "pentestmonkey/php-findsock-shell"
+	;;
+	"1671")
+		Clona "bwall/PHP-RFI-Payload-Decoder"
+	;;
+	"1672")
+		Clona "phpstan/phpstan"
+	;;
+	"1673")
+		Clona "nightlionsecurity/phpstress"
+	;;
+	"1674")
+		Clona "WiPi-Hunter/PiDense"
+	;;
+	"1675")
+		Clona "wagiro/pintool"
+	;;
+	"1676")
+		Clona "sebastiendamaye/pintool2"
+	;;
+	"1677")
+		Clona "nccgroup/pip3line"
+	;;
+	"1678")
+		Clona "hirnschallsebastian/Pipeline2"
+	;;
+	"1679")
+		Clona "RedTeamOperations/PivotSuite"
+	;;
+	"1680")
+		Clona "FireyFly/pixd"
+	;;
+	"1681")
+		Clona "wiire/pixiewps"
+	;;
+	"1682")
+		Clona "caesar0301/pkt2flow"
+	;;
+	"1683")
+		Clona "joelpx/plasma"
+	;;
+	"1684")
+		Clona "iniqua/plecost"
+	;;
+	"1685")
+		Clona "unweb/plown"
+	;;
+	"1686")
+		Clona "cybereason/linux_plumber"
+	;;
+	"1687")
+		Clona "pmacct/pmacct"
+	;;
+	"1688")
+		Clona "nccgroup/PMapper"
+	;;
+	"1689")
+		Clona "knownsec/Pocsuite"
+	;;
+	"1690")
+		Clona "grCod/poly"
+	;;
+	"1691")
+		Clona "polyswarm/polyswarm-api"
+	;;
+	"1692")
+		Clona "rfunix/Pompem"
+	;;
+	"1693")
+		Clona "iagox86/poracle"
+	;;
+	"1694")
+		Clona "SpiderLabs/portia"
+	;;
+	"1695")
+		Clona "mbahadou/postenum"
+	;;
+	"1696")
+		Clona "mantvydasb/Invoke-PowerCloud"
+	;;
+	"1697")
+		Clona "Mr-Un1k0d3r/PowerLessShell"
+	;;
+	"1698")
+		Clona "jschicht/PowerMft"
+	;;
+	"1699")
+		Clona "fdiskyou/PowerOPS"
+	;;
+	"1700")
+		Clona "p3nt4/PowerShdll"
+	;;
+	"1701")
+		Clona "mattifestation/PowerSploit"
+	;;
+	"1702")
+		Clona "z0noxz/powerstager"
+	;;
+	"1703")
+		Clona "pownjs/pown"
+	;;
+	"1704")
+		Clona "n1nj4sec/pr0cks"
+	;;
+	"1705")
+		Clona "percx/Praeda"
+	;;
+	"1706")
+		Clona "zardus/preeny"
+	;;
+	"1707")
+		Clona "jsteube/princeprocessor/"
+	;;
+	"1708")
+		Clona "Microsoft/ProcDump-for-Linux"
+	;;
+	"1709")
+		Clona "daniel-araujo/proctal"
+	;;
+	"1710")
+		Clona "averagesecurityguy/prometheus"
+	;;
+	"1711")
+		Clona "alfresco/prowler"
+	;;
+	"1712")
+		Clona "hugsy/proxenet"
+	;;
+	"1713")
+		Clona "projectdiscovery/proxify"
+	;;
+	"1714")
+		Clona "Proxmark/proxmark3"
+	;;
+	"1715")
+		Clona "rofl0r/proxychains"
+	;;
+	"1716")
+		Clona "CroweCybersecurity/ps1encode"
+	;;
+	"1717")
+		Clona "regit/pshitt"
+	;;
+	"1718")
+		Clona "DominicBreuker/pspy"
+	;;
+	"1719")
+		Clona "trustedsec/ptf"
+	;;
+	"1720")
+		Clona "byt3bl33d3r/pth-toolkit"
+	;;
+	"1721")
+		Clona "shirkdog/pulledpork"
+	;;
+	"1722")
+		Clona "nethunteros/punter"
+	;;
+	"1723")
+		Clona "n1nj4sec/pupy"
+	;;
+	"1724")
+		Clona "cr4shcod3/pureblood"
+	;;
+	"1725")
+		Clona "tch1001/pwdlogy"
+	;;
+	"1726")
+		Clona "ins1gn1a/pwdlyser"
+	;;
+	"1727")
+		Clona "pwndbg/pwndbg"
+	;;
+	"1728")
+		Clona "kgretzky/pwndrop"
+	;;
+	"1729")
+		Clona "wKovacs64/pwned"
+	;;
+	"1730")
+		Clona "mikepound/pwned-search"
+	;;
+	"1731")
+		Clona "thewhiteh4t/pwnedOrNot"
+	;;
+	"1732")
+		Clona "h0ussni/pwnloris"
+	;;
+	"1733")
+		Clona "Gallopsled/pwntools"
+	;;
+	"1734")
+		Clona "ikkebr/PyBozoCrack"
+	;;
+	"1735")
+		Clona "nottinghamprisateam/pyersinia"
+	;;
+	"1736")
+		Clona "ytisf/PyExfil"
+	;;
+	"1737")
+		Clona "fgeek/pyfiscan"
+	;;
+	"1738")
+		Clona "bidord/pykek"
+	;;
+	"1739")
+		Clona "m8r0wn/pymeta"
+	;;
+	"1740")
+		Clona "GoSecure/pyrdp"
+	;;
+	"1741")
+		Clona "moheshmohan/pyssltest"
+	;;
+	"1742")
+		Clona "m4n3dw0lf/PytheM"
+	;;
+	"1743")
+		Clona "PaulSec/API-dnsdumpster.com"
+	;;
+	"1744")
+		Clona "HDE/arsenic/releases"
+	;;
+	"1745")
+		Clona "beautify-web/js-beautify"
+	;;
+	"1746")
+		Clona "GiacomoLaw/Keylogger"
+	;;
+	"1747")
+		Clona "egaus/MaliciousMacroBot"
+	;;
+	"1748")
+		Clona "rocky/python-uncompyle6"
+	;;
+	"1749")
+		Clona "rednaga/yara-python"
+	;;
+	"1750")
+		Clona "PaulSec/API-dnsdumpster.com"
+	;;
+	"1751")
+		Clona "aquynh/capstone"
+	;;
+	"1752")
+		Clona "asciimoo/exrex"
+	;;
+	"1753")
+		Clona "rep/hpfeeds"
+	;;
+	"1754")
+		Clona "beautify-web/js-beautify"
+	;;
+	"1755")
+		Clona "skelsec/minidump"
+	;;
+	"1756")
+		Clona "skelsec/minikerberos"
+	;;
+	"1757")
+		Clona "VirusTotal/yara-python"
+	;;
+	"1758")
+		Clona "linkedin/qark"
+	;;
+	"1759")
+		Clona "h0nus/QRGen"
+	;;
+	"1760")
+		Clona "OWASP/QRLJacking/tree/master/QRLJacker"
+	;;
+	"1761")
+		Clona "quark-engine/quark-engine"
+	;;
+	"1762")
+		Clona "tylabs/quicksand_lite"
+	;;
+	"1763")
+		Clona "radareorg/cutter"
+	;;
+	"1764")
+		Clona "radare/radare2-extras/tree/master/unicorn"
+	;;
+	"1765")
+		Clona "radare/radare2-extras/tree/master/unicorn"
+	;;
+	"1766")
+		Clona "funkandwagnalls/ranger"
+	;;
+	"1767")
+		Clona "andrew-d/rough-auditing-tool-for-security"
+	;;
+	"1768")
+		Clona "0x09AL/raven"
+	;;
+	"1769")
+		Clona "mBouamama/rawsec_cli"
+	;;
+	"1770")
+		Clona "taviso/rbndr"
+	;;
+	"1771")
+		Clona "jschicht/RcrdCarver"
+	;;
+	"1772")
+		Clona "portcullislabs/rdp-sec-check"
+	;;
+	"1773")
+		Clona "t6x/reaver-wps-fork-t6x"
+	;;
+	"1774")
+		Clona "Col-E/Recaf"
+	;;
+	"1775")
+		Clona "prolsen/recentfilecache-parser"
+	;;
+	"1776")
+		Clona "secretsquirrel/recomposer"
+	;;
+	"1777")
+		Clona "codingo/Reconnoitre"
+	;;
+	"1778")
+		Clona "RoliSoft/ReconScan"
+	;;
+	"1779")
+		Clona "radenvodka/Recsech"
+	;;
+	"1780")
+		Clona "Lazza/RecuperaBit"
+	;;
+	"1781")
+		Clona "Tuhinshubhra/RED_HAWK"
+	;;
+	"1782")
+		Clona "digitalbond/Redpoint3"
+	;;
+	"1783")
+		Clona "darkk/redsocks"
+	;;
+	"1784")
+		Clona "fireeye/ReelPhish"
+	;;
+	"1785")
+		Clona "sensepost/reGeorg"
+	;;
+	"1786")
+		Clona "mkorman90/regipy"
+	;;
+	"1787")
+		Clona "google/rekall"
+	;;
+	"1788")
+		Clona "KeepWannabe/Remot3d"
+	;;
+	"1789")
+		Clona "microsoft/restler-fuzzer"
+	;;
+	"1790")
+		Clona "lolwaleet/ReverseIP"
+	;;
+	"1791")
+		Clona "PypeRanger/revipd"
+	;;
+	"1792")
+		Clona "emptymonkey/revsh/"
+	;;
+	"1793")
+		Clona "shellphish/rex"
+	;;
+	"1794")
+		Clona "j91321/rext"
+	;;
+	"1795")
+		Clona "utkusen/rhodiola"
+	;;
+	"1796")
+		Clona "redtimmy/Richsploit"
+	;;
+	"1797")
+		Clona "trustedsec/ridenum"
+	;;
+	"1798")
+		Clona "skorov/ridrelay"
+	;;
+	"1799")
+		Clona "abelcheung/rifiuti2"
+	;;
+	"1800")
+		Clona "activecm/rita"
+	;;
+	"1801")
+		Clona "graniet/riwifshell"
+	;;
+	"1802")
+		Clona "Gifts/Rogue-MySql-Server"
+	;;
+	"1803")
+		Clona "wifiphisher/roguehostapd"
+	;;
+	"1804")
+		Clona "sashs/Ropper"
+	;;
+	"1805")
+		Clona "inaz2/roputils"
+	;;
+	"1806")
+		Clona "jh00nbr/Routerhunter.0"
+	;;
+	"1807")
+		Clona "0vercl0k/rp"
+	;;
+	"1808")
+		Clona "AdiKo/RPCSniffer"
+	;;
+	"1809")
+		Clona "freakyclown/RPDscan"
+	;;
+	"1810")
+		Clona "artkond/rpivot"
+	;;
+	"1811")
+		Clona "mozilla/rr"
+	;;
+	"1812")
+		Clona "ius/rsatool"
+	;;
+	"1813")
+		Clona "panagiks/RSPET"
+	;;
+	"1814")
+		Clona "leostat/rtfm"
+	;;
+	"1815")
+		Clona "bemasher/rtlamr/"
+	;;
+	"1816")
+		Clona "csete/rtlizer"
+	;;
+	"1817")
+		Clona "EarToEarOak/RTLSDR-Scanner"
+	;;
+	"1818")
+		Clona "synacktiv/rulesfinder"
+	;;
+	"1819")
+		Clona "decrypto-org/rupture"
+	;;
+	"1820")
+		Clona "phra/rustbuster"
+	;;
+	"1821")
+		Clona "gh2o/rvi_capture"
+	;;
+	"1822")
+		Clona "petermbenjamin/s3-fuzzer"
+	;;
+	"1823")
+		Clona "sleinen/samplicator"
+	;;
+	"1824")
+		Clona "http://github.com/jensp/samydeluxe"
+	;;
+	"1825")
+		Clona "0xSearches/sandcastle"
+	;;
+	"1826")
+		Clona "trimstray/sandmap"
+	;;
+	"1827")
+		Clona "xoreaxeaxeax/sandsifter"
+	;;
+	"1828")
+		Clona "donctl/sandy"
+	;;
+	"1829")
+		Clona "elfmaster/saruman"
+	;;
+	"1830")
+		Clona "Dman95/SASM"
+	;;
+	"1831")
+		Clona "danilovazb/sawef"
+	;;
+	"1832")
+		Clona "levi0x0/sb0x-project"
+	;;
+	"1833")
+		Clona "t00sh/sc-make"
+	;;
+	"1834")
+		Clona "vesche/scanless"
+	;;
+	"1835")
+		Clona "scanmem/scanmem"
+	;;
+	"1836")
+		Clona "kudelskisecurity/scannerl"
+	;;
+	"1837")
+		Clona "bambish/ScanQLi"
+	;;
+	"1838")
+		Clona "huntergregal/scansploit"
+	;;
+	"1839")
+		Clona "rndinfosecguy/Scavenger"
+	;;
+	"1840")
+		Clona "nccgroup/ScoutSuite"
+	;;
+	"1841")
+		Clona "304GEEK/Scrape-DNS"
+	;;
+	"1842")
+		Clona "pfalcon/ScratchABit"
+	;;
+	"1843")
+		Clona "smythtech/sdnpwn"
+	;;
+	"1844")
+		Clona "neuromancer/SEA"
+	;;
+	"1845")
+		Clona "b3mb4m/Search1337"
+	;;
+	"1846")
+		Clona "danielmiessler/SecLists/"
+	;;
+	"1847")
+		Clona "m4ll0k/SecretFinder"
+	;;
+	"1848")
+		Clona "jschicht/Secure2Csv"
+	;;
+	"1849")
+		Clona "galkan/sees/"
+	;;
+	"1850")
+		Clona "sensepost/xrdp"
+	;;
+	"1851")
+		Clona "NickstaDB/SerialBrute"
+	;;
+	"1852")
+		Clona "NickstaDB/SerializationDumper/"
+	;;
+	"1853")
+		Clona "mazen160/server-status_PWN"
+	;;
+	"1854")
+		Clona "trustedsec/social-engineer-toolkit/releases"
+	;;
+	"1855")
+		Clona "EgeBalci/sgn"
+	;;
+	"1856")
+		Clona "pavanw3b/sh00t"
+	;;
+	"1857")
+		Clona "cr-marcstevens/sha1collisiondetection"
+	;;
+	"1858")
+		Clona "philwantsfish/shard"
+	;;
+	"1859")
+		Clona "CroweCybersecurity/shareenum"
+	;;
+	"1860")
+		Clona "shirosaidev/sharesniffer"
+	;;
+	"1861")
+		Clona "enkomio/shed"
+	;;
+	"1862")
+		Clona "NytroRST/ShellcodeCompiler"
+	;;
+	"1863")
+		Clona "danielhenrymantilla/shellcode-factory"
+	;;
+	"1864")
+		Clona "merrychap/shellen"
+	;;
+	"1865")
+		Clona "ShutdownRepo/shellerator"
+	;;
+	"1866")
+		Clona "shellinabox/shellinabox"
+	;;
+	"1867")
+		Clona "hatRiot/shellme"
+	;;
+	"1868")
+		Clona "reyammer/shellnoob"
+	;;
+	"1869")
+		Clona "0x00x00/ShellPop"
+	;;
+	"1870")
+		Clona "b3mb4m/shellsploit-framework"
+	;;
+	"1871")
+		Clona "sherlock-project/sherlock"
+	;;
+	"1872")
+		Clona "elfmaster/sherlocked"
+	;;
+	"1873")
+		Clona "eth0izzle/shhgit"
+	;;
+	"1874")
+		Clona "acidvegas/shitflood"
+	;;
+	"1875")
+		Clona "nccgroup/shocker"
+	;;
+	"1876")
+		Clona "aploium/shootback"
+	;;
+	"1877")
+		Clona "projectdiscovery/shuffledns.git"
+	;;
+	"1878")
+		Clona "wetw0rk/Sickle"
+	;;
+	"1879")
+		Clona "Neo23x0/sigma"
+	;;
+	"1880")
+		Clona "appium/sign"
+	;;
+	"1881")
+		Clona "SigPloiter/SigPloit"
+	;;
+	"1882")
+		Clona "secretsquirrel/SigThief"
+	;;
+	"1883")
+		Clona "achorein/silenteye/"
+	;;
+	"1884")
+		Clona "byt3bl33d3r/SILENTTRINITY"
+	;;
+	"1885")
+		Clona "lunarca/SimpleEmailSpoofer"
+	;;
+	"1886")
+		Clona "CalebFenton/simplify"
+	;;
+	"1887")
+		Clona "killswitch-GUI/SimplyEmail"
+	;;
+	"1888")
+		Clona "packetassailant/sipbrute"
+	;;
+	"1889")
+		Clona "xenomuta/SIPffer"
+	;;
+	"1890")
+		Clona "ST2Labs/SIPI"
+	;;
+	"1891")
+		Clona "Pepelux/sippts"
+	;;
+	"1892")
+		Clona "nils-ohlmeier/sipsak/releases"
+	;;
+	"1893")
+		Clona "zaf/sipshock"
+	;;
+	"1894")
+		Clona "shenril/Sitadel"
+	;;
+	"1895")
+		Clona "digininja/sitediff"
+	;;
+	"1896")
+		Clona "h0ng10/sjet"
+	;;
+	"1897")
+		Clona "84KaliPleXon3/skiptracer"
+	;;
+	"1898")
+		Clona "cryptcoffee/skul"
+	;;
+	"1899")
+		Clona "samyk/skyjack"
+	;;
+	"1900")
+		Clona "emtunc/SlackPirate"
+	;;
+	"1901")
+		Clona "RhinoSecurityLabs/SleuthQL"
+	;;
+	"1902")
+		Clona "crytic/slither"
+	;;
+	"1903")
+		Clona "shekyan/slowhttptest"
+	;;
+	"1904")
+		Clona "gkbrk/slowloris"
+	;;
+	"1905")
+		Clona "hehnope/slurp"
+	;;
+	"1906")
+		Clona "JesusFreke/smali"
+	;;
+	"1907")
+		Clona "ch0psticks/Smali-CFGs"
+	;;
+	"1908")
+		Clona "dorneanu/smalisca"
+	;;
+	"1909")
+		Clona "suraj-root/smap"
+	;;
+	"1910")
+		Clona "georgiaw/Smartphone-Pentest-Framework"
+	;;
+	"1911")
+		Clona "Raikia/SMBCrunch"
+	;;
+	"1912")
+		Clona "pentestgeek/smbexec"
+	;;
+	"1913")
+		Clona "smikims/arpspoof"
+	;;
+	"1914")
+		Clona "enddo/smod"
+	;;
+	"1915")
+		Clona "z0noxz/smplshllctrlr"
+	;;
+	"1916")
+		Clona "isaudits/smtp-test"
+	;;
+	"1917")
+		Clona "xFreed0m/SMTPTester"
+	;;
+	"1918")
+		Clona "defparam/smuggler"
+	;;
+	"1919")
+		Clona "gwen001/pentest-tools/blob/master/smuggler.py"
+	;;
+	"1920")
+		Clona "1N3/Sn1per"
+	;;
+	"1921")
+		Clona "hannob/snallygaster"
+	;;
+	"1922")
+		Clona "thebradbain/snapception"
+	;;
+	"1923")
+		Clona "mushorg/snare"
+	;;
+	"1924")
+		Clona "purpleteam/snarf"
+	;;
+	"1925")
+		Clona "SkypLabs/sniff-probe-req"
+	;;
+	"1926")
+		Clona "julioreynaga/sniffer"
+	;;
+	"1927")
+		Clona "kpcyrd/sniffglue"
+	;;
+	"1928")
+		Clona "petabi/sniffles"
+	;;
+	"1929")
+		Clona "SECFORCE/SNMP-Brute"
+	;;
+	"1930")
+		Clona "m57/snoopbrute"
+	;;
+	"1931")
+		Clona "sensepost/snoopy-ng"
+	;;
+	"1932")
+		Clona "mauro-g/snuck"
+	;;
+	"1933")
+		Clona "snyk/snyk"
+	;;
+	"1934")
+		Clona "SpiderLabs/social_mapper"
+	;;
+	"1935")
+		Clona "Betawolf/social-vuln-scanner"
+	;;
+	"1936")
+		Clona "UndeadSec/SocialFish"
+	;;
+	"1937")
+		Clona "iojw/socialscan"
+	;;
+	"1938")
+		Clona "TheresAFewConors/Sooty"
+	;;
+	"1939")
+		Clona "Ganapati/spaf"
+	;;
+	"1940")
+		Clona "sensepost/SPartan"
+	;;
+	"1941")
+		Clona "tatanus/SPF"
+	;;
+	"1942")
+		Clona "BishopFox/spfmap"
+	;;
+	"1943")
+		Clona "getdual/scripts-n-tools/blob/master/spiga.py"
+	;;
+	"1944")
+		Clona "PaulSec/SPIPScan"
+	;;
+	"1945")
+		Clona "BlackArch/sploitctl"
+	;;
+	"1946")
+		Clona "bishopfox/spoofcheck"
+	;;
+	"1947")
+		Clona "hlldz/SpookFlare"
+	;;
+	"1948")
+		Clona "aas-n/spraykatz"
+	;;
+	"1949")
+		Clona "zeropwn/spyse.py"
+	;;
+	"1950")
+		Clona "Hadesy2k/sqlivulscan"
+	;;
+	"1951")
+		Clona "jtesta/ssh-audit"
+	;;
+	"1952")
+		Clona "droberson/ssh-honeypot"
+	;;
+	"1953")
+		Clona "jtesta/ssh-mitm"
+	;;
+	"1954")
+		Clona "nccgroup/ssh-user-enum"
+	;;
+	"1955")
+		Clona "getdual/scripts-n-tools/blob/master/sshscan.py"
+	;;
+	"1956")
+		Clona "pahaz/sshtunnel"
+	;;
+	"1957")
+		Clona "sshuttle/sshuttle"
+	;;
+	"1958")
+		Clona "zombiesam/ssl_phuck3r"
+	;;
+	"1959")
+		Clona "grwl/sslcaudit"
+	;;
+	"1960")
+		Clona "ssllabs/ssllabs-scan"
+	;;
+	"1961")
+		Clona "jtripper/sslnuke"
+	;;
+	"1962")
+		Clona "DinoTools/sslscan/"
+	;;
+	"1963")
+		Clona "nabla-c0d3/sslyze"
+	;;
+	"1964")
+		Clona "secrary/SSMA"
+	;;
+	"1965")
+		Clona "bcoles/ssrf_proxy"
+	;;
+	"1966")
+		Clona "teknogeek/ssrf-sheriff"
+	;;
+	"1967")
+		Clona "d4rkcat/stackflow"
+	;;
+	"1968")
+		Clona "vincentcox/StaCoAn"
+	;;
+	"1969")
+		Clona "j-t/staekka"
+	;;
+	"1970")
+		Clona "0xPrateek/Stardox"
+	;;
+	"1971")
+		Clona "ipopov/starttls-mitm"
+	;;
+	"1972")
+		Clona "redNixon/stegdetect"
+	;;
+	"1973")
+		Clona "razc411/StegoLeggo"
+	;;
+	"1974")
+		Clona "epinna/Stegosip"
+	;;
+	"1975")
+		Clona "bannsec/stegoVeritas/"
+	;;
+	"1976")
+		Clona "zardus/ctf-tools/blob/master/stegsolve/install"
+	;;
+	"1977")
+		Clona "google/stenographer"
+	;;
+	"1978")
+		Clona "ztgrace/sticky_keys_hunter"
+	;;
+	"1979")
+		Clona "PUNCH-Cyber/stoq"
+	;;
+	"1980")
+		Clona "UltimateHackers/Striker"
+	;;
+	"1981")
+		Clona "fireeye/stringsifter"
+	;;
+	"1982")
+		Clona "TheRook/subbrute"
+	;;
+	"1983")
+		Clona "projectdiscovery/subfinder"
+	;;
+	"1984")
+		Clona "subjack/subjack"
+	;;
+	"1985")
+		Clona "yassineaboukir/sublert"
+	;;
+	"1986")
+		Clona "Ice3man543/SubOver"
+	;;
+	"1987")
+		Clona "Subterfuge-Framework/Subterfuge"
+	;;
+	"1988")
+		Clona "Anon-Exploiter/SUID3NUM"
+	;;
+	"1989")
+		Clona "OpenRCE/sulley/"
+	;;
+	"1990")
+		Clona "OISF/suricata-verify"
+	;;
+	"1991")
+		Clona "anantshri/svn-extractor"
+	;;
+	"1992")
+		Clona "jakecreps/swamp"
+	;;
+	"1993")
+		Clona "Arvin-X/swarm"
+	;;
+	"1994")
+		Clona "MilindPurswani/Syborg"
+	;;
+	"1995")
+		Clona "dlrobertson/sylkie"
+	;;
+	"1996")
+		Clona "danigargu/syms2elf"
+	;;
+	"1997")
+		Clona "securestate/syringe"
+	;;
+	"1998")
+		Clona "ANSSI-FR/tabi"
+	;;
+	"1999")
+		Clona "delvelabs/tachyon"
+	;;
+	"2000")
+		Clona "0xdea/tactical-exploitation"
+	;;
+	"2001")
+		Clona "enkomio/Taipan"
+	;;
+	"2002")
+		Clona "m4ll0k/takeover"
+	;;
+	"2003")
+		Clona "antagon/TCHunt-ng"
+	;;
+	"2004")
+		Clona "Octosec/tckfc"
+	;;
+	"2005")
+		Clona "session-replay-tools/tcpcopy"
+	;;
+	"2006")
+		Clona "netik/tcpdstat"
+	;;
+	"2007")
+		Clona "simsong/tcpflow"
+	;;
+	"2008")
+		Clona "1aN0rmus/TekDefense-Automater"
+	;;
+	"2009")
+		Clona "kavishgr/tempomail"
+	;;
+	"2010")
+		Clona "drwetter/testssl.sh"
+	;;
+	"2011")
+		Clona "cybersafeblr/thedorkbox"
+	;;
+	"2012")
+		Clona "ytisf/theZoo"
+	;;
+	"2013")
+		Clona "threatspec/threatspec"
+	;;
+	"2014")
+		Clona "AeonDave/tilt"
+	;;
+	"2015")
+		Clona "technoskald/tinfoleak/"
+	;;
+	"2016")
+		Clona "RUB-NDS/TLS-Attacker"
+	;;
+	"2017")
+		Clona "LeeBrotherston/tls-fingerprinting"
+	;;
+	"2018")
+		Clona "WestpointLtd/tls_prober"
+	;;
+	"2019")
+		Clona "Ayrx/tlsenum"
+	;;
+	"2020")
+		Clona "tomato42/tlsfuzzer"
+	;;
+	"2021")
+		Clona "iSECPartners/tlspretense"
+	;;
+	"2022")
+		Clona "dariusztytko/token-reverser"
+	;;
+	"2023")
+		Clona "toperaproject/topera"
+	;;
+	"2024")
+		Clona "Edu4rdSHL/tor-router"
+	;;
+	"2025")
+		Clona "MikeMeliz/TorCrawl.py"
+	;;
+	"2026")
+		Clona "BlackArch/torctl"
+	;;
+	"2027")
+		Clona "epinna/tplmap"
+	;;
+	"2028")
+		Clona "jofpin/trape"
+	;;
+	"2029")
+		Clona "M4cs/traxss"
+	;;
+	"2030")
+		Clona "GuerrillaWarfare/Treasure"
+	;;
+	"2031")
+		Clona "JonathanSalwan/Triton"
+	;;
+	"2032")
+		Clona "aquasecurity/trivy"
+	;;
+	"2033")
+		Clona "nightwatchcybersecurity/truegaze"
+	;;
+	"2034")
+		Clona "adoreste/truehunter"
+	;;
+	"2035")
+		Clona "dxa4481/truffleHog"
+	;;
+	"2036")
+		Clona "mandatoryprogrammer/TrustTrees"
+	;;
+	"2037")
+		Clona "infodox/tsh-sctp"
+	;;
+	"2038")
+		Clona "tp7309/TTPassGen"
+	;;
+	"2039")
+		Clona "SECFORCE/Tunna"
+	;;
+	"2040")
+		Clona "x0rz/tweets_analyzer"
+	;;
+	"2041")
+		Clona "thelinuxchoice/tweetshell"
+	;;
+	"2042")
+		Clona "twintproject/twint"
+	;;
+	"2043")
+		Clona "whoot/Typo-Enumerator"
+	;;
+	"2044")
+		Clona "nbulischeck/tyton"
+	;;
+	"2045")
+		Clona "hfiref0x/UACME"
+	;;
+	"2046")
+		Clona "ShutdownRepo/uberfile"
+	;;
+	"2047")
+		Clona "headlesszeke/ubiquiti-probing"
+	;;
+	"2048")
+		Clona "wangyu-/udp2raw-tunnel"
+	;;
+	"2049")
+		Clona "Hello71/udpastcp"
+	;;
+	"2050")
+		Clona "zombieCraig/UDSim/"
+	;;
+	"2051")
+		Clona "theopolis/uefi-firmware-parser"
+	;;
+	"2052")
+		Clona "epsylon/ufonet"
+	;;
+	"2053")
+		Clona "Raikia/UhOh365"
+	;;
+	"2054")
+		Clona "harismuneer/Ultimate-Facebook-Scraper"
+	;;
+	"2055")
+		Clona "nccgroup/umap"
+	;;
+	"2056")
+		Clona "tomnomnom/unfurl"
+	;;
+	"2057")
+		Clona "GDSSecurity/Unibrute"
+	;;
+	"2058")
+		Clona "trustedsec/unicorn"
+	;;
+	"2059")
+		Clona "rk700/uniFuzzer"
+	;;
+	"2060")
+		Clona "pzread/unstrip"
+	;;
+	"2061")
+		Clona "altf4/untwister"
+	;;
+	"2062")
+		Clona "nccgroup/UPnP-Pentest-Toolkit"
+	;;
+	"2063")
+		Clona "ferrery1/UpPwn"
+	;;
+	"2064")
+		Clona "initstring/uptux"
+	;;
+	"2065")
+		Clona "upx/upx"
+	;;
+	"2066")
+		Clona "jopohl/urh"
+	;;
+	"2067")
+		Clona "eschultze/URLextractor"
+	;;
+	"2068")
+		Clona "errbufferoverfl/usb-canary"
+	;;
+	"2069")
+		Clona "snovvcrash/usbrip"
+	;;
+	"2070")
+		Clona "jseidl/usernamer"
+	;;
+	"2071")
+		Clona "thelinuxchoice/userrecon"
+	;;
+	"2072")
+		Clona "lucmski/userrecon-py"
+	;;
+	"2073")
+		Clona "v3n0m-Scanner/V3n0M-Scanner"
+	;;
+	"2074")
+		Clona "hahwul/vais"
+	;;
+	"2075")
+		Clona "radare/valabind"
+	;;
+	"2076")
+		Clona "NextronSystems/valhallaAPI"
+	;;
+	"2077")
+		Clona "delvelabs/vane"
+	;;
+	"2078")
+		Clona "abhisharma404/vault"
+	;;
+	"2079")
+		Clona "MalwareCantFly/Vba2Graph"
+	;;
+	"2080")
+		Clona "nccgroup/vbrute"
+	;;
+	"2081")
+		Clona "rezasp/vbscan"
+	;;
+	"2082")
+		Clona "melvinsh/vcsmap"
+	;;
+	"2083")
+		Clona "subgraph/Vega/wiki"
+	;;
+	"2084")
+		Clona "SerNet/verinice"
+	;;
+	"2085")
+		Clona "codingo/VHostScan"
+	;;
+	"2086")
+		Clona "botherder/viper"
+	;;
+	"2087")
+		Clona "decalage2/ViperMonkey"
+	;;
+	"2088")
+		Clona "botherder/virustotal"
+	;;
+	"2089")
+		Clona "blackvkng/viSQL"
+	;;
+	"2090")
+		Clona "keithjjones/visualize_logs"
+	;;
+	"2091")
+		Clona "nccgroup/vlan-hopping"
+	;;
+	"2092")
+		Clona "mempodippy/vlany"
+	;;
+	"2093")
+		Clona "git-rep/vmap"
+	;;
+	"2094")
+		Clona "jbremer/vmcloak"
+	;;
+	"2095")
+		Clona "n0fate/volafox"
+	;;
+	"2096")
+		Clona "volatilityfoundation/volatility/wiki"
+	;;
+	"2097")
+		Clona "volatilityfoundation/community"
+	;;
+	"2098")
+		Clona "0x36/VPNPivot"
+	;;
+	"2099")
+		Clona "sanvil/vsaudit"
+	;;
+	"2100")
+		Clona "pasjtene/Vscan"
+	;;
+	"2101")
+		Clona "varunjammula/VSVBP"
+	;;
+	"2102")
+		Clona "vulmon/Vulmap"
+	;;
+	"2103")
+		Clona "muhammad-bouabid/Vulnerabilities-spider"
+	;;
+	"2104")
+		Clona "anouarbensaad/vulnx"
+	;;
+	"2105")
+		Clona "boy-hack/w13scan"
+	;;
+	"2106")
+		Clona "andresriancho/w3af/releases"
+	;;
+	"2107")
+		Clona "wafpassproject/wafpass"
+	;;
+	"2108")
+		Clona "SYWorks/waidps"
+	;;
+	"2109")
+		Clona "red-team-labs/waldo"
+	;;
+	"2110")
+		Clona "m4ll0k/WAScan"
+	;;
+	"2111")
+		Clona "uoaerg/wavemon"
+	;;
+	"2112")
+		Clona "jsvine/waybackpack"
+	;;
+	"2113")
+		Clona "tomnomnom/waybackurls"
+	;;
+	"2114")
+		Clona "endrazine/wcc"
+	;;
+	"2115")
+		Clona "rverton/webanalyze"
+	;;
+	"2116")
+		Clona "Matir/webborer"
+	;;
+	"2117")
+		Clona "sarthakpandit/webenum"
+	;;
+	"2118")
+		Clona "AutoSecTools/WebExploitationTool"
+	;;
+	"2119")
+		Clona "takeshixx/webfixy"
+	;;
+	"2120")
+		Clona "lnxg33k/webhandler"
+	;;
+	"2121")
+		Clona "peedcorp/WebHunter"
+	;;
+	"2122")
+		Clona "ultrasecurity/webkiller"
+	;;
+	"2123")
+		Clona "zigoo0/webpwn3r"
+	;;
+	"2124")
+		Clona "BlackArch/webrute"
+	;;
+	"2125")
+		Clona "PentesterES/WebSearch"
+	;;
+	"2126")
+		Clona "BlackArch/webshells"
+	;;
+	"2127")
+		Clona "http://github.com/kanaka/websockify"
+	;;
+	"2128")
+		Clona "websploit/websploit"
+	;;
+	"2129")
+		Clona "xionsec/WebXploiter"
+	;;
+	"2130")
+		Clona "WeebSec/weebdns"
+	;;
+	"2131")
+		Clona "Hypsurus/weeman"
+	;;
+	"2132")
+		Clona "carnal0wnage/weirdAAL"
+	;;
+	"2133")
+		Clona "bitsadmin/wesng"
+	;;
+	"2134")
+		Clona "xmendez/wfuzz"
+	;;
+	"2135")
+		Clona "B16f00t/whapa"
+	;;
+	"2136")
+		Clona "ekultek/whatbreach"
+	;;
+	"2137")
+		Clona "ncrocfer/whatportis"
+	;;
+	"2138")
+		Clona "WebBreacher/WhatsMyName"
+	;;
+	"2139")
+		Clona "Ekultek/WhatWaf"
+	;;
+	"2140")
+		Clona "Nitr4x/whichCDN"
+	;;
+	"2141")
+		Clona "Ekultek/whitewidow"
+	;;
+	"2142")
+		Clona "Mi-Al/WiFi-autopwner"
+	;;
+	"2143")
+		Clona "DanMcInerney/wifi-monitor"
+	;;
+	"2144")
+		Clona "P0cL4bs/wifipumpkin3"
+	;;
+	"2145")
+		Clona "gentilkiwi/wifichannelmonitor"
+	;;
+	"2146")
+		Clona "oblique/wificurse"
+	;;
+	"2147")
+		Clona "DanMcInerney/wifijammer"
+	;;
+	"2148")
+		Clona "mehdilauters/wifiScanMap"
+	;;
+	"2149")
+		Clona "GDSSecurity/wifitap"
+	;;
+	"2150")
+		Clona "derv82/wifite"
+	;;
+	"2151")
+		Clona "jekyc/wig"
+	;;
+	"2152")
+		Clona "zombiesam/wikigen"
+	;;
+	"2153")
+		Clona "localh0t/wildpwn"
+	;;
+	"2154")
+		Clona "basil00/Divert"
+	;;
+	"2155")
+		Clona "BlackArch/windows-binaries"
+	;;
+	"2156")
+		Clona "GDSSecurity/Windows-Exploit-Suggester"
+	;;
+	"2157")
+		Clona "PoorBillionaire/Windows-Prefetch-Parser"
+	;;
+	"2158")
+		Clona "pentestmonkey/windows-privesc-check"
+	;;
+	"2159")
+		Clona "crazy-max/WindowsSpyBlocker/"
+	;;
+	"2160")
+		Clona "S3cur3Th1sSh1t/WinPwn"
+	;;
+	"2161")
+		Clona "jbruchon/winregfs"
+	;;
+	"2162")
+		Clona "SYWorks/wireless-ids"
+	;;
+	"2163")
+		Clona "ThomasTJdev/WMD"
+	;;
+	"2164")
+		Clona "davidpany/WMI_Forensics"
+	;;
+	"2165")
+		Clona "Crapworks/wolpertinger"
+	;;
+	"2166")
+		Clona "magnific0/wondershaper"
+	;;
+	"2167")
+		Clona "BlackArch/wordlistctl"
+	;;
+	"2168")
+		Clona "4n4nk3/Wordlister"
+	;;
+	"2169")
+		Clona "gbrindisi/wordpot"
+	;;
+	"2170")
+		Clona "rastating/wordpress-exploit-framework"
+	;;
+	"2171")
+		Clona "SYWorks/wpa-bruteforcer"
+	;;
+	"2172")
+		Clona "dxa4481/WPA2-HalfHandshake-Crack"
+	;;
+	"2173")
+		Clona "dejanlevaja/wpbf"
+	;;
+	"2174")
+		Clona "zendoctor/wpbrute-rpc"
+	;;
+	"2175")
+		Clona "webarx-security/wpbullet"
+	;;
+	"2176")
+		Clona "Tuhinshubhra/WPintel"
+	;;
+	"2177")
+		Clona "0x90/wpsik"
+	;;
+	"2178")
+		Clona "JamesJGoodwin/wreckuests"
+	;;
+	"2179")
+		Clona "mrpapercut/wscript"
+	;;
+	"2180")
+		Clona "nccgroup/wssip"
+	;;
+	"2181")
+		Clona "ctxis/wsuspect-proxy"
+	;;
+	"2182")
+		Clona "asciimoo/wuzz"
+	;;
+	"2183")
+		Clona "X-Vector/X-RSA"
+	;;
+	"2184")
+		Clona "x64dbg/x64dbg/releases"
+	;;
+	"2185")
+		Clona "orf/xcat"
+	;;
+	"2186")
+		Clona "nccgroup/xcavator"
+	;;
+	"2187")
+		Clona "mandatoryprogrammer/xcname"
+	;;
+	"2188")
+		Clona "LionSec/xerosploit"
+	;;
+	"2189")
+		Clona "earthquake/xfltreat/"
+	;;
+	"2190")
+		Clona "kavishgr/xmlrpc-bruteforcer"
+	;;
+	"2191")
+		Clona "hellman/xortool"
+	;;
+	"2192")
+		Clona "mandatoryprogrammer/xpire-crossdomain-scanner"
+	;;
+	"2193")
+		Clona "CoderPirata/XPL-SEARCH"
+	;;
+	"2194")
+		Clona "evilsocket/xray"
+	;;
+	"2195")
+		Clona "acama/xrop"
+	;;
+	"2196")
+		Clona "hacker900123/XSS-Freak"
+	;;
+	"2197")
+		Clona "menkrep1337/XSSCon"
+	;;
+	"2198")
+		Clona "DanMcInerney/xsscrapy"
+	;;
+	"2199")
+		Clona "mandatoryprogrammer/xssless"
+	;;
+	"2200")
+		Clona "gwroblew/detectXSSlib"
+	;;
+	"2201")
+		Clona "1N3/XSSTracer"
+	;;
+	"2202")
+		Clona "UltimateHackers/XSStrike"
+	;;
+	"2203")
+		Clona "yehia-mamdouh/XSSYA"
+	;;
+	"2204")
+		Clona "3xp10it/bypass_waf"
+	;;
+	"2205")
+		Clona "enjoiz/XXEinjector"
+	;;
+	"2206")
+		Clona "staaldraad/xxeserv"
+	;;
+	"2207")
+		Clona "luisfontes19/xxexploiter"
+	;;
+	"2208")
+		Clona "Plasticoo/YAAF"
+	;;
+	"2209")
+		Clona "VirusTotal/yara"
+	;;
+	"2210")
+		Clona "0xsauby/yasuo"
+	;;
+	"2211")
+		Clona "adamcaudill/yawast"
+	;;
+	"2212")
+		Clona "Jguer/yay"
+	;;
+	"2213")
+		Clona "yeti-platform/yeti"
+	;;
+	"2214")
+		Clona "frohoff/ysoserial"
+	;;
+	"2215")
+		Clona "urbanesec/ZackAttack/"
+	;;
+	"2216")
+		Clona "zmap/zdns"
+	;;
+	"2217")
+		Clona "zeek/zeek"
+	;;
+	"2218")
+		Clona "zeek/zeek-aux"
+	;;
+	"2219")
+		Clona "zeropointdynamics/zelos"
+	;;
+	"2220")
+		Clona "ChrisTheCoolHut/Zeratool"
+	;;
+	"2221")
+		Clona "DenizParlak/Zeus"
+	;;
+	"2222")
+		Clona "Ekultek/Zeus-Scanner"
+	;;
+	"2223")
+		Clona "zmap/zgrab"
+	;;
+	"2224")
+		Clona "zmap/zgrab2"
+	;;
+	"2225")
+		Clona "pasahitz/zirikatu"
+	;;
+	"2226")
+		Clona "cyrus-and/zizzania"
+	;;
+	"2227")
+		Clona "mhogomchungu/zuluCrypt"
+	;;
 	*)
 		echo "error, invalid choice"
 	;;
