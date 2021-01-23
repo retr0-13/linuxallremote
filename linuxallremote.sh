@@ -4429,7 +4429,7 @@ while true; do
 		Clona "invictus1306/beebug"
 	;;
 	"874")
-		Clona "honeynet/beeswarm/"
+		Clona "honeynet/beeswarm"
 	;;
 	"875")
 		Clona "aancw/Belati"
@@ -4462,7 +4462,7 @@ while true; do
 		Clona "Hood3dRob1n/BinGoo"
 	;;
 	"885")
-		Clona "nccgroup/BinProxy/"
+		Clona "nccgroup/BinProxy"
 	;;
 	"886")
 		Clona "ReFirmLabs/binwalk"
@@ -4732,7 +4732,7 @@ while true; do
 		Clona "hatRiot/clusterd"
 	;;
 	"975")
-		Clona "EgeBalci/Cminer/"
+		Clona "EgeBalci/Cminer"
 	;;
 	"976")
 		Clona "FlorianHeigl/cms-explorer"
@@ -4789,7 +4789,7 @@ while true; do
 		Clona "CoalfireLabs/crackHOR"
 	;;
 	"995")
-		Clona "mikeryan/crackle/"
+		Clona "mikeryan/crackle"
 	;;
 	"996")
 		Clona "vnik5287/Crackq"
@@ -4894,7 +4894,7 @@ while true; do
 		Clona "kgretzky/dcrawl"
 	;;
 	"1030")
-		Clona "0xd4d/de4dot/"
+		Clona "0xd4d/de4dot"
 	;;
 	"1031")
 		Clona "byt3bl33d3r/DeathStar"
@@ -4996,7 +4996,7 @@ while true; do
 		Clona "erbbysam/DNSGrep"
 	;;
 	"1064")
-		Clona "0xd4d/dnSpy/"
+		Clona "0xd4d/dnSpy"
 	;;
 	"1065")
 		Clona "evilsocket/dnssearch"
@@ -5143,7 +5143,7 @@ while true; do
 		Clona "elfmaster/ecfs"
 	;;
 	"1113")
-		Clona "eteran/edb-debugger/"
+		Clona "eteran/edb-debugger"
 	;;
 	"1114")
 		Clona "neoneggplant/EggShell"
@@ -5158,7 +5158,7 @@ while true; do
 		Clona "DanMcInerney/elite-proxy-finder"
 	;;
 	"1118")
-		Clona "martinvigo/email2phonenumber/"
+		Clona "martinvigo/email2phonenumber"
 	;;
 	"1119")
 		Clona "BC-SECURITY/Empire"
@@ -5416,7 +5416,7 @@ while true; do
 		Clona "michaeltelford/gatecrasher"
 	;;
 	"1205")
-		Clona "lc/gau/"
+		Clona "lc/gau"
 	;;
 	"1206")
 		Clona "byt3bl33d3r/gcat"
@@ -5572,7 +5572,7 @@ while true; do
 		Clona "nccgroup/GTFOBLookup"
 	;;
 	"1257")
-		Clona "greenbone/gvmd/"
+		Clona "greenbone/gvmd"
 	;;
 	"1258")
 		Clona "00xc/h2buster"
@@ -5620,7 +5620,7 @@ while true; do
 		Clona "galkan/hasere"
 	;;
 	"1273")
-		Clona "UltimateHackers/Hash-Buster/"
+		Clona "UltimateHackers/Hash-Buster"
 	;;
 	"1274")
 		Clona "iagox86/hash_extender"
@@ -5635,7 +5635,7 @@ while true; do
 		Clona "staz0t/hashcatch/releases"
 	;;
 	"1278")
-		Clona "NPS-DEEP/hashdb/"
+		Clona "NPS-DEEP/hashdb"
 	;;
 	"1279")
 		Clona "jessek/hashdeep"
@@ -5710,13 +5710,13 @@ while true; do
 		Clona "ElevenPaths/HomePWN"
 	;;
 	"1303")
-		Clona "DataSoft/Honeyd/"
+		Clona "DataSoft/Honeyd"
 	;;
 	"1304")
 		Clona "foospidy/HoneyPy"
 	;;
 	"1305")
-		Clona "xme/hoover/"
+		Clona "xme/hoover"
 	;;
 	"1306")
 		Clona "gabamnml/hoper"
@@ -5779,7 +5779,7 @@ while true; do
 		Clona "xiam/hyperfox"
 	;;
 	"1326")
-		Clona "hackappcom/ibrute/"
+		Clona "hackappcom/ibrute"
 	;;
 	"1327")
 		Clona "m4ll0k/iCloudBrutter"
@@ -5833,7 +5833,7 @@ while true; do
 		Clona "4w4k3/Insanity-Framework"
 	;;
 	"1344")
-		Clona "sc1341/InstagramOSINT/"
+		Clona "sc1341/InstagramOSINT"
 	;;
 	"1345")
 		Clona "thelinuxchoice/instashell"
@@ -5899,7 +5899,7 @@ while true; do
 		Clona "salesforce/ja3"
 	;;
 	"1366")
-		Clona "flankerhqd/JAADAS/"
+		Clona "flankerhqd/JAADAS"
 	;;
 	"1367")
 		Clona "skylot/jadx"
@@ -5917,7 +5917,7 @@ while true; do
 		Clona "kwart/jd-cli"
 	;;
 	"1372")
-		Clona "frohoff/jdeserialize/"
+		Clona "frohoff/jdeserialize"
 	;;
 	"1373")
 		Clona "SideChannelMarvels/JeanGrey"
@@ -6073,7 +6073,7 @@ while true; do
 		Clona "carlospolop/legion"
 	;;
 	"1424")
-		Clona "leo-editor/leo-editor/"
+		Clona "leo-editor/leo-editor"
 	;;
 	"1425")
 		Clona "captainhooligan/Leroy-Jenkins"
@@ -6091,10 +6091,10 @@ while true; do
 		Clona "galkan/levye"
 	;;
 	"1430")
-		Clona "OsandaMalith/LFiFreak/"
+		Clona "OsandaMalith/LFiFreak"
 	;;
 	"1431")
-		Clona "aepereyra/lfimap/"
+		Clona "aepereyra/lfimap"
 	;;
 	"1432")
 		Clona "D35m0nd142/LFISuite"
@@ -6121,7 +6121,7 @@ while true; do
 		Clona "mfontanini/libtins"
 	;;
 	"1440")
-		Clona "mzfr/liffy/"
+		Clona "mzfr/liffy"
 	;;
 	"1441")
 		Clona "lightbulb-framework/lightbulb-framework"
@@ -6493,7 +6493,7 @@ while true; do
 		Clona "bonsaiviking/NfSpy"
 	;;
 	"1564")
-		Clona "jpr5/ngrep/"
+		Clona "jpr5/ngrep"
 	;;
 	"1565")
 		Clona "niloofarkheirkhah/nili"
@@ -6616,7 +6616,7 @@ while true; do
 		Clona "regit/opensvp"
 	;;
 	"1605")
-		Clona "greenbone/openvas/"
+		Clona "greenbone/openvas"
 	;;
 	"1606")
 		Clona "graniet/operative-framework"
@@ -6640,7 +6640,7 @@ while true; do
 		Clona "guitarmanj/OSINTerator"
 	;;
 	"1613")
-		Clona "pstavirs/ostinato/"
+		Clona "pstavirs/ostinato"
 	;;
 	"1614")
 		Clona "lijiejie/OutLook_WebAPP_Brute"
@@ -6712,7 +6712,7 @@ while true; do
 		Clona "CoolerVoid/payloadmask"
 	;;
 	"1637")
-		Clona "swisskyrepo/PayloadsAllTheThings/"
+		Clona "swisskyrepo/PayloadsAllTheThings"
 	;;
 	"1638")
 		Clona "gvb84/pbscan"
@@ -6922,7 +6922,7 @@ while true; do
 		Clona "zardus/preeny"
 	;;
 	"1707")
-		Clona "jsteube/princeprocessor/"
+		Clona "jsteube/princeprocessor"
 	;;
 	"1708")
 		Clona "Microsoft/ProcDump-for-Linux"
@@ -7177,7 +7177,7 @@ while true; do
 		Clona "PypeRanger/revipd"
 	;;
 	"1792")
-		Clona "emptymonkey/revsh/"
+		Clona "emptymonkey/revsh"
 	;;
 	"1793")
 		Clona "shellphish/rex"
@@ -7246,7 +7246,7 @@ while true; do
 		Clona "leostat/rtfm"
 	;;
 	"1815")
-		Clona "bemasher/rtlamr/"
+		Clona "bemasher/rtlamr"
 	;;
 	"1816")
 		Clona "csete/rtlizer"
@@ -7339,7 +7339,7 @@ while true; do
 		Clona "b3mb4m/Search1337"
 	;;
 	"1846")
-		Clona "danielmiessler/SecLists/"
+		Clona "danielmiessler/SecLists"
 	;;
 	"1847")
 		Clona "m4ll0k/SecretFinder"
@@ -7348,7 +7348,7 @@ while true; do
 		Clona "jschicht/Secure2Csv"
 	;;
 	"1849")
-		Clona "galkan/sees/"
+		Clona "galkan/sees"
 	;;
 	"1850")
 		Clona "sensepost/xrdp"
@@ -7357,7 +7357,7 @@ while true; do
 		Clona "NickstaDB/SerialBrute"
 	;;
 	"1852")
-		Clona "NickstaDB/SerializationDumper/"
+		Clona "NickstaDB/SerializationDumper"
 	;;
 	"1853")
 		Clona "mazen160/server-status_PWN"
@@ -7450,7 +7450,7 @@ while true; do
 		Clona "secretsquirrel/SigThief"
 	;;
 	"1883")
-		Clona "achorein/silenteye/"
+		Clona "achorein/silenteye"
 	;;
 	"1884")
 		Clona "byt3bl33d3r/SILENTTRINITY"
@@ -7687,7 +7687,7 @@ while true; do
 		Clona "jtripper/sslnuke"
 	;;
 	"1962")
-		Clona "DinoTools/sslscan/"
+		Clona "DinoTools/sslscan"
 	;;
 	"1963")
 		Clona "nabla-c0d3/sslyze"
@@ -7726,7 +7726,7 @@ while true; do
 		Clona "epinna/Stegosip"
 	;;
 	"1975")
-		Clona "bannsec/stegoVeritas/"
+		Clona "bannsec/stegoVeritas"
 	;;
 	"1976")
 		Clona "zardus/ctf-tools/blob/master/stegsolve/install"
@@ -7768,7 +7768,7 @@ while true; do
 		Clona "Anon-Exploiter/SUID3NUM"
 	;;
 	"1989")
-		Clona "OpenRCE/sulley/"
+		Clona "OpenRCE/sulley"
 	;;
 	"1990")
 		Clona "OISF/suricata-verify"
@@ -7846,7 +7846,7 @@ while true; do
 		Clona "AeonDave/tilt"
 	;;
 	"2015")
-		Clona "technoskald/tinfoleak/"
+		Clona "technoskald/tinfoleak"
 	;;
 	"2016")
 		Clona "RUB-NDS/TLS-Attacker"
@@ -7951,7 +7951,7 @@ while true; do
 		Clona "Hello71/udpastcp"
 	;;
 	"2050")
-		Clona "zombieCraig/UDSim/"
+		Clona "zombieCraig/UDSim"
 	;;
 	"2051")
 		Clona "theopolis/uefi-firmware-parser"
@@ -8278,7 +8278,7 @@ while true; do
 		Clona "pentestmonkey/windows-privesc-check"
 	;;
 	"2159")
-		Clona "crazy-max/WindowsSpyBlocker/"
+		Clona "crazy-max/WindowsSpyBlocker"
 	;;
 	"2160")
 		Clona "S3cur3Th1sSh1t/WinPwn"
@@ -8368,7 +8368,7 @@ while true; do
 		Clona "LionSec/xerosploit"
 	;;
 	"2189")
-		Clona "earthquake/xfltreat/"
+		Clona "earthquake/xfltreat"
 	;;
 	"2190")
 		Clona "kavishgr/xmlrpc-bruteforcer"
@@ -8446,7 +8446,7 @@ while true; do
 		Clona "frohoff/ysoserial"
 	;;
 	"2215")
-		Clona "urbanesec/ZackAttack/"
+		Clona "urbanesec/ZackAttack"
 	;;
 	"2216")
 		Clona "zmap/zdns"
