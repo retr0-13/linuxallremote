@@ -5187,9 +5187,6 @@ while true; do
 	"1127")
 		Clona "peterpt/eternal_scanner"
 	;;
-	"1128")
-		git clone "https://ettercap.github.com/ettercap/"
-	;;
 	"1129")
 		Clona "outflanknl/EvilClippy"
 	;;
