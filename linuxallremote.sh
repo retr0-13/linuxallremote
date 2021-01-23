@@ -688,7 +688,7 @@ while true; do
 	echo "?"
 	echo -ne " 36. SigPloiter/HLR-Lookups\t\t\t37. i3visio/osrframework\t\t\t\t38. secdev/scapy\n"
 	echo -ne " 39. vanhauser-thc/thc-ipv6\t\t\t225. idapython/src\t\t\t\t\t226. erocarrera/pefile\n"
-	echo -ne " 325. projectdiscovery/httpx\n"
+	echo -ne " 325. projectdiscovery/httpx\t\t\t796. sshock/AFFLIBv3\n"
 	echo "$SEP"
 
 	read -p "Choose a script: " SCELTA
