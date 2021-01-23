@@ -6436,7 +6436,7 @@ while true; do
 		Clona "mehrdadrad/mylg"
 	;;
 	"1544")
-		git clone "https://gist.github.com/esperlu/943776"
+		Scarica "https://gist.githubusercontent.com/esperlu/943776/raw/be469f0a0ab8962350f3c5ebe8459218b915f817/mysql2sqlite.sh"
 	;;
 	"1545")
 		Clona "FSecureLABS/N1QLMap"
