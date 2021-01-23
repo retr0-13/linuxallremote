@@ -317,6 +317,7 @@ while true; do
 	echo -ne " 712. allfro/sploitego\t\t\t\t715. rsmusllp/termineter\t\t\t\t716. droberson/thefuzz\n"
 	echo -ne " 717. kernelslacker/trinity\t\t\t718. PAGalaxyLab/uniFuzzer\t\t\t\t720. nullsecuritynet/uniofuzz\n"
 	echo -ne " 721. andresriancho/w3af\t\t\t723. wereallfeds/webshag\t\t\t\t724. samhocevar/zzuf\n"
+	echo -ne " 798. tintinweb/aggroArgs\n"
 	echo "$SEP"
 	echo "GATHERING - OSINT"
 	echo -ne " 168. Screetsec/Sudomy\t\t\t\t177. HightechSec/git-scanner/gitscanner\t\t\t89. urbanadventurer/WhatWeb\n"
