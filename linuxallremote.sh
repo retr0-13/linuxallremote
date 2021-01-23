@@ -649,7 +649,7 @@ while true; do
 	echo -ne " 198. wpscanteam/wpscan\t\t\t\t200. 04x/WpscaN/ICgWpScaNNer\n"
 	echo -ne " 201. The404Hacking/wpscan\t\t\t202. drego85/JoomlaScan\t\t\t\t\t287. boku7/LibreHealth-authRCE\n"
 	echo -ne " 466. FortyNorthSecurity/EyeWitness\t\t614. dariusztytko/jwt-key-id-injector\n"
-	echo -ne " 621. s0md3v/Arjun\n"
+	echo -ne " 621. s0md3v/Arjun\t\t\t\t789. CoolerVoid/0d1n\n"
 	echo "$SEP"
 	echo "WEBCAMS"
 	echo -ne " 395. JettChenT/scan-for-webcams\t\t396. entynetproject/entropy\t\t\t\t397. indexnotfound404/spycam\n"
