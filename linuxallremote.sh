@@ -137,7 +137,7 @@ while true; do
 	echo "ANALIZING"
 	echo -ne " 142. saferwall/saferwall\t\t\t169. fireeye/flare-floss\t\t\t\t219. BinaryAnalysisPlatform/bap\n"
 	echo -ne " 220. angr/angr\t\t\t\t\t224. cogent/origami-pdf\t\t\t\t\t451. Ettercap/ettercap\n"
-	echo -ne " 797. CoreSecurity/Agafi\n"
+	echo -ne " 797. CoreSecurity/Agafi\t\t\t804. EgeBalci/Amber\n"
 	echo "$SEP"
 	echo "ANDROID - APK"
 	echo -ne " 128. xtiankisutsa/MARA_Framework\t\t274. yasoob/nrc-exporter\t\t\t\t277. mzfr/slicer\n"
