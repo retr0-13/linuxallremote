@@ -425,7 +425,7 @@ while true; do
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
-	echo -ne " 764. Esser420/EvilTwinFramework\n"
+	echo -ne " 764. Esser420/EvilTwinFramework\t\t801. Josue87/Airopy\n"
 	echo "$SEP"
 	echo "MONGODB - NOSQL"
 	echo -ne " 230. youngyangyang04/NoSQLAttack\t\t231. codingo/NoSQLMap\t\t\t\t\t232. torque59/Nosql-Exploitation-Framework\n"
