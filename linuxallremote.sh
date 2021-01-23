@@ -4819,7 +4819,7 @@ while true; do
 		Clona "ustayready/CredSniper"
 	;;
 	"1005")
-		Clona "http://github.com/ilektrojohn/creepy.git"
+		Clona "ilektrojohn/creepy"
 	;;
 	"1006")
 		Clona "SpiderLabs/cribdrag"
@@ -5188,7 +5188,7 @@ while true; do
 		Clona "peterpt/eternal_scanner"
 	;;
 	"1128")
-		Clona "https://ettercap.github.com/ettercap/"
+		git clone "https://ettercap.github.com/ettercap/"
 	;;
 	"1129")
 		Clona "outflanknl/EvilClippy"
@@ -5197,7 +5197,7 @@ while true; do
 		Clona "bitbrute/evillimiter"
 	;;
 	"1131")
-		Clona "saeeddhqan/evine.git"
+		Clona "saeeddhqan/evine"
 	;;
 	"1132")
 		Clona "yarox24/evtkit"
@@ -5446,7 +5446,7 @@ while true; do
 		Clona "vulnersCom/getsploit"
 	;;
 	"1214")
-		Clona "http://jeanphix.github.com/Ghost.py/"
+		git clone "http://jeanphix.github.com/Ghost.py/"
 	;;
 	"1215")
 		Clona "s1egesystems/GhostDelivery"
@@ -6049,7 +6049,7 @@ while true; do
 		Clona "takeshixx/laf"
 	;;
 	"1415")
-		Clona "http://github.com/rflynn/lanmap2"
+		Clona "rflynn/lanmap2"
 	;;
 	"1416")
 		Clona "DanMcInerney/LANs.py"
@@ -6436,7 +6436,7 @@ while true; do
 		Clona "mehrdadrad/mylg"
 	;;
 	"1544")
-		Clona "https://gist.github.com/esperlu/943776"
+		git clone "https://gist.github.com/esperlu/943776"
 	;;
 	"1545")
 		Clona "FSecureLABS/N1QLMap"
@@ -6445,7 +6445,7 @@ while true; do
 		Clona "carmaa/nacker"
 	;;
 	"1547")
-		Clona "tcstool/nasnum.git"
+		Clona "tcstool/nasnum"
 	;;
 	"1548")
 		Clona "resurrecting-open-source-projects/nbtscan"
@@ -6526,7 +6526,7 @@ while true; do
 		Clona "an0nlk/Nosql-MongoDB-injection-username-password-enumeration"
 	;;
 	"1574")
-		Clona "tcstool/NoSQLMap.git"
+		Clona "tcstool/NoSQLMap"
 	;;
 	"1575")
 		Clona "chrisallenlane/novahot"
@@ -6562,7 +6562,7 @@ while true; do
 		Clona "sepehrdaddev/ntpdos"
 	;;
 	"1586")
-		Clona "projectdiscovery/nuclei-templates.git"
+		Clona "projectdiscovery/nuclei-templates"
 	;;
 	"1587")
 		Clona "m8r0wn/nullinux"
@@ -6691,7 +6691,7 @@ while true; do
 		Clona "behindthefirewalls/Parsero"
 	;;
 	"1629")
-		Clona "http://github.com/jensp/passcracking"
+		Clona "jensp/passcracking"
 	;;
 	"1630")
 		Clona "Dionach/PassHunt"
@@ -6766,7 +6766,7 @@ while true; do
 		Clona "robertdavidgraham/pemcrack"
 	;;
 	"1654")
-		Clona "bwall/pemcracker.git"
+		Clona "bwall/pemcracker"
 	;;
 	"1655")
 		Clona "praetorian-inc/pentestly"
@@ -7276,7 +7276,7 @@ while true; do
 		Clona "sleinen/samplicator"
 	;;
 	"1824")
-		Clona "http://github.com/jensp/samydeluxe"
+		Clona "jensp/samydeluxe"
 	;;
 	"1825")
 		Clona "0xSearches/sandcastle"
@@ -7435,7 +7435,7 @@ while true; do
 		Clona "aploium/shootback"
 	;;
 	"1877")
-		Clona "projectdiscovery/shuffledns.git"
+		Clona "projectdiscovery/shuffledns"
 	;;
 	"1878")
 		Clona "wetw0rk/Sickle"
@@ -8185,7 +8185,7 @@ while true; do
 		Clona "BlackArch/webshells"
 	;;
 	"2127")
-		Clona "http://github.com/kanaka/websockify"
+		Clona "kanaka/websockify"
 	;;
 	"2128")
 		Clona "websploit/websploit"
