@@ -5446,7 +5446,7 @@ while true; do
 		Clona "vulnersCom/getsploit"
 	;;
 	"1214")
-		git clone "http://jeanphix.github.com/Ghost.py/"
+		Clona "jeanphix/Ghost.py"
 	;;
 	"1215")
 		Clona "s1egesystems/GhostDelivery"
