@@ -663,7 +663,7 @@ while true; do
 	echo "$SEP"
 	echo "WIFI"
 	echo -ne " 540. blunderbuss-wctf/wacker\t\t\t550. calebmadrigal/trackerjacker\t\t\t580. JPaulMora/Pyrit\n"
-	echo -ne " 591. hash3liZer/WiFiBroot\t\t\t592. SValkanov/wifivoid\n"
+	echo -ne " 591. hash3liZer/WiFiBroot\t\t\t592. SValkanov/wifivoid\t\t\t\t\t800. v1s1t0r1sh3r3/airgeddon\n"
 	echo "$SEP"
 	echo "WINRM"
 	echo -ne " 42. Hackplayers/evil-winrm\n"
