@@ -279,6 +279,7 @@ while true; do
 	echo -ne " 13. exploit-db/windows - remote scripts\t14. exploit-db/windows_x86 - remote scripts\t\t15. exploit-db/windows_x86-64 - remote scripts\n"
 	echo -ne " 16. sundaysec/Android-Exploits/remote\t\t17. offensive-security/exploitdb/android/remote\n"
 	echo -ne " 18. offensive-security/exploitdb/ios\t\t617. Download an exploit from exploit-db site web\n"
+	echo -ne " 815. Acey9/Chimay-Red\n"
 	echo "$SEP"
 	echo "EXTRA"
 	echo -ne " 252. LionSec/katoolin\n"
@@ -4303,7 +4304,7 @@ while true; do
 		Clona "lewangbtcc/anti-XSS"
 	;;
 	"815")
-		Clona "Acey9/apacket"
+		Clona "Acey9/Chimay-Red"
 	;;
 	"816")
 		Clona "rednaga/APKiD"
