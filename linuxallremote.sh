@@ -267,6 +267,7 @@ while true; do
 	echo -ne " 268. wintrmvte/SNOWCRASH\t\t\t275. CBHue/PyFuscation\t\t\t\t\t293. OsandaMalith/PE2HTML\n"
 	echo -ne " 309. mdsecactivebreach/Chameleon\t\t576. Veil-Framework/Veil\t\t\t\t605. shadowlabscc/Kaiten\n"
 	echo -ne " 688. lobuhi/byp4xx\t\t\t\t731. gotr00t0day/forbiddenpass\t\t\t\t792. LandGrey/abuse-ssl-bypass-waf\n"
+	echo -ne " 824. tokyoneon/Armor\n"
 	echo "$SEP"
 	echo "EXCHANGE"
 	echo -ne " 571. sensepost/ruler\n"
