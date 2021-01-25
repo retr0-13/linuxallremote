@@ -210,7 +210,7 @@ while true; do
 	echo -ne " 543. praetorian-inc/trident_0.1.3_linux_i386\t544. praetorian-inc/trident_0.1.3_linux_x86_64\t\t545. praetorian-inc/trident\n"
 	echo -ne " 563. Viralmaniar/Passhunt\t\t\t611. jmk-foofus/medusa\t\t\t\t\t612. openwall/john\n"
 	echo -ne " 630. beurtschipper/Depix\t\t\t632. x90skysn3k/brutespray\t\t\t\t762. f0cker/crackq\n"
-	echo -ne " 763. hashcrackq/Crackq\n"
+	echo -ne " 763. hashcrackq/Crackq\t\t\t\t811. PentesterES/AndroidPINCrack\n"
 	echo "$SEP"
 	echo "CRAWLING - SPIDERING"
 	echo -ne " 586. saeeddhqan/evine\t722. OWASP/OWASP-WebScarab\t\t\t\t\t733. gotr00t0day/spider00t\n"
