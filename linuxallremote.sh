@@ -261,7 +261,7 @@ while true; do
 	echo "$SEP"
 	echo "ENUMERATION"
 	echo -ne " 163. luke-goddard/enumy\t\t\t209. Knowledge-Wisdom-Understanding/recon\n"
-	echo -ne " 619. cddmp/enum4linux-ng\t\t\t735. gotr00t0day/oswalkpy\n"
+	echo -ne " 619. cddmp/enum4linux-ng\t\t\t735. gotr00t0day/oswalkpy\t\t\t\t840. skahwah/automato\n"
 	echo "$SEP"
 	echo "EVASION - BYPASSING"
 	echo -ne " 167. govolution/avet\t\t\t\t134. khalilbijjou/WAFNinja\t\t\t\t174. stormshadow07/HackTheWorld\n"
