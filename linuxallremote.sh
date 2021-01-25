@@ -248,7 +248,7 @@ while true; do
 	echo -ne " 497. redsift/dnstrace\t\t\t\t498. dkorunic/dnstrace\t\t\t\t\t528. mfocuz/DNS_Hunter\n"
 	echo -ne " 752. theMiddleBlue/DNSenum\t\t\t753. rbsec/dnscan\n"
 	echo -ne " 783. gr3yc4t/dns-poisoning-tool\t\t784. SemyonMakhaev/dns-poison\t785. ShanjinurIslam/Computer-Security-DNS-Cache-Poisoning\n"
-	echo -ne " 799. blark/aiodnsbrute\t\t\t\t803. infosec-au/altdns\n"
+	echo -ne " 799. blark/aiodnsbrute\t\t\t\t803. infosec-au/altdns\t\t\t\t\t831. tomnomnom/assetfinder\n"
 	echo "$SEP"
 	echo "DOCKER"
 	echo -ne " 351. cr0hn/dockerscan\t\t\t\t352. RhinoSecurityLabs/ccat\n"
