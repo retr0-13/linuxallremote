@@ -152,7 +152,7 @@ while true; do
 	echo -ne " 480. AndyCyberSec/direncrypt\t\t\t577. KuroLabs/stegcloak\t\t\t\t\t590. 1tayH/noisy\n"
 	echo "$SEP"
 	echo "APACHE"
-	echo -ne " 278. mgeeky/tomcatWarDeployer\t\t\t280. hypn0s/AJPy\n"
+	echo -ne " 278. mgeeky/tomcatWarDeployer\t\t\t280. hypn0s/AJPy\t\t\t\t829. mthbernardes/ARTLAS\n"
 	echo "$SEP"
 	echo "APPLE"
 	echo -ne " 644. Pr0x13/iDict\t\t\t\t645. foozzi/iCloudBrutter\n"
