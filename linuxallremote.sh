@@ -424,7 +424,7 @@ while true; do
 	echo -ne " 606. Chudry/Xerror\t\t\t\t616. rajkumardusad/Tool-X\t\t\t\t626. GoVanguard/legion\n"
 	echo -ne " 640. KALILINUXTRICKSYT/easysploit\t\t650. edoardottt/scilla\t\t\t\t742. rajkumardusad/onex\n"
 	echo -ne " 761. toniblyx/prowler\t\t\t\t766. helich0pper/Karkinos\t\t\t\t\t770. jaeles-project/jaeles\n"
-	echo -ne " 775. aaaguirrep/offensive-docker\n"
+	echo -ne " 775. aaaguirrep/offensive-docker\t\t818. dpnishant/appmon\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
