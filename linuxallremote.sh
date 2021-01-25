@@ -144,7 +144,7 @@ while true; do
 	echo -ne " 323. ASHWIN990/ADB-Toolkit\t\t\t326. metachar/PhoneSploit\t\t\t\t327. xtiankisutsa/twiga\n"
 	echo -ne " 373. wuseman/WBRUTER\t\t\t\t405. bkerler/android_universal\n"
 	echo -ne " 410. mesquidar/adbsploit\t\t\t504. airbus-seclab/android_emuroot\t\t\t552. MobSF/Mobile-Security-Framework-MobSF\n"
-	echo -ne " 572. 1N3/ReverseAPK\t\t\t807. AndroBugs/AndroBugs_Framework\n"
+	echo -ne " 572. 1N3/ReverseAPK\t\t\t807. AndroBugs/AndroBugs_Framework\t\t\t\t808. androguard/androguard\n"
 	echo "$SEP"
 	echo "ANTI-FORENSICS - SECURITY"
 	echo -ne " 480. AndyCyberSec/direncrypt\t\t\t577. KuroLabs/stegcloak\t\t\t\t\t590. 1tayH/noisy\n"
