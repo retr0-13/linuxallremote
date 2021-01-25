@@ -687,6 +687,7 @@ while true; do
 	echo -ne " 181. secdec/xssmap\t\t\t\t182. gbrindisi/xsssniper\t\t\t\t183. pwn0sec/PwnXSS\n"
 	echo -ne " 184. lwzSoviet/NoXss\t\t\t\t394. Jewel591/xssmap\t\t\t\t\t558. dwisiswant0/findom-xss\n"
 	echo -ne " 620. hahwul/XSpear\t\t\t\t623. r0oth3x49/Xpath\t\t\t\t\t780. capture0x/XSS-LOADER\n"
+	echo -ne " 814. lewangbtcc/anti-XSS\n"
 	echo "$SEP"
 	echo "ZIP"
 	echo -ne " 43. The404Hacking/ZIP-Password-BruteForcer\t237. mnismt/CompressedCrack\n"
