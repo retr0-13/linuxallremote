@@ -498,7 +498,7 @@ while true; do
 	echo -ne " 556. LordNeoStark/tugarecon\t\t\t594. r3vn/badKarma\t\t\t\t\t599. utkusen/urlhunter\n"
 	echo -ne " 601. UnaPibaGeek/ctfr\t\t\t\t607. thewhiteh4t/seeker\t\t\t\t\t732. gotr00t0day/spyhunt\n"
 	echo -ne " 768. capt-meelo/LazyRecon\t\t\t769. nahamsec/lazyrecon\t\t\t\t772. eslam3kl/3klCon\n"
-	echo -ne " 2228. drsigned/sigurlx\t\t\t\t820. michenriksen/aquatone\n"
+	echo -ne " 2228. drsigned/sigurlx\t\t\t\t820. michenriksen/aquatone\t\t\t\t836. superhedgy/AttackSurfaceMapper\n"
 	echo "$SEP"
 	echo "REDIS"
 	echo -ne " 759. Avinash-acid/Redis-Server-Exploit\n"
