@@ -148,7 +148,7 @@ while true; do
 	echo -ne " 572. 1N3/ReverseAPK\t\t\t807. AndroBugs/AndroBugs_Framework\t\t\t\t808. androguard/androguard\n"
 	echo -ne " 809. Flo354/Androick\t\t\t816. rednaga/APKiD\t\t\t\t\t817. hexabin/APKStat\n"
 	echo "$SEP"
-	echo "ANONYMIZING"
+	echo "ANONYMIZATION"
 	echo -ne " 2229. htrgouvea/nipe\n"
 	echo "$SEP"
 	echo "ANTI-FORENSICS - SECURITY"
