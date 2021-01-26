@@ -148,6 +148,9 @@ while true; do
 	echo -ne " 572. 1N3/ReverseAPK\t\t\t807. AndroBugs/AndroBugs_Framework\t\t\t\t808. androguard/androguard\n"
 	echo -ne " 809. Flo354/Androick\t\t\t816. rednaga/APKiD\t\t\t\t\t817. hexabin/APKStat\n"
 	echo "$SEP"
+	echo "ANONYMIZING"
+	echo -ne " 2229. htrgouvea/nipe\n"
+	echo "$SEP"
 	echo "ANTI-FORENSICS - SECURITY"
 	echo -ne " 480. AndyCyberSec/direncrypt\t\t\t577. KuroLabs/stegcloak\t\t\t\t\t590. 1tayH/noisy\n"
 	echo "$SEP"
@@ -8545,6 +8548,9 @@ while true; do
 	;;
 	"2228")
 		Clona "drsigned/sigurlx"
+	;;
+	"2229")
+		Clona "htrgouvea/nipe"
 	;;
 	*)
 		echo "error, invalid choice"
