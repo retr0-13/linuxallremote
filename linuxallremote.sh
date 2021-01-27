@@ -626,7 +626,7 @@ while true; do
 	echo -ne " 146. tenable/upnp_info\n"
 	echo "$SEP"
 	echo "USB"
-	echo -ne " 2231. nccgroup/umap2\n"
+	echo -ne " 2231. nccgroup/umap2\t2232. usb-tools/ViewSB\n"
 	echo "$SEP"
 	echo "UTILITIES"
 	echo -ne " 99. Clone a Repo from GitHub\t\t\t100. Enable forlder to HttpServer\t\t\t101. listen reverse shell from Windows\n"
@@ -8560,6 +8560,9 @@ while true; do
 	;;
 	"2231")
 		Clona "nccgroup/umap2"
+	;;
+	"2232")
+		Clona "usb-tools/ViewSB"
 	;;
 	*)
 		echo "error, invalid choice"
