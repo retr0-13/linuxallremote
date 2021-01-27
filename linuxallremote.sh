@@ -625,6 +625,9 @@ while true; do
 	echo "UPNP"
 	echo -ne " 146. tenable/upnp_info\n"
 	echo "$SEP"
+	echo "USB"
+	echo -ne " 2231. nccgroup/umap2\n"
+	echo "$SEP"
 	echo "UTILITIES"
 	echo -ne " 99. Clone a Repo from GitHub\t\t\t100. Enable forlder to HttpServer\t\t\t101. listen reverse shell from Windows\n"
 	echo -ne " 102. listen reverse shell from Linux\t\t103. create ssh keys in this folder\t\t\t104. Base64 for Windows (utf16)\n"
@@ -8554,6 +8557,9 @@ while true; do
 	;;
 	"2230")
 		Clona "fadinglr/Parat"
+	;;
+	"2231")
+		Clona "nccgroup/umap2"
 	;;
 	*)
 		echo "error, invalid choice"
