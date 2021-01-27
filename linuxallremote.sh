@@ -626,7 +626,7 @@ while true; do
 	echo -ne " 146. tenable/upnp_info\n"
 	echo "$SEP"
 	echo "USB"
-	echo -ne " 2231. nccgroup/umap2\t2232. usb-tools/ViewSB\n"
+	echo -ne " 2231. nccgroup/umap2\t2232. usb-tools/ViewSB\t2233. Merimetso-Code/USB-Hacking/usbfind\n"
 	echo "$SEP"
 	echo "UTILITIES"
 	echo -ne " 99. Clone a Repo from GitHub\t\t\t100. Enable forlder to HttpServer\t\t\t101. listen reverse shell from Windows\n"
@@ -8563,6 +8563,10 @@ while true; do
 	;;
 	"2232")
 		Clona "usb-tools/ViewSB"
+	;;
+	"2233")
+		Scarica "$ENTRAW""Merimetso-Code/USB-Hacking/main/usbfind.py"
+		Scarica "$ENTRAW""Merimetso-Code/USB-Hacking/main""$RQRM"
 	;;
 	*)
 		echo "error, invalid choice"
