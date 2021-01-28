@@ -243,7 +243,7 @@ while true; do
 	echo -ne " 337. cryptator/assembly-code-analysis\t\t338. plasma-disassembler/plasma\t\t\t\t339. cea-sec/miasm\n"
 	echo -ne " 342. vivisect/vivisect\t\t\t\t791. MITRECND/abcd\n"
 	echo "$SEP"
-	echo "DISCOVERIicsharpcode/AvaloniaILSpyNG"
+	echo "DISCOVERING"
 	echo -ne " 559. epi052/feroxbuster\t\t\t573. robre/scripthunter\t\t\t\t\t729. chris408/ct-exposer\n"
 	echo -ne " 736. gotr00t0day/VulnBanner\t\t\t760. fnk0c/cangibrina\t\t\t\t\t795. sahakkhotsanyan/adfind\n"
 	echo "$SEP"
