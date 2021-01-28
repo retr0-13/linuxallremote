@@ -620,7 +620,7 @@ while true; do
 	echo "TERMUX"
 	echo -ne " 615. install metasploit first method\t\t622. install metasploit second method\t\t\t624. install sudo (no rooting phone)\n"
 	echo -ne " 633. TermuxHacking000/distrux\t\t\t634. TermuxHacking000/SysO-Termux\t\t\t635. TermuxHacking000/PortmapSploit\n"
-	echo -ne " 776. cSploit/android\t\t\t777. routerkeygen/routerkeygenAndroid\t\t\t782. intercepter-ng\n"
+	echo -ne " 776. cSploit/android\t\t\t\t777. routerkeygen/routerkeygenAndroid\t\t\t782. intercepter-ng\n"
 	echo -ne " 2234. OnionApps/Chat.onion\n"
 	echo "$SEP"
 	echo "TFTP"
