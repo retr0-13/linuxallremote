@@ -663,11 +663,11 @@ while true; do
 	echo -ne " 638. get all keys set in memcached remotely\t643. get netmask infos\t\t\t\t\t649. extract tar.gz file\n"
 	echo -ne " 652. get docker version from IP\t\t669. analyze an executable file with strace and ltrace\n"
 	echo -ne " 739. install tor from torproject siteweb\t740. install tor via apt-transport-tor\n"
-	echo -ne " 744. get mx record from domain with dig\t745. get dns infos with host\t\t\t\t\t746. get ntp infos with ntpq\n"
+	echo -ne " 744. get mx record from domain with dig\t745. get dns infos with host\t\t\t\t746. get ntp infos with ntpq\n"
 	echo -ne " 747. get netbios infos with nmblookup\t749. download all files from IP in ftp with anonymous creds\n"
-	echo -ne " 750. username and password dictionary attack with wget and ftp protocol\t\t751. RCE with finger\n"
+	echo -ne " 750. username and password dictionary attack with wget and ftp protocol\t\t\t\t751. RCE with finger\n"
 	echo -ne " 754. get RPC info\t\t\t\t755. get RPC connect\n"
-	echo -ne " 756. smb connection\t757. rlogin dictionary attack\t758. rdesktop dictionary attack\n"
+	echo -ne " 756. smb connection\t\t\t757. rlogin dictionary attack\t758. rdesktop dictionary attack\n"
 	echo -ne " 9. wifi WPA with deauth attack\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
@@ -726,7 +726,7 @@ while true; do
 	echo "?"
 	echo -ne " 36. SigPloiter/HLR-Lookups\t\t\t37. i3visio/osrframework\t\t\t\t38. secdev/scapy\n"
 	echo -ne " 39. vanhauser-thc/thc-ipv6\t\t\t225. idapython/src\t\t\t\t\t226. erocarrera/pefile\n"
-	echo -ne " 325. projectdiscovery/httpx\t\t\t796. sshock/AFFLIBv3\t\t\t\t839. MRGEffitas/scripts\n"
+	echo -ne " 325. projectdiscovery/httpx\t\t\t796. sshock/AFFLIBv3\t\t\t\t\t839. MRGEffitas/scripts\n"
 	echo "$SEP"
 
 	read -p "Choose a script: " SCELTA
