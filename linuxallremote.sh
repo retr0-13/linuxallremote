@@ -458,6 +458,7 @@ while true; do
 	echo "$SEP"
 	echo "OSINT"
 	echo -ne " 845. bharshbarger/AutOSINT\n"
+	echo "$SEP"
 	echo "OWA"
 	echo -ne " 343. busterb/msmailprobe\t\t\t344. 0xZDH/o365spray\t\t\t\t\t345. gremwell/o365enum\n"
 	echo "$SEP"
