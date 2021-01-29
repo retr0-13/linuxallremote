@@ -436,6 +436,7 @@ while true; do
 	echo -ne " 761. toniblyx/prowler\t\t\t\t766. helich0pper/Karkinos\t\t\t\t770. jaeles-project/jaeles\n"
 	echo -ne " 775. aaaguirrep/offensive-docker\t\t818. dpnishant/appmon\t\t\t\t\t842. m4ll0k/AutoNSE\n"
 	echo -ne " 843. nccgroup/autopwn\t\t\t\t863. ThunderGunExpress/BADministration\t\t\t1597. D4Vinci/One-Lin3r\n"
+	echo -ne " 888. sensepost/birp\t\t\t\t890. sepehrdaddev/blackbox\t\t\t\t900. darryllane/Bluto\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
