@@ -480,7 +480,7 @@ while true; do
 	echo -ne " 639. RUB-NDS/PRET\n"
 	echo "$SEP"
 	echo "PROXY"
-	echo -ne " 162. fozavci/viproy-VoIPkit\t\t\t610. audibleblink/doxycannon\n"
+	echo -ne " 162. fozavci/viproy-VoIPkit\t\t\t610. audibleblink/doxycannon\t\t\t\t885. nccgroup/BinProxy\n\n"
 	echo "$SEP"
 	echo "PRY"
 	echo -ne " 743. deivid-rodriguez/pry-byebug\n"
