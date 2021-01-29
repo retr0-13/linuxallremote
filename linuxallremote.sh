@@ -764,6 +764,7 @@ while true; do
 		read -p "(example, wlan0): " WFD
 		if [[ "$WFD" != "" ]];
 		then
+			airmon-ng check kill
 			airmon-ng start "$WFD"
 			iwconfig
 			echo "Digit the wifi device in monitor mode"
