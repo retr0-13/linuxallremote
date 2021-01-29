@@ -357,6 +357,8 @@ while true; do
 	echo -ne " 518. chinarulezzz/pixload/bmp\t\t\t519. chinarulezzz/pixload/gif\t\t\t\t520. chinarulezzz/pixload/jpg\n"
 	echo -ne " 521. chinarulezzz/pixload/png\t\t\t522. chinarulezzz/pixload/webp\t\t\t\t569. commixproject/commix\n"
 	echo -ne " 676. rudSarkar/crlf-injector\t\t\t765. infobyte/evilgrade\t\t\t\t\t802. lanjelot/albatar\n"
+	echo -ne " 870. neohapsis/bbqsql\t\t\t\t889. nbshelton/bitdump\t\t\t\t895. libeclipse/blind-sql-bitshifting\n"
+	echo -ne " 896. missDronio/blindy\n"
 	echo "$SEP"
 	echo "IIS"
 	echo -ne " 22. 0x09AL/IIS-Raid\t\t\t\t23. thelinuxchoice/evilreg\t\t\t\t24. thelinuxchoice/eviloffice\n"
