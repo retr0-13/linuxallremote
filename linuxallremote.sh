@@ -674,7 +674,7 @@ while true; do
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
 	echo "$SEP"
 	echo "VOIP"
-	echo -ne " 461. haasosaurus/ace-voip\t\t\t629. voipmonitor/sniffer\n"
+	echo -ne " 461. haasosaurus/ace-voip\t\t\t629. voipmonitor/sniffer\t\t\t\t898. jesusprubio/bluebox-ng\n"
 	echo "$SEP"
 	echo "VPN"
 	echo -ne " 595. 7Elements/Fortigate\n"
