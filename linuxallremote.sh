@@ -4591,7 +4591,7 @@ while true; do
 		Clona "olivo/BluPhish"
 	;;
 	"900")
-		Clona "RandomStorm/Bluto"
+		Clona "darryllane/Bluto"
 	;;
 	"901")
 		Clona "ANSSI-FR/bmc-tools"
