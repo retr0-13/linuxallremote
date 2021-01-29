@@ -496,7 +496,7 @@ while true; do
 	echo -ne " 584. BusesCanFly/rpi-hunter\n"
 	echo "$SEP"
 	echo "RAT"
-	echo -ne " 536. Pure-L0G1C/Loki\t\t\t\t2230. fadinglr/Parat\n"
+	echo -ne " 536. Pure-L0G1C/Loki\t\t\t\t2230. fadinglr/Parat\t\t\t\t\t2235. BenChaliah/Arbitrium-RAT\n"
 	echo "$SEP"
 	echo "RDP"
 	echo -ne " 86. ekultek/bluekeep\t\t\t\t328. citronneur/rdpy\t\t\t\t\t329. aerissecure/rdpy\n"
@@ -8589,6 +8589,9 @@ while true; do
 	;;
 	"2234")
 		ScaricaIn "$ENTSSL""OnionApps/Chat.onion/raw/master/app/app-release.apk" "Chat.onion.apk"
+	;;
+	"2235")
+		Clona "BenChaliah/Arbitrium-RAT"
 	;;
 	*)
 		echo "error, invalid choice"
