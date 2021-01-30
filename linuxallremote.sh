@@ -178,6 +178,7 @@ while true; do
 	echo "BACKDOOR - SHELLCODE"
 	echo -ne " 409. tz4678/backshell\t\t\t\t565. AnonymousAt3/cyberdoor\t\t\t\t855. mrjopino/backcookie\n"
 	echo -ne " 856. dana-at-cp/backdoor-apk\t\t\t857. secretsquirrel/the-backdoor-factory\t\t858. Kkevsterrr/backdoorme\n"
+	echo -ne " 2237. mm0r1/exploits/php-json-bypass\t2238. mm0r1/exploits/php7-backtrace-bypass\t2239. mm0r1/exploits/master/php7-gc-bypass\n"
 	echo -ne " 861. giuliocomi/backoori\n"
 	echo "$SEP"
 	echo "BLUETOOTH"
@@ -8602,6 +8603,15 @@ while true; do
 	;;
 	"2236")
 		Clona "six2dez/reconftw"
+	;;
+	"2237")
+		Scarica "$ENTRAW""mm0r1/exploits/master/php-json-bypass/exploit.php"
+	;;
+	"2238")
+		Scarica "$ENTRAW""mm0r1/exploits/master/php7-backtrace-bypass/exploit.php"
+	;;
+	"2239")
+		Scarica "$ENTRAW""mm0r1/exploits/master/php7-gc-bypass/exploit.php"
 	;;
 	*)
 		echo "error, invalid choice"
