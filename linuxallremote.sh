@@ -482,6 +482,9 @@ while true; do
 	echo -ne " 489. david3107/squatm3\t\t\t\t490. netevert/dnsmorph\t\t\t\t\t767. htr-tech/zphisher\n"
 	echo -ne " 771. xxhax-team/vk-phishing\n"
 	echo "$SEP"
+	echo "POST-EXPLOITATION"
+	echo -ne " 2241. master-of-servers/mose\n"
+	echo "$SEP"
 	echo "POSTGRESQL"
 	echo -ne " 303. KTN1990/PostgreSQL--Attack-on-default-password-AUTOEXPLOITING-/DB\n"
 	echo "$SEP"
@@ -8616,6 +8619,9 @@ while true; do
 	;;
 	"2240")
 		Clona "kpcyrd/sniffglue"
+	;;
+	"2241")
+		Clona "master-of-servers/mose"
 	;;
 	*)
 		echo "error, invalid choice"
