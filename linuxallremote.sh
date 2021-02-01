@@ -2201,7 +2201,7 @@ while true; do
 		if [[ "$TRGDOM" != "" ]];
 		then
 			for RECORD in A AAAA A+AAAA ANY CNAME MX NS PTR SOA SRV; do dig "$TRGDOM" "$RECORD" >> "$TRGDOM"-nsinfo.txt; done
-			echo "All DNS infos are stored in ""$TRGDOM"-nsinfo.txt file"
+			echo "All DNS infos are stored in ""$TRGDOM""-nsinfo.txt file"
 		fi
 	;;
 	"318")
