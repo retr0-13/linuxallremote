@@ -469,7 +469,7 @@ while true; do
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
 	echo -ne " 764. Esser420/EvilTwinFramework\t\t801. Josue87/Airopy\t\t\t\t\t872. secretsquirrel/BDFProxy\n"
-	echo -ne " 2240. kpcyrd/sniffglue\t934. MobSF/CapFuzz\n"
+	echo -ne " 2240. kpcyrd/sniffglue\t934. MobSF/CapFuzz\t\t\t\t\t2245. kismetwireless/kismet\n"
 	echo "$SEP"
 	echo "MONGODB - NOSQL"
 	echo -ne " 230. youngyangyang04/NoSQLAttack\t\t231. codingo/NoSQLMap\t\t\t\t\t232. torque59/Nosql-Exploitation-Framework\n"
@@ -8658,6 +8658,9 @@ while true; do
 	;;
 	"2244")
 		Clona "yassineaboukir/Asnlookup"
+	;;
+	"2245")
+		Clona "kismetwireless/kismet"
 	;;
 	*)
 		echo "error, invalid choice"
