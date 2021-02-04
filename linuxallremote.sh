@@ -1086,6 +1086,8 @@ while true; do
 				done
 				break
 			done
+		else
+			echo "Please, install lynx for this option"
 		fi
 	;;
 	"20")
