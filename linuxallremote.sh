@@ -592,7 +592,7 @@ while true; do
 	echo -ne " 547. jofpin/fuckshell\t\t\t\t548. followboy1999/webshell-scanner\t\t\t549. emposha/Shell-Detector\n"
 	echo -ne " 627. w-digital-scanner/w13scan\t\t\t641. m4ll0k/Konan\t\t\t\t\t741. PaytmLabs/nerve\n"
 	echo -ne " 835. AlisamTechnology/ATSCAN-V3.1\t\t871. lijiejie/bbscan\t873. invictus1306/beebug\n"
-	echo -ne " 927. auraltension/c5scan\t943. ztgrace/changeme\n"
+	echo -ne " 927. auraltension/c5scan\t943. ztgrace/changeme\t\t\t\t\t2246. souravbaghz/RadareEye\n"
 	echo "$SEP"
 	echo "SHELL"
 	echo -ne " 70. sameera-madushan/Print-My-Shell\t\t71. flozz/p0wny-shell/shell\t\t\t\t87. rastating/slae\n"
@@ -8661,6 +8661,9 @@ while true; do
 	;;
 	"2245")
 		Clona "kismetwireless/kismet"
+	;;
+	"2246")
+		Scarica "$ENTRAW""souravbaghz/RadareEye/main/radare"
 	;;
 	*)
 		echo "error, invalid choice"
