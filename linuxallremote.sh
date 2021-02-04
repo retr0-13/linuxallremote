@@ -503,6 +503,9 @@ while true; do
 	echo -ne " 489. david3107/squatm3\t\t\t\t490. netevert/dnsmorph\t\t\t\t\t767. htr-tech/zphisher\n"
 	echo -ne " 771. xxhax-team/vk-phishing\t937. ring0lab/catphish\n"
 	echo "$SEP"
+	echo "PHP"
+	echo -ne " 2247. ecriminal/phpvuln\t2248. ZaleHack/phpexploit\n"
+	echo "$SEP"
 	echo "POST-EXPLOITATION"
 	echo -ne " 2241. master-of-servers/mose\n"
 	echo "$SEP"
@@ -8689,6 +8692,12 @@ while true; do
 	;;
 	"2246")
 		Scarica "$ENTRAW""souravbaghz/RadareEye/main/radare"
+	;;
+	"2247")
+		Clona "ecriminal/phpvuln"
+	;;
+	"2248")
+		Clona "ZaleHack/phpexploit"
 	;;
 	*)
 		echo "error, invalid choice"
