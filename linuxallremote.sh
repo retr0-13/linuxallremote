@@ -310,8 +310,8 @@ while true; do
 	echo -ne " 10. exploit-db/linux - remote scripts\t\t11. exploit-db/linux_x86 - remote scripts\t\t12. exploit-db/linux_x86-64 - remote scripts\n"
 	echo -ne " 13. exploit-db/windows - remote scripts\t14. exploit-db/windows_x86 - remote scripts\t\t15. exploit-db/windows_x86-64 - remote scripts\n"
 	echo -ne " 16. sundaysec/Android-Exploits/remote\t\t17. offensive-security/exploitdb/android/remote\n"
-	echo -ne " 18. offensive-security/exploitdb - selectable remote exploit\t\t617. Download an exploit from exploit-db site web\n"
-	echo -ne " 815. Acey9/Chimay-Red\t\t\t\t846. NullArray/AutoSploit\n"
+	echo -ne " 18. offensive-security/exploitdb/ios remote exploits\t\t617. Download an exploit from exploit-db site web\n"
+	echo -ne " 815. Acey9/Chimay-Red\t\t\t\t846. NullArray/AutoSploit\t\t19. all remote exploits from offensive-security/exploitdb\n"
 	echo "$SEP"
 	echo "EXTRA"
 	echo -ne " 252. LionSec/katoolin\n"
@@ -1043,8 +1043,33 @@ while true; do
 	"18")
 		if [[ -f $(which lynx) ]];
 		then
+			OFFSEC="offensive-security/exploitdb/"
+			MEX="master/exploits/"
+			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""ios/remote/"
+			ENTTO="$ENTRAW""$OFFSEC""$MEX""ios/remote/"
+			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""ios/remote"
+			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""ios/remote" |  grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+			do
+				if [[ "$EXP" != "" ]];
+				then
+					Scarica "$ENTTO""$EXP"
+				fi
+				break
+			done
+		else
+			echo "Digit a file name from https://github.com/offensive-security/exploitdb/tree/master/exploits/ios/remote with extension"
+			read -p "(example exploit.py): " NOMEFL
+			if [[ "$NOMEFL" != "" ]];
+			then
+				Scarica "$ENTRAW""offensive-security/exploitdb/master/exploits/ios/remote/$NOMEFL"
+			fi
+		fi
+	;;
+	"19")
+		if [[ -f $(which lynx) ]];
+		then
 			echo "Choose a platform or architecture"
-			select TIPO in "aix/remote" "aix/webapps" "alpha/webapps" "android/remote" "android/webapps" "arm/remote" "ashx/webapps" "asp/remote" "asp/webapps/ "aspx/webapps" "beos/remote" "bsd/remote" "bsd_x86/remote" "cfm/remote" "cfm/webapps" "cgi/remote" "cgi/webapps" "freebsd/remote" "freebsd/webapps" "hardware/remote" "hardware/webapps" "hp-ux/remote" "ios/remote" "ios/webapps" "irix/remote" "java/remote" "java/webapps" "json/webapps" "jsp/remote" "jsp/webapps" "linux/remote" "linux/webapps" "linux_mips/remote" "linux_sparc/remote" "linux_x86-64/remote" "linux_x86/remote" "linux_x86/webapps" "lua/webapps" "macos/remote" "macos/webapps" "multiple/remote" "multiple/webapps" "netbsd_x86/remote" "netware/remote" "nodejs/webapps" "novell/remote" "novell/webapps" "openbsd/remote" "osx/remote" "osx/webapps" "osx_ppc/remote" "palm_os/webapps" "perl/webapps" "php/remote" "php/webapps" "python/remote" "python/webapps" "ruby" "sco/remote" "sco/webapps" "solaris/remote" "solaris/webapps" "solaris_sparc/remote" "tru64/remote" "unix/remote" "unix/webapps" "unixware/remote" "watchos/remote" "windows/remote" "windows/webapps" "windows_x86-64/remote" "windows_x86-64/webapps" "windows_x86/remote" "windows_x86/webapps" "xml/remote" "xml/webapps"
+			select TIPO in "aix/remote" "aix/webapps" "alpha/webapps" "android/remote" "android/webapps" "arm/remote" "ashx/webapps" "asp/remote" "asp/webapps" "aspx/webapps" "beos/remote" "bsd/remote" "bsd_x86/remote" "cfm/remote" "cfm/webapps" "cgi/remote" "cgi/webapps" "freebsd/remote" "freebsd/webapps" "hardware/remote" "hardware/webapps" "hp-ux/remote" "ios/remote" "ios/webapps" "irix/remote" "java/remote" "java/webapps" "json/webapps" "jsp/remote" "jsp/webapps" "linux/remote" "linux/webapps" "linux_mips/remote" "linux_sparc/remote" "linux_x86-64/remote" "linux_x86/remote" "linux_x86/webapps" "lua/webapps" "macos/remote" "macos/webapps" "multiple/remote" "multiple/webapps" "netbsd_x86/remote" "netware/remote" "nodejs/webapps" "novell/remote" "novell/webapps" "openbsd/remote" "osx/remote" "osx/webapps" "osx_ppc/remote" "palm_os/webapps" "perl/webapps" "php/remote" "php/webapps" "python/remote" "python/webapps" "ruby" "sco/remote" "sco/webapps" "solaris/remote" "solaris/webapps" "solaris_sparc/remote" "tru64/remote" "unix/remote" "unix/webapps" "unixware/remote" "watchos/remote" "windows/remote" "windows/webapps" "windows_x86-64/remote" "windows_x86-64/webapps" "windows_x86/remote" "windows_x86/webapps" "xml/remote" "xml/webapps"
 			do
 				OFFSEC="offensive-security/exploitdb/"
 				MEX="master/exploits/"
@@ -1061,13 +1086,6 @@ while true; do
 				done
 				break
 			done
-		else
-			echo "Digit a file name from https://github.com/offensive-security/exploitdb/tree/master/exploits/ios/remote with extension"
-			read -p "(example exploit.py): " NOMEFL
-			if [[ "$NOMEFL" != "" ]];
-			then
-				Scarica "$ENTRAW""offensive-security/exploitdb/master/exploits/ios/remote/$NOMEFL"
-			fi
 		fi
 	;;
 	"20")
