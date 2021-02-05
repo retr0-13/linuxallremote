@@ -232,6 +232,7 @@ while true; do
 	echo "$SEP"
 	echo "CMS"
 	echo -ne " 483. TheDevFromKer/CMS-Attack\t\t\t484. Dionach/CMSmap\t\t\t\t\t234. n4xh4ck5/CMSsc4n\n"
+	echo -ne " 976. FlorianHeigl/cms-explorer\n"
 	echo "$SEP"
 	echo "CRACKING - GUESSING"
 	echo -ne " 80. magnumripper/JohnTheRipper\t\t\t81. truongkma/ctf-tools/John\t\t\t\t82. SySS-Research/Seth\n"
