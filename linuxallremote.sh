@@ -216,7 +216,7 @@ while true; do
 	echo -ne " 381. LatrecheYasser/Secure-Python-Chat\t\t382. spec-sec/SecureChat\n"
 	echo "$SEP"
 	echo "CISCO"
-	echo -ne " 463. Zapotek/cdpsnarf\n"
+	echo -ne " 463. Zapotek/cdpsnarf\t\t\t959. madrisan/cisco7crack\n"
 	echo "$SEP"
 	echo "CLOUDS"
 	echo -ne " 658. SimplySecurity/SimplyEmail\t\t664. aquasecurity/cloudsploit\t\t\t\t911. Matrix07ksa/Brute_Force\n"
@@ -4862,9 +4862,6 @@ while true; do
 		Clona "nccgroup/cisco-snmp-slap"
 	;;
 	"959")
-		Clona "madrisan/cisco7crack"
-	;;
-	"960")
 		Clona "madrisan/cisco7crack"
 	;;
 	"961")
