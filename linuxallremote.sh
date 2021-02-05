@@ -227,7 +227,7 @@ while true; do
 	echo "$SEP"
 	echo "CLOUDS"
 	echo -ne " 658. SimplySecurity/SimplyEmail\t\t664. aquasecurity/cloudsploit\t\t\t\t911. Matrix07ksa/Brute_Force\n"
-	echo -ne " 970. projectdiscovery/cloudlist\n"
+	echo -ne " 970. projectdiscovery/cloudlist\t\t972. cloudsploit/scans\n"
 	echo "$SEP"
 	echo "CMS"
 	echo -ne " 483. TheDevFromKer/CMS-Attack\t\t\t484. Dionach/CMSmap\t\t\t\t\t234. n4xh4ck5/CMSsc4n\n"
