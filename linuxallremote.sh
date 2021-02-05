@@ -258,7 +258,7 @@ while true; do
 	echo -ne " 216. gdbinit/MachOView\t\t\t\t217. cseagle/fREedom\t\t\t\t\t218. google/binnavi\n"
 	echo -ne " 336. sciencemanx/x86-analysis\t\t\t340. wisk/medusa\t\t\t\t\t341. REDasmOrg/REDasm\n"
 	echo -ne " 337. cryptator/assembly-code-analysis\t\t338. plasma-disassembler/plasma\t\t\t\t339. cea-sec/miasm\n"
-	echo -ne " 342. vivisect/vivisect\t\t\t\t791. MITRECND/abcd\t948. 0xbc/chiasm-shell\n"
+	echo -ne " 342. vivisect/vivisect\t\t\t\t791. MITRECND/abcd\t948. 0xbc/chiasm-shell\t\t\t\t948. 0xbc/chiasm-shell\n"
 	echo "$SEP"
 	echo "DISCOVERING"
 	echo -ne " 559. epi052/feroxbuster\t\t\t573. robre/scripthunter\t\t\t\t\t729. chris408/ct-exposer\n"
