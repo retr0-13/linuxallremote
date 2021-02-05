@@ -299,7 +299,7 @@ while true; do
 	echo -ne " 688. lobuhi/byp4xx\t\t\t\t731. gotr00t0day/forbiddenpass\t\t\t\t792. LandGrey/abuse-ssl-bypass-waf\n"
 	echo -ne " 824. tokyoneon/Armor\t\t\t\t869. Bashfuscator/Bashfuscator\t\t\t\t925. vincentcox/bypass-firewalls-by-DNS-history\n"
 	echo -ne " 944. TarlogicSecurity/Chankro\t953. epsylon/cintruder\t\t\t\t\t956. frohoff/ciphr\n"
-	echo -ne " 965. trycatchhcf/cloakify\t\t\t966. SageHack/cloud-buster\n"
+	echo -ne " 965. trycatchhcf/cloakify\t\t\t966. SageHack/cloud-buster\t\t\t\t969. eudemonics/cloudget\n"
 	echo "$SEP"
 	echo "EXCHANGE"
 	echo -ne " 571. sensepost/ruler\n"
