@@ -646,7 +646,7 @@ while true; do
 	echo "$SEP"
 	echo "SSL"
 	echo -ne " 190. moxie0/sslstrip\t\t\t\t194. indutny/heartbleed\t\t\t\t\t195. roflcer/heartbleed-vuln/attack\n"
-	echo -ne " 298. rbsec/sslscan\t\t\t\t790. hahwul/a2sv\n"
+	echo -ne " 298. rbsec/sslscan\t\t\t\t790. hahwul/a2sv\t954. mozilla/cipherscan\n"
 	echo "$SEP"
 	echo "STEGANALYSIS"
 	echo -ne " 270. Va5c0/Steghide-Brute-Force-Tool/steg_brute\t\t\t\t\t\t\t271. daniellerch/aletheia\n"
@@ -4846,7 +4846,7 @@ while true; do
 		Clona "epsylon/cintruder"
 	;;
 	"954")
-		Clona "jvehent/cipherscan"
+		Clona "mozilla/cipherscan"
 	;;
 	"955")
 		Clona "OpenSecurityResearch/ciphertest"
