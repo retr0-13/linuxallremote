@@ -623,6 +623,7 @@ while true; do
 	echo "SNMP"
 	echo -ne " 74. hatlord/snmpwn\t\t\t\t75. etingof/pysnmp\t\t\t\t\t77. InteliSecureLabs/SNMPPLUX\n"
 	echo -ne " 78. cysboy/SnmpCrack\t710. LukasRypl/snmp-fuzzer\t\t\t\t\t957. nccgroup/cisco-snmp-enumeration\n"
+	echo -ne " 958. nccgroup/cisco-snmp-slap\n"
 	echo "$SEP"
 	echo "SOCIAL MEDIA"
 	echo -ne " 427. yasserjanah/ZeS0MeBr\t\t\t551. Cyb0r9/SocialBox\t\t\t\t\t642. th3unkn0n/facebash-termux\n"
