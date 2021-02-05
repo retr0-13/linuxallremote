@@ -139,7 +139,7 @@ while true; do
 	echo -ne " 220. angr/angr\t\t\t\t\t224. cogent/origami-pdf\t\t\t\t\t451. Ettercap/ettercap\n"
 	echo -ne " 797. CoreSecurity/Agafi\t\t\t804. EgeBalci/Amber\t\t\t\t\t805. bdcht/amoco\n"
 	echo -ne " 813. salls/angrop\t\t\t\t886. ReFirmLabs/binwalk\t887. bmaia/binwally\n"
-	echo -ne " 906. brompwnie/botb\t947. slimm609/checksec.sh\n"
+	echo -ne " 906. brompwnie/botb\t947. slimm609/checksec.sh\t\t\t\t\t963. coreos/clair\n"
 	echo "$SEP"
 	echo "ANDROID - APK"
 	echo -ne " 128. xtiankisutsa/MARA_Framework\t\t274. yasoob/nrc-exporter\t\t\t\t277. mzfr/slicer\n"
