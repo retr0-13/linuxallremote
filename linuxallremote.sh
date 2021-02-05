@@ -273,7 +273,7 @@ while true; do
 	echo -ne " 752. theMiddleBlue/DNSenum\t\t\t753. rbsec/dnscan\n"
 	echo -ne " 783. gr3yc4t/dns-poisoning-tool\t\t784. SemyonMakhaev/dns-poison\t\t\t\t785. ShanjinurIslam/Computer-Security-DNS-Cache-Poisoning\n"
 	echo -ne " 799. blark/aiodnsbrute\t\t\t\t803. infosec-au/altdns\t\t\t\t\t831. tomnomnom/assetfinder\n"
-	echo -ne " 945. projectdiscovery/chaos-client\t\t967. m0rtem/CloudFail\n"
+	echo -ne " 945. projectdiscovery/chaos-client\t\t967. m0rtem/CloudFail\t\t\t\t\t968. mandatoryprogrammer/cloudflare_enum\n"
 	echo "$SEP"
 	echo "DOCKER"
 	echo -ne " 351. cr0hn/dockerscan\t\t\t\t352. RhinoSecurityLabs/ccat\n"
