@@ -476,7 +476,7 @@ while true; do
 	echo -ne " 843. nccgroup/autopwn\t\t\t\t863. ThunderGunExpress/BADministration\t\t\t1597. D4Vinci/One-Lin3r\n"
 	echo -ne " 888. sensepost/birp\t\t\t\t890. sepehrdaddev/blackbox\t\t\t\t900. darryllane/Bluto\n"
 	echo -ne " 2243. CoolHandSquid/TireFire\t\t907. zcutlip/bowcaster\t909. gabemarshall/Brosec\n"
-	echo -ne " 951. MITRECND/chopshop\t\t\t\t974. hatRiot/clusterd\n"
+	echo -ne " 951. MITRECND/chopshop\t\t\t\t974. hatRiot/clusterd\t\t\t\t2250. its-a-feature/Mythic\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
@@ -8737,6 +8737,9 @@ while true; do
 	;;
 	"2249")
 		Scarica "$ENTSSL""deepsecurity-pe/GoGhost/raw/master/GoGhost_linux_amd64"
+	;;
+	"2250")
+		Clona "its-a-feature/Mythic"
 	;;
 	*)
 		echo "error, invalid choice"
