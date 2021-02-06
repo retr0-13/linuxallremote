@@ -622,7 +622,7 @@ while true; do
 	echo -ne " 68. m4ll0k/SMBrute\t\t\t\t58. mvelazc0/Invoke-SMBLogin/smblogin\t\t\t65. ShawnDEvans/smbmap\n"
 	echo -ne " 157. 0v3rride/Enum4LinuxPy\t\t\t8. ZecOps/CVE-2020-0796-RCE-POC\t\t\t\t91. NickSanzotta/smbShakedown\n"
 	echo -ne " 92. quickbreach/SMBetray\t\t\t93. aress31/smbaudit\t\t\t\t\t312. T-S-A/smbspider\n"
-	echo -ne " 333. CoreSecurity/impacket/smbserver\t\t578. CiscoCXSecurity/creddump7\n"
+	echo -ne " 333. CoreSecurity/impacket/smbserver\t\t578. CiscoCXSecurity/creddump7\t\t\t2249. deepsecurity-pe/GoGhost\n"
 	echo "$SEP"
 	echo "SMS"
 	echo -ne " 388. sharyer/GSMEvil/SmsEvil\n"
@@ -8734,6 +8734,9 @@ while true; do
 	;;
 	"2248")
 		Clona "ZaleHack/phpexploit"
+	;;
+	"2249")
+		Scarica "$ENTSSL""deepsecurity-pe/GoGhost/raw/master/GoGhost_linux_amd64"
 	;;
 	*)
 		echo "error, invalid choice"
