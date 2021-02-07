@@ -248,7 +248,7 @@ while true; do
 	echo -ne " 630. beurtschipper/Depix\t\t\t632. x90skysn3k/brutespray\t\t\t\t762. f0cker/crackq\n"
 	echo -ne " 763. hashcrackq/Crackq\t\t\t\t811. PentesterES/AndroidPINCrack\t\t\t838. Tylous/Auto_EAP\n"
 	echo -ne " 924. webpwnized/byepass\t\t\t\t915. 1N3/BruteX\t\t\t912. glv2/bruteforce-luks\n"
-	echo -ne " 913. glv2/bruteforce-salted-openssl\n"
+	echo -ne " 913. glv2/bruteforce-salted-openssl\t\t\t992. D4Vinci/Cr3dOv3r\n"
 	echo "$SEP"
 	echo "CRAWLING - SPIDERING"
 	echo -ne " 586. saeeddhqan/evine\t722. OWASP/OWASP-WebScarab\t\t\t\t\t\t733. gotr00t0day/spider00t\n"
