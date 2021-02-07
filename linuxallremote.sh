@@ -516,7 +516,7 @@ while true; do
 	echo "PHISHING"
 	echo -ne " 385. blark/cli-phisher\t\t\t\t412. kurogai/nero-phishing-server\t\t\t413. KnightSec-Official/Phlexish\n"
 	echo -ne " 489. david3107/squatm3\t\t\t\t490. netevert/dnsmorph\t\t\t\t\t767. htr-tech/zphisher\n"
-	echo -ne " 771. xxhax-team/vk-phishing\t937. ring0lab/catphish\n"
+	echo -ne " 771. xxhax-team/vk-phishing\t937. ring0lab/catphish\t\t\t\t\t983. htr-tech/nexphisher\n"
 	echo "$SEP"
 	echo "PHP"
 	echo -ne " 2247. ecriminal/phpvuln\t2248. ZaleHack/phpexploit\n"
@@ -4950,6 +4950,9 @@ while true; do
 	;;
 	"982")
 		Clona "bseb/cntlm"
+	;;
+	"983")
+		Clona "htr-tech/nexphisher"
 	;;
 	"984")
 		Clona "Intrinsec/comission"
