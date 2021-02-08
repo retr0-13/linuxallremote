@@ -4979,7 +4979,7 @@ while true; do
 		Clona "joswr1ght/cowpatty"
 	;;
 	"991")
-		Clona "cpptest/cpptest/releases"
+		Clona "cpptest/cpptest"
 	;;
 	"992")
 		Clona "D4Vinci/Cr3dOv3r"
@@ -5123,7 +5123,7 @@ while true; do
 		Clona "sensepost/det"
 	;;
 	"1039")
-		Clona "horsicq/DIE-engine/releases"
+		Clona "horsicq/DIE-engine"
 	;;
 	"1040")
 		Clona "galkan/tools/tree/master/detect_sniffer"
@@ -5834,7 +5834,7 @@ while true; do
 		Clona "hashcat/hashcat-utils"
 	;;
 	"1277")
-		Clona "staz0t/hashcatch/releases"
+		Clona "staz0t/hashcatch"
 	;;
 	"1278")
 		Clona "NPS-DEEP/hashdb"
@@ -6047,7 +6047,7 @@ while true; do
 		Clona "Hnfull/Intensio-Obfuscator"
 	;;
 	"1348")
-		Clona "codingo/Interlace/releases"
+		Clona "codingo/Interlace"
 	;;
 	"1349")
 		Clona "carmaa/interrogate"
@@ -6164,7 +6164,7 @@ while true; do
 		Clona "securactive/junkie"
 	;;
 	"1387")
-		Clona "telerik/JustDecompileEngine/releases"
+		Clona "telerik/JustDecompileEngine"
 	;;
 	"1388")
 		Clona "katjahahn/JWScan"
@@ -6191,7 +6191,7 @@ while true; do
 		Clona "woj-ciech/kamerka"
 	;;
 	"1396")
-		Clona "samratashok/Kautilya/releases"
+		Clona "samratashok/Kautilya"
 	;;
 	"1397")
 		Clona "xtaci/kcptun"
@@ -6926,7 +6926,7 @@ while true; do
 		Clona "Srinivas11789/PcapXray"
 	;;
 	"1641")
-		Clona "ufrisk/pcileech/releases"
+		Clona "ufrisk/pcileech"
 	;;
 	"1642")
 		Clona "Big5-sec/pcode2code"
@@ -7235,7 +7235,7 @@ while true; do
 		Clona "PaulSec/API-dnsdumpster.com"
 	;;
 	"1744")
-		Clona "HDE/arsenic/releases"
+		Clona "HDE/arsenic"
 	;;
 	"1745")
 		Clona "beautify-web/js-beautify"
@@ -7565,7 +7565,7 @@ while true; do
 		Clona "mazen160/server-status_PWN"
 	;;
 	"1854")
-		Clona "trustedsec/social-engineer-toolkit/releases"
+		Clona "trustedsec/social-engineer-toolkit"
 	;;
 	"1855")
 		Clona "EgeBalci/sgn"
@@ -7679,7 +7679,7 @@ while true; do
 		Clona "Pepelux/sippts"
 	;;
 	"1892")
-		Clona "nils-ohlmeier/sipsak/releases"
+		Clona "nils-ohlmeier/sipsak"
 	;;
 	"1893")
 		Clona "zaf/sipshock"
@@ -8321,7 +8321,7 @@ while true; do
 		Clona "boy-hack/w13scan"
 	;;
 	"2106")
-		Clona "andresriancho/w3af/releases"
+		Clona "andresriancho/w3af"
 	;;
 	"2107")
 		Clona "wafpassproject/wafpass"
@@ -8555,7 +8555,7 @@ while true; do
 		Clona "X-Vector/X-RSA"
 	;;
 	"2184")
-		Clona "x64dbg/x64dbg/releases"
+		Clona "x64dbg/x64dbg"
 	;;
 	"2185")
 		Clona "orf/xcat"
