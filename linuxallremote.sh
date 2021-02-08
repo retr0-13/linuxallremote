@@ -729,7 +729,8 @@ while true; do
 	echo -ne " 750. username and password dictionary attack with wget and ftp protocol\t\t\t\t751. RCE with finger\n"
 	echo -ne " 754. get RPC info\t\t\t\t755. get RPC connect\n"
 	echo -ne " 756. smb connection\t\t\t\t757. rlogin dictionary attack\t\t\t\t758. rdesktop dictionary attack\n"
-	echo -ne " 9. wifi WPA with deauth attack\t\t2251. SSTI RCE\t\t\t\t\t\t\t2252. SSTI RevShell\n"
+	echo -ne " 9. wifi WPA with deauth attack\t\t2251. SSTI RCE\t\t\t\t\t\t\t2252. SSTI jinja2 RevShell\n"
+	echo -ne " 76. print all functions of a binary\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -1332,6 +1333,19 @@ while true; do
 	;;
 	"75")
 		Clona "etingof/pysnmp"
+	;;
+	"76")
+		echo "Digit a binary file to analyze"
+		read -p "(example, ./file.bin): " FLB
+		if [[ -f "$FLB" ]];
+		then
+			echo "Digit a file name to save the report"
+			read -p "(example, bin.report): " FLRP
+			if [[ "$FLRP" != "" ]];
+			then
+				r2 -c "e scr.color=false" -c "aaaa" -c "afl" -q "$FLB" > "$FLRP"
+			fi
+		fi
 	;;
 	"77")
 		Clona "InteliSecureLabs/SNMPPLUX"
