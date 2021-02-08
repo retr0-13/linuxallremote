@@ -625,7 +625,7 @@ while true; do
 	echo -ne " 433. offensive-security/exploitdb/shellcodes/linux\t\t\t\t\t\t\t434. offensive-security/exploitdb/shellcodes/linux_x86-64\n"
 	echo -ne " 435. offensive-security/exploitdb/shellcodes/linux_x86\t\t\t\t\t\t\t436. offensive-security/exploitdb/shellcodes/windows\n"
 	echo -ne " 437. offensive-security/exploitdb/shellcodes/windows_x86-64\t\t\t\t\t\t438. offensive-security/exploitdb/shellcodes/windows_x86\n"
-	echo -ne " 654. Rover141/Shellter\t\t\t\t825. alexpark07/ARMSCGen\n"
+	echo -ne " 654. Rover141/Shellter\t\t\t\t825. alexpark07/ARMSCGen\t\t\t\t\t\t\t136. b1tg/rust-windows-shellcode\n"
 	echo "$SEP"
 	echo "SMB"
 	echo -ne " 68. m4ll0k/SMBrute\t\t\t\t58. mvelazc0/Invoke-SMBLogin/smblogin\t\t\t65. ShawnDEvans/smbmap\n"
@@ -1657,6 +1657,9 @@ while true; do
 				for ADD in $ADDS; do r2 -c "e scr.color=false" -c "aaaa" -c "pdc@$ADD" -q "$FLB" >> "$FLRP"; done
 			fi
 		fi
+	;;
+	"136")
+		Clona "b1tg/rust-windows-shellcode"
 	;;
 	"140")
 		Clona "zznop/drow"
