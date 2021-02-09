@@ -854,7 +854,7 @@ while true; do
 					read -p "(example, 00:11:22:33:44:55): " BSSD
 					if [[ "$BSSD" != "" ]];
 					then
-						xterm -e airodump-ng -bssid "$BSSD" -c "$CHN" "$WFDM" &
+						xterm -e airodump-ng --bssid "$BSSD" -c "$CHN" "$WFDM" &
 						echo "Digit a target station for the deauth attack"
 						read -p "(example, 99:88:77:66:55:44): " STN
 						if [[ "$STN" != "" ]];
