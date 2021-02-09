@@ -277,6 +277,7 @@ while true; do
 	echo "DISCOVERING"
 	echo -ne " 559. epi052/feroxbuster\t\t\t573. robre/scripthunter\t\t\t\t\t729. chris408/ct-exposer\n"
 	echo -ne " 736. gotr00t0day/VulnBanner\t\t\t760. fnk0c/cangibrina\t\t\t\t\t795. sahakkhotsanyan/adfind\n"
+	echo -ne " 139. OWASP/cwe-tool\n"
 	echo "$SEP"
 	echo "DNS"
 	echo -ne " 30. m57/dnsteal\t\t\t\t31. skelsec/jackdaw\t\t\t\t\t35. projectdiscovery/dnsprobe\n"
@@ -1666,6 +1667,9 @@ while true; do
 	;;
 	"138")
 		Clona "OWASP/Amass"
+	;;
+	"139")
+		Clona "OWASP/cwe-tool"
 	;;
 	"140")
 		Clona "zznop/drow"
