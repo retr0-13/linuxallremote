@@ -682,7 +682,8 @@ while true; do
 	echo -ne " 615. install metasploit first method\t\t622. install metasploit second method\t\t\t624. install sudo (no rooting phone)\n"
 	echo -ne " 633. TermuxHacking000/distrux\t\t\t634. TermuxHacking000/SysO-Termux\t\t\t635. TermuxHacking000/PortmapSploit\n"
 	echo -ne " 776. cSploit/android\t\t\t\t777. routerkeygen/routerkeygenAndroid\t\t\t782. intercepter-ng\n"
-	echo -ne " 2234. OnionApps/Chat.onion\n"
+	echo -ne " 2234. OnionApps/Chat.onion\t\t\t2254. LinkClink/Rainbow-Wifi-Hack-Utility-Android\t2255. trevatk/Wifi-Cracker\n"
+	echo -ne " 2256. trevatk/Wifi-Cracker\t\t\t2257. faizann24/wifi-bruteforcer-fsecurify\t\t\t2258. faizann24/wifi-bruteforcer-fsecurify\n"
 	echo "$SEP"
 	echo "TFTP"
 	echo -ne " 719. nullsecuritynet/tftp-fuzz\n"
@@ -8820,6 +8821,21 @@ while true; do
 	;;
 	"2253")
 		Clona "CompassSecurity/BloodHoundQueries"
+	;;
+	"2254")
+		ScaricaIn "$ENTSSL""LinkClink/Rainbow-Wifi-Hack-Utility-Android/releases/download/1.0/Rainbow.Wifi.Hack.Utility.1.0.apk" "Rainbow.Wifi.Hack.Utility.1.0.apk"
+	;;
+	"2255")
+		ScaricaIn "$ENTSSL""trevatk/Wifi-Cracker/raw/master/oldAPK/WifiCracker.apk" "WifiCrackerOld.apk"
+	;;
+	"2256")		
+		ScaricaIn "$ENTSSL""trevatk/Wifi-Cracker/raw/master/newAPK/app-debug.apk" "WifiCrackerNew.apk"
+	;;
+	"2257")
+		ScaricaIn "$ENTSSL""faizann24/wifi-bruteforcer-fsecurify/raw/master/wifi_bruteforcer_fsecurify.apk" "wifi_bruteforcer_fsecurify.apk"
+	;;
+	"2258")
+		ScaricaIn "$ENTSSL""faizann24/wifi-bruteforcer-fsecurify/raw/master/wifi_bruteforcer_fsecurify_6.0.apk" "wifi_bruteforcer_fsecurify_6.0.apk"
 	;;
 	*)
 		echo "error, invalid choice"
