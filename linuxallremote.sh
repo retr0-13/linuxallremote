@@ -466,7 +466,7 @@ while true; do
 	echo -ne " 296. Z4nzu/hackingtool\t\t\t\t304. GitHackTools/BruteDum/brutedum\n"
 	echo -ne " 310. future-architect/vuls\t\t\t311. ethicalhackerproject/TaiPan\t\t\t319. marcrowProject/Bramble\n"
 	echo -ne " 320. stevemcilwain/quiver\t\t\t322. abdulr7mann/hackerEnv\t\t\t\t359. lgandx/Responder\n"
-	echo -ne " 392. zerosum0x0/koadic\t\t\t\t403. Screetsec/TheFatRat\t\t\t\t404. OWASP/Amass\n"
+	echo -ne " 392. zerosum0x0/koadic\t\t\t\t403. Screetsec/TheFatRat\t\t\t\t2250. its-a-feature/Mythic\n"
 	echo -ne " 408. AdrianVollmer/PowerHub\t\t\t439. DarkSecDevelopers/HiddenEye\t\t\t481. 0xInfection/TIDoS-Framework\n"
 	echo -ne " 485. r3dxpl0it/TheXFramework\t\t\t488. Taguar258/Raven-Storm\t\t\t\t514. maxlandon/wiregost\n"
 	echo -ne " 523. nerodtm/ReconCobra---Complete-Automated-Pentest-Framework-For-Information-Gatheringt\t\t651. leebaird/discover\n"
@@ -480,7 +480,7 @@ while true; do
 	echo -ne " 843. nccgroup/autopwn\t\t\t\t863. ThunderGunExpress/BADministration\t\t\t1597. D4Vinci/One-Lin3r\n"
 	echo -ne " 888. sensepost/birp\t\t\t\t890. sepehrdaddev/blackbox\t\t\t\t900. darryllane/Bluto\n"
 	echo -ne " 2243. CoolHandSquid/TireFire\t\t907. zcutlip/bowcaster\t909. gabemarshall/Brosec\n"
-	echo -ne " 951. MITRECND/chopshop\t\t\t\t974. hatRiot/clusterd\t\t\t\t2250. its-a-feature/Mythic\n"
+	echo -ne " 951. MITRECND/chopshop\t\t\t\t974. hatRiot/clusterd\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
@@ -649,6 +649,9 @@ while true; do
 	echo "$SEP"
 	echo "SOCIAL MEDIA"
 	echo -ne " 427. yasserjanah/ZeS0MeBr\t\t\t551. Cyb0r9/SocialBox\t\t\t\t\t642. th3unkn0n/facebash-termux\n"
+	echo "$SEP"
+	echo "SOLCIAL ENGINEERING"
+	echo -ne " 404. OWASP/QRLJacking\n"
 	echo "$SEP"
 	echo "SPOOFING"
 	echo -ne " 290. initstring/evil-ssdp\t\t\t291. KALILINUXTRICKSYT/easymacchanger\t\t\t292. sbdchd/macchanger\n"
@@ -2829,7 +2832,7 @@ while true; do
 		Clona "Screetsec/TheFatRat"
 	;;
 	"404")
-		Clona "OWASP/Amass"
+		Clona "OWASP/QRLJacking"
 	;;
 	"405")
 		Clona "bkerler/android_universal"
