@@ -200,7 +200,7 @@ while true; do
 	echo "$SEP"
 	echo "C2 - Command and Control"
 	echo -ne " 499. hyp3rlinx/DarkFinger-C2\t\t\t500. nettitude/PoshC2\t\t\t\t\t502. sensepost/godoh\n"
-	echo -ne " 503. lu4p/ToRat\t\t\t\t602. nil0x42/phpsploit\n"
+	echo -ne " 503. lu4p/ToRat\t\t\t\t602. nil0x42/phpsploit\t\t\t\t\t137. xtr4nge/FruityC2\n"
 	echo "$SEP"
 	echo "CAR"
 	echo -ne " 933. schutzwerk/CANalyzat0r\n"
@@ -1660,6 +1660,9 @@ while true; do
 	;;
 	"136")
 		Clona "b1tg/rust-windows-shellcode"
+	;;
+	"137")
+		Clona "xtr4nge/FruityC2"
 	;;
 	"140")
 		Clona "zznop/drow"
