@@ -650,9 +650,6 @@ while true; do
 	echo "SOCIAL MEDIA"
 	echo -ne " 427. yasserjanah/ZeS0MeBr\t\t\t551. Cyb0r9/SocialBox\t\t\t\t\t642. th3unkn0n/facebash-termux\n"
 	echo "$SEP"
-	echo "SOLCIAL ENGINEERING"
-	echo -ne " 404. OWASP/QRLJacking\n"
-	echo "$SEP"
 	echo "SPOOFING"
 	echo -ne " 290. initstring/evil-ssdp\t\t\t291. KALILINUXTRICKSYT/easymacchanger\t\t\t292. sbdchd/macchanger\n"
 	echo "$SEP"
@@ -777,7 +774,7 @@ while true; do
 	echo -ne " 51. danielmiessler/SecLists\t\t\t53. dariusztytko/words-scraper\t\t\t\t245. LandGrey/pydictor\n"
 	echo -ne " 542. digininja/CeWL\t\t\t\t905. R3nt0n/bopscrk\n"
 	echo -ne " 302. duyet/bruteforce-database\t\t\t318. digininja/pipal\t\t\t\t\t535. nil0x42/cracking-utils\n"
-	echo -ne " 985. assetnote/commonspeak2\n"
+	echo -ne " 985. assetnote/commonspeak2\t\t\t404. OWASP/D4N155\n"
 	echo "$SEP"
 	echo "WORDPRESS"
 	echo -ne " 468. n00py/WPForce\t\t\t\t469. BlackXploits/WPBrute\t\t\t\t566. 0xAbdullah/0xWPBF\n"
@@ -2832,7 +2829,7 @@ while true; do
 		Clona "Screetsec/TheFatRat"
 	;;
 	"404")
-		Clona "OWASP/QRLJacking"
+		Clona "OWASP/D4N155"
 	;;
 	"405")
 		Clona "bkerler/android_universal"
