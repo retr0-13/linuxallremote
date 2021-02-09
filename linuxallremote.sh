@@ -384,7 +384,7 @@ while true; do
 	echo -ne " 631. Anon-Exploiter/SiteBroker\t\t\t646. nandydark/grim\t\t\t\t\t653. adnane-X-tebbaa/GRecon\n"
 	echo -ne " 725. alpkeskin/mosint\t\t\t\t730. gotr00t0day/IGF\t\t\t\t\t734. gotr00t0day/subdomainbrute\n"
 	echo -ne " 778. ethicalhackingplayground/SubNuke\t\t881. GitHackTools/BillCipher\t936. packetassailant/catnthecanary\n"
-	echo -ne " 935. itsmehacker/CardPwn\n"
+	echo -ne " 935. itsmehacker/CardPwn\t\t\t138. OWASP/Amass\n"
 	echo "$SEP"
 	echo "GIT - REPOS"
 	echo -ne " 487. arthaud/git-dumper\t\t\t553. Ebryx/GitDump\n"
@@ -1663,6 +1663,9 @@ while true; do
 	;;
 	"137")
 		Clona "xtr4nge/FruityC2"
+	;;
+	"138")
+		Clona "OWASP/Amass"
 	;;
 	"140")
 		Clona "zznop/drow"
