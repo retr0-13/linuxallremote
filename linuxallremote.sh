@@ -390,6 +390,9 @@ while true; do
 	echo "GIT - REPOS"
 	echo -ne " 487. arthaud/git-dumper\t\t\t553. Ebryx/GitDump\n"
 	echo "$SEP"
+	echo "HASH"
+	echo -ne " 2260. cube0x0/HashSpray.py\n"
+	echo "$SEP"
 	echo "HOOKING - HIJACKING - INJECTION"
 	echo -ne " 140. zznop/drow\t\t\t\t173. J3wker/DLLicous-MaliciousDLL\t\t\t185. cybercitizen7/Ps1jacker\n"
 	echo -ne " 196. thelinuxchoice/spyeye\t\t\t353. ujjwal96/njaXt\t\t\t\t\t354. toxic-ig/SQL-XSS\n"
@@ -8842,6 +8845,9 @@ while true; do
 	;;
 	"2259")
 		Scarica "$ENTRAW""nitefood/asn/master/asn"
+	;;
+	"2260")
+		Clona "cube0x0/HashSpray.py"
 	;;
 	*)
 		echo "error, invalid choice"
