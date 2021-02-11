@@ -736,6 +736,7 @@ while true; do
 	echo -ne " 756. smb connection\t\t\t\t757. rlogin dictionary attack\t\t\t\t758. rdesktop dictionary attack\n"
 	echo -ne " 9. wifi WPA with deauth attack\t\t2251. SSTI RCE\t\t\t\t\t\t\t2252. SSTI jinja2 RevShell\n"
 	echo -ne " 76. print all functions of a binary\t\t135. dump all opcodes from a binary\n"
+	echo -ne " 2261. Encrypt and Encode a file to pass in remote host\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -8848,6 +8849,22 @@ while true; do
 	;;
 	"2260")
 		Clona "cube0x0/HashSpray.py"
+	;;
+	"2261")
+		echo "Digit a file to encrypt"
+		read -p "(example, ./payload): " FL
+		if [[ -f "$FL" ]];
+		then
+			echo "Digit a new file name"
+			read -p "(example, payload.enc): " ENFL
+			if [[ "$ENFL" != "" ]];
+			then
+				zip -e "$ENFL" "$FL"
+				echo "paste this in linuxallenum"
+				echo "or decode with base64 then unzip"
+				base64 "$ENFL" -w 0 | xclip -selection clipboard
+			fi
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
