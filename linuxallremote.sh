@@ -7881,7 +7881,7 @@ while true; do
 		Clona "BishopFox/spfmap"
 	;;
 	"1943")
-		Clona "getdual/scripts-n-tools/blob/master/spiga.py"
+		Scarica "$ENTRAW""phxbandit/scripts-and-tools/master/spiga.py"
 	;;
 	"1944")
 		Clona "PaulSec/SPIPScan"
