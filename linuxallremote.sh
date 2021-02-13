@@ -8301,7 +8301,7 @@ while true; do
 		Clona "melvinsh/vcsmap"
 	;;
 	"2083")
-		Clona "subgraph/Vega/wiki"
+		Clona "subgraph/Vega"
 	;;
 	"2084")
 		Clona "SerNet/verinice"
@@ -8340,7 +8340,7 @@ while true; do
 		Clona "n0fate/volafox"
 	;;
 	"2096")
-		Clona "volatilityfoundation/volatility/wiki"
+		Clona "volatilityfoundation/volatility"
 	;;
 	"2097")
 		Clona "volatilityfoundation/community"
