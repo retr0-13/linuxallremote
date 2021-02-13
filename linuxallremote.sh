@@ -706,7 +706,7 @@ while true; do
 	echo -ne " 986. patpadgett/corkscrew\n"
 	echo "$SEP"
 	echo "UPNP"
-	echo -ne " 146. tenable/upnp_info\n"
+	echo -ne " 146. tenable/upnp_info\t2264. dhishan/UPnP-Hack\n"
 	echo "$SEP"
 	echo "USB"
 	echo -ne " 2231. nccgroup/umap2\t2232. usb-tools/ViewSB\t2233. Merimetso-Code/USB-Hacking/usbfind\n"
@@ -8871,6 +8871,9 @@ while true; do
 	;;
 	"2263")
 		Clona "luc10/zykgen"
+	;;
+	"2264")
+		Scarica "$ENTRAW""dhishan/UPnP-Hack/master/upnpdiscover.py"
 	;;
 	*)
 		echo "error, invalid choice"
