@@ -141,7 +141,7 @@ while true; do
 	echo -ne " 797. CoreSecurity/Agafi\t\t\t804. EgeBalci/Amber\t\t\t\t\t805. bdcht/amoco\n"
 	echo -ne " 813. salls/angrop\t\t\t\t886. ReFirmLabs/binwalk\t887. bmaia/binwally\n"
 	echo -ne " 906. brompwnie/botb\t947. slimm609/checksec.sh\t\t\t\t\t963. coreos/clair\n"
-	echo -ne " 975. EgeBalci/Cminer\n"
+	echo -ne " 975. EgeBalci/Cminer\t\t\t\t2266. presidentbeef/brakeman\n"
 	echo "$SEP"
 	echo "ANDROID - APK"
 	echo -ne " 128. xtiankisutsa/MARA_Framework\t\t274. yasoob/nrc-exporter\t\t\t\t277. mzfr/slicer\n"
@@ -8878,6 +8878,9 @@ while true; do
 	;;
 	"2265")
 		Clona "tlsfuzzer/tlsfuzzer"
+	;;
+	"2266")
+		Clona "presidentbeef/brakeman"
 	;;
 	*)
 		echo "error, invalid choice"
