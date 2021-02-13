@@ -7809,7 +7809,7 @@ while true; do
 		Clona "defparam/smuggler"
 	;;
 	"1919")
-		Clona "gwen001/pentest-tools/blob/master/smuggler.py"
+		Clona "gwen001/pentest-tools"
 	;;
 	"1920")
 		Clona "1N3/Sn1per"
@@ -7980,7 +7980,7 @@ while true; do
 		Clona "bannsec/stegoVeritas"
 	;;
 	"1976")
-		Clona "zardus/ctf-tools/blob/master/stegsolve/install"
+		Clona "zardus/ctf-tools"
 	;;
 	"1977")
 		Clona "google/stenographer"
