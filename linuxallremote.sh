@@ -101,6 +101,7 @@ function Clona
 function Scarica
 {
 	wget --no-check-certificate "$1"
+	chmod +x "$1"
 }
 
 function Warning
