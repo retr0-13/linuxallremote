@@ -7917,7 +7917,7 @@ while true; do
 		Clona "nccgroup/ssh-user-enum"
 	;;
 	"1955")
-		Clona "getdual/scripts-n-tools/blob/master/sshscan.py"
+		Scarica "$ENTRAW""phxbandit/scripts-and-tools/master/sshscan.py"
 	;;
 	"1956")
 		Clona "pahaz/sshtunnel"
