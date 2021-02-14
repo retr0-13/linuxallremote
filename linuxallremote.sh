@@ -8893,6 +8893,8 @@ while true; do
 			if [[ "$PIPO" != "" ]];
 			then
 				pip install "$PIPO"
+			else
+				break
 			fi
 		done 
 	;;
@@ -8902,6 +8904,8 @@ while true; do
 			if [[ "$PIPO" != "" ]];
 			then
 				pip3 install "$PIPO"
+			else
+				break
 			fi
 		done 
 	;;
