@@ -737,7 +737,8 @@ while true; do
 	echo -ne " 756. smb connection\t\t\t\t757. rlogin dictionary attack\t\t\t\t758. rdesktop dictionary attack\n"
 	echo -ne " 9. wifi WPA with deauth attack\t\t2251. SSTI RCE\t\t\t\t\t\t\t2252. SSTI jinja2 RevShell\n"
 	echo -ne " 76. print all functions of a binary\t\t135. dump all opcodes from a binary\n"
-	echo -ne " 2261. Encrypt and Encode a file to pass in remote host\n"
+	echo -ne " 2261. Encrypt and Encode a file to pass in remote host\t\t\t\t2267. install a python package\n"
+	echo -ne " 2268. install a python3 package\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -8885,6 +8886,24 @@ while true; do
 	;;
 	"2266")
 		Clona "presidentbeef/brakeman"
+	;;
+	"2267")
+		select PIPO in $(pip list|awk '{print $1}')
+		do
+			if [[ "$PIPO" != "" ]];
+			then
+				pip install "$PIPO"
+			fi
+		done 
+	;;
+	"2268")
+		select PIPO in $(pip3 list|awk '{print $1}')
+		do
+			if [[ "$PIPO" != "" ]];
+			then
+				pip3 install "$PIPO"
+			fi
+		done 
 	;;
 	*)
 		echo "error, invalid choice"
