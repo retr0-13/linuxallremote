@@ -696,7 +696,7 @@ while true; do
 	echo -ne " 719. nullsecuritynet/tftp-fuzz\n"
 	echo "$SEP"
 	echo "TLS"
-	echo -ne " 189. GrrrDog/sni_bruter\t\t\t428. tintinweb/striptls\t\t\t\t2265. Clona "tlsfuzzer/tlsfuzzer"\n"
+	echo -ne " 189. GrrrDog/sni_bruter\t\t\t428. tintinweb/striptls\t\t\t\t2265. tlsfuzzer/tlsfuzzer\n"
 	echo "$SEP"
 	echo "TONES"
 	echo -ne " 240. luickk/gan-audio-generator\t\t241. rzbrk/mfv\n"
