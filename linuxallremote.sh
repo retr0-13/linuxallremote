@@ -541,6 +541,9 @@ while true; do
 	echo "PRY"
 	echo -ne " 743. deivid-rodriguez/pry-byebug\n"
 	echo "$SEP"
+	echo "PST"
+	echo -ne " 2269. righettod/pst-digger\n"
+	echo "$SEP"
 	echo "QUERIES"
 	echo -ne " 2253. CompassSecurity/BloodHoundQueries\n"
 	echo "$SEP"
@@ -8915,6 +8918,9 @@ while true; do
 				break
 			fi
 		done
+	;;
+	"2269")
+		Scarica "$ENTSSL""righettod/pst-digger/releases/download/v1.0.0/pst-digger.jar"
 	;;
 	*)
 		echo "error, invalid choice"
