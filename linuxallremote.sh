@@ -8896,7 +8896,7 @@ while true; do
 			else
 				break
 			fi
-		done 
+		done
 	;;
 	"2268")
 		select PIPO in $(pip3 list|awk '{print $1}')
@@ -8907,7 +8907,7 @@ while true; do
 			else
 				break
 			fi
-		done 
+		done
 	;;
 	*)
 		echo "error, invalid choice"
