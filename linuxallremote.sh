@@ -697,6 +697,7 @@ while true; do
 	echo "$SEP"
 	echo "TLS"
 	echo -ne " 189. GrrrDog/sni_bruter\t\t\t428. tintinweb/striptls\t\t\t\t2265. tlsfuzzer/tlsfuzzer\n"
+	echo -ne " 2270. righettod/tls-cert-discovery\n"
 	echo "$SEP"
 	echo "TONES"
 	echo -ne " 240. luickk/gan-audio-generator\t\t241. rzbrk/mfv\n"
@@ -8921,6 +8922,10 @@ while true; do
 	;;
 	"2269")
 		Scarica "$ENTSSL""righettod/pst-digger/releases/download/v1.0.0/pst-digger.jar"
+	;;
+	"2270")
+		Scarica "$ENTRAW""righettod/tls-cert-discovery/master/tls_cert_discovery.py"
+		Scarica "$ENTRAW""righettod/tls-cert-discovery/master""$RQRM"
 	;;
 	*)
 		echo "error, invalid choice"
