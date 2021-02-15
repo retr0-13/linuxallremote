@@ -711,6 +711,7 @@ while true; do
 	echo "$SEP"
 	echo "UPNP"
 	echo -ne " 146. tenable/upnp_info\t2264. dhishan/UPnP-Hack\t\t\t\t\t\t\t1128. google.com/miranda-upnp\n"
+	echo -ne " 2271. dc414/Upnp-Exploiter\n"
 	echo "$SEP"
 	echo "USB"
 	echo -ne " 2231. nccgroup/umap2\t2232. usb-tools/ViewSB\t2233. Merimetso-Code/USB-Hacking/usbfind\n"
@@ -8928,6 +8929,9 @@ while true; do
 	"2270")
 		Scarica "$ENTRAW""righettod/tls-cert-discovery/master/tls_cert_discovery.py"
 		Scarica "$ENTRAW""righettod/tls-cert-discovery/master""$RQRM"
+	;;
+	"2271")
+		Scarica "$ENTRAW""dc414/Upnp-Exploiter/master/upnp.py"
 	;;
 	*)
 		echo "error, invalid choice"
