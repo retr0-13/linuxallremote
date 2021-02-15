@@ -101,7 +101,6 @@ function Clona
 function Scarica
 {
 	wget --no-check-certificate "$1"
-	chmod +x "$1"
 }
 
 function Warning
@@ -711,7 +710,7 @@ while true; do
 	echo -ne " 986. patpadgett/corkscrew\n"
 	echo "$SEP"
 	echo "UPNP"
-	echo -ne " 146. tenable/upnp_info\t2264. dhishan/UPnP-Hack\n"
+	echo -ne " 146. tenable/upnp_info\t2264. dhishan/UPnP-Hack\t\t\t\t\t\t\t1128. google.com/miranda-upnp\n"
 	echo "$SEP"
 	echo "USB"
 	echo -ne " 2231. nccgroup/umap2\t2232. usb-tools/ViewSB\t2233. Merimetso-Code/USB-Hacking/usbfind\n"
@@ -5454,6 +5453,9 @@ while true; do
 	;;
 	"1127")
 		Clona "peterpt/eternal_scanner"
+	;;
+	"1128")
+		Scarica "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/miranda-upnp/miranda.py"
 	;;
 	"1129")
 		Clona "outflanknl/EvilClippy"
