@@ -406,7 +406,7 @@ while true; do
 	echo "IIS"
 	echo -ne " 22. 0x09AL/IIS-Raid\t\t\t\t23. thelinuxchoice/evilreg\t\t\t\t24. thelinuxchoice/eviloffice\n"
 	echo -ne " 25. thelinuxchoice/evildll\t\t\t158. gehaxelt/Python-dsstore\t\t\t\t250. edwardz246003/IIS_exploit\n"
-	echo -ne " 251. irsdl/IIS-ShortName-Scanner\n"
+	echo -ne " 251. irsdl/IIS-ShortName-Scanner\t\t\t2272. srnframe/eviloffice\t\t\t\t2273. 8L4NK/evilreg\n"
 	echo "$SEP"
 	echo "IKE"
 	echo -ne " 526. 0x90/vpn-arsenal\t\t\t\t726. SpiderLabs/ikeforce\t\t\t\t727. royhills/ike-scan\n"
@@ -8933,6 +8933,12 @@ while true; do
 	;;
 	"2271")
 		Scarica "$ENTRAW""dc414/Upnp-Exploiter/master/upnp.py"
+	;;
+	"2272")
+		Clona "srnframe/eviloffice"
+	;;
+	"2273")
+		Clona "8L4NK/evilreg"
 	;;
 	*)
 		echo "error, invalid choice"
