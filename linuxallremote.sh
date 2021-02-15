@@ -5457,6 +5457,7 @@ while true; do
 	;;
 	"1128")
 		Scarica "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/miranda-upnp/miranda.py"
+		Scarica "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/miranda-upnp/miranda-1.3.tar.gz"
 	;;
 	"1129")
 		Clona "outflanknl/EvilClippy"
