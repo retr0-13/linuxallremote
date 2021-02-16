@@ -435,6 +435,7 @@ while true; do
 	echo "$SEP"
 	echo "JAVA"
 	echo -ne " 227. pxb1988/dex2jar\t\t\t\t346. benf/cfr\t\t\t\t\t\t356. java-decompiler/jd-gui\n"
+	echo -ne " 2276. qtc-de/remote-method-guesser\n"
 	echo "$SEP"
 	echo "JENKINS"
 	echo -ne " 356. gquere/pwn_jenkins\n"
@@ -8953,6 +8954,9 @@ while true; do
 		then
 			Clona "CrackerCat/evildll"
 		fi
+	;;
+	"2276")
+		Clona "qtc-de/remote-method-guesser"
 	;;
 	*)
 		echo "error, invalid choice"
