@@ -524,6 +524,7 @@ while true; do
 	echo -ne " 385. blark/cli-phisher\t\t\t\t412. kurogai/nero-phishing-server\t\t\t413. KnightSec-Official/Phlexish\n"
 	echo -ne " 489. david3107/squatm3\t\t\t\t490. netevert/dnsmorph\t\t\t\t\t767. htr-tech/zphisher\n"
 	echo -ne " 771. xxhax-team/vk-phishing\t937. ring0lab/catphish\t\t\t\t\t983. htr-tech/nexphisher\n"
+	echo -ne " 2277. suljot/shellphish\n"
 	echo "$SEP"
 	echo "PHP"
 	echo -ne " 2247. ecriminal/phpvuln\t2248. ZaleHack/phpexploit\n"
@@ -8957,6 +8958,9 @@ while true; do
 	;;
 	"2276")
 		Clona "qtc-de/remote-method-guesser"
+	;;
+	"2277")
+		Clona "suljot/shellphish"
 	;;
 	*)
 		echo "error, invalid choice"
