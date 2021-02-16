@@ -638,6 +638,9 @@ while true; do
 	echo -ne " 437. offensive-security/exploitdb/shellcodes/windows_x86-64\t\t\t\t\t\t438. offensive-security/exploitdb/shellcodes/windows_x86\n"
 	echo -ne " 654. Rover141/Shellter\t\t\t\t825. alexpark07/ARMSCGen\t\t\t\t\t\t\t136. b1tg/rust-windows-shellcode\n"
 	echo "$SEP"
+	echo "SHELLSHOCK"
+	echo -ne " 2279. MrCl0wnLab/ShellShockHunter\t\t2280. DanMcInerney/shellshock-hunter\n"
+	echo "$SEP"
 	echo "SMB"
 	echo -ne " 68. m4ll0k/SMBrute\t\t\t\t58. mvelazc0/Invoke-SMBLogin/smblogin\t\t\t65. ShawnDEvans/smbmap\n"
 	echo -ne " 157. 0v3rride/Enum4LinuxPy\t\t\t8. ZecOps/CVE-2020-0796-RCE-POC\t\t\t\t91. NickSanzotta/smbShakedown\n"
@@ -8964,6 +8967,12 @@ while true; do
 	;;
 	"2278")
 		Clona "s0md3v/Bolt"
+	;;
+	"2279")
+		Clona "MrCl0wnLab/ShellShockHunter"
+	;;
+	"2280")
+		Scarica "$ENTRAW""DanMcInerney/shellshock-hunter/master/shellshock-hunter.py"
 	;;
 	*)
 		echo "error, invalid choice"
