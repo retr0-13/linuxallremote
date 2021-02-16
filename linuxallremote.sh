@@ -407,6 +407,7 @@ while true; do
 	echo -ne " 22. 0x09AL/IIS-Raid\t\t\t\t23. thelinuxchoice/evilreg\t\t\t\t24. thelinuxchoice/eviloffice\n"
 	echo -ne " 25. thelinuxchoice/evildll\t\t\t158. gehaxelt/Python-dsstore\t\t\t\t250. edwardz246003/IIS_exploit\n"
 	echo -ne " 251. irsdl/IIS-ShortName-Scanner\t\t\t2272. srnframe/eviloffice\t\t\t\t2273. 8L4NK/evilreg\n"
+	echo -ne " 2275. CrackerCat/evildll\n"
 	echo "$SEP"
 	echo "IKE"
 	echo -ne " 526. 0x90/vpn-arsenal\t\t\t\t726. SpiderLabs/ikeforce\t\t\t\t727. royhills/ike-scan\n"
@@ -516,6 +517,7 @@ while true; do
 	echo "$SEP"
 	echo "PDF"
 	echo -ne " 46. thelinuxchoice/evilpdf\t\t\t47. robins/pdfcrack\t\t\t\t\t48. BroadbentT/PDF-CRACKER/pdf-cracker\n"
+	echo -ne " 2274. superzerosec/evilpdf\n"
 	echo "$SEP"
 	echo "PHISHING"
 	echo -ne " 385. blark/cli-phisher\t\t\t\t412. kurogai/nero-phishing-server\t\t\t413. KnightSec-Official/Phlexish\n"
@@ -8939,6 +8941,18 @@ while true; do
 	;;
 	"2273")
 		Clona "8L4NK/evilreg"
+	;;
+	"2274")
+		if [[ $(Warning) == "Y" ]];
+		then
+			Clona "superzerosec/evilpdf"
+		fi
+	;;
+	"2275")
+		if [[ $(Warning) == "Y" ]];
+		then
+			Clona "CrackerCat/evildll"
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
