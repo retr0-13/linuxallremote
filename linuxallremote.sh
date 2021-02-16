@@ -255,7 +255,7 @@ while true; do
 	echo -ne " 938. lgandx/CCrawlDNS\t941. lanrat/certgraph\n"
 	echo "$SEP"
 	echo "CSRF - XSRF"
-	echo -ne " 406. 0xInfection/XSRFProbe\n"
+	echo -ne " 406. 0xInfection/XSRFProbe\t\t\t\t2278. s0md3v/Bolt\n"
 	echo "$SEP"
 	echo "DEBUGGING - DECOMPILING"
 	echo -ne " 144. snare/voltron\t\t\t\t125. detailyang/readelf\t\t\t\t\t222. vivisect/vivisect\n"
@@ -8961,6 +8961,9 @@ while true; do
 	;;
 	"2277")
 		Clona "suljot/shellphish"
+	;;
+	"2278")
+		Clona "s0md3v/Bolt"
 	;;
 	*)
 		echo "error, invalid choice"
