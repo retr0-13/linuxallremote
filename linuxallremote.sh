@@ -581,6 +581,7 @@ while true; do
 	echo -ne " 2228. drsigned/sigurlx\t\t\t\t820. michenriksen/aquatone\t\t\t\t836. superhedgy/AttackSurfaceMapper\n"
 	echo -ne " 844. Tib3rius/AutoRecon\t\t\t\t2236. six2dez/reconftw\t\t\t\t\t2244. yassineaboukir/Asnlookup\n"
 	echo -ne " 1877. projectdiscovery/shuffledns\t\t1983. projectdiscovery/subfinder\t922. sham00n/buster\n"
+	echo -ne " 2282. six2dez/reconftw\n"
 	echo "$SEP"
 	echo "REDIS"
 	echo -ne " 759. Avinash-acid/Redis-Server-Exploit\n"
@@ -8976,6 +8977,9 @@ while true; do
 	;;
 	"2281")
 		Clona "0xd012/wifuzzit"
+	;;
+	"2282")
+		Clona "six2dez/reconftw"
 	;;
 	*)
 		echo "error, invalid choice"
