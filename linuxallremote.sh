@@ -771,6 +771,7 @@ while true; do
 	echo -ne " 201. The404Hacking/wpscan\t\t\t202. drego85/JoomlaScan\t\t\t\t\t287. boku7/LibreHealth-authRCE\n"
 	echo -ne " 466. FortyNorthSecurity/EyeWitness\t\t614. dariusztytko/jwt-key-id-injector\n"
 	echo -ne " 621. s0md3v/Arjun\t\t\t\t789. CoolerVoid/0d1n\t\t\t\t\t2242. poerschke/Uniscan\n"
+	echo -ne " 2283. koutto/web-brutator\n"
 	echo "$SEP"
 	echo "WEBCAMS"
 	echo -ne " 395. JettChenT/scan-for-webcams\t\t396. entynetproject/entropy\t\t\t\t397. indexnotfound404/spycam\n"
@@ -8980,6 +8981,9 @@ while true; do
 	;;
 	"2282")
 		Clona "s0md3v/ReconDog"
+	;;
+	"2283")
+		Clona "koutto/web-brutator"
 	;;
 	*)
 		echo "error, invalid choice"
