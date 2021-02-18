@@ -8987,7 +8987,7 @@ while true; do
 		Clona "koutto/web-brutator"
 	;;
 	"2284")
-		Scarica "$ENTSSL""deepsecurity-pe/GoGhost/blob/master/GoGhost_linux_amd64"
+		Scarica "$ENTSSL""deepsecurity-pe/GoGhost/raw/master/GoGhost_linux_amd64"
 	;;
 	"2285")
 		Scarica "$ENTRAW""deepsecurity-pe/GoGhost/master/GoGhost.go"
