@@ -647,7 +647,7 @@ while true; do
 	echo -ne " 157. 0v3rride/Enum4LinuxPy\t\t\t8. ZecOps/CVE-2020-0796-RCE-POC\t\t\t\t91. NickSanzotta/smbShakedown\n"
 	echo -ne " 92. quickbreach/SMBetray\t\t\t93. aress31/smbaudit\t\t\t\t\t312. T-S-A/smbspider\n"
 	echo -ne " 333. CoreSecurity/impacket/smbserver\t\t578. CiscoCXSecurity/creddump7\t\t\t2249. deepsecurity-pe/GoGhost\n"
-	echo -ne " 2284. deepsecurity-pe/GoGhost_amd64\n"
+	echo -ne " 2284. deepsecurity-pe/GoGhost_amd64\t\t2285. deepsecurity-pe/GoGhost\n"
 	echo "$SEP"
 	echo "SMS"
 	echo -ne " 388. sharyer/GSMEvil/SmsEvil\n"
@@ -8988,6 +8988,9 @@ while true; do
 	;;
 	"2284")
 		Scarica "$ENTSSL""deepsecurity-pe/GoGhost/blob/master/GoGhost_linux_amd64"
+	;;
+	"2285")
+		Scarica "$ENTRAW""deepsecurity-pe/GoGhost/master/GoGhost.go"
 	;;
 	*)
 		echo "error, invalid choice"
