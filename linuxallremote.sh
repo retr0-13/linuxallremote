@@ -425,7 +425,7 @@ while true; do
 	echo "iOS"
 	echo -ne " 360. tokyoneon/Arcane\t\t\t\t442. Flo354/iOSForensic\t\t\t\t\t443. as0ler/iphone-dataprotection\n"
 	echo -ne " 444. jantrim/iosbackupexaminer\t\t\t666. yuejd/ios_Restriction_PassCode_Crack---Python-version\n"
-	echo -ne " 864. ChiChou/bagbak\n"
+	echo -ne " 864. ChiChou/bagbak\t\t\t\t2286. seemoo-lab/toothpicker\n"
 	echo "$SEP"
 	echo "IoT"
 	echo -ne " 748. SafeBreach-Labs/SirepRAT\n"
@@ -8991,6 +8991,9 @@ while true; do
 	;;
 	"2285")
 		Scarica "$ENTRAW""deepsecurity-pe/GoGhost/master/GoGhost.go"
+	;;
+	"2286")
+		Clona "seemoo-lab/toothpicker"
 	;;
 	*)
 		echo "error, invalid choice"
