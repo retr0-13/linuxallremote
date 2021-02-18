@@ -257,7 +257,7 @@ while true; do
 	echo "CRAWLING - SPIDERING"
 	echo -ne " 586. saeeddhqan/evine\t722. OWASP/OWASP-WebScarab\t\t\t\t\t\t733. gotr00t0day/spider00t\n"
 	echo -ne " 938. lgandx/CCrawlDNS\t941. lanrat/certgraph\n"
-	echo -ne " 1014. chamli/CyberCrowl\t\t\t1029. kgretzky/dcrawl\n"
+	echo -ne " 1014. chamli/CyberCrowl\t\t\t1029. kgretzky/dcrawl\t\t\t\t\t\t2287. galkan/mail-crawl\n"
 	echo "$SEP"
 	echo "CSRF - XSRF"
 	echo -ne " 406. 0xInfection/XSRFProbe\t\t\t\t2278. s0md3v/Bolt\n"
@@ -770,7 +770,7 @@ while true; do
 	echo -ne " 461. haasosaurus/ace-voip\t\t\t629. voipmonitor/sniffer\t\t\t\t898. jesusprubio/bluebox-ng\n"
 	echo "$SEP"
 	echo "VPN"
-	echo -ne " 595. 7Elements/Fortigate\t\t\t\t2262. darrenmartyn/VisualDoor\n"
+	echo -ne " 595. 7Elements/Fortigate\t\t\t\t2262. darrenmartyn/VisualDoor\t\t\t1040. galkan/openvpn-brute\n"
 	echo "$SEP"
 	echo "WALLET"
 	echo -ne " 914. glv2/bruteforce-wallet\n"
@@ -5217,7 +5217,7 @@ while true; do
 		Clona "horsicq/DIE-engine"
 	;;
 	"1040")
-		Clona "galkan/tools/tree/master/detect_sniffer"
+		Scarica "$ENTRAW""galkan/tools/master/openvpn-brute/openvpn_brute_force.sh"
 	;;
 	"1041")
 		Clona "spectresearch/detectem"
@@ -9009,6 +9009,9 @@ while true; do
 	;;
 	"2286")
 		Clona "seemoo-lab/toothpicker"
+	;;
+	"2287")
+		Scarica "$ENTRAW""galkan/tools/master/mail-crawl/mail-crawl.py"
 	;;
 	*)
 		echo "error, invalid choice"
