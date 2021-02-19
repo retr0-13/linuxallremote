@@ -121,6 +121,54 @@ then
 	read -p "press ENTER to continue..."
 fi
 
+if [[ ! -f $(which tput) ]];
+then
+	echo "For a better experience, please install tput"
+	read -p "press ENTER to continue..."
+fi
+
+if [[ ! -f $(which select) ]];
+then
+	echo "For a better experience, please install select"
+	read -p "press ENTER to continue..."
+fi
+
+if [[ ! -f $(which git) ]];
+then
+	echo "For a better experience, please install git"
+	read -p "press ENTER to continue..."
+fi
+
+if [[ ! -f $(which strace) ]];
+then
+	echo "For a better experience, please install strace"
+	read -p "press ENTER to continue..."
+fi
+
+if [[ ! -f $(which ltrace) ]];
+then
+	echo "For a better experience, please install ltrace"
+	read -p "press ENTER to continue..."
+fi
+
+if [[ ! -f $(which hydra) ]];
+then
+	echo "For a better experience, please install hydra"
+	read -p "press ENTER to continue..."
+fi
+
+if [[ ! -f $(which nmblookup) ]];
+then
+	echo "For a better experience, please install nmblookup"
+	read -p "press ENTER to continue..."
+fi
+
+if [[ ! -f $(which rlogin) ]];
+then
+	echo "For a better experience, please install rlogin"
+	read -p "press ENTER to continue..."
+fi
+
 while true; do
 	echo "$SEP"
 	echo " 0. exit"
@@ -496,6 +544,7 @@ while true; do
 	echo -ne " 2243. CoolHandSquid/TireFire\t\t907. zcutlip/bowcaster\t909. gabemarshall/Brosec\n"
 	echo -ne " 951. MITRECND/chopshop\t\t\t\t974. hatRiot/clusterd\t\t\t\t494. optiv/ScareCrow\n"
 	echo -ne " 993. Hack-Hut/CrabStick\t\t\t1015. medbenali/CyberScan\t\t\t1022. M4cs/DarkSpiritz\n"
+	echo -ne " 2288. thehackingsage/hacktronian\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
@@ -762,7 +811,7 @@ while true; do
 	echo -ne " 9. wifi WPA with deauth attack\t\t\t2251. SSTI RCE\t\t\t\t\t\t2252. SSTI jinja2 RevShell\n"
 	echo -ne " 76. print all functions of a binary\t\t135. dump all opcodes from a binary\n"
 	echo -ne " 2261. Encrypt and Encode a file to pass in remote host\t\t\t\t\t\t\t2267. install a python hacking package\n"
-	echo -ne " 2268. install a python3 hacking package\t\t\t2288. thehackingsage/hacktronian\n"
+	echo -ne " 2268. install a python3 hacking package\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
