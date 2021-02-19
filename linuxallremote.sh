@@ -761,8 +761,8 @@ while true; do
 	echo -ne " 756. smb connection\t\t\t\t757. rlogin dictionary attack\t\t\t\t758. rdesktop dictionary attack\n"
 	echo -ne " 9. wifi WPA with deauth attack\t\t\t2251. SSTI RCE\t\t\t\t\t\t2252. SSTI jinja2 RevShell\n"
 	echo -ne " 76. print all functions of a binary\t\t135. dump all opcodes from a binary\n"
-	echo -ne " 2261. Encrypt and Encode a file to pass in remote host\t\t\t\t\t\t\t2267. install a python package\n"
-	echo -ne " 2268. install a python3 package\n"
+	echo -ne " 2261. Encrypt and Encode a file to pass in remote host\t\t\t\t\t\t\t2267. install a python hacking package\n"
+	echo -ne " 2268. install a python3 hacking package\t\t\t2288. thehackingsage/hacktronian\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -9013,6 +9013,9 @@ while true; do
 	;;
 	"2287")
 		Scarica "$ENTRAW""galkan/tools/master/mail-crawl/mail-crawl.py"
+	;;
+	"2288")
+		Clona "thehackingsage/hacktronian"
 	;;
 	*)
 		echo "error, invalid choice"
