@@ -225,6 +225,7 @@ while true; do
 	echo -ne " 661. bear/s3scan\t\t\t\t662. haroonawanofficial/Amazon-AWS-Hack\t\t\t663. nagwww/101-AWS-S3-Hacks\n"
 	echo -ne " 706. pbnj/s3-fuzzer\t\t\t\t850. VirtueSecurity/aws-extender-cli\t\t\t851. nccgroup/aws-inventory\n"
 	echo -ne " 852. jordanpotti/AWSBucketDump\t\t\t868. Voulnet/barq\t\t\t\t2290. nahamsec/lazys3\n"
+	echo -ne " 2291. tomdev/teh_s3_bucketeers\n"
 	echo "$SEP"
 	echo "AZURE"
 	echo -ne " 32. dirkjanm/ROADtools\n"
@@ -9081,6 +9082,10 @@ while true; do
 	"2290")
 		Scarica "$ENTRAW""nahamsec/lazys3/master/common_bucket_prefixes.txt"
 		Scarica "$ENTRAW""nahamsec/lazys3/master/lazys3.rb"
+	;;
+	"2291")
+		Scarica "$ENTRAW""tomdev/teh_s3_bucketeers/master/bucketeer.sh"
+		Scarica "$ENTRAW""tomdev/teh_s3_bucketeers/master/common_bucket_prefixes.txt"
 	;;
 	*)
 		echo "error, invalid choice"
