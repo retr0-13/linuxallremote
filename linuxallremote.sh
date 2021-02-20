@@ -570,7 +570,7 @@ while true; do
 	echo -ne " 178. PentesterES/Delorean\n"
 	echo "$SEP"
 	echo "OSINT"
-	echo -ne " 845. bharshbarger/AutOSINT\t\t\t875. aancw/Belati\n"
+	echo -ne " 845. bharshbarger/AutOSINT\t\t\t875. aancw/Belati\t\t\t\t\t2294. pixelbubble/ProtOSINT\n"
 	echo "$SEP"
 	echo "OWA"
 	echo -ne " 343. busterb/msmailprobe\t\t\t344. 0xZDH/o365spray\t\t\t\t\t345. gremwell/o365enum\n"
@@ -9092,6 +9092,9 @@ while true; do
 	;;
 	"2293")
 		Clona "ProjectAnte/dnsgen"
+	;;
+	"2294")
+		Scarica "$ENTRAW""pixelbubble/ProtOSINT/main/protosint.py"
 	;;
 	*)
 		echo "error, invalid choice"
