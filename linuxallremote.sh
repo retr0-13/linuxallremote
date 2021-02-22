@@ -546,7 +546,7 @@ while true; do
 	echo -ne " 2243. CoolHandSquid/TireFire\t\t907. zcutlip/bowcaster\t909. gabemarshall/Brosec\n"
 	echo -ne " 951. MITRECND/chopshop\t\t\t\t974. hatRiot/clusterd\t\t\t\t494. optiv/ScareCrow\n"
 	echo -ne " 993. Hack-Hut/CrabStick\t\t\t1015. medbenali/CyberScan\t\t\t1022. M4cs/DarkSpiritz\n"
-	echo -ne " 2288. thehackingsage/hacktronian\n"
+	echo -ne " 2288. thehackingsage/hacktronian\t\t2295. beefproject/beef\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
@@ -9095,6 +9095,9 @@ while true; do
 	;;
 	"2294")
 		Scarica "$ENTRAW""pixelbubble/ProtOSINT/main/protosint.py"
+	;;
+	"2295")
+		Clona "beefproject/beef"
 	;;
 	*)
 		echo "error, invalid choice"
