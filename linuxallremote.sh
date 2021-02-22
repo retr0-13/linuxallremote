@@ -128,12 +128,6 @@ then
 	read -p "press ENTER to continue..."
 fi
 
-if [[ ! -f $(which select) ]];
-then
-	echo "For a better experience, please install select"
-	read -p "press ENTER to continue..."
-fi
-
 if [[ ! -f $(which git) ]];
 then
 	echo "For a better experience, please install git"
@@ -191,7 +185,7 @@ while true; do
 	echo -ne " 813. salls/angrop\t\t\t\t886. ReFirmLabs/binwalk\t887. bmaia/binwally\n"
 	echo -ne " 906. brompwnie/botb\t947. slimm609/checksec.sh\t\t\t\t\t963. coreos/clair\n"
 	echo -ne " 975. EgeBalci/Cminer\t\t\t\t2266. presidentbeef/brakeman\n"
-	echo -ne " 1006. SpiderLabs/cribdrag\t\t\t1018. 504ensicsLabs/DAMM\n"
+	echo -ne " 1006. SpiderLabs/cribdrag\t\t\t1018. 504ensicsLabs/DAMM\t\t\t\t1041. spectresearch/detectem\n"
 	echo "$SEP"
 	echo "ANDROID - APK"
 	echo -ne " 128. xtiankisutsa/MARA_Framework\t\t274. yasoob/nrc-exporter\t\t\t\t277. mzfr/slicer\n"
@@ -200,7 +194,7 @@ while true; do
 	echo -ne " 410. mesquidar/adbsploit\t\t\t504. airbus-seclab/android_emuroot\t\t\t552. MobSF/Mobile-Security-Framework-MobSF\n"
 	echo -ne " 572. 1N3/ReverseAPK\t\t\t\t807. AndroBugs/AndroBugs_Framework\t\t\t808. androguard/androguard\n"
 	echo -ne " 809. Flo354/Androick\t\t\t\t816. rednaga/APKiD\t\t\t\t\t817. hexabin/APKStat\n"
-	echo -ne " 860. l0gan/backHack\n"
+	echo -ne " 860. l0gan/backHack\t\t\t\t1043. DexPatcher/dexpatcher-tool\n"
 	echo "$SEP"
 	echo "ANONYMIZATION"
 	echo -ne " 2229. htrgouvea/nipe\n"
@@ -323,12 +317,15 @@ while true; do
 	echo "$SEP"
 	echo "DIRBUSTERING"
 	echo -ne " 54. aboul3la/Sublist3r\t\t\t\t411. H4ckForJob/dirmap\t\t\t\t\t774. nccgroup/dirble\n"
+	echo -ne " 1050. digination/dirbuster-ng\t\t\t1052. Cillian-Collins/dirscraper\t\t\t1053. maurosoria/dirsearch\n"
+	echo -ne " 1054. stefanoj3/dirstalk\n"
 	echo "$SEP"
 	echo "DISASSEMBLING"
 	echo -ne " 216. gdbinit/MachOView\t\t\t\t217. cseagle/fREedom\t\t\t\t\t218. google/binnavi\n"
 	echo -ne " 336. sciencemanx/x86-analysis\t\t\t340. wisk/medusa\t\t\t\t\t341. REDasmOrg/REDasm\n"
 	echo -ne " 337. cryptator/assembly-code-analysis\t\t338. plasma-disassembler/plasma\t\t\t\t339. cea-sec/miasm\n"
 	echo -ne " 342. vivisect/vivisect\t\t\t\t791. MITRECND/abcd\t948. 0xbc/chiasm-shell\t\t\t\t948. 0xbc/chiasm-shell\n"
+	echo -ne " 1055. gdabah/distorm\n"
 	echo "$SEP"
 	echo "DISCOVERING"
 	echo -ne " 559. epi052/feroxbuster\t\t\t573. robre/scripthunter\t\t\t\t\t729. chris408/ct-exposer\n"
@@ -341,10 +338,10 @@ while true; do
 	echo -ne " 335. mschwager/fierce\t\t\t\t464. fwaeytens/dnsenum\t\t\t\t\t491. TeamFoxtrot-GitHub/DNSMap\n"
 	echo -ne " 492. darkoperator/dnsrecon\t\t\t493. neiltyagi/DNSRECON\t\t\t\t\t496. rs/dnstrace\n"
 	echo -ne " 497. redsift/dnstrace\t\t\t\t498. dkorunic/dnstrace\t\t\t\t\t528. mfocuz/DNS_Hunter\n"
-	echo -ne " 752. theMiddleBlue/DNSenum\t\t\t753. rbsec/dnscan\n"
+	echo -ne " 752. theMiddleBlue/DNSenum\t\t\t753. rbsec/dnscan\t\t\t\t\t1057. lorenzog/dns-parallel-prober\n"
 	echo -ne " 783. gr3yc4t/dns-poisoning-tool\t\t784. SemyonMakhaev/dns-poison\t\t\t\t785. ShanjinurIslam/Computer-Security-DNS-Cache-Poisoning\n"
 	echo -ne " 799. blark/aiodnsbrute\t\t\t\t803. infosec-au/altdns\t\t\t\t\t831. tomnomnom/assetfinder\n"
-	echo -ne " 945. projectdiscovery/chaos-client\t\t2292. erbbysam/DNSGrep\t\t\t\t2293. ProjectAnte/dnsgen\n"
+	echo -ne " 945. projectdiscovery/chaos-client\t\t1063. erbbysam/DNSGrep\t\t\t\t2293. ProjectAnte/dnsgen\n"
 	echo "$SEP"
 	echo "DOCKER"
 	echo -ne " 351. cr0hn/dockerscan\t\t\t\t352. RhinoSecurityLabs/ccat\n"
@@ -443,7 +440,7 @@ while true; do
 	echo -ne " 725. alpkeskin/mosint\t\t\t\t730. gotr00t0day/IGF\t\t\t\t\t734. gotr00t0day/subdomainbrute\n"
 	echo -ne " 778. ethicalhackingplayground/SubNuke\t\t881. GitHackTools/BillCipher\t936. packetassailant/catnthecanary\n"
 	echo -ne " 935. itsmehacker/CardPwn\t\t\t138. OWASP/Amass\t\t\t\t\t2259. nitefood/asn\n"
-	echo -ne " 1002. lightos/credmap\t\t\t1005. ilektrojohn/creepy\n"
+	echo -ne " 1002. lightos/credmap\t\t\t1005. ilektrojohn/creepy\t\t\t\t\t1042. DanMcInerney/device-pharmer\n"
 	echo "$SEP"
 	echo "GIT - REPOS"
 	echo -ne " 487. arthaud/git-dumper\t\t\t553. Ebryx/GitDump\n"
@@ -546,7 +543,7 @@ while true; do
 	echo -ne " 2243. CoolHandSquid/TireFire\t\t907. zcutlip/bowcaster\t909. gabemarshall/Brosec\n"
 	echo -ne " 951. MITRECND/chopshop\t\t\t\t974. hatRiot/clusterd\t\t\t\t494. optiv/ScareCrow\n"
 	echo -ne " 993. Hack-Hut/CrabStick\t\t\t1015. medbenali/CyberScan\t\t\t1022. M4cs/DarkSpiritz\n"
-	echo -ne " 2288. thehackingsage/hacktronian\t\t2295. beefproject/beef\n"
+	echo -ne " 2288. thehackingsage/hacktronian\t\t2295. beefproject/beef\t\t\t\t\t1049. DidierStevens/DidierStevensSuite\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
@@ -601,7 +598,9 @@ while true; do
 	echo -ne " 639. RUB-NDS/PRET\n"
 	echo "$SEP"
 	echo "PROXY"
-	echo -ne " 162. fozavci/viproy-VoIPkit\t\t\t610. audibleblink/doxycannon\t\t\t\t885. nccgroup/BinProxy\n\n"
+	echo -ne " 162. fozavci/viproy-VoIPkit\t\t\t610. audibleblink/doxycannon\t\t\t\t885. nccgroup/BinProxy\n"
+	echo -ne " 1058. StalkR/dns-reverse-proxy\t\t\t1059. maurotfilho/dns-spoof\t\t\t1060. d4rkcat/dnsbrute\n"
+	echo -ne " 1061. dmitescu/dnscobra\t\t\t1062. leonjza/dnsfilexfer\n"
 	echo "$SEP"
 	echo "PRY"
 	echo -ne " 743. deivid-rodriguez/pry-byebug\n"
@@ -692,7 +691,7 @@ while true; do
 	echo -ne " 835. AlisamTechnology/ATSCAN-V3.1\t\t871. lijiejie/bbscan\t873. invictus1306/beebug\n"
 	echo -ne " 927. auraltension/c5scan\t943. ztgrace/changeme\t\t\t\t\t2246. souravbaghz/RadareEye\n"
 	echo "$SEP"
-	echo "SHELL"
+	echo "SHELL - SHELLCODE"
 	echo -ne " 70. sameera-madushan/Print-My-Shell\t\t71. flozz/p0wny-shell/shell\t\t\t\t87. rastating/slae\n"
 	echo -ne " 95. TBGSecurity/splunk_shells\t\t\t281. berkgoksel/SierraTwo\t\t\t\t295. wintrmvte/Shellab\n"
 	echo -ne " 348. brimstone/go-shellcode\t\t\t349. TheBinitGhimire/Web-Shells/smevk\t\t\t432. offensive-security/exploitdb/shellcodes/android\n"
@@ -700,6 +699,7 @@ while true; do
 	echo -ne " 435. offensive-security/exploitdb/shellcodes/linux_x86\t\t\t\t\t\t\t436. offensive-security/exploitdb/shellcodes/windows\n"
 	echo -ne " 437. offensive-security/exploitdb/shellcodes/windows_x86-64\t\t\t\t\t\t438. offensive-security/exploitdb/shellcodes/windows_x86\n"
 	echo -ne " 654. Rover141/Shellter\t\t\t\t825. alexpark07/ARMSCGen\t\t\t\t\t\t\t136. b1tg/rust-windows-shellcode\n"
+	echo -ne " 1056. Mr-Un1k0d3r/DKMC\n"
 	echo "$SEP"
 	echo "SHELLSHOCK"
 	echo -ne " 2279. MrCl0wnLab/ShellShockHunter\t\t2280. DanMcInerney/shellshock-hunter\n"
@@ -851,6 +851,7 @@ while true; do
 	echo -ne " 591. hash3liZer/WiFiBroot\t\t\t592. SValkanov/wifivoid\t\t\t\t\t800. v1s1t0r1sh3r3/airgeddon\n"
 	echo -ne " 833. NORMA-Inc/AtEar\t\t\t\t904. M1ND-B3ND3R/BoopSuite\t\t\t\t921. aanarchyy/bully\n"
 	echo -ne " 990. joswr1ght/cowpatty\t\t\t2263. luc10/zykgen\t\t\t\t\t2281. 0xd012/wifuzzit\n"
+        echo -ne " 1046. elceef/dhcpf\t\t\t1047. kamorin/DHCPig\t\t\t1048. misje/dhcpoptinj\n"
 	echo "$SEP"
 	echo "WINRM"
 	echo -ne " 42. Hackplayers/evil-winrm\n"
@@ -9086,9 +9087,6 @@ while true; do
 	"2291")
 		Scarica "$ENTRAW""tomdev/teh_s3_bucketeers/master/bucketeer.sh"
 		Scarica "$ENTRAW""tomdev/teh_s3_bucketeers/master/common_bucket_prefixes.txt"
-	;;
-	"2292")
-		Clona "erbbysam/DNSGrep"
 	;;
 	"2293")
 		Clona "ProjectAnte/dnsgen"
