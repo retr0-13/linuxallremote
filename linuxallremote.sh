@@ -851,7 +851,7 @@ while true; do
 	echo -ne " 591. hash3liZer/WiFiBroot\t\t\t592. SValkanov/wifivoid\t\t\t\t\t800. v1s1t0r1sh3r3/airgeddon\n"
 	echo -ne " 833. NORMA-Inc/AtEar\t\t\t\t904. M1ND-B3ND3R/BoopSuite\t\t\t\t921. aanarchyy/bully\n"
 	echo -ne " 990. joswr1ght/cowpatty\t\t\t2263. luc10/zykgen\t\t\t\t\t2281. 0xd012/wifuzzit\n"
-        echo -ne " 1046. elceef/dhcpf\t\t\t1047. kamorin/DHCPig\t\t\t1048. misje/dhcpoptinj\n"
+	echo -ne " 1046. elceef/dhcpf\t\t\t1047. kamorin/DHCPig\t\t\t1048. misje/dhcpoptinj\n"
 	echo "$SEP"
 	echo "WINRM"
 	echo -ne " 42. Hackplayers/evil-winrm\n"
@@ -2519,7 +2519,7 @@ while true; do
 	"333")
 		Scarica "$ENTRAW""SecureAuthCorp/impacket/master/examples/smbserver.py"
  	;;
-    	"334")
+	"334")
 		if [[ -f $(which hydra) ]];
 		then
 			echo "Digit the protocol to login-attack"
@@ -3414,8 +3414,8 @@ while true; do
 		Clona "jetmore/swaks"
 	;;
 	"526")
-                Scarica "$ENTRAW""0x90/vpn-arsenal/master/IKEProber.pl"
-                Scarica "$ENTRAW""0x90/vpn-arsenal/master/ikecrack-snarf-1.00.pl"
+		Scarica "$ENTRAW""0x90/vpn-arsenal/master/IKEProber.pl"
+		Scarica "$ENTRAW""0x90/vpn-arsenal/master/ikecrack-snarf-1.00.pl"
 	;;
 	"527")
 		Clona "Moham3dRiahi/XAttacker"
@@ -3427,7 +3427,7 @@ while true; do
 		fi
 	;;
 	"529")
-                Scarica "$ENTRAW""riusksk/StrutScan/master/StrutScan.pl"
+		Scarica "$ENTRAW""riusksk/StrutScan/master/StrutScan.pl"
 	;;
 	"530")
 		Clona "AlisamTechnology/ATSCAN"
@@ -3436,8 +3436,8 @@ while true; do
 		Clona "CERT-Polska/hfinger"
 	;;
 	"532")
-                Scarica "$ENTRAW""Phoenix1112/subtakeover/master/takeover.py"
-                Scarica "$ENTRAW""Phoenix1112/subtakeover/master""$RQRM"
+		Scarica "$ENTRAW""Phoenix1112/subtakeover/master/takeover.py"
+		Scarica "$ENTRAW""Phoenix1112/subtakeover/master""$RQRM"
 	;;
 	"533")
 		Clona "securing/DumpsterDiver"
@@ -3445,7 +3445,7 @@ while true; do
 	"534")
 		if [[ $(Warning) == "Y" ]];
 		then
-	                Scarica "$ENTRAW""TheNittam/RPOscanner/master/rpo.py"
+			Scarica "$ENTRAW""TheNittam/RPOscanner/master/rpo.py"
 		fi
 	;;
 	"535")
@@ -3460,8 +3460,8 @@ while true; do
 	"538")
 		if [[ $(Warning) == "Y" ]];
 		then
-	                Scarica "$ENTRAW""smackerdodi/CVE-bruter/master/CVE-bruter.py"
-	                Scarica "$ENTRAW""smackerdodi/CVE-bruter/master""$RQRM"
+			Scarica "$ENTRAW""smackerdodi/CVE-bruter/master/CVE-bruter.py"
+			Scarica "$ENTRAW""smackerdodi/CVE-bruter/master""$RQRM"
 		fi
 	;;
 	"539")
@@ -3483,10 +3483,10 @@ while true; do
 		Clona "digininja/CeWL"
 	;;
 	"543")
-                Scarica "$ENTSSL""praetorian-inc/trident/releases/download/v0.1.3/trident_0.1.3_linux_i386.tar.gz"
+		Scarica "$ENTSSL""praetorian-inc/trident/releases/download/v0.1.3/trident_0.1.3_linux_i386.tar.gz"
 	;;
 	"544")
-                Scarica "$ENTSSL""praetorian-inc/trident/releases/download/v0.1.3/trident_0.1.3_linux_x86_64.tar.gz"
+		Scarica "$ENTSSL""praetorian-inc/trident/releases/download/v0.1.3/trident_0.1.3_linux_x86_64.tar.gz"
 	;;
 	"545")
 		Clona "praetorian-inc/trident"
