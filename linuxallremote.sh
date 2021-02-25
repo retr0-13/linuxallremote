@@ -300,7 +300,7 @@ while true; do
 	echo -ne " 913. glv2/bruteforce-salted-openssl\t\t992. D4Vinci/Cr3dOv3r\t\t\t\t\t1075. CoalfireLabs/crackHOR\n"
 	echo -ne " 994. CoalfireLabs/crackHOR\t\t\t996. vnik5287/Crackq\t\t\t\t\t997. averagesecurityguy/crack\n"
 	echo -ne " 1003. DanMcInerney/creds.py\t\t\t1008. galkan/crowbar\t\t\t\t\t1017. Ekultek/Dagon\n"
-	echo -ne " 1019. SideChannelMarvels/Daredevil\n"
+	echo -ne " 1019. SideChannelMarvels/Daredevil\t\t\t2296. s3inlc/hashtopolis\n"
 	echo "$SEP"
 	echo "CRAWLING - SPIDERING"
 	echo -ne " 586. saeeddhqan/evine\t\t\t\t722. OWASP/OWASP-WebScarab\t\t\t\t733. gotr00t0day/spider00t\n"
@@ -9120,6 +9120,9 @@ while true; do
 	;;
 	"2295")
 		Clona "beefproject/beef"
+	;;
+	"2296")
+		Clona "s3inlc/hashtopolis"
 	;;
 	*)
 		echo "error, invalid choice"
