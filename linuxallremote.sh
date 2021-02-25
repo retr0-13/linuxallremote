@@ -856,7 +856,7 @@ while true; do
 	echo -ne " 201. The404Hacking/wpscan\t\t\t202. drego85/JoomlaScan\t\t\t\t\t287. boku7/LibreHealth-authRCE\n"
 	echo -ne " 466. FortyNorthSecurity/EyeWitness\t\t614. dariusztytko/jwt-key-id-injector\n"
 	echo -ne " 621. s0md3v/Arjun\t\t\t\t789. CoolerVoid/0d1n\t\t\t\t\t2242. poerschke/Uniscan\n"
-	echo -ne " 2283. koutto/web-brutator\t\t\t1026. thesp0nge/dawnscanner\n"
+	echo -ne " 2283. koutto/web-brutator\t\t\t1026. thesp0nge/dawnscanner\t\t\t\t2297. xmendez/wfuzz\n"
 	echo "$SEP"
 	echo "WEBDAV"
 	echo -ne " 1025. Graph-X/davscan\n"
@@ -9123,6 +9123,9 @@ while true; do
 	;;
 	"2296")
 		Clona "s3inlc/hashtopolis"
+	;;
+	"2297")
+		Clona "xmendez/wfuzz"
 	;;
 	*)
 		echo "error, invalid choice"
