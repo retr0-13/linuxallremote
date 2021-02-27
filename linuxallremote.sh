@@ -883,7 +883,7 @@ while true; do
 	echo -ne " 51. danielmiessler/SecLists\t\t\t53. dariusztytko/words-scraper\t\t\t\t245. LandGrey/pydictor\n"
 	echo -ne " 542. digininja/CeWL\t\t\t\t905. R3nt0n/bopscrk\t\t\t\t\t1103. nil0x42/duplicut\n"
 	echo -ne " 302. duyet/bruteforce-database\t\t\t318. digininja/pipal\t\t\t\t\t535. nil0x42/cracking-utils\n"
-	echo -ne " 985. assetnote/commonspeak2\t\t\t404. OWASP/D4N155\n"
+	echo -ne " 985. assetnote/commonspeak2\t\t\t404. OWASP/D4N155\t\t\t\t2300. shamrin/diceware\n"
 	echo "$SEP"
 	echo "WORDPRESS"
 	echo -ne " 468. n00py/WPForce\t\t\t\t469. BlackXploits/WPBrute\t\t\t\t566. 0xAbdullah/0xWPBF\n"
