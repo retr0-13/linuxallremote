@@ -457,7 +457,7 @@ while true; do
 	echo -ne " 935. itsmehacker/CardPwn\t\t\t138. OWASP/Amass\t\t\t\t\t2259. nitefood/asn\n"
 	echo -ne " 1002. lightos/credmap\t\t\t\t1005. ilektrojohn/creepy\t\t\t\t1042. DanMcInerney/device-pharmer\n"
 	echo -ne " 1076. utiso/dorkbot\t\t\t\t1077. blueudp/DorkMe\t\t\t\t\t1078. NullArray/DorkNet\n"
-	echo -ne " 1118. martinvigo/email2phonenumber\n"
+	echo -ne " 1118. martinvigo/email2phonenumber\t\t2302. josh0xA/darkdump\n"
 	echo "$SEP"
 	echo "GIT - REPOS"
 	echo -ne " 487. arthaud/git-dumper\t\t\t553. Ebryx/GitDump\n"
@@ -9126,6 +9126,18 @@ while true; do
 	;;
 	"2297")
 		Clona "xmendez/wfuzz"
+	;;
+	"2298")
+		Clona "the-robot/sqliv"
+	;;
+	"2299")
+		Clona "dr-3am/M-Evil"
+	;;
+	"2300")
+		Clona "shamrin/diceware"
+	;;
+	"2302")
+		Clona "josh0xA/darkdump"
 	;;
 	*)
 		echo "error, invalid choice"
