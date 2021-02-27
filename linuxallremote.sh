@@ -474,7 +474,7 @@ while true; do
 	echo -ne " 676. rudSarkar/crlf-injector\t\t\t765. infobyte/evilgrade\t\t\t\t\t802. lanjelot/albatar\n"
 	echo -ne " 870. neohapsis/bbqsql\t\t\t\t889. nbshelton/bitdump\t\t\t\t\t895. libeclipse/blind-sql-bitshifting\n"
 	echo -ne " 896. missDronio/blindy\t\t\t\t917. enjoiz/BSQLinjector\t\t\t\t1120. cr0hn/enteletaor\n"
-	echo -ne " 1020. BlackArch/darkmysqli\t\t\t1032. UndeadSec/Debinject\n"
+	echo -ne " 1020. BlackArch/darkmysqli\t\t\t1032. UndeadSec/Debinject\t\t\t\t2298. the-robot/sqliv\n"
 	echo "$SEP"
 	echo "IIS"
 	echo -ne " 22. 0x09AL/IIS-Raid\t\t\t\t23. thelinuxchoice/evilreg\t\t\t\t24. thelinuxchoice/eviloffice\n"
