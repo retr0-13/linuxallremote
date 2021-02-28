@@ -503,6 +503,9 @@ while true; do
 	echo "IoT"
 	echo -ne " 748. SafeBreach-Labs/SirepRAT\n"
 	echo "$SEP"
+	echo "ISCSI"
+	echo -ne " 2303. bitvijays/Pentest-Scripts/isciadm\t\t\t\t\t\t2304. open-iscsi/open-iscsi\n"
+	echo "$SEP"
 	echo "iTUNES"
 	echo -ne " 665. jos666/itunes_hack\n"
 	echo "$SEP"
@@ -9138,6 +9141,12 @@ while true; do
 	;;
 	"2302")
 		Clona "josh0xA/darkdump"
+	;;
+	"2303")
+		Scarica "$ENTRAW""bitvijays/Pentest-Scripts/master/Vulnerability_Analysis/isciadm/iscsiadm.sh"
+	;;
+	"2304")
+		Clona "open-iscsi/open-iscsi"
 	;;
 	*)
 		echo "error, invalid choice"
