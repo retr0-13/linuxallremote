@@ -187,7 +187,7 @@ while true; do
 	echo -ne " 975. EgeBalci/Cminer\t\t\t\t2266. presidentbeef/brakeman\t\t\t\t1112. elfmaster/ecfs\n"
 	echo -ne " 1006. SpiderLabs/cribdrag\t\t\t1018. 504ensicsLabs/DAMM\t\t\t\t1041. spectresearch/detectem\n"
 	echo -ne " 1093. USArmyResearchLab/Dshell\t\t\t1104. dungtv543/Dutas\t\t\t\t\t1107. DynamoRIO/dynamorio\n"
-	echo -ne " 1115. jacob-baines/elfparser\n"
+	echo -ne " 1115. jacob-baines/elfparser\t\t\t2307. rizinorg/rizin\n"
 	echo "$SEP"
 	echo "ANDROID - APK"
 	echo -ne " 128. xtiankisutsa/MARA_Framework\t\t274. yasoob/nrc-exporter\t\t\t\t277. mzfr/slicer\n"
@@ -350,7 +350,7 @@ while true; do
 	echo -ne " 799. blark/aiodnsbrute\t\t\t\t803. infosec-au/altdns\t\t\t\t\t831. tomnomnom/assetfinder\n"
 	echo -ne " 945. projectdiscovery/chaos-client\t\t1063. erbbysam/DNSGrep\t\t\t\t\t2293. ProjectAnte/dnsgen\n"
 	echo -ne " 1065. evilsocket/dnssearch\t\t\t1066. elceef/dnstwist\t\t\t\t\t1067. vortexau/dnsvalidator\n"
-	echo -ne " 1068. projectdiscovery/dnsx\t\t\t1070. MarkBaggett/domain_stats\n"
+	echo -ne " 1068. projectdiscovery/dnsx\t\t\t1070. MarkBaggett/domain_stats\t\t\t\t2306. tismayil/rsdl\n"
 	echo "$SEP"
 	echo "DOCKER"
 	echo -ne " 351. cr0hn/dockerscan\t\t\t\t352. RhinoSecurityLabs/ccat\n"
@@ -743,6 +743,7 @@ while true; do
 	echo -ne " 418. pentestmonkey/smtp-user-enum\t\t419. altjx/ipwn/iSMTP\t\t\t\t\t421. tango-j/SMTP-Open-Relay-Attack-Test-Tool\n"
 	echo -ne " 422. crazywifi/SMTP_Relay_Phisher\t\t423. NickSanzotta/smbShakedown\t\t\t\t424. balaganeshgbhackers/Emailspoofing\n"
 	echo -ne " 425. RobinMeis/MITMsmtp\t\t\t426. mikechabot/smtp-email-spoofer-py\t\t\t525. jetmore/swaks\n"
+	echo -ne " 2305. aron-tn/Smtp-cracker\n"
 	echo "$SEP"
 	echo "SNMP"
 	echo -ne " 74. hatlord/snmpwn\t\t\t\t75. etingof/pysnmp\t\t\t\t\t77. InteliSecureLabs/SNMPPLUX\n"
@@ -9147,6 +9148,15 @@ while true; do
 	;;
 	"2304")
 		Clona "open-iscsi/open-iscsi"
+	;;
+	"2305")
+		Scarica "$ENTRAW""aron-tn/Smtp-cracker/master/smtp.py"
+	;;
+	"2306")
+		Clona "tismayil/rsdl"
+	;;
+	"2307")
+		Clona "rizinorg/rizin"
 	;;
 	*)
 		echo "error, invalid choice"
