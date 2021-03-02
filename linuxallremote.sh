@@ -252,8 +252,8 @@ while true; do
 	echo -ne " 499. hyp3rlinx/DarkFinger-C2\t\t\t500. nettitude/PoshC2\t\t\t\t\t502. sensepost/godoh\n"
 	echo -ne " 503. lu4p/ToRat\t\t\t\t602. nil0x42/phpsploit\t\t\t\t\t137. xtr4nge/FruityC2\n"
 	echo "$SEP"
-	echo "CAR"
-	echo -ne " 933. schutzwerk/CANalyzat0r\n"
+	echo "CARS"
+	echo -ne " 933. schutzwerk/CANalyzat0r\t\t\t2310. shipcod3/mazda_getInfo\t\t\t2311. P1kachu/talking-with-cars\n"
 	echo "$SEP"
 	echo "CDN"
 	echo -ne " 971. MrH0wl/Cloudmare\n"
@@ -9165,6 +9165,12 @@ while true; do
 	;;
 	"2309")
 		Clona "abrignoni/iLEAPP"
+	;;
+	"2310")
+		Clona "shipcod3/mazda_getInfo"
+	;;
+	"2311")
+		Clona "P1kachu/talking-with-cars"
 	;;
 	*)
 		echo "error, invalid choice"
