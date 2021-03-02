@@ -12,6 +12,7 @@ RQRM="/requirements.txt"
 SEP=$(for (( I=0 ; I<$(tput cols) ; I++ )); do printf '_'; done)
 ALD="/storage/emulated/legacy/Download/"
 AZD="/storage/emulated/0/Download/"
+WBE="For a better experience, please install "
 
 function ScaricaIn
 {
@@ -118,49 +119,49 @@ echo "linuxallremote, by FabioDefilippoSoftware"
 
 if [[ ! -f $(which lynx) ]];
 then
-	echo "For a better experience, please install lynx"
+	echo "$WBE""lynx"
 	read -p "press ENTER to continue..."
 fi
 
 if [[ ! -f $(which tput) ]];
 then
-	echo "For a better experience, please install tput"
+	echo "$WBE""tput"
 	read -p "press ENTER to continue..."
 fi
 
 if [[ ! -f $(which git) ]];
 then
-	echo "For a better experience, please install git"
+	echo "$WBE""git"
 	read -p "press ENTER to continue..."
 fi
 
 if [[ ! -f $(which strace) ]];
 then
-	echo "For a better experience, please install strace"
+	echo "$WBE""strace"
 	read -p "press ENTER to continue..."
 fi
 
 if [[ ! -f $(which ltrace) ]];
 then
-	echo "For a better experience, please install ltrace"
+	echo "$WBE""ltrace"
 	read -p "press ENTER to continue..."
 fi
 
 if [[ ! -f $(which hydra) ]];
 then
-	echo "For a better experience, please install hydra"
+	echo "$WBE""hydra"
 	read -p "press ENTER to continue..."
 fi
 
 if [[ ! -f $(which nmblookup) ]];
 then
-	echo "For a better experience, please install nmblookup"
+	echo "$WBE""nmblookup"
 	read -p "press ENTER to continue..."
 fi
 
 if [[ ! -f $(which rlogin) ]];
 then
-	echo "For a better experience, please install rlogin"
+	echo "$WBE""rlogin"
 	read -p "press ENTER to continue..."
 fi
 
