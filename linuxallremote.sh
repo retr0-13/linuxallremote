@@ -233,6 +233,7 @@ while true; do
 	echo -ne " 2237. mm0r1/exploits/php-json-bypass\t\t2238. mm0r1/exploits/php7-backtrace-bypass\t\t2239. mm0r1/exploits/master/php7-gc-bypass\n"
 	echo -ne " 861. giuliocomi/backoori\t\t\t1027. gitdurandal/dbd\t\t\t\t\t1083. Shellntel/backdoors\n"
 	echo -ne " 1056. Mr-Un1k0d3r/DKMC\t\t\t\t1073. TheWover/donut\t\t\t\t\t1084. emptymonkey/drinkme\n"
+	echo -ne " 2313. cribdragg3r/Alaris\n"
 	echo "$SEP"
 	echo "BLUETOOTH"
 	echo -ne " 305. lucaboni92/BlueFuzz\t\t\t440. fO-000/bluescan\t\t\t\t\t447. MillerTechnologyPeru/hcitool\n"
@@ -9175,6 +9176,9 @@ while true; do
 	;;
 	"2312")
 		Clona "nccgroup/keimpx"
+	;;
+	"2313")
+		Clona "cribdragg3r/Alaris"
 	;;
 	*)
 		echo "error, invalid choice"
