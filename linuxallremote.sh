@@ -569,7 +569,7 @@ while true; do
 	echo -ne " 993. Hack-Hut/CrabStick\t\t\t1015. medbenali/CyberScan\t\t\t\t1022. M4cs/DarkSpiritz\n"
 	echo -ne " 2288. thehackingsage/hacktronian\t\t2295. beefproject/beef\t\t\t\t\t1049. DidierStevens/DidierStevensSuite\n"
 	echo -ne " 1079. maxousc59/Blue-Sky-Information-Security\t1074. AeonDave/doork\t\t\t\t\t1082. screetsec/Dracnmap\n"
-	echo -ne " 1119. BC-SECURITY/Empire\t\t\t2299. dr-3am/M-Evil\n"
+	echo -ne " 1119. BC-SECURITY/Empire\t\t\t2299. dr-3am/M-Evil\t\t\t\t\t2317. mdsecactivebreach/SharpShooter\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
@@ -9189,6 +9189,9 @@ while true; do
 	;;
 	"2316")
 		Clona "davidtavarez/pwndb"
+	;;
+	"2317")
+		Clona "mdsecactivebreach/SharpShooter"
 	;;
 	*)
 		echo "error, invalid choice"
