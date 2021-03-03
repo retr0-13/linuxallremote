@@ -462,7 +462,7 @@ while true; do
 	echo -ne " 1118. martinvigo/email2phonenumber\t\t2302. josh0xA/darkdump\t\t\t\t2314. FortyNorthSecurity/Just-Metadata\n"
 	echo "$SEP"
 	echo "GIT - REPOS"
-	echo -ne " 487. arthaud/git-dumper\t\t\t553. Ebryx/GitDump\n"
+	echo -ne " 487. arthaud/git-dumper\t\t\t553. Ebryx/GitDump\t\t\t\t\t2315. metac0rtex/GitHarvester\n"
 	echo "$SEP"
 	echo "HASH"
 	echo -ne " 2260. cube0x0/HashSpray.py\n"
@@ -9182,6 +9182,9 @@ while true; do
 	;;
 	"2314")
 		Clona "FortyNorthSecurity/Just-Metadata"
+	;;
+	"2315")
+		Scarica "$ENTRAW""metac0rtex/GitHarvester/master/githarvester.py"
 	;;
 	*)
 		echo "error, invalid choice"
