@@ -460,6 +460,7 @@ while true; do
 	echo -ne " 1002. lightos/credmap\t\t\t\t1005. ilektrojohn/creepy\t\t\t\t1042. DanMcInerney/device-pharmer\n"
 	echo -ne " 1076. utiso/dorkbot\t\t\t\t1077. blueudp/DorkMe\t\t\t\t\t1078. NullArray/DorkNet\n"
 	echo -ne " 1118. martinvigo/email2phonenumber\t\t2302. josh0xA/darkdump\t\t\t\t2314. FortyNorthSecurity/Just-Metadata\n"
+	echo -ne " 2316. davidtavarez/pwndb\n"
 	echo "$SEP"
 	echo "GIT - REPOS"
 	echo -ne " 487. arthaud/git-dumper\t\t\t553. Ebryx/GitDump\t\t\t\t\t2315. metac0rtex/GitHarvester\n"
@@ -9185,6 +9186,9 @@ while true; do
 	;;
 	"2315")
 		Scarica "$ENTRAW""metac0rtex/GitHarvester/master/githarvester.py"
+	;;
+	"2316")
+		Clona "davidtavarez/pwndb"
 	;;
 	*)
 		echo "error, invalid choice"
