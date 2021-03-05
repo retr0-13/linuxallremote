@@ -198,6 +198,7 @@ while true; do
 	echo -ne " 572. 1N3/ReverseAPK\t\t\t\t807. AndroBugs/AndroBugs_Framework\t\t\t808. androguard/androguard\n"
 	echo -ne " 809. Flo354/Androick\t\t\t\t816. rednaga/APKiD\t\t\t\t\t817. hexabin/APKStat\n"
 	echo -ne " 860. l0gan/backHack\t\t\t\t1043. DexPatcher/dexpatcher-tool\t\t\t1087. mwrlabs/drozer\n"
+	echo -ne " 2319. dwisiswant0/apkleaks\n"
 	echo "$SEP"
 	echo "ANONYMIZATION"
 	echo -ne " 2229. htrgouvea/nipe\n"
@@ -9210,6 +9211,9 @@ while true; do
 				rlwrap nc -lvnp "$MPRT"
 			fi
 		fi
+	;;
+	"2319")
+		Clona "dwisiswant0/apkleaks"
 	;;
 	*)
 		echo "error, invalid choice"
