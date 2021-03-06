@@ -730,6 +730,7 @@ while true; do
 	echo -ne " 435. offensive-security/exploitdb/shellcodes/linux_x86\t\t\t\t\t\t\t436. offensive-security/exploitdb/shellcodes/windows\n"
 	echo -ne " 437. offensive-security/exploitdb/shellcodes/windows_x86-64\t\t\t\t\t\t438. offensive-security/exploitdb/shellcodes/windows_x86\n"
 	echo -ne " 654. Rover141/Shellter\t\t\t\t825. alexpark07/ARMSCGen\t\t\t\t136. b1tg/rust-windows-shellcode\n"
+	echo -ne " 2320. Den1al/JSShell\n"
 	echo "$SEP"
 	echo "SHELLSHOCK"
 	echo -ne " 2279. MrCl0wnLab/ShellShockHunter\t\t2280. DanMcInerney/shellshock-hunter\n"
