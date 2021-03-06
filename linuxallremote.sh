@@ -684,7 +684,7 @@ while true; do
 	echo -ne " 1124. thorkill/eresi\n"
 	echo "$SEP"
 	echo "REVSHELL"
-	echo -ne " 515. 3v4Si0N/HTTP-revshell\n"
+	echo -ne " 515. 3v4Si0N/HTTP-revshell\t\t\t2321. shelld3v/JSshell\n"
 	echo "$SEP"
 	echo "RMI"
 	echo -ne " 867. NickstaDB/BaRMIe\n"
@@ -9214,6 +9214,12 @@ while true; do
 	;;
 	"2319")
 		Clona "dwisiswant0/apkleaks"
+	;;
+	"2320")
+		Clona "Den1al/JSShell"
+	;;
+	"2321")
+		Scarica "$ENTRAW""shelld3v/JSshell/master/jsh.py"
 	;;
 	*)
 		echo "error, invalid choice"
