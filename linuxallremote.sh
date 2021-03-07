@@ -211,7 +211,8 @@ while true; do
 	echo -ne " 278. mgeeky/tomcatWarDeployer\t\t\t280. hypn0s/AJPy\t\t\t\t\t829. mthbernardes/ARTLAS\n"
 	echo "$SEP"
 	echo "APPLE"
-	echo -ne " 644. Pr0x13/iDict\t\t\t\t645. foozzi/iCloudBrutter\n"
+	echo -ne " 644. Pr0x13/iDict\t\t\t\t645. foozzi/iCloudBrutter\t2325. gwatts/pinfinder\n"
+	echo -ne " 2322. Hacktivation/iOS-Hacktivation-Toolkit\t2323. dnikles/removeActivationLock\t\t2324. tuttarealstep/iUnlock\n"
 	echo "$SEP"
 	echo "ARP"
 	echo -ne " 462. royhills/arp-scan\t\t\t\t582. byt3bl33d3r/arpspoof\t\t\t\t583. ammarx/ARP-spoofing/mmattack\n"
@@ -9221,6 +9222,18 @@ while true; do
 	;;
 	"2321")
 		Scarica "$ENTRAW""shelld3v/JSshell/master/jsh.py"
+	;;
+	"2322")
+		Clona "Hacktivation/iOS-Hacktivation-Toolkit"
+	;;
+	"2323")
+		Clona "dnikles/removeActivationLock"
+	;;
+	"2324")
+		Clona "tuttarealstep/iUnlock"
+	;;
+	"2325")
+		Clona "gwatts/pinfinder"
 	;;
 	*)
 		echo "error, invalid choice"
