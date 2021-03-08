@@ -9220,6 +9220,12 @@ while true; do
 	"2328")
 		Clona "spicesouls/spicescript2"
 	;;
+	"2329")
+		Clona "CMEPW/Smersh"
+	;;
+	"2330")
+		Clona "FrenchCisco/RATel"
+	;;
 	*)
 		echo "error, invalid choice"
 	;;
