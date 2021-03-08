@@ -462,7 +462,7 @@ while true; do
 	echo -ne " 1002. lightos/credmap\t\t\t\t1005. ilektrojohn/creepy\t\t\t\t1042. DanMcInerney/device-pharmer\n"
 	echo -ne " 1076. utiso/dorkbot\t\t\t\t1077. blueudp/DorkMe\t\t\t\t\t1078. NullArray/DorkNet\n"
 	echo -ne " 1118. martinvigo/email2phonenumber\t\t2302. josh0xA/darkdump\t\t\t\t2314. FortyNorthSecurity/Just-Metadata\n"
-	echo -ne " 2316. davidtavarez/pwndb\n"
+	echo -ne " 2316. davidtavarez/pwndb\t\t\t2326. j3ers3/Searpy\n"
 	echo "$SEP"
 	echo "GIT - REPOS"
 	echo -ne " 487. arthaud/git-dumper\t\t\t553. Ebryx/GitDump\t\t\t\t\t2315. metac0rtex/GitHarvester\n"
@@ -572,6 +572,7 @@ while true; do
 	echo -ne " 2288. thehackingsage/hacktronian\t\t2295. beefproject/beef\t\t\t\t\t1049. DidierStevens/DidierStevensSuite\n"
 	echo -ne " 1079. maxousc59/Blue-Sky-Information-Security\t1074. AeonDave/doork\t\t\t\t\t1082. screetsec/Dracnmap\n"
 	echo -ne " 1119. BC-SECURITY/Empire\t\t\t2299. dr-3am/M-Evil\t\t\t\t\t2317. mdsecactivebreach/SharpShooter\n"
+	echo -ne " 2327. spicesouls/spicescript\t\t2328. spicesouls/spicescript2\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
@@ -9234,6 +9235,15 @@ while true; do
 	;;
 	"2325")
 		Clona "gwatts/pinfinder"
+	;;
+	"2326")
+		Clona "j3ers3/Searpy"
+	;;
+	"2327")
+		Clona "spicesouls/spicescript"
+	;;
+	"2328")
+		Clona "spicesouls/spicescript2"
 	;;
 	*)
 		echo "error, invalid choice"
