@@ -2168,8 +2168,7 @@ while true; do
 		Clona "torque59/Nosql-Exploitation-Framework"
 	;;
 	"233")
-		Scarica "$ENTRAW""aress31/xmlrpc-bruteforcer/master/xmlrpc-bruteforcer.py"
-		Scarica "$ENTRAW""aress31/xmlrpc-bruteforcer/master""$RQRM"
+		Clona "aress31/xmlrpc-bruteforcer"
 	;;
 	"234")
 		Clona "n4xh4ck5/CMSsc4n"
@@ -2306,8 +2305,7 @@ while true; do
 		Clona "wintrmvte/SNOWCRASH"
 	;;
 	"269")
-		Scarica "$ENTRAW""dariusztytko/vhosts-sieve/master/vhosts-sieve.py"
-		Scarica "$ENTRAW""dariusztytko/vhosts-sieve/master""$RQRM"
+		Clona "dariusztytko/vhosts-sieve"
 	;;
 	"270")
 		Scarica "$ENTRAW""Va5c0/Steghide-Brute-Force-Tool/master/steg_brute.py"
@@ -2318,8 +2316,7 @@ while true; do
 	"272")
 		if [[ $(Warning) == "Y" ]];
 		then
-			Scarica "$ENTRAW""Diefunction/stegbrute/master/stegbrute.py"
-			Scarica "$ENTRAW""Diefunction/stegbrute/master""$RQRM"
+			Clona "Diefunction/stegbrute"
 		fi
 	;;
 	"273")
@@ -2328,9 +2325,7 @@ while true; do
 	"274")
 		if [[ $(Warning) == "Y" ]];
 		then
-			Scarica "$ENTRAW""yasoob/nrc-exporter/master/nrc_exporter.py"
-			Scarica "$ENTRAW""yasoob/nrc-exporter/master""$RQRM"
-			Scarica "$ENTRAW""yasoob/nrc-exporter/master/setup.py"
+			Clona "yasoob/nrc-exporter"
 		fi
 	;;
 	"275")
@@ -2343,8 +2338,7 @@ while true; do
 		Clona "mzfr/slicer"
 	;;
 	"278")
-		Scarica "$ENTRAW""mgeeky/tomcatWarDeployer/master/tomcatWarDeployer.py"
-		Scarica "$ENTRAW""mgeeky/tomcatWarDeployer/master""$RQRM"
+		Clona "mgeeky/tomcatWarDeployer"
 	;;
 	"279")
 		Scarica "$ENTRAW""aabeling/portscan/master/index.html"
@@ -3059,8 +3053,7 @@ while true; do
 	"427")
 		if [[ $(Warning) == "Y" ]];
 		then
-			Scarica "$ENTRAW""yasserjanah/ZeS0MeBr/master/ZeS0MeBr.py"
-			Scarica "$ENTRAW""yasserjanah/ZeS0MeBr/master""$RQRM"
+			Clona "yasserjanah/ZeS0MeBr"
 		fi
 	;;
 	"428")
@@ -3260,8 +3253,7 @@ while true; do
 		Clona "HatBashBR/ShodanHat"
 	;;
 	"471")
-		Scarica "$ENTRAW""jimywork/shodanwave/master/shodanwave.py"
-		Scarica "$ENTRAW""jimywork/shodanwave/master""$RQRM"
+		Clona "jimywork/shodanwave"
 	;;
 	"472")
 		Clona "random-robbie/My-Shodan-Scripts"
@@ -3293,8 +3285,7 @@ while true; do
 	"480")
 		if [[ $(Warning) == "Y" ]];
 		then
-			Scarica "$ENTRAW""AndyCyberSec/direncrypt/master/direncrypt.py"
-			Scarica "$ENTRAW""AndyCyberSec/direncrypt/master""$RQRM"
+			Clona "AndyCyberSec/direncrypt"
 		fi
 	;;
 	"481")
@@ -3319,8 +3310,7 @@ while true; do
 		Clona "sowdust/tafferugli"
 	;;
 	"487")
-		Scarica "$ENTRAW""arthaud/git-dumper/master/git-dumper.py"
-		Scarica "$ENTRAW""arthaud/git-dumper/master""$RQRM"
+		Clona "arthaud/git-dumper"
 	;;
 	"488")
 		Clona "Taguar258/Raven-Storm"
@@ -3473,8 +3463,7 @@ while true; do
 		Clona "CERT-Polska/hfinger"
 	;;
 	"532")
-		Scarica "$ENTRAW""Phoenix1112/subtakeover/master/takeover.py"
-		Scarica "$ENTRAW""Phoenix1112/subtakeover/master""$RQRM"
+		Clona "Phoenix1112/subtakeover"
 	;;
 	"533")
 		Clona "securing/DumpsterDiver"
@@ -3497,8 +3486,7 @@ while true; do
 	"538")
 		if [[ $(Warning) == "Y" ]];
 		then
-			Scarica "$ENTRAW""smackerdodi/CVE-bruter/master/CVE-bruter.py"
-			Scarica "$ENTRAW""smackerdodi/CVE-bruter/master""$RQRM"
+			Clona "smackerdodi/CVE-bruter"
 		fi
 	;;
 	"539")
@@ -3591,9 +3579,7 @@ while true; do
 		Clona "tennc/webshell"
 	;;
 	"563")
-		Scarica "$ENTRAW""Viralmaniar/Passhunt/master/passhunt.py"
-		Scarica "$ENTRAW""Viralmaniar/Passhunt/master""$RQRM"
-		Scarica "$ENTRAW""Viralmaniar/Passhunt/master/vendors.txt"
+		Clona "Viralmaniar/Passhunt"
 	;;
 	"564")
 		Clona "vanhienfs/saycheese"
@@ -3693,8 +3679,7 @@ while true; do
 		Clona "r3vn/badKarma"
 	;;
 	"595")
-		Scarica "$ENTRAW""7Elements/Fortigate/master/fortigate.py"
-		Scarica "$ENTRAW""7Elements/Fortigate/master""$RQRM"
+		Clona "7Elements/Fortigate"
 	;;
 	"596")
 		echo "Digit a remote IP target without protocol"
@@ -3742,8 +3727,7 @@ while true; do
 		fi
 	;;
 	"601")
-		Scarica "$ENTRAW""UnaPibaGeek/ctfr/master/ctfr.py"
-		Scarica "$ENTRAW""UnaPibaGeek/ctfr/master""$RQRM"
+		Clona "UnaPibaGeek/ctfr"
 	;;
 	"602")
 		Clona "nil0x42/phpsploit"
@@ -3816,8 +3800,7 @@ while true; do
 		fi
 	;;
 	"619")
-		Scarica "$ENTRAW""cddmp/enum4linux-ng/master/enum4linux-ng.py"
-		Scarica "$ENTRAW""cddmp/enum4linux-ng/master""$RQRM"
+		Clona "cddmp/enum4linux-ng"
 	;;
 	"620")
 		Clona "hahwul/XSpear"
@@ -3903,12 +3886,10 @@ while true; do
 		Scarica "$ENTRAW""TermuxHacking000/PortmapSploit/master/Colors.sh"
 	;;
 	"636")
-		Scarica "$ENTRAW""xFreed0m/RDPassSpray/master/RDPassSpray.py"
-		Scarica "$ENTRAW""xFreed0m/RDPassSpray/master""$RQRM"
+		Clona "xFreed0m/RDPassSpray"
 	;;
 	"637")
-		Scarica "$ENTRAW""Viralmaniar/Remote-Desktop-Caching-/master/remotecache.py"
-		Scarica "$ENTRAW""Viralmaniar/Remote-Desktop-Caching-/master""$RQRM"
+		Clona "Viralmaniar/Remote-Desktop-Caching-"
 	;;
 	"638")
 		echo "Digit a target IP"
@@ -4023,8 +4004,7 @@ while true; do
 		Scarica "$ENTRAW""Moham3dRiahi/WPGrabInfo/master/WP-Grab.pl"
 	;;
 	"656")
-		Scarica "$ENTRAW""spicesouls/reosploit/main/reosploit.py"
-		Scarica "$ENTRAW""spicesouls/reosploit/main""$RQRM"
+		Clona "spicesouls/reosploit"
 	;;
 	"657")
 		Clona "sa7mon/S3Scanner"
@@ -4255,8 +4235,7 @@ while true; do
 		Clona "droope/ldap-brute"
 	;;
 	"729")
-		Scarica "$ENTRAW""chris408/ct-exposer/master/ct-exposer.py"
-		Scarica "$ENTRAW""chris408/ct-exposer/master""$RQRM"
+		Clona "chris408/ct-exposer"
 	;;
 	"730")
 		Clona "gotr00t0day/IGF"
@@ -4268,12 +4247,10 @@ while true; do
 		Clona "gotr00t0day/spyhunt"
 	;;
 	"733")
-		Scarica "$ENTRAW""gotr00t0day/spider00t/master/spider00t.py"
-		Scarica "$ENTRAW""gotr00t0day/spider00t/master""$RQRM"
+		Clona "gotr00t0day/spider00t"
 	;;
 	"734")
-		Scarica "$ENTRAW""gotr00t0day/subdomainbrute/master/subdomainbrute.py"
-		Scarica "$ENTRAW""gotr00t0day/subdomainbrute/master""$RQRM"
+		Clona "gotr00t0day/subdomainbrute"
 	;;
 	"735")
 		Clona "gotr00t0day/oswalkpy"
@@ -8887,8 +8864,7 @@ while true; do
 		Clona "usb-tools/ViewSB"
 	;;
 	"2233")
-		Scarica "$ENTRAW""Merimetso-Code/USB-Hacking/main/usbfind.py"
-		Scarica "$ENTRAW""Merimetso-Code/USB-Hacking/main""$RQRM"
+		Clona "Merimetso-Code/USB-Hacking"
 	;;
 	"2234")
 		ScaricaIn "$ENTSSL""OnionApps/Chat.onion/raw/master/app/app-release.apk" "Chat.onion.apk"
@@ -9043,8 +9019,7 @@ while true; do
 		Scarica "$ENTSSL""righettod/pst-digger/releases/download/v1.0.0/pst-digger.jar"
 	;;
 	"2270")
-		Scarica "$ENTRAW""righettod/tls-cert-discovery/master/tls_cert_discovery.py"
-		Scarica "$ENTRAW""righettod/tls-cert-discovery/master""$RQRM"
+		Clona "righettod/tls-cert-discovery"
 	;;
 	"2271")
 		Scarica "$ENTRAW""dc414/Upnp-Exploiter/master/upnp.py"
