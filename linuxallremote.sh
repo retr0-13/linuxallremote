@@ -400,7 +400,7 @@ while true; do
 	echo -ne " 16. sundaysec/Android-Exploits/remote\t\t17. offensive-security/exploitdb/android/remote\n"
 	echo -ne " 18. offensive-security/exploitdb/ios remote exploits\t\t\t\t\t\t\t617. Download an exploit from exploit-db site web\n"
 	echo -ne " 815. Acey9/Chimay-Red\t\t\t\t846. NullArray/AutoSploit\t\t\t\t19. all remote exploits from offensive-security/exploitdb\n"
-	echo -ne " 1071. coldfusion39/domi-owned\n"
+	echo -ne " 1071. coldfusion39/domi-owned\t\t\t2331. offensive-security/exploitdb\n"
 	echo "$SEP"
 	echo "EXTRA"
 	echo -ne " 252. LionSec/katoolin\n"
@@ -9226,6 +9226,9 @@ while true; do
 	;;
 	"2330")
 		Clona "FrenchCisco/RATel"
+	;;
+	"2331")
+		Clona "offensive-security/exploitdb"
 	;;
 	*)
 		echo "error, invalid choice"
