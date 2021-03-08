@@ -377,7 +377,7 @@ while true; do
 	echo -ne " 163. luke-goddard/enumy\t\t\t209. Knowledge-Wisdom-Understanding/recon\n"
 	echo -ne " 619. cddmp/enum4linux-ng\t\t\t735. gotr00t0day/oswalkpy\t\t\t\t840. skahwah/automato\n"
 	echo -ne " 1007. m8r0wn/crosslinked\t\t\t1033. SpiderLabs/deblaze\t\t\t\t1072. vysecurity/DomLink\n"
-	echo -ne " 1096. anantshri/DS_Store_crawler_parser\t1121. dejanlevaja/enum_shares\n"
+	echo -ne " 1096. anantshri/DS_Store_crawler_parser\t1121. dejanlevaja/enum_shares\t\t\t\t1407. guelfoweb/knock\n"
 	echo "$SEP"
 	echo "EVASION - BYPASSING"
 	echo -ne " 167. govolution/avet\t\t\t\t134. khalilbijjou/WAFNinja\t\t\t\t174. stormshadow07/HackTheWorld\n"
