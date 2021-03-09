@@ -109,6 +109,7 @@ function Clona
 			select GRD in $GRDS
 			do
 				Scarica "$ENTFRM""$GRD"
+				break
 			done
 		else
 			git clone "$ENTSSL""$1"".git"
