@@ -114,7 +114,10 @@ function Clona
 			then
 				select GRD in $GRDS
 				do
-					Scarica "$ENTFRM""$GRD"
+					if [[ "$GRD" != "" ]];
+					then
+						Scarica "$ENTFRM""$GRD"
+					fi
 					break
 				done
 			else
