@@ -459,7 +459,7 @@ while true; do
 	echo -ne " 712. allfro/sploitego\t\t\t\t715. rsmusllp/termineter\t\t\t\t716. droberson/thefuzz\n"
 	echo -ne " 717. kernelslacker/trinity\t\t\t718. PAGalaxyLab/uniFuzzer\t\t\t\t720. nullsecuritynet/uniofuzz\n"
 	echo -ne " 721. andresriancho/w3af\t\t\t723. wereallfeds/webshag\t\t\t\t724. samhocevar/zzuf\n"
-	echo -ne " 798. tintinweb/aggroArgs\n"
+	echo -ne " 798. tintinweb/aggroArgs\t\t\t2334. lcamtuf.coredump/afl\n"
 	echo "$SEP"
 	echo "GATHERING - OSINT"
 	echo -ne " 168. Screetsec/Sudomy\t\t\t\t177. HightechSec/git-scanner/gitscanner\t\t\t89. urbanadventurer/WhatWeb\n"
@@ -750,7 +750,7 @@ while true; do
 	echo -ne " 435. offensive-security/exploitdb/shellcodes/linux_x86\t\t\t\t\t\t\t436. offensive-security/exploitdb/shellcodes/windows\n"
 	echo -ne " 437. offensive-security/exploitdb/shellcodes/windows_x86-64\t\t\t\t\t\t438. offensive-security/exploitdb/shellcodes/windows_x86\n"
 	echo -ne " 654. Rover141/Shellter\t\t\t\t825. alexpark07/ARMSCGen\t\t\t\t136. b1tg/rust-windows-shellcode\n"
-	echo -ne " 2320. Den1al/JSShell\n"
+	echo -ne " 2320. Den1al/JSShell\t\t\t\t2333. packetstormsecurity/aesshell\n"
 	echo "$SEP"
 	echo "SHELLSHOCK"
 	echo -ne " 2279. MrCl0wnLab/ShellShockHunter\t\t2280. DanMcInerney/shellshock-hunter\n"
@@ -761,7 +761,7 @@ while true; do
 	echo -ne " 92. quickbreach/SMBetray\t\t\t93. aress31/smbaudit\t\t\t\t\t312. T-S-A/smbspider\n"
 	echo -ne " 333. CoreSecurity/impacket/smbserver\t\t578. CiscoCXSecurity/creddump7\t\t\t\t2249. deepsecurity-pe/GoGhost\n"
 	echo -ne " 2284. deepsecurity-pe/GoGhost_amd64\t\t2285. deepsecurity-pe/GoGhost\t\t\t\t1127. peterpt/eternal_scanner\n"
-	echo -ne " 2312. nccgroup/keimpx\n"
+	echo -ne " 2312. nccgroup/keimpx\t\t\t\t2332. portcullis/acccheck\n"
 	echo "$SEP"
 	echo "SMS"
 	echo -ne " 388. sharyer/GSMEvil/SmsEvil\n"
@@ -9246,6 +9246,15 @@ while true; do
 	;;
 	"2331")
 		Clona "offensive-security/exploitdb"
+	;;
+	"2332")
+		Scarica "https://labs.portcullis.co.uk/download/acccheck-0-2-1.tar.gz"
+	;;
+	"2333")
+		Scarica "https://packetstormsecurity.com/files/download/132438/aesshell-0.7.tar.bz2"
+	;;
+	"2334")
+		Scarica "https://lcamtuf.coredump.cx/afl/releases/afl-latest.tgz"
 	;;
 	*)
 		echo "error, invalid choice"
