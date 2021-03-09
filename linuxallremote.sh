@@ -98,7 +98,24 @@ function ClonaLab
 
 function Clona
 {
-	git clone "$ENTSSL""$1"".git"
+	if [[ -f $(which lynx) ]];
+	then
+		RLS="/releases"
+		RLDW="$RLS""/download"
+		ENTFRM="$ENTSSL""$1""$RLDW""/"
+		GRDS=$(lynx -dump -listonly "$ENTSSL""$1""$RLS"|grep "$RLDW"|awk '{print $2}'| while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+		if [[ "$GRDS" != "" ]];
+		then
+			select GRD in $GRDS
+			do
+				Scarica "$ENTFRM""$GRD"
+			done
+		else
+			git clone "$ENTSSL""$1"".git"
+		fi
+	else
+		git clone "$ENTSSL""$1"".git"
+	fi
 }
 
 function Scarica
