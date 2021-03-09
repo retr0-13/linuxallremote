@@ -98,21 +98,28 @@ function ClonaLab
 
 function Clona
 {
-	if [[ -f $(which lynx) ]];
+	echo "Do you want download the release?"
+	echo "If you do not want, you will clone the repo"
+	echo "WARNING: if a release does not exist, you will clone the repo anyway"
+	read -p "(Y/n): " RSP
+	if [[ "$RSP" == "Y" ]];
 	then
-		RLS="/releases"
-		RLDW="$RLS""/download"
-		ENTFRM="$ENTSSL""$1""$RLDW""/"
-		GRDS=$(lynx -dump -listonly "$ENTSSL""$1""$RLS"|grep "$RLDW"|awk '{print $2}'| while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
-		if [[ "$GRDS" != "" ]];
+		if [[ -f $(which lynx) ]];
 		then
-			select GRD in $GRDS
-			do
-				Scarica "$ENTFRM""$GRD"
-				break
-			done
-		else
-			git clone "$ENTSSL""$1"".git"
+			RLS="/releases"
+			RLDW="$RLS""/download"
+			ENTFRM="$ENTSSL""$1""$RLDW""/"
+			GRDS=$(lynx -dump -listonly "$ENTSSL""$1""$RLS"|grep "$RLDW"|awk '{print $2}'| while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+			if [[ "$GRDS" != "" ]];
+			then
+				select GRD in $GRDS
+				do
+					Scarica "$ENTFRM""$GRD"
+					break
+				done
+			else
+				git clone "$ENTSSL""$1"".git"
+			fi
 		fi
 	else
 		git clone "$ENTSSL""$1"".git"
