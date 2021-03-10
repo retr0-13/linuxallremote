@@ -550,6 +550,9 @@ while true; do
 	echo "JENKINS"
 	echo -ne " 356. gquere/pwn_jenkins\n"
 	echo "$SEP"
+	echo "JOOMLA"
+	echo -ne " 2335. oppsec/juumla\n"
+	echo "$SEP"
 	echo "KERBEROS"
 	echo -ne " 3. ropnop/kerbrute\t\t\t\t26. TarlogicSecurity/kerbrute\t\t\t\t5. CroweCybersecurity/ad-ldap-enum\n"
 	echo -ne " 6. proabiral/inception\t\t\t\t362. nidem/kerberoast\t\t\t\t\t516. NotMedic/NetNTLMtoSilverTicket/dementor\n"
@@ -9266,6 +9269,9 @@ while true; do
 	;;
 	"2334")
 		Scarica "https://lcamtuf.coredump.cx/afl/releases/afl-latest.tgz"
+	;;
+	"2335")
+		Clona "oppsec/juumla"
 	;;
 	*)
 		echo "error, invalid choice"
