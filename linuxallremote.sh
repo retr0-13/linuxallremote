@@ -919,7 +919,7 @@ while true; do
 	echo -ne " 833. NORMA-Inc/AtEar\t\t\t\t904. M1ND-B3ND3R/BoopSuite\t\t\t\t921. aanarchyy/bully\n"
 	echo -ne " 990. joswr1ght/cowpatty\t\t\t2263. luc10/zykgen\t\t\t\t\t2281. 0xd012/wifuzzit\n"
 	echo -ne " 1046. elceef/dhcpf\t\t\t\t1047. kamorin/DHCPig\t\t\t\t\t1048. misje/dhcpoptinj\n"
-	echo -ne " 1108. securestate/eapeak\n"
+	echo -ne " 1108. securestate/eapeak\t\t\t2336. whid-injector/WHID\n"
 	echo "$SEP"
 	echo "WINRM"
 	echo -ne " 42. Hackplayers/evil-winrm\n"
@@ -9272,6 +9272,9 @@ while true; do
 	;;
 	"2335")
 		Clona "oppsec/juumla"
+	;;
+	"2336")
+		Clona "whid-injector/WHID"
 	;;
 	*)
 		echo "error, invalid choice"
