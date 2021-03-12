@@ -9287,49 +9287,49 @@ while true; do
 		fi
 	;;
 	"2338")
-		select BRP in "chrome chromium epiphany falkon firefox konqueror midori opera vivaldi"
+		select BRP in "chrome" "chromium" "epiphany" "falkon" "firefox" "konqueror" "midori" "opera" "vivaldi"
 		do
 			case "$BRP" in
-				"chrome")
-					wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-				;;
-				"chromium")
-					apt-get install chromium-browser
-				;;
-				"epiphany")
-					dnf install snapd
-					ln -s /var/lib/snapd/snap /snap
-					snap install epiphany
-				;;
-				"falkon")
-					dnf install snapd
-					ln -s /var/lib/snapd/snap /snap
-					snap install falkon
-				;;
-				"firefox")
-					add-apt-repository ppa:mozillateam/firefox-next
-					apt update && apt upgrade
-					apt install firefox
-				;;
-				"konqueror")
-					apt install konqueror
-				;;
-				"midori")
-					dnf install snapd
-					ln -s /var/lib/snapd/snap /snap
-					snap install midori
-				;;
-				"opera")
-					add-apt-repository 'deb https://deb.opera.com/opera-stable/ stable non-free'
-					wget -qO - https://deb.opera.com/archive.key | sudo apt-key add -
-					apt-get update
-					apt-get install opera-stable
-				;;
-				"vivaldi")
-					wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
-					add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main'
-					apt update && apt install vivaldi-stable
-				;;
+			"chrome")
+				wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+			;;
+			"chromium")
+				apt-get install chromium-browser
+			;;
+			"epiphany")
+				dnf install snapd
+				ln -s /var/lib/snapd/snap /snap
+				snap install epiphany
+			;;
+			"falkon")
+				dnf install snapd
+				ln -s /var/lib/snapd/snap /snap
+				snap install falkon
+			;;
+			"firefox")
+				add-apt-repository ppa:mozillateam/firefox-next
+				apt update && apt upgrade
+				apt install firefox
+			;;
+			"konqueror")
+				apt install konqueror
+			;;
+			"midori")
+				dnf install snapd
+				ln -s /var/lib/snapd/snap /snap
+				snap install midori
+			;;
+			"opera")
+				add-apt-repository 'deb https://deb.opera.com/opera-stable/ stable non-free'
+				wget -qO - https://deb.opera.com/archive.key | sudo apt-key add -
+				apt-get update
+				apt-get install opera-stable
+			;;
+			"vivaldi")
+				wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
+				add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main'
+				apt update && apt install vivaldi-stable
+			;;
 			esac
 			break
 		done
