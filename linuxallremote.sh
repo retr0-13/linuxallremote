@@ -881,6 +881,7 @@ while true; do
 	echo -ne " 76. print all functions of a binary\t\t135. dump all opcodes from a binary\n"
 	echo -ne " 2261. Encrypt and Encode a file to pass in remote host\t\t\t\t\t\t\t2267. install a python hacking package\n"
 	echo -ne " 2268. install a python3 hacking package\t2289. install a ruby hacking gem\t\t\t\tPrepare RevShell for Windows\n"
+	echo -ne " 2337. install a deb package\t\t\t2338. install a browser\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -9275,6 +9276,62 @@ while true; do
 	;;
 	"2336")
 		Clona "whid-injector/WHID"
+	;;
+	"2337")
+		ls *.deb
+		echo "Digit a deb package to install"
+		read -e -p "(example, package.deb): " DEB
+		if [[ -f "$DEB" ]];
+		then
+			dpkg -i "$DEB"
+		fi
+	;;
+	"2338")
+		select BRP in "chrome chromium epiphany falkon firefox konqueror midori opera vivaldi"
+		do
+			case "$BRP" in
+				"chrome")
+					wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+				;;
+				"chromium")
+					apt-get install chromium-browser
+				;;
+				"epiphany")
+					dnf install snapd
+					ln -s /var/lib/snapd/snap /snap
+					snap install epiphany
+				;;
+				"falkon")
+					dnf install snapd
+					ln -s /var/lib/snapd/snap /snap
+					snap install falkon
+				;;
+				"firefox")
+					add-apt-repository ppa:mozillateam/firefox-next
+					apt update && apt upgrade
+					apt install firefox
+				;;
+				"konqueror")
+					apt install konqueror
+				;;
+				"midori")
+					dnf install snapd
+					ln -s /var/lib/snapd/snap /snap
+					snap install midori
+				;;
+				"opera")
+					add-apt-repository 'deb https://deb.opera.com/opera-stable/ stable non-free'
+					wget -qO - https://deb.opera.com/archive.key | sudo apt-key add -
+					apt-get update
+					apt-get install opera-stable
+				;;
+				"vivaldi")
+					wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
+					add-apt-repository 'deb https://repo.vivaldi.com/archive/deb/ stable main'
+					apt update && apt install vivaldi-stable
+				;;
+			esac
+		done
 	;;
 	*)
 		echo "error, invalid choice"
