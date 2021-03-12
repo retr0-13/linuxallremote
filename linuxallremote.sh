@@ -491,6 +491,7 @@ while true; do
 	echo -ne " 1076. utiso/dorkbot\t\t\t\t1077. blueudp/DorkMe\t\t\t\t\t1078. NullArray/DorkNet\n"
 	echo -ne " 1118. martinvigo/email2phonenumber\t\t2302. josh0xA/darkdump\t\t\t\t2314. FortyNorthSecurity/Just-Metadata\n"
 	echo -ne " 2316. davidtavarez/pwndb\t\t\t2326. j3ers3/Searpy\t\t\t\t\t1628. behindthefirewalls/Parsero\n"
+	echo -ne " 2352. bhavsec/reconspider\n"
 	echo "$SEP"
 	echo "GIT - REPOS"
 	echo -ne " 487. arthaud/git-dumper\t\t\t553. Ebryx/GitDump\t\t\t\t\t2315. metac0rtex/GitHarvester\n"
@@ -9386,6 +9387,9 @@ while true; do
 	;;
 	"2351")
 		Clona "dirkjanm/PrivExchange"
+	;;
+	"2352")
+		Clona "bhavsec/reconspider"
 	;;
 	*)
 		echo "error, invalid choice"
