@@ -9397,7 +9397,6 @@ while true; do
 			if [[ "$DIM" != "" ]];
 			then
 				docker pull "$DIM"":latest"
-				docker build -t "$DIM" .
 			fi
 		done
 	;;
