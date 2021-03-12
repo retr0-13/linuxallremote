@@ -3,7 +3,7 @@
 #Author: Fabio Defilippo
 #email: 4starfds@gmail.com
 
-PYPAK="0trace 3proxy 3proxy-win32 42zip ace admid-pack afflib afpfs-ng against aiengine aimage air airgraph-ng american-fuzzy-lop androguard android-apktool android-ndk android-sdk-platform-tools android-sdk android-udev-rules arachni arduino argus argus-clients armitage arp-scan artillery asp-audit athena-ssl-scanner auto-xor-decryptor autopsy azazel b2sum backdoor-factory balbuzard bamf-framework batman-adv bbqsql bed beef beholder bgp-md5crack bing-ip2hosts bing-lfi-rfi binwalk bios_memimage blackarch-menus bletchley bluebox-ng bluelog blueprint bmap-tools bob-the-butcher braa braces browser-fuzzer brutus bsdiff bss bt_audit bulk-extractor bully bunny burpsuite bvi cadaver canari capstone casefile centry cewl cflow check-weak-dh-ssh checkpwd checksec chiron chownat chrome-decode cidr2range ciphertest cirt-fuzzer cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-router-config cisco-scanner cisco-torch cisco5crack cisco7crack ciscos climber clusterd cms-explorer cms-few codetective complemento conpot cookie-cadger cppcheck cpptest crackle create-ap creds creepy crunch cuckoo cupp cutycapt darkd0rk3r dbd dc3dd ddrescue device-pharmer dex2jar dff-scanner dhcpig dirb dirbuster dirs3arch dislocker dissector dizzy dmitry dns-spoof dns2geoip dns2tcp dnsa dnschef dnsmap dnsrecon dnsutils domain-analyzer dradis dripper dsd dsniff dumb0 dump1090 eapmd5pass easy-creds eazy edb eindeutig elettra elettra-gui elite-proxy-finder enabler ent enum-shares enum4linux erase-registrations ettercap exiv2 exploit-db eyewitness facebot fakeap fakedns fakemail fang fern-wifi-cracker fierce fiked filibuster fimap findmyhash firmware-mod-kit fl0p flare flasm flawfinder flunym0us foremost fping fport fraud-bridge freeipmi freeradius fs-nyarl ftp-fuzz ftp-scanner ftp-spider fusil fuzzdb g72x++ galleta gdb geoip ghost-phisher ghost-py gnuradio gnutls2 goldeneye golismero goog-mail gqrx grabber gtalk-decode gtp-scan hackersh halberd halcyon hamster handle hasere hash-identifier hashcat hashcat-utils hasher hashid hashpump hashtag haystack hdcp-genkey hdmi-sniff heartbleed-honeypot hex2bin honeyd honssh host-extract hostbox-ssh hotpatch hotspotter hpfeeds hping http-enum http-fuzz http-put http-traceroute httpforge httping httprint-win32 hulk hwk hydra hyenae hyperion ike-scan imagejs inception intercepter-ng interrogate intersect inundator iodine ip-https-tools iputils ipv6toolkit isr-form jad jboss-autopwn jd-gui jhead jigsaw john johnny joomscan js-beautify jsql junkie jynx2 kalibrate-rtl kippo kismet kismet-earth kismet2earth klogger kolkata kraken laf lans latd lbd leo leroy-jenkins lfi-autopwn lfi-exploiter lfi-fuzzploit lfi-scanner lfi-sploiter lft liffy linenum linux-exploit-suggester list-urls logkeys loki lynis mac-robber macchanger maclookup magictree make-pdf malheur maligno maltego maltrieve malware-check-tool marc4dasm maskprocessor masscan mat md5deep mdbtools mdk3 mdns-scan medusa melkor memdump metasploit miranda-upnp missionplanner mitmproxy mkbrutus moloch monocle mp3nema mptcp mptcp-abuse ms-sys mtr mutator mysql2sqlite nbtool ncrack nemesis netbios-share-scanner netcon netdiscover netmap netmask netscan netsniff-ng netzob ngrep nield nikto nipper nmap nsec3walker ntds-decode o-saft oat obfsproxy oclhashcat ocs ollydbg onesixtyone onionshare openvas-cli openvas-libraries openvas-manager openvas-scanner origami ostinato owasp-bywaf owtf p0f pack packet-o-matic packeth packit padbuster panoptic paros parsero pasco passe-partout passivedns patator pathod pcredz pdf-parser pdfbook-analyzer pdfid pdfresurrect peach peda peepdf perl-image-exiftool perl-tftp pev php-mt-seed php-rfi-payload-decoder php-vulnerability-hunter plecost pompem posttester powersploit prometheus protos-sip proxychains-ng proxycheck proxyp proxytunnel pscan pshitt pwd-hash pwntools pyew pyinstaller pyrasite pyrit python-utidylib python2-binaryornot python2-yara radamsa radare2 radiography rarcrack rawr rcracki-mt rdesktop-brute reaver rebind recon-ng regeorg relay-scanner responder rfcat rfidiot rkhunter rlogin-scanner ropgadget ropper rrs rtlsdr-scanner rtp-flood ruby-msgpack ruby-ronin ruby-ronin-support ruby-uri-query_params rww-attack safecopy sakis3g sandy sasm sb0x sbd scalpel scanmem scapy schnappi-dhcp scout2 scrapy scrounge-ntfs seat secure-delete sees sergio-proxy sessionlist set shellme siege silk simple-ducky simple-lan-scan sinfp sipp sipvicious skipfish skype-dump sleuthkit slowloris smali smartphone-pentest-framework smbexec smtp-fuzz smtp-user-enum smtp-vrfy sn00p snmp-fuzzer snoopy-ng snort snow socat soot spade spectools spiderfoot spiderpig-pdffuzzer spike spike-proxy splint sploitego sps sqid sqlmap sqlninja ssh-privkey-crack sshuttle ssl-hostname-resolver ssl-phuck3r ssldump sslh sslscan sslstrip sslyze starttls-mitm steghide stompy storm-ring stunnel subdomainer sulley suricata svn-extractor swaks synflood synscan sysdig sysinternals-suite t50 tbear tcpcontrol-fuzzer tcpdump tcpextract tcpflow tcpreplay tcpwatch teardown tekdefense-automater termineter tftp-bruteforce tftp-fuzz tftp-proxy thc-ipv6 thc-keyfinder thc-pptp-bruter thc-smartbrute thc-ssl-dos theharvester tiger tilt tinc tinyproxy tlsenum tor tor-autocircuit tor-browser-en torshammer torsocks traceroute trid trinity trixd00r truecrypt tsh tsh-sctp twofi u3-pwn ubertooth udis86 uefi-firmware-parser ufo-wardriving umap umit unhide unicorn unicornscan unix-privesc-check unsecure upx username-anarchy usernamer uw-loveimap uw-offish uw-udpscan uw-zone v3n0m valgrind vanguard vega veil viper vivisect vnc-bypauth volatility w3af wapiti web-soul webhandler webpwn3r webshells websockify webspa websploit weevely wfuzz whatweb wi-feye wifi-honey wifi-monitor wifiphisher wig wikigen winexe winfo wireless-ids wireshark-cli wireshark-gtk wlan2eth wmat wol-e wpscan ws-attacker x-scan xcavator xf86-video-qxl-git xortool xsser xsss yara ycrawler yersinia zaproxy zmap zulu zzuf"
+PYPAK="0trace 3proxy 3proxy-win32 42zip ace admid-pack afflib afpfs-ng against aiengine aimage air airgraph-ng american-fuzzy-lop androguard android-apktool android-ndk android-sdk-platform-tools android-sdk android-udev-rules arachni arduino argus argus-clients armitage arp-scan artillery asp-audit athena-ssl-scanner auto-xor-decryptor autopsy azazel b2sum backdoor-factory balbuzard bamf-framework batman-adv bbqsql bed beef beholder bgp-md5crack bing-ip2hosts bing-lfi-rfi binwalk bios_memimage blackarch-menus bletchley bluebox-ng bluelog blueprint bmap-tools bob-the-butcher braa braces browser-fuzzer brutus bsdiff bss bt_audit bulk-extractor bully bunny burpsuite bvi cadaver canari capstone casefile centry cewl cflow check-weak-dh-ssh checkpwd checksec chiron chownat chrome-decode cidr2range ciphertest cirt-fuzzer cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-router-config cisco-scanner cisco-torch cisco5crack cisco7crack ciscos climber clusterd cms-explorer cms-few codetective complemento conpot cookie-cadger cppcheck cpptest crackle create-ap creds creepy crunch cuckoo cupp cutycapt darkd0rk3r dbd dc3dd ddrescue device-pharmer dex2jar dff-scanner dhcpig dirb dirbuster dirs3arch dislocker dissector dizzy dmitry dns-spoof dns2geoip dns2tcp dnsa dnschef dnsmap dnsrecon dnsutils domain-analyzer dradis dripper dsd dsniff dumb0 dump1090 eapmd5pass easy-creds eazy edb eindeutig elettra elettra-gui elite-proxy-finder enabler ent enum-shares enum4linux erase-registrations ettercap exiv2 exploit-db eyewitness facebot fakeap fakedns fakemail fang fern-wifi-cracker fierce fiked filibuster fimap findmyhash firmware-mod-kit fl0p flare flasm flawfinder flunym0us foremost fping fport fraud-bridge freeipmi freeradius fs-nyarl ftp-fuzz ftp-scanner ftp-spider fusil fuzzdb g72x++ galleta gdb geoip ghost-phisher ghost-py gnuradio gnutls2 goldeneye golismero goog-mail gqrx grabber gtalk-decode gtp-scan hackersh halberd halcyon hamster handle hasere hash-identifier hashcat hashcat-utils hasher hashid hashpump hashtag haystack hdcp-genkey hdmi-sniff heartbleed-honeypot hex2bin honeyd honssh host-extract hostbox-ssh hotpatch hotspotter hpfeeds hping http-enum http-fuzz http-put http-traceroute httpforge httping httprint-win32 hulk hwk hydra hyenae hyperion ike-scan imagejs inception intercepter-ng interrogate intersect inundator iodine ip-https-tools iputils ipv6toolkit isr-form jad jboss-autopwn jd-gui jhead jigsaw john johnny joomscan js-beautify jsql junkie jynx2 kalibrate-rtl kippo kismet kismet-earth kismet2earth klogger kolkata kraken laf lans latd lbd leo leroy-jenkins lfi-autopwn lfi-exploiter lfi-fuzzploit lfi-scanner lfi-sploiter lft liffy linenum linux-exploit-suggester list-urls logkeys loki lynis mac-robber macchanger maclookup magictree make-pdf malheur maligno maltego maltrieve malware-check-tool marc4dasm maskprocessor masscan mat md5deep mdbtools mdk3 mdns-scan medusa melkor memdump metasploit miranda-upnp missionplanner mitmproxy mkbrutus moloch monocle mp3nema mptcp mptcp-abuse ms-sys mtr mutator mysql2sqlite nbtool ncrack nemesis netbios-share-scanner netcon netdiscover netmap netmask netscan netsniff-ng netzob ngrep nield nikto nipper nmap nsec3walker ntds-decode o-saft oat obfsproxy objection oclhashcat ocs ollydbg onesixtyone onionshare openvas-cli openvas-libraries openvas-manager openvas-scanner origami ostinato owasp-bywaf owtf p0f pack packet-o-matic packeth packit padbuster panoptic paros parsero pasco passe-partout passivedns patator pathod pcredz pdf-parser pdfbook-analyzer pdfid pdfresurrect peach peda peepdf perl-image-exiftool perl-tftp pev php-mt-seed php-rfi-payload-decoder php-vulnerability-hunter plecost pompem posttester powersploit prometheus protos-sip proxychains-ng proxycheck proxyp proxytunnel pscan pshitt pwd-hash pwntools pyew pyinstaller pyrasite pyrit python-utidylib python2-binaryornot python2-yara radamsa radare2 radiography rarcrack rawr rcracki-mt rdesktop-brute reaver rebind recon-ng regeorg relay-scanner responder rfcat rfidiot rkhunter rlogin-scanner ropgadget ropper rrs rtlsdr-scanner rtp-flood ruby-msgpack ruby-ronin ruby-ronin-support ruby-uri-query_params rww-attack safecopy sakis3g sandy sasm sb0x sbd scalpel scanmem scapy schnappi-dhcp scout2 scrapy scrounge-ntfs seat secure-delete sees sergio-proxy sessionlist set shellme siege silk simple-ducky simple-lan-scan sinfp sipp sipvicious skipfish skype-dump sleuthkit slowloris smali smartphone-pentest-framework smbexec smtp-fuzz smtp-user-enum smtp-vrfy sn00p snmp-fuzzer snoopy-ng snort snow socat soot spade spectools spiderfoot spiderpig-pdffuzzer spike spike-proxy splint sploitego sps sqid sqlmap sqlninja ssh-privkey-crack sshuttle ssl-hostname-resolver ssl-phuck3r ssldump sslh sslscan sslstrip sslyze starttls-mitm steghide stompy storm-ring stunnel subdomainer sulley suricata svn-extractor swaks synflood synscan sysdig sysinternals-suite t50 tbear tcpcontrol-fuzzer tcpdump tcpextract tcpflow tcpreplay tcpwatch teardown tekdefense-automater termineter tftp-bruteforce tftp-fuzz tftp-proxy thc-ipv6 thc-keyfinder thc-pptp-bruter thc-smartbrute thc-ssl-dos theharvester tiger tilt tinc tinyproxy tlsenum tor tor-autocircuit tor-browser-en torshammer torsocks traceroute trid trinity trixd00r truecrypt tsh tsh-sctp twofi u3-pwn ubertooth udis86 uefi-firmware-parser ufo-wardriving umap umit unhide unicorn unicornscan unix-privesc-check unsecure upx username-anarchy usernamer uw-loveimap uw-offish uw-udpscan uw-zone v3n0m valgrind vanguard vega veil viper vivisect vnc-bypauth volatility w3af wapiti web-soul webhandler webpwn3r webshells websockify webspa websploit weevely wfuzz whatweb wi-feye wifi-honey wifi-monitor wifiphisher wig wikigen winexe winfo wireless-ids wireshark-cli wireshark-gtk wlan2eth wmat wol-e wpscan ws-attacker x-scan xcavator xf86-video-qxl-git xortool xsser xsss yara ycrawler yersinia zaproxy zmap zulu zzuf"
 RUPAK="activemodel activerecord activesupport addressable ansi apscanner apullo arp_scan  async async-dns async-http async-io async-pool atomic benchmark bigdecimal brakeman bscan buftok bundler celluloid celluloid-io cgi cms_scanner colorize concurrent-ruby concurrent-ruby-edge console csv daemons date dawnscanner dbm delegate did_you_mean dockscan domain_name domains_scanner DrupalScan em-websocket equalizer erubis espeak-ruby etc ethon eventmachine execjs fast_port_scanner fcntl ffi ffi-compiler fiber-local fiddle fileutils forwardable gdbm get_process_mem getoptlong google-cloud-web_security_scanner hacker-gems ham hashie hashie-forbidden_attributes hitimes http http-accept http-cookie http-form_data http-parser http_parser.rb httpclient http_scanner i18n io-console ipaddr ipaddress irb json logger matrix maxmind-db memoizable mime mime-types mime-types-data mini_exiftool minitest mojo_magick msfrpc-client msgpack multi_json multipart-post mustermann mutex_m naught net-http-digest_auth net-pop net-smtp net-telnet netrc network_scanner nio4r nokogiri observer oj open3 openssl opt_parse_validator ostruct otr-activerecord parseconfig password_crack pkg-config portfinder portscanner power_assert prime protocol-hpack protocol-http protocol-http1 protocol-http2 pstore psych public_suffix qr4r racc rack rack-protection rake rchardet rdoc readline readline-ext recog reline rest-client rexml rpc-mapper rqrcode_core rss ruby-progressbar ruby_wifi_scanner ruby2_keywords rubydns rubygems-update rubyzip rushover scanny ScanSSL sdbm simple_oauth sinatra singleton slack-notifier smb-client snmp snmpdumper snmpscan spider sqlite3 ssh-exec ssh_scan ssl_scan ssl_scanner stringio strscan sync term-ansicolor test-unit thin thread_safe tilt timeout timers tins tracer twitter typhoeus tzinfo uglifier unf unf_ext uri w3map webrick wordstress wpscan xmlrpc XSpear xss yajl-ruby yaml zeitwerk zlib zola"
 ENTSSL="https://github.com/"
 ENTRAW="https://raw.githubusercontent.com/"
@@ -229,7 +229,7 @@ while true; do
 	echo -ne " 2319. dwisiswant0/apkleaks\n"
 	echo "$SEP"
 	echo "ANONYMIZATION"
-	echo -ne " 2229. htrgouvea/nipe\n"
+	echo -ne " 2229. htrgouvea/nipe\t\t\t\t2348. realgam3/pymultitor\t\t\t\t2350. torsocks/torsocks\n"
 	echo "$SEP"
 	echo "ANTI-FORENSICS - SECURITY"
 	echo -ne " 480. AndyCyberSec/direncrypt\t\t\t577. KuroLabs/stegcloak\t\t\t\t\t590. 1tayH/noisy\n"
@@ -334,9 +334,9 @@ while true; do
 	echo -ne " 1003. DanMcInerney/creds.py\t\t\t1008. galkan/crowbar\t\t\t\t\t1017. Ekultek/Dagon\n"
 	echo -ne " 1019. SideChannelMarvels/Daredevil\t\t\t2296. s3inlc/hashtopolis\n"
 	echo "$SEP"
-	echo "CRAWLING - SPIDERING"
+	echo "CRAWLING - SPIDERING - SCRAPING"
 	echo -ne " 586. saeeddhqan/evine\t\t\t\t722. OWASP/OWASP-WebScarab\t\t\t\t733. gotr00t0day/spider00t\n"
-	echo -ne " 938. lgandx/CCrawlDNS\t\t\t\t941. lanrat/certgraph\n"
+	echo -ne " 938. lgandx/CCrawlDNS\t\t\t\t941. lanrat/certgraph\t\t\t\t\t2341. Pinperepette/whistory\n"
 	echo -ne " 1014. chamli/CyberCrowl\t\t\t1029. kgretzky/dcrawl\t\t\t\t\t2287. galkan/mail-crawl\n"
 	echo "$SEP"
 	echo "CSRF - XSRF"
@@ -604,6 +604,7 @@ while true; do
 	echo -ne " 1079. maxousc59/Blue-Sky-Information-Security\t1074. AeonDave/doork\t\t\t\t\t1082. screetsec/Dracnmap\n"
 	echo -ne " 1119. BC-SECURITY/Empire\t\t\t2299. dr-3am/M-Evil\t\t\t\t\t2317. mdsecactivebreach/SharpShooter\n"
 	echo -ne " 2327. spicesouls/spicescript\t\t2328. spicesouls/spicescript2\t\t\t\t2329. CMEPW/Smersh\n"
+	echo -ne " 2342. guardicore/monkey\t\t\t\t2347. sidaf/homebrew-pentest\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
@@ -611,6 +612,9 @@ while true; do
 	echo -ne " 2240. kpcyrd/sniffglue\t\t\t\t934. MobSF/CapFuzz\t\t\t\t\t2245. kismetwireless/kismet\n"
 	echo -ne " 999. codepr/creak\t\t\t\t38. secdev/scapy\t\t\t\t\t1126. DoubleThreatSecurity/Espionage\n"
 	echo -ne " 1109. s0lst1c3/eaphammer\n"
+	echo "$SEP"
+	echo "MOBILE"
+	echo -ne " 2344. sensepost/objection\n"
 	echo "$SEP"
 	echo "MONGODB - NOSQL"
 	echo -ne " 230. youngyangyang04/NoSQLAttack\t\t231. codingo/NoSQLMap\t\t\t\t\t232. torque59/Nosql-Exploitation-Framework\n"
@@ -629,6 +633,7 @@ while true; do
 	echo "$SEP"
 	echo "OSINT"
 	echo -ne " 845. bharshbarger/AutOSINT\t\t\t875. aancw/Belati\t\t\t\t\t2294. pixelbubble/ProtOSINT\n"
+	echo -ne " 2345. SharadKumar97/OSINT-SPY\n"
 	echo "$SEP"
 	echo "OWA"
 	echo -ne " 343. busterb/msmailprobe\t\t\t344. 0xZDH/o365spray\t\t\t\t\t345. gremwell/o365enum\n"
@@ -640,11 +645,12 @@ while true; do
 	echo -ne " 46. thelinuxchoice/evilpdf\t\t\t47. robins/pdfcrack\t\t\t\t\t48. BroadbentT/PDF-CRACKER/pdf-cracker\n"
 	echo -ne " 2274. superzerosec/evilpdf\n"
 	echo "$SEP"
-	echo "PHISHING"
+	echo "PHISHING - SOCIAL ENGINEERING"
 	echo -ne " 385. blark/cli-phisher\t\t\t\t412. kurogai/nero-phishing-server\t\t\t413. KnightSec-Official/Phlexish\n"
 	echo -ne " 489. david3107/squatm3\t\t\t\t490. netevert/dnsmorph\t\t\t\t\t767. htr-tech/zphisher\n"
 	echo -ne " 771. xxhax-team/vk-phishing\t\t\t937. ring0lab/catphish\t\t\t\t\t983. htr-tech/nexphisher\n"
-	echo -ne " 2277. suljot/shellphish\t\t\t1004. ustayready/CredSniper\n"
+	echo -ne " 2277. suljot/shellphish\t\t\t1004. ustayready/CredSniper\t\t\t\t\t2239. Pinperepette/Geotweet_GUI\n"
+	echo -ne " 2340. Pinperepette/GeoTweet\t\t\t2343. UndeadSec/EvilURL\n"
 	echo "$SEP"
 	echo "PHP"
 	echo -ne " 2247. ecriminal/phpvuln\t\t\t2248. ZaleHack/phpexploit\n"
@@ -715,7 +721,7 @@ while true; do
 	echo "$SEP"
 	echo "REVERSING"
 	echo -ne " 361. yeggor/UEFI_RETool\t\t\t737. gotr00t0day/b1n4ryR3v3rs3\t\t\t\t866. programa-stic/barf-project\n"
-	echo -ne " 1124. thorkill/eresi\n"
+	echo -ne " 1124. thorkill/eresi\t\t\t\t2349. 4w4k3/rePy2exe\n"
 	echo "$SEP"
 	echo "REVSHELL"
 	echo -ne " 515. 3v4Si0N/HTTP-revshell\t\t\t2321. shelld3v/JSshell\n"
@@ -903,6 +909,7 @@ while true; do
 	echo -ne " 466. FortyNorthSecurity/EyeWitness\t\t614. dariusztytko/jwt-key-id-injector\n"
 	echo -ne " 621. s0md3v/Arjun\t\t\t\t789. CoolerVoid/0d1n\t\t\t\t\t2242. poerschke/Uniscan\n"
 	echo -ne " 2283. koutto/web-brutator\t\t\t1026. thesp0nge/dawnscanner\t\t\t\t2297. xmendez/wfuzz\n"
+	echo -ne " 2346. infosecsecurity/Spaghetti\n"
 	echo "$SEP"
 	echo "WEBDAV"
 	echo -ne " 1025. Graph-X/davscan\n"
@@ -9368,13 +9375,14 @@ while true; do
 		Clona "4w4k3/rePy2exe"
 	;;
 	"2350")
-		Clona "Screetsec/Dracnmap"
-	;;
-	"2351")
-		Clona "torsocks/torsocks"
-	;;
-	"2352")
-		git clone https://git.torproject.org/torsocks.git
+		echo "Do you want clone this repo from official git?"
+		read -p "(Y/n): " RSP
+		if [[ "$RSP" == "Y" ]];
+		then
+			git clone https://git.torproject.org/torsocks.git
+		else
+			Clona "torsocks/torsocks"
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
