@@ -417,7 +417,7 @@ while true; do
 	echo -ne " 965. trycatchhcf/cloakify\t\t\t1036. nccgroup/demiguise\t\t\t\t1081. D4Vinci/Dr0p1t-Framework\n"
 	echo "$SEP"
 	echo "EXCHANGE"
-	echo -ne " 571. sensepost/ruler\n"
+	echo -ne " 571. sensepost/ruler\t\t\t\t2351. dirkjanm/PrivExchange\n"
 	echo "$SEP"
 	echo "EXFILTRATION"
 	echo -ne " 314. danielwolfmann/Invoke-WordThief/logger\t593. TryCatchHCF/PacketWhisper\n"
@@ -9383,6 +9383,9 @@ while true; do
 		else
 			Clona "torsocks/torsocks"
 		fi
+	;;
+	"2351")
+		Clona "dirkjanm/PrivExchange"
 	;;
 	*)
 		echo "error, invalid choice"
