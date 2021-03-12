@@ -888,7 +888,7 @@ while true; do
 	echo -ne " 76. print all functions of a binary\t\t135. dump all opcodes from a binary\n"
 	echo -ne " 2261. Encrypt and Encode a file to pass in remote host\t\t\t\t\t\t\t2267. install a python hacking package\n"
 	echo -ne " 2268. install a python3 hacking package\t2289. install a ruby hacking gem\t\t\t\tPrepare RevShell for Windows\n"
-	echo -ne " 2337. install a deb package\t\t\t2338. install a browser\n"
+	echo -ne " 2337. install a deb package\t\t\t2338. install a browsert\t\t\t\t\t\t2353. Pull a Docker image\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -9390,6 +9390,15 @@ while true; do
 	;;
 	"2352")
 		Clona "bhavsec/reconspider"
+	;;
+	"2353")
+		select DIM in "szalek/pentest-tools"
+		do
+			if [[ "$DIM" != "" ]];
+			then
+				docker pull "$DIM"":latest"
+			fi
+		done
 	;;
 	*)
 		echo "error, invalid choice"
