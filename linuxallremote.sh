@@ -9334,6 +9334,48 @@ while true; do
 			break
 		done
 	;;
+	"2339")
+		Clona "Pinperepette/Geotweet_GUI"
+	;;
+	"2340")
+		Clona "Pinperepette/GeoTweet"
+	;;
+	"2341")
+		Scarica "$ENTRAW""Pinperepette/whistory/master/whistory.py"
+	;;
+	"2342")
+		Clona "guardicore/monkey"
+	;;
+	"2343")
+		Clona "UndeadSec/EvilURL"
+	;;
+	"2344")
+		Clona "sensepost/objection"
+	;;
+	"2345")
+		Clona "SharadKumar97/OSINT-SPY"
+	;;
+	"2346")
+		Clona "infosecsecurity/Spaghetti"
+	;;
+	"2347")
+		Clona "sidaf/homebrew-pentest"
+	;;
+	"2348")
+		Clona "realgam3/pymultitor"
+	;;
+	"2349")
+		Clona "4w4k3/rePy2exe"
+	;;
+	"2350")
+		Clona "Screetsec/Dracnmap"
+	;;
+	"2351")
+		Clona "torsocks/torsocks"
+	;;
+	"2352")
+		git clone https://git.torproject.org/torsocks.git
+	;;
 	*)
 		echo "error, invalid choice"
 	;;
