@@ -9331,6 +9331,7 @@ while true; do
 					apt update && apt install vivaldi-stable
 				;;
 			esac
+			break
 		done
 	;;
 	*)
