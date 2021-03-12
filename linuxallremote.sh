@@ -9392,7 +9392,7 @@ while true; do
 		Clona "bhavsec/reconspider"
 	;;
 	"2353")
-		select DIM in "szalek/pentest-tools"
+		select DIM in "instrumentisto/nmap" "szalek/pentest-tools"
 		do
 			if [[ "$DIM" != "" ]];
 			then
