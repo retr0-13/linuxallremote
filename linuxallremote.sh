@@ -13,6 +13,7 @@ SEP=$(for (( I=0 ; I<$(tput cols) ; I++ )); do printf '_'; done)
 ALD="/storage/emulated/legacy/Download/"
 AZD="/storage/emulated/0/Download/"
 WBE="For a better experience, please install "
+FMSG="press ENTER to continue..."
 
 function ScaricaIn
 {
@@ -148,49 +149,49 @@ echo "linuxallremote, by FabioDefilippoSoftware"
 if [[ ! -f $(which lynx) ]];
 then
 	echo "$WBE""lynx"
-	read -p "press ENTER to continue..."
+	read -p "$FMSG"
 fi
 
 if [[ ! -f $(which tput) ]];
 then
 	echo "$WBE""tput"
-	read -p "press ENTER to continue..."
+	read -p "$FMSG"
 fi
 
 if [[ ! -f $(which git) ]];
 then
 	echo "$WBE""git"
-	read -p "press ENTER to continue..."
+	read -p "$FMSG"
 fi
 
 if [[ ! -f $(which strace) ]];
 then
 	echo "$WBE""strace"
-	read -p "press ENTER to continue..."
+	read -p "$FMSG"
 fi
 
 if [[ ! -f $(which ltrace) ]];
 then
 	echo "$WBE""ltrace"
-	read -p "press ENTER to continue..."
+	read -p "$FMSG"
 fi
 
 if [[ ! -f $(which hydra) ]];
 then
 	echo "$WBE""hydra"
-	read -p "press ENTER to continue..."
+	read -p "$FMSG"
 fi
 
 if [[ ! -f $(which nmblookup) ]];
 then
 	echo "$WBE""nmblookup"
-	read -p "press ENTER to continue..."
+	read -p "$FMSG"
 fi
 
 if [[ ! -f $(which rlogin) ]];
 then
 	echo "$WBE""rlogin"
-	read -p "press ENTER to continue..."
+	read -p "$FMSG"
 fi
 
 while true; do
@@ -9407,6 +9408,6 @@ while true; do
 		echo "error, invalid choice"
 	;;
 	esac
-	read -p "press ENTER to continue.."
+	read -p "$FMSG"
 	echo -ne "\n$SEP\n\n"
 done
