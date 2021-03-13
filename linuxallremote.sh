@@ -99,12 +99,25 @@ function ClonaLab
 
 function Clona
 {
-	echo "Do you want download the release?"
-	echo "If you do not want, you will clone the repo"
-	echo "WARNING: if a release does not exist, you will clone the repo anyway"
-	read -p "(Y/n): " RSP
-	if [[ "$RSP" == "Y" ]];
-	then
+	echo "Choose what version you want to download"
+	echo -ne "1. Dockerfile\n2. Release\n3. Clone\n"
+	read -p "(default 1): " CVR
+	case "$CVR" in
+	"1")
+		if [[ $(wget -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200"* ]];
+		then
+			Scarica "$ENTRAW""$1""/master/""$DKF" "$DKF"
+		else
+			if [[ $(wget -S --spider "$ENTRAW""$1""/main/""$DKF" 2>&1) == *"200"* ]];
+			then
+				Scarica "$ENTRAW""$1""/main/""$DKF" "$DKF"
+			else
+				echo "This repo has not a Dockerfile, please choose another version"
+				CVR="2"
+			fi
+		fi
+	;;
+	"2")
 		if [[ -f $(which lynx) ]];
 		then
 			RLS="/releases"
@@ -122,12 +135,14 @@ function Clona
 					break
 				done
 			else
-				git clone "$ENTSSL""$1"".git"
+				echo "This repo has not a release, please choose another version"
 			fi
 		fi
-	else
+	;;
+	*)
 		git clone "$ENTSSL""$1"".git"
-	fi
+	;;
+	esac
 }
 
 function Scarica
