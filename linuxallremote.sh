@@ -764,7 +764,8 @@ while true; do
 	echo -ne " 79. pablocelayes/rsa-wiener-attack\n"
 	echo "$SEP"
 	echo "S7"
-	echo -ne " 2358. klsecservices/s7scan\n"
+	echo -ne " 2358. klsecservices/s7scan\t\t\t2360. hslatman/awesome-industrial-control-system-security/s7-cracker\n"
+	echo -ne " 2361. hslatman/awesome-industrial-control-system-security/s7-brute-offline\n"
 	echo "$SEP"
 	echo "SCANNING"
 	echo -ne " 188. GrrrDog/FlashAV\t\t\t\t191. m57/piescan\t\t\t\t\t192. projectdiscovery/naabu\n"
@@ -9437,6 +9438,12 @@ while true; do
 	;;
 	"2359")
 		Clona "khaleds-brain/Bella"
+	;;
+	"2360")
+		Scarica "$ENTRAW""hslatman/awesome-industrial-control-system-security/main/source/s7-cracker.py"
+	;;
+	"2361")
+		Scarica "$ENTRAW""hslatman/awesome-industrial-control-system-security/main/source/s7-brute-offline.py"
 	;;
 	*)
 		echo "error, invalid choice"
