@@ -101,7 +101,7 @@ function Clona
 {
 	echo "Choose what version you want to download"
 	echo -ne "1. Dockerfile\n2. Release\n3. Clone\n"
-	read -p "(default 1): " CVR
+	read -p "(default 3): " CVR
 	case "$CVR" in
 	"1")
 		if [[ $(wget -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200"* ]];
