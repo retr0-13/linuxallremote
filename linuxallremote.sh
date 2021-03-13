@@ -9404,6 +9404,21 @@ while true; do
 	"2354")
 		Clona "py2exe/py2exe"
 	;;
+	"2355")
+		Clona "paranoidninja/CarbonCopy"
+	;;
+	"2356")
+		Clona "Mr-Un1k0d3r/UniByAv"
+	;;
+	"2357")
+		Clona "fireeye/gocrack"
+	;;
+	"2358")
+		Clona "klsecservices/s7scan"
+	;;
+	"2359")
+		Clona "khaleds-brain/Bella"
+	;;
 	*)
 		echo "error, invalid choice"
 	;;
