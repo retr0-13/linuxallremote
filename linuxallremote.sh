@@ -926,7 +926,7 @@ while true; do
 	echo "WEBAPP"
 	echo -ne " 96. m4ll0k/WPSeku\t\t\t\t97. swisskyrepo/Wordpresscan\t\t\t\t98. RamadhanAmizudin/Wordpress-scanner\n"
 	echo -ne " 122. rezasp/joomscan\t\t\t\t123. rastating/joomlavs\t\t\t\t\t124. RedVirus0/BlackDir-Framework\n"
-	echo -ne " 198. wpscanteam/wpscan\t\t\t\t200. 04x/WpscaN/ICgWpScaNNer\n"
+	echo -ne " 198. wpscanteam/wpscan\t\t\t\t200. 04x/WpscaN/ICgWpScaNNer\t\t\t\t2362. oppsec/Squid\n"
 	echo -ne " 201. The404Hacking/wpscan\t\t\t202. drego85/JoomlaScan\t\t\t\t\t287. boku7/LibreHealth-authRCE\n"
 	echo -ne " 466. FortyNorthSecurity/EyeWitness\t\t614. dariusztytko/jwt-key-id-injector\n"
 	echo -ne " 621. s0md3v/Arjun\t\t\t\t789. CoolerVoid/0d1n\t\t\t\t\t2242. poerschke/Uniscan\n"
@@ -9444,6 +9444,9 @@ while true; do
 	;;
 	"2361")
 		Scarica "$ENTRAW""hslatman/awesome-industrial-control-system-security/main/source/s7-brute-offline.py"
+	;;
+	"2362")
+		Clona "oppsec/Squid"
 	;;
 	*)
 		echo "error, invalid choice"
