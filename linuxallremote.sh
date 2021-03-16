@@ -623,6 +623,7 @@ while true; do
 	echo -ne " 1119. BC-SECURITY/Empire\t\t\t2299. dr-3am/M-Evil\t\t\t\t\t2317. mdsecactivebreach/SharpShooter\n"
 	echo -ne " 2327. spicesouls/spicescript\t\t2328. spicesouls/spicescript2\t\t\t\t2329. CMEPW/Smersh\n"
 	echo -ne " 2342. guardicore/monkey\t\t\t\t2347. sidaf/homebrew-pentest\t\t\t\t2364. 1N3/BlackWidow\n"
+	echo -ne " 2365. mikesplain/openvas-docker\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
@@ -9453,6 +9454,9 @@ while true; do
 	;;
 	"2364")
 		Clona "1N3/BlackWidow"
+	;;
+	"2365")
+		Clona "mikesplain/openvas-docker"
 	;;
 	*)
 		echo "error, invalid choice"
