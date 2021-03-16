@@ -232,7 +232,7 @@ while true; do
 	echo -ne " 975. EgeBalci/Cminer\t\t\t\t2266. presidentbeef/brakeman\t\t\t\t1112. elfmaster/ecfs\n"
 	echo -ne " 1006. SpiderLabs/cribdrag\t\t\t1018. 504ensicsLabs/DAMM\t\t\t\t1041. spectresearch/detectem\n"
 	echo -ne " 1093. USArmyResearchLab/Dshell\t\t\t1104. dungtv543/Dutas\t\t\t\t\t1107. DynamoRIO/dynamorio\n"
-	echo -ne " 1115. jacob-baines/elfparser\t\t\t2307. rizinorg/rizin\n"
+	echo -ne " 1115. jacob-baines/elfparser\t\t\t2307. rizinorg/rizin\t\t\t\t2373. visma-prodsec/confused\n"
 	echo "$SEP"
 	echo "ANDROID - APK"
 	echo -ne " 128. xtiankisutsa/MARA_Framework\t\t274. yasoob/nrc-exporter\t\t\t\t277. mzfr/slicer\n"
@@ -9481,6 +9481,9 @@ while true; do
 	;;
 	"2372")
 		Clona "0dayCTF/reverse-shell-generator"
+	;;
+	"2373")
+		Clona "visma-prodsec/confused"
 	;;
 	*)
 		echo "error, invalid choice"
