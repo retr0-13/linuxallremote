@@ -784,6 +784,7 @@ while true; do
 	echo -ne " 835. AlisamTechnology/ATSCAN-V3.1\t\t871. lijiejie/bbscan\t\t\t\t\t873. invictus1306/beebug\n"
 	echo -ne " 927. auraltension/c5scan\t\t\t943. ztgrace/changeme\t\t\t\t\t1097. stamparm/DSXS\n"
 	echo -ne " 1092. stamparm/DSFS\t\t\t\t1094. stamparm/DSJS\t\t\t\t\t1095. stamparm/DSSS\n"
+	echo -ne " 2366. lengjibo/dedecmscan\n"
 	echo "$SEP"
 	echo "SHELL"
 	echo -ne " 70. sameera-madushan/Print-My-Shell\t\t71. flozz/p0wny-shell/shell\t\t\t\t87. rastating/slae\n"
@@ -9457,6 +9458,9 @@ while true; do
 	;;
 	"2365")
 		Clona "mikesplain/openvas-docker"
+	;;
+	"2366")
+		Clona "lengjibo/dedecmscan"
 	;;
 	*)
 		echo "error, invalid choice"
