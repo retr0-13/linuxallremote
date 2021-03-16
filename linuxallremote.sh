@@ -943,6 +943,7 @@ while true; do
 	echo "WEBCAMS"
 	echo -ne " 395. JettChenT/scan-for-webcams\t\t396. entynetproject/entropy\t\t\t\t397. indexnotfound404/spycam\n"
 	echo -ne " 471. jimywork/shodanwave\t\t\t479. SuperBuker/CamHell\t\t\t\t\t564. vanhienfs/saycheese\n"
+	echo -ne " 2374. techchipnet/CamPhish\n"
 	echo "$SEP"
 	echo "WEBSHELL"
 	echo -ne " 562. tennc/webshell\t\t\t\t574. epinna/weevely3\t\t\t\t\t608. jackrendor/cookiedoor\n"
@@ -9484,6 +9485,9 @@ while true; do
 	;;
 	"2373")
 		Clona "visma-prodsec/confused"
+	;;
+	"2374")
+		Clona "techchipnet/CamPhish"
 	;;
 	*)
 		echo "error, invalid choice"
