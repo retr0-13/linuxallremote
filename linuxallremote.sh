@@ -931,7 +931,7 @@ while true; do
 	echo -ne " 466. FortyNorthSecurity/EyeWitness\t\t614. dariusztytko/jwt-key-id-injector\n"
 	echo -ne " 621. s0md3v/Arjun\t\t\t\t789. CoolerVoid/0d1n\t\t\t\t\t2242. poerschke/Uniscan\n"
 	echo -ne " 2283. koutto/web-brutator\t\t\t1026. thesp0nge/dawnscanner\t\t\t\t2297. xmendez/wfuzz\n"
-	echo -ne " 2346. infosecsecurity/Spaghetti\n"
+	echo -ne " 2346. infosecsecurity/Spaghetti\t\t2363. lirantal/is-website-vulnerable\n"
 	echo "$SEP"
 	echo "WEBDAV"
 	echo -ne " 1025. Graph-X/davscan\n"
@@ -9447,6 +9447,9 @@ while true; do
 	;;
 	"2362")
 		Clona "oppsec/Squid"
+	;;
+	"2363")
+		Clona "lirantal/is-website-vulnerable"
 	;;
 	*)
 		echo "error, invalid choice"
