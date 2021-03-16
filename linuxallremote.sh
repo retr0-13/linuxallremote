@@ -744,7 +744,7 @@ while true; do
 	echo -ne " 1124. thorkill/eresi\t\t\t\t2349. 4w4k3/rePy2exe\n"
 	echo "$SEP"
 	echo "REVSHELL"
-	echo -ne " 515. 3v4Si0N/HTTP-revshell\t\t\t2321. shelld3v/JSshell\n"
+	echo -ne " 515. 3v4Si0N/HTTP-revshell\t\t\t2321. shelld3v/JSshell\t\t\t\t\t2372. 0dayCTF/reverse-shell-generator\n"
 	echo "$SEP"
 	echo "RMI"
 	echo -ne " 867. NickstaDB/BaRMIe\n"
@@ -9478,6 +9478,9 @@ while true; do
 	;;
 	"2371")
 		Clona "The404Hacking/XsSCan"
+	;;
+	"2372")
+		Clona "0dayCTF/reverse-shell-generator"
 	;;
 	*)
 		echo "error, invalid choice"
