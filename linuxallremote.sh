@@ -354,6 +354,7 @@ while true; do
 	echo -ne " 586. saeeddhqan/evine\t\t\t\t722. OWASP/OWASP-WebScarab\t\t\t\t733. gotr00t0day/spider00t\n"
 	echo -ne " 938. lgandx/CCrawlDNS\t\t\t\t941. lanrat/certgraph\t\t\t\t\t2341. Pinperepette/whistory\n"
 	echo -ne " 1014. chamli/CyberCrowl\t\t\t1029. kgretzky/dcrawl\t\t\t\t\t2287. galkan/mail-crawl\n"
+	echo -ne " 2370. spatie/mixed-content-scanner\n"
 	echo "$SEP"
 	echo "CSRF - XSRF"
 	echo -ne " 406. 0xInfection/XSRFProbe\t\t\t2278. s0md3v/Bolt\n"
@@ -785,6 +786,7 @@ while true; do
 	echo -ne " 927. auraltension/c5scan\t\t\t943. ztgrace/changeme\t\t\t\t\t1097. stamparm/DSXS\n"
 	echo -ne " 1092. stamparm/DSFS\t\t\t\t1094. stamparm/DSJS\t\t\t\t\t1095. stamparm/DSSS\n"
 	echo -ne " 2366. lengjibo/dedecmscan\n"
+	echo -ne " 2367. k8gege/K8PortScan\t\t\t\t2368. k8gege/K8tools\t\t\t\t2369. xs25cn/scanPort\n"
 	echo "$SEP"
 	echo "SHELL"
 	echo -ne " 70. sameera-madushan/Print-My-Shell\t\t71. flozz/p0wny-shell/shell\t\t\t\t87. rastating/slae\n"
@@ -969,7 +971,7 @@ while true; do
 	echo "$SEP"
 	echo "XSS - XPATH"
 	echo -ne " 55. hahwul/dalfox\t\t\t\t164. s0md3v/XSStrike\t\t\t\t\t44. lc/gau\n"
-	echo -ne " 176. sullo/nikto\t\t\t\t180. faizann24/XssPy\n"
+	echo -ne " 176. sullo/nikto\t\t\t\t180. faizann24/XssPy\t\t\t\t\t2371. The404Hacking/XsSCan\n"
 	echo -ne " 181. secdec/xssmap\t\t\t\t182. gbrindisi/xsssniper\t\t\t\t183. pwn0sec/PwnXSS\n"
 	echo -ne " 184. lwzSoviet/NoXss\t\t\t\t394. Jewel591/xssmap\t\t\t\t\t558. dwisiswant0/findom-xss\n"
 	echo -ne " 620. hahwul/XSpear\t\t\t\t623. r0oth3x49/Xpath\t\t\t\t\t780. capture0x/XSS-LOADER\n"
@@ -9461,6 +9463,21 @@ while true; do
 	;;
 	"2366")
 		Clona "lengjibo/dedecmscan"
+	;;
+	"2367")
+		Scarica "$ENTRAW""k8gege/K8PortScan/master/K8PortScan.py"
+	;;
+	"2368")
+		Scarica "$ENTSSL""k8gege/K8tools/raw/master/K8PortScan_Kali_x86"
+	;;
+	"2369")
+		Clona "xs25cn/scanPort"
+	;;
+	"2370")
+		Clona "spatie/mixed-content-scanner"
+	;;
+	"2371")
+		Clona "The404Hacking/XsSCan"
 	;;
 	*)
 		echo "error, invalid choice"
