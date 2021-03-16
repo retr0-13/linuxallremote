@@ -713,7 +713,7 @@ while true; do
 	echo "$SEP"
 	echo "RAT"
 	echo -ne " 536. Pure-L0G1C/Loki\t\t\t\t2230. fadinglr/Parat\t\t\t\t\t2235. BenChaliah/Arbitrium-RAT\n"
-	echo -ne " 2330. FrenchCisco/RATel\t\t\t\t2359. khaleds-brain/Bella\n"
+	echo -ne " 2330. FrenchCisco/RATel\t\t\t\t2359. khaleds-brain/Bella\t\t\t\t2375. nathanlopez/Stitch\n"
 	echo "$SEP"
 	echo "RDP"
 	echo -ne " 86. ekultek/bluekeep\t\t\t\t328. citronneur/rdpy\t\t\t\t\t329. aerissecure/rdpy\n"
@@ -9488,6 +9488,9 @@ while true; do
 	;;
 	"2374")
 		Clona "techchipnet/CamPhish"
+	;;
+	"2375")
+		Clona "nathanlopez/Stitch"
 	;;
 	*)
 		echo "error, invalid choice"
