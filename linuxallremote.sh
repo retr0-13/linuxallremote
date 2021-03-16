@@ -622,7 +622,7 @@ while true; do
 	echo -ne " 1079. maxousc59/Blue-Sky-Information-Security\t1074. AeonDave/doork\t\t\t\t\t1082. screetsec/Dracnmap\n"
 	echo -ne " 1119. BC-SECURITY/Empire\t\t\t2299. dr-3am/M-Evil\t\t\t\t\t2317. mdsecactivebreach/SharpShooter\n"
 	echo -ne " 2327. spicesouls/spicescript\t\t2328. spicesouls/spicescript2\t\t\t\t2329. CMEPW/Smersh\n"
-	echo -ne " 2342. guardicore/monkey\t\t\t\t2347. sidaf/homebrew-pentest\n"
+	echo -ne " 2342. guardicore/monkey\t\t\t\t2347. sidaf/homebrew-pentest\t\t\t\t2364. 1N3/BlackWidow\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
@@ -9450,6 +9450,9 @@ while true; do
 	;;
 	"2363")
 		Clona "lirantal/is-website-vulnerable"
+	;;
+	"2364")
+		Clona "1N3/BlackWidow"
 	;;
 	*)
 		echo "error, invalid choice"
