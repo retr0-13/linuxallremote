@@ -345,7 +345,7 @@ while true; do
 	echo -ne " 630. beurtschipper/Depix\t\t\t632. x90skysn3k/brutespray\t\t\t\t762. f0cker/crackq\n"
 	echo -ne " 763. hashcrackq/Crackq\t\t\t\t811. PentesterES/AndroidPINCrack\t\t\t838. Tylous/Auto_EAP\n"
 	echo -ne " 924. webpwnized/byepass\t\t\t915. 1N3/BruteX\t\t\t\t\t\t912. glv2/bruteforce-luks\n"
-	echo -ne " 913. glv2/bruteforce-salted-openssl\t\t992. D4Vinci/Cr3dOv3r\n"
+	echo -ne " 913. glv2/bruteforce-salted-openssl\t\t992. D4Vinci/Cr3dOv3r\t\t\t2380. frdmn/findmyhash\n"
 	echo -ne " 994. CoalfireLabs/crackHOR\t\t\t996. vnik5287/Crackq\t\t\t\t\t997. averagesecurityguy/crack\n"
 	echo -ne " 1003. DanMcInerney/creds.py\t\t\t1008. galkan/crowbar\t\t\t\t\t1017. Ekultek/Dagon\n"
 	echo -ne " 1019. SideChannelMarvels/Daredevil\t\t\t2296. s3inlc/hashtopolis\t\t\t2357. fireeye/gocrack\n"
@@ -539,6 +539,7 @@ while true; do
 	echo "$SEP"
 	echo "IMAP"
 	echo -ne " 204. byt3bl33d3r/SprayingToolkit\t\t205. mrexodia/haxxmap\t\t\t\t\t207. iomoath/IMAP-Cracker\n"
+	echo -ne " 2379. kurobeats/fimap\n"
 	echo "$SEP"
 	echo "IMSI"
 	echo -ne " 387. Oros42/IMSI-catcher\t\t\t386. sharyer/GSMEvil/ImsiEvil\n"
@@ -9500,6 +9501,12 @@ while true; do
 	;;
 	"2378")
 		Clona "madrisan/cisco5crack"
+	;;
+	"2379")
+		Clona "kurobeats/fimap"
+	;;
+	"2380")
+		Scarica "$ENTRAW""frdmn/findmyhash/master/findmyhash.py"
 	;;
 	*)
 		echo "error, invalid choice"
