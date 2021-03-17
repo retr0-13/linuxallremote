@@ -21,9 +21,12 @@ Over 1000 tools and utilities:
 - install all hacking tools in Android Termux too;
 - download hacking APKs for Android rooted devices;
 - manual python and ruby hacking packages install by pip, pip3 and gem;
+- choose between Dockerfile and binary versions;
 
 and much more...
 
 Please, share and starring my repos, follow me and... Happy hacking!
 
 Twitter:<a href="https://twitter.com/fabio_defilippo">@fabio_defilippo</a>
+
+https://www.paypal.com/donate?hosted_button_id=559D4CJB84KQJ
