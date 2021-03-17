@@ -317,7 +317,7 @@ while true; do
 	echo -ne " 381. LatrecheYasser/Secure-Python-Chat\t\t382. spec-sec/SecureChat\n"
 	echo "$SEP"
 	echo "CISCO"
-	echo -ne " 463. Zapotek/cdpsnarf\t\t\t\t959. madrisan/cisco7crack\n"
+	echo -ne " 463. Zapotek/cdpsnarf\t\t\t\t959. madrisan/cisco7crack\t\t\t\t\t2378. madrisan/cisco5crack\n"
 	echo "$SEP"
 	echo "CLOUDFLARE"
 	echo -ne " 966. SageHack/cloud-buster\t\t\t967. m0rtem/CloudFail\t\t\t\t\t968. mandatoryprogrammer/cloudflare_enum\n"
@@ -345,7 +345,7 @@ while true; do
 	echo -ne " 630. beurtschipper/Depix\t\t\t632. x90skysn3k/brutespray\t\t\t\t762. f0cker/crackq\n"
 	echo -ne " 763. hashcrackq/Crackq\t\t\t\t811. PentesterES/AndroidPINCrack\t\t\t838. Tylous/Auto_EAP\n"
 	echo -ne " 924. webpwnized/byepass\t\t\t915. 1N3/BruteX\t\t\t\t\t\t912. glv2/bruteforce-luks\n"
-	echo -ne " 913. glv2/bruteforce-salted-openssl\t\t992. D4Vinci/Cr3dOv3r\t\t\t\t\t1075. CoalfireLabs/crackHOR\n"
+	echo -ne " 913. glv2/bruteforce-salted-openssl\t\t992. D4Vinci/Cr3dOv3r\n"
 	echo -ne " 994. CoalfireLabs/crackHOR\t\t\t996. vnik5287/Crackq\t\t\t\t\t997. averagesecurityguy/crack\n"
 	echo -ne " 1003. DanMcInerney/creds.py\t\t\t1008. galkan/crowbar\t\t\t\t\t1017. Ekultek/Dagon\n"
 	echo -ne " 1019. SideChannelMarvels/Daredevil\t\t\t2296. s3inlc/hashtopolis\t\t\t2357. fireeye/gocrack\n"
@@ -354,7 +354,7 @@ while true; do
 	echo -ne " 586. saeeddhqan/evine\t\t\t\t722. OWASP/OWASP-WebScarab\t\t\t\t733. gotr00t0day/spider00t\n"
 	echo -ne " 938. lgandx/CCrawlDNS\t\t\t\t941. lanrat/certgraph\t\t\t\t\t2341. Pinperepette/whistory\n"
 	echo -ne " 1014. chamli/CyberCrowl\t\t\t1029. kgretzky/dcrawl\t\t\t\t\t2287. galkan/mail-crawl\n"
-	echo -ne " 2370. spatie/mixed-content-scanner\n"
+	echo -ne " 2370. spatie/mixed-content-scanner\t\t1075. maurosoria/dirsearch\n"
 	echo "$SEP"
 	echo "CSRF - XSRF"
 	echo -ne " 406. 0xInfection/XSRFProbe\t\t\t2278. s0md3v/Bolt\n"
@@ -509,7 +509,7 @@ while true; do
 	echo -ne " 1076. utiso/dorkbot\t\t\t\t1077. blueudp/DorkMe\t\t\t\t\t1078. NullArray/DorkNet\n"
 	echo -ne " 1118. martinvigo/email2phonenumber\t\t2302. josh0xA/darkdump\t\t\t\t2314. FortyNorthSecurity/Just-Metadata\n"
 	echo -ne " 2316. davidtavarez/pwndb\t\t\t2326. j3ers3/Searpy\t\t\t\t\t1628. behindthefirewalls/Parsero\n"
-	echo -ne " 2352. bhavsec/reconspider\n"
+	echo -ne " 2352. bhavsec/reconspider\t\t\t2376. caffix/amass\n"
 	echo "$SEP"
 	echo "GIT - REPOS"
 	echo -ne " 487. arthaud/git-dumper\t\t\t553. Ebryx/GitDump\t\t\t\t\t2315. metac0rtex/GitHarvester\n"
@@ -5456,7 +5456,7 @@ while true; do
 		Clona "AeonDave/doork"
 	;;
 	"1075")
-		Clona "CoalfireLabs/crackHOR"
+		Clona "maurosoria/dirsearch"
 	;;
 	"1076")
 		Clona "utiso/dorkbot"
@@ -9491,6 +9491,15 @@ while true; do
 	;;
 	"2375")
 		Clona "nathanlopez/Stitch"
+	;;
+	"2376")
+		Clona "caffix/amass"
+	;;
+	"2377")
+		Clona "programmingAthlete/BruteSniffing_Fisher"
+	;;
+	"2378")
+		Clona "madrisan/cisco5crack"
 	;;
 	*)
 		echo "error, invalid choice"
