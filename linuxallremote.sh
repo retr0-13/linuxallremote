@@ -9508,6 +9508,33 @@ while true; do
 	"2380")
 		Scarica "$ENTRAW""frdmn/findmyhash/master/findmyhash.py"
 	;;
+	"2381")
+		echo "Navigate to ""$ENTSSL""andrew-d/static-binaries/tree/master/binaries/linux/x86_64"
+		echo "Digit a binary to download"
+		read -p "(example, socat): " BFL
+		if [[ "$BFL" != "" ]];
+		then
+			Scarica "$ENTSSL""andrew-d/static-binaries/raw/master/binaries/linux/x86_64/""$BFL"
+		fi
+	;;
+	"2382")
+		echo "Navigate to ""$ENTSSL""andrew-d/static-binaries/tree/master/binaries/linux/x86"
+		echo "Digit a binary to download"
+		read -p "(example, socat): " BFL
+		if [[ "$BFL" != "" ]];
+		then
+			Scarica "$ENTSSL""andrew-d/static-binaries/raw/master/binaries/linux/x86/""$BFL"
+		fi
+	;;
+	"2383")
+		echo "Navigate to ""$ENTSSL""andrew-d/static-binaries/tree/master/binaries/linux/arm"
+		echo "Digit a binary to download"
+		read -p "(example, socat): " BFL
+		if [[ "$BFL" != "" ]];
+		then
+			Scarica "$ENTSSL""andrew-d/static-binaries/raw/master/binaries/linux/arm/""$BFL"
+		fi
+	;;
 	*)
 		echo "error, invalid choice"
 	;;
