@@ -626,7 +626,7 @@ while true; do
 	echo -ne " 2327. spicesouls/spicescript\t\t2328. spicesouls/spicescript2\t\t\t\t2329. CMEPW/Smersh\n"
 	echo -ne " 2342. guardicore/monkey\t\t\t\t2347. sidaf/homebrew-pentest\t\t\t\t2364. 1N3/BlackWidow\n"
 	echo -ne " 2365. mikesplain/openvas-docker\t\t2377. programmingAthlete/BruteSniffing_Fisher\n"
-	echo -ne " 2381. andrew-d/static-binaries/linux/x86_x64\t\t2382. andrew-d/static-binaries/linux/x86\n"
+	echo -ne " 2381. andrew-d/static-binaries/linux/x86_64\t\t2382. andrew-d/static-binaries/linux/x86\n"
 	echo -ne " 2383. andrew-d/static-binaries/linux/arm\n"
 	echo "$SEP"
 	echo "MITM"
