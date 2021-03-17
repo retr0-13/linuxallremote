@@ -27,6 +27,6 @@ and much more...
 
 Please, share and starring my repos, follow me and... Happy hacking!
 
-Twitter:<a href="https://twitter.com/fabio_defilippo">@fabio_defilippo</a>
+Twitter: <a href="https://twitter.com/fabio_defilippo">@fabio_defilippo</a>
 
-Donate: https://www.paypal.com/donate?hosted_button_id=559D4CJB84KQJ
+If you want, you could <a href="https://www.paypal.com/donate?hosted_button_id=559D4CJB84KQJ">buy me a coffee</a>
