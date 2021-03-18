@@ -603,7 +603,7 @@ while true; do
 	echo -ne " 284. brutemap-dev/brutemap\t\t\t288. dark-lbp/isf\t\t\t\t\t289. onccgroup/redsnarf\n"
 	echo -ne " 296. Z4nzu/hackingtool\t\t\t\t304. GitHackTools/BruteDum/brutedum\t\t\t1080. ucsb-seclab/dr_checker\n"
 	echo -ne " 310. future-architect/vuls\t\t\t311. ethicalhackerproject/TaiPan\t\t\t319. marcrowProject/Bramble\n"
-	echo -ne " 320. stevemcilwain/quiver\t\t\t322. abdulr7mann/hackerEnv\t\t\t\t359. lgandx/Responder\n"
+	echo -ne " 320. stevemcilwain/quiver\t\t\t322. abdulr7mann/hackerEnv\n"
 	echo -ne " 392. zerosum0x0/koadic\t\t\t\t403. Screetsec/TheFatRat\t\t\t\t2250. its-a-feature/Mythic\n"
 	echo -ne " 408. AdrianVollmer/PowerHub\t\t\t439. DarkSecDevelopers/HiddenEye\t\t\t481. 0xInfection/TIDoS-Framework\n"
 	echo -ne " 485. r3dxpl0it/TheXFramework\t\t\t488. Taguar258/Raven-Storm\t\t\t\t514. maxlandon/wiregost\n"
@@ -634,7 +634,7 @@ while true; do
 	echo -ne " 764. Esser420/EvilTwinFramework\t\t801. Josue87/Airopy\t\t\t\t\t872. secretsquirrel/BDFProxy\n"
 	echo -ne " 2240. kpcyrd/sniffglue\t\t\t\t934. MobSF/CapFuzz\t\t\t\t\t2245. kismetwireless/kismet\n"
 	echo -ne " 999. codepr/creak\t\t\t\t38. secdev/scapy\t\t\t\t\t1126. DoubleThreatSecurity/Espionage\n"
-	echo -ne " 1109. s0lst1c3/eaphammer\n"
+	echo -ne " 1109. s0lst1c3/eaphammer\t\t\t2384. SpiderLabs/Responder\t\t\t\t\t359. lgandx/Responder\n"
 	echo "$SEP"
 	echo "MOBILE"
 	echo -ne " 2344. sensepost/objection\n"
@@ -9536,6 +9536,9 @@ while true; do
 		then
 			Scarica "$ENTSSL""andrew-d/static-binaries/raw/master/binaries/linux/arm/""$BFL"
 		fi
+	;;
+	"2384")
+		Clona "SpiderLabs/Responder"
 	;;
 	*)
 		echo "error, invalid choice"
