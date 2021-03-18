@@ -635,6 +635,7 @@ while true; do
 	echo -ne " 2240. kpcyrd/sniffglue\t\t\t\t934. MobSF/CapFuzz\t\t\t\t\t2245. kismetwireless/kismet\n"
 	echo -ne " 999. codepr/creak\t\t\t\t38. secdev/scapy\t\t\t\t\t1126. DoubleThreatSecurity/Espionage\n"
 	echo -ne " 1109. s0lst1c3/eaphammer\t\t\t2384. SpiderLabs/Responder\t\t\t\t\t359. lgandx/Responder\n"
+	echo -ne " 2385. hausec/ProxyLogon\n"
 	echo "$SEP"
 	echo "MOBILE"
 	echo -ne " 2344. sensepost/objection\n"
@@ -9539,6 +9540,9 @@ while true; do
 	;;
 	"2384")
 		Clona "SpiderLabs/Responder"
+	;;
+	"2385")
+		Scarica "$ENTRAW""hausec/ProxyLogon/main/proxylogon.py"
 	;;
 	*)
 		echo "error, invalid choice"
