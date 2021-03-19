@@ -1083,10 +1083,10 @@ while true; do
 	"10")
 		OFFSEC="offensive-security/exploitdb/"
 		MEX="master/exploits/"
+		ENTTO="$ENTRAW""$OFFSEC""$MEX""linux/remote/"
 		if [[ -f $(which lynx) ]];
 		then
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""linux/remote/"
-			ENTTO="$ENTRAW""$OFFSEC""$MEX""linux/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""linux/remote"
 			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""linux/remote" | grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
@@ -1101,17 +1101,17 @@ while true; do
 			read -p "(example exploit.py): " NOMEFL
 			if [[ "$NOMEFL" != "" ]];
 			then
-				Scarica "$ENTRAW""offensive-security/exploitdb/master/exploits/linux/remote/$NOMEFL"
+				Scarica "$ENTTO""$NOMEFL"
 			fi
 		fi
 	;;
 	"11")
 		OFFSEC="offensive-security/exploitdb/"
 		MEX="master/exploits/"
+		ENTTO="$ENTRAW""$OFFSEC""$MEX""linux_x86-64/remote/"
 		if [[ -f $(which lynx) ]];
 		then
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""linux_x86-64/remote/"
-			ENTTO="$ENTRAW""$OFFSEC""$MEX""linux_x86-64/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""linux_x86-64/remote"
 			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""linux_x86-64/remote"| grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
@@ -1126,17 +1126,17 @@ while true; do
 			read -p "(example exploit.py): " NOMEFL
 			if [[ "$NOMEFL" != "" ]];
 			then
-				Scarica "$ENTRAW""offensive-security/exploitdb/master/exploits/linux_x86-64/remote/$NOMEFL"
+				Scarica "$ENTTO""$NOMEFL"
 			fi
 		fi
 	;;
 	"12")
 		OFFSEC="offensive-security/exploitdb/"
 		MEX="master/exploits/"
+		ENTTO="$ENTRAW""$OFFSEC""$MEX""linux_x86/remote/"
 		if [[ -f $(which lynx) ]];
 		then
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""linux_x86/remote/"
-			ENTTO="$ENTRAW""$OFFSEC""$MEX""linux_x86/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""linux_x86/remote"
 			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""linux_x86/remote"| grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
@@ -1151,17 +1151,17 @@ while true; do
 			read -p "(example exploit.py): " NOMEFL
 			if [[ "$NOMEFL" != "" ]];
 			then
-				Scarica "$ENTRAW""offensive-security/exploitdb/master/exploits/linux_x86/remote/$NOMEFL"
+				Scarica "$ENTTO""$NOMEFL"
 			fi
 		fi
 	;;
 	"13")
 		OFFSEC="offensive-security/exploitdb/"
 		MEX="master/exploits/"
+		ENTTO="$ENTRAW""$OFFSEC""$MEX""windows/remote/"
 		if [[ -f $(which lynx) ]];
 		then
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""windows/remote/"
-			ENTTO="$ENTRAW""$OFFSEC""$MEX""windows/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""windows/remote"
 			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""windows/remote" |  grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
@@ -1176,17 +1176,17 @@ while true; do
 			read -p "(example exploit.py): " NOMEFL
 			if [[ "$NOMEFL" != "" ]];
 			then
-				Scarica "$ENTRAW""offensive-security/exploitdb/master/exploits/windows/remote/$NOMEFL"
+				Scarica "$ENTTO""$NOMEFL"
 			fi
 		fi
 	;;
 	"14")
 		OFFSEC="offensive-security/exploitdb/"
 		MEX="master/exploits/"
+		ENTTO="$ENTRAW""$OFFSEC""$MEX""windows_x86/remote/"
 		if [[ -f $(which lynx) ]];
 		then
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""windows_x86/remote/"
-			ENTTO="$ENTRAW""$OFFSEC""$MEX""windows_x86/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86/remote"
 			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86/remote" |  grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
@@ -1201,17 +1201,17 @@ while true; do
 			read -p "(example exploit.py): " NOMEFL
 			if [[ "$NOMEFL" != "" ]];
 			then
-				Scarica "$ENTRAW""offensive-security/exploitdb/master/exploits/windows_x86/remote/$NOMEFL"
+				Scarica "$ENTTO""$NOMEFL"
 			fi
 		fi
 	;;
 	"15")
 		OFFSEC="offensive-security/exploitdb/"
 		MEX="master/exploits/"
+		ENTTO="$ENTRAW""$OFFSEC""$MEX""windows_x86-64/remote/"
 		if [[ -f $(which lynx) ]];
 		then
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""windows_x86-64/remote/"
-			ENTTO="$ENTRAW""$OFFSEC""$MEX""windows_x86-64/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86-64/remote"
 			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86-64/remote" |  grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
@@ -1226,7 +1226,7 @@ while true; do
 			read -p "(example exploit.py): " NOMEFL
 			if [[ "$NOMEFL" != "" ]];
 			then
-				Scarica "$ENTRAW""offensive-security/exploitdb/master/exploits/windows_x86-64/remote/$NOMEFL"
+				Scarica "$ENTTO""$NOMEFL"
 			fi
 		fi
 	;;
@@ -1258,10 +1258,10 @@ while true; do
 	"17")
 		OFFSEC="offensive-security/exploitdb/"
 		MEX="master/exploits/"
+		ENTTO="$ENTRAW""$OFFSEC""$MEX""android/remote/"
 		if [[ -f $(which lynx) ]];
 		then
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""android/remote/"
-			ENTTO="$ENTRAW""$OFFSEC""$MEX""android/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""android/remote"
 			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""android/remote" |  grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
@@ -1276,17 +1276,17 @@ while true; do
 			read -p "(example exploit.py): " NOMEFL
 			if [[ "$NOMEFL" != "" ]];
 			then
-				Scarica "$ENTRAW""offensive-security/exploitdb/master/exploits/android/remote/$NOMEFL"
+				Scarica "$ENTTO""$NOMEFL"
 			fi
 		fi
 	;;
 	"18")
 		OFFSEC="offensive-security/exploitdb/"
 		MEX="master/exploits/"
+		ENTTO="$ENTRAW""$OFFSEC""$MEX""ios/remote/"
 		if [[ -f $(which lynx) ]];
 		then
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""ios/remote/"
-			ENTTO="$ENTRAW""$OFFSEC""$MEX""ios/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""ios/remote"
 			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""ios/remote" |  grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
@@ -1301,7 +1301,7 @@ while true; do
 			read -p "(example exploit.py): " NOMEFL
 			if [[ "$NOMEFL" != "" ]];
 			then
-				Scarica "$ENTRAW""offensive-security/exploitdb/master/exploits/ios/remote/$NOMEFL"
+				Scarica "$ENTTO""$NOMEFL"
 			fi
 		fi
 	;;
