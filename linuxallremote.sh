@@ -1081,10 +1081,10 @@ while true; do
 		fi
 	;;
 	"10")
+		OFFSEC="offensive-security/exploitdb/"
+		MEX="master/exploits/"
 		if [[ -f $(which lynx) ]];
 		then
-			OFFSEC="offensive-security/exploitdb/"
-			MEX="master/exploits/"
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""linux/remote/"
 			ENTTO="$ENTRAW""$OFFSEC""$MEX""linux/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""linux/remote"
@@ -1097,7 +1097,7 @@ while true; do
 				break
 			done
 		else
-			echo "Digit a file name from https://github.com/offensive-security/exploitdb/tree/master/exploits/linux/remote with extension"
+			echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""linux/remote with extension"
 			read -p "(example exploit.py): " NOMEFL
 			if [[ "$NOMEFL" != "" ]];
 			then
@@ -1106,10 +1106,10 @@ while true; do
 		fi
 	;;
 	"11")
+		OFFSEC="offensive-security/exploitdb/"
+		MEX="master/exploits/"
 		if [[ -f $(which lynx) ]];
 		then
-			OFFSEC="offensive-security/exploitdb/"
-			MEX="master/exploits/"
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""linux_x86-64/remote/"
 			ENTTO="$ENTRAW""$OFFSEC""$MEX""linux_x86-64/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""linux_x86-64/remote"
@@ -1122,7 +1122,7 @@ while true; do
 				break
 			done
 		else
-			echo "Digit a file name from https://github.com/offensive-security/exploitdb/tree/master/exploits/linux_x86-64/remote with extension"
+			echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""linux_x86-64/remote with extension"
 			read -p "(example exploit.py): " NOMEFL
 			if [[ "$NOMEFL" != "" ]];
 			then
@@ -1131,10 +1131,10 @@ while true; do
 		fi
 	;;
 	"12")
+		OFFSEC="offensive-security/exploitdb/"
+		MEX="master/exploits/"
 		if [[ -f $(which lynx) ]];
 		then
-			OFFSEC="offensive-security/exploitdb/"
-			MEX="master/exploits/"
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""linux_x86/remote/"
 			ENTTO="$ENTRAW""$OFFSEC""$MEX""linux_x86/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""linux_x86/remote"
@@ -1147,7 +1147,7 @@ while true; do
 				break
 			done
 		else
-			echo "Digit a file name from https://github.com/offensive-security/exploitdb/tree/master/exploits/linux_x86/remote with extension"
+			echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""linux_x86/remote with extension"
 			read -p "(example exploit.py): " NOMEFL
 			if [[ "$NOMEFL" != "" ]];
 			then
@@ -1156,10 +1156,10 @@ while true; do
 		fi
 	;;
 	"13")
+		OFFSEC="offensive-security/exploitdb/"
+		MEX="master/exploits/"
 		if [[ -f $(which lynx) ]];
 		then
-			OFFSEC="offensive-security/exploitdb/"
-			MEX="master/exploits/"
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""windows/remote/"
 			ENTTO="$ENTRAW""$OFFSEC""$MEX""windows/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""windows/remote"
@@ -1172,7 +1172,7 @@ while true; do
 				break
 			done
 		else
-			echo "Digit a file name from https://github.com/offensive-security/exploitdb/tree/master/exploits/windows/remote with extension"
+			echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""windows/remote with extension"
 			read -p "(example exploit.py): " NOMEFL
 			if [[ "$NOMEFL" != "" ]];
 			then
@@ -1181,10 +1181,10 @@ while true; do
 		fi
 	;;
 	"14")
+		OFFSEC="offensive-security/exploitdb/"
+		MEX="master/exploits/"
 		if [[ -f $(which lynx) ]];
 		then
-			OFFSEC="offensive-security/exploitdb/"
-			MEX="master/exploits/"
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""windows_x86/remote/"
 			ENTTO="$ENTRAW""$OFFSEC""$MEX""windows_x86/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86/remote"
@@ -1197,7 +1197,7 @@ while true; do
 				break
 			done
 		else
-			echo "Digit a file name from https://github.com/offensive-security/exploitdb/tree/master/exploits/windows_x86/remote with extension"
+			echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86/remote with extension"
 			read -p "(example exploit.py): " NOMEFL
 			if [[ "$NOMEFL" != "" ]];
 			then
@@ -1206,10 +1206,10 @@ while true; do
 		fi
 	;;
 	"15")
+		OFFSEC="offensive-security/exploitdb/"
+		MEX="master/exploits/"
 		if [[ -f $(which lynx) ]];
 		then
-			OFFSEC="offensive-security/exploitdb/"
-			MEX="master/exploits/"
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""windows_x86-64/remote/"
 			ENTTO="$ENTRAW""$OFFSEC""$MEX""windows_x86-64/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86-64/remote"
@@ -1222,7 +1222,7 @@ while true; do
 				break
 			done
 		else
-			echo "Digit a file name from https://github.com/offensive-security/exploitdb/tree/master/exploits/windows_x86-64/remote with extension"
+			echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86-64/remote with extension"
 			read -p "(example exploit.py): " NOMEFL
 			if [[ "$NOMEFL" != "" ]];
 			then
@@ -1256,10 +1256,10 @@ while true; do
 		fi
 	;;
 	"17")
+		OFFSEC="offensive-security/exploitdb/"
+		MEX="master/exploits/"
 		if [[ -f $(which lynx) ]];
 		then
-			OFFSEC="offensive-security/exploitdb/"
-			MEX="master/exploits/"
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""android/remote/"
 			ENTTO="$ENTRAW""$OFFSEC""$MEX""android/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""android/remote"
@@ -1272,7 +1272,7 @@ while true; do
 				break
 			done
 		else
-			echo "Digit a file name from https://github.com/offensive-security/exploitdb/tree/master/exploits/android/remote with extension"
+			echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""android/remote with extension"
 			read -p "(example exploit.py): " NOMEFL
 			if [[ "$NOMEFL" != "" ]];
 			then
@@ -1281,10 +1281,10 @@ while true; do
 		fi
 	;;
 	"18")
+		OFFSEC="offensive-security/exploitdb/"
+		MEX="master/exploits/"
 		if [[ -f $(which lynx) ]];
 		then
-			OFFSEC="offensive-security/exploitdb/"
-			MEX="master/exploits/"
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""ios/remote/"
 			ENTTO="$ENTRAW""$OFFSEC""$MEX""ios/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""ios/remote"
@@ -1297,7 +1297,7 @@ while true; do
 				break
 			done
 		else
-			echo "Digit a file name from https://github.com/offensive-security/exploitdb/tree/master/exploits/ios/remote with extension"
+			echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""ios/remote with extension"
 			read -p "(example exploit.py): " NOMEFL
 			if [[ "$NOMEFL" != "" ]];
 			then
