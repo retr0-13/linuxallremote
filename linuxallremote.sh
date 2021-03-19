@@ -447,6 +447,7 @@ while true; do
 	echo -ne " 18. offensive-security/exploitdb/ios remote exploits\t\t\t\t\t\t\t617. Download an exploit from exploit-db site web\n"
 	echo -ne " 815. Acey9/Chimay-Red\t\t\t\t846. NullArray/AutoSploit\t\t\t\t19. all remote exploits from offensive-security/exploitdb\n"
 	echo -ne " 1071. coldfusion39/domi-owned\t\t\t2331. offensive-security/exploitdb\n"
+	echo -ne " 2386. Download impacket's tools\n"
 	echo "$SEP"
 	echo "EXTRA"
 	echo -ne " 252. LionSec/katoolin\n"
@@ -9543,6 +9544,31 @@ while true; do
 	;;
 	"2385")
 		Scarica "$ENTRAW""hausec/ProxyLogon/main/proxylogon.py"
+	;;
+	"2386")
+		OFFSEC="SecureAuthCorp/impacket/"
+		MEX="master/"
+		if [[ -f $(which lynx) ]];
+		then
+			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""examples/"
+			ENTTO="$ENTRAW""$OFFSEC""$MEX""examples/"
+			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""examples"
+			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""examples/" |  grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+			do
+				if [[ "$EXP" != "" ]];
+				then
+					Scarica "$ENTTO""$EXP"
+				fi
+				break
+			done
+		else
+			echo "Digit a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""examples with extension"
+			read -p "(example exploit.py): " NOMEFL
+			if [[ "$NOMEFL" != "" ]];
+			then
+				Scarica "$ENTRAW""$OFFSEC""$MEX""examples/""$NOMEFL"
+			fi
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
