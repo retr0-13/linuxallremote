@@ -237,7 +237,7 @@ while true; do
 	echo "ANDROID - APK"
 	echo -ne " 128. xtiankisutsa/MARA_Framework\t\t274. yasoob/nrc-exporter\t\t\t\t277. mzfr/slicer\n"
 	echo -ne " 323. ASHWIN990/ADB-Toolkit\t\t\t326. metachar/PhoneSploit\t\t\t\t327. xtiankisutsa/twiga\n"
-	echo -ne " 373. wuseman/WBRUTER\t\t\t\t405. bkerler/android_universal\n"
+	echo -ne " 373. wuseman/WBRUTER\t\t\t\t405. bkerler/android_universal\t\t\t\t2387. swagkarna/Rafel-Rat\n"
 	echo -ne " 410. mesquidar/adbsploit\t\t\t504. airbus-seclab/android_emuroot\t\t\t552. MobSF/Mobile-Security-Framework-MobSF\n"
 	echo -ne " 572. 1N3/ReverseAPK\t\t\t\t807. AndroBugs/AndroBugs_Framework\t\t\t808. androguard/androguard\n"
 	echo -ne " 809. Flo354/Androick\t\t\t\t816. rednaga/APKiD\t\t\t\t\t817. hexabin/APKStat\n"
@@ -9569,6 +9569,9 @@ while true; do
 				Scarica "$ENTRAW""$OFFSEC""$MEX""examples/""$NOMEFL"
 			fi
 		fi
+	;;
+	"2387")
+		Clona "swagkarna/Rafel-Rat"
 	;;
 	*)
 		echo "error, invalid choice"
