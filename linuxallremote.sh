@@ -746,7 +746,7 @@ while true; do
 	echo "$SEP"
 	echo "REVERSING"
 	echo -ne " 361. yeggor/UEFI_RETool\t\t\t737. gotr00t0day/b1n4ryR3v3rs3\t\t\t\t866. programa-stic/barf-project\n"
-	echo -ne " 1124. thorkill/eresi\t\t\t\t2349. 4w4k3/rePy2exe\n"
+	echo -ne " 1124. thorkill/eresi\t\t\t\t2349. 4w4k3/rePy2exe\t\t\t\t\t2390. nodauf/Girsh\n"
 	echo "$SEP"
 	echo "REVSHELL"
 	echo -ne " 515. 3v4Si0N/HTTP-revshell\t\t\t2321. shelld3v/JSshell\t\t\t\t\t2372. 0dayCTF/reverse-shell-generator\n"
