@@ -432,7 +432,7 @@ while true; do
 	echo -ne " 824. tokyoneon/Armor\t\t\t\t869. Bashfuscator/Bashfuscator\t\t\t\t925. vincentcox/bypass-firewalls-by-DNS-history\n"
 	echo -ne " 944. TarlogicSecurity/Chankro\t\t\t953. epsylon/cintruder\t\t\t\t\t956. frohoff/ciphr\n"
 	echo -ne " 965. trycatchhcf/cloakify\t\t\t1036. nccgroup/demiguise\t\t\t\t1081. D4Vinci/Dr0p1t-Framework\n"
-	echo -ne " 2356. Mr-Un1k0d3r/UniByAv\t\t\t\t2355. paranoidninja/CarbonCopy\n"
+	echo -ne " 2356. Mr-Un1k0d3r/UniByAv\t\t\t\t2355. paranoidninja/CarbonCopy\t\t\t2389. samhaxr/AnonX\n"
 	echo "$SEP"
 	echo "EXCHANGE"
 	echo -ne " 571. sensepost/ruler\t\t\t\t2351. dirkjanm/PrivExchange\n"
@@ -969,6 +969,7 @@ while true; do
 	echo -ne " 542. digininja/CeWL\t\t\t\t905. R3nt0n/bopscrk\t\t\t\t\t1103. nil0x42/duplicut\n"
 	echo -ne " 302. duyet/bruteforce-database\t\t\t318. digininja/pipal\t\t\t\t\t535. nil0x42/cracking-utils\n"
 	echo -ne " 985. assetnote/commonspeak2\t\t\t404. OWASP/D4N155\t\t\t\t2300. shamrin/diceware\n"
+	echo -ne " 2388. DavidWittman/wpxmlrpcbrute/1000-most-common-passwords.txt\n"
 	echo "$SEP"
 	echo "WORDPRESS"
 	echo -ne " 468. n00py/WPForce\t\t\t\t469. BlackXploits/WPBrute\t\t\t\t566. 0xAbdullah/0xWPBF\n"
@@ -9572,6 +9573,15 @@ while true; do
 	;;
 	"2387")
 		Clona "swagkarna/Rafel-Rat"
+	;;
+	"2388")
+		Scarica "$ENTRAW""DavidWittman/wpxmlrpcbrute/master/wordlists/1000-most-common-passwords.txt"
+	;;
+	"2389")
+		Scarica "$ENTRAW""samhaxr/AnonX/main/Anonx.sh"
+	;;
+	"2390")
+		Clona "nodauf/Girsh"
 	;;
 	*)
 		echo "error, invalid choice"
