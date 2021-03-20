@@ -2856,6 +2856,7 @@ while true; do
 	;;
 	"363")
 		Clona "projectdiscovery/nuclei"
+		Clona "projectdiscovery/nuclei-templates"
 	;;
 	"364")
 		Clona "opsdisk/pagodo"
