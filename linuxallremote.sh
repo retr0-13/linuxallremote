@@ -99,7 +99,7 @@ function ClonaLab
 
 function Clona
 {
-	echo "Choose what version you want to download"
+	echo "Choose what version you want to download ""$1"
 	echo -ne "1. Dockerfile\n2. Release\n3. Clone\n"
 	read -p "(default 3): " CVR
 	case "$CVR" in
