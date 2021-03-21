@@ -604,7 +604,7 @@ while true; do
 	echo -ne " 284. brutemap-dev/brutemap\t\t\t288. dark-lbp/isf\t\t\t\t\t289. onccgroup/redsnarf\n"
 	echo -ne " 296. Z4nzu/hackingtool\t\t\t\t304. GitHackTools/BruteDum/brutedum\t\t\t1080. ucsb-seclab/dr_checker\n"
 	echo -ne " 310. future-architect/vuls\t\t\t311. ethicalhackerproject/TaiPan\t\t\t319. marcrowProject/Bramble\n"
-	echo -ne " 320. stevemcilwain/quiver\t\t\t322. abdulr7mann/hackerEnv\n"
+	echo -ne " 320. stevemcilwain/quiver\t\t\t322. abdulr7mann/hackerEnv\t\t\t\t\t2391. ztgrace/mole\n"
 	echo -ne " 392. zerosum0x0/koadic\t\t\t\t403. Screetsec/TheFatRat\t\t\t\t2250. its-a-feature/Mythic\n"
 	echo -ne " 408. AdrianVollmer/PowerHub\t\t\t439. DarkSecDevelopers/HiddenEye\t\t\t481. 0xInfection/TIDoS-Framework\n"
 	echo -ne " 485. r3dxpl0it/TheXFramework\t\t\t488. Taguar258/Raven-Storm\t\t\t\t514. maxlandon/wiregost\n"
@@ -9583,6 +9583,9 @@ while true; do
 	;;
 	"2390")
 		Clona "nodauf/Girsh"
+	;;
+	"2391")
+		Clona "ztgrace/mole"
 	;;
 	*)
 		echo "error, invalid choice"
