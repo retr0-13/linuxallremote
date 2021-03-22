@@ -630,7 +630,7 @@ while true; do
 	echo -ne " 2342. guardicore/monkey\t\t\t\t2347. sidaf/homebrew-pentest\t\t\t\t2364. 1N3/BlackWidow\n"
 	echo -ne " 2365. mikesplain/openvas-docker\t\t2377. programmingAthlete/BruteSniffing_Fisher\n"
 	echo -ne " 2381. andrew-d/static-binaries/linux/x86_64\t\t2382. andrew-d/static-binaries/linux/x86\n"
-	echo -ne " 2383. andrew-d/static-binaries/linux/arm\t\t2400. r3curs1v3-pr0xy/vajra"\n"
+	echo -ne " 2383. andrew-d/static-binaries/linux/arm\t\t2400. r3curs1v3-pr0xy/vajra\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
