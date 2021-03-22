@@ -581,7 +581,7 @@ while true; do
 	echo "KUBERNETES"
 	echo -ne " 374. liggitt/audit2rbac\t\t\t375. mhausenblas/kaput\t\t\t\t\t647. vchinnipilli/kubestrike\n"
 	echo -ne " 648. cyberark/KubiScan\t\t\t\t2395. swisskyrepo/PayloadsAllTheThings/Kubernetes\n"
-	echo -ne " 2396. Shopify/kubeaudit\t\t\t\t2397. controlplaneio/kubesec\n"
+	echo -ne " 2396. Shopify/kubeaudit\t\t\t\t2397. controlplaneio/kubesec\t\t\t2398. aquasecurity/kube-bench\n"
 	echo "$SEP"
 	echo "LDAP"
 	echo -ne " 1. CasperGN/ActiveDirectoryEnumeration\t\t2. dirkjanm/ldapdomaindump\t\t\t\t4. ropnop/windapsearch\n"
@@ -9612,6 +9612,9 @@ while true; do
 	;;
 	"2397")
 		Clona "controlplaneio/kubesec"
+	;;
+	"2398")
+		Clona "aquasecurity/kube-bench"
 	;;
 	*)
 		echo "error, invalid choice"
