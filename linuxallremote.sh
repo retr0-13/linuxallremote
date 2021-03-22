@@ -400,6 +400,7 @@ while true; do
 	echo -ne " 945. projectdiscovery/chaos-client\t\t1063. erbbysam/DNSGrep\t\t\t\t\t2293. ProjectAnte/dnsgen\n"
 	echo -ne " 1065. evilsocket/dnssearch\t\t\t1066. elceef/dnstwist\t\t\t\t\t1067. vortexau/dnsvalidator\n"
 	echo -ne " 1068. projectdiscovery/dnsx\t\t\t1070. MarkBaggett/domain_stats\t\t\t\t2306. tismayil/rsdl\n"
+	echo -ne " 2401. A3h1nt/Subcert\n"
 	echo "$SEP"
 	echo "DOCKER"
 	echo -ne " 351. cr0hn/dockerscan\t\t\t\t352. RhinoSecurityLabs/ccat\n"
@@ -629,7 +630,7 @@ while true; do
 	echo -ne " 2342. guardicore/monkey\t\t\t\t2347. sidaf/homebrew-pentest\t\t\t\t2364. 1N3/BlackWidow\n"
 	echo -ne " 2365. mikesplain/openvas-docker\t\t2377. programmingAthlete/BruteSniffing_Fisher\n"
 	echo -ne " 2381. andrew-d/static-binaries/linux/x86_64\t\t2382. andrew-d/static-binaries/linux/x86\n"
-	echo -ne " 2383. andrew-d/static-binaries/linux/arm\n"
+	echo -ne " 2383. andrew-d/static-binaries/linux/arm\t\t2400. r3curs1v3-pr0xy/vajra"\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
@@ -9618,6 +9619,12 @@ while true; do
 	;;
 	"2399")
 		Scarica "$ENTRAW""swisskyrepo/PayloadsAllTheThings/master/LDAP%20Injection/README.md"
+	;;
+	"2400")
+		Clona "r3curs1v3-pr0xy/vajra"
+	;;
+	"2401")
+		Clona "A3h1nt/Subcert"
 	;;
 	*)
 		echo "error, invalid choice"
