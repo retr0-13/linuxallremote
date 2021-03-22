@@ -750,6 +750,7 @@ while true; do
 	echo "$SEP"
 	echo "REVSHELL"
 	echo -ne " 515. 3v4Si0N/HTTP-revshell\t\t\t2321. shelld3v/JSshell\t\t\t\t\t2372. 0dayCTF/reverse-shell-generator\n"
+	echo -ne " 2392. swisskyrepo/PayloadsAllTheThings/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet\n"
 	echo "$SEP"
 	echo "RMI"
 	echo -ne " 867. NickstaDB/BaRMIe\n"
@@ -9586,6 +9587,9 @@ while true; do
 	;;
 	"2391")
 		Clona "ztgrace/mole"
+	;;
+	"2392")
+		Scarica "$ENTRAW""swisskyrepo/PayloadsAllTheThings/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md"
 	;;
 	*)
 		echo "error, invalid choice"
