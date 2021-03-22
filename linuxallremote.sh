@@ -580,7 +580,7 @@ while true; do
 	echo "$SEP"
 	echo "KUBERNETES"
 	echo -ne " 374. liggitt/audit2rbac\t\t\t375. mhausenblas/kaput\t\t\t\t\t647. vchinnipilli/kubestrike\n"
-	echo -ne " 648. cyberark/KubiScan\n"
+	echo -ne " 648. cyberark/KubiScan\t\t\t\t2395. swisskyrepo/PayloadsAllTheThings/Kubernetes/\n"
 	echo "$SEP"
 	echo "LDAP"
 	echo -ne " 1. CasperGN/ActiveDirectoryEnumeration\t\t2. dirkjanm/ldapdomaindump\t\t\t\t4. ropnop/windapsearch\n"
@@ -9602,6 +9602,9 @@ while true; do
 	;;
 	"2394")
 		Scarica "$ENTRAW""swisskyrepo/PayloadsAllTheThings/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md"
+	;;
+	"2395")
+		Scarica "$ENTRAW""swisskyrepo/PayloadsAllTheThings/master/Kubernetes/readme.md"
 	;;
 	*)
 		echo "error, invalid choice"
