@@ -670,6 +670,9 @@ while true; do
 	echo -ne " 46. thelinuxchoice/evilpdf\t\t\t47. robins/pdfcrack\t\t\t\t\t48. BroadbentT/PDF-CRACKER/pdf-cracker\n"
 	echo -ne " 2274. superzerosec/evilpdf\n"
 	echo "$SEP"
+	echo "PERSISTENCE"
+	echo -ne " 2393. swisskyrepo/PayloadsAllTheThings/Methodology_and_Resources/Linux_-_Persistence\n"
+	echo "$SEP"
 	echo "PHISHING - SOCIAL ENGINEERING"
 	echo -ne " 385. blark/cli-phisher\t\t\t\t412. kurogai/nero-phishing-server\t\t\t413. KnightSec-Official/Phlexish\n"
 	echo -ne " 489. david3107/squatm3\t\t\t\t490. netevert/dnsmorph\t\t\t\t\t767. htr-tech/zphisher\n"
@@ -750,7 +753,7 @@ while true; do
 	echo "$SEP"
 	echo "REVSHELL"
 	echo -ne " 515. 3v4Si0N/HTTP-revshell\t\t\t2321. shelld3v/JSshell\t\t\t\t\t2372. 0dayCTF/reverse-shell-generator\n"
-	echo -ne " 2392. swisskyrepo/PayloadsAllTheThings/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet\n"
+	echo -ne " 2392. swisskyrepo/PayloadsAllTheThings/Methodology_and_Resources/Reverse_Shell_Cheatsheet\n"
 	echo "$SEP"
 	echo "RMI"
 	echo -ne " 867. NickstaDB/BaRMIe\n"
@@ -9590,6 +9593,9 @@ while true; do
 	;;
 	"2392")
 		Scarica "$ENTRAW""swisskyrepo/PayloadsAllTheThings/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md"
+	;;
+	"2393")
+		Scarica "$ENTRAW""swisskyrepo/PayloadsAllTheThings/master/Methodology%20and%20Resources/Linux%20-%20Persistence.md"
 	;;
 	*)
 		echo "error, invalid choice"
