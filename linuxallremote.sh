@@ -692,6 +692,9 @@ while true; do
 	echo "PRINTER"
 	echo -ne " 639. RUB-NDS/PRET\n"
 	echo "$SEP"
+	echo "PRIVESC"
+	echo -ne " 2394. swisskyrepo/PayloadsAllTheThings/Methodology_and_Resources/Linux-PrivilegeEscalation\n"
+	echo "$SEP"
 	echo "PROXY"
 	echo -ne " 162. fozavci/viproy-VoIPkit\t\t\t610. audibleblink/doxycannon\t\t\t\t885. nccgroup/BinProxy\n"
 	echo -ne " 1058. StalkR/dns-reverse-proxy\t\t\t1059. maurotfilho/dns-spoof\t\t\t\t1060. d4rkcat/dnsbrute\n"
@@ -9596,6 +9599,9 @@ while true; do
 	;;
 	"2393")
 		Scarica "$ENTRAW""swisskyrepo/PayloadsAllTheThings/master/Methodology%20and%20Resources/Linux%20-%20Persistence.md"
+	;;
+	"2394")
+		Scarica "$ENTRAW""swisskyrepo/PayloadsAllTheThings/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md"
 	;;
 	*)
 		echo "error, invalid choice"
