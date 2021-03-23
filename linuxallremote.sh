@@ -9434,7 +9434,7 @@ while true; do
 		Clona "bhavsec/reconspider"
 	;;
 	"2353")
-		select DIM in "instrumentisto/nmap" "szalek/pentest-tools" "kfaughnan/smbclient" "wpscanteam/wpscan"
+		select DIM in "instrumentisto/nmap" "szalek/pentest-tools" "kfaughnan/smbclient" "siuyin/smbclient" "wpscanteam/wpscan"
 		do
 			if [[ "$DIM" != "" ]];
 			then
