@@ -9434,11 +9434,18 @@ while true; do
 		Clona "bhavsec/reconspider"
 	;;
 	"2353")
-		select DIM in "caffix/amass" "grugnog/amass" "nodyd/amass" "eivantsov/arp-scan" "ganboing/arp-scan" "online2311/mitmf" "instrumentisto/nmap" "szalek/pentest-tools" "kfaughnan/smbclient" "siuyin/smbclient" "opennsm/tshark" "sflow/tshark" "toendeavour/tshark" "linuxserver/wireshark" "ffeldhaus/wireshark" "manell/wireshark" "wpscanteam/wpscan" "owasp/zap2docker-bare" "owasp/zap2docker-live" "owasp/zap2docker-stable"
+		echo "Choose an image"
+		select DIM in "caffix/amass" "grugnog/amass" "nodyd/amass" "eivantsov/arp-scan" "ganboing/arp-scan" "dizcza/docker-hashcat" "adamoss/john-the-ripper" "phocean/john_the_ripper_jumbo" "online2311/mitmf" "instrumentisto/nmap" "szalek/pentest-tools" "kfaughnan/smbclient" "siuyin/smbclient" "ilyaglow/sqlmap" "jamesmstone/sqlmap" "m4n3dw0lf/sqlmap" "paoloo/sqlmap" "sagikazarmark/sqlmap" "opennsm/tshark" "sflow/tshark" "toendeavour/tshark" "linuxserver/wireshark" "ffeldhaus/wireshark" "manell/wireshark" "wpscanteam/wpscan" "owasp/zap2docker-bare" "owasp/zap2docker-live" "owasp/zap2docker-stable"
 		do
 			if [[ "$DIM" != "" ]];
 			then
-				docker pull "$DIM"":latest"
+				echo "Digit a tag"
+				read -p "(example, latest): " TAGS
+				if [[ "$TAGS" == "" ]];
+				then
+					TAGS="latest"
+				fi
+				docker pull "$DIM"":$TAGS"
 			fi
 		done
 	;;
