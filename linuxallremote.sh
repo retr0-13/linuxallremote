@@ -700,7 +700,7 @@ while true; do
 	echo "PROXY"
 	echo -ne " 162. fozavci/viproy-VoIPkit\t\t\t610. audibleblink/doxycannon\t\t\t\t885. nccgroup/BinProxy\n"
 	echo -ne " 1058. StalkR/dns-reverse-proxy\t\t\t1059. maurotfilho/dns-spoof\t\t\t\t1060. d4rkcat/dnsbrute\n"
-	echo -ne " 1061. dmitescu/dnscobra\t\t\t1062. leonjza/dnsfilexfer\n"
+	echo -ne " 1061. dmitescu/dnscobra\t\t\t1062. leonjza/dnsfilexfer\t\t\t\t2403. p3nt4/Invoke-SocksProxy/ReverseSocksProxyHandler\n"
 	echo "$SEP"
 	echo "PRY"
 	echo -ne " 743. deivid-rodriguez/pry-byebug\n"
@@ -9628,6 +9628,9 @@ while true; do
 	;;
 	"2402")
 		Clona "r3curs1v3-pr0xy/sub404"
+	;;
+	"2403")
+		Scarica "$ENTRAW""p3nt4/Invoke-SocksProxy/master/ReverseSocksProxyHandler.py"
 	;;
 	*)
 		echo "error, invalid choice"
