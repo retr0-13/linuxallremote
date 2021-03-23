@@ -209,6 +209,12 @@ then
 	read -p "$FMSG"
 fi
 
+if [[ ! -f $(which docker) ]];
+then
+	echo "$WBE""docker"
+	read -p "$FMSG"
+fi
+
 while true; do
 	echo "$SEP"
 	echo " 0. exit"
