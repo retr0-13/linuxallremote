@@ -436,7 +436,7 @@ while true; do
 	echo -ne " 2356. Mr-Un1k0d3r/UniByAv\t\t\t\t2355. paranoidninja/CarbonCopy\t\t\t2389. samhaxr/AnonX\n"
 	echo "$SEP"
 	echo "EXCHANGE"
-	echo -ne " 571. sensepost/ruler\t\t\t\t2351. dirkjanm/PrivExchange\n"
+	echo -ne " 571. sensepost/ruler\t\t\t\t2351. dirkjanm/PrivExchange\t\t\t\t2404. RickGeex/ProxyLogon\n"
 	echo "$SEP"
 	echo "EXFILTRATION"
 	echo -ne " 314. danielwolfmann/Invoke-WordThief/logger\t593. TryCatchHCF/PacketWhisper\n"
@@ -9631,6 +9631,9 @@ while true; do
 	;;
 	"2403")
 		Scarica "$ENTRAW""p3nt4/Invoke-SocksProxy/master/ReverseSocksProxyHandler.py"
+	;;
+	"2404")
+		Scarica "$ENTRAW""RickGeex/ProxyLogon/main/ProxyLogon.py"
 	;;
 	*)
 		echo "error, invalid choice"
