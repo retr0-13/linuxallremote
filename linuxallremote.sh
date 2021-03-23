@@ -400,7 +400,7 @@ while true; do
 	echo -ne " 945. projectdiscovery/chaos-client\t\t1063. erbbysam/DNSGrep\t\t\t\t\t2293. ProjectAnte/dnsgen\n"
 	echo -ne " 1065. evilsocket/dnssearch\t\t\t1066. elceef/dnstwist\t\t\t\t\t1067. vortexau/dnsvalidator\n"
 	echo -ne " 1068. projectdiscovery/dnsx\t\t\t1070. MarkBaggett/domain_stats\t\t\t\t2306. tismayil/rsdl\n"
-	echo -ne " 2401. A3h1nt/Subcert\n"
+	echo -ne " 2401. A3h1nt/Subcert\t\t\t\t2402. r3curs1v3-pr0xy/sub404\n"
 	echo "$SEP"
 	echo "DOCKER"
 	echo -ne " 351. cr0hn/dockerscan\t\t\t\t352. RhinoSecurityLabs/ccat\n"
@@ -9625,6 +9625,9 @@ while true; do
 	;;
 	"2401")
 		Clona "A3h1nt/Subcert"
+	;;
+	"2402")
+		Clona "r3curs1v3-pr0xy/sub404"
 	;;
 	*)
 		echo "error, invalid choice"
