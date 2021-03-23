@@ -9434,7 +9434,7 @@ while true; do
 		Clona "bhavsec/reconspider"
 	;;
 	"2353")
-		select DIM in "instrumentisto/nmap" "szalek/pentest-tools" "kfaughnan/smbclient" "siuyin/smbclient" "linuxserver/wireshark" "wpscanteam/wpscan"
+		select DIM in "caffix/amass" "grugnog/amass" "nodyd/amass" "eivantsov/arp-scan" "ganboing/arp-scan" "online2311/mitmf" "instrumentisto/nmap" "szalek/pentest-tools" "kfaughnan/smbclient" "siuyin/smbclient" "opennsm/tshark" "sflow/tshark" "toendeavour/tshark" "linuxserver/wireshark" "ffeldhaus/wireshark" "manell/wireshark" "wpscanteam/wpscan" "owasp/zap2docker-bare" "owasp/zap2docker-live" "owasp/zap2docker-stable"
 		do
 			if [[ "$DIM" != "" ]];
 			then
