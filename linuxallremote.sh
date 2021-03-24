@@ -750,7 +750,7 @@ while true; do
 	echo -ne " 844. Tib3rius/AutoRecon\t\t\t2236. six2dez/reconftw\t\t\t\t\t2244. yassineaboukir/Asnlookup\n"
 	echo -ne " 1877. projectdiscovery/shuffledns\t\t1983. projectdiscovery/subfinder\t\t\t922. sham00n/buster\n"
 	echo -ne " 2282. s0md3v/ReconDog\t\t\t\t998. Ganapati/Crawlic\t\t\t\t\t1024. upgoingstar/datasploit\n"
-	echo -ne " 1122. Gilks/enumerid\n"
+	echo -ne " 1122. Gilks/enumerid\t\t\t\t2405. c0dejump/HawkScan\n"
 	echo "$SEP"
 	echo "REDIS"
 	echo -ne " 759. Avinash-acid/Redis-Server-Exploit\n"
@@ -9647,6 +9647,9 @@ while true; do
 	;;
 	"2404")
 		Scarica "$ENTRAW""RickGeex/ProxyLogon/main/ProxyLogon.py"
+	;;
+	"2405")
+		Clona "c0dejump/HawkScan"
 	;;
 	*)
 		echo "error, invalid choice"
