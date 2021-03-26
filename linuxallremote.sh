@@ -522,6 +522,9 @@ while true; do
 	echo "GIT - REPOS"
 	echo -ne " 487. arthaud/git-dumper\t\t\t553. Ebryx/GitDump\t\t\t\t\t2315. metac0rtex/GitHarvester\n"
 	echo "$SEP"
+	echo "GITLAB"
+	echo -ne " 2407. dotPY-hax/gitlab_RCE\n"
+	echo "$SEP"
 	echo "HASH"
 	echo -ne " 2260. cube0x0/HashSpray.py\n"
 	echo "$SEP"
@@ -9653,6 +9656,9 @@ while true; do
 	;;
 	"2406")
 		Clona "an00byss/godehashed"
+	;;
+	"2407")
+		Scarica "$ENTRAW""dotPY-hax/gitlab_RCE/main/gitlab_rce.py"
 	;;
 	*)
 		echo "error, invalid choice"
