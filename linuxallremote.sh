@@ -133,7 +133,6 @@ function Clona
 					then
 						Scarica "$ENTFRM""$GRD"
 					fi
-					break
 				done
 			else
 				echo "This repo has not a release, please choose another version"
