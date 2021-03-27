@@ -239,6 +239,7 @@ while true; do
 	echo -ne " 1006. SpiderLabs/cribdrag\t\t\t1018. 504ensicsLabs/DAMM\t\t\t\t1041. spectresearch/detectem\n"
 	echo -ne " 1093. USArmyResearchLab/Dshell\t\t\t1104. dungtv543/Dutas\t\t\t\t\t1107. DynamoRIO/dynamorio\n"
 	echo -ne " 1115. jacob-baines/elfparser\t\t\t2307. rizinorg/rizin\t\t\t\t2373. visma-prodsec/confused\n"
+	echo -ne " 2409. asad1996172/Obfuscation-Detection\n"
 	echo "$SEP"
 	echo "ANDROID - APK"
 	echo -ne " 128. xtiankisutsa/MARA_Framework\t\t274. yasoob/nrc-exporter\t\t\t\t277. mzfr/slicer\n"
@@ -764,6 +765,7 @@ while true; do
 	echo "REVERSING"
 	echo -ne " 361. yeggor/UEFI_RETool\t\t\t737. gotr00t0day/b1n4ryR3v3rs3\t\t\t\t866. programa-stic/barf-project\n"
 	echo -ne " 1124. thorkill/eresi\t\t\t\t2349. 4w4k3/rePy2exe\t\t\t\t\t2390. nodauf/Girsh\n"
+	echo -ne " 2408. mentebinaria/retoolkit\n"
 	echo "$SEP"
 	echo "REVSHELL"
 	echo -ne " 515. 3v4Si0N/HTTP-revshell\t\t\t2321. shelld3v/JSshell\t\t\t\t\t2372. 0dayCTF/reverse-shell-generator\n"
@@ -9659,6 +9661,12 @@ while true; do
 	;;
 	"2407")
 		Scarica "$ENTRAW""dotPY-hax/gitlab_RCE/main/gitlab_rce.py"
+	;;
+	"2408")
+		Clona "mentebinaria/retoolkit"
+	;;
+	"2409")
+		Clona "asad1996172/Obfuscation-Detection"
 	;;
 	*)
 		echo "error, invalid choice"
