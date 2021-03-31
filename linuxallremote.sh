@@ -886,6 +886,7 @@ while true; do
 	echo -ne " 776. cSploit/android\t\t\t\t777. routerkeygen/routerkeygenAndroid\t\t\t782. intercepter-ng\n"
 	echo -ne " 2234. OnionApps/Chat.onion\t\t\t2254. LinkClink/Rainbow-Wifi-Hack-Utility-Android\t2255. trevatk/Wifi-Cracker\n"
 	echo -ne " 2256. trevatk/Wifi-Cracker\t\t\t2257. faizann24/wifi-bruteforcer-fsecurify\t\t2258. faizann24/wifi-bruteforcer-fsecurify\n"
+	echo -ne " 2412. urbanadventurer/Android-PIN-Bruteforce\n"
 	echo "$SEP"
 	echo "TFTP"
 	echo -ne " 719. nullsecuritynet/tftp-fuzz\n"
@@ -9674,6 +9675,9 @@ while true; do
 	;;
 	"2411")
 		Scarica "$ENTRAW""androidmalware/android_hid/main/hid_attack"
+	;;
+	"2412")
+		Clona "urbanadventurer/Android-PIN-Bruteforce"
 	;;
 	*)
 		echo "error, invalid choice"
