@@ -251,6 +251,7 @@ while true; do
 	echo -ne " 809. Flo354/Androick\t\t\t\t816. rednaga/APKiD\t\t\t\t\t817. hexabin/APKStat\n"
 	echo -ne " 860. l0gan/backHack\t\t\t\t1043. DexPatcher/dexpatcher-tool\t\t\t1087. mwrlabs/drozer\n"
 	echo -ne " 2319. dwisiswant0/apkleaks\t\t\t2410. RealityNet/android_triage\t\t\t2411. androidmalware/android_hid\n"
+	echo -ne " 2413. anbud/DroidDucky\n"
 	echo "$SEP"
 	echo "ANONYMIZATION"
 	echo -ne " 2229. htrgouvea/nipe\t\t\t\t2348. realgam3/pymultitor\t\t\t\t2350. torsocks/torsocks\n"
@@ -9678,6 +9679,9 @@ while true; do
 	;;
 	"2412")
 		Clona "urbanadventurer/Android-PIN-Bruteforce"
+	;;
+	"2413")
+		Clona "anbud/DroidDucky"
 	;;
 	*)
 		echo "error, invalid choice"
