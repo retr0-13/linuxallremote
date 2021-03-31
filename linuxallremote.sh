@@ -250,7 +250,7 @@ while true; do
 	echo -ne " 572. 1N3/ReverseAPK\t\t\t\t807. AndroBugs/AndroBugs_Framework\t\t\t808. androguard/androguard\n"
 	echo -ne " 809. Flo354/Androick\t\t\t\t816. rednaga/APKiD\t\t\t\t\t817. hexabin/APKStat\n"
 	echo -ne " 860. l0gan/backHack\t\t\t\t1043. DexPatcher/dexpatcher-tool\t\t\t1087. mwrlabs/drozer\n"
-	echo -ne " 2319. dwisiswant0/apkleaks\n"
+	echo -ne " 2319. dwisiswant0/apkleaks\t\t\t2410. RealityNet/android_triage\n"
 	echo "$SEP"
 	echo "ANONYMIZATION"
 	echo -ne " 2229. htrgouvea/nipe\t\t\t\t2348. realgam3/pymultitor\t\t\t\t2350. torsocks/torsocks\n"
@@ -9668,6 +9668,9 @@ while true; do
 	;;
 	"2409")
 		Clona "asad1996172/Obfuscation-Detection"
+	;;
+	"2410")
+		Scarica "$ENTRAW""RealityNet/android_triage/main/android_triage.sh"
 	;;
 	*)
 		echo "error, invalid choice"
