@@ -12,6 +12,8 @@ RQRM="/requirements.txt"
 SEP=$(for (( I=0 ; I<$(tput cols) ; I++ )); do printf '_'; done)
 ALD="/storage/emulated/legacy/Download/"
 AZD="/storage/emulated/0/Download/"
+RLS="/releases"
+RLDW="$RLS""/download"
 WBE="For a better experience, please install "
 FMSG="press ENTER to continue..."
 
@@ -100,7 +102,17 @@ function ClonaLab
 function Clona
 {
 	echo "Choose what version you want to download ""$1"
-	echo -ne "1. Dockerfile\n2. Release\n3. Clone\n"
+	if [[ $(wget -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200"* ]];
+	then
+		echo "1. Dockerfile"
+	fi
+	ENTFRM="$ENTSSL""$1""$RLDW""/"
+	GRDS=$(lynx -dump -listonly "$ENTSSL""$1""$RLS"|grep "$RLDW"|awk '{print $2}'| while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+	if [[ "$GRDS" != "" ]];
+	then
+		echo "2. Release"
+	fi
+	echo "3. Clone"
 	read -p "(default 3): " CVR
 	case "$CVR" in
 	"1")
@@ -121,10 +133,6 @@ function Clona
 	"2")
 		if [[ -f $(which lynx) ]];
 		then
-			RLS="/releases"
-			RLDW="$RLS""/download"
-			ENTFRM="$ENTSSL""$1""$RLDW""/"
-			GRDS=$(lynx -dump -listonly "$ENTSSL""$1""$RLS"|grep "$RLDW"|awk '{print $2}'| while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			if [[ "$GRDS" != "" ]];
 			then
 				select GRD in $GRDS
@@ -141,7 +149,6 @@ function Clona
 	;;
 	*)
 		git clone "$ENTSSL""$1"".git"
-		break
 	;;
 	esac
 }
