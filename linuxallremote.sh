@@ -9688,7 +9688,7 @@ while true; do
 		Clona "anbud/DroidDucky"
 	;;
 	"2414")
-		Clona "dirkjanm/CVE-2020-1472j"
+		Clona "dirkjanm/CVE-2020-1472"
 	;;
 	"2415")
 		wget https://digi.ninja/files/bucket_finder_1.1.tar.bz2 -O bucket_finder_1.1.tar.bz2
