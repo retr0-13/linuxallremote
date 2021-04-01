@@ -9691,7 +9691,7 @@ while true; do
 		Clona "dirkjanm/CVE-2020-1472"
 	;;
 	"2415")
-		wget https://digi.ninja/files/bucket_finder_1.1.tar.bz2 -O bucket_finder_1.1.tar.bz2
+		Scarica https://digi.ninja/files/bucket_finder_1.1.tar.bz2
 	;;
 	"2416")
 		Clona "nccgroup/s3_objects_check"
