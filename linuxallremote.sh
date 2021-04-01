@@ -140,6 +140,8 @@ function Clona
 					if [[ "$GRD" != "" ]];
 					then
 						Scarica "$ENTFRM""$GRD"
+					else
+						break
 					fi
 				done
 			else
