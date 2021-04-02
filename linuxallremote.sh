@@ -102,7 +102,7 @@ function ClonaLab
 function Clona
 {
 	echo "Choose what version you want to download ""$1"
-	if [[ $(wget -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200"* ]];
+	if [[ $(wget -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200"* || $(wget -S --spider "$ENTRAW""$1""/main/""$DKF" 2>&1) == *"200"* ]];
 	then
 		echo "1. Dockerfile"
 	fi
