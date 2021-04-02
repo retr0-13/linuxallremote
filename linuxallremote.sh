@@ -379,7 +379,7 @@ while true; do
 	echo -ne " 406. 0xInfection/XSRFProbe\t\t\t2278. s0md3v/Bolt\n"
 	echo "$SEP"
 	echo "CVE LIST"
-	echo -ne " 2414. dirkjanm/CVE-2020-1472\n"
+	echo -ne " 2414. dirkjanm/CVE-2020-1472\t\t2421. twistlock/RunC-CVE-2019-5736\n"
 	echo "$SEP"
 	echo "D"
 	echo -ne " 1090. dlang-community/D-Scanner\n"
@@ -425,7 +425,7 @@ while true; do
 	echo -ne " 2401. A3h1nt/Subcert\t\t\t\t2402. r3curs1v3-pr0xy/sub404\n"
 	echo "$SEP"
 	echo "DOCKER"
-	echo -ne " 351. cr0hn/dockerscan\t\t\t\t352. RhinoSecurityLabs/ccat\n"
+	echo -ne " 351. cr0hn/dockerscan\t\t\t\t352. RhinoSecurityLabs/ccat\t\t\t\t2420. kost/dockscan\n"
 	echo "$SEP"
 	echo "DRUPAL"
 	echo -ne " 1088. Tethik/drupal-module-enumeration\t\t1089. immunIT/drupwn\n"
@@ -9713,6 +9713,12 @@ while true; do
 	;;
 	"2419")
 		Clona "andresriancho/enumerate-iam"
+	;;
+	"2420")
+		Clona "kost/dockscan"
+	;;
+	"2421")
+		Clona "twistlock/RunC-CVE-2019-5736"
 	;;
 	*)
 		echo "error, invalid choice"
