@@ -101,6 +101,7 @@ function ClonaLab
 
 function Clona
 {
+	DKF="Dockerfile"
 	echo "Choose what version you want to download ""$1"
 	if [[ $(wget -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200"* || $(wget -S --spider "$ENTRAW""$1""/main/""$DKF" 2>&1) == *"200"* ]];
 	then
@@ -119,12 +120,10 @@ function Clona
 		if [[ $(wget -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200"* ]];
 		then
 			Scarica "$ENTRAW""$1""/master/""$DKF" "$DKF"
-			break
 		else
 			if [[ $(wget -S --spider "$ENTRAW""$1""/main/""$DKF" 2>&1) == *"200"* ]];
 			then
 				Scarica "$ENTRAW""$1""/main/""$DKF" "$DKF"
-				break
 			else
 				echo "This repo has not a Dockerfile, please choose another version"
 			fi
