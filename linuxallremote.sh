@@ -537,6 +537,7 @@ while true; do
 	echo "$SEP"
 	echo "GIT - REPOS"
 	echo -ne " 487. arthaud/git-dumper\t\t\t553. Ebryx/GitDump\t\t\t\t\t2315. metac0rtex/GitHarvester\n"
+	echo -ne " 2422. michenriksen/gitrob\n"
 	echo "$SEP"
 	echo "GITLAB"
 	echo -ne " 2407. dotPY-hax/gitlab_RCE\n"
@@ -9719,6 +9720,9 @@ while true; do
 	;;
 	"2421")
 		Clona "twistlock/RunC-CVE-2019-5736"
+	;;
+	"2422")
+		Clona "michenriksen/gitrob"
 	;;
 	*)
 		echo "error, invalid choice"
