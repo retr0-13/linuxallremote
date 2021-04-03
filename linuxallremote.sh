@@ -103,7 +103,7 @@ function Clona
 {
 	DKF="Dockerfile"
 	echo "Choose what version you want to download ""$1"
-	if [[ $(wget -q -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200"* || $(wget -q -S --spider "$ENTRAW""$1""/main/""$DKF" 2>&1) == *"200"* ]];
+	if [[ $(wget -q -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200 OK"* || $(wget -q -S --spider "$ENTRAW""$1""/main/""$DKF" 2>&1) == *"200 OK"* ]];
 	then
 		echo "1. Dockerfile"
 	fi
@@ -117,11 +117,11 @@ function Clona
 	read -p "(default 3): " CVR
 	case "$CVR" in
 	"1")
-		if [[ $(wget -q -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200"* ]];
+		if [[ $(wget -q -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200 OK"* ]];
 		then
 			Scarica "$ENTRAW""$1""/master/""$DKF" "$DKF"
 		else
-			if [[ $(wget -q -S --spider "$ENTRAW""$1""/main/""$DKF" 2>&1) == *"200"* ]];
+			if [[ $(wget -q -S --spider "$ENTRAW""$1""/main/""$DKF" 2>&1) == *"200 OK"* ]];
 			then
 				Scarica "$ENTRAW""$1""/main/""$DKF" "$DKF"
 			else
