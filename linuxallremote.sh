@@ -270,6 +270,7 @@ while true; do
 	echo "$SEP"
 	echo "APACHE"
 	echo -ne " 278. mgeeky/tomcatWarDeployer\t\t\t280. hypn0s/AJPy\t\t\t\t\t829. mthbernardes/ARTLAS\n"
+	echo -ne " 2424. antonio-morales/Apache-HTTP-Fuzzing\n"
 	echo "$SEP"
 	echo "APPLE"
 	echo -ne " 644. Pr0x13/iDict\t\t\t\t645. foozzi/iCloudBrutter\t2325. gwatts/pinfinder\n"
@@ -9731,6 +9732,9 @@ while true; do
 			export TOKEN=`curl -X PUT -H "X-aws-ec2-metadata-token-ttl-seconds: 21600" "$TIP/latest/api/token"`
 			curl -H "X-aws-ec2-metadata-token:$TOKEN" -v "$TIP/latest/meta-data"
 		fi
+	;;
+	"2424")
+		Clona "antonio-morales/Apache-HTTP-Fuzzing"
 	;;
 	*)
 		echo "error, invalid choice"
