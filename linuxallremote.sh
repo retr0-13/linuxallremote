@@ -368,6 +368,7 @@ while true; do
 	echo -ne " 994. CoalfireLabs/crackHOR\t\t\t996. vnik5287/Crackq\t\t\t\t\t997. averagesecurityguy/crack\n"
 	echo -ne " 1003. DanMcInerney/creds.py\t\t\t1008. galkan/crowbar\t\t\t\t\t1017. Ekultek/Dagon\n"
 	echo -ne " 1019. SideChannelMarvels/Daredevil\t\t\t2296. s3inlc/hashtopolis\t\t\t2357. fireeye/gocrack\n"
+	echo -ne " 2425. skelsec/pypykatz\n"
 	echo "$SEP"
 	echo "CRAWLING - SPIDERING - SCRAPING"
 	echo -ne " 586. saeeddhqan/evine\t\t\t\t722. OWASP/OWASP-WebScarab\t\t\t\t733. gotr00t0day/spider00t\n"
@@ -9735,6 +9736,9 @@ while true; do
 	;;
 	"2424")
 		Clona "antonio-morales/Apache-HTTP-Fuzzing"
+	;;
+	"2425")
+		Clona "skelsec/pypykatz"
 	;;
 	*)
 		echo "error, invalid choice"
