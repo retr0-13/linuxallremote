@@ -9740,6 +9740,12 @@ while true; do
 	"2425")
 		Clona "skelsec/pypykatz"
 	;;
+	"2426")
+		Clona "sensepost/glypeahead"
+	;;
+	"2427")
+		Clona "IGRSoft/KisMac2"
+	;;
 	*)
 		echo "error, invalid choice"
 	;;
