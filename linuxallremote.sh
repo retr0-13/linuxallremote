@@ -380,7 +380,7 @@ while true; do
 	echo -ne " 406. 0xInfection/XSRFProbe\t\t\t2278. s0md3v/Bolt\n"
 	echo "$SEP"
 	echo "CVE LIST"
-	echo -ne " 2414. dirkjanm/CVE-2020-1472\t\t2421. twistlock/RunC-CVE-2019-5736\n"
+	echo -ne " 2414. dirkjanm/CVE-2020-1472\t\t2421. twistlock/RunC-CVE-2019-5736\t\t2428. jas502n/CVE-2019-12384\n"
 	echo "$SEP"
 	echo "D"
 	echo -ne " 1090. dlang-community/D-Scanner\n"
@@ -9745,6 +9745,9 @@ while true; do
 	;;
 	"2427")
 		Clona "IGRSoft/KisMac2"
+	;;
+	"2428")
+		Clona "jas502n/CVE-2019-12384"
 	;;
 	*)
 		echo "error, invalid choice"
