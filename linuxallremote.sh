@@ -437,7 +437,7 @@ while true; do
 	echo -ne " 285. louisabraham/ffpass\t\t\t294. TryCatchHCF/Cloakify\t\t\t\t441. laramies/metagoofil\n"
 	echo -ne " 533. securing/DumpsterDiver\t\t\t862. deepzec/Bad-Pdf\t\t\t\t\t1110. brav0hax/easy-creds\n"
 	echo -ne " 879. mazen160/bfac\t\t\t\t880. tmbinc/bgrep\t\t\t\t\t1021. itsmehacker/DarkScrape\n"
-	echo -ne " 1101. 0verl0ad/Dumb0\t\t\t\t1105. kost/dvcs-ripper\n"
+	echo -ne " 1101. 0verl0ad/Dumb0\t\t\t\t1105. kost/dvcs-ripper\t\t\t\t\t2429. ifsnop/mysqldump-php\n"
 	echo "$SEP"
 	echo "EDITOR"
 	echo -ne " 894. afrantzis/bless\n"
@@ -827,7 +827,7 @@ while true; do
 	echo -ne " 835. AlisamTechnology/ATSCAN-V3.1\t\t871. lijiejie/bbscan\t\t\t\t\t873. invictus1306/beebug\n"
 	echo -ne " 927. auraltension/c5scan\t\t\t943. ztgrace/changeme\t\t\t\t\t1097. stamparm/DSXS\n"
 	echo -ne " 1092. stamparm/DSFS\t\t\t\t1094. stamparm/DSJS\t\t\t\t\t1095. stamparm/DSSS\n"
-	echo -ne " 2366. lengjibo/dedecmscan\t\t\t2426. sensepost/glypeahead\n"
+	echo -ne " 2366. lengjibo/dedecmscan\t\t\t2426. sensepost/glypeahead\t\t\t\t\t2430. Checkmarx/kics\n"
 	echo -ne " 2367. k8gege/K8PortScan\t\t\t\t2368. k8gege/K8tools\t\t\t\t2369. xs25cn/scanPort\n"
 	echo "$SEP"
 	echo "SHELL"
@@ -9748,6 +9748,12 @@ while true; do
 	;;
 	"2428")
 		Clona "jas502n/CVE-2019-12384"
+	;;
+	"2429")
+		Clona "ifsnop/mysqldump-php"
+	;;
+	"2430")
+		Clona "Checkmarx/kics"
 	;;
 	*)
 		echo "error, invalid choice"
