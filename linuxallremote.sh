@@ -687,7 +687,7 @@ while true; do
 	echo "$SEP"
 	echo "OSINT"
 	echo -ne " 845. bharshbarger/AutOSINT\t\t\t875. aancw/Belati\t\t\t\t\t2294. pixelbubble/ProtOSINT\n"
-	echo -ne " 2345. SharadKumar97/OSINT-SPY\n"
+	echo -ne " 2345. SharadKumar97/OSINT-SPY\t\t\t2439. matamorphosis/Scrummage\n"
 	echo "$SEP"
 	echo "OWA"
 	echo -ne " 343. busterb/msmailprobe\t\t\t344. 0xZDH/o365spray\t\t\t\t\t345. gremwell/o365enum\n"
