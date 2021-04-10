@@ -771,7 +771,7 @@ while true; do
 	echo -ne " 844. Tib3rius/AutoRecon\t\t\t2236. six2dez/reconftw\t\t\t\t\t2244. yassineaboukir/Asnlookup\n"
 	echo -ne " 1877. projectdiscovery/shuffledns\t\t1983. projectdiscovery/subfinder\t\t\t922. sham00n/buster\n"
 	echo -ne " 2282. s0md3v/ReconDog\t\t\t\t998. Ganapati/Crawlic\t\t\t\t\t1024. upgoingstar/datasploit\n"
-	echo -ne " 1122. Gilks/enumerid\t\t\t\t2405. c0dejump/HawkScan\n"
+	echo -ne " 1122. Gilks/enumerid\t\t\t\t2405. c0dejump/HawkScan\t\t\t\t\t2431. heilla/SecurityTesting\n"
 	echo "$SEP"
 	echo "REDIS"
 	echo -ne " 759. Avinash-acid/Redis-Server-Exploit\n"
@@ -9759,6 +9759,30 @@ while true; do
 	;;
 	"2430")
 		Clona "Checkmarx/kics"
+	;;
+	"2431")
+		Clona "heilla/SecurityTesting"
+	;;
+	"2432")
+		Clona "eslam3kl/crtfinder"
+	;;
+	"2433")
+		Clona "eslam3kl/3klector"
+	;;
+	"2434")
+		Clona "eslam3kl/Explorer"
+	;;
+	"2435")
+		Scarica "$ENTRAW""eslam3kl/PackSniff/master/packsniff.py"
+	;;
+	"2436")
+		Scarica "$ENTRAW""eslam3kl/NetScanner/master/network_scanner.py"
+	;;
+	"2437")
+		Scarica "$ENTRAW""eslam3kl/ARP-Spoofer/master/arp_spoofer.py"
+	;;
+	"2438")
+		Scarica "$ENTRAW""eslam3kl/MAC_Changer/master/mac_changer.py"
 	;;
 	*)
 		echo "error, invalid choice"
