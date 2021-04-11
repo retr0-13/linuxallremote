@@ -772,7 +772,7 @@ while true; do
 	echo -ne " 1877. projectdiscovery/shuffledns\t\t1983. projectdiscovery/subfinder\t\t\t922. sham00n/buster\n"
 	echo -ne " 2282. s0md3v/ReconDog\t\t\t\t998. Ganapati/Crawlic\t\t\t\t\t1024. upgoingstar/datasploit\n"
 	echo -ne " 1122. Gilks/enumerid\t\t\t\t2405. c0dejump/HawkScan\t\t\t\t\t2431. heilla/SecurityTesting\n"
-	echo -ne " 2433. eslam3kl/3klector\n"
+	echo -ne " 2433. eslam3kl/3klector\t\t\t2434. eslam3kl/Explorer\n"
 	echo "$SEP"
 	echo "REDIS"
 	echo -ne " 759. Avinash-acid/Redis-Server-Exploit\n"
