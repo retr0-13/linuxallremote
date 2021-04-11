@@ -462,7 +462,7 @@ while true; do
 	echo -ne " 571. sensepost/ruler\t\t\t\t2351. dirkjanm/PrivExchange\t\t\t\t2404. RickGeex/ProxyLogon\n"
 	echo "$SEP"
 	echo "EXFILTRATION"
-	echo -ne " 314. danielwolfmann/Invoke-WordThief/logger\t593. TryCatchHCF/PacketWhisper\n"
+	echo -ne " 314. danielwolfmann/Invoke-WordThief/logger\t593. TryCatchHCF/PacketWhisper\t\t2444. foofus-sph1nx/PyMailSniper\n"
 	echo "$SEP"
 	echo "EXPLOIT"
 	echo -ne " 10. exploit-db/linux - remote scripts\t\t11. exploit-db/linux_x86 - remote scripts\t\t12. exploit-db/linux_x86-64 - remote scripts\n"
@@ -9804,6 +9804,9 @@ while true; do
 		then
 			Clona "System00-Security/Git-Cve"
 		fi
+	;;
+	"2444")
+		Clona "foofus-sph1nx/PyMailSniper"
 	;;
 	*)
 		echo "error, invalid choice"
