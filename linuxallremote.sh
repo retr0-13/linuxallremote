@@ -507,7 +507,7 @@ while true; do
 	echo -ne " 692. tehmoon/http-fuzzer\t\t\t693. andresriancho/websocket-fuzzer\t\t\t694. twilsonb/jbrofuzz\n"
 	echo -ne " 695. cisco-sas/kitty\t\t\t\t696. mxmssh/manul\t\t\t\t\t697. IOActive/Melkor_ELF_Fuzzer\n"
 	echo -ne " 698. mazzoo/ohrwurm\t\t\t\t699. MozillaSecurity/peach\t\t\t\t700. calebstewart/peach\n"
-	echo -ne " 701. marcinguy/powerfuzzer\t\t\t703. hgascon/pulsar\n"
+	echo -ne " 701. marcinguy/powerfuzzer\t\t\t703. hgascon/pulsar\t\t\t\t2442. denandz/fuzzotron\n"
 	echo -ne " 704. mseclab/PyJFuzz\t\t\t\t705. akihe/radamsa\t\t\t\t\t707. Battelle/sandsifter\n"
 	echo -ne " 708. mfontanini/sloth-fuzzer\t\t\t709. nopper/archpwn\t\t\t\t\t711. landw1re/socketfuzz\n"
 	echo -ne " 712. allfro/sploitego\t\t\t\t715. rsmusllp/termineter\t\t\t\t716. droberson/thefuzz\n"
