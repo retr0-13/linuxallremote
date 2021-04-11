@@ -471,7 +471,7 @@ while true; do
 	echo -ne " 18. offensive-security/exploitdb/ios remote exploits\t\t\t\t\t\t\t617. Download an exploit from exploit-db site web\n"
 	echo -ne " 815. Acey9/Chimay-Red\t\t\t\t846. NullArray/AutoSploit\t\t\t\t19. all remote exploits from offensive-security/exploitdb\n"
 	echo -ne " 1071. coldfusion39/domi-owned\t\t\t2331. offensive-security/exploitdb\n"
-	echo -ne " 2386. Download impacket's tools\n"
+	echo -ne " 2386. Download impacket's tools\t\t\t2443. System00-Security/Git-Cve\n"
 	echo "$SEP"
 	echo "EXTRA"
 	echo -ne " 252. LionSec/katoolin\n"
@@ -9786,6 +9786,21 @@ while true; do
 	;;
 	"2439")
 		Clona "matamorphosis/Scrummage"
+	;;
+	"2440")
+		Clona "assetnote/kiterunner"
+	;;
+	"2441")
+		Clona "unipacker/unipacker"
+	;;
+	"2442")
+		Clona "denandz/fuzzotron"
+	;;
+	"2443")
+		if [[ $(Warning) == "Y" ]];
+		then
+			Clona "System00-Security/Git-Cve"
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
