@@ -870,7 +870,7 @@ while true; do
 	echo "$SEP"
 	echo "SPOOFING"
 	echo -ne " 290. initstring/evil-ssdp\t\t\t291. KALILINUXTRICKSYT/easymacchanger\t\t\t292. sbdchd/macchanger\n"
-	echo -ne " 2438. eslam3kl/MAC_Changer\n"
+	echo -ne " 2438. eslam3kl/MAC_Changer\t\t\t2437. eslam3kl/ARP-Spoofer\n"
 	echo "$SEP"
 	echo "SQL"
 	echo -ne " 159. ccpgames/sqlcmd\t\t\t\t160. sqlmapproject/sqlmap\n"
