@@ -829,6 +829,7 @@ while true; do
 	echo -ne " 1092. stamparm/DSFS\t\t\t\t1094. stamparm/DSJS\t\t\t\t\t1095. stamparm/DSSS\n"
 	echo -ne " 2366. lengjibo/dedecmscan\t\t\t2426. sensepost/glypeahead\t\t\t\t\t2430. Checkmarx/kics\n"
 	echo -ne " 2367. k8gege/K8PortScan\t\t\t\t2368. k8gege/K8tools\t\t\t\t2369. xs25cn/scanPort\n"
+	echo -ne " 2436. eslam3kl/NetScanner\n"
 	echo "$SEP"
 	echo "SHELL"
 	echo -ne " 70. sameera-madushan/Print-My-Shell\t\t71. flozz/p0wny-shell/shell\t\t\t\t87. rastating/slae\n"
