@@ -544,7 +544,7 @@ while true; do
 	echo -ne " 2407. dotPY-hax/gitlab_RCE\n"
 	echo "$SEP"
 	echo "HASH"
-	echo -ne " 2260. cube0x0/HashSpray.py\n"
+	echo -ne " 2260. cube0x0/HashSpray.py\t\t\t2446. MichaelDim02/houndsniff\n"
 	echo "$SEP"
 	echo "HOOKING - HIJACKING - INJECTION"
 	echo -ne " 140. zznop/drow\t\t\t\t173. J3wker/DLLicous-MaliciousDLL\t\t\t185. cybercitizen7/Ps1jacker\n"
