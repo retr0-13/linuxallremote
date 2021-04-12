@@ -788,6 +788,7 @@ while true; do
 	echo "REVSHELL"
 	echo -ne " 515. 3v4Si0N/HTTP-revshell\t\t\t2321. shelld3v/JSshell\t\t\t\t\t2372. 0dayCTF/reverse-shell-generator\n"
 	echo -ne " 2392. swisskyrepo/PayloadsAllTheThings/Methodology_and_Resources/Reverse_Shell_Cheatsheet\n"
+	echo -ne " 2447. octetsplicer/LAZYPARIAH\n"
 	echo "$SEP"
 	echo "RMI"
 	echo -ne " 867. NickstaDB/BaRMIe\n"
@@ -9807,6 +9808,15 @@ while true; do
 	;;
 	"2444")
 		Clona "foofus-sph1nx/PyMailSniper"
+	;;
+	"2445")
+		Clona "ra1nb0rn/avain"
+	;;
+	"2446")
+		Clona "MichaelDim02/houndsniff"
+	;;
+	"2447")
+		Clona "octetsplicer/LAZYPARIAH"
 	;;
 	*)
 		echo "error, invalid choice"
