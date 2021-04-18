@@ -231,6 +231,7 @@ while true; do
 	echo "ACTIVE DIRECTORY"
 	echo -ne " 27. Greenwolf/Spray\t\t\t\t229. DanMcInerney/icebreaker\t\t\t\t283. optiv/Talon\n"
 	echo -ne " 524. tothi/rbcd-attack/rbcd\t\t\t587. PaperMtn/lil-pwny\t\t\t\t\t793. fox-it/aclpwn.py\n"
+	echo -ne " 2448. ricardojoserf/adfsbrute\n"
 	echo "$SEP"
 	echo "ACQUISITION"
 	echo -ne " 171. Silv3rHorn/ArtifactExtractor\t\t172. SekoiaLab/Fastir_Collector\n"
