@@ -9819,6 +9819,9 @@ while true; do
 	"2447")
 		Clona "octetsplicer/LAZYPARIAH"
 	;;
+	"2448")
+		Scarica "$ENTRAW""ricardojoserf/adfsbrute/main/adfsbrute.py"
+	;;
 	*)
 		echo "error, invalid choice"
 	;;
