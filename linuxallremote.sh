@@ -1013,7 +1013,7 @@ while true; do
 	echo -ne " 542. digininja/CeWL\t\t\t\t905. R3nt0n/bopscrk\t\t\t\t\t1103. nil0x42/duplicut\n"
 	echo -ne " 302. duyet/bruteforce-database\t\t\t318. digininja/pipal\t\t\t\t\t535. nil0x42/cracking-utils\n"
 	echo -ne " 985. assetnote/commonspeak2\t\t\t404. OWASP/D4N155\t\t\t\t\t2300. shamrin/diceware\n"
-	echo -ne " 2388. DavidWittman/wpxmlrpcbrute/1000-most-common-passwords\n"
+	echo -ne " 2388. DavidWittman/wpxmlrpcbrute/1000-most-common-passwords\t\t\t\t2449. google/spraygen\n"
 	echo "$SEP"
 	echo "WORDPRESS"
 	echo -ne " 468. n00py/WPForce\t\t\t\t469. BlackXploits/WPBrute\t\t\t\t566. 0xAbdullah/0xWPBF\n"
@@ -9822,6 +9822,9 @@ while true; do
 	;;
 	"2448")
 		Scarica "$ENTRAW""ricardojoserf/adfsbrute/main/adfsbrute.py"
+	;;
+	"2449")
+		Scarica "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/spraygen/spraygen-1.3.4.zip"
 	;;
 	*)
 		echo "error, invalid choice"
