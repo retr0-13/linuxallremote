@@ -28,6 +28,8 @@ and much more...
 
 Please, share and starring my repos, follow me and... Happy hacking!
 
+Tutorial from TigermanRoot: <a href="https://odysee.com/@Tigermanroot:b/Iinuxallremote:e>video</a>
+
 Twitter: <a href="https://twitter.com/fabio_defilippo">@fabio_defilippo</a>
 
 PayPal: If you want, you could <a href="https://www.paypal.com/donate?hosted_button_id=559D4CJB84KQJ">buy me a coffee</a>
