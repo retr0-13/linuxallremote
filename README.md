@@ -28,7 +28,7 @@ and much more...
 
 Please, share and starring my repos, follow me and... Happy hacking!
 
-Tutorial from TigermanRoot: <a href="https://odysee.com/@Tigermanroot:b/Iinuxallremote:e>video</a>
+Tutorial from TigermanRoot: <a href="https://odysee.com/@Tigermanroot:b/Iinuxallremote:e">video</a>
 
 Twitter: <a href="https://twitter.com/fabio_defilippo">@fabio_defilippo</a>
 
