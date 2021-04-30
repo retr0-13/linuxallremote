@@ -790,7 +790,7 @@ while true; do
 	echo "REVSHELL"
 	echo -ne " 515. 3v4Si0N/HTTP-revshell\t\t\t2321. shelld3v/JSshell\t\t\t\t\t2372. 0dayCTF/reverse-shell-generator\n"
 	echo -ne " 2392. swisskyrepo/PayloadsAllTheThings/Methodology_and_Resources/Reverse_Shell_Cheatsheet\n"
-	echo -ne " 2447. octetsplicer/LAZYPARIAH\n"
+	echo -ne " 2447. octetsplicer/LAZYPARIAH\t\t\t\t2456. GetRektBoy724/MeterPwrShell\n"
 	echo "$SEP"
 	echo "RMI"
 	echo -ne " 867. NickstaDB/BaRMIe\n"
@@ -9872,6 +9872,9 @@ while true; do
 	;;
 	"2455")
 		Clona "twitu/byob"
+	;;
+	"2456")
+		Scarica "$ENTSSL""GetRektBoy724/MeterPwrShell/releases/download/v1.5.1/meterpwrshellexec"
 	;;
 	*)
 		echo "error, invalid choice"
