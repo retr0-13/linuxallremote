@@ -964,6 +964,7 @@ while true; do
 	echo -ne " 2268. install a python3 hacking package\t2289. install a ruby hacking gem\t\t\t\tPrepare RevShell for Windows\n"
 	echo -ne " 2337. install a deb package\t\t\t2338. install a browser\t\t\t\t\t2353. Pull a Docker image\n"
 	echo -ne " 2452. AWS S3 copy file to remote host\t\t\t2453. AWS S3 list file in remote host\t\t\t2454. AWS S3 dump dynamodb tables\n"
+	echo -ne " 2457. install poetry\n"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
@@ -9875,6 +9876,9 @@ while true; do
 	;;
 	"2456")
 		Scarica "$ENTSSL""GetRektBoy724/MeterPwrShell/releases/download/v1.5.1/meterpwrshellexec"
+	;;
+	"2457")
+		curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | python -
 	;;
 	*)
 		echo "error, invalid choice"
