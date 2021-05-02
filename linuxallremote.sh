@@ -544,6 +544,9 @@ while true; do
 	echo "GITLAB"
 	echo -ne " 2407. dotPY-hax/gitlab_RCE\n"
 	echo "$SEP"
+	echo "HARDWARE"
+	echo -ne " 2458. samyk/glitchsink\n"
+	echo "$SEP"
 	echo "HASH"
 	echo -ne " 2260. cube0x0/HashSpray.py\t\t\t2446. MichaelDim02/houndsniff\n"
 	echo "$SEP"
@@ -9878,7 +9881,10 @@ while true; do
 		Scarica "$ENTSSL""GetRektBoy724/MeterPwrShell/releases/download/v1.5.1/meterpwrshellexec"
 	;;
 	"2457")
-		curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | python -
+		curl -k -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | python -
+	;;
+	"2458")
+		Clona "samyk/glitchsink"
 	;;
 	*)
 		echo "error, invalid choice"
