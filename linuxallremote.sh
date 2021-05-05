@@ -936,7 +936,7 @@ while true; do
 	echo -ne " 2271. dc414/Upnp-Exploiter\n"
 	echo "$SEP"
 	echo "USB"
-	echo -ne " 2231. nccgroup/umap2\t2232. usb-tools/ViewSB\t2233. Merimetso-Code/USB-Hacking/usbfind\n"
+	echo -ne " 2231. nccgroup/umap2\t2232. usb-tools/ViewSB\t2233. Merimetso-Code/USB-Hacking/usbfind\t\t\t2459. hak5darren/USB-Rubber-Ducky\n"
 	echo "$SEP"
 	echo "UTILITIES"
 	echo -ne " 99. Clone a Repo from GitHub\t\t\t100. Enable forlder to HttpServer\t\t\t101. listen reverse shell from Windows\n"
@@ -9885,6 +9885,9 @@ while true; do
 	;;
 	"2458")
 		Clona "samyk/glitchsink"
+	;;
+	"2459")
+		Clona "hak5darren/USB-Rubber-Ducky"
 	;;
 	*)
 		echo "error, invalid choice"
