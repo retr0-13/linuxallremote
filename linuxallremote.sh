@@ -691,6 +691,9 @@ while true; do
 	echo "NETLOGON"
 	echo -ne " 508. risksense/zerologon\t\t\t509. bb00/zer0dump\t\t\t\t\t510. VoidSec/CVE-2020-1472\n"
 	echo "$SEP"
+	echo "NGINX"
+	echo -ne " 2461. stark0de/nginxpwner\n"
+	echo "$SEP"
 	echo "NTP"
 	echo -ne " 178. PentesterES/Delorean\n"
 	echo "$SEP"
@@ -9893,6 +9896,21 @@ while true; do
 	;;
 	"2459")
 		Clona "hak5darren/USB-Rubber-Ducky"
+	;;
+	"2460")
+		Clona "ultrasecurity/Storm-Breaker"
+	;;
+	"2461")
+		Clona "stark0de/nginxpwner"
+	;;
+	"2462")
+		Clona "FunnyWolf/pystinger"
+	;;
+	"2463")
+		Clona "d4rckh/vaf"
+	;;
+	"2464")
+		curl -sSf -k https://nim-lang.org/choosenim/init.sh | sh
 	;;
 	*)
 		echo "error, invalid choice"
