@@ -460,7 +460,7 @@ while true; do
 	echo -ne " 944. TarlogicSecurity/Chankro\t\t\t953. epsylon/cintruder\t\t\t\t\t956. frohoff/ciphr\n"
 	echo -ne " 965. trycatchhcf/cloakify\t\t\t1036. nccgroup/demiguise\t\t\t\t1081. D4Vinci/Dr0p1t-Framework\n"
 	echo -ne " 2356. Mr-Un1k0d3r/UniByAv\t\t\t\t2355. paranoidninja/CarbonCopy\t\t\t2389. samhaxr/AnonX\n"
-	echo -ne " 1134. OsandaMalith/Exe2Image\n"
+	echo -ne " 1134. OsandaMalith/Exe2Image\t\t\t2463. d4rckh/vaf\t\t\t2464. nim-lang/choosenim/vaf\n"
 	echo "$SEP"
 	echo "EXCHANGE"
 	echo -ne " 571. sensepost/ruler\t\t\t\t2351. dirkjanm/PrivExchange\t\t\t\t2404. RickGeex/ProxyLogon\n"
