@@ -9228,8 +9228,18 @@ while true; do
 		done
 	;;
 	"2290")
-		Scarica "$ENTRAW""nahamsec/lazys3/master/common_bucket_prefixes.txt"
-		Scarica "$ENTRAW""nahamsec/lazys3/master/lazys3.rb"
+		if [[ -f $(which lazys3.rb) ]];
+		then
+			echo "Digit a target url, domain.topdomain"
+			read -p "(example, thisone.com): " TIP
+			if [[ "$TIP" != "" ]];
+			then
+				lazys3.rb "$TIP"
+			fi
+		else
+			Scarica "$ENTRAW""nahamsec/lazys3/master/common_bucket_prefixes.txt"
+			Scarica "$ENTRAW""nahamsec/lazys3/master/lazys3.rb"
+		fi
 	;;
 	"2291")
 		Scarica "$ENTRAW""tomdev/teh_s3_bucketeers/master/bucketeer.sh"
