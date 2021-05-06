@@ -9228,13 +9228,13 @@ while true; do
 		done
 	;;
 	"2290")
-		if [[ -f $(which lazys3.rb) ]];
+		if [[ -f ./lazys3.rb ]];
 		then
 			echo "Digit a target url, domain.topdomain"
 			read -p "(example, thisone.com): " TIP
 			if [[ "$TIP" != "" ]];
 			then
-				lazys3.rb "$TIP"
+				./lazys3.rb "$TIP"
 			fi
 		else
 			Scarica "$ENTRAW""nahamsec/lazys3/master/common_bucket_prefixes.txt"
