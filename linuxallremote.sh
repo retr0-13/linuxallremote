@@ -544,6 +544,8 @@ while true; do
 	echo -ne " 1118. martinvigo/email2phonenumber\t\t2302. josh0xA/darkdump\t\t\t\t2314. FortyNorthSecurity/Just-Metadata\n"
 	echo -ne " 2316. davidtavarez/pwndb\t\t\t2326. j3ers3/Searpy\t\t\t\t\t1628. behindthefirewalls/Parsero\n"
 	echo -ne " 2352. bhavsec/reconspider\t\t\t2376. caffix/amass\t\t\t\t\t2406. an00byss/godehashed\n"
+	echo -ne " 845. bharshbarger/AutOSINT\t\t\t875. aancw/Belati\t\t\t\t\t2294. pixelbubble/ProtOSINT\n"
+	echo -ne " 2345. SharadKumar97/OSINT-SPY\t\t\t2439. matamorphosis/Scrummage\n"
 	echo "$SEP"
 	echo "GIT - REPOS"
 	echo -ne " 487. arthaud/git-dumper\t\t\t553. Ebryx/GitDump\t\t\t\t\t2315. metac0rtex/GitHarvester\n"
@@ -702,10 +704,6 @@ while true; do
 	echo "$SEP"
 	echo "NTP"
 	echo -ne " 178. PentesterES/Delorean\n"
-	echo "$SEP"
-	echo "OSINT"
-	echo -ne " 845. bharshbarger/AutOSINT\t\t\t875. aancw/Belati\t\t\t\t\t2294. pixelbubble/ProtOSINT\n"
-	echo -ne " 2345. SharadKumar97/OSINT-SPY\t\t\t2439. matamorphosis/Scrummage\n"
 	echo "$SEP"
 	echo "OWA"
 	echo -ne " 343. busterb/msmailprobe\t\t\t344. 0xZDH/o365spray\t\t\t\t\t345. gremwell/o365enum\n"
@@ -1062,7 +1060,7 @@ while true; do
 	echo -ne " 1000. oblique/create_ap\t\t\t1031. byt3bl33d3r/DeathStar\t\t\t\t1034. UltimateHackers/Decodify\n"
 	echo -ne " 1091. szechyjs/dsd\t\t\t\t1098. fleetcaptain/dtp-spoof\t\t\t\t1099. insomniacslk/dublin-traceroute\n"
 	echo -ne " 1100. kevthehermit/DuckToolkit\t\t\t1102. MalcolmRobb/dump1090\t\t\t\t1035. takeshixx/deen\n"
-	echo -ne " 2451. google/security-research\n"
+	echo -ne " 2451. google/security-research\t\t\t1155. mubix/FakeNetBIOS\n"
 	echo "$SEP"
 
 	read -p "Choose a script: " SCELTA
