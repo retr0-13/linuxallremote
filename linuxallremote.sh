@@ -883,7 +883,7 @@ while true; do
 	echo -ne " 958. nccgroup/cisco-snmp-slap\n"
 	echo "$SEP"
 	echo "SOCIAL ENGINEERING"
-	echo -ne " 2460. ultrasecurity/Storm-Breaker\n"
+	echo -ne " 2460. ultrasecurity/Storm-Breaker\t\t\t1150. PowerScript/facebrok\n"
 	echo "$SEP"
 	echo "SOCIAL MEDIA"
 	echo -ne " 427. yasserjanah/ZeS0MeBr\t\t\t551. Cyb0r9/SocialBox\t\t\t\t\t642. th3unkn0n/facebash-termux\n"
