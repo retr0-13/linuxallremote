@@ -680,6 +680,7 @@ while true; do
 	echo -ne " 1109. s0lst1c3/eaphammer\t\t\t2384. SpiderLabs/Responder\t\t\t\t\t359. lgandx/Responder\n"
 	echo -ne " 2385. hausec/ProxyLogon\t\t\t2435. eslam3kl/PackSniff\t\t\t\t\t1126. DoubleThreatSecurity/Espionage\n"
 	echo -ne " 1130. bitbrute/evillimiter\t\t\t1133. Exa-Networks/exabgp\t\t\t\t\t1153. Crypt0s/FakeDns\n"
+	echo -ne " 1154. fireeye/flare-fakenet-ng\n"
 	echo "$SEP"
 	echo "MOBILE"
 	echo -ne " 2344. sensepost/objection\n"
