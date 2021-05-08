@@ -15,6 +15,7 @@ Over 1000 tools and utilities:
 - evasion and tunneling;
 - port forwarding;
 - Reverse Engineering;
+- Generic and Specific Social Engineering attacks;
 - attack other OS, Android too;
 - Forensics and Anti-Forensics tools;
 - cracking, guessing and brute-forcing passwords;
