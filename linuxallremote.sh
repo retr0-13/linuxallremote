@@ -540,7 +540,7 @@ while true; do
 	echo -ne " 1118. martinvigo/email2phonenumber\t\t2302. josh0xA/darkdump\t\t\t\t2314. FortyNorthSecurity/Just-Metadata\n"
 	echo -ne " 2316. davidtavarez/pwndb\t\t\t2326. j3ers3/Searpy\t\t\t\t\t1628. behindthefirewalls/Parsero\n"
 	echo -ne " 2352. bhavsec/reconspider\t\t\t2376. caffix/amass\t\t\t\t\t2406. an00byss/godehashed\n"
-	echo -ne " 1148. tomoneill19/facebookOSINT\n"
+	echo -ne " 1148. tomoneill19/facebookOSINT\t\t\t1149. pun1sh3r/facebot\n"
 	echo "$SEP"
 	echo "GIT - REPOS"
 	echo -ne " 487. arthaud/git-dumper\t\t\t553. Ebryx/GitDump\t\t\t\t\t2315. metac0rtex/GitHarvester\n"
