@@ -989,6 +989,7 @@ while true; do
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	echo -ne " 511. Isaacdelly/Plutus\t\t\t\t512. dan-v/bruteforce-bitcoin-brainwallet\t\t513. SMH17/bitcoin-hacking-tools\n"
+	echo -ne " 2465. litneet64/etherblob-explorer\n"
 	echo "$SEP"
 	echo "VOIP"
 	echo -ne " 461. haasosaurus/ace-voip\t\t\t629. voipmonitor/sniffer\t\t\t\t898. jesusprubio/bluebox-ng\n"
@@ -9933,6 +9934,9 @@ while true; do
 	;;
 	"2464")
 		curl -sSf -k https://nim-lang.org/choosenim/init.sh | sh
+	;;
+	"2465")
+		Clona "litneet64/etherblob-explorer"
 	;;
 	*)
 		echo "error, invalid choice"
