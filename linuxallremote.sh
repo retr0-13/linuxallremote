@@ -293,6 +293,7 @@ while true; do
 	echo -ne " 852. jordanpotti/AWSBucketDump\t\t\t868. Voulnet/barq\t\t\t\t\t2290. nahamsec/lazys3\n"
 	echo -ne " 2415. digi.ninja/bucket_finder_1.1.tar.bz2\t\t\t2416. nccgroup/s3_objects_check\t\t\t2417. duo-labs/cloudmapper\n"
 	echo -ne " 2418. NetSPI/aws_consoler\t\t\t2419. andresriancho/enumerate-iam\t\t\t2291. tomdev/teh_s3_bucketeers\n"
+	echo -ne " 2467. smaranchand/bucky\n"
 	echo "$SEP"
 	echo "AZURE"
 	echo -ne " 32. dirkjanm/ROADtools\n"
@@ -527,7 +528,7 @@ while true; do
 	echo -ne " 717. kernelslacker/trinity\t\t\t718. PAGalaxyLab/uniFuzzer\t\t\t\t720. nullsecuritynet/uniofuzz\n"
 	echo -ne " 721. andresriancho/w3af\t\t\t723. wereallfeds/webshag\t\t\t\t724. samhocevar/zzuf\n"
 	echo -ne " 798. tintinweb/aggroArgs\t\t\t2334. lcamtuf.coredump/afl\t\t\t\t1166. ffuf/ffuf\n"
-	echo -ne " 1168. henshin/filebuster\n"
+	echo -ne " 1168. henshin/filebuster\t\t\t2468. intrudir/403fuzzer\n"
 	echo "$SEP"
 	echo "GATHERING - OSINT - DOXING"
 	echo -ne " 168. Screetsec/Sudomy\t\t\t\t177. HightechSec/git-scanner/gitscanner\t\t\t89. urbanadventurer/WhatWeb\n"
@@ -9940,6 +9941,12 @@ while true; do
 	;;
 	"2466"
 		Clona "hemp3l/sucrack"
+	;;
+	"2467"
+		Clona "smaranchand/bucky"
+	;;
+	"2468"
+		Clona "intrudir/403fuzzer"
 	;;
 	*)
 		echo "error, invalid choice"
