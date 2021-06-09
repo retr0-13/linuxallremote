@@ -320,9 +320,10 @@ while true; do
 	echo "BRAINF**K"
 	echo -ne " 238. brain-lang/brainfuck\t\t\t239. fabianishere/brainfuck\n"
 	echo "$SEP"
-	echo "C2 - Command and Control"
+	echo "C2 - CeC - Command and Control"
 	echo -ne " 499. hyp3rlinx/DarkFinger-C2\t\t\t500. nettitude/PoshC2\t\t\t\t\t502. sensepost/godoh\n"
 	echo -ne " 503. lu4p/ToRat\t\t\t\t602. nil0x42/phpsploit\t\t\t\t\t137. xtr4nge/FruityC2\n"
+	echo -ne " 2469. postrequest/link\n"
 	echo "$SEP"
 	echo "CARS"
 	echo -ne " 933. schutzwerk/CANalyzat0r\t\t\t2310. shipcod3/mazda_getInfo\t\t\t2311. P1kachu/talking-with-cars\n"
@@ -9947,6 +9948,9 @@ while true; do
 	;;
 	"2468"
 		Clona "intrudir/403fuzzer"
+	;;
+	"2469"
+		Clona "postrequest/link"
 	;;
 	*)
 		echo "error, invalid choice"
