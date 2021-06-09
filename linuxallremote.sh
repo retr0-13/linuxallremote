@@ -9940,16 +9940,16 @@ while true; do
 	"2465")
 		Clona "litneet64/etherblob-explorer"
 	;;
-	"2466"
+	"2466")
 		Clona "hemp3l/sucrack"
 	;;
-	"2467"
+	"2467")
 		Clona "smaranchand/bucky"
 	;;
-	"2468"
+	"2468")
 		Clona "intrudir/403fuzzer"
 	;;
-	"2469"
+	"2469")
 		Clona "postrequest/link"
 	;;
 	*)
