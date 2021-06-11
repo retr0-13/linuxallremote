@@ -9956,7 +9956,7 @@ while true; do
 		Clona "postrequest/link"
 	;;
 	"2470")
-		Scarica "https://www.scrapmaker.com/download/data/wordlists/dictionaries/rockyou.txt"
+		Scarica "https://www.scrapmaker.com/data/wordlists/dictionaries/rockyou.txt"
 	;;
 	*)
 		echo "error, invalid choice"
