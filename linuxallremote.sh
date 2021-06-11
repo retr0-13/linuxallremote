@@ -1046,6 +1046,7 @@ while true; do
 	echo -ne " 302. duyet/bruteforce-database\t\t\t318. digininja/pipal\t\t\t\t\t535. nil0x42/cracking-utils\n"
 	echo -ne " 985. assetnote/commonspeak2\t\t\t404. OWASP/D4N155\t\t\t\t\t2300. shamrin/diceware\n"
 	echo -ne " 2388. DavidWittman/wpxmlrpcbrute/1000-most-common-passwords\t\t\t\t2449. google/spraygen\n"
+	echo -ne " 2470. scrapmaker/rockyou.txt\n"
 	echo "$SEP"
 	echo "WORDPRESS"
 	echo -ne " 468. n00py/WPForce\t\t\t\t469. BlackXploits/WPBrute\t\t\t\t566. 0xAbdullah/0xWPBF\n"
@@ -9953,6 +9954,9 @@ while true; do
 	;;
 	"2469")
 		Clona "postrequest/link"
+	;;
+	"2470")
+		Scarica "https://www.scrapmaker.com/download/data/wordlists/dictionaries/rockyou.txt"
 	;;
 	*)
 		echo "error, invalid choice"
