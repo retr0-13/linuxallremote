@@ -1103,7 +1103,7 @@ while true; do
 	echo -ne " 2451. google/security-research\t\t\t1155. mubix/FakeNetBIOS\t\t\t\t1169. 0blio/fileGPS\n"
 	echo -ne " 1171. subinacls/Filibuster\t\t\t1188. ALSchwalm/foresight\t\t\t\t1197. miaouPlop/fs\n"
 	echo -ne " 1243. osqzss/gps-sdr-sim\t\t\t1254. hackerschoice/gsocket\t\t\t1259. BishopFox/h2csmuggler\n"
-	echo -ne " 1214. jeanphix/Ghost.py\n"
+	echo -ne " 1214. jeanphix/Ghost.py\t\t\t2471. sec-consult/aggrokatz\n"
 	echo "$SEP"
 
 	read -p "Choose a script: " SCELTA
@@ -9983,6 +9983,9 @@ while true; do
 	;;
 	"2470")
 		Scarica "https://www.scrapmaker.com/data/wordlists/dictionaries/rockyou.txt"
+	;;
+	"2471")
+		Clona "sec-consult/aggrokatz"
 	;;
 	*)
 		echo "error, invalid choice"
