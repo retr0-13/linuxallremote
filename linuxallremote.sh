@@ -704,6 +704,7 @@ while true; do
 	echo -ne " 2445. ra1nb0rn/avain\t\t\t\t1162. chrispetrou/FDsploit\t\t\t\t1184. thewhiteh4t/flashsploit\n"
 	echo -ne " 1174. 1N3/findsploit\t\t\t\t1195. AndroidTamer/frida-push\t\t\t\t1228. OWASP/glue\n"
 	echo -ne " 1233. golismero/golismero\t\t\t1234. anarcoder/google_explorer\t\t\t1236. 1N3/Goohak\n"
+	echo -ne " 2474. bahaabdelwahed/killshot\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
@@ -1070,7 +1071,7 @@ while true; do
 	echo -ne " 302. duyet/bruteforce-database\t\t\t318. digininja/pipal\t\t\t\t\t535. nil0x42/cracking-utils\n"
 	echo -ne " 985. assetnote/commonspeak2\t\t\t404. OWASP/D4N155\t\t\t\t\t2300. shamrin/diceware\n"
 	echo -ne " 2388. DavidWittman/wpxmlrpcbrute/1000-most-common-passwords\t\t\t\t2449. google/spraygen\n"
-	echo -ne " 2470. scrapmaker/rockyou.txt\n"
+	echo -ne " 2470. scrapmaker/rockyou.txt\t\t\t2473. digininja/RSMangler\n"
 	echo "$SEP"
 	echo "WORDPRESS"
 	echo -ne " 468. n00py/WPForce\t\t\t\t469. BlackXploits/WPBrute\t\t\t\t566. 0xAbdullah/0xWPBF\n"
@@ -9989,6 +9990,12 @@ while true; do
 	;;
 	"2472")
 		Clona "EntySec/Shreder"
+	;;
+	"2473")
+		Scarica "$ENTRAW""digininja/RSMangler/master/rsmangler.rb"
+	;;
+	"2474")
+		Clona "bahaabdelwahed/killshot"
 	;;
 	*)
 		echo "error, invalid choice"
