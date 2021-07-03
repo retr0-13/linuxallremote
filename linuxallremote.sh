@@ -1085,6 +1085,7 @@ while true; do
 	echo -ne " 184. lwzSoviet/NoXss\t\t\t\t394. Jewel591/xssmap\t\t\t\t\t558. dwisiswant0/findom-xss\n"
 	echo -ne " 620. hahwul/XSpear\t\t\t\t623. r0oth3x49/Xpath\t\t\t\t\t780. capture0x/XSS-LOADER\n"
 	echo -ne " 814. lewangbtcc/anti-XSS\t\t\t1069. whitel1st/docem\t\t\t\t1183. riusksk/FlashScanner\n"
+	echo -ne " 2475. yehia-mamdouh/XSSYA-V-2.0\n"
 	echo "$SEP"
 	echo "ZIP"
 	echo -ne " 43. The404Hacking/ZIP-Password-BruteForcer\t237. mnismt/CompressedCrack\n"
@@ -9996,6 +9997,9 @@ while true; do
 	;;
 	"2474")
 		Clona "bahaabdelwahed/killshot"
+	;;
+	"2475")
+		Clona "yehia-mamdouh/XSSYA-V-2.0"
 	;;
 	*)
 		echo "error, invalid choice"
