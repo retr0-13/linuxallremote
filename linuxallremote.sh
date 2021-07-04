@@ -281,6 +281,7 @@ while true; do
 	echo "APPLE"
 	echo -ne " 644. Pr0x13/iDict\t\t\t\t645. foozzi/iCloudBrutter\t2325. gwatts/pinfinder\n"
 	echo -ne " 2322. Hacktivation/iOS-Hacktivation-Toolkit\t2323. dnikles/removeActivationLock\t\t2324. tuttarealstep/iUnlock\n"
+	echo -ne " 2477. XMCyber/MacHound\n"
 	echo "$SEP"
 	echo "ARP"
 	echo -ne " 462. royhills/arp-scan\t\t\t\t582. byt3bl33d3r/arpspoof\t\t\t\t583. ammarx/ARP-spoofing/mmattack\n"
@@ -294,7 +295,8 @@ while true; do
 	echo -ne " 852. jordanpotti/AWSBucketDump\t\t\t868. Voulnet/barq\t\t\t\t\t2290. nahamsec/lazys3\n"
 	echo -ne " 2415. digi.ninja/bucket_finder\t\t\t2416. nccgroup/s3_objects_check\t\t\t2417. duo-labs/cloudmapper\n"
 	echo -ne " 2418. NetSPI/aws_consoler\t\t\t2419. andresriancho/enumerate-iam\t\t\t2291. tomdev/teh_s3_bucketeers\n"
-	echo -ne " 2467. smaranchand/bucky\n"
+	echo -ne " 2467. smaranchand/bucky\t\t\t\t2480. WeAreCloudar/s3-account-search\t\t\t2481. clario-tech/s3-inspector\n"
+	echo -ne " 2476. lightspin-tech/red-shadow\n"
 	echo "$SEP"
 	echo "AZURE"
 	echo -ne " 32. dirkjanm/ROADtools\n"
@@ -439,6 +441,7 @@ while true; do
 	echo "$SEP"
 	echo "DOCKER"
 	echo -ne " 351. cr0hn/dockerscan\t\t\t\t352. RhinoSecurityLabs/ccat\t\t\t\t2420. kost/dockscan\n"
+	echo -ne " 2482. Ullaakut/Gorsair\n"
 	echo "$SEP"
 	echo "DRUPAL"
 	echo -ne " 1088. Tethik/drupal-module-enumeration\t\t1089. immunIT/drupwn\n"
@@ -471,13 +474,14 @@ while true; do
 	echo -ne " 965. trycatchhcf/cloakify\t\t\t1036. nccgroup/demiguise\t\t\t\t1081. D4Vinci/Dr0p1t-Framework\n"
 	echo -ne " 2356. Mr-Un1k0d3r/UniByAv\t\t\t\t2355. paranoidninja/CarbonCopy\t\t\t2389. samhaxr/AnonX\n"
 	echo -ne " 1134. OsandaMalith/Exe2Image\t\t\t2463. d4rckh/vaf\t\t\t2462. FunnyWolf/pystinger\n"
-	echo -ne " 1200. lostincynicism/FuzzAP\t\t\t1248. Ekultek/Graffiti\n"
+	echo -ne " 1200. lostincynicism/FuzzAP\t\t\t1248. Ekultek/Graffiti\t\t\t\t2478. asaurusrex/Forblaze\n"
 	echo "$SEP"
 	echo "EXCHANGE"
 	echo -ne " 571. sensepost/ruler\t\t\t\t2351. dirkjanm/PrivExchange\t\t\t\t2404. RickGeex/ProxyLogon\n"
 	echo "$SEP"
 	echo "EXFILTRATION"
 	echo -ne " 314. danielwolfmann/Invoke-WordThief/logger\t593. TryCatchHCF/PacketWhisper\t\t2444. foofus-sph1nx/PyMailSniper\n"
+	echo -ne " 2479. antman1p/GDir-Thief\n"
 	echo "$SEP"
 	echo "EXPLOIT"
 	echo -ne " 10. exploit-db/linux - remote scripts\t\t11. exploit-db/linux_x86 - remote scripts\t\t12. exploit-db/linux_x86-64 - remote scripts\n"
@@ -588,6 +592,9 @@ while true; do
 	echo "$SEP"
 	echo "HASH"
 	echo -ne " 2260. cube0x0/HashSpray.py\t\t\t2446. MichaelDim02/houndsniff\n"
+	echo "$SEP"
+	echo "HEAP"
+	echo -ne " 2484. gand3lf/heappy\n"
 	echo "$SEP"
 	echo "HOOKING - HIJACKING - INJECTION"
 	echo -ne " 140. zznop/drow\t\t\t\t173. J3wker/DLLicous-MaliciousDLL\t\t\t185. cybercitizen7/Ps1jacker\n"
@@ -1041,6 +1048,7 @@ while true; do
 	echo -ne " 2283. koutto/web-brutator\t\t\t1026. thesp0nge/dawnscanner\t\t\t\t2297. xmendez/wfuzz\n"
 	echo -ne " 2346. infosecsecurity/Spaghetti\t\t2363. lirantal/is-website-vulnerable\t\t\t1261. gildasio/h2t\n"
 	echo -ne " 1145. ChrisTruncer/EyeWitness\t\t\t2464. nim-lang/choosenim/vaf\t\t\t1186. tismayil/fockcache\n"
+	echo -ne " 2483. AvalZ/WAF-A-MoLE\n"
 	echo "$SEP"
 	echo "WEBDAV"
 	echo -ne " 1025. Graph-X/davscan\n"
@@ -10000,6 +10008,33 @@ while true; do
 	;;
 	"2475")
 		Clona "yehia-mamdouh/XSSYA-V-2.0"
+	;;
+	"2476")
+		Clona "lightspin-tech/red-shadow"
+	;;
+	"2477")
+		Clona "XMCyber/MacHound"
+	;;
+	"2478")
+		Clona "asaurusrex/Forblaze"
+	;;
+	"2479")
+		Clona "antman1p/GDir-Thief"
+	;;
+	"2480")
+		Clona "WeAreCloudar/s3-account-search"
+	;;
+	"2481")
+		Clona "clario-tech/s3-inspector"
+	;;
+	"2482")
+		Clona "Ullaakut/Gorsair"
+	;;
+	"2483")
+		Clona "AvalZ/WAF-A-MoLE"
+	;;
+	"2484")
+		Clona "gand3lf/heappy"
 	;;
 	*)
 		echo "error, invalid choice"
