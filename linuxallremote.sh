@@ -635,7 +635,7 @@ while true; do
 	echo "IPCAM - DVR"
 	echo -ne " 398. CCrashBandicot/IPCam\t\t\t399. nathan242/ipcam-cctv\t\t\t\t400. Benehiko/GoNetworkCameraScanner\n"
 	echo -ne " 401. vanpersiexp/expcamera\t\t\t656. spicesouls/reosploit\t\t\t\t929. Ullaakut/cameradar\n"
-	echo -ne " 2485. EntySec/CamRaptor\n"
+	echo -ne " 2485. EntySec/CamRaptor\t\t\t2486. AngelSecurityTeam/Cam-Hackers\n"
 	echo "$SEP"
 	echo "ISCSI"
 	echo -ne " 2303. bitvijays/Pentest-Scripts/isciadm\t\t\t\t\t\t2304. open-iscsi/open-iscsi\n"
@@ -10039,6 +10039,9 @@ while true; do
 	;;
 	"2485")
 		Clona "EntySec/CamRaptor"
+	;;
+	"2486")
+		Clona "AngelSecurityTeam/Cam-Hackers"
 	;;
 	*)
 		echo "error, invalid choice"
