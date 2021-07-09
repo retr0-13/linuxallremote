@@ -393,6 +393,7 @@ while true; do
 	echo "$SEP"
 	echo "CVE LIST"
 	echo -ne " 2414. dirkjanm/CVE-2020-1472\t\t2421. twistlock/RunC-CVE-2019-5736\t\t2428. jas502n/CVE-2019-12384\n"
+	echo -ne " 2488. shadowgatt/CVE-2019-19356\n"
 	echo "$SEP"
 	echo "D"
 	echo -ne " 1090. dlang-community/D-Scanner\n"
@@ -861,7 +862,7 @@ while true; do
 	echo -ne " 853. chokepoint/azazel\n"
 	echo "$SEP"
 	echo "ROUTERS"
-	echo -ne " 145. threat9/routersploit\n"
+	echo -ne " 145. threat9/routersploit\t\t\t2487. acecilia/OpenWRTInvasion\n"
 	echo "$SEP"
 	echo "RPC"
 	echo -ne " 233. aress31/xmlrpc-bruteforcer\t\t313. s4vitar/rpcenum\t\t\t\t\t570. hegusung/RPCScan\n"
@@ -10042,6 +10043,12 @@ while true; do
 	;;
 	"2486")
 		Clona "AngelSecurityTeam/Cam-Hackers"
+	;;
+	"2487")
+		Clona "acecilia/OpenWRTInvasion"
+	;;
+	"2488")
+		Scarica "$ENTRAW""shadowgatt/CVE-2019-19356/master/CVE-2019-19356_exploit.py"
 	;;
 	*)
 		echo "error, invalid choice"
