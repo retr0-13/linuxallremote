@@ -422,7 +422,7 @@ while true; do
 	echo "DISCOVERING"
 	echo -ne " 559. epi052/feroxbuster\t\t\t573. robre/scripthunter\t\t\t\t\t729. chris408/ct-exposer\n"
 	echo -ne " 736. gotr00t0day/VulnBanner\t\t\t760. fnk0c/cangibrina\t\t\t\t\t795. sahakkhotsanyan/adfind\n"
-	echo -ne " 139. OWASP/cwe-tool\t\t\t\t2440. assetnote/kiterunner\n"
+	echo -ne " 139. OWASP/cwe-tool\t\t\t\t2440. assetnote/kiterunner\t\t\t\t\t2491. edoardottt/cariddi\n"
 	echo "$SEP"
 	echo "DNS"
 	echo -ne " 30. m57/dnsteal\t\t\t\t31. skelsec/jackdaw\t\t\t\t\t35. projectdiscovery/dnsprobe\n"
@@ -572,6 +572,7 @@ while true; do
 	echo -ne " 1218. obheda12/GitDorker\t\t\t1219. mschwager/gitem\t\t\t\t1220. hisxo/gitGraber\n"
 	echo -ne " 1221. lijiejie/githack\t\t\t\t1222. mazen160/GithubCloner\t\t\t1223. zricethezav/gitleaks\n"
 	echo -ne " 1224. giovanifss/gitmails\t\t\t1225. danilovazb/GitMiner\t\t\t\t\1226. internetwache/GitTools\n"
+	echo -ne " 2492. liamg/gitjacker\n"
 	echo "$SEP"
 	echo "GITLAB"
 	echo -ne " 2407. dotPY-hax/gitlab_RCE\n"
@@ -903,7 +904,7 @@ while true; do
 	echo -ne " 435. offensive-security/exploitdb/shellcodes/linux_x86\t\t\t\t\t\t\t436. offensive-security/exploitdb/shellcodes/windows\n"
 	echo -ne " 437. offensive-security/exploitdb/shellcodes/windows_x86-64\t\t\t\t\t\t438. offensive-security/exploitdb/shellcodes/windows_x86\n"
 	echo -ne " 654. Rover141/Shellter\t\t\t\t825. alexpark07/ARMSCGen\t\t\t\t136. b1tg/rust-windows-shellcode\n"
-	echo -ne " 2320. Den1al/JSShell\t\t\t\t2333. packetstormsecurity/aesshell\n"
+	echo -ne " 2320. Den1al/JSShell\t\t\t\t2333. packetstormsecurity/aesshell\t\t\t\t2489. baktoft/yaps\n"
 	echo "$SEP"
 	echo "SHELLSHOCK"
 	echo -ne " 2279. MrCl0wnLab/ShellShockHunter\t\t2280. DanMcInerney/shellshock-hunter\n"
@@ -950,6 +951,7 @@ while true; do
 	echo -ne " 297. OffXec/fastssh\t\t\t\t368. Neetx/sshdodge\t\t\t\t\t369. trustedsec/meterssh\n"
 	echo -ne " 370. norksec/torcrack\t\t\t\t372. aryanrtm/sshBrutal\t\t\t\t\t714. wireghoul/sploit-dev/sshfuzz\n"
 	echo -ne " 738. gotr00t0day/SSHbrute\t\t\t876. chokepoint/Beleth\t\t\t\t\t\t\t2472. EntySec/Shreder\n"
+	echo -ne " 2490. k4yt3x/orbitaldump\n"
 	echo "$SEP"
 	echo "SSL"
 	echo -ne " 190. moxie0/sslstrip\t\t\t\t194. indutny/heartbleed\t\t\t\t\t195. roflcer/heartbleed-vuln/attack\n"
@@ -10049,6 +10051,18 @@ while true; do
 	;;
 	"2488")
 		Scarica "$ENTRAW""shadowgatt/CVE-2019-19356/master/CVE-2019-19356_exploit.py"
+	;;
+	"2489")
+		Clona "baktoft/yaps"
+	;;
+	"2490")
+		Clona "k4yt3x/orbitaldump"
+	;;
+	"2491")
+		Clona "edoardottt/cariddi"
+	;;
+	"2492")
+		Clona "liamg/gitjacker"
 	;;
 	*)
 		echo "error, invalid choice"
