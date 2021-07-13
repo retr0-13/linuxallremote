@@ -10072,7 +10072,7 @@ while true; do
 		Clona "liamg/gitjacker"
 	;;
 	"2493")
-		Scarica "https://storage.googleapis.com/google-code-archive-source/v2/code.google.com/pinata-csrf-tool/source-archive.zip" "pinata-csrf-tool"
+		Scarica "https://storage.googleapis.com/google-code-archive-source/v2/code.google.com/pinata-csrf-tool/source-archive.zip" "pinata-csrf-tool.zip"
 	;;
 	*)
 		echo "error, invalid choice"
