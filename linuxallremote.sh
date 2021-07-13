@@ -157,8 +157,14 @@ function Clona
 
 function Scarica
 {
-	wget --no-check-certificate "$1"
-	chmod +x "./""$1"
+	if [[ "$2" != "" ]];
+	then
+		wget --no-check-certificate "$1" -O "$2"
+		chmod +x "./""$2"
+	else
+		wget --no-check-certificate "$1"
+		chmod +x "./""$1"
+	fi
 }
 
 function Warning
@@ -390,6 +396,7 @@ while true; do
 	echo "$SEP"
 	echo "CSRF - XSRF - SSRF"
 	echo -ne " 406. 0xInfection/XSRFProbe\t\t\t2278. s0md3v/Bolt\t\t\t\t1141. Damian89/extended-ssrf-search\n"
+	echo -ne " 2493. pinata-csrf-tool\n"
 	echo "$SEP"
 	echo "CVE LIST"
 	echo -ne " 2414. dirkjanm/CVE-2020-1472\t\t2421. twistlock/RunC-CVE-2019-5736\t\t2428. jas502n/CVE-2019-12384\n"
@@ -10063,6 +10070,9 @@ while true; do
 	;;
 	"2492")
 		Clona "liamg/gitjacker"
+	;;
+	"2493")
+		Scarica "https://storage.googleapis.com/google-code-archive-source/v2/code.google.com/pinata-csrf-tool/source-archive.zip"
 	;;
 	*)
 		echo "error, invalid choice"
