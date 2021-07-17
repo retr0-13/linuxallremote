@@ -24,6 +24,7 @@ Over 1300 tools and utilities:
 - manual python and ruby hacking packages install by pip, pip3 and gem;
 - pull new Docker images;
 - choose between Dockerfile and binary versions;
+- distributed cracking using remote hacked hosts;
 
 and much more...
 
