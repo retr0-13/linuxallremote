@@ -385,6 +385,7 @@ while true; do
 	echo -ne " 1003. DanMcInerney/creds.py\t\t\t1008. galkan/crowbar\t\t\t\t\t1017. Ekultek/Dagon\n"
 	echo -ne " 1019. SideChannelMarvels/Daredevil\t\t\t2296. s3inlc/hashtopolis\t\t\t2357. fireeye/gocrack\n"
 	echo -ne " 2425. skelsec/pypykatz\t\t\t\t1156. evilsocket/fang\t\t\t\t\t2466. hemp3l/sucrack\n"
+	echo -ne " 2494. hashtopolis/server\n"
 	echo "$SEP"
 	echo "CRAWLING - SPIDERING - SCRAPING"
 	echo -ne " 586. saeeddhqan/evine\t\t\t\t722. OWASP/OWASP-WebScarab\t\t\t\t733. gotr00t0day/spider00t\n"
@@ -10073,6 +10074,9 @@ while true; do
 	;;
 	"2493")
 		Scarica "https://storage.googleapis.com/google-code-archive-source/v2/code.google.com/pinata-csrf-tool/source-archive.zip" "pinata-csrf-tool.zip"
+	;;
+	"2494")
+		Clona "hashtopolis/server"
 	;;
 	*)
 		echo "error, invalid choice"
