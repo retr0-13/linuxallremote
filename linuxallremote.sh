@@ -115,7 +115,7 @@ function Clona
 		echo "2. Release"
 	fi
 	echo "3. Clone"
-	read -p "(default 0): " CVR
+	read -p "(default 0): " -i "0" CVR
 	case "$CVR" in
 	"1")
 		if [[ $(wget -q -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200 OK"* ]];
@@ -151,6 +151,8 @@ function Clona
 	;;
 	"3")
 		git clone "$ENTSSL""$1"".git"
+	;;
+	*)
 	;;
 	esac
 }
