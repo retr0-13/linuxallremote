@@ -83,7 +83,7 @@ function Installa
 				if [[ -f "$REPO""/README.md" ]];
 				then
 					echo "Do you want open README.md file to help you?"
-					read -p "Y/n (default n): " RESP
+					read -p "Y/n (default n): " -i "n" RESP
 					if [[ "$RESP" == "Y" ]];
 					then
 						less "$REPO""/README.md"
@@ -171,7 +171,8 @@ function Scarica
 
 function Warning
 {
-	read -p "WARNING: this repo is not verified! Do you want download it anyway? Y/n (default n) " RSP
+	echo "WARNING: this repo is not verified! Do you want download it anyway?"
+	read -p "Y/n (default n) " -i "n" RSP
 	if [[ "$RSP" != "" ]];
 	then
 		echo "$RSP"
@@ -1195,7 +1196,7 @@ while true; do
 							do
 								xterm -e aireplay-ng -a "$BSSD" -c "$STN" --deauth 1 "$WFDM" &
 								echo "Is the WPA handshake completed or PMKID found?"
-								read -p "(Y/n, default is n): " RSP
+								read -p "(Y/n, default is n): " -i "n" RSP
 							done
 							airmon-ng stop "$WFDM"
 							echo "Digit a password wordlist file"
@@ -1640,7 +1641,7 @@ while true; do
 		if [[ $(id -u) -eq 0 ]];
 		then
 			echo "Do you want install pysmb humanfriendly python modules?"
-			read -p "Y/n (default n): " REQ
+			read -p "Y/n (default n): " -i "n" REQ
 			if [[ "$REQ" == "Y" ]];
 			then
 				pip3 install pysmb humanfriendly
@@ -4049,13 +4050,13 @@ while true; do
 					if [[ -f "$WFL" ]];
 					then
 						echo "Digit a LOCAL PORT for port forwarding (optional)"
-						read -p "(example, 8080) default 22: " LPRT
+						read -p "(example, 8080) default 22: " -i "22" LPRT
 						if [[ "$LPRT" == "" ]];
 						then
 							LPRT="22"
 						fi
 						echo "Digit a REMOTE PORT for port forwarding (optional)"
-						read -p "(example, 80) default 22: " RPRT
+						read -p "(example, 80) default 22: " -i "22" RPRT
 						if [[ "$RPRT" == "" ]];
 						then
 							RPRT="22"
@@ -4185,7 +4186,7 @@ while true; do
 		if [[ "$TIP" != "" ]];
 		then
 			echo "Digit the Docker port target"
-			read -p "(default, 2376): " TTDP
+			read -p "(default, 2376): " -i "2376" TTDP
 			TDP=2376
 			if [[ "$TTDP" != "" ]];
 			then
