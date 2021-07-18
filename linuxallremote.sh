@@ -487,6 +487,7 @@ while true; do
 	echo -ne " 2356. Mr-Un1k0d3r/UniByAv\t\t\t\t2355. paranoidninja/CarbonCopy\t\t\t2389. samhaxr/AnonX\n"
 	echo -ne " 1134. OsandaMalith/Exe2Image\t\t\t2463. d4rckh/vaf\t\t\t2462. FunnyWolf/pystinger\n"
 	echo -ne " 1200. lostincynicism/FuzzAP\t\t\t1248. Ekultek/Graffiti\t\t\t\t2478. asaurusrex/Forblaze\n"
+	echo -ne " 2496. mhaskar/DNSStager\n"
 	echo "$SEP"
 	echo "EXCHANGE"
 	echo -ne " 571. sensepost/ruler\t\t\t\t2351. dirkjanm/PrivExchange\t\t\t\t2404. RickGeex/ProxyLogon\n"
@@ -10084,6 +10085,9 @@ while true; do
 	"2495")
 		Clona "cube0x0/CVE-2021-1675"
 		Scarica "$ENTRAW""cube0x0/CVE-2021-1675/ee5512a692824b3eb9264ee3600db5721c491509/CVE-2021-1675.py"
+	;;
+	"2496")
+		Clona "mhaskar/DNSStager"
 	;;
 	*)
 		echo "error, invalid choice"
