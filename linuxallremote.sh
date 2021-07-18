@@ -786,7 +786,7 @@ while true; do
 	echo -ne " 303. KTN1990/PostgreSQL--Attack-on-default-password-AUTOEXPLOITING-/DB\n"
 	echo "$SEP"
 	echo "PRINTER"
-	echo -ne " 639. RUB-NDS/PRET\n"
+	echo -ne " 639. RUB-NDS/PRET\t\t\t\t2495. cube0x0/CVE-2021-1675\n"
 	echo "$SEP"
 	echo "PRIVESC"
 	echo -ne " 2394. swisskyrepo/PayloadsAllTheThings/Methodology_and_Resources/Linux-PrivilegeEscalation\n"
@@ -10077,6 +10077,10 @@ while true; do
 	;;
 	"2494")
 		Clona "hashtopolis/server"
+	;;
+	"2495")
+		Clona "cube0x0/CVE-2021-1675"
+		Scarica "$ENTRAW""cube0x0/CVE-2021-1675/ee5512a692824b3eb9264ee3600db5721c491509/CVE-2021-1675.py"
 	;;
 	*)
 		echo "error, invalid choice"
