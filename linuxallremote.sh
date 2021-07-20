@@ -819,6 +819,9 @@ while true; do
 	echo -ne " 260. clu8/RainbowTable\t\t\t\t261. zcdziura/leprechaun\t\t\t\t262. CyberKnight00/RainbowHash\n"
 	echo -ne " 263. dgleebits/Double-Rainbow\t\t\t264. jtesta/rainbowcrackalack\t\t\t\t265. sepehrdaddev/hashcobra\n"
 	echo "$SEP"
+	echo "RANSOMWARE"
+	echo -ne "2497. leonv024/RAASNet\n"
+	echo "$SEP"
 	echo "RAR"
 	echo -ne " 273. dunossauro/PyRarCrack/pyrarcrack\n"
 	echo "$SEP"
@@ -10088,6 +10091,9 @@ while true; do
 	;;
 	"2496")
 		Clona "mhaskar/DNSStager"
+	;;
+	"2497")
+		Clona "leonv024/RAASNet"
 	;;
 	*)
 		echo "error, invalid choice"
