@@ -25,6 +25,7 @@ Over 1300 tools and utilities:
 - pull new Docker images;
 - choose between Dockerfile and binary versions;
 - distributed cracking using remote hacked hosts;
+- raas and ransomware;
 
 and much more...
 
