@@ -21,11 +21,11 @@ Over 1400 tools and utilities:
 - cracking, guessing and brute-forcing passwords;
 - install all hacking tools in Android Termux too;
 - download hacking APKs for Android rooted devices;
-- manual python and ruby hacking packages install by pip, pip3 and gem;
+- interactive python and ruby hacking packages install by pip, pip3 and gem;
 - pull new Docker images;
 - choose between Dockerfile and binary versions;
 - distributed cracking using remote hacked hosts;
-- raas and ransomware;
+- RaaS and ransomware;
 
 and much more...
 
