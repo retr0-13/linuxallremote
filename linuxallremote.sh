@@ -396,7 +396,7 @@ while true; do
 	echo -ne " 1014. chamli/CyberCrowl\t\t\t1029. kgretzky/dcrawl\t\t\t\t\t2287. galkan/mail-crawl\n"
 	echo -ne " 2370. spatie/mixed-content-scanner\t\t1075. maurosoria/dirsearch\t\t\t\t1131. saeeddhqan/evine\n"
 	echo -ne " 1237. s0md3v/goop\t\t\t\t1241. jaeles-project/gospider\t\t\t\t1258. 00xc/h2buster\n"
-	echo -ne " 1230. OJ/gobuster\n"
+	echo -ne " 1230. OJ/gobuster\t\t\t\t2498. blacklanternsecurity/MANSPIDER\n"
 	echo "$SEP"
 	echo "CSRF - XSRF - SSRF"
 	echo -ne " 406. 0xInfection/XSRFProbe\t\t\t2278. s0md3v/Bolt\t\t\t\t1141. Damian89/extended-ssrf-search\n"
@@ -10094,6 +10094,9 @@ while true; do
 	;;
 	"2497")
 		Clona "leonv024/RAASNet"
+	;;
+	"2498")
+		Clona "blacklanternsecurity/MANSPIDER"
 	;;
 	*)
 		echo "error, invalid choice"
