@@ -1092,14 +1092,14 @@ while true; do
 	echo "WEBSHELL"
 	echo -ne " 562. tennc/webshell\t\t\t\t574. epinna/weevely3\t\t\t\t\t608. jackrendor/cookiedoor\n"
 	echo "$SEP"
-	echo "WIFI - WPA2 - PSK"
+	echo "WIFI - WPA2 - WEP - PSK"
 	echo -ne " 540. blunderbuss-wctf/wacker\t\t\t550. calebmadrigal/trackerjacker\t\t\t580. JPaulMora/Pyrit\n"
 	echo -ne " 591. hash3liZer/WiFiBroot\t\t\t592. SValkanov/wifivoid\t\t\t\t\t800. v1s1t0r1sh3r3/airgeddon\n"
 	echo -ne " 833. NORMA-Inc/AtEar\t\t\t\t904. M1ND-B3ND3R/BoopSuite\t\t\t\t921. aanarchyy/bully\n"
 	echo -ne " 990. joswr1ght/cowpatty\t\t\t2263. luc10/zykgen\t\t\t\t\t2281. 0xd012/wifuzzit\n"
 	echo -ne " 1046. elceef/dhcpf\t\t\t\t1047. kamorin/DHCPig\t\t\t\t\t1048. misje/dhcpoptinj\n"
 	echo -ne " 1108. securestate/eapeak\t\t\t2336. whid-injector/WHID\t\t\t\t\t2427. IGRSoft/KisMac2\n"
-	echo -ne " 1192. kylemcdonald/FreeWifi\n"
+	echo -ne " 1192. kylemcdonald/FreeWifi\t\t\t2502. ankit0183/Wifi-Hacking\n"
 	echo "$SEP"
 	echo "WINRM"
 	echo -ne " 42. Hackplayers/evil-winrm\n"
@@ -10118,6 +10118,9 @@ while true; do
 	;;
 	"2501")
 		Clona "interference-security/zoomeye-data"
+	;;
+	"2502")
+		Clona "ankit0183/Wifi-Hacking"
 	;;
 	*)
 		echo "error, invalid choice"
