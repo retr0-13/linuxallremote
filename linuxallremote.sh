@@ -577,7 +577,7 @@ while true; do
 	echo -ne " 845. bharshbarger/AutOSINT\t\t\t875. aancw/Belati\t\t\t\t\t2294. pixelbubble/ProtOSINT\n"
 	echo -ne " 2345. SharadKumar97/OSINT-SPY\t\t\t2439. matamorphosis/Scrummage\t\t\t\t1182. galkan/flashlight\n"
 	echo -ne " 1187. byt3smith/Forager\t\t\t1240. Nhoya/gOSINT\t\t\t\t\t1271. Te-k/harpoon\n"
-	echo -ne " 2500. jakejarvis/awesome-shodan-queries\n"
+	echo -ne " 2500. jakejarvis/awesome-shodan-queries\t\t2501. interference-security/zoomeye-data\n"
 	echo "$SEP"
 	echo "GIT - REPOS"
 	echo -ne " 487. arthaud/git-dumper\t\t\t553. Ebryx/GitDump\t\t\t\t\t2315. metac0rtex/GitHarvester\n"
@@ -10115,6 +10115,9 @@ while true; do
 	;;
 	"2500")
 		Clona "jakejarvis/awesome-shodan-queries"
+	;;
+	"2501")
+		Clona "interference-security/zoomeye-data"
 	;;
 	*)
 		echo "error, invalid choice"
