@@ -505,6 +505,7 @@ while true; do
 	echo -ne " 815. Acey9/Chimay-Red\t\t\t\t846. NullArray/AutoSploit\t\t\t\t19. all remote exploits from offensive-security/exploitdb\n"
 	echo -ne " 1071. coldfusion39/domi-owned\t\t\t2331. offensive-security/exploitdb\t\t\t1213. vulnersCom/getsploit\n"
 	echo -ne " 2386. Download impacket's tools\t\t\t2443. System00-Security/Git-Cve\n"
+	echo -ne " 2509. intrd/nozzlr\t\t\t2510. hellman/libformatstr\t\t\t2511. david942j/one_gadget\n"
 	echo "$SEP"
 	echo "EXTRA - EXTENSIONS"
 	echo -ne " 252. LionSec/katoolin\t\t\t\t1177. mazen160/Firefox-Security-Toolkit\n"
@@ -10153,6 +10154,15 @@ while true; do
 	;;
 	"2508")
 		Clona "hellman/xortool"
+	;;
+	"2509")
+		Clona "intrd/nozzlr"
+	;;
+	"2510")
+		Clona "hellman/libformatstr"
+	;;
+	"2511")
+		Clona "david942j/one_gadget"
 	;;
 	*)
 		echo "error, invalid choice"
