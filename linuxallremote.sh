@@ -388,7 +388,8 @@ while true; do
 	echo -ne " 1003. DanMcInerney/creds.py\t\t\t1008. galkan/crowbar\t\t\t\t\t1017. Ekultek/Dagon\n"
 	echo -ne " 1019. SideChannelMarvels/Daredevil\t\t\t2296. s3inlc/hashtopolis\t\t\t2357. fireeye/gocrack\n"
 	echo -ne " 2425. skelsec/pypykatz\t\t\t\t1156. evilsocket/fang\t\t\t\t\t2466. hemp3l/sucrack\n"
-	echo -ne " 2494. hashtopolis/server\t\t\t\t1273. UltimateHackers/Hash-Buster\n"
+	echo -ne " 2494. hashtopolis/server\t\t\t\t1273. UltimateHackers/Hash-Buster\t\t2508. hellman/xortool\n"
+	echo -ne " 2505. KishanBagaria/padding-oracle-attacker\t\t\t2506. Ganapati/RsaCtfTool\t\t\t2507. ius/rsatool\n"
 	echo "$SEP"
 	echo "CRAWLING - SPIDERING - SCRAPING"
 	echo -ne " 586. saeeddhqan/evine\t\t\t\t722. OWASP/OWASP-WebScarab\t\t\t\t733. gotr00t0day/spider00t\n"
@@ -760,6 +761,9 @@ while true; do
 	echo "$SEP"
 	echo "NETLOGON"
 	echo -ne " 508. risksense/zerologon\t\t\t509. bb00/zer0dump\t\t\t\t\t510. VoidSec/CVE-2020-1472\n"
+	echo "$SEP"
+	echo "NETWORK"
+	echo -ne " 2504. tomac/yersinia\n"
 	echo "$SEP"
 	echo "NGINX"
 	echo -ne " 2461. stark0de/nginxpwner\n"
@@ -10134,6 +10138,21 @@ while true; do
 				dbg -ex 'disas main' -ex quit "$FLB" > "$FLRP"
 			fi
 		fi
+	;;
+	"2504")
+		Clona "tomac/yersinia"
+	;;
+	"2505")
+		Clona "KishanBagaria/padding-oracle-attacker"
+	;;
+	"2506")
+		Clona "Ganapati/RsaCtfTool"
+	;;
+	"2507")
+		Clona "ius/rsatool"
+	;;
+	"2508")
+		Clona "hellman/xortool"
 	;;
 	*)
 		echo "error, invalid choice"
