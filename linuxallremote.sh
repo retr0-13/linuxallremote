@@ -264,6 +264,7 @@ while true; do
 	echo -ne " 1135. cysinfo/Exescan\t\t\t\t1137. tr3w/ExpImp-Lookup\t\t\t\t1163. nccgroup/featherduster\n"
 	echo -ne " 1170. keithjjones/fileintel\t\t\t1178. craigz28/firmwalker\t\t\t\t1250. wireghoul/graudit\n"
 	echo -ne " 1198. adtac/fssb\t\t\t\t\t1202. JackOfMostTrades/gadgetinspector\t\t\t1203. med0x2e/GadgetToJScript\n"
+	echo -ne " 2512. geohot/qira\t\t\t2513. JonathanSalwan/ROPgadget\n"
 	echo "$SEP"
 	echo "ANDROID - APK"
 	echo -ne " 128. xtiankisutsa/MARA_Framework\t\t274. yasoob/nrc-exporter\t\t\t\t277. mzfr/slicer\n"
@@ -736,6 +737,7 @@ while true; do
 	echo -ne " 1174. 1N3/findsploit\t\t\t\t1195. AndroidTamer/frida-push\t\t\t\t1228. OWASP/glue\n"
 	echo -ne " 1233. golismero/golismero\t\t\t1234. anarcoder/google_explorer\t\t\t1236. 1N3/Goohak\n"
 	echo -ne " 2474. bahaabdelwahed/killshot\t\t1263. portantier/habu\t\t\t\t\t1267. 4shadoww/hakkuframework\n"
+	echo -ne " 2514. P1kachu/v0lt\n"
 	echo "$SEP"
 	echo "MITM"
 	echo -ne " 249. kgretzky/evilginx2\t\t\t331. mkdirlove/SSLSTRIP-NG/sslstrip-ng\t\t\t541. wifiphisher/wifiphisher\n"
@@ -10163,6 +10165,15 @@ while true; do
 	;;
 	"2511")
 		Clona "david942j/one_gadget"
+	;;
+	"2512")
+		Clona "geohot/qira"
+	;;
+	"2513")
+		Clona "JonathanSalwan/ROPgadget"
+	;;
+	"2514")
+		Clona "P1kachu/v0lt"
 	;;
 	*)
 		echo "error, invalid choice"
