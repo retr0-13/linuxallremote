@@ -183,8 +183,15 @@ function Warning
 
 function Stampa
 {
-	printf '%-'$ALN's%-'$ALN's%-'$ALN's' "$1" "$2" "$3"
-	echo ""
+	if [[ $COL > 80 ]];
+	then
+		printf '%-'$ALN's%-'$ALN's%-'$ALN's' "$1" "$2" "$3"
+		echo ""
+	else
+		echo "$1"
+		echo "$2"
+		echo "$3"
+	fi
 }
 
 echo "linuxallremote, by FabioDefilippoSoftware"
