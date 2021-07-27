@@ -290,7 +290,9 @@ while true; do
 	Stampa " 809. Flo354/Androick" "816. rednaga/APKiD" "817. hexabin/APKStat"
 	Stampa " 860. l0gan/backHack" "1043. DexPatcher/dexpatcher-tool" "1087. mwrlabs/drozer"
 	Stampa " 2319. dwisiswant0/apkleaks" "2410. RealityNet/android_triage" "2411. androidmalware/android_hid"
-	Stampa " 2413. anbud/DroidDucky"
+	Stampa " 2413. anbud/DroidDucky" "2516. The404Hacking/AndroRAT" "2517. karma9874/AndroRAT"
+	Stampa " 2518. AhMyth/AhMyth-Android-RAT" "2519. m301/rdroid" "2520. nyx0/Dendroid"
+	Stampa " 2521. JohnReagan/i-spy-android" "2522. honglvt/TalentRAT"
 	echo "$SEP"
 	echo "ANONYMIZATION"
 	Stampa " 2229. htrgouvea/nipe" "2348. realgam3/pymultitor" "2350. torsocks/torsocks"
@@ -10212,6 +10214,27 @@ while true; do
 				fi
 			fi
 		fi
+	;;
+	"2516")
+		Clona "The404Hacking/AndroRAT"
+	;;
+	"2517")
+		Clona "karma9874/AndroRAT"
+	;;
+	"2518")
+		Clona "AhMyth/AhMyth-Android-RAT"
+	;;
+	"2519")
+		Clona "m301/rdroid"
+	;;
+	"2520")
+		Clona "nyx0/Dendroid"
+	;;
+	"2521")
+		Clona "JohnReagan/i-spy-android"
+	;;
+	"2522")
+		Clona "honglvt/TalentRAT"
 	;;
 	*)
 		echo "error, invalid choice"
