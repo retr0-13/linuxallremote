@@ -813,7 +813,7 @@ while true; do
 	Stampa " 771. xxhax-team/vk-phishing" "937. ring0lab/catphish" "983. htr-tech/nexphisher"
 	Stampa " 2277. suljot/shellphish" "1004. ustayready/CredSniper" "2239. Pinperepette/Geotweet_GUI"
 	Stampa " 2340. Pinperepette/GeoTweet" "2343. UndeadSec/EvilURL" "2460. ultrasecurity/Storm-Breaker"
-	Stampa " 1239. gophish/gophish"
+	Stampa " 1239. gophish/gophish" "2524. tokyoneon/CredPhish/dns_server"
 	echo "$SEP"
 	echo "PHP"
 	Stampa " 2247. ecriminal/phpvuln" "2248. ZaleHack/phpexploit"
@@ -10238,6 +10238,9 @@ while true; do
 	;;
 	"2523")
 		Scarica "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/pinata-csrf-tool/Pinata-V0.94.zip"
+	;;
+	"2524")
+		Scarica "$ENTRAW""tokyoneon/CredPhish/master/dns_server.py"
 	;;
 	*)
 		echo "error, invalid choice"
