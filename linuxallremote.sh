@@ -419,7 +419,7 @@ while true; do
 	echo "$SEP"
 	echo "CSRF - XSRF - SSRF"
 	Stampa " 406. 0xInfection/XSRFProbe" "2278. s0md3v/Bolt" "1141. Damian89/extended-ssrf-search"
-	Stampa " 2493. pinata-csrf-tool"
+	Stampa " 2493. pinata-csrf-tool" "2523. google.com/pinata-csrf-tool"
 	echo "$SEP"
 	echo "CVE LIST"
 	Stampa " 2414. dirkjanm/CVE-2020-1472" "2421. twistlock/RunC-CVE-2019-5736" "2428. jas502n/CVE-2019-12384"
@@ -10235,6 +10235,9 @@ while true; do
 	;;
 	"2522")
 		Clona "honglvt/TalentRAT"
+	;;
+	"2523")
+		Scarica "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/pinata-csrf-tool/Pinata-V0.94.zip"
 	;;
 	*)
 		echo "error, invalid choice"
