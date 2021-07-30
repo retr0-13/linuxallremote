@@ -597,7 +597,7 @@ while true; do
 	Stampa " 845. bharshbarger/AutOSINT" "875. aancw/Belati" "2294. pixelbubble/ProtOSINT"
 	Stampa " 2345. SharadKumar97/OSINT-SPY" "2439. matamorphosis/Scrummage" "1182. galkan/flashlight"
 	Stampa " 1187. byt3smith/Forager" "1240. Nhoya/gOSINT" "1271. Te-k/harpoon"
-	Stampa " 2500. jakejarvis/awesome-shodan-queries" "2501. interference-security/zoomeye-data"
+	Stampa " 2500. jakejarvis/awesome-shodan-queries" "2501. interference-security/zoomeye-data" "2526. A3h1nt/Grawler"
 	echo "$SEP"
 	echo "GIT - REPOS"
 	Stampa " 487. arthaud/git-dumper" "553. Ebryx/GitDump" "2315. metac0rtex/GitHarvester"
@@ -945,7 +945,7 @@ while true; do
 	Stampa " 2366. lengjibo/dedecmscan" "2426. sensepost/glypeahead" "2430. Checkmarx/kics"
 	Stampa " 2367. k8gege/K8PortScan" "2368. k8gege/K8tools" "2369. xs25cn/scanPort"
 	Stampa " 2436. eslam3kl/NetScanner" "1127. peterpt/eternal_scanner" "1136. NullHypothesis/exitmap"
-	Stampa " 1167. sfan5/fi6s" "2499. v-byte-cpu/sx"
+	Stampa " 1167. sfan5/fi6s" "2499. v-byte-cpu/sx" "2527. kleiton0x00/ppmap"
 	echo "$SEP"
 	echo "SHELL"
 	Stampa " 70. sameera-madushan/Print-My-Shell" "71. flozz/p0wny-shell/shell" "87. rastating/slae"
@@ -10244,6 +10244,12 @@ while true; do
 	;;
 	"2525")
 		Scarica "$ENTRAW""h4wkst3r/InvisibilityCloak/main/InvisibilityCloak.py"
+	;;
+	"2526")
+		Clona "A3h1nt/Grawler"
+	;;
+	"2527")
+		Scarica "$ENTRAW""kleiton0x00/ppmap/main/ppmap.go"
 	;;
 	*)
 		echo "error, invalid choice"
