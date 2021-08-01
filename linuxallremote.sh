@@ -572,7 +572,7 @@ while true; do
 	Stampa " 721. andresriancho/w3af" "723. wereallfeds/webshag" "724. samhocevar/zzuf"
 	Stampa " 798. tintinweb/aggroArgs" "2334. lcamtuf.coredump/afl" "1166. ffuf/ffuf"
 	Stampa " 1168. henshin/filebuster" "2468. intrudir/403fuzzer" "1189. Owlz/formatStringExploiter"
-	Stampa " 1201. mdiazcl/fuzzbunch-debian" "1252. trailofbits/grr"
+	Stampa " 1201. mdiazcl/fuzzbunch-debian" "1252. trailofbits/grr" "2528. AFLplusplus/AFLplusplus"
 	echo "$SEP"
 	echo "GATHERING - OSINT - DOXING"
 	Stampa " 168. Screetsec/Sudomy" "177. HightechSec/git-scanner/gitscanner" "89. urbanadventurer/WhatWeb"
@@ -10250,6 +10250,9 @@ while true; do
 	;;
 	"2527")
 		Scarica "$ENTRAW""kleiton0x00/ppmap/main/ppmap.go"
+	;;
+	"2528")
+		Clona "AFLplusplus/AFLplusplus"
 	;;
 	*)
 		echo "error, invalid choice"
