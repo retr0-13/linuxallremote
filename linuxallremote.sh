@@ -423,7 +423,7 @@ while true; do
 	echo "$SEP"
 	echo "CVE LIST"
 	Stampa " 2414. dirkjanm/CVE-2020-1472" "2421. twistlock/RunC-CVE-2019-5736" "2428. jas502n/CVE-2019-12384"
-	Stampa " 2488. shadowgatt/CVE-2019-19356"
+	Stampa " 2488. shadowgatt/CVE-2019-19356" "2530. ButrintKomoni/cve-2020-0796"
 	echo "$SEP"
 	echo "D"
 	Stampa " 1090. dlang-community/D-Scanner"
@@ -10255,7 +10255,10 @@ while true; do
 		Clona "AFLplusplus/AFLplusplus"
 	;;
 	"2529")
-		"Netflix/chaosmonkey"
+		Clona "Netflix/chaosmonkey"
+	;;
+	"2530")
+		Scarica "$ENTRAW""ButrintKomoni/cve-2020-0796/master/cve-2020-0796-scanner.py"
 	;;
 	*)
 		echo "error, invalid choice"
