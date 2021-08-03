@@ -323,7 +323,7 @@ while true; do
 	Stampa " 2415. digi.ninja/bucket_finder" "2416. nccgroup/s3_objects_check" "2417. duo-labs/cloudmapper"
 	Stampa " 2418. NetSPI/aws_consoler" "2419. andresriancho/enumerate-iam" "2291. tomdev/teh_s3_bucketeers"
 	Stampa " 2467. smaranchand/bucky" "2480. WeAreCloudar/s3-account-search" "2481. clario-tech/s3-inspector"
-	Stampa " 2476. lightspin-tech/red-shadow"
+	Stampa " 2476. lightspin-tech/red-shadow" "2529. Netflix/chaosmonkey"
 	echo "$SEP"
 	echo "AZURE"
 	Stampa " 32. dirkjanm/ROADtools"
@@ -10253,6 +10253,9 @@ while true; do
 	;;
 	"2528")
 		Clona "AFLplusplus/AFLplusplus"
+	;;
+	"2529")
+		"Netflix/chaosmonkey"
 	;;
 	*)
 		echo "error, invalid choice"
