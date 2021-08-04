@@ -167,7 +167,7 @@ function Scarica
 		chmod +x "./""$2"
 	else
 		wget --no-check-certificate "$1"
-		chmod +x "./""$1"
+		chmod +x "./"$(echo "$1" | awk -F "/" '{print $NF}')
 	fi
 }
 
