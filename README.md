@@ -26,7 +26,7 @@ Over 1400 tools and utilities:
 - choose between Dockerfile and binary versions;
 - distributed cracking using remote hacked hosts;
 - RaaS and ransomware;
-- download RAT android;
+- download RAT for android;
 
 and much more...
 
