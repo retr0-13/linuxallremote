@@ -292,7 +292,7 @@ while true; do
 	Stampa " 2319. dwisiswant0/apkleaks" "2410. RealityNet/android_triage" "2411. androidmalware/android_hid"
 	Stampa " 2413. anbud/DroidDucky" "2516. The404Hacking/AndroRAT" "2517. karma9874/AndroRAT"
 	Stampa " 2518. AhMyth/AhMyth-Android-RAT" "2519. m301/rdroid" "2520. nyx0/Dendroid"
-	Stampa " 2521. JohnReagan/i-spy-android" "2522. honglvt/TalentRAT"
+	Stampa " 2521. JohnReagan/i-spy-android" "2522. honglvt/TalentRAT" "2533. rscloura/Doldrums"
 	echo "$SEP"
 	echo "ANONYMIZATION"
 	Stampa " 2229. htrgouvea/nipe" "2348. realgam3/pymultitor" "2350. torsocks/torsocks"
@@ -10266,6 +10266,9 @@ while true; do
 	;;
 	"2532")
 		Clona "ZecOps/CVE-2020-0796-RCE-POC"
+	;;
+	"2533")
+		Clona "rscloura/Doldrums"
 	;;
 	*)
 		echo "error, invalid choice"
