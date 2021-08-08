@@ -10251,7 +10251,7 @@ while true; do
 		Clona "A3h1nt/Grawler"
 	;;
 	"2527")
-		Scarica "$ENTRAW""kleiton0x00/ppmap/main/ppmap.go"
+		Clona "kleiton0x00/ppmap"
 	;;
 	"2528")
 		Clona "AFLplusplus/AFLplusplus"
