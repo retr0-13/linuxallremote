@@ -599,6 +599,7 @@ while true; do
 	Stampa " 2345. SharadKumar97/OSINT-SPY" "2439. matamorphosis/Scrummage" "1182. galkan/flashlight"
 	Stampa " 1187. byt3smith/Forager" "1240. Nhoya/gOSINT" "1271. Te-k/harpoon"
 	Stampa " 2500. jakejarvis/awesome-shodan-queries" "2501. interference-security/zoomeye-data" "2526. A3h1nt/Grawler"
+	Stampa " 2534. sc1341/TikTok-OSINT"
 	echo "$SEP"
 	echo "GIT - REPOS"
 	Stampa " 487. arthaud/git-dumper" "553. Ebryx/GitDump" "2315. metac0rtex/GitHarvester"
@@ -10269,6 +10270,9 @@ while true; do
 	;;
 	"2533")
 		Clona "rscloura/Doldrums"
+	;;
+	"2534")
+		Clona "sc1341/TikTok-OSINT"
 	;;
 	*)
 		echo "error, invalid choice"
