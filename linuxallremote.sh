@@ -507,7 +507,7 @@ while true; do
 	Stampa " 2356. Mr-Un1k0d3r/UniByAv" "2355. paranoidninja/CarbonCopy" "2389. samhaxr/AnonX"
 	Stampa " 1134. OsandaMalith/Exe2Image" "2463. d4rckh/vaf" "2462. FunnyWolf/pystinger"
 	Stampa " 1200. lostincynicism/FuzzAP" "1248. Ekultek/Graffiti" "2478. asaurusrex/Forblaze"
-	Stampa " 2496. mhaskar/DNSStager" "2525. h4wkst3r/InvisibilityCloak"
+	Stampa " 2496. mhaskar/DNSStager" "2525. h4wkst3r/InvisibilityCloak" "2535. WazeHell/LightMe"
 	echo "$SEP"
 	echo "EXCHANGE"
 	Stampa " 571. sensepost/ruler" "2351. dirkjanm/PrivExchange" "2404. RickGeex/ProxyLogon"
@@ -10273,6 +10273,9 @@ while true; do
 	;;
 	"2534")
 		Clona "sc1341/TikTok-OSINT"
+	;;
+	"2535")
+		Clona "WazeHell/LightMe"
 	;;
 	*)
 		echo "error, invalid choice"
