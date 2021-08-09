@@ -1138,7 +1138,7 @@ while true; do
 	Stampa " 302. duyet/bruteforce-database" "318. digininja/pipal" "535. nil0x42/cracking-utils"
 	Stampa " 985. assetnote/commonspeak2" "404. OWASP/D4N155" "2300. shamrin/diceware"
 	Stampa " 2388. DavidWittman/wpxmlrpcbrute/1000-most-common-passwords" "2449. google/spraygen"
-	Stampa " 2470. scrapmaker/rockyou.txt" "2473. digininja/RSMangler"
+	Stampa " 2470. scrapmaker/rockyou.txt" "2473. digininja/RSMangler" "2537. D4Vinci/elpscrk"
 	echo "$SEP"
 	echo "WORDPRESS"
 	Stampa " 468. n00py/WPForce" "469. BlackXploits/WPBrute" "566. 0xAbdullah/0xWPBF"
