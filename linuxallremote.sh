@@ -10308,7 +10308,7 @@ while true; do
 			then
 				select EXT in "exe" "dll"
 				do
-					select ENC in $(msfvenom -l | awk '{print $1}')
+					select ENC in $(msfvenom -l encoders | awk '{print $1}')
 					do
 						echo "Digit how many iterations of encoding"
 						read -p "(default, 10): " -i "10" ITE
@@ -10334,7 +10334,7 @@ while true; do
 			then
 				select EXT in "exe" "dll"
 				do
-					select ENC in $(msfvenom -l | awk '{print $1}')
+					select ENC in $(msfvenom -l encoders | awk '{print $1}')
 					do
 						echo "Digit how many iterations of encoding"
 						read -p "(default, 10): " -i "10" ITE
