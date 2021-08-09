@@ -10277,6 +10277,15 @@ while true; do
 	"2535")
 		Clona "WazeHell/LightMe"
 	;;
+	"2536")
+		Scarica "$ENTRAW""dlegs/php-jpeg-injector/master/gd-jpeg.py"
+	;;
+	"2537")
+		Clona "D4Vinci/elpscrk"
+	;;
+	"2538")
+		Clona "nccgroup/Solitude"
+	;;
 	*)
 		echo "error, invalid choice"
 	;;
