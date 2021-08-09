@@ -10304,7 +10304,7 @@ while true; do
 		then
 			echo "Digit your PORT"
 			read -p "(default, 9001): " -i "9001" MPRT
-			if [[ "$MIP" =~ ^[0-9]+$ ]];
+			if [[ "$MPRT" =~ ^[0-9]+$ ]];
 			then
 				select EXT in "exe" "dll"
 				do
@@ -10330,7 +10330,7 @@ while true; do
 		then
 			echo "Digit your PORT"
 			read -p "(default, 9001): " -i "9001" MPRT
-			if [[ "$MIP" =~ ^[0-9]+$ ]];
+			if [[ "$MPRT" =~ ^[0-9]+$ ]];
 			then
 				select EXT in "exe" "dll"
 				do
