@@ -643,6 +643,7 @@ while true; do
 	Stampa " 870. neohapsis/bbqsql" "889. nbshelton/bitdump" "895. libeclipse/blind-sql-bitshifting"
 	Stampa " 896. missDronio/blindy" "917. enjoiz/BSQLinjector" "1120. cr0hn/enteletaor"
 	Stampa " 1020. BlackArch/darkmysqli" "1032. UndeadSec/Debinject" "2298. the-robot/sqliv"
+	Stampa " 2536. dlegs/php-jpeg-injector"
 	echo "$SEP"
 	echo "HTTP - HTTP/2"
 	Stampa " 1260. summerwind/h2spec"
