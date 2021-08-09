@@ -48,50 +48,60 @@ function Installa
 	then
 		if [[ -d "$REPO""/" ]];
 		then
-			if [[ -f "$REPO""/install" ]];
+			cd "$REPO""/"
+			if [[ -f ./install ]];
 			then
-				sudo "$REPO""/install"
-			elif [[ -f "$REPO""$RQRM" ]];
+				sudo ./install
+			elif [[ -f "$RQRM" ]];
 			then
 				pyp3="0"
-				if [[ $(grep "python3" "$REPO""/*.py") != "" ]];
+				if [[ $(grep "python3" *.py) != "" ]];
 				then
 					pyp3="1"
-					sudo pip3 install -r "$REPO""$RQRM"
+					sudo pip3 install -r "$RQRM"
 				else
-					sudo pip install -r "$REPO""$RQRM"
+					sudo pip install -r "$RQRM"
 				fi
-				if [[ -f "$REPO""/setup.py" ]];
+				if [[ -f ./setup.py ]];
 				then
 					if [[ "$pyp3" == "1" ]];
 					then
-						sudo pip3 "$REPO""/setup.py" install
+						sudo pip3 ./setup.py install
 					else
-						sudo pip "$REPO""/setup.py" install
+						sudo pip ./setup.py install
 					fi
 				fi
-			elif [[ -f "$REPO""/Makefile" ]];
+			elif [[ -f ./Makefile ]];
 			then
-				cd "$REPO""/"
 				sudo make && sudo make install
 				cd ..
-			elif [[ -f "$REPO""/Gemfile" ]];
+			elif [[ -f ./Gemfile ]];
 			then
-				cd "$REPO""/"
 				sudo bundle install
 				cd ..
+			elif [[ $(ls *.go) != "" ]];
+			then
+				select GOO in $(ls *.go)
+				do
+				if [[ "$GOO" != "" ]];
+				then
+					go build "$GOO"
+				fi
+				break
+				done
 			else
 				echo "I can not install this repo. Please, try you manually"
-				if [[ -f "$REPO""/README.md" ]];
+				if [[ -f ./README.md ]];
 				then
 					echo "Do you want open README.md file to help you?"
 					read -p "Y/n (default n): " -i "n" RESP
 					if [[ "$RESP" == "Y" ]];
 					then
-						less "$REPO""/README.md"
+						less ./README.md
 					fi
 				fi
 			fi
+			cd ..
 		fi
 	fi
 }
