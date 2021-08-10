@@ -1101,7 +1101,7 @@ while true; do
 	Stampa " 2452. AWS S3 copy file to remote host" "2453. AWS S3 list file in remote host" "2454. AWS S3 dump dynamodb tables"
 	Stampa " 2457. install poetry" "2503. run dbg and disassembling a bin file" "751. RCE with finger"
 	Stampa " 2515. Create a Reverse Shell for Android and run a listener" "2539. Create a Reverse Shell for Windows x86 and run a listener" "2540. Create a Reverse Shell for Windows x64 and run a listener"
-	Stampa " 2542. get ASN and infos of target IP from cymru.com"
+	Stampa " 2542. get ASN and infos of target IP from cymru.com" "2543. create an encrypted and encoded payload with metasploit"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	Stampa " 511. Isaacdelly/Plutus" "512. dan-v/bruteforce-bitcoin-brainwallet" "513. SMH17/bitcoin-hacking-tools"
