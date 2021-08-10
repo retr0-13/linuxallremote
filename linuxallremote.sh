@@ -10384,10 +10384,13 @@ while true; do
 			then
 				MPRT="9001"
 			fi
+			echo "Choose a payload"
 			select PAY in $(msfvenom -l payloads | awk '{print $1}')
 			do
+				echo "Choose an architecture"
 				select ARC in $(msfvenom -l archs | awk '{print $1}')
 				do
+					echo "Choose an encoder"
 					select ENC in $(msfvenom -l encoders | awk '{print $1}')
 					do
 						echo "Digit how many time encode the payload"
@@ -10396,8 +10399,10 @@ while true; do
 						then
 							ITE="10"
 						fi
+						echo "Choose a file format"
 						select FORM in $(msfvenom -l formats | awk '{print $1}')
 						do
+							echo "Choose an algorithm of cryptography"
 							select CRYP in $(msfvenom -l encrypt | awk '{print $1}')
 							do
 								echo "Digit a passphare; if it be empty, it will be created pseudo-randomly"
