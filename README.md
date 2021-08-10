@@ -27,6 +27,7 @@ Over 1400 tools and utilities:
 - distributed cracking using remote hacked hosts;
 - RaaS and ransomware;
 - download RAT for android;
+- creating Reverse Shell with metasploit;
 
 and much more...
 
@@ -34,6 +35,6 @@ Please, share and starring my repos, follow me and... Happy hacking!
 
 Tutorial from odysee by <a href="https://odysee.com/@Tigermanroot:b">TigermanRoot</a>: <a href="https://odysee.com/@Tigermanroot:b/Iinuxallremote:e">video</a>
 
-Twitter: <a href="https://twitter.com/fabio_defilippo">@fabio_defilippo</a>
+<img src="https://cdn.cms-twdigitalassets.com/content/dam/developer-twitter/images/Twitter_logo_blue_32.png"></img>: <a href="https://twitter.com/fabio_defilippo">@fabio_defilippo</a>
 
 PayPal: If you want, you could <a href="https://www.paypal.com/donate?hosted_button_id=559D4CJB84KQJ">buy me a coffee</a>
