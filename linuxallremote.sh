@@ -959,6 +959,7 @@ while true; do
 	Stampa " 2367. k8gege/K8PortScan" "2368. k8gege/K8tools" "2369. xs25cn/scanPort"
 	Stampa " 2436. eslam3kl/NetScanner" "1127. peterpt/eternal_scanner" "1136. NullHypothesis/exitmap"
 	Stampa " 1167. sfan5/fi6s" "2499. v-byte-cpu/sx" "2527. kleiton0x00/ppmap"
+	Stampa " 2541. avilum/portsscan"
 	echo "$SEP"
 	echo "SHELL"
 	Stampa " 70. sameera-madushan/Print-My-Shell" "71. flozz/p0wny-shell/shell" "87. rastating/slae"
@@ -10348,6 +10349,9 @@ while true; do
 				done
 			fi
 		fi
+	;;
+	"2541")
+		Clona "avilum/portsscan"
 	;;
 	*)
 		echo "error, invalid choice"
