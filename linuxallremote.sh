@@ -10374,11 +10374,11 @@ while true; do
 	"2543")
 		echo "Digit your IP"
 		read -p "(example, 192.168.1.1): " MIP
-		if [["$MIP" != "" ]];
+		if [[ "$MIP" != "" ]];
 		then
 			echo "Digit your PORT"
 			read -p "(default 9001): " -i "9001" MPRT
-			if [["$MPRT" == "" ]];
+			if [[ "$MPRT" == "" ]];
 			then
 				MPRT="9001"
 			fi
