@@ -616,7 +616,7 @@ while true; do
 	Stampa " 2422. michenriksen/gitrob" "1216. bahamas10/node-git-dump" "1217. tillson/git-hound"
 	Stampa " 1218. obheda12/GitDorker" "1219. mschwager/gitem" "1220. hisxo/gitGraber"
 	Stampa " 1221. lijiejie/githack" "1222. mazen160/GithubCloner" "1223. zricethezav/gitleaks"
-	Stampa " 1224. giovanifss/gitmails" "1225. danilovazb/GitMiner" "\1226. internetwache/GitTools"
+	Stampa " 1224. giovanifss/gitmails" "1225. danilovazb/GitMiner" "1226. internetwache/GitTools"
 	Stampa " 2492. liamg/gitjacker"
 	echo "$SEP"
 	echo "GITLAB"
