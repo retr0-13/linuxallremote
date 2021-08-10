@@ -130,15 +130,22 @@ function Clona
 	read -p "(default 0): " -i "0" CVR
 	case "$CVR" in
 	"1")
-		if [[ $(wget -q -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200 OK"* ]];
+		echo "Do you want to build this docker image? If not, it will be downloaded the Dockerfile"
+		read -p "(Y/n, default n): " -i "n" RSP
+		if [[ "$RSP" == "Y" ]];
 		then
-			Scarica "$ENTRAW""$1""/master/""$DKF" "$DKF"
+			docker build -t $(echo -n "$1" | awk -F "/" '{print $2}') "$ENTSSL""$1"".git"
 		else
-			if [[ $(wget -q -S --spider "$ENTRAW""$1""/main/""$DKF" 2>&1) == *"200 OK"* ]];
+			if [[ $(wget -q -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200 OK"* ]];
 			then
-				Scarica "$ENTRAW""$1""/main/""$DKF" "$DKF"
+				Scarica "$ENTRAW""$1""/master/""$DKF" "$DKF"
 			else
-				echo "This repo has not a Dockerfile, please choose another version"
+				if [[ $(wget -q -S --spider "$ENTRAW""$1""/main/""$DKF" 2>&1) == *"200 OK"* ]];
+				then
+					Scarica "$ENTRAW""$1""/main/""$DKF" "$DKF"
+				else
+					echo "This repo has not a Dockerfile, please choose another version"
+				fi
 			fi
 		fi
 	;;
