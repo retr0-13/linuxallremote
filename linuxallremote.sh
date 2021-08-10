@@ -10307,7 +10307,7 @@ while true; do
 			read -p "(default, 9001): " -i "9001" MPRT
 			if [[ "$MPRT" =~ ^[0-9]+$ ]];
 			then
-				select EXT in "exe" "dll"
+				select EXT in $(msfvenom -l formats | awk '{print $1}')
 				do
 					select ENC in $(msfvenom -l encoders | awk '{print $1}')
 					do
@@ -10333,7 +10333,7 @@ while true; do
 			read -p "(default, 9001): " -i "9001" MPRT
 			if [[ "$MPRT" =~ ^[0-9]+$ ]];
 			then
-				select EXT in "exe" "dll"
+				select EXT in $(msfvenom -l formats | awk '{print $1}')
 				do
 					select ENC in $(msfvenom -l encoders | awk '{print $1}')
 					do
