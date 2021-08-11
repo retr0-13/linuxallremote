@@ -200,7 +200,7 @@ function Warning
 
 function Stampa
 {
-	if [[ $COL > 80 ]];
+	if [[ $COL -gt 80 ]];
 	then
 		printf '%-'$ALN's%-'$ALN's%-'$ALN's' "$1" "$2" "$3"
 		echo ""
