@@ -1138,6 +1138,7 @@ while true; do
 	echo "$SEP"
 	echo "WEBSHELL"
 	Stampa " 562. tennc/webshell" "574. epinna/weevely3" "608. jackrendor/cookiedoor"
+	Stampa " 2544. EatonChips/wsh"
 	echo "$SEP"
 	echo "WIFI - WPA2 - WEP - PSK"
 	Stampa " 540. blunderbuss-wctf/wacker" "550. calebmadrigal/trackerjacker" "580. JPaulMora/Pyrit"
@@ -10425,6 +10426,9 @@ while true; do
 				break
 			done
 		fi
+	;;
+	"2544")
+		Clona "EatonChips/wsh"
 	;;
 	*)
 		echo "error, invalid choice"
