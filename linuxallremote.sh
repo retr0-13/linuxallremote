@@ -9641,7 +9641,7 @@ while true; do
 					then
 						TAGS="latest"
 					fi
-					docker pull "$DIM"":$TAGS"
+					sudo docker pull "$DIM"":$TAGS"
 				fi
 			done
 		else
