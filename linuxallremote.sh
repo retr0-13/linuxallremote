@@ -10447,6 +10447,23 @@ while true; do
 			echo "docker is not installed"
 		fi
 	;;
+	"2548")
+		if [[ -f $(which docker) ]];
+		then
+			select DIM in $(sudo docker image ls | awk '{print $1}')
+			do
+				echo "Digit a command"
+			 	read -p "(example, /bin/bash): " CMD
+				if [[ "$CMD" != "" ]];
+				then
+					docker run -it "$DIM" "$CMD"
+				fi
+				break
+			done
+		else
+			echo "docker is not installed"
+		fi
+	;;
 	*)
 		echo "error, invalid choice"
 	;;
