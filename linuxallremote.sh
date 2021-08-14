@@ -10472,6 +10472,9 @@ while true; do
 			echo "docker is not installed"
 		fi
 	;;
+	"2550")
+		Clona "s1l3nt78/sifter"
+	;;
 	*)
 		echo "error, invalid choice"
 	;;
