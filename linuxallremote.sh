@@ -513,6 +513,7 @@ while true; do
 	Stampa " 619. cddmp/enum4linux-ng" "735. gotr00t0day/oswalkpy" "840. skahwah/automato"
 	Stampa " 1007. m8r0wn/crosslinked" "1033. SpiderLabs/deblaze" "1072. vysecurity/DomLink"
 	Stampa " 1096. anantshri/DS_Store_crawler_parser" "1121. dejanlevaja/enum_shares" "1407. guelfoweb/knock"
+	Stampa " 2546. santiko/KnockPy"
 	echo "$SEP"
 	echo "EVASION - BYPASSING"
 	Stampa " 167. govolution/avet" "134. khalilbijjou/WAFNinja" "174. stormshadow07/HackTheWorld"
@@ -10433,6 +10434,9 @@ while true; do
 	;;
 	"2545")
 		Clona "DivineSoftware/AutoRoot"
+	;;
+	"2546")
+		Clona "santiko/KnockPy"
 	;;
 	*)
 		echo "error, invalid choice"
