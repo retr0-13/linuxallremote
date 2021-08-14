@@ -310,6 +310,7 @@ while true; do
 	Stampa " 2413. anbud/DroidDucky" "2516. The404Hacking/AndroRAT" "2517. karma9874/AndroRAT"
 	Stampa " 2518. AhMyth/AhMyth-Android-RAT" "2519. m301/rdroid" "2520. nyx0/Dendroid"
 	Stampa " 2521. JohnReagan/i-spy-android" "2522. honglvt/TalentRAT" "2533. rscloura/Doldrums"
+	Stampa " 2545. DivineSoftware/AutoRoot"
 	echo "$SEP"
 	echo "ANONYMIZATION"
 	Stampa " 2229. htrgouvea/nipe" "2348. realgam3/pymultitor" "2350. torsocks/torsocks"
@@ -10429,6 +10430,9 @@ while true; do
 	;;
 	"2544")
 		Clona "EatonChips/wsh"
+	;;
+	"2545")
+		Clona "DivineSoftware/AutoRoot"
 	;;
 	*)
 		echo "error, invalid choice"
