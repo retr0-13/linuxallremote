@@ -28,6 +28,7 @@ Over 1400 tools and utilities:
 - RaaS and ransomware;
 - download RAT for android;
 - creating Reverse Shell with metasploit;
+- manage docker containers and images;
 
 and much more...
 
