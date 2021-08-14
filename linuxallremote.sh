@@ -1201,6 +1201,21 @@ while true; do
 	read -p "Choose a script: " SCELTA
 	case "$SCELTA" in
 	"0")
+		PYPAK=""
+		RUPAK=""
+		ENTSSL=""
+		ENTRAW=""
+		ENTLAB=""
+		RQRM=""
+		COL=0
+		ALN=0
+		SEP=""
+		ALD=""
+		AZD=""
+		RLS=""
+		RLDW=""
+		WBE=""
+		FMSG=""
 		exit 0
 	;;
 	"1")
