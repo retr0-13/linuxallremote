@@ -1104,7 +1104,7 @@ while true; do
 	Stampa " 2457. install poetry" "2503. run dbg and disassembling a bin file" "751. RCE with finger"
 	Stampa " 2515. Create a Reverse Shell for Android and run a listener" "2539. Create a Reverse Shell for Windows x86 and run a listener" "2540. Create a Reverse Shell for Windows x64 and run a listener"
 	Stampa " 2542. get ASN and infos of target IP from cymru.com" "2543. create an encrypted and encoded payload with metasploit" "2547. list all pulled docker images"
-	Stampa " 2548. run a docker image"
+	Stampa " 2548. run a docker image" "2549. docker process list"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	Stampa " 511. Isaacdelly/Plutus" "512. dan-v/bruteforce-bitcoin-brainwallet" "513. SMH17/bitcoin-hacking-tools"
@@ -10460,6 +10460,14 @@ while true; do
 				fi
 				break
 			done
+		else
+			echo "docker is not installed"
+		fi
+	;;
+	"2549")
+		if [[ -f $(which docker) ]];
+		then
+			docker ps
 		else
 			echo "docker is not installed"
 		fi
