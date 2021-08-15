@@ -10497,6 +10497,19 @@ while true; do
 			Clona "ORCA666/EarlyBird"
 		fi
 	;;
+	"2552")
+		echo "Digit a target IP"
+		read -p "(example, 192.168.168.3): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			echo "Digit a target PORT"
+			read -p "(example, 445): " TPRT
+			if [[ "$TPRT" != "" ]];
+			then
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script vuln -p "$TPRT" "$TIP"
+			fi
+		fi
+	;;
 	*)
 		echo "error, invalid choice"
 	;;
