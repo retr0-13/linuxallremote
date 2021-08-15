@@ -10492,7 +10492,10 @@ while true; do
 		Clona "s1l3nt78/sifter"
 	;;
 	"2551")
-		Clona "ORCA666/EarlyBird"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Clona "ORCA666/EarlyBird"
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
