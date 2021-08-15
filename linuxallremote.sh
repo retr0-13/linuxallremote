@@ -353,6 +353,7 @@ while true; do
 	Stampa " 861. giuliocomi/backoori" "1027. gitdurandal/dbd" "1083. Shellntel/backdoors"
 	Stampa " 1056. Mr-Un1k0d3r/DKMC" "1073. TheWover/donut" "1084. emptymonkey/drinkme"
 	Stampa " 2313. cribdragg3r/Alaris" "1206. byt3bl33d3r/gcat" "1229. razc411/GoBD"
+	Stampa " 2551. ORCA666/EarlyBird"
 	echo "$SEP"
 	echo "BLUETOOTH"
 	Stampa " 305. lucaboni92/BlueFuzz" "440. fO-000/bluescan" "447. MillerTechnologyPeru/hcitool"
