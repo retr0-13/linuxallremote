@@ -1105,7 +1105,7 @@ while true; do
 	Stampa " 2457. install poetry" "2503. run dbg and disassembling a bin file" "751. RCE with finger"
 	Stampa " 2515. Create a Reverse Shell for Android and run a listener" "2539. Create a Reverse Shell for Windows x86 and run a listener" "2540. Create a Reverse Shell for Windows x64 and run a listener"
 	Stampa " 2542. get ASN and infos of target IP from cymru.com" "2543. create an encrypted and encoded payload with metasploit" "2547. list all pulled docker images"
-	Stampa " 2548. run a docker image" "2549. docker process list"
+	Stampa " 2548. run a docker image" "2549. docker process list" "2552. use nmap to scan ports for vulnerabilities"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	Stampa " 511. Isaacdelly/Plutus" "512. dan-v/bruteforce-bitcoin-brainwallet" "513. SMH17/bitcoin-hacking-tools"
@@ -10502,8 +10502,8 @@ while true; do
 		read -p "(example, 192.168.168.3): " TIP
 		if [[ "$TIP" != "" ]];
 		then
-			echo "Digit a target PORT"
-			read -p "(example, 445): " TPRT
+			echo "Digit target PORTs"
+			read -p "(example, 445 or 135-139 or 21,22): " TPRT
 			if [[ "$TPRT" != "" ]];
 			then
 				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script vuln -p "$TPRT" "$TIP"
