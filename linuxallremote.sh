@@ -10490,6 +10490,9 @@ while true; do
 	"2550")
 		Clona "s1l3nt78/sifter"
 	;;
+	"2551")
+		Clona "ORCA666/EarlyBird"
+	;;
 	*)
 		echo "error, invalid choice"
 	;;
