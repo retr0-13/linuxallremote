@@ -29,6 +29,7 @@ Over 1400 tools and utilities:
 - download RAT for android;
 - creating Reverse Shell with metasploit;
 - manage docker containers and images;
+- download and use the last PoC remote exploits;
 
 and much more...
 
