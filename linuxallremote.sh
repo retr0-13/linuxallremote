@@ -190,8 +190,7 @@ function Scarica
 
 function Warning
 {
-	echo "WARNING: this repo is not verified! Do you want download it anyway?"
-	read -p "Y/n (default n) " -i "n" RSP
+	read -p $'WARNING: this repo is not verified! Do you want download it anyway?\nY/n (default n) ' -i "n" RSP
 	if [[ "$RSP" != "" ]];
 	then
 		echo "$RSP"
