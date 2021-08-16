@@ -10513,6 +10513,12 @@ while true; do
 	"2553")
 		Clona "mrlew1s/BrokenSMTP"
 	;;
+	"2554")
+		if [[ $(Warning) == "Y" ]];
+		then
+			Clona "dmaasland/proxyshell-poc"
+		fi
+	;;
 	*)
 		echo "error, invalid choice"
 	;;
