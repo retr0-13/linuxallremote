@@ -531,6 +531,7 @@ while true; do
 	echo "$SEP"
 	echo "EXCHANGE"
 	Stampa " 571. sensepost/ruler" "2351. dirkjanm/PrivExchange" "2404. RickGeex/ProxyLogon"
+	Stampa " 2554. dmaasland/proxyshell-poc"
 	echo "$SEP"
 	echo "EXFILTRATION"
 	Stampa " 314. danielwolfmann/Invoke-WordThief/logger" "593. TryCatchHCF/PacketWhisper" "2444. foofus-sph1nx/PyMailSniper"
