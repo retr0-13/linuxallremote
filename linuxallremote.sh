@@ -10519,6 +10519,9 @@ while true; do
 			Clona "dmaasland/proxyshell-poc"
 		fi
 	;;
+	"2555")
+		Clona "junegunn/fzf"
+	;;
 	*)
 		echo "error, invalid choice"
 	;;
