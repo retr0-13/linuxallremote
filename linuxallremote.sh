@@ -594,6 +594,7 @@ while true; do
 	Stampa " 798. tintinweb/aggroArgs" "2334. lcamtuf.coredump/afl" "1166. ffuf/ffuf"
 	Stampa " 1168. henshin/filebuster" "2468. intrudir/403fuzzer" "1189. Owlz/formatStringExploiter"
 	Stampa " 1201. mdiazcl/fuzzbunch-debian" "1252. trailofbits/grr" "2528. AFLplusplus/AFLplusplus"
+	Stampa " 2555. junegunn/fzf"
 	echo "$SEP"
 	echo "GATHERING - OSINT - DOXING"
 	Stampa " 168. Screetsec/Sudomy" "177. HightechSec/git-scanner/gitscanner" "89. urbanadventurer/WhatWeb"
