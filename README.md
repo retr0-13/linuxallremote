@@ -7,7 +7,7 @@ Transform your distro in a PenTest OS with the most complete script for hacking.
 1. you will use hacking tools, so you have got to consider them untrusted; be careful using them!
 2. this is NOT an automatic transformation pack, does not auto install any tool without your approvation;
 
-Over 1400 tools and utilities:
+Over 1500 tools and utilities:
 - download or clone other frameworks;
 - remote hack tools and exploits;
 - attack protocols;
