@@ -10523,6 +10523,39 @@ while true; do
 	"2555")
 		Clona "junegunn/fzf"
 	;;
+	"2556")
+		echo "Digit target IP"
+		read -p "(example 192.168.168.2): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			echo "Digit target PORT"
+			read -p "(example 135): " TPRT
+			if [[ "$TPRT" != "" ]];
+			then
+				echo "Digit target username"
+				read -p "(example john): " TUSRN
+				if [[ "$TUSRN" != "" ]];
+				then
+					echo "Digit target password"
+					read -p "(example john): " TPSSW
+					if [[ "$TPSSW" != "" ]];
+					then
+						echo "Digit target pc-domain"
+						read -p "(example WORKGROUP): " TDOM
+						if [[ "$TDOM" != "" ]];
+						then
+							echo "Digit target pc-domain"
+							read -p "(example nc -lvnp 80): " CMD
+							if [[ "$CMD" != "" ]];
+							then
+								rpcclient --user $TDOM\$TUSRN%$TPSSW -c "$CMD" -p "$TPRT" "$TIP"
+							fi
+						fi
+					fi
+				fi
+			fi
+		fi
+	;;
 	*)
 		echo "error, invalid choice"
 	;;
