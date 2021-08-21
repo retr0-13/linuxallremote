@@ -10529,27 +10529,28 @@ while true; do
 		if [[ "$TIP" != "" ]];
 		then
 			echo "Digit target PORT"
-			read -p "(example 135): " TPRT
-			if [[ "$TPRT" != "" ]];
+			read -p "(default 135): " -i "135" TPRT
+			if [[ "$TPRT" == "" ]];
 			then
-				echo "Digit target username"
-				read -p "(example john): " TUSRN
-				if [[ "$TUSRN" != "" ]];
+				TPRT="135"
+			fi
+			echo "Digit target username"
+			read -p "(example john): " TUSRN
+			if [[ "$TUSRN" != "" ]];
+			then
+				echo "Digit target password"
+				read -p "(example 1234): " TPSSW
+				if [[ "$TPSSW" != "" ]];
 				then
-					echo "Digit target password"
-					read -p "(example john): " TPSSW
-					if [[ "$TPSSW" != "" ]];
+					echo "Digit target pc-domain"
+					read -p "(example WORKGROUP): " TDOM
+					if [[ "$TDOM" != "" ]];
 					then
-						echo "Digit target pc-domain"
-						read -p "(example WORKGROUP): " TDOM
-						if [[ "$TDOM" != "" ]];
+						echo "Digit a command to execute in remote target host"
+						read -p "(example nc -lvnp 80): " CMD
+						if [[ "$CMD" != "" ]];
 						then
-							echo "Digit target pc-domain"
-							read -p "(example nc -lvnp 80): " CMD
-							if [[ "$CMD" != "" ]];
-							then
-								rpcclient --user $TDOM\$TUSRN%$TPSSW -c "$CMD" -p "$TPRT" "$TIP"
-							fi
+							rpcclient --user $TDOM\$TUSRN%$TPSSW -c "$CMD" -p "$TPRT" "$TIP"
 						fi
 					fi
 				fi
