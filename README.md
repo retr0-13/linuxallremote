@@ -3,6 +3,10 @@ This bash script will help you to hack remote hosts
 The goal of this project is to implement all hacking tools for a complete environment.
 Transform your distro in a PenTest OS with the most complete script for hacking.
 
+You can choose between two versions:
+- linuxallremote.sh, the classic version;
+- linuxallremotev2.sh, a advanced versione with global variables inside;
+
 ## Note:
 1. you will use hacking tools, so you have got to consider them untrusted; be careful using them!
 2. this is NOT an automatic transformation pack, does not auto install any tool without your approvation;
@@ -10,7 +14,7 @@ Transform your distro in a PenTest OS with the most complete script for hacking.
 Over 1500 tools and utilities:
 - download or clone other frameworks;
 - remote hack tools and exploits;
-- attack protocols;
+- attack many protocols, rpc, smb, ssh, ftp and more;
 - dumping credentials and packets;
 - evasion and tunneling;
 - port forwarding;
