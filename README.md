@@ -5,7 +5,7 @@ Transform your distro in a PenTest OS with the most complete script for hacking.
 
 You can choose between two versions:
 - linuxallremote.sh, the classic version;
-- linuxallremotev2.sh, a advanced versione with global variables inside;
+- linuxallremotev2.sh, an advanced version with global variables inside;
 
 ## Note:
 1. you will use hacking tools, so you have got to consider them untrusted; be careful using them!
