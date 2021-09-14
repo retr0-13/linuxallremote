@@ -39,7 +39,7 @@ and much more...
 
 Please, share and starring my repos, follow me and... Happy hacking!
 
-Tutorial from odysee by <a href="https://odysee.com/@Tigermanroot:b">TigermanRoot</a>: <a href="https://odysee.com/@Tigermanroot:b/Iinuxallremote:e">video</a>
+Tutorial from <img src="https://odysee.com/public/pwa/icon-180.png" width="30" height="30"></img> odysee by <a href="https://odysee.com/@Tigermanroot:b">TigermanRoot</a>: <a href="https://odysee.com/@Tigermanroot:b/Iinuxallremote:e">video</a>
 
 <img src="https://cdn.cms-twdigitalassets.com/content/dam/developer-twitter/images/Twitter_logo_blue_32.png"></img>: <a href="https://twitter.com/fabio_defilippo">@fabio_defilippo</a>
 
