@@ -133,6 +133,10 @@ function Clona
 		echo "2. Release"
 	fi
 	echo "3. Clone"
+	if [[ $(wget -q -S --spider "$ENTRAW""$1""/master/README.md" 2>&1) == *"200 OK"* || $(wget -q -S --spider "$ENTRAW""$1""/main/README.md" 2>&1) == *"200 OK"* ]];
+	then
+		echo "4. read the README.md file"
+	fi
 	read -p "(default 0): " -i "0" CVR
 	case "$CVR" in
 	"1")
@@ -176,6 +180,17 @@ function Clona
 	;;
 	"3")
 		git clone "$ENTSSL""$1"".git"
+	;;
+	"4")
+		if [[ $(wget -q -S --spider "$ENTRAW""$1""/master/README.md" 2>&1) == *"200 OK"* ]];
+		then
+			curl "$ENTRAW""$1""/master/README.md" | less
+		elif [[ $(wget -q -S --spider "$ENTRAW""$1""/main/README.md" 2>&1) == *"200 OK"* ]];
+		then
+			curl "$ENTRAW""$1""/main/README.md" | less
+		else
+			echo "There is not any README.md file"
+		fi
 	;;
 	*)
 	;;
