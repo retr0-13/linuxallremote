@@ -34,6 +34,7 @@ Over 1500 tools and utilities:
 - creating Reverse Shell with metasploit;
 - manage docker containers and images;
 - download and use the last PoC remote exploits;
+- download some tools and attack with curl via Tor;
 
 and much more...
 
