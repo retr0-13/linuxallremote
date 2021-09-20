@@ -236,12 +236,23 @@ function Stampa
 {
 	if [[ $COL -gt 80 ]];
 	then
-		printf '%-'$ALN's%-'$ALN's%-'$ALN's' "$1" "$2" "$3"
-		echo ""
+		if [[ "$3" != "" ]];
+		then
+			printf '%-'$ALN's%-'$ALN's%-'$ALN's' "$1" "$2" "$3"
+			echo ""
+		else
+			if [[ "$2" != "" ]];
+			then
+				printf '%-'$ALN's%-'$ALN's' "$1" "$2"
+				echo ""
+			else
+				echo "$1"
+			fi
+		fi
 	else
-		echo "$1"
-		echo "$2"
-		echo "$3"
+		echo " $1"
+		echo " $2"
+		echo " $3"
 	fi
 }
 
@@ -355,7 +366,7 @@ while true; do
 	echo "$SEP"
 	echo "APACHE"
 	Stampa " 278. mgeeky/tomcatWarDeployer" "280. hypn0s/AJPy" "829. mthbernardes/ARTLAS"
-	Stampa " 2424. antonio-morales/Apache-HTTP-Fuzzing"
+	Stampa " 2424. antonio-morales/Apache-HTTP-Fuzzing" "2571. knightm4re/tomcter"
 	echo "$SEP"
 	echo "APPLE"
 	Stampa " 644. Pr0x13/iDict" "645. foozzi/iCloudBrutter" "2325. gwatts/pinfinder"
@@ -1153,8 +1164,11 @@ while true; do
 	Stampa " 2337. install a deb package" "2338. install a browser" "2353. Pull a Docker image"
 	Stampa " 2452. AWS S3 copy file to remote host" "2453. AWS S3 list file in remote host" "2454. AWS S3 dump dynamodb tables"
 	Stampa " 2457. install poetry" "2503. run dbg and disassembling a bin file" "751. RCE with finger"
-	Stampa " 2515. Create a Reverse Shell for Android and run a listener" "2539. Create a Reverse Shell for Windows x86 and run a listener" "2540. Create a Reverse Shell for Windows x64 and run a listener"
-	Stampa " 2542. get ASN and infos of target IP from cymru.com" "2543. create an encrypted and encoded payload with metasploit" "2547. list all pulled docker images"
+	Stampa " 2515. Create a Reverse Shell for Android and run a listener"
+	Stampa " 2539. Create a Reverse Shell for Windows x86 and run a listener"
+	Stampa " 2540. Create a Reverse Shell for Windows x64 and run a listener"
+	Stampa " 2542. get ASN and infos of target IP from cymru.com" "2543. create an encrypted and encoded payload with metasploit"
+	Stampa " 2547. list all pulled docker images"
 	Stampa " 2548. run a docker image" "2549. docker process list" "2552. use nmap to scan ports for vulnerabilities"
 	Stampa " 2556. Executione command line to Remote IP with RPC" "2564. display all binsry's headers with objdump"
 	Stampa " 2570. Anonymization"
@@ -1236,8 +1250,8 @@ while true; do
 	echo "$SEP"
 	echo "PROXY SERVERS (HTTP SOCKS4 SOCKS5)"
 	Stampa " 106. clarketm/proxy-list" "107. opsxcq/proxy-list" "108. a2u/free-proxy-list"
-	Stampa " 109. cristiangonzales/Amazon-Discounts/proxy-list" "117. TheSpeedX/PROXY-List"
-	Stampa " 119. samrocketman/proxylist" "118. labic/ze-the-scraper/proxies-list"
+	Stampa " 109. cristiangonzales/Amazon-Discounts/proxy-list" "117. TheSpeedX/PROXY-List" "118. labic/ze-the-scraper/proxies-list"
+	Stampa " 119. samrocketman/proxylist"
 	echo "$SEP"
 	echo "? - OTHERS"
 	Stampa " 36. SigPloiter/HLR-Lookups" "37. i3visio/osrframework" "2354. py2exe/py2exe"
@@ -1261,6 +1275,9 @@ while true; do
 	read -p "Choose a script: " SCELTA
 	case "$SCELTA" in
 	"0")
+		QUESTO=""
+		CURLANON=""
+		ANON=""
 		TIP=""
 		TPRT=""
 		TUSRN=""
@@ -10740,6 +10757,9 @@ while true; do
 			fi
 			CURLANON=""
 		fi
+	;;
+	"2571")
+		Clona "knightm4re/tomcter"
 	;;
 	*)
 		echo "error, invalid choice"

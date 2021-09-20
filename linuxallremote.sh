@@ -230,12 +230,23 @@ function Stampa
 {
 	if [[ $COL -gt 80 ]];
 	then
-		printf '%-'$ALN's%-'$ALN's%-'$ALN's' "$1" "$2" "$3"
-		echo ""
+		if [[ "$3" != "" ]];
+		then
+			printf '%-'$ALN's%-'$ALN's%-'$ALN's' "$1" "$2" "$3"
+			echo ""
+		else
+			if [[ "$2" != "" ]];
+			then
+				printf '%-'$ALN's%-'$ALN's' "$1" "$2"
+				echo ""
+			else
+				echo "$1"
+			fi
+		fi
 	else
-		echo "$1"
-		echo "$2"
-		echo "$3"
+		echo " $1"
+		echo " $2"
+		echo " $3"
 	fi
 }
 
@@ -347,7 +358,7 @@ while true; do
 	echo "$SEP"
 	echo "APACHE"
 	Stampa " 278. mgeeky/tomcatWarDeployer" "280. hypn0s/AJPy" "829. mthbernardes/ARTLAS"
-	Stampa " 2424. antonio-morales/Apache-HTTP-Fuzzing"
+	Stampa " 2424. antonio-morales/Apache-HTTP-Fuzzing" "2565. knightm4re/tomcter"
 	echo "$SEP"
 	echo "APPLE"
 	Stampa " 644. Pr0x13/iDict" "645. foozzi/iCloudBrutter" "2325. gwatts/pinfinder"
@@ -1139,14 +1150,17 @@ while true; do
 	Stampa " 754. get RPC info" "755. get RPC connect" "2423. get aws token and meta-data"
 	Stampa " 756. smb connection" "757. rlogin dictionary attack" "758. rdesktop dictionary attack"
 	Stampa " 9. wifi WPA with deauth attack" "2251. SSTI RCE" "2252. SSTI jinja2 RevShell"
-	Stampa " 76. print all functions of a binary" "135. dump all opcodes from a binary"
-	Stampa " 2261. Encrypt and Encode a file to pass in remote host" "2267. install a python hacking package"
+	Stampa " 76. print all functions of a binary" "135. dump all opcodes from a binary" "2267. install a python hacking package"
+	Stampa " 2261. Encrypt and Encode a file to pass in remote host"
 	Stampa " 2268. install a python3 hacking package" "2289. install a ruby hacking gem" "Prepare RevShell for Windows"
 	Stampa " 2337. install a deb package" "2338. install a browser" "2353. Pull a Docker image"
 	Stampa " 2452. AWS S3 copy file to remote host" "2453. AWS S3 list file in remote host" "2454. AWS S3 dump dynamodb tables"
 	Stampa " 2457. install poetry" "2503. run dbg and disassembling a bin file" "751. RCE with finger"
-	Stampa " 2515. Create a Reverse Shell for Android and run a listener" "2539. Create a Reverse Shell for Windows x86 and run a listener" "2540. Create a Reverse Shell for Windows x64 and run a listener"
-	Stampa " 2542. get ASN and infos of target IP from cymru.com" "2543. create an encrypted and encoded payload with metasploit" "2547. list all pulled docker images"
+	Stampa " 2515. Create a Reverse Shell for Android and run a listener"
+	Stampa " 2539. Create a Reverse Shell for Windows x86 and run a listener"
+	Stampa " 2540. Create a Reverse Shell for Windows x64 and run a listener"
+	Stampa " 2542. get ASN and infos of target IP from cymru.com" "2543. create an encrypted and encoded payload with metasploit"
+	Stampa " 2547. list all pulled docker images"
 	Stampa " 2548. run a docker image" "2549. docker process list" "2552. use nmap to scan ports for vulnerabilities"
 	Stampa " 2556. Execute remote command with rpcclient" "2557. disassemble binary with objdump" "2558. display all binary's headers with objdump"
 	Stampa " 2564. Anonymization"
@@ -1250,6 +1264,8 @@ while true; do
 	read -p "Choose a script: " SCELTA
 	case "$SCELTA" in
 	"0")
+		CURLANON=""
+		ANON=""
 		QUESTO=""
 		PYPAK=""
 		RUPAK=""
@@ -10690,6 +10706,9 @@ while true; do
 			fi
 			CURLANON=""
 		fi
+	;;
+	"2565")
+		Clona "knightm4re/tomcter"
 	;;
 	*)
 		echo "error, invalid choice"
