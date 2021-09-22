@@ -35,6 +35,7 @@ Over 1500 tools and utilities:
 - manage docker containers and images;
 - download and use the last PoC remote exploits;
 - download some tools and attack with curl via Tor;
+- XSS techniques;
 
 and much more...
 
