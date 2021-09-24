@@ -1173,7 +1173,11 @@ while true; do
 	Stampa " 2547. list all pulled docker images"
 	Stampa " 2548. run a docker image" "2549. docker process list" "2552. use nmap to scan ports for vulnerabilities"
 	Stampa " 2556. Executione command line to Remote IP with RPC" "2564. display all binsry's headers with objdump"
-	Stampa " 2570. Anonymization" "2572. Steal Cookie from Panel/Manager/CMS with XSS"
+	Stampa " 2570. Anonymization" "2572. Steal Cookie from Panel/Manager/CMS with XSS" "2575. use nmap to scan ports with authentication"
+	Stampa " 2576. use nmap to scan ports with broadcast" "2577. use nmap to scan ports with brute" "2578. use nmap to scan ports with default"
+	Stampa " 2579. use nmap to scan ports with discovery" "2580. use nmap to scan ports with dos" "2581. use nmap to scan ports with exploit"
+	Stampa " 2582. use nmap to scan ports with external" "2583. use nmap to scan ports with fuzzer" "2584. use nmap to scan ports with intrusive"
+	Stampa " 2585. use nmap to scan ports with malware" "2586. use nmap to scan ports with safe" "2587. use nmap to scan ports with version"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	Stampa " 511. Isaacdelly/Plutus" "512. dan-v/bruteforce-bitcoin-brainwallet" "513. SMH17/bitcoin-hacking-tools"
@@ -10794,6 +10798,201 @@ while true; do
 	"2574")
 		echo "Digit Your Port"
 		read -p "(example 80): " TIP
+	;;
+	"2575")
+		echo "Digit a target IP"
+		read -p "(example, 192.168.168.3): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			echo "Digit target PORTs"
+			read -p "(example, 445 or 135-139 or 21,22): " TPRT
+			if [[ "$TPRT" != "" ]];
+			then
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script auth -p "$TPRT" "$TIP"
+			else
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script auth "$TPRT" "$TIP"
+			fi
+		fi
+	;;
+	"2576")
+		echo "Digit a target IP"
+		read -p "(example, 192.168.168.3): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			echo "Digit target PORTs"
+			read -p "(example, 445 or 135-139 or 21,22): " TPRT
+			if [[ "$TPRT" != "" ]];
+			then
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script broadcast -p "$TPRT" "$TIP"
+			else
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script broadcast "$TPRT" "$TIP"
+			fi
+		fi
+	;;
+	"2577")
+		echo "Digit a target IP"
+		read -p "(example, 192.168.168.3): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			echo "Digit target PORTs"
+			read -p "(example, 445 or 135-139 or 21,22): " TPRT
+			if [[ "$TPRT" != "" ]];
+			then
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script brute -p "$TPRT" "$TIP"
+			else
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script brute "$TPRT" "$TIP"
+			fi
+		fi
+	;;
+	"2578")
+		echo "Digit a target IP"
+		read -p "(example, 192.168.168.3): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			echo "Digit target PORTs"
+			read -p "(example, 445 or 135-139 or 21,22): " TPRT
+			if [[ "$TPRT" != "" ]];
+			then
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script default -p "$TPRT" "$TIP"
+			else
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script default "$TPRT" "$TIP"
+			fi
+		fi
+	;;
+	"2579")
+		echo "Digit a target IP"
+		read -p "(example, 192.168.168.3): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			echo "Digit target PORTs"
+			read -p "(example, 445 or 135-139 or 21,22): " TPRT
+			if [[ "$TPRT" != "" ]];
+			then
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script discovery -p "$TPRT" "$TIP"
+			else
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script discovery "$TPRT" "$TIP"
+			fi
+		fi
+	;;
+	"2580")
+		echo "Digit a target IP"
+		read -p "(example, 192.168.168.3): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			echo "Digit target PORTs"
+			read -p "(example, 445 or 135-139 or 21,22): " TPRT
+			if [[ "$TPRT" != "" ]];
+			then
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script dos -p "$TPRT" "$TIP"
+			else
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script dos "$TPRT" "$TIP"
+			fi
+		fi
+	;;
+	"2581")
+		echo "Digit a target IP"
+		read -p "(example, 192.168.168.3): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			echo "Digit target PORTs"
+			read -p "(example, 445 or 135-139 or 21,22): " TPRT
+			if [[ "$TPRT" != "" ]];
+			then
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script exploit -p "$TPRT" "$TIP"
+			else
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script exploit "$TPRT" "$TIP"
+			fi
+		fi
+	;;
+	"2582")
+		echo "Digit a target IP"
+		read -p "(example, 192.168.168.3): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			echo "Digit target PORTs"
+			read -p "(example, 445 or 135-139 or 21,22): " TPRT
+			if [[ "$TPRT" != "" ]];
+			then
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script external -p "$TPRT" "$TIP"
+			else
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script external "$TPRT" "$TIP"
+			fi
+		fi
+	;;
+	"2583")
+		echo "Digit a target IP"
+		read -p "(example, 192.168.168.3): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			echo "Digit target PORTs"
+			read -p "(example, 445 or 135-139 or 21,22): " TPRT
+			if [[ "$TPRT" != "" ]];
+			then
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script fuzzer -p "$TPRT" "$TIP"
+			else
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script fuzzer "$TPRT" "$TIP"
+			fi
+		fi
+	;;
+	"2584")
+		echo "Digit a target IP"
+		read -p "(example, 192.168.168.3): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			echo "Digit target PORTs"
+			read -p "(example, 445 or 135-139 or 21,22): " TPRT
+			if [[ "$TPRT" != "" ]];
+			then
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script intrusive -p "$TPRT" "$TIP"
+			else
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script intrusive "$TPRT" "$TIP"
+			fi
+		fi
+	;;
+	"2585")
+		echo "Digit a target IP"
+		read -p "(example, 192.168.168.3): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			echo "Digit target PORTs"
+			read -p "(example, 445 or 135-139 or 21,22): " TPRT
+			if [[ "$TPRT" != "" ]];
+			then
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script malware -p "$TPRT" "$TIP"
+			else
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script malware "$TPRT" "$TIP"
+			fi
+		fi
+	;;
+	"2586")
+		echo "Digit a target IP"
+		read -p "(example, 192.168.168.3): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			echo "Digit target PORTs"
+			read -p "(example, 445 or 135-139 or 21,22): " TPRT
+			if [[ "$TPRT" != "" ]];
+			then
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script safe -p "$TPRT" "$TIP"
+			else
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script safe "$TPRT" "$TIP"
+			fi
+		fi
+	;;
+	"2587")
+		echo "Digit a target IP"
+		read -p "(example, 192.168.168.3): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			echo "Digit target PORTs"
+			read -p "(example, 445 or 135-139 or 21,22): " TPRT
+			if [[ "$TPRT" != "" ]];
+			then
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script version -p "$TPRT" "$TIP"
+			else
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script version "$TPRT" "$TIP"
+			fi
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
