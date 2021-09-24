@@ -827,7 +827,7 @@ while true; do
 	Stampa " 1233. golismero/golismero" "1234. anarcoder/google_explorer" "1236. 1N3/Goohak"
 	Stampa " 2474. bahaabdelwahed/killshot" "1263. portantier/habu" "1267. 4shadoww/hakkuframework"
 	Stampa " 2514. P1kachu/v0lt" "651. leebaird/discover" "2550. s1l3nt78/sifter"
-	Stampa " 1296. dstotijn/hetty"
+	Stampa " 1296. dstotijn/hetty" "2580. aufzayed/HydraRecon"
 	echo "$SEP"
 	echo "MITM - SNIFFING"
 	Stampa " 249. kgretzky/evilginx2" "331. mkdirlove/SSLSTRIP-NG/sslstrip-ng" "541. wifiphisher/wifiphisher"
@@ -10932,6 +10932,9 @@ while true; do
 				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script version "$TIP"
 			fi
 		fi
+	;;
+	"2580")
+		Clona "aufzayed/HydraRecon"
 	;;
 	*)
 		echo "error, invalid choice"
