@@ -10591,7 +10591,7 @@ while true; do
 			then
 				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script vuln -p "$TPRT" "$TIP"
 			else
-				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script vuln "$TPRT" "$TIP"
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script vuln "$TIP"
 			fi
 		fi
 	;;
@@ -10749,7 +10749,7 @@ while true; do
 			then
 				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script auth -p "$TPRT" "$TIP"
 			else
-				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script auth "$TPRT" "$TIP"
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script auth "$TIP"
 			fi
 		fi
 	;;
@@ -10764,7 +10764,7 @@ while true; do
 			then
 				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script broadcast -p "$TPRT" "$TIP"
 			else
-				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script broadcast "$TPRT" "$TIP"
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script broadcast "$TIP"
 			fi
 		fi
 	;;
@@ -10779,7 +10779,7 @@ while true; do
 			then
 				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script brute -p "$TPRT" "$TIP"
 			else
-				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script brute "$TPRT" "$TIP"
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script brute "$TIP"
 			fi
 		fi
 	;;
@@ -10794,7 +10794,7 @@ while true; do
 			then
 				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script default -p "$TPRT" "$TIP"
 			else
-				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script default "$TPRT" "$TIP"
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script default "$TIP"
 			fi
 		fi
 	;;
@@ -10809,7 +10809,7 @@ while true; do
 			then
 				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script discovery -p "$TPRT" "$TIP"
 			else
-				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script discovery "$TPRT" "$TIP"
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script discovery "$TIP"
 			fi
 		fi
 	;;
@@ -10824,7 +10824,7 @@ while true; do
 			then
 				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script dos -p "$TPRT" "$TIP"
 			else
-				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script dos "$TPRT" "$TIP"
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script dos "$TIP"
 			fi
 		fi
 	;;
@@ -10839,7 +10839,7 @@ while true; do
 			then
 				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script exploit -p "$TPRT" "$TIP"
 			else
-				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script exploit "$TPRT" "$TIP"
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script exploit "$TIP"
 			fi
 		fi
 	;;
@@ -10854,7 +10854,7 @@ while true; do
 			then
 				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script external -p "$TPRT" "$TIP"
 			else
-				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script external "$TPRT" "$TIP"
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script external "$TIP"
 			fi
 		fi
 	;;
@@ -10869,7 +10869,7 @@ while true; do
 			then
 				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script fuzzer -p "$TPRT" "$TIP"
 			else
-				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script fuzzer "$TPRT" "$TIP"
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script fuzzer "$TIP"
 			fi
 		fi
 	;;
@@ -10884,7 +10884,7 @@ while true; do
 			then
 				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script intrusive -p "$TPRT" "$TIP"
 			else
-				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script intrusive "$TPRT" "$TIP"
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script intrusive "$TIP"
 			fi
 		fi
 	;;
@@ -10899,7 +10899,7 @@ while true; do
 			then
 				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script malware -p "$TPRT" "$TIP"
 			else
-				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script malware "$TPRT" "$TIP"
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script malware "$TIP"
 			fi
 		fi
 	;;
@@ -10914,7 +10914,7 @@ while true; do
 			then
 				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script safe -p "$TPRT" "$TIP"
 			else
-				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script safe "$TPRT" "$TIP"
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script safe "$TIP"
 			fi
 		fi
 	;;
@@ -10929,7 +10929,7 @@ while true; do
 			then
 				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script version -p "$TPRT" "$TIP"
 			else
-				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script version "$TPRT" "$TIP"
+				sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script version "$TIP"
 			fi
 		fi
 	;;
