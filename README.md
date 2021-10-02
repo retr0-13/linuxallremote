@@ -41,8 +41,8 @@ and much more...
 
 Please, share and starring my repos, follow me and... Happy hacking!
 
-Tutorial from <img src="https://odysee.com/public/pwa/icon-180.png" width="30" height="30"></img> odysee by <a href="https://odysee.com/@Tigermanroot:b">TigermanRoot</a>: <a href="https://odysee.com/@Tigermanroot:b/Iinuxallremote:e">video</a>
+Tutorial from <img crossorigin="anonymous" src="https://odysee.com/public/pwa/icon-180.png" width="30" height="30"></img> odysee by <a href="https://odysee.com/@Tigermanroot:b">TigermanRoot</a>: <a href="https://odysee.com/@Tigermanroot:b/Iinuxallremote:e">video</a>
 
-<img src="https://cdn.cms-twdigitalassets.com/content/dam/developer-twitter/images/Twitter_logo_blue_32.png"></img>: <a href="https://twitter.com/fabio_defilippo">@fabio_defilippo</a>
+<img crossorigin="anonymous" src="https://cdn.cms-twdigitalassets.com/content/dam/developer-twitter/images/Twitter_logo_blue_32.png"></img>: <a href="https://twitter.com/fabio_defilippo">@fabio_defilippo</a>
 
-<img src="https://www.paypalobjects.com/digitalassets/c/website/marketing/na/us/logo-center/Badge_1.png" width="30" height="30"></img>: If you want, you could <a href="https://www.paypal.com/donate?hosted_button_id=559D4CJB84KQJ">buy me a ☕</a>
+<img crossorigin="anonymous" src="https://www.paypalobjects.com/digitalassets/c/website/marketing/na/us/logo-center/Badge_1.png" width="30" height="30"></img>: If you want, you could <a href="https://www.paypal.com/donate?hosted_button_id=559D4CJB84KQJ">buy me a ☕</a>
