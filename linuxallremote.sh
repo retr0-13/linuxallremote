@@ -396,6 +396,7 @@ while true; do
 	Stampa " 305. lucaboni92/BlueFuzz" "440. fO-000/bluescan" "447. MillerTechnologyPeru/hcitool"
 	Stampa " 482. francozappa/knob" "505. joswr1ght/btfind" "899. olivo/BluPhish"
 	Stampa " 918. virtualabs/btlejack" "919. conorpp/btproxy" "995. mikeryan/crackle"
+	Stampa " 2594. nccgroup/Sniffle"
 	echo "$SEP"
 	echo "BOT - AI"
 	Stampa " 445. evilsocket/kitsune" "1144. BishopFox/eyeballer"
@@ -413,6 +414,7 @@ while true; do
 	echo "$SEP"
 	echo "CARS"
 	Stampa " 933. schutzwerk/CANalyzat0r" "2310. shipcod3/mazda_getInfo" "2311. P1kachu/talking-with-cars"
+	Stampa " 2593. souravbaghz/CarPunk"
 	echo "$SEP"
 	echo "CDN"
 	Stampa " 971. MrH0wl/Cloudmare"
@@ -464,7 +466,7 @@ while true; do
 	Stampa " 2425. skelsec/pypykatz" "1156. evilsocket/fang" "2466. hemp3l/sucrack"
 	Stampa " 2494. hashtopolis/server" "1273. UltimateHackers/Hash-Buster" "2508. hellman/xortool"
 	Stampa " 2505. KishanBagaria/padding-oracle-attacker" "2506. Ganapati/RsaCtfTool" "2507. ius/rsatool"
-	Stampa " 1276. hashcat/hashcat-utils" "1286. trustedsec/hate_crack"
+	Stampa " 1276. hashcat/hashcat-utils" "1286. trustedsec/hate_crack" "2587. navin-maverick/BruteBot"
 	echo "$SEP"
 	echo "CRAWLING - SPIDERING - SCRAPING"
 	Stampa " 586. saeeddhqan/evine" "722. OWASP/OWASP-WebScarab" "733. gotr00t0day/spider00t"
@@ -519,7 +521,8 @@ while true; do
 	Stampa " 492. darkoperator/dnsrecon" "493. neiltyagi/DNSRECON" "496. rs/dnstrace"
 	Stampa " 497. redsift/dnstrace" "498. dkorunic/dnstrace" "528. mfocuz/DNS_Hunter"
 	Stampa " 752. theMiddleBlue/DNSenum" "753. rbsec/dnscan" "1057. lorenzog/dns-parallel-prober"
-	Stampa " 783. gr3yc4t/dns-poisoning-tool" "784. SemyonMakhaev/dns-poison" "785. ShanjinurIslam/Computer-Security-DNS-Cache-Poisoning"
+	Stampa " 783. gr3yc4t/dns-poisoning-tool" "784. SemyonMakhaev/dns-poison"
+	Stampa " 785. ShanjinurIslam/Computer-Security-DNS-Cache-Poisoning"
 	Stampa " 799. blark/aiodnsbrute" "803. infosec-au/altdns" "831. tomnomnom/assetfinder"
 	Stampa " 945. projectdiscovery/chaos-client" "1063. erbbysam/DNSGrep" "2293. ProjectAnte/dnsgen"
 	Stampa " 1065. evilsocket/dnssearch" "1066. elceef/dnstwist" "1067. vortexau/dnsvalidator"
@@ -661,6 +664,7 @@ while true; do
 	Stampa " 1187. byt3smith/Forager" "1240. Nhoya/gOSINT" "1271. Te-k/harpoon"
 	Stampa " 2500. jakejarvis/awesome-shodan-queries" "2501. interference-security/zoomeye-data" "2526. A3h1nt/Grawler"
 	Stampa " 2534. sc1341/TikTok-OSINT" "2538. nccgroup/Solitude" "2559. C0MPL3XDEV/E4GL30S1NT"
+	Stampa " 2590. DedSecInside/gotor" "2592. s41r4j/phomber"
 	echo "$SEP"
 	echo "GIT - REPOS"
 	Stampa " 487. arthaud/git-dumper" "553. Ebryx/GitDump" "2315. metac0rtex/GitHarvester"
@@ -781,7 +785,8 @@ while true; do
 	Stampa " 1262. khast3x/h8mail"
 	echo "$SEP"
 	echo "MALWARE"
-	Stampa " 407. avinashkranjan/Malware-with-Backdoor-and-Keylogger" "2561. 0xFreddox/KeyLogger-WebService"
+	Stampa " 407. avinashkranjan/Malware-with-Backdoor-and-Keylogger"
+	Stampa " 2561. 0xFreddox/KeyLogger-WebService" "2588. Revise7/ViperVenom"
 	echo "$SEP"
 	echo "MEMCACHEDAEMON"
 	Stampa " 166. linsomniac/python-memcached"
@@ -827,7 +832,7 @@ while true; do
 	Stampa " 1233. golismero/golismero" "1234. anarcoder/google_explorer" "1236. 1N3/Goohak"
 	Stampa " 2474. bahaabdelwahed/killshot" "1263. portantier/habu" "1267. 4shadoww/hakkuframework"
 	Stampa " 2514. P1kachu/v0lt" "651. leebaird/discover" "2550. s1l3nt78/sifter"
-	Stampa " 1296. dstotijn/hetty" "2580. aufzayed/HydraRecon"
+	Stampa " 1296. dstotijn/hetty" "2580. aufzayed/HydraRecon" "2584. Malam-X/DragonMS"
 	echo "$SEP"
 	echo "MITM - SNIFFING"
 	Stampa " 249. kgretzky/evilginx2" "331. mkdirlove/SSLSTRIP-NG/sslstrip-ng" "541. wifiphisher/wifiphisher"
@@ -842,7 +847,7 @@ while true; do
 	Stampa " 1292. ApertureLabsLtd/hdmi-sniff"
 	echo "$SEP"
 	echo "MOBILE"
-	Stampa " 2344. sensepost/objection"
+	Stampa " 2344. sensepost/objection" "2585. tegal1337/CiLocks"
 	echo "$SEP"
 	echo "MONGODB - NOSQL"
 	Stampa " 230. youngyangyang04/NoSQLAttack" "231. codingo/NoSQLMap" "232. torque59/Nosql-Exploitation-Framework"
@@ -1028,8 +1033,10 @@ while true; do
 	Stampa " 95. TBGSecurity/splunk_shells" "281. berkgoksel/SierraTwo" "295. wintrmvte/Shellab"
 	Stampa " 348. brimstone/go-shellcode" "349. TheBinitGhimire/Web-Shells/smevk" "432. offensive-security/exploitdb/shellcodes/android"
 	Stampa " 433. offensive-security/exploitdb/shellcodes/linux" "434. offensive-security/exploitdb/shellcodes/linux_x86-64"
-	Stampa " 435. offensive-security/exploitdb/shellcodes/linux_x86" "436. offensive-security/exploitdb/shellcodes/windows"
-	Stampa " 437. offensive-security/exploitdb/shellcodes/windows_x86-64" "438. offensive-security/exploitdb/shellcodes/windows_x86"
+	Stampa " 435. offensive-security/exploitdb/shellcodes/linux_x86"
+	Stampa " 436. offensive-security/exploitdb/shellcodes/windows"
+	Stampa " 437. offensive-security/exploitdb/shellcodes/windows_x86-64"
+	Stampa " 438. offensive-security/exploitdb/shellcodes/windows_x86"
 	Stampa " 654. Rover141/Shellter" "825. alexpark07/ARMSCGen" "136. b1tg/rust-windows-shellcode"
 	Stampa " 2320. Den1al/JSShell" "2333. packetstormsecurity/aesshell" "2489. baktoft/yaps"
 	echo "$SEP"
@@ -1051,7 +1058,7 @@ while true; do
 	Stampa " 418. pentestmonkey/smtp-user-enum" "419. altjx/ipwn/iSMTP" "421. tango-j/SMTP-Open-Relay-Attack-Test-Tool"
 	Stampa " 422. crazywifi/SMTP_Relay_Phisher" "423. NickSanzotta/smbShakedown" "424. balaganeshgbhackers/Emailspoofing"
 	Stampa " 425. RobinMeis/MITMsmtp" "426. mikechabot/smtp-email-spoofer-py" "525. jetmore/swaks"
-	Stampa " 2305. aron-tn/Smtp-cracker" "2553. mrlew1s/BrokenSMTP"
+	Stampa " 2305. aron-tn/Smtp-cracker" "2553. mrlew1s/BrokenSMTP" "2589. DrPython3/MailRipV2"
 	echo "$SEP"
 	echo "SNMP"
 	Stampa " 74. hatlord/snmpwn" "75. etingof/pysnmp" "77. InteliSecureLabs/SNMPPLUX"
@@ -1193,7 +1200,7 @@ while true; do
 	Stampa " 2283. koutto/web-brutator" "1026. thesp0nge/dawnscanner" "2297. xmendez/wfuzz"
 	Stampa " 2346. infosecsecurity/Spaghetti" "2363. lirantal/is-website-vulnerable" "1261. gildasio/h2t"
 	Stampa " 1145. ChrisTruncer/EyeWitness" "2464. nim-lang/choosenim/vaf" "1186. tismayil/fockcache"
-	Stampa " 2483. AvalZ/WAF-A-MoLE" "2581. xchopath/pathprober"
+	Stampa " 2483. AvalZ/WAF-A-MoLE" "2581. xchopath/pathprober" "2586. WangYihang/SourceLeakHacker"
 	echo "$SEP"
 	echo "WEBDAV"
 	Stampa " 1025. Graph-X/davscan"
@@ -1205,7 +1212,7 @@ while true; do
 	echo "$SEP"
 	echo "WEBSHELL"
 	Stampa " 562. tennc/webshell" "574. epinna/weevely3" "608. jackrendor/cookiedoor"
-	Stampa " 2544. EatonChips/wsh"
+	Stampa " 2544. EatonChips/wsh" "2591. oldkingcone/slopShell"
 	echo "$SEP"
 	echo "WIFI - WPA2 - WEP - PSK"
 	Stampa " 540. blunderbuss-wctf/wacker" "550. calebmadrigal/trackerjacker" "580. JPaulMora/Pyrit"
@@ -10950,6 +10957,39 @@ while true; do
 		then
 			python -c "from pwn import *;from pprint import pprint;elf = ELF('""$FBIN""');print(elf);pprint(elf.symbols)"
 		fi
+	;;
+	"2584")
+		Clona "Malam-X/DragonMS"
+	;;
+	"2585")
+		Clona "tegal1337/CiLocks"
+	;;
+	"2586")
+		Clona "WangYihang/SourceLeakHacker"
+	;;
+	"2587")
+		Scarica "$ENTRAW""navin-maverick/BruteBot/master/BruteBot.py"
+	;;
+	"2588")
+		Clona "Revise7/ViperVenom"
+	;;
+	"2589")
+		Clona "DrPython3/MailRipV2"
+	;;
+	"2590")
+		Clona "DedSecInside/gotor"
+	;;
+	"2591")
+		Clona "oldkingcone/slopShell"
+	;;
+	"2592")
+		Clona "s41r4j/phomber"
+	;;
+	"2593")
+		Clona "souravbaghz/CarPunk"
+	;;
+	"2594")
+		Clona "nccgroup/Sniffle"
 	;;
 	*)
 		echo "error, invalid choice"
