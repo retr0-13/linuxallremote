@@ -833,6 +833,7 @@ while true; do
 	Stampa " 2474. bahaabdelwahed/killshot" "1263. portantier/habu" "1267. 4shadoww/hakkuframework"
 	Stampa " 2514. P1kachu/v0lt" "651. leebaird/discover" "2550. s1l3nt78/sifter"
 	Stampa " 1296. dstotijn/hetty" "2580. aufzayed/HydraRecon" "2584. Malam-X/DragonMS"
+	Stampa " 2597. FunnyWolf/Viper"
 	echo "$SEP"
 	echo "MITM - SNIFFING"
 	Stampa " 249. kgretzky/evilginx2" "331. mkdirlove/SSLSTRIP-NG/sslstrip-ng" "541. wifiphisher/wifiphisher"
@@ -904,7 +905,7 @@ while true; do
 	Stampa " 303. KTN1990/PostgreSQL--Attack-on-default-password-AUTOEXPLOITING-/DB"
 	echo "$SEP"
 	echo "PRINTER"
-	Stampa " 639. RUB-NDS/PRET"
+	Stampa " 639. RUB-NDS/PRET" "2595. BeetleChunks/SpoolSploit"
 	echo "$SEP"
 	echo "PRIVESC"
 	Stampa " 2394. swisskyrepo/PayloadsAllTheThings/Methodology_and_Resources/Linux-PrivilegeEscalation"
@@ -966,6 +967,7 @@ while true; do
 	Stampa " 2282. s0md3v/ReconDog" "998. Ganapati/Crawlic" "1024. upgoingstar/datasploit"
 	Stampa " 1122. Gilks/enumerid" "2405. c0dejump/HawkScan" "2431. heilla/SecurityTesting"
 	Stampa " 2433. eslam3kl/3klector" "2434. eslam3kl/Explorer" "1158. devanshbatham/FavFreak"
+	Stampa " 2598. sumo2001/Trishul"
 	echo "$SEP"
 	echo "REDIS"
 	Stampa " 759. Avinash-acid/Redis-Server-Exploit" "1264. Ridter/hackredis"
@@ -1027,6 +1029,7 @@ while true; do
 	Stampa " 2436. eslam3kl/NetScanner" "1127. peterpt/eternal_scanner" "1136. NullHypothesis/exitmap"
 	Stampa " 1167. sfan5/fi6s" "2499. v-byte-cpu/sx" "2527. kleiton0x00/ppmap"
 	Stampa " 2541. avilum/portsscan" "2562. Abhay2342/Network-Scanner" "2563. xadhrit/d9scan"
+	Stampa " 2599. idealeer/xmap"
 	echo "$SEP"
 	echo "SHELL"
 	Stampa " 70. sameera-madushan/Print-My-Shell" "71. flozz/p0wny-shell/shell" "87. rastating/slae"
@@ -1039,6 +1042,7 @@ while true; do
 	Stampa " 438. offensive-security/exploitdb/shellcodes/windows_x86"
 	Stampa " 654. Rover141/Shellter" "825. alexpark07/ARMSCGen" "136. b1tg/rust-windows-shellcode"
 	Stampa " 2320. Den1al/JSShell" "2333. packetstormsecurity/aesshell" "2489. baktoft/yaps"
+	Stampa " 2596. d4t4s3c/Shelly"
 	echo "$SEP"
 	echo "SHELLSHOCK"
 	Stampa " 2279. MrCl0wnLab/ShellShockHunter" "2280. DanMcInerney/shellshock-hunter"
@@ -10990,6 +10994,21 @@ while true; do
 	;;
 	"2594")
 		Clona "nccgroup/Sniffle"
+	;;
+	"2595")
+		Clona "BeetleChunks/SpoolSploit"
+	;;
+	"2596")
+		Scarica "$ENTRAW""d4t4s3c/Shelly/main/shelly.sh"
+	;;
+	"2597")
+		Clona "FunnyWolf/Viper"
+	;;
+	"2598")
+		Clona "sumo2001/Trishul"
+	;;
+	"2599")
+		Clona "idealeer/xmap"
 	;;
 	*)
 		echo "error, invalid choice"
