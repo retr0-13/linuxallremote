@@ -11005,7 +11005,10 @@ while true; do
 		Clona "FunnyWolf/Viper"
 	;;
 	"2598")
-		Clona "sumo2001/Trishul"
+		if [[ $(Warning) == "Y" ]];
+		then
+			Clona "sumo2001/Trishul"
+		fi
 	;;
 	"2599")
 		Clona "idealeer/xmap"
