@@ -684,7 +684,7 @@ while true; do
 	Stampa " 2534. sc1341/TikTok-OSINT" "2538. nccgroup/Solitude" "2565. C0MPL3XDEV/E4GL30S1NT"
 	Stampa " 2597. DedSecInside/gotor" "2610. xadhrit/terra" "1329. BillyV4/ID-entify"
 	Stampa " 1340. m4ll0k/infoga" "1342. penafieljlm/inquisitor" "1344. sc1341/InstagramOSINT"
-	Stampa " 1355. Rajkumrdusad/IP-Tracer"
+	Stampa " 1355. Rajkumrdusad/IP-Tracer" "2616. emrekybs/Expulso" "2619. Q0120S/NoobWebHunter"
 	echo "$SEP"
 	echo "GIT - REPOS"
 	Stampa " 487. arthaud/git-dumper" "553. Ebryx/GitDump" "2315. metac0rtex/GitHarvester"
@@ -872,7 +872,7 @@ while true; do
 	Stampa " 2474. bahaabdelwahed/killshot" "1263. portantier/habu" "1267. 4shadoww/hakkuframework"
 	Stampa " 2514. P1kachu/v0lt" "651. leebaird/discover" "2550. s1l3nt78/sifter"
 	Stampa " 1296. dstotijn/hetty" "2588. aufzayed/HydraRecon" "2592. Malam-X/DragonMS"
-	Stampa " 2605. FunnyWolf/Viper"
+	Stampa " 2605. FunnyWolf/Viper" "2617. hpthreatresearch/subcrawl"
 	echo "$SEP"
 	echo "MITM - SNIFFING"
 	Stampa " 249. kgretzky/evilginx2" "331. mkdirlove/SSLSTRIP-NG/sslstrip-ng" "541. wifiphisher/wifiphisher"
@@ -920,6 +920,7 @@ while true; do
 	echo "$SEP"
 	echo "PAYLOAD"
 	Stampa " 1270. Rich5/Harness" "1295. EgeBalci/HERCULES" "1343. 4w4k3/Insanity-Framework"
+	Stampa " 2618. Deadpool2000/Paybag"
 	echo "$SEP"
 	echo "PDF"
 	Stampa " 46. thelinuxchoice/evilpdf" "47. robins/pdfcrack" "48. BroadbentT/PDF-CRACKER/pdf-cracker"
@@ -999,7 +1000,7 @@ while true; do
 	Stampa " 131. leobeosab/sharingan" "94. samhaxr/recox" "129. sowdust/ffff"
 	Stampa " 214. j3ssie/Osmedeus" "242. smicallef/spiderfoot" "308. yogeshojha/rengine"
 	Stampa " 390. lanmaster53/recon-ng" "391. methos2016/recon-ng" "501. LukaSikic/subzy"
-	Stampa " 556. LordNeoStark/tugarecon" "594. r3vn/badKarma" "599. utkusen/urlhunter"
+	Stampa " 556. skynet0x01/tugarecon" "594. r3vn/badKarma" "599. utkusen/urlhunter"
 	Stampa " 601. UnaPibaGeek/ctfr" "607. thewhiteh4t/seeker" "732. gotr00t0day/spyhunt"
 	Stampa " 768. capt-meelo/LazyRecon" "769. nahamsec/lazyrecon" "772. eslam3kl/3klCon"
 	Stampa " 2228. drsigned/sigurlx" "820. michenriksen/aquatone" "836. superhedgy/AttackSurfaceMapper"
@@ -1260,7 +1261,7 @@ while true; do
 	Stampa " 2483. AvalZ/WAF-A-MoLE" "2589. xchopath/pathprober" "2594. WangYihang/SourceLeakHacker"
 	Stampa " 2609. V1n1v131r4/webdiscover" "1311. riramar/hsecscan" "1312. segment-srl/htcap"
 	Stampa " 1317. tomnomnom/httprobe" "1318. breenmachine/httpscreenshot" "1368. stasinopoulos/jaidam"
-	Stampa " 1393. P0cL4bs/Kadimus"
+	Stampa " 1393. P0cL4bs/Kadimus" "2614. kostas-pa/LFITester" "2615. rivalsec/pathbuster"
 	echo "$SEP"
 	echo "WEBDAV"
 	Stampa " 1025. Graph-X/davscan"
@@ -3987,7 +3988,7 @@ while true; do
 		Clona "m8r0wn/subscraper"
 	;;
 	"556")
-		Clona "LordNeoStark/tugarecon"
+		Clona "skynet0x01/tugarecon"
 	;;
 	"557")
 		Clona "knassar702/scant3r"
@@ -11117,6 +11118,24 @@ while true; do
 	;;
 	"2613")
 		Clona "RedSection/jspanda"
+	;;
+	"2614")
+		Clona "kostas-pa/LFITester"
+	;;
+	"2615")
+		Clona "rivalsec/pathbuster"
+	;;
+	"2616")
+		Clona "emrekybs/Expulso"
+	;;
+	"2617")
+		Clona "hpthreatresearch/subcrawl"
+	;;
+	"2618")
+		Clona "Deadpool2000/Paybag"
+	;;
+	"2619")
+		Clona "Q0120S/NoobWebHunter"
 	;;
 	*)
 		echo "error, invalid choice"
