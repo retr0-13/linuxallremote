@@ -392,7 +392,7 @@ while true; do
 	Stampa " 861. giuliocomi/backoori" "1027. gitdurandal/dbd" "1083. Shellntel/backdoors"
 	Stampa " 1056. Mr-Un1k0d3r/DKMC" "1073. TheWover/donut" "1084. emptymonkey/drinkme"
 	Stampa " 2313. cribdragg3r/Alaris" "1206. byt3bl33d3r/gcat" "1229. razc411/GoBD"
-	Stampa " 2551. ORCA666/EarlyBird"
+	Stampa " 2551. ORCA666/EarlyBird" "2614. phath0m/JadedWraith"
 	echo "$SEP"
 	echo "BLUETOOTH"
 	Stampa " 305. lucaboni92/BlueFuzz" "440. fO-000/bluescan" "447. MillerTechnologyPeru/hcitool"
@@ -878,6 +878,7 @@ while true; do
 	Stampa " 2514. P1kachu/v0lt" "651. leebaird/discover" "2550. s1l3nt78/sifter"
 	Stampa " 1296. dstotijn/hetty" "2580. aufzayed/HydraRecon" "2584. Malam-X/DragonMS"
 	Stampa " 2597. FunnyWolf/Viper" "2609. hpthreatresearch/subcrawl" "1428. leviathan-framework/leviathan"
+	Stampa " 2612. AsjadOooO/Zero-attacker"
 	echo "$SEP"
 	echo "MITM - SNIFFING"
 	Stampa " 249. kgretzky/evilginx2" "331. mkdirlove/SSLSTRIP-NG/sslstrip-ng" "541. wifiphisher/wifiphisher"
@@ -941,6 +942,7 @@ while true; do
 	Stampa " 2277. suljot/shellphish" "1004. ustayready/CredSniper" "2239. Pinperepette/Geotweet_GUI"
 	Stampa " 2340. Pinperepette/GeoTweet" "2343. UndeadSec/EvilURL" "2460. ultrasecurity/Storm-Breaker"
 	Stampa " 1239. gophish/gophish" "2524. tokyoneon/CredPhish/dns_server" "1294. ytisf/hemingway"
+	Stampa " 2613. sky9262/phishEye"
 	echo "$SEP"
 	echo "PHP"
 	Stampa " 2247. ecriminal/phpvuln" "2248. ZaleHack/phpexploit"
@@ -1079,6 +1081,7 @@ while true; do
 	Stampa " 1167. sfan5/fi6s" "2499. v-byte-cpu/sx" "2527. kleiton0x00/ppmap"
 	Stampa " 2541. avilum/portsscan" "2562. Abhay2342/Network-Scanner" "2563. xadhrit/d9scan"
 	Stampa " 2599. idealeer/xmap" "2605. RedSection/jspanda" "1427. onthefrontline/LetMeFuckIt-Scanner"
+	Stampa " 2615. michelin/ChopChop"
 	echo "$SEP"
 	echo "SHELL"
 	Stampa " 70. sameera-madushan/Print-My-Shell" "71. flozz/p0wny-shell/shell" "87. rastating/slae"
@@ -11118,6 +11121,18 @@ while true; do
 	;;
 	"2611")
 		Clona "Q0120S/NoobWebHunter"
+	;;
+	"2612")
+		Clona "AsjadOooO/Zero-attacker"
+	;;
+	"2613")
+		Clona "sky9262/phishEye"
+	;;
+	"2614")
+		Clona "phath0m/JadedWraith"
+	;;
+	"2615")
+		Clona "michelin/ChopChop"
 	;;
 	*)
 		echo "error, invalid choice"
