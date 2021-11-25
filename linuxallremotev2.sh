@@ -1248,7 +1248,7 @@ while true; do
 	Stampa " 2579. use nmap to scan ports with discovery" "2580. use nmap to scan ports with dos" "2581. use nmap to scan ports with exploit"
 	Stampa " 2582. use nmap to scan ports with external" "2583. use nmap to scan ports with fuzzer" "2584. use nmap to scan ports with intrusive"
 	Stampa " 2585. use nmap to scan ports with malware" "2586. use nmap to scan ports with safe" "2587. use nmap to scan ports with version"
-	Stampa " 2591. read symbols and other infos from binary"
+	Stampa " 2591. read symbols and other infos from binary" "2625. create a zipbomb manually"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	Stampa " 511. Isaacdelly/Plutus" "512. dan-v/bruteforce-bitcoin-brainwallet" "513. SMH17/bitcoin-hacking-tools"
@@ -11179,6 +11179,14 @@ while true; do
 	;;
 	"2624")
 		Scarica "http://www.unforgettable.dk/42.zip"
+	;;
+	"2625")
+		echo "Digit a KByte value"
+		read -p "(example, 10000): " KB
+		if [[ "$KB" != "" ]];
+		then
+			dd if=/dev/zero bs=1024 count=$KB | zip zipbomb.zip -
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
