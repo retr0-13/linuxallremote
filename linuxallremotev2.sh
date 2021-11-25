@@ -1240,7 +1240,7 @@ while true; do
 	Stampa " 2539. Create a Reverse Shell for Windows x86 and run a listener"
 	Stampa " 2540. Create a Reverse Shell for Windows x64 and run a listener"
 	Stampa " 2542. get ASN and infos of target IP from cymru.com" "2543. create an encrypted and encoded payload with metasploit"
-	Stampa " 2547. list all pulled docker images"
+	Stampa " 2547. list all pulled docker images" "2624. download a zipbomb from unforgettable.dk"
 	Stampa " 2548. run a docker image" "2549. docker process list" "2552. use nmap to scan ports for vulnerabilities"
 	Stampa " 2556. Executione command line to Remote IP with RPC" "2564. display all binsry's headers with objdump"
 	Stampa " 2570. Anonymization" "2572. Steal Cookie from Panel/Manager/CMS with XSS" "2575. use nmap to scan ports with authentication"
@@ -10612,13 +10612,13 @@ while true; do
 			PARAMS=""
 		fi
 		echo "Choose a payload"
-		select PAY in $(msfvenom -l payloads | awk '{print $1}')
+		select PAY in $(msfvenom -l payloads | awk '{print $1}' | grep "/")
 		do
 			echo "Choose an architecture"
-			select ARC in $(msfvenom -l archs | awk '{print $1}')
+			select ARC in $(msfvenom -l archs | awk '{print $1}' | grep -v "===" | grep -v "\-\-\-" | grep -v -i "Framework" | grep -v -i "Name")
 			do
 				echo "Choose an encoder"
-				select ENC in $(msfvenom -l encoders | awk '{print $1}')
+				select ENC in $(msfvenom -l encoders | awk '{print $1}' | grep -v "===" | grep -v "\-\-\-" | grep -v -i "Framework" | grep -v -i "Name")
 				do
 					echo "Digit how many time encode the payload"
 					read -p "(default 10): " -i "10" ITE
@@ -10627,10 +10627,10 @@ while true; do
 						ITE="10"
 					fi
 					echo "Choose a file format"
-					select FORM in $(msfvenom -l formats | awk '{print $1}')
+					select FORM in $(msfvenom -l formats | awk '{print $1}' | grep -v "===" | grep -v "\-\-\-" | grep -v -i "Framework" | grep -v -i "Name")
 					do
 						echo "Choose an algorithm of cryptography"
-						select CRYP in $(msfvenom -l encrypt | awk '{print $1}')
+						select CRYP in $(msfvenom -l encrypt | awk '{print $1}' | grep -v "===" | grep -v "\-\-\-" | grep -v -i "Framework" | grep -v -i "Name")
 						do
 							echo "Digit a passphare; if it be empty, it will be created pseudo-randomly"
 							read -p "(default is empty): " PSSP
@@ -11176,6 +11176,9 @@ while true; do
 	;;
 	"2623")
 		Clona "michelin/ChopChop"
+	;;
+	"2624")
+		Scarica "http://www.unforgettable.dk/42.zip"
 	;;
 	*)
 		echo "error, invalid choice"
