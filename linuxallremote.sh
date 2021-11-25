@@ -1238,7 +1238,7 @@ while true; do
 	Stampa " 2571. use nmap to scan ports with discovery" "2572. use nmap to scan ports with dos" "2573. use nmap to scan ports with exploit"
 	Stampa " 2574. use nmap to scan ports with external" "2575. use nmap to scan ports with fuzzer" "2576. use nmap to scan ports with intrusive"
 	Stampa " 2577. use nmap to scan ports with malware" "2578. use nmap to scan ports with safe" "2579. use nmap to scan ports with version"
-	Stampa " 2583. read symbols and other info from binary" "2617. create a zipbomb manually"
+	Stampa " 2583. read symbols and other info from binary" "2617. create a zipbomb manually" "2618. use metasploit"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	Stampa " 511. Isaacdelly/Plutus" "512. dan-v/bruteforce-bitcoin-brainwallet" "513. SMH17/bitcoin-hacking-tools"
@@ -11153,6 +11153,25 @@ while true; do
 		then
 			dd if=/dev/zero bs=1024 count=$KB | zip zipbomb.zip -
 		fi
+	;;
+	"2618")
+		echo "Select an exploit"
+		select UNO in $(msfconsole -q -x "show exploits; exit" | awk '{print $2}' | grep "exploit/")
+		do
+		echo "Select a payload"
+			select DUE in $(msfconsole -q -x "show payloads; exit" | awk '{print $2}' | grep "payload/")
+			do
+				echo "Digit parameters, divided with semicolon and space"
+				read -p "(example, set RHOSTS 10.11.12.13; set RPORT 9001): " PRMT
+				if [[ "$PRMT" != "" ]];
+				then
+					echo "msfconsole -q -x \"use $UNO; set PAYLOAD $DUE; $PRMT; run\""
+					msfconsole -q -x "use $UNO; set PAYLOAD $DUE; $PRMT; run"
+				fi
+			break
+			done
+		break
+		done
 	;;
 	*)
 		echo "error, invalid choice"
