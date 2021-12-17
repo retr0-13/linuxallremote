@@ -363,6 +363,7 @@ while true; do
 	echo "$SEP"
 	echo "ANONYMIZATION"
 	Stampa " 2229. htrgouvea/nipe" "2348. realgam3/pymultitor" "2350. torsocks/torsocks"
+	Stampa " 2631. omer-dogan/kali-whoami"
 	echo "$SEP"
 	echo "ANTI-FORENSICS - SECURITY"
 	Stampa " 480. AndyCyberSec/direncrypt" "577. KuroLabs/stegcloak" "590. 1tayH/noisy"
@@ -498,7 +499,8 @@ while true; do
 	echo "CVE LIST"
 	Stampa " 2414. dirkjanm/CVE-2020-1472" "2421. twistlock/RunC-CVE-2019-5736" "2428. jas502n/CVE-2019-12384"
 	Stampa " 2488. shadowgatt/CVE-2019-19356" "2530. ButrintKomoni/cve-2020-0796" "2531. jiansiting/CVE-2020-0796"
-	Stampa " 2532. ZecOps/CVE-2020-0796-RCE-POC" "2495. cube0x0/CVE-2021-1675"
+	Stampa " 2532. ZecOps/CVE-2020-0796-RCE-POC" "2495. cube0x0/CVE-2021-1675" "2627. fullhunt/log4j-scan"
+	Stampa " 2628. kozmer/log4j-shell-poc"
 	echo "$SEP"
 	echo "D"
 	Stampa " 1090. dlang-community/D-Scanner"
@@ -576,7 +578,7 @@ while true; do
 	Stampa " 1007. m8r0wn/crosslinked" "1033. SpiderLabs/deblaze" "1072. vysecurity/DomLink"
 	Stampa " 1096. anantshri/DS_Store_crawler_parser" "1121. dejanlevaja/enum_shares"
 	Stampa " 2546. santiko/KnockPy" "1361. lavalamp-/ipv666" "1365. salesforce/ja3"
-	Stampa " 1392. hotelzululima/kacak" "1423. carlospolop/legion"
+	Stampa " 1392. hotelzululima/kacak" "1423. carlospolop/legion" "2629. SecuProject/ADenum"
 	echo "$SEP"
 	echo "EVASION - BYPASSING - OBFUSCATION"
 	Stampa " 167. govolution/avet" "134. khalilbijjou/WAFNinja" "174. stormshadow07/HackTheWorld"
@@ -1293,6 +1295,9 @@ while true; do
 	Stampa " 562. tennc/webshell" "574. epinna/weevely3" "608. jackrendor/cookiedoor"
 	Stampa " 2544. EatonChips/wsh" "2599. oldkingcone/slopShell" "1315. wireghoul/htshells"
 	echo "$SEP"
+	echo "WEBSOCKET"
+	Stampa " 2632. PalindromeLabs/STEWS"
+	echo "$SEP"
 	echo "WIFI - WPA2 - WEP - PSK"
 	Stampa " 540. blunderbuss-wctf/wacker" "550. calebmadrigal/trackerjacker" "580. JPaulMora/Pyrit"
 	Stampa " 591. hash3liZer/WiFiBroot" "592. SValkanov/wifivoid" "800. v1s1t0r1sh3r3/airgeddon"
@@ -1353,7 +1358,7 @@ while true; do
 	Stampa " 1214. jeanphix/Ghost.py" "2471. sec-consult/aggrokatz" "1290. ZerBea/hcxtools"
 	Stampa " 1297. sharkdp/hexyl" "1324. vanhauser-thc/thc-hydra" "1378. incogbyte/jsearch"
 	Stampa " 1382. nahamsec/JSParser" "1387. telerik/JustDecompileEngine" "1406. klee/klee"
-	Stampa " 1415. rflynn/lanmap2" "1422. mmicu/leena"
+	Stampa " 1415. rflynn/lanmap2" "1422. mmicu/leena" "2630. 9emin1/charlotte"
 	echo "$SEP"
 	echo "GLOBAL VARIABLES"
 	Stampa " 2559. Target Username" "2560. Target Password" "2561. Target Domain"
@@ -11206,6 +11211,24 @@ while true; do
 			done
 		break
 		done
+	;;
+	"2627")
+		Clona "fullhunt/log4j-scan"
+	;;
+	"2628")
+		Clona "kozmer/log4j-shell-poc"
+	;;
+	"2629")
+		Clona "SecuProject/ADenum"
+	;;
+	"2630")
+		Clona "9emin1/charlotte"
+	;;
+	"2631")
+		Clona "omer-dogan/kali-whoami"
+	;;
+	"2632")
+		Clona "PalindromeLabs/STEWS"
 	;;
 	*)
 		echo "error, invalid choice"
