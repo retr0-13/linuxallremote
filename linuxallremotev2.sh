@@ -7306,7 +7306,7 @@ while true; do
 		Clona "rek7/mXtract"
 	;;
 	"1541")
-		Clona "MooseDojo/myBFF"
+		Clona "rapid7/myBFF"
 	;;
 	"1542")
 		Clona "mBouamama/MyJWT"
