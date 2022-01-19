@@ -11295,7 +11295,7 @@ while true; do
 		Clona "PalindromeLabs/STEWS"
 	;;
 	"2633")
-		if [[ "$TURL" != "" ]];
+		if [[ "$TURL" == "" ]];
 		then
 			echo "Digit the Target url"
 			read -p "(example, http://www.terget.com): " TURL
@@ -11419,7 +11419,7 @@ while true; do
 		fi
 	;;
 	"2642")
-		if [[ "$TIP" != "" ]];
+		if [[ "$TIP" == "" ]];
 		then
 			echo "Digit the Target IP"
 			read -p "(example, 10.11.12.13): " TIP
