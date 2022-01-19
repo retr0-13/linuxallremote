@@ -11419,27 +11419,27 @@ while true; do
 		fi
 	;;
 	"2642")
-		echo "Digit the Target IP"
-		read -p "(example, 10.11.12.13): " TIP
 		if [[ "$TIP" != "" ]];
 		then
-			STTL=($(ping -c 1 "$TIP"|tr ' ' '\n'))
-			for TTL in "${STTL[@]}"
-			do
-				if [[ "$TTL" == "ttl="* ]];
-				then
-					TTLV=$(echo -n "$TTL" | awk -F '=' '{print $2}')
-					echo "ICMP Time To Live = ""$TTLV"
-					if [[ $TTL -lt 128 && $TTLV -gt 63 ]];
-					then
-						echo "The Target OS could be Linux or Unix"
-					elif [[ $TTL -gt 127 ]];
-					then
-						echo "The Target OS could be Windows"
-					fi
-				fi
-			done
+			echo "Digit the Target IP"
+			read -p "(example, 10.11.12.13): " TIP
 		fi
+		STTL=($(ping -c 1 "$TIP"|tr ' ' '\n'))
+		for TTL in "${STTL[@]}"
+		do
+			if [[ "$TTL" == "ttl="* ]];
+			then
+				TTLV=$(echo -n "$TTL" | awk -F '=' '{print $2}')
+				echo "ICMP Time To Live = ""$TTLV"
+				if [[ $TTL -lt 128 && $TTLV -gt 63 ]];
+				then
+					echo "The Target OS could be Linux or Unix"
+				elif [[ $TTL -gt 127 ]];
+				then
+					echo "The Target OS could be Windows"
+				fi
+			fi
+		done
 	;;
 	*)
 		echo "error, invalid choice"
