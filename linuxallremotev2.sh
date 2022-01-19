@@ -11046,7 +11046,7 @@ while true; do
 			echo "Digit a target IP"
 			read -p "(example, 192.168.168.3): " TIP
 		fi
-		if [[ "$TPRT" == "0.0.0.0" ]];
+		if [[ "$TPRT" == "" ]];
 		then
 			echo "Digit target PORTs"
 			read -p "(example, 445 or 135-139 or 21,22): " TPRT
