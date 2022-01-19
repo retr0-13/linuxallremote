@@ -1295,7 +1295,7 @@ while true; do
 	Stampa " 2574. use nmap to scan ports with external" "2575. use nmap to scan ports with fuzzer" "2576. use nmap to scan ports with intrusive"
 	Stampa " 2577. use nmap to scan ports with malware" "2578. use nmap to scan ports with safe" "2579. use nmap to scan ports with version"
 	Stampa " 2583. read symbols and other info from binary" "2617. create a zipbomb manually" "2618. use metasploit"
-	Stampa " 2625. Try a manual SQLinjection"
+	Stampa " 2625. Try a manual SQLinjection" "2633. Discover OS from ICMP ttl"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	Stampa " 511. Isaacdelly/Plutus" "512. dan-v/bruteforce-bitcoin-brainwallet" "513. SMH17/bitcoin-hacking-tools"
@@ -11376,6 +11376,29 @@ while true; do
 		if [[ $(Warning) == "Y" ]];
 		then
 			NSEgo "4ARMED/nmap-nse-scripts"
+		fi
+	;;
+	"2633")
+		echo "Digit the Target IP"
+		read -p "(example, 10.11.12.13): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			STTL=($(ping -c 1 "$TIP"|tr ' ' '\n'))
+			for TTL in "${STTL[@]}"
+			do
+				if [[ "$TTL" == "ttl="* ]];
+				then
+					TTLV=$(echo -n "$TTL" | awk -F '=' '{print $2}')
+					echo "ICMP Time To Live = ""$TTLV"
+					if [[ $TTL -lt 128 && $TTLV -gt 63 ]];
+					then
+						echo "The Target OS could be Linux or Unix"
+					elif [[ $TTL -gt 127 ]];
+					then
+						echo "The Target OS could be Windows"
+					fi
+				fi
+			done
 		fi
 	;;
 	*)

@@ -1307,7 +1307,7 @@ while true; do
 	Stampa " 2582. use nmap to scan ports with external" "2583. use nmap to scan ports with fuzzer" "2584. use nmap to scan ports with intrusive"
 	Stampa " 2585. use nmap to scan ports with malware" "2586. use nmap to scan ports with safe" "2587. use nmap to scan ports with version"
 	Stampa " 2591. read symbols and other infos from binary" "2625. create a zipbomb manually" "2626. use metasploit"
-	Stampa " 2633. Try a manual SQLinjectio" "2563. disassemble binary with objdump"
+	Stampa " 2633. Try a manual SQLinjectio" "2563. disassemble binary with objdump" "2642. Discover OS from ICMP ttl"
 	echo "$SEP"
 	echo "VIRTUAL COINS - CURRENCIES"
 	Stampa " 511. Isaacdelly/Plutus" "512. dan-v/bruteforce-bitcoin-brainwallet" "513. SMH17/bitcoin-hacking-tools"
@@ -2140,7 +2140,7 @@ while true; do
 				BSF=$(iconv -f UTF-8 -t UTF-16LE "$FILEPATH" | base64 -w 0)
 				echo "$BSF"
 				echo "$BSF" | xclip -selection clipboard
-				echo -ne "\ncopied to clipboard\nPASTEe to winallenum in remote machine\n"
+				echo -ne "\ncopied to clipboard\nPASTE to winallenum in remote machine\n"
 				read
 			else
 				echo "$FILEPATH"" does not exist"
@@ -11416,6 +11416,29 @@ while true; do
 		if [[ $(Warning) == "Y" ]];
 		then
 			NSEgo "4ARMED/nmap-nse-scripts"
+		fi
+	;;
+	"2642")
+		echo "Digit the Target IP"
+		read -p "(example, 10.11.12.13): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			STTL=($(ping -c 1 "$TIP"|tr ' ' '\n'))
+			for TTL in "${STTL[@]}"
+			do
+				if [[ "$TTL" == "ttl="* ]];
+				then
+					TTLV=$(echo -n "$TTL" | awk -F '=' '{print $2}')
+					echo "ICMP Time To Live = ""$TTLV"
+					if [[ $TTL -lt 128 && $TTLV -gt 63 ]];
+					then
+						echo "The Target OS could be Linux or Unix"
+					elif [[ $TTL -gt 127 ]];
+					then
+						echo "The Target OS could be Windows"
+					fi
+				fi
+			done
 		fi
 	;;
 	*)
