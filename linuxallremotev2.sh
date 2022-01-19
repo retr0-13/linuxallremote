@@ -22,6 +22,7 @@ MIP="0.0.0.0"
 MPRT="80"
 TIP="0.0.0.0"
 TPRT="80"
+TURL="http://0.0.0.0"
 TUSRN=""
 TPSSW=""
 WORDLIST=""
@@ -3081,7 +3082,7 @@ while true; do
 			echo "Digit the protocol to login-attack"
 			echo -ne " 1. snmp\n 2. ftp\n 3. ssh\n 4. pop3\n 5. smtp\n 6. rdp\n 7. smb\n 8. ldap2\n 9. vnc\n 10. mysql\n 11. postgresql\n 12. telnet\n"
 			read -p "Protocol-type: " PROTO
-			if [[ "$TIP" == "" ]];
+			if [[ "$TIP" == "0.0.0.0" ]];
 			then
 				read -p "Digit IPtarget or URLtarget: " TIP
 			fi
@@ -3254,17 +3255,17 @@ while true; do
 		Scarica "$ENTRAW""TheBinitGhimire/Web-Shells/master/smevk.php"
 	;;
 	"350")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TURL" == "http://0.0.0.0" ]];
 		then
 			echo "Digit a remote IP target"
-			read -p "(example, http://192.168.1.1)" TIP
+			read -p "(example, http://192.168.1.1)" TURL
 		fi
 		echo "Digit a wordlist fullpath"
 		find /usr/share/dirbuster/wordlists/
 		read -e -p "(example, /usr/share/dirbuster/wordlists/directory-​list-2.3-medium.txt)" WORDLIST
 		if [[ -f "$WORDLIST" ]];
 		then
-			gobuster dir -w "$WORDLIST" -u "$TIP"
+			gobuster dir -w "$WORDLIST" -u "$TURL"
 		fi
 	;;
 	"351")
@@ -4208,7 +4209,7 @@ while true; do
 		Clona "7Elements/Fortigate"
 	;;
 	"596")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a remote IP target without protocol"
 			read -p "(example, 192.168.0.12): " TIP
@@ -4310,7 +4311,7 @@ while true; do
 		fi
 	;;
 	"618")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a remote IP"
 			read -p "(example, 192.168.1.12): " TIP
@@ -4355,7 +4356,7 @@ while true; do
 		Clona "w-digital-scanner/w13scan"
 	;;
 	"628")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit target IP or URL"
 			read -p "(example  192.168.168.12 or http://something.dark): " TIP
@@ -4418,7 +4419,7 @@ while true; do
 		Clona "Viralmaniar/Remote-Desktop-Caching-"
 	;;
 	"638")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP"
 			read -p "(example, 192.168.168.125): " TIP
@@ -4503,10 +4504,10 @@ while true; do
 		Clona "leebaird/discover"
 	;;
 	"652")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TURL" == "http://0.0.0.0" ]];
 		then
 			echo "Digit an IP target with protocol to get docker version"
-			read -p "(example, http://19.20.21.22): " TIP
+			read -p "(example, http://19.20.21.22): " TURL
 		fi
 		echo "Digit the Docker port target"
 		read -p "(default, 2376): " -i "2376" TTDP
@@ -4518,7 +4519,7 @@ while true; do
 				TDP="$TTDP"
 			fi
 		fi
-		curl $CURLANON -s "$TIP"":""$TDP""/version" | python -m json.tool
+		curl $CURLANON -s "$TURL"":""$TDP""/version" | python -m json.tool
 	;;
 	"653")
 		Clona "adnane-X-tebbaa/GRecon"
@@ -4843,7 +4844,7 @@ while true; do
 		for CMD in "a" "txt" "ns" "mx"; do host -t "$CMD" "$TDOM"; done
 	;;
 	"746")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP"
 			read -p "(example, 10.11.12.13): " TIP
@@ -4851,7 +4852,7 @@ while true; do
 			for CMD in "readlist" "readvar" "monlist" "peers" "listpeers" "associations" "sysinfo"; do ntpq -c "$CMD" "$TIP"; done
 	;;
 	"747")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP"
 			read -p "(example, 10.11.12.13): " TIP
@@ -4870,7 +4871,7 @@ while true; do
 		wget -m --no-passive ftp://anonymous:anonymous@$TIP
 	;;
 	"750")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP"
 			read -p "(example, 10.11.12.13): " TIP
@@ -4894,7 +4895,7 @@ while true; do
 		fi
 	;;
 	"751")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP or domain"
 			read -p "(example, 10.11.12.13 or domain.com): " TIP
@@ -4913,7 +4914,7 @@ while true; do
 		Clona "rbsec/dnscan"
 	;;
 	"754")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP or domain"
 			read -p "(example, 10.11.12.13 or domain.com): " TIP
@@ -4921,7 +4922,7 @@ while true; do
 		rpcinfo -p "$TIP"
 	;;
 	"755")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP or domain"
 			read -p "(example, 10.11.12.13 or domain.com): " TIP
@@ -4929,7 +4930,7 @@ while true; do
 		rpcclient -U "" "$TIP"
 	;;
 	"756")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP or domain"
 			read -p "(example, 10.11.12.13 or domain.com): " TIP
@@ -4937,7 +4938,7 @@ while true; do
 		smbclient -L //$TIP -N
 	;;
 	"757")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP or domain"
 			read -p "(example, 10.11.12.13 or domain.com): " TIP
@@ -4948,7 +4949,7 @@ while true; do
 		done
 	;;
 	"758")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP"
 			read -p "(example, 10.11.12.13): " TIP
@@ -9632,12 +9633,12 @@ while true; do
 	"2290")
 		if [[ -f ./lazys3.rb ]];
 		then
-			if [[ "$TIP" == "" ]];
+			if [[ "$TURL" == "http://0.0.0.0" ]];
 			then
 				echo "Digit a target url, domain.topdomain"
-				read -p "(example, thisone.com): " TIP
+				read -p "(example, thisone.com): " TURL
 			fi
-			./lazys3.rb "$TIP"
+			./lazys3.rb "$TURL"
 		else
 			Scarica "$ENTRAW""nahamsec/lazys3/master/common_bucket_prefixes.txt"
 			Scarica "$ENTRAW""nahamsec/lazys3/master/lazys3.rb"
@@ -10654,7 +10655,7 @@ while true; do
 		Clona "avilum/portsscan"
 	;;
 	"2542")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP address"
 			read -p "(example, 10.11.12.13): " TIP
@@ -10774,7 +10775,7 @@ while true; do
 		fi
 	;;
 	"2552")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP"
 			read -p "(example, 192.168.168.3): " TIP
@@ -10799,7 +10800,7 @@ while true; do
 		Clona "junegunn/fzf"
 	;;
 	"2556")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit target IP"
 			read -p "(example 192.168.168.2): " TIP
@@ -10962,7 +10963,7 @@ while true; do
 		read -p "(example 80): " MPRT
 	;;
 	"2575")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP"
 			read -p "(example, 192.168.168.3): " TIP
@@ -10975,7 +10976,7 @@ while true; do
 		sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script auth -p "$TPRT" "$TIP"
 	;;
 	"2576")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP"
 			read -p "(example, 192.168.168.3): " TIP
@@ -10988,7 +10989,7 @@ while true; do
 		sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script broadcast -p "$TPRT" "$TIP"
 	;;
 	"2577")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP"
 			read -p "(example, 192.168.168.3): " TIP
@@ -11001,7 +11002,7 @@ while true; do
 		sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script brute -p "$TPRT" "$TIP"
 	;;
 	"2578")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP"
 			read -p "(example, 192.168.168.3): " TIP
@@ -11014,7 +11015,7 @@ while true; do
 		sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script default -p "$TPRT" "$TIP"
 	;;
 	"2579")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP"
 			read -p "(example, 192.168.168.3): " TIP
@@ -11027,7 +11028,7 @@ while true; do
 		sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script discovery -p "$TPRT" "$TIP"
 	;;
 	"2580")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP"
 			read -p "(example, 192.168.168.3): " TIP
@@ -11040,12 +11041,12 @@ while true; do
 		sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script dos -p "$TPRT" "$TIP"
 	;;
 	"2581")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP"
 			read -p "(example, 192.168.168.3): " TIP
 		fi
-		if [[ "$TPRT" == "" ]];
+		if [[ "$TPRT" == "0.0.0.0" ]];
 		then
 			echo "Digit target PORTs"
 			read -p "(example, 445 or 135-139 or 21,22): " TPRT
@@ -11053,7 +11054,7 @@ while true; do
 		sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script exploit -p "$TPRT" "$TIP"
 	;;
 	"2582")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP"
 			read -p "(example, 192.168.168.3): " TIP
@@ -11066,7 +11067,7 @@ while true; do
 		sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script external -p "$TPRT" "$TIP"
 	;;
 	"2583")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP"
 			read -p "(example, 192.168.168.3): " TIP
@@ -11079,7 +11080,7 @@ while true; do
 		sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script fuzzer -p "$TPRT" "$TIP"
 	;;
 	"2584")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP"
 			read -p "(example, 192.168.168.3): " TIP
@@ -11092,7 +11093,7 @@ while true; do
 		sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script intrusive -p "$TPRT" "$TIP"
 	;;
 	"2585")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP"
 			read -p "(example, 192.168.168.3): " TIP
@@ -11105,7 +11106,7 @@ while true; do
 		sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script malware -p "$TPRT" "$TIP"
 	;;
 	"2586")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP"
 			read -p "(example, 192.168.168.3): " TIP
@@ -11118,7 +11119,7 @@ while true; do
 		sudo nmap -sS -Pn -v -n -ff --mtu 8 -T2 -g 80 --script safe -p "$TPRT" "$TIP"
 	;;
 	"2587")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit a target IP"
 			read -p "(example, 192.168.168.3): " TIP
@@ -11295,7 +11296,7 @@ while true; do
 		Clona "PalindromeLabs/STEWS"
 	;;
 	"2633")
-		if [[ "$TURL" == "" ]];
+		if [[ "$TURL" == "http://0.0.0.0" ]];
 		then
 			echo "Digit the Target url"
 			read -p "(example, http://www.terget.com): " TURL
@@ -11305,7 +11306,7 @@ while true; do
 		if [[ "$PAR" != "" ]];
 		then
 			echo "$PAR"" UNION SELECT version() -- -"
-			curl -v -k -X POST -d "$PAR"" UNION SELECT version() -- -" "$TIP"
+			curl -v -k -X POST -d "$PAR"" UNION SELECT version() -- -" "$TURL"
 			for I in {1..9}
 			do
 				if [[ "$Q" == "" ]];
@@ -11419,7 +11420,7 @@ while true; do
 		fi
 	;;
 	"2642")
-		if [[ "$TIP" == "" ]];
+		if [[ "$TIP" == "0.0.0.0" ]];
 		then
 			echo "Digit the Target IP"
 			read -p "(example, 10.11.12.13): " TIP
