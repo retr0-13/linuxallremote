@@ -249,7 +249,7 @@ function Warning
 
 function Stampa
 {
-	if [[ $COL -gt 80 ]];
+	if [[ $COL -gt 121 ]];
 	then
 		if [[ "$3" != "" ]];
 		then
@@ -271,1165 +271,1937 @@ function Stampa
 	fi
 }
 
-echo "linuxallremote, by FabioDefilippoSoftware"
+for TOOL in "lynx" "tput" "git" "strace" "ltrace" "hydra" "nmblookup" "rlogin" "docker" "john"
+do
+	if [[ ! -f $(which $TOOL) ]];
+	then
+		echo "$WBE""$TOOL"
+		read -p "$FMSG"
+	fi
+done
 
-if [[ ! -f $(which lynx) ]];
+if [[ $COL -lt 122 ]];
 then
-	echo "$WBE""lynx"
-	read -p "$FMSG"
+	echo "||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
+	echo "||||||||00||||||00||00||||00||00||00||00|||||00|||||||||"
+	echo "||||||||00||||||00||0000||00||00||00||||00|00|||||||||||"
+	echo "||||||||00||||||00||00||0000||00||00|||||00|||||||||||||"
+	echo "||||||||00||||||00||00||||00||00||00||||00|00|||||||||||"
+	echo "||||||||000000||00||00||||00||000000||00|||||00|||||||||"
+	echo "||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
+	echo "||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
+	echo "|||||||||||||||||000000||00||||||00|||||||||||||||||||||"
+	echo "|||||||||||||||||00||00||00||||||00|||||||||||||||||||||"
+	echo "|||||||||||||||||000000||00||||||00|||||||||||||||||||||"
+	echo "|||||||||||||||||00||00||00||||||00|||||||||||||||||||||"
+	echo "|||||||||||||||||00||00||000000||000000|||||||||||||||||"
+	echo "||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
+	echo "||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
+	echo "||000000||000000||00||||||00||00000000||000000||000000||"
+	echo "||00||00||00||||||0000||0000||00||||00||||00||||00||||||"
+	echo "||000000||000000||00||00||00||00||||00||||00||||000000||"
+	echo "||0000||||00||||||00||||||00||00||||00||||00||||00||||||"
+	echo "||00||00||000000||00||||||00||00000000||||00||||000000||"
+	echo "||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
+else
+	echo "|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
+	echo "||00||||||00||00||||00||00||00||00|||||00||000000||00||||||00||||||000000||000000||00||||||00||00000000||000000||000000||"
+	echo "||00||||||00||0000||00||00||00||||00|00||||00||00||00||||||00||||||00||00||00||||||0000||0000||00||||00||||00||||00||||||"
+	echo "||00||||||00||00||0000||00||00|||||00||||||000000||00||||||00||||||000000||000000||00||00||00||00||||00||||00||||000000||"
+	echo "||00||||||00||00||||00||00||00||||00|00||||00||00||00||||||00||||||0000||||00||||||00||||||00||00||||00||||00||||00||||||"
+	echo "||000000||00||00||||00||000000||00|||||00||00||00||000000||000000||00||00||000000||00||||||00||00000000||||00||||000000||"
+	echo "|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
 fi
 
-if [[ ! -f $(which tput) ]];
-then
-	echo "$WBE""tput"
-	read -p "$FMSG"
-fi
+echo "by fabiodefilipposoftware"
 
-if [[ ! -f $(which git) ]];
-then
-	echo "$WBE""git"
-	read -p "$FMSG"
-fi
-
-if [[ ! -f $(which strace) ]];
-then
-	echo "$WBE""strace"
-	read -p "$FMSG"
-fi
-
-if [[ ! -f $(which ltrace) ]];
-then
-	echo "$WBE""ltrace"
-	read -p "$FMSG"
-fi
-
-if [[ ! -f $(which hydra) ]];
-then
-	echo "$WBE""hydra"
-	read -p "$FMSG"
-fi
-
-if [[ ! -f $(which nmblookup) ]];
-then
-	echo "$WBE""nmblookup"
-	read -p "$FMSG"
-fi
-
-if [[ ! -f $(which rlogin) ]];
-then
-	echo "$WBE""rlogin"
-	read -p "$FMSG"
-fi
-
-if [[ ! -f $(which docker) ]];
-then
-	echo "$WBE""docker"
-	read -p "$FMSG"
-fi
+CAA="[+]"
+CAB="[+]"
+CAC="[+]"
+CAD="[+]"
+CAE="[+]"
+CAF="[+]"
+CAG="[+]"
+CAH="[+]"
+CAI="[+]"
+CAJ="[+]"
+CAK="[+]"
+CAL="[+]"
+CAM="[+]"
+CAN="[+]"
+CAO="[+]"
+CAP="[+]"
+CAQ="[+]"
+CAR="[+]"
+CAS="[+]"
+CAT="[+]"
+CAU="[+]"
+CAV="[+]"
+CAW="[+]"
+CAX="[+]"
+CAY="[+]"
+CAZ="[+]"
+CBA="[+]"
+CBB="[+]"
+CBC="[+]"
+CBD="[+]"
+CBE="[+]"
+CBF="[+]"
+CBG="[+]"
+CBH="[+]"
+CBI="[+]"
+CBJ="[+]"
+CBK="[+]"
+CBL="[+]"
+CBM="[+]"
+CBN="[+]"
+CBO="[+]"
+CBP="[+]"
+CBQ="[+]"
+CBR="[+]"
+CBS="[+]"
+CBT="[+]"
+CBU="[+]"
+CBV="[+]"
+CBW="[+]"
+CBX="[+]"
+CBY="[+]"
+CBZ="[+]"
+CCA="[+]"
+CCB="[+]"
+CCC="[+]"
+CCD="[+]"
+CCE="[+]"
+CCF="[+]"
+CCG="[+]"
+CCH="[+]"
+CCI="[+]"
+CCJ="[+]"
+CCK="[+]"
+CCL="[+]"
+CCM="[+]"
+CCN="[+]"
+CCO="[+]"
+CCP="[+]"
+CCQ="[+]"
+CCR="[+]"
+CCS="[+]"
+CCT="[+]"
+CCU="[+]"
+CCV="[+]"
+CCW="[+]"
+CCX="[+]"
+CCY="[+]"
+CCZ="[+]"
+CDA="[+]"
+CDB="[+]"
+CDC="[+]"
+CDD="[+]"
+CDE="[+]"
+CDF="[+]"
+CDG="[+]"
+CDH="[+]"
+CDI="[+]"
+CDJ="[+]"
+CDK="[+]"
+CDL="[+]"
+CDM="[+]"
+CDN="[+]"
+CDO="[+]"
+CDP="[+]"
+CDQ="[+]"
+CDR="[+]"
+CDS="[+]"
+CDT="[+]"
+CDU="[+]"
+CDV="[+]"
+CDW="[+]"
+CDX="[+]"
+CDY="[+]"
+CDZ="[+]"
+CEA="[+]"
+CEB="[+]"
+CEC="[+]"
+CED="[+]"
+CEE="[+]"
+CEF="[+]"
+CEG="[+]"
+CEH="[+]"
+CEI="[+]"
+CEJ="[+]"
+CEK="[+]"
+CEL="[+]"
+CEM="[+]"
+CEN="[+]"
+CEO="[+]"
+CEP="[+]"
+CEQ="[+]"
+CER="[+]"
+CES="[+]"
+CET="[+]"
+CEU="[+]"
+CEV="[+]"
+CEW="[+]"
+CEX="[+]"
+CEY="[+]"
+CEZ="[+]"
+CFA="[+]"
+CFB="[+]"
+CFC="[+]"
+CFD="[+]"
+CFE="[+]"
+CFF="[+]"
+CFG="[+]"
+CFH="[+]"
+CFI="[+]"
+CFJ="[+]"
+CFK="[+]"
+CFL="[+]"
+CFM="[+]"
+CFN="[+]"
+CFO="[+]"
+CFP="[+]"
+CFQ="[+]"
+CFR="[+]"
+CFS="[+]"
+CFT="[+]"
+CFU="[+]"
+CFV="[+]"
+CFW="[+]"
+CFX="[+]"
+CFY="[+]"
+CFZ="[+]"
+CGA="[+]"
+CGB="[+]"
+CGC="[+]"
+CGD="[+]"
+CGE="[+]"
+CGF="[+]"
+CGG="[+]"
+CGH="[+]"
+CGI="[+]"
+CGJ="[+]"
+CGK="[+]"
+CGL="[+]"
+CGM="[+]"
+CGN="[+]"
+CGO="[+]"
+CGP="[+]"
+CGQ="[+]"
+CGR="[+]"
+CGS="[+]"
+CGT="[+]"
+CGU="[+]"
+CGV="[+]"
+CGW="[+]"
+CGX="[+]"
+CGY="[+]"
+CGZ="[+]"
+CHA="[+]"
+CHB="[+]"
+CHC="[+]"
+CHD="[+]"
+CHE="[+]"
+CHF="[+]"
+CHG="[+]"
+CHH="[+]"
+CHI="[+]"
+CHJ="[+]"
+CHK="[+]"
+CHL="[+]"
+CHM="[+]"
+CHN="[+]"
+CZZ="[+]"
 
 while true; do
 	echo "$SEP"
-	echo " 0. exit"
-	echo "$SEP"
-	echo "ACTIVE DIRECTORY"
-	Stampa " 27. Greenwolf/Spray" "229. DanMcInerney/icebreaker" "283. optiv/Talon"
-	Stampa " 524. tothi/rbcd-attack/rbcd" "587. PaperMtn/lil-pwny" "793. fox-it/aclpwn.py"
-	Stampa " 2448. ricardojoserf/adfsbrute" "1231. NetSPI/goddi" "1242. MartinIngesen/gpocrack"
-	echo "$SEP"
-	echo "ACQUISITION"
-	Stampa " 171. Silv3rHorn/ArtifactExtractor" "172. SekoiaLab/Fastir_Collector"
-	echo "$SEP"
-	echo "AES"
-	Stampa " 28. bfaure/AES-128_Cracker" "29. unicornsasfuel/keybrute"
-	echo "$SEP"
-	echo "ANALIZING"
-	Stampa " 142. saferwall/saferwall" "169. fireeye/flare-floss" "219. BinaryAnalysisPlatform/bap"
-	Stampa " 220. angr/angr" "224. cogent/origami-pdf" "451. Ettercap/ettercap"
-	Stampa " 797. CoreSecurity/Agafi" "804. EgeBalci/Amber" "805. bdcht/amoco"
-	Stampa " 813. salls/angrop" "886. ReFirmLabs/binwalk" "887. bmaia/binwally"
-	Stampa " 906. brompwnie/botb" "947. slimm609/checksec.sh" "963. coreos/clair"
-	Stampa " 975. EgeBalci/Cminer" "2266. presidentbeef/brakeman" "1112. elfmaster/ecfs"
-	Stampa " 1006. SpiderLabs/cribdrag" "1018. 504ensicsLabs/DAMM" "1041. spectresearch/detectem"
-	Stampa " 1093. USArmyResearchLab/Dshell" "1104. dungtv543/Dutas" "1107. DynamoRIO/dynamorio"
-	Stampa " 1115. jacob-baines/elfparser" "2307. rizinorg/rizin" "2373. visma-prodsec/confused"
-	Stampa " 2409. asad1996172/Obfuscation-Detection" "2441. unipacker/unipacker" "1253. anchore/grype"
-	Stampa " 1135. cysinfo/Exescan" "1137. tr3w/ExpImp-Lookup" "1163. nccgroup/featherduster"
-	Stampa " 1170. keithjjones/fileintel" "1178. craigz28/firmwalker" "1250. wireghoul/graudit"
-	Stampa " 1198. adtac/fssb" "1202. JackOfMostTrades/gadgetinspector" "1203. med0x2e/GadgetToJScript"
-	Stampa " 2512. geohot/qira" "2513. JonathanSalwan/ROPgadget" "1287. trolldbois/python-haystack"
-	Stampa " 2611. ochronasec/ochrona-cli" "1332. airbus-seclab/ilo4_toolbox" "1373. SideChannelMarvels/JeanGrey"
-	Stampa " 1472. GoSecure/malboxes" "1493. platomav/MEAnalyzer" "1522. CoolerVoid/Mosca"
-	Stampa " 1535. mitre/multiscanner" "1537. Neo23x0/munin"
-	echo "$SEP"
-	echo "ANDROID - APK"
-	Stampa " 128. xtiankisutsa/MARA_Framework" "274. yasoob/nrc-exporter" "277. mzfr/slicer"
-	Stampa " 323. ASHWIN990/ADB-Toolkit" "326. metachar/PhoneSploit" "327. xtiankisutsa/twiga"
-	Stampa " 373. wuseman/WBRUTER" "405. bkerler/android_universal" "2387. swagkarna/Rafel-Rat"
-	Stampa " 410. mesquidar/adbsploit" "504. airbus-seclab/android_emuroot" "552. MobSF/Mobile-Security-Framework-MobSF"
-	Stampa " 572. 1N3/ReverseAPK" "807. AndroBugs/AndroBugs_Framework" "808. androguard/androguard"
-	Stampa " 809. Flo354/Androick" "816. rednaga/APKiD" "817. hexabin/APKStat"
-	Stampa " 860. l0gan/backHack" "1043. DexPatcher/dexpatcher-tool" "1087. mwrlabs/drozer"
-	Stampa " 2319. dwisiswant0/apkleaks" "2410. RealityNet/android_triage" "2411. androidmalware/android_hid"
-	Stampa " 2413. anbud/DroidDucky" "2516. The404Hacking/AndroRAT" "2517. karma9874/AndroRAT"
-	Stampa " 2518. AhMyth/AhMyth-Android-RAT" "2519. m301/rdroid" "2520. nyx0/Dendroid"
-	Stampa " 2521. JohnReagan/i-spy-android" "2522. honglvt/TalentRAT" "2533. rscloura/Doldrums"
-	Stampa " 2545. DivineSoftware/AutoRoot" "2566. 0x1CA3/AdbNet" "1366. flankerhqd/JAADAS"
-	Stampa " 1417. nccgroup/LazyDroid"
-	echo "$SEP"
-	echo "ANONYMIZATION"
-	Stampa " 2229. htrgouvea/nipe" "2348. realgam3/pymultitor" "2350. torsocks/torsocks"
-	Stampa " 2631. omer-dogan/kali-whoami"
-	echo "$SEP"
-	echo "ANTI-FORENSICS - SECURITY"
-	Stampa " 480. AndyCyberSec/direncrypt" "577. KuroLabs/stegcloak" "590. 1tayH/noisy"
-	Stampa " 940. 0xPoly/Centry" "1208. GasparVardanyan/GCrypt" "1489. fgrimme/Matroschka"
-	echo "$SEP"
-	echo "APACHE"
-	Stampa " 278. mgeeky/tomcatWarDeployer" "280. hypn0s/AJPy" "829. mthbernardes/ARTLAS"
-	Stampa " 2424. antonio-morales/Apache-HTTP-Fuzzing" "2571. knightm4re/tomcter"
-	echo "$SEP"
-	echo "APPLE"
-	Stampa " 644. Pr0x13/iDict" "645. foozzi/iCloudBrutter" "2325. gwatts/pinfinder"
-	Stampa " 2322. Hacktivation/iOS-Hacktivation-Toolkit" "2323. dnikles/removeActivationLock" "2324. tuttarealstep/iUnlock"
-	Stampa " 2477. XMCyber/MacHound" "1326. hackappcom/ibrute"
-	echo "$SEP"
-	echo "ARP"
-	Stampa " 462. royhills/arp-scan" "582. byt3bl33d3r/arpspoof" "583. ammarx/ARP-spoofing/mmattack"
-	Stampa " 786. dracipn/arp-cache-poisoning" "787. EONRaider/Arp-Spoofer" "788. EmreOvunc/ARP-Poisoning-Tool"
-	Stampa " 827. Lab-Zjt/ARPTools" "828. ntrippar/ARPwner" "1401. k4m4/kickthemout"
-	echo "$SEP"
-	echo "AWS"
-	Stampa " 657. sa7mon/S3Scanner" "659. aljazceru/s3-bucket-scanner" "660. ankane/s3tk"
-	Stampa " 661. bear/s3scan" "662. haroonawanofficial/Amazon-AWS-Hack" "663. nagwww/101-AWS-S3-Hacks"
-	Stampa " 706. pbnj/s3-fuzzer" "850. VirtueSecurity/aws-extender-cli" "851. nccgroup/aws-inventory"
-	Stampa " 852. jordanpotti/AWSBucketDump" "868. Voulnet/barq" "2290. nahamsec/lazys3"
-	Stampa " 2415. digi.ninja/bucket_finder" "2416. nccgroup/s3_objects_check" "2417. duo-labs/cloudmapper"
-	Stampa " 2418. NetSPI/aws_consoler" "2419. andresriancho/enumerate-iam" "2291. tomdev/teh_s3_bucketeers"
-	Stampa " 2467. smaranchand/bucky" "2480. WeAreCloudar/s3-account-search" "2481. clario-tech/s3-inspector"
-	Stampa " 2476. lightspin-tech/red-shadow" "2529. Netflix/chaosmonkey"
-	echo "$SEP"
-	echo "AZURE"
-	Stampa " 32. dirkjanm/ROADtools"
-	echo "$SEP"
-	echo "BACKDOOR - SHELLCODE"
-	Stampa " 409. tz4678/backshell" "565. AnonymousAt3/cyberdoor" "855. mrjopino/backcookie"
-	Stampa " 856. dana-at-cp/backdoor-apk" "857. secretsquirrel/the-backdoor-factory" "858. Kkevsterrr/backdoorme"
-	Stampa " 2237. mm0r1/exploits/php-json-bypass" "2238. mm0r1/exploits/php7-backtrace-bypass" "2239. mm0r1/exploits/master/php7-gc-bypass"
-	Stampa " 861. giuliocomi/backoori" "1027. gitdurandal/dbd" "1083. Shellntel/backdoors"
-	Stampa " 1056. Mr-Un1k0d3r/DKMC" "1073. TheWover/donut" "1084. emptymonkey/drinkme"
-	Stampa " 2313. cribdragg3r/Alaris" "1206. byt3bl33d3r/gcat" "1229. razc411/GoBD"
-	Stampa " 2551. ORCA666/EarlyBird" "2622. phath0m/JadedWraith" "1504. Screetsec/Microsploit"
-	echo "$SEP"
-	echo "BLUETOOTH"
-	Stampa " 305. lucaboni92/BlueFuzz" "440. fO-000/bluescan" "447. MillerTechnologyPeru/hcitool"
-	Stampa " 482. francozappa/knob" "505. joswr1ght/btfind" "899. olivo/BluPhish"
-	Stampa " 918. virtualabs/btlejack" "919. conorpp/btproxy" "995. mikeryan/crackle"
-	Stampa " 2602. nccgroup/Sniffle"
-	echo "$SEP"
-	echo "BOT - AI"
-	Stampa " 445. evilsocket/kitsune" "1144. BishopFox/eyeballer"
-	echo "$SEP"
-	echo "BOTNET"
-	Stampa " 773. UBoat-Botnet/UBoat" "2455. twitu/byob"
-	echo "$SEP"
-	echo "BRAINF**K"
-	Stampa " 238. brain-lang/brainfuck" "239. fabianishere/brainfuck"
-	echo "$SEP"
-	echo "C2 - CeC - Command and Control"
-	Stampa " 499. hyp3rlinx/DarkFinger-C2" "500. nettitude/PoshC2" "502. sensepost/godoh"
-	Stampa " 503. lu4p/ToRat" "602. nil0x42/phpsploit" "137. xtr4nge/FruityC2"
-	Stampa " 2469. postrequest/link" "1496. Ne0nd0g/merlin"
-	echo "$SEP"
-	echo "CARS"
-	Stampa " 933. schutzwerk/CANalyzat0r" "2310. shipcod3/mazda_getInfo" "2311. P1kachu/talking-with-cars"
-	Stampa " 2601. souravbaghz/CarPunk"
-	echo "$SEP"
-	echo "CDN"
-	Stampa " 971. MrH0wl/Cloudmare"
-	echo "$SEP"
-	echo "CEC - HEC"
-	Stampa " 939. nccgroup/CECster"
-	echo "$SEP"
-	echo "CHAP"
-	Stampa " 946. moxie0/chapcrack" "2590. sensepost/assless-chaps"
-	echo "$SEP"
-	echo "CHAT ENCRYPTED"
-	Stampa " 376. mjm918/python-AES-encryption-socket-secure-chat" "377. SusmithKrishnan/neuron"
-	Stampa " 378. ludvigknutsmark/python-chat" "379. sathwikv143/Encrypted-Python-Chat" "380. osalpekar/Encrypted-Chat"
-	Stampa " 381. LatrecheYasser/Secure-Python-Chat" "382. spec-sec/SecureChat"
-	echo "$SEP"
-	echo "CHROMECAST"
-	Stampa " 1402. thewhiteh4t/killcast"
-	echo "$SEP"
-	echo "CISCO"
-	Stampa " 463. Zapotek/cdpsnarf" "959. madrisan/cisco7crack" "2378. madrisan/cisco5crack"
-	echo "$SEP"
-	echo "CLOUDFLARE"
-	Stampa " 966. SageHack/cloud-buster" "967. m0rtem/CloudFail" "968. mandatoryprogrammer/cloudflare_enum"
-	Stampa " 969. eudemonics/cloudget" "973. greycatz/CloudUnflare"
-	echo "$SEP"
-	echo "CLOUDS"
-	Stampa " 658. SimplySecurity/SimplyEmail" "664. aquasecurity/cloudsploit" "911. Matrix07ksa/Brute_Force"
-	Stampa " 970. projectdiscovery/cloudlist" "972. cloudsploit/scans"
-	echo "$SEP"
-	echo "CMS"
-	Stampa " 483. TheDevFromKer/CMS-Attack" "484. Dionach/CMSmap" "234. n4xh4ck5/CMSsc4n"
-	Stampa " 976. FlorianHeigl/cms-explorer" "977. Tuhinshubhra/CMSeeK" "979. ajinabraham/CMSScan"
-	Stampa " 980. wpscanteam/CMSScanner" "984. Intrinsec/comission" "1086. droope/droopescan"
-	echo "$SEP"
-	echo "CORS"
-	Stampa " 987. chenjj/CORScanner" "988. RUB-NDS/CORStest"
-	echo "$SEP"
-	echo "CRACKING - GUESSING"
-	Stampa " 80. magnumripper/JohnTheRipper" "81. truongkma/ctf-tools/John" "82. SySS-Research/Seth"
-	Stampa " 83. s0md3v/Hash-Buster" "120. NetSPI/PS_MultiCrack" "41. shmilylty/cheetah"
-	Stampa " 126. timbo05sec/autocrack" "127. igorMatsunaga/autoCrack" "247. mufeedvh/basecrack"
-	Stampa " 475. MS-WEB-BN/h4rpy" "506. Aarif123456/passwordCracker" "507. GauthamGoli/rar-Password-Cracker/bruteforce"
-	Stampa " 543. praetorian-inc/trident_0.1.3_linux_i386" "544. praetorian-inc/trident_0.1.3_linux_x86_64" "545. praetorian-inc/trident"
-	Stampa " 563. Viralmaniar/Passhunt" "611. jmk-foofus/medusa" "612. openwall/john"
-	Stampa " 630. beurtschipper/Depix" "632. x90skysn3k/brutespray" "762. f0cker/crackq"
-	Stampa " 763. hashcrackq/Crackq" "811. PentesterES/AndroidPINCrack" "838. Tylous/Auto_EAP"
-	Stampa " 924. webpwnized/byepass" "915. 1N3/BruteX" "912. glv2/bruteforce-luks"
-	Stampa " 913. glv2/bruteforce-salted-openssl" "992. D4Vinci/Cr3dOv3r" "2380. frdmn/findmyhash"
-	Stampa " 994. CoalfireLabs/crackHOR" "996. vnik5287/Crackq" "997. averagesecurityguy/crack"
-	Stampa " 1003. DanMcInerney/creds.py" "1008. galkan/crowbar" "1017. Ekultek/Dagon"
-	Stampa " 1019. SideChannelMarvels/Daredevil" "2296. s3inlc/hashtopolis" "2357. fireeye/gocrack"
-	Stampa " 2425. skelsec/pypykatz" "1156. evilsocket/fang" "2466. hemp3l/sucrack"
-	Stampa " 2494. hashtopolis/server" "1273. UltimateHackers/Hash-Buster" "2508. hellman/xortool"
-	Stampa " 2505. KishanBagaria/padding-oracle-attacker" "2506. Ganapati/RsaCtfTool" "2507. ius/rsatool"
-	Stampa " 1276. hashcat/hashcat-utils" "1286. trustedsec/hate_crack" "2595. navin-maverick/BruteBot"
-	Stampa " 1541. MooseDojo/myBFF"
-	echo "$SEP"
-	echo "CRAWLING - SPIDERING - SCRAPING"
-	Stampa " 586. saeeddhqan/evine" "722. OWASP/OWASP-WebScarab" "733. gotr00t0day/spider00t"
-	Stampa " 938. lgandx/CCrawlDNS" "941. lanrat/certgraph" "2341. Pinperepette/whistory"
-	Stampa " 1014. chamli/CyberCrowl" "1029. kgretzky/dcrawl" "2287. galkan/mail-crawl"
-	Stampa " 2370. spatie/mixed-content-scanner" "1075. maurosoria/dirsearch" "1131. saeeddhqan/evine"
-	Stampa " 1237. s0md3v/goop" "1241. jaeles-project/gospider" "1258. 00xc/h2buster"
-	Stampa " 1230. OJ/gobuster" "2498. blacklanternsecurity/MANSPIDER" "1268. hakluke/hakrawler"
-	echo "$SEP"
-	echo "CSRF - XSRF - SSRF"
-	Stampa " 406. 0xInfection/XSRFProbe" "2278. s0md3v/Bolt" "1141. Damian89/extended-ssrf-search"
-	Stampa " 2493. pinata-csrf-tool" "2523. google.com/pinata-csrf-tool"
-	echo "$SEP"
-	echo "CVE LIST"
-	Stampa " 2414. dirkjanm/CVE-2020-1472" "2421. twistlock/RunC-CVE-2019-5736" "2428. jas502n/CVE-2019-12384"
-	Stampa " 2488. shadowgatt/CVE-2019-19356" "2530. ButrintKomoni/cve-2020-0796" "2531. jiansiting/CVE-2020-0796"
-	Stampa " 2532. ZecOps/CVE-2020-0796-RCE-POC" "2495. cube0x0/CVE-2021-1675" "2627. fullhunt/log4j-scan"
-	Stampa " 2628. kozmer/log4j-shell-poc"
-	echo "$SEP"
-	echo "D"
-	Stampa " 1090. dlang-community/D-Scanner"
-	echo "$SEP"
-	echo "DATABASES"
-	Stampa " 1421. woj-ciech/LeakLooker" "1490. evanmiller/mdbtools" "1531. BlackArch/msfdb"
-	echo "$SEP"
-	echo "DEBUGGING - DECOMPILING"
-	Stampa " 144. snare/voltron" "125. detailyang/readelf" "222. vivisect/vivisect"
-	Stampa " 223. unicorn-engine/unicorn" "848. icsharpcode/AvaloniaILSpy" "882. Vector35/binaryninja-python"
-	Stampa " 926. Konloch/bytecode-viewer" "1030. 0xd4d/de4dot" "1106. iGio90/Dwarf"
-	Stampa " 1113. eteran/edb-debugger" "1164. fesh0r/fernflower" "1209. cs01/gdbgui"
-	Stampa " 1367. skylot/jadx" "1371. kwart/jd-cli" "1377. jindrapetrik/jpexs-decompiler"
-	Stampa " 1466. deathmarine/Luyten"
-	echo "$SEP"
-	echo "DECRYPTING"
-	Stampa " 332. Ciphey/Ciphey"
-	echo "$SEP"
-	echo "DIRBUSTERING"
-	Stampa " 54. aboul3la/Sublist3r" "411. H4ckForJob/dirmap" "774. nccgroup/dirble"
-	Stampa " 1050. digination/dirbuster-ng" "1052. Cillian-Collins/dirscraper" "1053. maurosoria/dirsearch"
-	Stampa " 1054. stefanoj3/dirstalk"
-	echo "$SEP"
-	echo "DISASSEMBLING"
-	Stampa " 216. gdbinit/MachOView" "217. cseagle/fREedom" "218. google/binnavi"
-	Stampa " 336. sciencemanx/x86-analysis" "340. wisk/medusa" "341. REDasmOrg/REDasm"
-	Stampa " 337. cryptator/assembly-code-analysis" "338. plasma-disassembler/plasma" "339. cea-sec/miasm"
-	Stampa " 342. vivisect/vivisect" "791. MITRECND/abcd" "948. 0xbc/chiasm-shell"
-	Stampa " 1055. gdabah/distorm" "948. 0xbc/chiasm-shell" "1482. ApertureLabsLtd/marc4dasm"
-	echo "$SEP"
-	echo "DISCOVERING"
-	Stampa " 559. epi052/feroxbuster" "573. robre/scripthunter" "729. chris408/ct-exposer"
-	Stampa " 736. gotr00t0day/VulnBanner" "760. fnk0c/cangibrina" "795. sahakkhotsanyan/adfind"
-	Stampa " 139. OWASP/cwe-tool" "2440. assetnote/kiterunner" "2491. edoardottt/cariddi"
-	Stampa " 1446. GerbenJavado/LinkFinder"
-	echo "$SEP"
-	echo "DNS - DOMAINS"
-	Stampa " 30. m57/dnsteal" "31. skelsec/jackdaw" "35. projectdiscovery/dnsprobe"
-	Stampa " 88. m57/dnsteal" "269. dariusztytko/vhosts-sieve" "286. iphelix/dnschef"
-	Stampa " 335. mschwager/fierce" "464. fwaeytens/dnsenum" "491. TeamFoxtrot-GitHub/DNSMap"
-	Stampa " 492. darkoperator/dnsrecon" "493. neiltyagi/DNSRECON" "496. rs/dnstrace"
-	Stampa " 497. redsift/dnstrace" "498. dkorunic/dnstrace" "528. mfocuz/DNS_Hunter"
-	Stampa " 752. theMiddleBlue/DNSenum" "753. rbsec/dnscan" "1057. lorenzog/dns-parallel-prober"
-	Stampa " 783. gr3yc4t/dns-poisoning-tool" "784. SemyonMakhaev/dns-poison" "1506. daehee/mildew"
-	Stampa " 785. ShanjinurIslam/Computer-Security-DNS-Cache-Poisoning"
-	Stampa " 799. blark/aiodnsbrute" "803. infosec-au/altdns" "831. tomnomnom/assetfinder"
-	Stampa " 945. projectdiscovery/chaos-client" "1063. erbbysam/DNSGrep" "2293. ProjectAnte/dnsgen"
-	Stampa " 1065. evilsocket/dnssearch" "1066. elceef/dnstwist" "1067. vortexau/dnsvalidator"
-	Stampa " 1068. projectdiscovery/dnsx" "1070. MarkBaggett/domain_stats" "2306. tismayil/rsdl"
-	Stampa " 2401. A3h1nt/Subcert" "2402. r3curs1v3-pr0xy/sub404" "2432. eslam3kl/crtfinder"
-	Stampa " 1165. stealth/fernmelder" "1173. Edu4rdSHL/findomain" "1190. kirei/fpdns"
-	Stampa " 1235. zombiesam/googlesub" "1269. hakluke/hakrevdns" "1374. utkusen/jeopardize"
-	Stampa " 1407. guelfoweb/knock" "1487. blechschmidt/massdns" "1492. chadillac/mdns_recon"
-	Stampa " 1525. waytoalpit/ManOnTheSideAttack-DNS-Spoofing"
-	echo "$SEP"
-	echo "DOCKER"
-	Stampa " 351. cr0hn/dockerscan" "352. RhinoSecurityLabs/ccat" "2420. kost/dockscan"
-	Stampa " 2482. Ullaakut/Gorsair"
-	echo "$SEP"
-	echo "DRUPAL"
-	Stampa " 1088. Tethik/drupal-module-enumeration" "1089. immunIT/drupwn"
-	echo "$SEP"
-	echo "DUMPING - EXTRACTING - RIPPING"
-	Stampa " 121. AlessandroZ/LaZagne" "170. sevagas/swap_digger" "49. Greenwolf/ntlm_theft"
-	Stampa " 197. sowdust/pdfxplr" "213. Arno0x/NtlmRelayToEWS" "221. 504ensicsLabs/LiME"
-	Stampa " 285. louisabraham/ffpass" "294. TryCatchHCF/Cloakify" "441. laramies/metagoofil"
-	Stampa " 533. securing/DumpsterDiver" "862. deepzec/Bad-Pdf" "1110. brav0hax/easy-creds"
-	Stampa " 879. mazen160/bfac" "880. tmbinc/bgrep" "1021. itsmehacker/DarkScrape"
-	Stampa " 1101. 0verl0ad/Dumb0" "1105. kost/dvcs-ripper" "2429. ifsnop/mysqldump-php"
-	Stampa " 1142. bwall/ExtractHosts" "1196. Nightbringer21/fridump" "1301. hasherezade/hollows_hunter"
-	Stampa " 1442. kd8bny/LiMEaide"
-	echo "$SEP"
-	echo "EDITOR"
-	Stampa " 894. afrantzis/bless"
-	echo "$SEP"
-	echo "ENUMERATION"
-	Stampa " 163. luke-goddard/enumy" "209. Knowledge-Wisdom-Understanding/recon"
-	Stampa " 619. cddmp/enum4linux-ng" "735. gotr00t0day/oswalkpy" "840. skahwah/automato"
-	Stampa " 1007. m8r0wn/crosslinked" "1033. SpiderLabs/deblaze" "1072. vysecurity/DomLink"
-	Stampa " 1096. anantshri/DS_Store_crawler_parser" "1121. dejanlevaja/enum_shares"
-	Stampa " 2546. santiko/KnockPy" "1361. lavalamp-/ipv666" "1365. salesforce/ja3"
-	Stampa " 1392. hotelzululima/kacak" "1423. carlospolop/legion" "2629. SecuProject/ADenum"
-	Stampa " 1532. wez3/msfenum"
-	echo "$SEP"
-	echo "EVASION - BYPASSING - OBFUSCATION"
-	Stampa " 167. govolution/avet" "134. khalilbijjou/WAFNinja" "174. stormshadow07/HackTheWorld"
-	Stampa " 268. wintrmvte/SNOWCRASH" "275. CBHue/PyFuscation" "293. OsandaMalith/PE2HTML"
-	Stampa " 309. mdsecactivebreach/Chameleon" "576. Veil-Framework/Veil" "605. shadowlabscc/Kaiten"
-	Stampa " 688. lobuhi/byp4xx" "731. gotr00t0day/forbiddenpass" "792. LandGrey/abuse-ssl-bypass-waf"
-	Stampa " 824. tokyoneon/Armor" "869. Bashfuscator/Bashfuscator" "925. vincentcox/bypass-firewalls-by-DNS-history"
-	Stampa " 944. TarlogicSecurity/Chankro" "953. epsylon/cintruder" "956. frohoff/ciphr"
-	Stampa " 965. trycatchhcf/cloakify" "1036. nccgroup/demiguise" "1081. D4Vinci/Dr0p1t-Framework"
-	Stampa " 2356. Mr-Un1k0d3r/UniByAv" "2355. paranoidninja/CarbonCopy" "2389. samhaxr/AnonX"
-	Stampa " 1134. OsandaMalith/Exe2Image" "2463. d4rckh/vaf" "2462. FunnyWolf/pystinger"
-	Stampa " 1200. lostincynicism/FuzzAP" "1248. Ekultek/Graffiti" "2478. asaurusrex/Forblaze"
-	Stampa " 2496. mhaskar/DNSStager" "2525. h4wkst3r/InvisibilityCloak" "2535. WazeHell/LightMe"
-	Stampa " 1285. HatBashBR/HatCloud" "1347. Hnfull/Intensio-Obfuscator" "1360. milo2012/ipv4Bypass"
-	Stampa " 1381. zigoo0/JSONBee" "1498. a0rtega/metame"
-	echo "$SEP"
-	echo "EXCHANGE"
-	Stampa " 571. sensepost/ruler" "2351. dirkjanm/PrivExchange" "2404. RickGeex/ProxyLogon"
-	Stampa " 2554. dmaasland/proxyshell-poc"
-	echo "$SEP"
-	echo "EXFILTRATION"
-	Stampa " 314. danielwolfmann/Invoke-WordThief/logger" "593. TryCatchHCF/PacketWhisper" "2444. foofus-sph1nx/PyMailSniper"
-	Stampa " 2479. antman1p/GDir-Thief"
-	echo "$SEP"
-	echo "EXPLOIT"
-	Stampa " 10. exploit-db/linux - remote scripts" "11. exploit-db/linux_x86 - remote scripts" "12. exploit-db/linux_x86-64 - remote scripts"
-	Stampa " 13. exploit-db/windows - remote scripts" "14. exploit-db/windows_x86 - remote scripts" "15. exploit-db/windows_x86-64 - remote scripts"
-	Stampa " 16. sundaysec/Android-Exploits/remote" "17. offensive-security/exploitdb/android/remote"
-	Stampa " 18. offensive-security/exploitdb/ios remote exploits" "617. Download an exploit from exploit-db site web"
-	Stampa " 815. Acey9/Chimay-Red" "846. NullArray/AutoSploit" "19. all remote exploits from offensive-security/exploitdb"
-	Stampa " 1071. coldfusion39/domi-owned" "2331. offensive-security/exploitdb" "1213. vulnersCom/getsploit"
-	Stampa " 2386. Download impacket's tools" "2443. System00-Security/Git-Cve" "1488. jm33-m0/mec"
-	Stampa " 2509. intrd/nozzlr" "2510. hellman/libformatstr" "2511. david942j/one_gadget"
-	echo "$SEP"
-	echo "EXTRA - EXTENSIONS"
-	Stampa " 252. LionSec/katoolin" "1177. mazen160/Firefox-Security-Toolkit"
-	echo "$SEP"
-	echo "FACEBOOK"
-	Stampa " 1148. tomoneill19/facebookOSINT" "1149. pun1sh3r/facebot" "1150. PowerScript/facebrok"
-	Stampa " 1151. emerinohdz/FaceBrute" "1159. chinoogawa/fbht"
-	Stampa " 1160. xHak9x/fbi" "1161. guelfoweb/fbid"
-	echo "$SEP"
-	echo "FILE - SYSTEM"
-	Stampa " 446. aarsakian/MFTExtractor"
-	echo "$SEP"
-	echo "FINGER"
-	Stampa " 609. pentestmonkey/finger-user-enum"
-	echo "$SEP"
-	echo "FOOTPRINTING - FINGERPRINTING"
-	Stampa " 132. Zarcolio/sitedorks" "133. s0md3v/photon" "276. m3n0sd0n4ld/uDork"
-	Stampa " 414. hhhrrrttt222111/Dorkify" "415. Chr0m0s0m3s/DeadTrap" "420. techgaun/github-dorks"
-	Stampa " 531. CERT-Polska/hfinger" "581. EnableSecurity/wafw00f" "779. ethicalhackingplayground/dorkX"
-	Stampa " 781. E4rr0r4/XGDork" "854. aliasrobotics/aztarna" "884. Hood3dRob1n/BinGoo"
-	Stampa " 1539. falcon-lnhg/mwebfp"
-	echo "$SEP"
-	echo "FREQUENCY"
-	Stampa " 1534. EliasOenal/multimon-ng"
-	echo "$SEP"
-	echo "FTP"
-	Stampa " 147. WalderlanSena/ftpbrute" "149. AlphaRoy14/km985ytv-ftp-exploit"
-	Stampa " 150. GitHackTools/FTPBruter" "151. DevilSquidSecOps/FTP" "154. pentestmonkey/ftp-user-enum"
-	Stampa " 175. jtpereyda/boofuzz-ftp/ftp"
-	echo "$SEP"
-	echo "FUZZING"
-	Stampa " 34. devanshbatham/ParamSpider" "56. jtpereyda/boofuzz" "50. fuzzdb-project/fuzzdb"
-	Stampa " 130. google/AFL" "72. corelan/mona" "73. OpenRCE/sulley"
-	Stampa " 465. wireghoul/dotdotpwn" "517. dwisiswant0/crlfuzz" "597. googleprojectzero/fuzzilli"
-	Stampa " 687. renatahodovan/grammarinator" "686. nccgroup/fuzzowski" "685. OblivionDev/fuzzdiff"
-	Stampa " 684. nol13/fuzzball" "683. k0retux/fuddly" "682. nccgroup/FrisbeeLite"
-	Stampa " 681. zznop/flyr" "680. wireghoul/doona" "679. googleprojectzero/domato"
-	Stampa " 678. ernw/dizzy" "677. MozillaSecurity/dharma" "675. hadoocn/conscan"
-	Stampa " 674. dobin/ffw" "673. CENSUS/choronzon" "672. RootUp/BFuzz"
-	Stampa " 671. localh0t/backfuzz" "670. doyensec/ajpfuzzer" "702. HSASec/ProFuzz"
-	Stampa " 689. savio-code/hexorbase" "690. nccgroup/Hodor" "691. google/honggfuzz"
-	Stampa " 692. tehmoon/http-fuzzer" "693. andresriancho/websocket-fuzzer" "694. twilsonb/jbrofuzz"
-	Stampa " 695. cisco-sas/kitty" "696. mxmssh/manul" "697. IOActive/Melkor_ELF_Fuzzer"
-	Stampa " 698. mazzoo/ohrwurm" "699. MozillaSecurity/peach" "700. calebstewart/peach"
-	Stampa " 701. marcinguy/powerfuzzer" "703. hgascon/pulsar" "2442. denandz/fuzzotron"
-	Stampa " 704. mseclab/PyJFuzz" "705. akihe/radamsa" "707. Battelle/sandsifter"
-	Stampa " 708. mfontanini/sloth-fuzzer" "709. nopper/archpwn" "711. landw1re/socketfuzz"
-	Stampa " 712. allfro/sploitego" "715. rsmusllp/termineter" "716. droberson/thefuzz"
-	Stampa " 717. kernelslacker/trinity" "718. PAGalaxyLab/uniFuzzer" "720. nullsecuritynet/uniofuzz"
-	Stampa " 721. andresriancho/w3af" "723. wereallfeds/webshag" "724. samhocevar/zzuf"
-	Stampa " 798. tintinweb/aggroArgs" "2334. lcamtuf.coredump/afl" "1166. ffuf/ffuf"
-	Stampa " 1168. henshin/filebuster" "2468. intrudir/403fuzzer" "1189. Owlz/formatStringExploiter"
-	Stampa " 1201. mdiazcl/fuzzbunch-debian" "1252. trailofbits/grr" "2528. AFLplusplus/AFLplusplus"
-	Stampa " 2555. junegunn/fzf" "1300. nccgroup/hodor" "2600. s41r4j/phomber"
-	Stampa " 1341. BountyStrike/Injectus"
-	echo "$SEP"
-	echo "GATHERING - OSINT - DOXING"
-	Stampa " 168. Screetsec/Sudomy" "177. HightechSec/git-scanner/gitscanner" "89. urbanadventurer/WhatWeb"
-	Stampa " 215. evanmiller/hecate" "246. danieleperera/OnionIngestor" "248. evyatarmeged/Raccoon"
-	Stampa " 300. laramies/theHarvester" "306. lockfale/OSINT-Framework" "307. Netflix-Skunkworks/Scumblr"
-	Stampa " 315. M0tHs3C/Hikxploit" "316. sundowndev/PhoneInfoga" "358. intelowlproject/IntelOwl"
-	Stampa " 364. opsdisk/pagodo" "179. BullsEye0/shodan-eye" "470. HatBashBR/ShodanHat"
-	Stampa " 472. random-robbie/My-Shodan-Scripts" "474. m4ll0k/Shodanfy.py" "1453. lulz3xploit/LittleBrother"
-	Stampa " 477. gelim/censys" "478. twelvesec/gasmask" "476. sdnewhop/grinder"
-	Stampa " 486. sowdust/tafferugli" "537. adnane-X-tebbaa/Katana" "555. m8r0wn/subscraper"
-	Stampa " 560. Datalux/Osintgram" "585. thewhiteh4t/FinalRecon" "588. AzizKpln/Moriarty-Project"
-	Stampa " 589. mxrch/GHunt" "613. bdblackhat/admin-panel-finder" "625. TermuxHacking000/phonia"
-	Stampa " 631. Anon-Exploiter/SiteBroker" "646. nandydark/grim" "653. adnane-X-tebbaa/GRecon"
-	Stampa " 725. alpkeskin/mosint" "730. gotr00t0day/IGF" "734. gotr00t0day/subdomainbrute"
-	Stampa " 778. ethicalhackingplayground/SubNuke" "881. GitHackTools/BillCipher" "936. packetassailant/catnthecanary"
-	Stampa " 935. itsmehacker/CardPwn" "138. OWASP/Amass" "2259. nitefood/asn"
-	Stampa " 1002. lightos/credmap" "1005. ilektrojohn/creepy" "1042. DanMcInerney/device-pharmer"
-	Stampa " 1076. utiso/dorkbot" "1077. blueudp/DorkMe" "1078. NullArray/DorkNet"
-	Stampa " 1118. martinvigo/email2phonenumber" "2302. josh0xA/darkdump" "2314. FortyNorthSecurity/Just-Metadata"
-	Stampa " 2316. davidtavarez/pwndb" "2326. j3ers3/Searpy" "1628. behindthefirewalls/Parsero"
-	Stampa " 2352. bhavsec/reconspider" "2376. caffix/amass" "2406. an00byss/godehashed"
-	Stampa " 845. bharshbarger/AutOSINT" "875. aancw/Belati" "2294. pixelbubble/ProtOSINT"
-	Stampa " 2345. SharadKumar97/OSINT-SPY" "2439. matamorphosis/Scrummage" "1182. galkan/flashlight"
-	Stampa " 1187. byt3smith/Forager" "1240. Nhoya/gOSINT" "1271. Te-k/harpoon"
-	Stampa " 2500. jakejarvis/awesome-shodan-queries" "2501. interference-security/zoomeye-data" "2526. A3h1nt/Grawler"
-	Stampa " 2534. sc1341/TikTok-OSINT" "2538. nccgroup/Solitude" "2565. C0MPL3XDEV/E4GL30S1NT"
-	Stampa " 2597. DedSecInside/gotor" "2610. xadhrit/terra" "1329. BillyV4/ID-entify"
-	Stampa " 1340. m4ll0k/infoga" "1342. penafieljlm/inquisitor" "1344. sc1341/InstagramOSINT"
-	Stampa " 1355. Rajkumrdusad/IP-Tracer" "2616. emrekybs/Expulso" "2619. Q0120S/NoobWebHunter"
-	Stampa " 1445. initstring/linkedin2username" "1469. HurricaneLabs/machinae" "1483. saeeddhqan/Maryam"
-	Stampa " 1497. j3ssie/metabigor"
-	echo "$SEP"
-	echo "GIT - REPOS"
-	Stampa " 487. arthaud/git-dumper" "553. Ebryx/GitDump" "2315. metac0rtex/GitHarvester"
-	Stampa " 2422. michenriksen/gitrob" "1216. bahamas10/node-git-dump" "1217. tillson/git-hound"
-	Stampa " 1218. obheda12/GitDorker" "1219. mschwager/gitem" "1220. hisxo/gitGraber"
-	Stampa " 1221. lijiejie/githack" "1222. mazen160/GithubCloner" "1223. zricethezav/gitleaks"
-	Stampa " 1224. giovanifss/gitmails" "1225. danilovazb/GitMiner" "1226. internetwache/GitTools"
-	Stampa " 2492. liamg/gitjacker"
-	echo "$SEP"
-	echo "GITLAB"
-	Stampa " 2407. dotPY-hax/gitlab_RCE"
-	echo "$SEP"
-	echo "GOPHER"
-	Stampa " 1238. tarunkant/Gopherus"
-	echo "$SEP"
-	echo "GRAPHQL"
-	Stampa " 1249. swisskyrepo/GraphQLmap"
-	echo "$SEP"
-	echo "GSM"
-	Stampa " 1394. steve-m/kalibrate-rtl"
-	echo "$SEP"
-	echo "GTFO"
-	Stampa " 1255. mzfr/gtfo" "1256. nccgroup/GTFOBLookup"
-	echo "$SEP"
-	echo "GVM"
-	Stampa " 1251. greenbone/gsa" "1257. greenbone/gvmd"
-	echo "$SEP"
-	echo "HARDWARE"
-	Stampa " 2458. samyk/glitchsink" "1526. iamckn/mousejack_transmit"
-	echo "$SEP"
-	echo "HASH"
-	Stampa " 2260. cube0x0/HashSpray.py" "2446. MichaelDim02/houndsniff" "1274. iagox86/hash_extender"
-	Stampa " 1275. blackploit/hash-identifier" "1281. rurapenthe/hashfind" "1282. psypanda/hashID"
-	Stampa " 1283. bwall/HashPump" "1284. SmeegeSec/HashTag"
-	echo "$SEP"
-	echo "HDCP"
-	Stampa " 1291. rjw57/hdcp-genkey"
-	echo "$SEP"
-	echo "HEAP"
-	Stampa " 2484. gand3lf/heappy"
-	echo "$SEP"
-	echo "HID"
-	Stampa " 1396. samratashok/Kautilya"
-	echo "$SEP"
-	echo "HIKVISION"
-	Stampa " 1298. 4n4nk3/HikPwn"
-	echo "$SEP"
-	echo "HOOKING - HIJACKING - INJECTION"
-	Stampa " 140. zznop/drow" "173. J3wker/DLLicous-MaliciousDLL" "185. cybercitizen7/Ps1jacker"
-	Stampa " 196. thelinuxchoice/spyeye" "353. ujjwal96/njaXt" "354. toxic-ig/SQL-XSS"
-	Stampa " 355. swisskyrepo/SSRFmap" "453. zt2/sqli-hunter" "467. JohnTroony/Blisqy"
-	Stampa " 518. chinarulezzz/pixload/bmp" "519. chinarulezzz/pixload/gif" "520. chinarulezzz/pixload/jpg"
-	Stampa " 521. chinarulezzz/pixload/png" "522. chinarulezzz/pixload/webp" "569. commixproject/commix"
-	Stampa " 676. rudSarkar/crlf-injector" "765. infobyte/evilgrade" "802. lanjelot/albatar"
-	Stampa " 870. neohapsis/bbqsql" "889. nbshelton/bitdump" "895. libeclipse/blind-sql-bitshifting"
-	Stampa " 896. missDronio/blindy" "917. enjoiz/BSQLinjector" "1120. cr0hn/enteletaor"
-	Stampa " 1020. BlackArch/darkmysqli" "1032. UndeadSec/Debinject" "2298. the-robot/sqliv"
-	Stampa " 2536. dlegs/php-jpeg-injector" "1310. PaulSec/HQLmap" "1334. jklmnn/imagejs"
-	Stampa " 1383. ron190/jsql-injection" "1419. sduverger/ld-shatner" "1450. gaffe23/linux-inject"
-	Stampa " 1480. z0noxz/mando.me" "1524. kevinkoo001/MotS"
-	echo "$SEP"
-	echo "HTTP - HTTP/2"
-	Stampa " 1260. summerwind/h2spec" "1313. lijiejie/htpwdScan" "1418. wireghoul/lbmap"
-	Stampa " 1519. RedTeamPentesting/monsoon"
-	echo "$SEP"
-	echo "IIS"
-	Stampa " 22. 0x09AL/IIS-Raid" "23. thelinuxchoice/evilreg" "24. thelinuxchoice/eviloffice"
-	Stampa " 25. thelinuxchoice/evildll" "158. gehaxelt/Python-dsstore" "250. edwardz246003/IIS_exploit"
-	Stampa " 251. irsdl/IIS-ShortName-Scanner" "2272. srnframe/eviloffice" "2273. 8L4NK/evilreg"
-	Stampa " 2275. CrackerCat/evildll" "1331. lijiejie/IIS_shortname_Scanner"
-	echo "$SEP"
-	echo "IKE"
-	Stampa " 526. 0x90/vpn-arsenal" "726. SpiderLabs/ikeforce" "727. royhills/ike-scan"
-	echo "$SEP"
-	echo "IMAP"
-	Stampa " 204. byt3bl33d3r/SprayingToolkit" "205. mrexodia/haxxmap" "207. iomoath/IMAP-Cracker"
-	Stampa " 2379. kurobeats/fimap"
-	echo "$SEP"
-	echo "IMSI"
-	Stampa " 387. Oros42/IMSI-catcher" "386. sharyer/GSMEvil/ImsiEvil"
-	echo "$SEP"
-	echo "iOS"
-	Stampa " 360. tokyoneon/Arcane" "442. Flo354/iOSForensic" "443. as0ler/iphone-dataprotection"
-	Stampa " 444. jantrim/iosbackupexaminer" "666. yuejd/ios_Restriction_PassCode_Crack---Python-version"
-	Stampa " 864. ChiChou/bagbak" "2286. seemoo-lab/toothpicker" "2308. RealityNet/ios_triage"
-	Stampa " 2309. abrignoni/iLEAPP" "1194. AloneMonkey/frida-ios-dump"
-	echo "$SEP"
-	echo "IoT"
-	Stampa " 748. SafeBreach-Labs/SirepRAT" "1302. ElevenPaths/HomePWN"
-	echo "$SEP"
-	echo "IPCAM - DVR"
-	Stampa " 398. CCrashBandicot/IPCam" "399. nathan242/ipcam-cctv" "400. Benehiko/GoNetworkCameraScanner"
-	Stampa " 401. vanpersiexp/expcamera" "656. spicesouls/reosploit" "929. Ullaakut/cameradar"
-	Stampa " 2485. EntySec/CamRaptor" "2486. AngelSecurityTeam/Cam-Hackers" "1395. woj-ciech/kamerka"
-	echo "$SEP"
-	echo "IPMI"
-	Stampa " 1356. AnarchyAngel/IPMIPWN"
-	echo "$SEP"
-	echo "IRC"
-	Stampa " 1362. bwall/ircsnapshot"
-	echo "$SEP"
-	echo "ISCSI"
-	Stampa " 2303. bitvijays/Pentest-Scripts/isciadm" "2304. open-iscsi/open-iscsi"
-	echo "$SEP"
-	echo "iTUNES"
-	Stampa " 665. jos666/itunes_hack"
-	echo "$SEP"
-	echo "JAVA"
-	Stampa " 227. pxb1988/dex2jar" "346. benf/cfr" "356. java-decompiler/jd-gui"
-	Stampa " 2276. qtc-de/remote-method-guesser" "1372. frohoff/jdeserialize"
-	echo "$SEP"
-	echo "JBOSS"
-	Stampa " 1370. SpiderLabs/jboss-autopwn" "1375. joaomatosf/jexboss"
-	echo "$SEP"
-	echo "JENKINS"
-	Stampa " 356. gquere/pwn_jenkins"
-	echo "$SEP"
-	echo "JOOMLA"
-	Stampa " 2335. oppsec/juumla" "1376. black-hawk-97/jooforce"
-	echo "$SEP"
-	echo "JWT"
-	Stampa " 1389. brendan-rius/c-jwt-cracker" "1390. ticarpi/jwt_tool" "1391. aress31/jwtcat"
-	Stampa " 1542. mBouamama/MyJWT"
-	echo "$SEP"
-	echo "KERBEROS"
-	Stampa " 3. ropnop/kerbrute" "26. TarlogicSecurity/kerbrute" "5. CroweCybersecurity/ad-ldap-enum"
-	Stampa " 6. proabiral/inception" "362. nidem/kerberoast" "516. NotMedic/NetNTLMtoSilverTicket/dementor"
-	Stampa " 1409. dirkjanm/krbrelayx"
-	echo "$SEP"
-	echo "KNX"
-	Stampa " 1408. ernw/knxmap"
-	echo "$SEP"
-	echo "KUBERNETES"
-	Stampa " 374. liggitt/audit2rbac" "375. mhausenblas/kaput" "647. vchinnipilli/kubestrike"
-	Stampa " 648. cyberark/KubiScan" "2395. swisskyrepo/PayloadsAllTheThings/Kubernetes"
-	Stampa " 2396. Shopify/kubeaudit" "2397. controlplaneio/kubesec" "2398. aquasecurity/kube-bench"
-	Stampa " 1410. aquasecurity/kube-hunter" "1411. averonesis/kubolt"
-	echo "$SEP"
-	echo "LDAP"
-	Stampa " 1. CasperGN/ActiveDirectoryEnumeration" "2. dirkjanm/ldapdomaindump" "4. ropnop/windapsearch"
-	Stampa " 64. dinigalab/ldapsearch" "84. 3rdDegree/dapper" "85. m8r0wn/ldap_search"
-	Stampa " 728. droope/ldap-brute" "2399. swisskyrepo/PayloadsAllTheThings/LDA_Injection/README"
-	Stampa " 1420. franc-pentest/ldeep"
-	echo "$SEP"
-	echo "LFI"
-	Stampa " 1431. aepereyra/lfimap" "2614. kostas-pa/LFITester" "1430. OsandaMalith/LFiFreak"
-	Stampa " 1432. D35m0nd142/LFISuite" "1440. mzfr/liffy"
-	echo "$SEP"
-	echo "LTE"
-	Stampa " 1464. Evrytania/LTE-Cell-Scanner"
-	echo "$SEP"
-	echo "MACRO"
-	Stampa " 1468. infosecn1nja/MaliciousMacroMSBuild"
-	echo "$SEP"
-	echo "MAGENTO"
-	Stampa " 1471. steverobbins/magescan"
-	echo "$SEP"
-	echo "MAIL"
-	Stampa " 1262. khast3x/h8mail"
-	echo "$SEP"
-	echo "MALWARE"
-	Stampa " 407. avinashkranjan/Malware-with-Backdoor-and-Keylogger"
-	Stampa " 2567. 0xFreddox/KeyLogger-WebService" "2596. Revise7/ViperVenom" "1478. technoskald/maltrieve"
-	echo "$SEP"
-	echo "MEMCACHEDAEMON"
-	Stampa " 166. linsomniac/python-memcached"
-	echo "$SEP"
-	echo "MISC - FRAMEWORKS"
-	Stampa " 20. trustedsec scripts" "21. Hood3dRob1n scripts" "33. fox-it/BloodHound"
-	Stampa " 67. byt3bl33d3r/CrackMapExec" "52. tismayil/ohmybackup" "40. SecureAuthCorp/impacket"
-	Stampa " 141. pry0cc/axiom" "7. dark-warlord14/ffufplus" "45. porterhau5/BloodHound-Owned"
-	Stampa " 90. jivoi/pentest/tools" "186. Manisso/fsociety" "228. koutto/jok3r"
-	Stampa " 244. s0md3v/Striker" "253. b3-v3r/Hunner" "254. PowerScript/KatanaFramework"
-	Stampa " 255. unkn0wnh4ckr/hackers-tool-kit" "256. santatic/web2attack" "257. andyvaikunth/roxysploit"
-	Stampa " 258. x3omdax/PenBox" "259. dhondta/dronesploit" "282. m4n3dw0lf/pythem"
-	Stampa " 284. brutemap-dev/brutemap" "288. dark-lbp/isf" "289. onccgroup/redsnarf"
-	Stampa " 296. Z4nzu/hackingtool" "304. GitHackTools/BruteDum/brutedum" "1080. ucsb-seclab/dr_checker"
-	Stampa " 310. future-architect/vuls" "311. ethicalhackerproject/TaiPan" "319. marcrowProject/Bramble"
-	Stampa " 320. stevemcilwain/quiver" "322. abdulr7mann/hackerEnv" "2391. ztgrace/mole"
-	Stampa " 392. zerosum0x0/koadic" "403. Screetsec/TheFatRat" "2250. its-a-feature/Mythic"
-	Stampa " 408. AdrianVollmer/PowerHub" "439. DarkSecDevelopers/HiddenEye" "481. 0xInfection/TIDoS-Framework"
-	Stampa " 485. r3dxpl0it/TheXFramework" "488. Taguar258/Raven-Storm" "514. maxlandon/wiregost"
-	Stampa " 523. nerodtm/ReconCobra---Complete-Automated-Pentest-Framework-For-Information-Gatheringt"
-	Stampa " 527. Moham3dRiahi/XAttacker" "529. riusksk/StrutScan" "530. AlisamTechnology/ATSCAN"
-	Stampa " 554. FluxionNetwork/fluxion" "557. knassar702/scant3r" "567. Leviathan36/kaboom"
-	Stampa " 568. archerysec/archerysec" "579. AnonymousAt3/cybermap" "604. qsecure-labs/overlord"
-	Stampa " 606. Chudry/Xerror" "616. rajkumardusad/Tool-X" "626. GoVanguard/legion"
-	Stampa " 640. KALILINUXTRICKSYT/easysploit" "650. edoardottt/scilla" "742. rajkumardusad/onex"
-	Stampa " 761. toniblyx/prowler" "766. helich0pper/Karkinos" "770. jaeles-project/jaeles"
-	Stampa " 775. aaaguirrep/offensive-docker" "818. dpnishant/appmon" "842. m4ll0k/AutoNSE"
-	Stampa " 843. nccgroup/autopwn" "863. ThunderGunExpress/BADministration" "1597. D4Vinci/One-Lin3r"
-	Stampa " 888. sensepost/birp" "890. sepehrdaddev/blackbox" "900. darryllane/Bluto"
-	Stampa " 2243. CoolHandSquid/TireFire" "907. zcutlip/bowcaster" "909. gabemarshall/Brosec"
-	Stampa " 951. MITRECND/chopshop" "974. hatRiot/clusterd" "494. optiv/ScareCrow"
-	Stampa " 993. Hack-Hut/CrabStick" "1015. medbenali/CyberScan" "1022. M4cs/DarkSpiritz"
-	Stampa " 2288. thehackingsage/hacktronian" "2295. beefproject/beef" "1049. DidierStevens/DidierStevensSuite"
-	Stampa " 1079. maxousc59/Blue-Sky-Information-Security" "1074. AeonDave/doork" "1082. screetsec/Dracnmap"
-	Stampa " 1119. BC-SECURITY/Empire" "2299. dr-3am/M-Evil" "2317. mdsecactivebreach/SharpShooter"
-	Stampa " 2327. spicesouls/spicescript" "2328. spicesouls/spicescript2" "2329. CMEPW/Smersh"
-	Stampa " 2342. guardicore/monkey" "2347. sidaf/homebrew-pentest" "2364. 1N3/BlackWidow"
-	Stampa " 2365. mikesplain/openvas-docker" "2377. programmingAthlete/BruteSniffing_Fisher"
-	Stampa " 2381. andrew-d/static-binaries/linux/x86_64" "2382. andrew-d/static-binaries/linux/x86"
-	Stampa " 2383. andrew-d/static-binaries/linux/arm" "2400. r3curs1v3-pr0xy/vajra" "1125. gteissier/erl-matter"
-	Stampa " 2445. ra1nb0rn/avain" "1162. chrispetrou/FDsploit" "1184. thewhiteh4t/flashsploit"
-	Stampa " 1174. 1N3/findsploit" "1195. AndroidTamer/frida-push" "1228. OWASP/glue"
-	Stampa " 1233. golismero/golismero" "1234. anarcoder/google_explorer" "1236. 1N3/Goohak"
-	Stampa " 2474. bahaabdelwahed/killshot" "1263. portantier/habu" "1267. 4shadoww/hakkuframework"
-	Stampa " 2514. P1kachu/v0lt" "651. leebaird/discover" "2550. s1l3nt78/sifter"
-	Stampa " 1296. dstotijn/hetty" "2588. aufzayed/HydraRecon" "2592. Malam-X/DragonMS"
-	Stampa " 2605. FunnyWolf/Viper" "2617. hpthreatresearch/subcrawl" "1428. leviathan-framework/leviathan"
-	Stampa " 2620. AsjadOooO/Zero-attacker" "1460. api0cradle/LOLBAS" "1465. lateralblast/lunar"
-	Stampa " 1484. 1N3/Sn1per"
-	echo "$SEP"
-	echo "MITM - SNIFFING"
-	Stampa " 249. kgretzky/evilginx2" "331. mkdirlove/SSLSTRIP-NG/sslstrip-ng" "541. wifiphisher/wifiphisher"
-	Stampa " 764. Esser420/EvilTwinFramework" "801. Josue87/Airopy" "872. secretsquirrel/BDFProxy"
-	Stampa " 2240. kpcyrd/sniffglue" "934. MobSF/CapFuzz" "2245. kismetwireless/kismet"
-	Stampa " 999. codepr/creak" "38. secdev/scapy" "1126. DoubleThreatSecurity/Espionage"
-	Stampa " 1109. s0lst1c3/eaphammer" "2384. SpiderLabs/Responder" "359. lgandx/Responder"
-	Stampa " 2385. hausec/ProxyLogon" "2435. eslam3kl/PackSniff" "1126. DoubleThreatSecurity/Espionage"
-	Stampa " 1130. bitbrute/evillimiter" "1133. Exa-Networks/exabgp" "1153. Crypt0s/FakeDns"
-	Stampa " 1154. fireeye/flare-fakenet-ng" "1185. 7h3rAm/flowinspect" "1204. michaeltelford/gatecrasher"
-	Stampa " 1266. haka-security/haka" "1277. staz0t/hashcatch" "1288. ZerBea/hcxdumptool"
-	Stampa " 1292. ApertureLabsLtd/hdmi-sniff" "1305. xme/hoover" "1308. schollz/howmanypeoplearearound"
-	Stampa " 1322. nbuechler/hungry-interceptor" "1325. xiam/hyperfox" "1364. juphoff/issniff"
-	Stampa " 1386. rixed/junkie" "1416. DanMcInerney/LANs.py" "1479. sensepost/mana"
-	Stampa " 1510. blackeko/mitm" "1511. jrmdev/mitm_relay" "1512. dirkjanm/mitm6"
-	Stampa " 1513. xdavidhu/mitmAP" "1514. husam212/MITMer" "1515. byt3bl33d3r/MITMf"
-	Stampa " 1517. arkime/arkime"
-	echo "$SEP"
-	echo "MOBILE"
-	Stampa " 2344. sensepost/objection" "2593. tegal1337/CiLocks"
-	echo "$SEP"
-	echo "MODEM"
-	Stampa " 1509. kamalmostafa/minimodem"
-	echo "$SEP"
-	echo "MONGODB - NOSQL"
-	Stampa " 230. youngyangyang04/NoSQLAttack" "231. codingo/NoSQLMap" "232. torque59/Nosql-Exploitation-Framework"
-	Stampa " 1518. stampery/mongoaudit"
-	echo "$SEP"
-	echo "MRT"
-	Stampa " 1529. t2mune/mrtparse"
-	echo "$SEP"
-	echo "MYSQL"
-	Stampa " 301. ufuksungu/MySqlBruteForce/mysql"
-	echo "$SEP"
-	echo "NAS"
-	Stampa " 402. TrustMe00/experience_synology_attack"
-	echo "$SEP"
-	echo "NETLOGON"
-	Stampa " 508. risksense/zerologon" "509. bb00/zer0dump" "510. VoidSec/CVE-2020-1472"
-	echo "$SEP"
-	echo "NETWORK - TCP - UDP"
-	Stampa " 2504. tomac/yersinia" "1527. CiscoCXSecurity/mptcp-abuse" "1543. mehrdadrad/mylg"
-	echo "$SEP"
-	echo "NGINX"
-	Stampa " 2461. stark0de/nginxpwner"
-	echo "$SEP"
-	echo "NSE"
-	Stampa " 2635. Diverto/nse-log4shell" "2636. psc4re/NSE-scripts" "2637. hackertarget/nmap-nse-scripts"
-	Stampa " 2638. hkm/nmap-nse-scripts" "2639. takeshixx/nmap-scripts" "2640. giterlizzi/nmap-log4shell"
-	Stampa " 2641. 4ARMED/nmap-nse-scripts"
-	echo "$SEP"
-	echo "NTP"
-	Stampa " 178. PentesterES/Delorean"
-	echo "$SEP"
-	echo "OWA"
-	Stampa " 343. busterb/msmailprobe" "344. 0xZDH/o365spray" "345. gremwell/o365enum"
-	echo "$SEP"
-	echo "PASSWORD"
-	Stampa " 393. clr2of8/DPAT"
-	echo "$SEP"
-	echo "PAYLOAD"
-	Stampa " 1270. Rich5/Harness" "1295. EgeBalci/HERCULES" "1343. 4w4k3/Insanity-Framework"
-	Stampa " 2618. Deadpool2000/Paybag" "1412. sensepost/kwetza" "1530. g0tmi1k/mpc"
-	echo "$SEP"
-	echo "PDF"
-	Stampa " 46. thelinuxchoice/evilpdf" "47. robins/pdfcrack" "48. BroadbentT/PDF-CRACKER/pdf-cracker"
-	Stampa " 2274. superzerosec/evilpdf" "1333. coderofsalvation/imagegrep-bash"
-	echo "$SEP"
-	echo "PERSISTENCE"
-	Stampa " 2393. swisskyrepo/PayloadsAllTheThings/Methodology_and_Resources/Linux_-_Persistence"
-	echo "$SEP"
-	echo "PHISHING - SOCIAL ENGINEERING"
-	Stampa " 385. blark/cli-phisher" "412. kurogai/nero-phishing-server" "413. KnightSec-Official/Phlexish"
-	Stampa " 489. david3107/squatm3" "490. netevert/dnsmorph" "767. htr-tech/zphisher"
-	Stampa " 771. xxhax-team/vk-phishing" "937. ring0lab/catphish" "983. htr-tech/nexphisher"
-	Stampa " 2277. suljot/shellphish" "1004. ustayready/CredSniper" "2239. Pinperepette/Geotweet_GUI"
-	Stampa " 2340. Pinperepette/GeoTweet" "2343. UndeadSec/EvilURL" "2460. ultrasecurity/Storm-Breaker"
-	Stampa " 1239. gophish/gophish" "2524. tokyoneon/CredPhish/dns_server" "1294. ytisf/hemingway"
-	Stampa " 2621. sky9262/phishEye"
-	echo "$SEP"
-	echo "PHP"
-	Stampa " 2247. ecriminal/phpvuln" "2248. ZaleHack/phpexploit"
-	echo "$SEP"
-	echo "POST-EXPLOITATION"
-	Stampa " 2241. master-of-servers/mose"
-	echo "$SEP"
-	echo "POSTGRESQL"
-	Stampa " 303. KTN1990/PostgreSQL--Attack-on-default-password-AUTOEXPLOITING-/DB"
-	echo "$SEP"
-	echo "PRINTER"
-	Stampa " 639. RUB-NDS/PRET" "2603. BeetleChunks/SpoolSploit"
-	echo "$SEP"
-	echo "PRIVESC"
-	Stampa " 2394. swisskyrepo/PayloadsAllTheThings/Methodology_and_Resources/Linux-PrivilegeEscalation"
-	echo "$SEP"
-	echo "PROXY - REVERSE PROXY"
-	Stampa " 162. fozavci/viproy-VoIPkit" "610. audibleblink/doxycannon" "885. nccgroup/BinProxy"
-	Stampa " 1058. StalkR/dns-reverse-proxy" "1059. maurotfilho/dns-spoof" "1060. d4rkcat/dnsbrute"
-	Stampa " 1061. dmitescu/dnscobra" "1062. leonjza/dnsfilexfer" "2403. p3nt4/Invoke-SocksProxy/ReverseSocksProxyHandler"
-	Stampa " 1475. justmao945/mallory" "1538. muraenateam/muraena"
-	echo "$SEP"
-	echo "PRY"
-	Stampa " 743. deivid-rodriguez/pry-byebug"
-	echo "$SEP"
-	echo "PST"
-	Stampa " 2269. righettod/pst-digger"
-	echo "$SEP"
-	echo "QUERIES"
-	Stampa " 2253. CompassSecurity/BloodHoundQueries"
-	echo "$SEP"
-	echo "RABBITMQ"
-	Stampa " 989. QKaiser/cottontail"
-	echo "$SEP"
-	echo "RADIO"
-	Stampa " 1244. bistromath/gr-air-modes" "1245. ptrkrysik/gr-gsm" "1246. drmpeg/gr-paint"
-	Stampa " 1265. mossmann/hackrf"
-	echo "$SEP"
-	echo "RAINBOW TABLE - PLAINMASTERKEYS"
-	Stampa " 260. clu8/RainbowTable" "261. zcdziura/leprechaun" "262. CyberKnight00/RainbowHash"
-	Stampa " 263. dgleebits/Double-Rainbow" "264. jtesta/rainbowcrackalack" "265. sepehrdaddev/hashcobra"
-	Stampa " 1289. ZerBea/hcxkeys"
-	echo "$SEP"
-	echo "RANSOMWARE"
-	Stampa "2497. leonv024/RAASNet"
-	echo "$SEP"
-	echo "RAR"
-	Stampa " 273. dunossauro/PyRarCrack/pyrarcrack"
-	echo "$SEP"
-	echo "RASPBERRY"
-	Stampa " 584. BusesCanFly/rpi-hunter"
-	echo "$SEP"
-	echo "RAT"
-	Stampa " 536. Pure-L0G1C/Loki" "2230. fadinglr/Parat" "2235. BenChaliah/Arbitrium-RAT"
-	Stampa " 2330. FrenchCisco/RATel" "2359. khaleds-brain/Bella" "2375. nathanlopez/Stitch"
-	echo "$SEP"
-	echo "RDP"
-	Stampa " 86. ekultek/bluekeep" "328. citronneur/rdpy" "329. aerissecure/rdpy"
-	Stampa " 330. fhirschmann/rdp" "452. Vulnerability-scanner/Lazy-RDP" "636. xFreed0m/RDPassSpray"
-	Stampa " 637. Viralmaniar/Remote-Desktop-Caching"
-	echo "$SEP"
-	echo "RECONIZING"
-	Stampa " 131. leobeosab/sharingan" "94. samhaxr/recox" "129. sowdust/ffff"
-	Stampa " 214. j3ssie/Osmedeus" "242. smicallef/spiderfoot" "308. yogeshojha/rengine"
-	Stampa " 390. lanmaster53/recon-ng" "391. methos2016/recon-ng" "501. LukaSikic/subzy"
-	Stampa " 556. skynet0x01/tugarecon" "594. r3vn/badKarma" "599. utkusen/urlhunter"
-	Stampa " 601. UnaPibaGeek/ctfr" "607. thewhiteh4t/seeker" "732. gotr00t0day/spyhunt"
-	Stampa " 768. capt-meelo/LazyRecon" "769. nahamsec/lazyrecon" "772. eslam3kl/3klCon"
-	Stampa " 2228. drsigned/sigurlx" "820. michenriksen/aquatone" "836. superhedgy/AttackSurfaceMapper"
-	Stampa " 844. Tib3rius/AutoRecon" "2236. six2dez/reconftw" "2244. yassineaboukir/Asnlookup"
-	Stampa " 1877. projectdiscovery/shuffledns" "1983. projectdiscovery/subfinder" "922. sham00n/buster"
-	Stampa " 2282. s0md3v/ReconDog" "998. Ganapati/Crawlic" "1024. upgoingstar/datasploit"
-	Stampa " 1122. Gilks/enumerid" "2405. c0dejump/HawkScan" "2431. heilla/SecurityTesting"
-	Stampa " 2433. eslam3kl/3klector" "2434. eslam3kl/Explorer" "1158. devanshbatham/FavFreak"
-	Stampa " 2606. sumo2001/Trishul" "1306. gabamnml/hoper" "1307. SpiderLabs/HostHunter"
-	Stampa " 473. woj-ciech/Kamerka-GUI" "1400. clirimemini/Keye" "1434. blindfuzzy/LHF"
-	echo "$SEP"
-	echo "REDIS"
-	Stampa " 759. Avinash-acid/Redis-Server-Exploit" "1264. Ridter/hackredis"
-	echo "$SEP"
-	echo "REST"
-	Stampa " 832. flipkart-incubator/astra"
-	echo "$SEP"
-	echo "REVERSING"
-	Stampa " 361. yeggor/UEFI_RETool" "737. gotr00t0day/b1n4ryR3v3rs3" "866. programa-stic/barf-project"
-	Stampa " 1124. thorkill/eresi" "2349. 4w4k3/rePy2exe" "2390. nodauf/Girsh"
-	Stampa " 2408. mentebinaria/retoolkit" "1179. rampageX/firmware-mod-kit" "1193. OALabs/frida-extract"
-	Stampa " 1210. hugsy/gef" "1336. WerWolv/ImHex" "1388. katjahahn/JWScan"
-	echo "$SEP"
-	echo "REVSHELL"
-	Stampa " 515. 3v4Si0N/HTTP-revshell" "2321. shelld3v/JSshell" "2372. 0dayCTF/reverse-shell-generator"
-	Stampa " 2392. swisskyrepo/PayloadsAllTheThings/Methodology_and_Resources/Reverse_Shell_Cheatsheet"
-	Stampa " 2447. octetsplicer/LAZYPARIAH" "2456. GetRektBoy724/MeterPwrShell" "2608. lawndoc/mediator"
-	Stampa " 1328. inquisb/icmpsh"
-	echo "$SEP"
-	echo "RMI"
-	Stampa " 867. NickstaDB/BaRMIe"
-	echo "$SEP"
-	echo "ROGUE ACCESS POINT"
-	Stampa " 575. MS-WEB-BN/c41n"
-	echo "$SEP"
-	echo "ROOTKIT"
-	Stampa " 853. chokepoint/azazel"
-	echo "$SEP"
-	echo "ROUTERS"
-	Stampa " 145. threat9/routersploit" "2487. acecilia/OpenWRTInvasion" "1505. kost/mikrotik-npk"
-	Stampa " 1533. kkonradpl/mtscan"
-	echo "$SEP"
-	echo "RPC"
-	Stampa " 233. aress31/xmlrpc-bruteforcer" "313. s4vitar/rpcenum" "570. hegusung/RPCScan"
-	echo "$SEP"
-	echo "RSA"
-	Stampa " 57. Ganapati/RsaCtfTool" "69. zweisamkeit/RSHack" "79. pablocelayes/rsa-wiener-attack"
-	echo "$SEP"
-	echo "S7"
-	Stampa " 2358. klsecservices/s7scan" "2360. hslatman/awesome-industrial-control-system-security/s7-cracker"
-	Stampa " 2361. hslatman/awesome-industrial-control-system-security/s7-brute-offline"
-	echo "$SEP"
-	echo "SCANNING"
-	Stampa " 188. GrrrDog/FlashAV" "191. m57/piescan" "192. projectdiscovery/naabu"
-	Stampa " 193. ahervias77/portscanner" "206. lanjelot/patator" "208. gh0stwizard/p5-udp-scanner"
-	Stampa " 210. liamg/furious" "211. anvie/port-scanner" "212. anrosent/portscan"
-	Stampa " 235. shodansploit/shodansploit" "236. ninj4c0d3r/ShodanCli" "2246. souravbaghz/RadareEye"
-	Stampa " 266. google/tsunami-security-scanner" "267. deepsecurity-pe/GoGhost" "279. aabeling/portscan"
-	Stampa " 299. brandonskerritt/RustScan" "363. projectdiscovery/nuclei" "448. m0nad/HellRaiser"
-	Stampa " 449. RustScan/RustScan" "450. IFGHou/wapiti" "454. MrSqar-Ye/BadMod"
-	Stampa " 455. future-architect/vuls" "456. almandin/fuxploider" "457. Moham3dRiahi/XAttacker"
-	Stampa " 458. s0md3v/Corsy" "459. skavngr/rapidscan" "460. s0md3v/Silver"
-	Stampa " 534. TheNittam/RPOscanner" "538. smackerdodi/CVE-bruter" "546. tstillz/webshell-scan"
-	Stampa " 547. jofpin/fuckshell" "548. followboy1999/webshell-scanner" "549. emposha/Shell-Detector"
-	Stampa " 627. w-digital-scanner/w13scan" "641. m4ll0k/Konan" "741. PaytmLabs/nerve"
-	Stampa " 835. AlisamTechnology/ATSCAN-V3.1" "871. lijiejie/bbscan" "873. invictus1306/beebug"
-	Stampa " 927. auraltension/c5scan" "943. ztgrace/changeme" "1097. stamparm/DSXS"
-	Stampa " 1092. stamparm/DSFS" "1094. stamparm/DSJS" "1095. stamparm/DSSS"
-	Stampa " 2366. lengjibo/dedecmscan" "2426. sensepost/glypeahead" "2430. Checkmarx/kics"
-	Stampa " 2367. k8gege/K8PortScan" "2368. k8gege/K8tools" "2369. xs25cn/scanPort"
-	Stampa " 2436. eslam3kl/NetScanner" "1127. peterpt/eternal_scanner" "1136. NullHypothesis/exitmap"
-	Stampa " 1167. sfan5/fi6s" "2499. v-byte-cpu/sx" "2527. kleiton0x00/ppmap"
-	Stampa " 2541. avilum/portsscan" "2568. Abhay2342/Network-Scanner" "2569. xadhrit/d9scan"
-	Stampa " 2607. idealeer/xmap" "2613. RedSection/jspanda" "1427. onthefrontline/LetMeFuckIt-Scanner"
-	Stampa " 2623. michelin/ChopChop" "1485. robertdavidgraham/masscan" "1486. trevordavenport/MasscanAutomation"
-	echo "$SEP"
-	echo "SHELL"
-	Stampa " 70. sameera-madushan/Print-My-Shell" "71. flozz/p0wny-shell/shell" "87. rastating/slae"
-	Stampa " 95. TBGSecurity/splunk_shells" "281. berkgoksel/SierraTwo" "295. wintrmvte/Shellab"
-	Stampa " 348. brimstone/go-shellcode" "349. TheBinitGhimire/Web-Shells/smevk" "432. offensive-security/exploitdb/shellcodes/android"
-	Stampa " 433. offensive-security/exploitdb/shellcodes/linux" "434. offensive-security/exploitdb/shellcodes/linux_x86-64"
-	Stampa " 435. offensive-security/exploitdb/shellcodes/linux_x86"
-	Stampa " 436. offensive-security/exploitdb/shellcodes/windows"
-	Stampa " 437. offensive-security/exploitdb/shellcodes/windows_x86-64"
-	Stampa " 438. offensive-security/exploitdb/shellcodes/windows_x86"
-	Stampa " 654. Rover141/Shellter" "825. alexpark07/ARMSCGen" "136. b1tg/rust-windows-shellcode"
-	Stampa " 2320. Den1al/JSShell" "2333. packetstormsecurity/aesshell" "2489. baktoft/yaps"
-	Stampa " 2604. d4t4s3c/Shelly" "1380. s0md3v/JShell"
-	echo "$SEP"
-	echo "SHELLSHOCK"
-	Stampa " 2279. MrCl0wnLab/ShellShockHunter" "2280. DanMcInerney/shellshock-hunter"
-	echo "$SEP"
-	echo "SIP"
-	Stampa " 1363. halitalptekin/isip" "1528. meliht/mr.sip"
-	echo "$SEP"
-	echo "SMB"
-	Stampa " 68. m4ll0k/SMBrute" "58. mvelazc0/Invoke-SMBLogin/smblogin" "65. ShawnDEvans/smbmap"
-	Stampa " 157. 0v3rride/Enum4LinuxPy" "8. ZecOps/CVE-2020-0796-RCE-POC" "91. NickSanzotta/smbShakedown"
-	Stampa " 92. quickbreach/SMBetray" "93. aress31/smbaudit" "312. T-S-A/smbspider"
-	Stampa " 333. CoreSecurity/impacket/smbserver" "578. CiscoCXSecurity/creddump7" "2249. deepsecurity-pe/GoGhost"
-	Stampa " 2284. deepsecurity-pe/GoGhost_amd64" "2285. deepsecurity-pe/GoGhost" "1127. peterpt/eternal_scanner"
-	Stampa " 2312. nccgroup/keimpx" "2332. portcullis/acccheck"
-	echo "$SEP"
-	echo "SMS"
-	Stampa " 388. sharyer/GSMEvil/SmsEvil"
-	echo "$SEP"
-	echo "SMTP"
-	Stampa " 418. pentestmonkey/smtp-user-enum" "419. altjx/ipwn/iSMTP" "421. tango-j/SMTP-Open-Relay-Attack-Test-Tool"
-	Stampa " 422. crazywifi/SMTP_Relay_Phisher" "423. NickSanzotta/smbShakedown" "424. balaganeshgbhackers/Emailspoofing"
-	Stampa " 425. RobinMeis/MITMsmtp" "426. mikechabot/smtp-email-spoofer-py" "525. jetmore/swaks"
-	Stampa " 2305. aron-tn/Smtp-cracker" "2553. mrlew1s/BrokenSMTP" "2596. DrPython3/MailRipV2"
-	echo "$SEP"
-	echo "SNMP"
-	Stampa " 74. hatlord/snmpwn" "75. etingof/pysnmp" "77. InteliSecureLabs/SNMPPLUX"
-	Stampa " 78. cysboy/SnmpCrack" "710. LukasRypl/snmp-fuzzer" "957. nccgroup/cisco-snmp-enumeration"
-	Stampa " 958. nccgroup/cisco-snmp-slap"
-	echo "$SEP"
-	echo "SOCIAL MEDIA"
-	Stampa " 427. yasserjanah/ZeS0MeBr" "551. Cyb0r9/SocialBox" "642. th3unkn0n/facebash-termux"
-	echo "$SEP"
-	echo "SPOOFING"
-	Stampa " 290. initstring/evil-ssdp" "291. KALILINUXTRICKSYT/easymacchanger" "292. sbdchd/macchanger"
-	Stampa " 2438. eslam3kl/MAC_Changer" "2437. eslam3kl/ARP-Spoofer"
-	echo "$SEP"
-	echo "SQL"
-	Stampa " 159. ccpgames/sqlcmd" "160. sqlmapproject/sqlmap"
-	Stampa " 161. payloadbox/sql-injection-payload-list" "347. kayak/pypika" "713. GDSSecurity/SQLBrute"
-	echo "$SEP"
-	echo "SS7"
-	Stampa " 384. ernw/ss7MAPer"
-	echo "$SEP"
-	echo "SSH"
-	Stampa " 59. R4stl1n/SSH-Brute-Forcer" "152. matricali/brutekrag" "153. c0r3dump3d/osueta"
-	Stampa " 155. W-GOULD/ssh-user-enumeration/ssh-check-username" "156. nccgroup/ssh_user_enum/ssh_enum"
-	Stampa " 297. OffXec/fastssh" "368. Neetx/sshdodge" "369. trustedsec/meterssh"
-	Stampa " 370. norksec/torcrack" "372. aryanrtm/sshBrutal" "714. wireghoul/sploit-dev/sshfuzz"
-	Stampa " 738. gotr00t0day/SSHbrute" "876. chokepoint/Beleth" "2472. EntySec/Shreder"
-	Stampa " 2490. k4yt3x/orbitaldump"
-	echo "$SEP"
-	echo "SSL"
-	Stampa " 190. moxie0/sslstrip" "194. indutny/heartbleed" "195. roflcer/heartbleed-vuln/attack"
-	Stampa " 298. rbsec/sslscan" "790. hahwul/a2sv" "954. mozilla/cipherscan"
-	Stampa " 1293. robertdavidgraham/heartleech"
-	echo "$SEP"
-	echo "STEGANALYSIS"
-	Stampa " 270. Va5c0/Steghide-Brute-Force-Tool/steg_brute" "271. daniellerch/aletheia"
-	Stampa " 272. Diefunction/stegbrute" "603. Paradoxis/StegCracker"
-	echo "$SEP"
-	echo "TACACS"
-	Stampa " 187. GrrrDog/TacoTaco"
-	echo "$SEP"
-	echo "TERMUX"
-	Stampa " 615. install metasploit first method" "622. install metasploit second method" "624. install sudo (no rooting phone)"
-	Stampa " 633. TermuxHacking000/distrux" "634. TermuxHacking000/SysO-Termux" "635. TermuxHacking000/PortmapSploit"
-	Stampa " 776. cSploit/android" "777. routerkeygen/routerkeygenAndroid" "782. intercepter-ng"
-	Stampa " 2234. OnionApps/Chat.onion" "2254. LinkClink/Rainbow-Wifi-Hack-Utility-Android" "2255. trevatk/Wifi-Cracker"
-	Stampa " 2256. trevatk/Wifi-Cracker" "2257. faizann24/wifi-bruteforcer-fsecurify" "2258. faizann24/wifi-bruteforcer-fsecurify"
-	Stampa " 2412. urbanadventurer/Android-PIN-Bruteforce" "2450. modded-ubuntu/modded-ubuntu"
-	echo "$SEP"
-	echo "TFTP"
-	Stampa " 719. nullsecuritynet/tftp-fuzz" "1199. RubenRocha/ftpscout"
-	echo "$SEP"
-	echo "TLS"
-	Stampa " 189. GrrrDog/sni_bruter" "428. tintinweb/striptls" "2265. tlsfuzzer/tlsfuzzer"
-	Stampa " 2270. righettod/tls-cert-discovery"
-	echo "$SEP"
-	echo "TONES"
-	Stampa " 240. luickk/gan-audio-generator" "241. rzbrk/mfv"
-	echo "$SEP"
-	echo "TROJANS"
-	Stampa " 1404. ChaitanyaHaritash/kimi"
-	echo "$SEP"
-	echo "TRUECRYPT"
-	Stampa " 321. lvaccaro/truecrack"
-	echo "$SEP"
-	echo "TUNNELLING"
-	Stampa " 60. yarrick/iodine" "61. T3rry7f/ICMPTunnel/IcmpTunnel_S" "62. blackarrowsec/pivotnacci"
-	Stampa " 63. rofl0r/microsocks" "66. cgrates/rpcclient" "143. sysdream/ligolo"
-	Stampa " 986. patpadgett/corkscrew" "1010. chokepoint/CryptHook" "1176. BishopFox/firecat"
-	Stampa " 1191. stealth/fraud-bridge" "1319. larsbrinkhoff/httptunnel" "1354. takeshixx/ip-https-tools"
-	Stampa " 1397. xtaci/kcptun"
-	echo "$SEP"
-	echo "UPNP"
-	Stampa " 146. tenable/upnp_info" "2264. dhishan/UPnP-Hack" "1128. google.com/miranda-upnp"
-	Stampa " 2271. dc414/Upnp-Exploiter"
-	echo "$SEP"
-	echo "USB"
-	Stampa " 2231. nccgroup/umap2" "2232. usb-tools/ViewSB" "2233. Merimetso-Code/USB-Hacking/usbfind" "2459. hak5darren/USB-Rubber-Ducky"
-	echo "$SEP"
-	echo "UTILITIES"
-	Stampa " 99. Clone a Repo from GitHub" "100. Enable forlder to HttpServer" "101. listen reverse shell from Windows"
-	Stampa " 102. listen reverse shell from Linux" "103. create ssh keys in this folder" "104. Base64 for Windows (utf16)"
-	Stampa " 105. Base64 utf8" "110. create simple php shell POST request" "111. Dump file to escaped hex"
-	Stampa " 112. print a python reverse shell" "113. print a perl reverse shell" "114. print a ruby reverse shell"
-	Stampa " 115. print a bash reverse shell" "116. print a php reverse shell" "243. print a powershell reverse shell"
-	Stampa " 165. Mount cifs in folder" "203. Download informations from IMAP email account"
-	Stampa " 317. get all DNS info" "324. Bluetooth scanning" "334. Hydra login-attack"
-	Stampa " 350. dirbustering with gobuster" "365. Add jpg header to a php revshell"
-	Stampa " 366. create simple php shell GET request" "367. create simple php shell with REQUESTS"
-	Stampa " 389. packets capture" "416. try to install repository" "417. get email addresses (mx data)"
-	Stampa " 429. wipe an external device" "430. wipe a file" "431. shred a file"
-	Stampa " 561. get a remote file in base64 encode" "596. download all files inside a folder shared via smb or samba"
-	Stampa " 598. get some useful files from remote url or ip" "600. upload a shell with PUT method"
-	Stampa " 618. enum users with finger" "628. ssh dictionary remote attack with optional port forwarding"
-	Stampa " 638. get all keys set in memcached remotely" "643. get netmask infos" "649. extract tar.gz file"
-	Stampa " 652. get docker version from IP" "669. analyze an executable file with strace and ltrace"
-	Stampa " 739. install tor from torproject siteweb" "740. install tor via apt-transport-tor"
-	Stampa " 744. get mx record from domain with dig" "745. get dns infos with host" "746. get ntp infos with ntpq"
-	Stampa " 747. get netbios infos with nmblookup" "749. download all files from IP in ftp with anonymous creds"
-	Stampa " 750. username and password dictionary attack with wget and ftp protocol"
-	Stampa " 754. get RPC info" "755. get RPC connect" "2423. get aws token and meta-data"
-	Stampa " 756. smb connection" "757. rlogin dictionary attack" "758. rdesktop dictionary attack"
-	Stampa " 9. wifi WPA with deauth attack" "2251. SSTI RCE" "2252. SSTI jinja2 RevShell"
-	Stampa " 76. print all functions of a binary" "135. dump all opcodes from a binary"
-	Stampa " 2261. Encrypt and Encode a file to pass in remote host" "2267. install a python hacking package"
-	Stampa " 2268. install a python3 hacking package" "2289. install a ruby hacking gem" "Prepare RevShell for Windows"
-	Stampa " 2337. install a deb package" "2338. install a browser" "2353. Pull a Docker image"
-	Stampa " 2452. AWS S3 copy file to remote host" "2453. AWS S3 list file in remote host" "2454. AWS S3 dump dynamodb tables"
-	Stampa " 2457. install poetry" "2503. run dbg and disassembling a bin file" "751. RCE with finger"
-	Stampa " 2515. Create a Reverse Shell for Android and run a listener"
-	Stampa " 2539. Create a Reverse Shell for Windows x86 and run a listener"
-	Stampa " 2540. Create a Reverse Shell for Windows x64 and run a listener"
-	Stampa " 2542. get ASN and infos of target IP from cymru.com" "2543. create an encrypted and encoded payload with metasploit"
-	Stampa " 2547. list all pulled docker images" "2624. download a zipbomb from unforgettable.dk"
-	Stampa " 2548. run a docker image" "2549. docker process list" "2552. use nmap to scan ports for vulnerabilities"
-	Stampa " 2556. Executione command line to Remote IP with RPC" "2564. display all binsry's headers with objdump"
-	Stampa " 2570. Anonymization" "2572. Steal Cookie from Panel/Manager/CMS with XSS" "2575. use nmap to scan ports with authentication"
-	Stampa " 2576. use nmap to scan ports with broadcast" "2577. use nmap to scan ports with brute" "2578. use nmap to scan ports with default"
-	Stampa " 2579. use nmap to scan ports with discovery" "2580. use nmap to scan ports with dos" "2581. use nmap to scan ports with exploit"
-	Stampa " 2582. use nmap to scan ports with external" "2583. use nmap to scan ports with fuzzer" "2584. use nmap to scan ports with intrusive"
-	Stampa " 2585. use nmap to scan ports with malware" "2586. use nmap to scan ports with safe" "2587. use nmap to scan ports with version"
-	Stampa " 2591. read symbols and other infos from binary" "2625. create a zipbomb manually" "2626. use metasploit"
-	Stampa " 2633. Try a manual SQLinjectio" "2563. disassemble binary with objdump" "2642. Discover OS from ICMP ttl"
-	echo "$SEP"
-	echo "VIRTUAL COINS - CURRENCIES"
-	Stampa " 511. Isaacdelly/Plutus" "512. dan-v/bruteforce-bitcoin-brainwallet" "513. SMH17/bitcoin-hacking-tools"
-	Stampa " 2465. litneet64/etherblob-explorer" "1212. KarmaHostage/gethspoit"
-	echo "$SEP"
-	echo "VOIP"
-	Stampa " 461. haasosaurus/ace-voip" "629. voipmonitor/sniffer" "898. jesusprubio/bluebox-ng"
-	echo "$SEP"
-	echo "VPN"
-	Stampa " 595. 7Elements/Fortigate" "2262. darrenmartyn/VisualDoor" "1040. galkan/openvpn-brute"
-	echo "$SEP"
-	echo "WAF"
-	Stampa " 1330. stamparm/identYwaf" "1441. lightbulb-framework/lightbulb-framework"
-	echo "$SEP"
-	echo "WALLET"
-	Stampa " 914. glv2/bruteforce-wallet"
-	echo "$SEP"
-	echo "WEBAPP - WEBSITES"
-	Stampa " 96. m4ll0k/WPSeku" "97. swisskyrepo/Wordpresscan" "98. RamadhanAmizudin/Wordpress-scanner"
-	Stampa " 122. rezasp/joomscan" "123. rastating/joomlavs" "124. RedVirus0/BlackDir-Framework"
-	Stampa " 198. wpscanteam/wpscan" "200. 04x/WpscaN/ICgWpScaNNer" "2362. oppsec/Squid"
-	Stampa " 201. The404Hacking/wpscan" "202. drego85/JoomlaScan" "287. boku7/LibreHealth-authRCE"
-	Stampa " 466. FortyNorthSecurity/EyeWitness" "614. dariusztytko/jwt-key-id-injector"
-	Stampa " 621. s0md3v/Arjun" "789. CoolerVoid/0d1n" "2242. poerschke/Uniscan"
-	Stampa " 2283. koutto/web-brutator" "1026. thesp0nge/dawnscanner" "2297. xmendez/wfuzz"
-	Stampa " 2346. infosecsecurity/Spaghetti" "2363. lirantal/is-website-vulnerable" "1261. gildasio/h2t"
-	Stampa " 1145. ChrisTruncer/EyeWitness" "2464. nim-lang/choosenim/vaf" "1186. tismayil/fockcache"
-	Stampa " 2483. AvalZ/WAF-A-MoLE" "2589. xchopath/pathprober" "2594. WangYihang/SourceLeakHacker"
-	Stampa " 2609. V1n1v131r4/webdiscover" "1311. riramar/hsecscan" "1312. segment-srl/htcap"
-	Stampa " 1317. tomnomnom/httprobe" "1318. breenmachine/httpscreenshot" "1368. stasinopoulos/jaidam"
-	Stampa " 1393. P0cL4bs/Kadimus" "2615. rivalsec/pathbuster" "1414. takeshixx/laf"
-	echo "$SEP"
-	echo "WEBDAV"
-	Stampa " 1025. Graph-X/davscan"
-	echo "$SEP"
-	echo "WEBCAMS"
-	Stampa " 395. JettChenT/scan-for-webcams" "396. entynetproject/entropy" "397. indexnotfound404/spycam"
-	Stampa " 471. jimywork/shodanwave" "479. SuperBuker/CamHell" "564. vanhienfs/saycheese"
-	Stampa " 2374. techchipnet/CamPhish"
-	echo "$SEP"
-	echo "WEBSHELL"
-	Stampa " 562. tennc/webshell" "574. epinna/weevely3" "608. jackrendor/cookiedoor"
-	Stampa " 2544. EatonChips/wsh" "2599. oldkingcone/slopShell" "1315. wireghoul/htshells"
-	echo "$SEP"
-	echo "WEBSOCKET"
-	Stampa " 2632. PalindromeLabs/STEWS"
-	echo "$SEP"
-	echo "WIFI - WPA2 - WEP - PSK - 802.11"
-	Stampa " 540. blunderbuss-wctf/wacker" "550. calebmadrigal/trackerjacker" "580. JPaulMora/Pyrit"
-	Stampa " 591. hash3liZer/WiFiBroot" "592. SValkanov/wifivoid" "800. v1s1t0r1sh3r3/airgeddon"
-	Stampa " 833. NORMA-Inc/AtEar" "904. M1ND-B3ND3R/BoopSuite" "921. aanarchyy/bully"
-	Stampa " 990. joswr1ght/cowpatty" "2263. luc10/zykgen" "2281. 0xd012/wifuzzit"
-	Stampa " 1046. elceef/dhcpf" "1047. kamorin/DHCPig" "1048. misje/dhcpoptinj"
-	Stampa " 1108. securestate/eapeak" "2336. whid-injector/WHID" "2427. IGRSoft/KisMac2"
-	Stampa " 1192. kylemcdonald/FreeWifi" "2502. ankit0183/Wifi-Hacking" "1447. vk496/linset"
-	Stampa " 1491. aircrack-ng/mdk4"
-	echo "$SEP"
-	echo "WINRM"
-	Stampa " 42. Hackplayers/evil-winrm"
-	echo "$SEP"
-	echo "WORDLIST"
-	Stampa " 51. danielmiessler/SecLists" "53. dariusztytko/words-scraper" "245. LandGrey/pydictor"
-	Stampa " 542. digininja/CeWL" "905. R3nt0n/bopscrk" "1103. nil0x42/duplicut"
-	Stampa " 302. duyet/bruteforce-database" "318. digininja/pipal" "535. nil0x42/cracking-utils"
-	Stampa " 985. assetnote/commonspeak2" "404. OWASP/D4N155" "2300. shamrin/diceware"
-	Stampa " 2388. DavidWittman/wpxmlrpcbrute/1000-most-common-passwords"
-	Stampa " 2449. google/spraygen" "1467. initstring/lyricpass" "1495. sc0tfree/mentalist"
-	Stampa " 2470. scrapmaker/rockyou.txt" "2473. digininja/RSMangler" "2537. D4Vinci/elpscrk"
-	echo "$SEP"
-	echo "WORDPRESS"
-	Stampa " 468. n00py/WPForce" "469. BlackXploits/WPBrute" "566. 0xAbdullah/0xWPBF"
-	Stampa " 655. Moham3dRiahi/WPGrabInfo" "667. ShayanDeveloper/WordPress-Hacker"
-	Stampa " 668. Jamalc0m/wphunter" "199. MrCl0wnLab/afdWordpress"
-	echo "$SEP"
-	echo "XSS - XPATH"
-	Stampa " 55. hahwul/dalfox" "164. s0md3v/XSStrike" "44. lc/gau"
-	Stampa " 176. sullo/nikto" "180. faizann24/XssPy" "2371. The404Hacking/XsSCan"
-	Stampa " 181. secdec/xssmap" "182. gbrindisi/xsssniper" "183. pwn0sec/PwnXSS"
-	Stampa " 184. lwzSoviet/NoXss" "394. Jewel591/xssmap" "558. dwisiswant0/findom-xss"
-	Stampa " 620. hahwul/XSpear" "623. r0oth3x49/Xpath" "780. capture0x/XSS-LOADER"
-	Stampa " 814. lewangbtcc/anti-XSS" "1069. whitel1st/docem" "1183. riusksk/FlashScanner"
-	Stampa " 2475. yehia-mamdouh/XSSYA-V-2.0" "1316. Danladi/HttpPwnly" "1523. koto/mosquito"
-	echo "$SEP"
-	echo "ZIGBEE"
-	Stampa " 1403. riverloopsec/killerbee"
-	echo "$SEP"
-	echo "ZIP"
-	Stampa " 43. The404Hacking/ZIP-Password-BruteForcer" "237. mnismt/CompressedCrack"
-	Stampa " 2612. Tylous/ZipExec"
-	echo "$SEP"
-	echo "PROXY SERVERS (HTTP SOCKS4 SOCKS5)"
-	Stampa " 106. clarketm/proxy-list" "107. opsxcq/proxy-list" "108. a2u/free-proxy-list"
-	Stampa " 109. cristiangonzales/Amazon-Discounts/proxy-list" "117. TheSpeedX/PROXY-List" "118. labic/ze-the-scraper/proxies-list"
-	Stampa " 119. samrocketman/proxylist"
-	echo "$SEP"
-	echo "? - OTHERS"
-	Stampa " 36. SigPloiter/HLR-Lookups" "37. i3visio/osrframework" "2354. py2exe/py2exe"
-	Stampa " 39. vanhauser-thc/thc-ipv6" "225. idapython/src" "226. erocarrera/pefile"
-	Stampa " 325. projectdiscovery/httpx" "796. sshock/AFFLIBv3" "839. MRGEffitas/scripts"
-	Stampa " 1000. oblique/create_ap" "1031. byt3bl33d3r/DeathStar" "1034. UltimateHackers/Decodify"
-	Stampa " 1091. szechyjs/dsd" "1098. fleetcaptain/dtp-spoof" "1099. insomniacslk/dublin-traceroute"
-	Stampa " 1100. kevthehermit/DuckToolkit" "1102. MalcolmRobb/dump1090" "1035. takeshixx/deen"
-	Stampa " 2451. google/security-research" "1155. mubix/FakeNetBIOS" "1169. 0blio/fileGPS"
-	Stampa " 1171. subinacls/Filibuster" "1188. ALSchwalm/foresight" "1197. miaouPlop/fs"
-	Stampa " 1243. osqzss/gps-sdr-sim" "1254. hackerschoice/gsocket" "1259. BishopFox/h2csmuggler"
-	Stampa " 1214. jeanphix/Ghost.py" "2471. sec-consult/aggrokatz" "1290. ZerBea/hcxtools"
-	Stampa " 1297. sharkdp/hexyl" "1324. vanhauser-thc/thc-hydra" "1378. incogbyte/jsearch"
-	Stampa " 1382. nahamsec/JSParser" "1387. telerik/JustDecompileEngine" "1406. klee/klee"
-	Stampa " 1415. rflynn/lanmap2" "1422. mmicu/leena" "2630. 9emin1/charlotte"
-	Stampa " 1481. trailofbits/manticore" "1516. fox-it/mkYARA"
-	echo "$SEP"
-	echo "PLUGIN"
-	Stampa " 1499. hahwul/metasploit-autopwn/db_autopwn"
+	echo "$CAA"" AA. ACTIVE DIRECTORY"
+	if [[ "$VISZ" == "AA" ]];
+	then
+		Stampa " 27. Greenwolf/Spray" "229. DanMcInerney/icebreaker" "283. optiv/Talon"
+		Stampa " 524. tothi/rbcd-attack/rbcd" "587. PaperMtn/lil-pwny" "793. fox-it/aclpwn.py"
+		Stampa " 2448. ricardojoserf/adfsbrute" "1231. NetSPI/goddi" "1242. MartinIngesen/gpocrack"
+		echo "$SEP"
+	fi
+	echo "$CAB"" AB. ACQUISITION"
+	if [[ "$VISZ" == "AB" ]];
+	then
+		Stampa " 171. Silv3rHorn/ArtifactExtractor" "172. SekoiaLab/Fastir_Collector"
+		echo "$SEP"
+	fi
+	echo "$CAC"" AC. AES"
+	if [[ "$VISZ" == "AC" ]];
+	then
+		Stampa " 28. bfaure/AES-128_Cracker" "29. unicornsasfuel/keybrute"
+		echo "$SEP"
+	fi
+	echo "$CAD"" AD. ANALIZING"
+	if [[ "$VISZ" == "AD" ]];
+	then
+		Stampa " 142. saferwall/saferwall" "169. fireeye/flare-floss" "219. BinaryAnalysisPlatform/bap"
+		Stampa " 220. angr/angr" "224. cogent/origami-pdf" "451. Ettercap/ettercap"
+		Stampa " 797. CoreSecurity/Agafi" "804. EgeBalci/Amber" "805. bdcht/amoco"
+		Stampa " 813. salls/angrop" "886. ReFirmLabs/binwalk" "887. bmaia/binwally"
+		Stampa " 906. brompwnie/botb" "947. slimm609/checksec.sh" "963. coreos/clair"
+		Stampa " 975. EgeBalci/Cminer" "2266. presidentbeef/brakeman" "1112. elfmaster/ecfs"
+		Stampa " 1006. SpiderLabs/cribdrag" "1018. 504ensicsLabs/DAMM" "1041. spectresearch/detectem"
+		Stampa " 1093. USArmyResearchLab/Dshell" "1104. dungtv543/Dutas" "1107. DynamoRIO/dynamorio"
+		Stampa " 1115. jacob-baines/elfparser" "2307. rizinorg/rizin" "2373. visma-prodsec/confused"
+		Stampa " 2409. asad1996172/Obfuscation-Detection" "2441. unipacker/unipacker" "1253. anchore/grype"
+		Stampa " 1135. cysinfo/Exescan" "1137. tr3w/ExpImp-Lookup" "1163. nccgroup/featherduster"
+		Stampa " 1170. keithjjones/fileintel" "1178. craigz28/firmwalker" "1250. wireghoul/graudit"
+		Stampa " 1198. adtac/fssb" "1202. JackOfMostTrades/gadgetinspector" "1203. med0x2e/GadgetToJScript"
+		Stampa " 2512. geohot/qira" "2513. JonathanSalwan/ROPgadget" "1287. trolldbois/python-haystack"
+		Stampa " 2611. ochronasec/ochrona-cli" "1332. airbus-seclab/ilo4_toolbox" "1373. SideChannelMarvels/JeanGrey"
+		Stampa " 1472. GoSecure/malboxes" "1493. platomav/MEAnalyzer" "1522. CoolerVoid/Mosca"
+		Stampa " 1535. mitre/multiscanner" "1537. Neo23x0/munin"
+		echo "$SEP"
+	fi
+	echo "$CAE"" AE. ANDROID - APK"
+	if [[ "$VISZ" == "AE" ]];
+	then
+		Stampa " 128. xtiankisutsa/MARA_Framework" "274. yasoob/nrc-exporter" "277. mzfr/slicer"
+		Stampa " 323. ASHWIN990/ADB-Toolkit" "326. metachar/PhoneSploit" "327. xtiankisutsa/twiga"
+		Stampa " 373. wuseman/WBRUTER" "405. bkerler/android_universal" "2387. swagkarna/Rafel-Rat"
+		Stampa " 410. mesquidar/adbsploit" "504. airbus-seclab/android_emuroot" "552. MobSF/Mobile-Security-Framework-MobSF"
+		Stampa " 572. 1N3/ReverseAPK" "807. AndroBugs/AndroBugs_Framework" "808. androguard/androguard"
+		Stampa " 809. Flo354/Androick" "816. rednaga/APKiD" "817. hexabin/APKStat"
+		Stampa " 860. l0gan/backHack" "1043. DexPatcher/dexpatcher-tool" "1087. mwrlabs/drozer"
+		Stampa " 2319. dwisiswant0/apkleaks" "2410. RealityNet/android_triage" "2411. androidmalware/android_hid"
+		Stampa " 2413. anbud/DroidDucky" "2516. The404Hacking/AndroRAT" "2517. karma9874/AndroRAT"
+		Stampa " 2518. AhMyth/AhMyth-Android-RAT" "2519. m301/rdroid" "2520. nyx0/Dendroid"
+		Stampa " 2521. JohnReagan/i-spy-android" "2522. honglvt/TalentRAT" "2533. rscloura/Doldrums"
+		Stampa " 2545. DivineSoftware/AutoRoot" "2566. 0x1CA3/AdbNet" "1366. flankerhqd/JAADAS"
+		Stampa " 1417. nccgroup/LazyDroid"
+		echo "$SEP"
+	fi
+	echo "$CAF"" AF. ANONYMIZATION"
+	if [[ "$VISZ" == "AF" ]];
+	then
+		Stampa " 2229. htrgouvea/nipe" "2348. realgam3/pymultitor" "2350. torsocks/torsocks"
+		Stampa " 2631. omer-dogan/kali-whoami"
+		echo "$SEP"
+	fi
+	echo "$CAG"" AG. ANTI-FORENSICS - SECURITY"
+	if [[ "$VISZ" == "AG" ]];
+	then
+		Stampa " 480. AndyCyberSec/direncrypt" "577. KuroLabs/stegcloak" "590. 1tayH/noisy"
+		Stampa " 940. 0xPoly/Centry" "1208. GasparVardanyan/GCrypt" "1489. fgrimme/Matroschka"
+		echo "$SEP"
+	fi
+	echo "$CAH"" AH. APACHE"
+	if [[ "$VISZ" == "AH" ]];
+	then
+		Stampa " 278. mgeeky/tomcatWarDeployer" "280. hypn0s/AJPy" "829. mthbernardes/ARTLAS"
+		Stampa " 2424. antonio-morales/Apache-HTTP-Fuzzing" "2571. knightm4re/tomcter"
+		echo "$SEP"
+	fi
+	echo "$CAI"" AI. APPLE"
+	if [[ "$VISZ" == "AI" ]];
+	then
+		Stampa " 644. Pr0x13/iDict" "645. foozzi/iCloudBrutter" "2325. gwatts/pinfinder"
+		Stampa " 2322. Hacktivation/iOS-Hacktivation-Toolkit" "2323. dnikles/removeActivationLock" "2324. tuttarealstep/iUnlock"
+		Stampa " 2477. XMCyber/MacHound" "1326. hackappcom/ibrute"
+		echo "$SEP"
+	fi
+	echo "$CAJ"" AJ. ARP"
+	if [[ "$VISZ" == "AJ" ]];
+	then
+		Stampa " 462. royhills/arp-scan" "582. byt3bl33d3r/arpspoof" "583. ammarx/ARP-spoofing/mmattack"
+		Stampa " 786. dracipn/arp-cache-poisoning" "787. EONRaider/Arp-Spoofer" "788. EmreOvunc/ARP-Poisoning-Tool"
+		Stampa " 827. Lab-Zjt/ARPTools" "828. ntrippar/ARPwner" "1401. k4m4/kickthemout"
+		echo "$SEP"
+	fi
+	echo "$CAK"" AK. AWS"
+	if [[ "$VISZ" == "AK" ]];
+	then
+		Stampa " 657. sa7mon/S3Scanner" "659. aljazceru/s3-bucket-scanner" "660. ankane/s3tk"
+		Stampa " 661. bear/s3scan" "662. haroonawanofficial/Amazon-AWS-Hack" "663. nagwww/101-AWS-S3-Hacks"
+		Stampa " 706. pbnj/s3-fuzzer" "850. VirtueSecurity/aws-extender-cli" "851. nccgroup/aws-inventory"
+		Stampa " 852. jordanpotti/AWSBucketDump" "868. Voulnet/barq" "2290. nahamsec/lazys3"
+		Stampa " 2415. digi.ninja/bucket_finder" "2416. nccgroup/s3_objects_check" "2417. duo-labs/cloudmapper"
+		Stampa " 2418. NetSPI/aws_consoler" "2419. andresriancho/enumerate-iam" "2291. tomdev/teh_s3_bucketeers"
+		Stampa " 2467. smaranchand/bucky" "2480. WeAreCloudar/s3-account-search" "2481. clario-tech/s3-inspector"
+		Stampa " 2476. lightspin-tech/red-shadow" "2529. Netflix/chaosmonkey"
+		echo "$SEP"
+	fi
+	echo "$CAL"" AL. AZURE"
+	if [[ "$VISZ" == "AL" ]];
+	then
+		Stampa " 32. dirkjanm/ROADtools"
+		echo "$SEP"
+	fi
+	echo "$CAM"" AM. BACKDOOR - SHELLCODE"
+	if [[ "$VISZ" == "AM" ]];
+	then
+		Stampa " 409. tz4678/backshell" "565. AnonymousAt3/cyberdoor" "855. mrjopino/backcookie"
+		Stampa " 856. dana-at-cp/backdoor-apk" "857. secretsquirrel/the-backdoor-factory" "858. Kkevsterrr/backdoorme"
+		Stampa " 2237. mm0r1/exploits/php-json-bypass" "2238. mm0r1/exploits/php7-backtrace-bypass" "2239. mm0r1/exploits/master/php7-gc-bypass"
+		Stampa " 861. giuliocomi/backoori" "1027. gitdurandal/dbd" "1083. Shellntel/backdoors"
+		Stampa " 1056. Mr-Un1k0d3r/DKMC" "1073. TheWover/donut" "1084. emptymonkey/drinkme"
+		Stampa " 2313. cribdragg3r/Alaris" "1206. byt3bl33d3r/gcat" "1229. razc411/GoBD"
+		Stampa " 2551. ORCA666/EarlyBird" "2622. phath0m/JadedWraith" "1504. Screetsec/Microsploit"
+		echo "$SEP"
+	fi
+	echo "$CAN"" AN. BLUETOOTH"
+	if [[ "$VISZ" == "AN" ]];
+	then
+		Stampa " 305. lucaboni92/BlueFuzz" "440. fO-000/bluescan" "447. MillerTechnologyPeru/hcitool"
+		Stampa " 482. francozappa/knob" "505. joswr1ght/btfind" "899. olivo/BluPhish"
+		Stampa " 918. virtualabs/btlejack" "919. conorpp/btproxy" "995. mikeryan/crackle"
+		Stampa " 2602. nccgroup/Sniffle"
+		echo "$SEP"
+	fi
+	echo "$CAO"" CAO. BOT - AI"
+	if [[ "$VISZ" == "AO" ]];
+	then
+		Stampa " 445. evilsocket/kitsune" "1144. BishopFox/eyeballer"
+		echo "$SEP"
+	fi
+	echo "$CAP"" CAP. BOTNET"
+	if [[ "$VISZ" == "AP" ]];
+	then
+		Stampa " 773. UBoat-Botnet/UBoat" "2455. twitu/byob"
+		echo "$SEP"
+	fi
+	echo "$CAQ"" CAQ. BRAINF**K"
+	if [[ "$VISZ" == "AQ" ]];
+	then
+		Stampa " 238. brain-lang/brainfuck" "239. fabianishere/brainfuck"
+		echo "$SEP"
+	fi
+	echo "$CAR"" CAR. C2 - CeC - Command and Control"
+	if [[ "$VISZ" == "AR" ]];
+	then
+		Stampa " 499. hyp3rlinx/DarkFinger-C2" "500. nettitude/PoshC2" "502. sensepost/godoh"
+		Stampa " 503. lu4p/ToRat" "602. nil0x42/phpsploit" "137. xtr4nge/FruityC2"
+		Stampa " 2469. postrequest/link" "1496. Ne0nd0g/merlin"
+		echo "$SEP"
+	fi
+	echo "$CAS"" AS. CARS"
+	if [[ "$VISZ" == "AS" ]];
+	then
+		Stampa " 933. schutzwerk/CANalyzat0r" "2310. shipcod3/mazda_getInfo" "2311. P1kachu/talking-with-cars"
+		Stampa " 2601. souravbaghz/CarPunk"
+		echo "$SEP"
+	fi
+	echo "$CAT"" AT. CDN"
+	if [[ "$VISZ" == "AT" ]];
+	then
+		Stampa " 971. MrH0wl/Cloudmare"
+		echo "$SEP"
+	fi
+	echo "$CAU"" AU. CEC - HEC"
+	if [[ "$VISZ" == "AU" ]];
+	then
+		Stampa " 939. nccgroup/CECster"
+		echo "$SEP"
+	fi
+	echo "$CAV"" AV. CHAP"
+	if [[ "$VISZ" == "AV" ]];
+	then
+		Stampa " 946. moxie0/chapcrack" "2590. sensepost/assless-chaps"
+		echo "$SEP"
+	fi
+	echo "$CAW"" AW. CHAT ENCRYPTED"
+	if [[ "$VISZ" == "AW" ]];
+	then
+		Stampa " 376. mjm918/python-AES-encryption-socket-secure-chat" "377. SusmithKrishnan/neuron"
+		Stampa " 378. ludvigknutsmark/python-chat" "379. sathwikv143/Encrypted-Python-Chat" "380. osalpekar/Encrypted-Chat"
+		Stampa " 381. LatrecheYasser/Secure-Python-Chat" "382. spec-sec/SecureChat"
+		echo "$SEP"
+	fi
+	echo "$CAX"" AX. CHROMECAST"
+	if [[ "$VISZ" == "AX" ]];
+	then
+		Stampa " 1402. thewhiteh4t/killcast"
+		echo "$SEP"
+	fi
+	echo "$CAY"" AY. CISCO"
+	if [[ "$VISZ" == "AY" ]];
+	then
+		Stampa " 463. Zapotek/cdpsnarf" "959. madrisan/cisco7crack" "2378. madrisan/cisco5crack"
+		echo "$SEP"
+	fi
+	echo "$CAZ"" AZ. CLOUDFLARE"
+	if [[ "$VISZ" == "AZ" ]];
+	then
+		Stampa " 966. SageHack/cloud-buster" "967. m0rtem/CloudFail" "968. mandatoryprogrammer/cloudflare_enum"
+		Stampa " 969. eudemonics/cloudget" "973. greycatz/CloudUnflare"
+		echo "$SEP"
+	fi
+	echo "$CBA"" BA. CLOUDS"
+	if [[ "$VISZ" == "BA" ]];
+	then
+		Stampa " 658. SimplySecurity/SimplyEmail" "664. aquasecurity/cloudsploit" "911. Matrix07ksa/Brute_Force"
+		Stampa " 970. projectdiscovery/cloudlist" "972. cloudsploit/scans"
+		echo "$SEP"
+	fi
+	echo "$CBB"" BB. CMS"
+	if [[ "$VISZ" == "BB" ]];
+	then
+		Stampa " 483. TheDevFromKer/CMS-Attack" "484. Dionach/CMSmap" "234. n4xh4ck5/CMSsc4n"
+		Stampa " 976. FlorianHeigl/cms-explorer" "977. Tuhinshubhra/CMSeeK" "979. ajinabraham/CMSScan"
+		Stampa " 980. wpscanteam/CMSScanner" "984. Intrinsec/comission" "1086. droope/droopescan"
+		echo "$SEP"
+	fi
+	echo "$CBC"" BC. CORS"
+	if [[ "$VISZ" == "BC" ]];
+	then
+		Stampa " 987. chenjj/CORScanner" "988. RUB-NDS/CORStest"
+		echo "$SEP"
+	fi
+	echo "$CBD"" BD. CRACKING - GUESSING"
+	if [[ "$VISZ" == "BD" ]];
+	then
+		Stampa " 80. magnumripper/JohnTheRipper" "81. truongkma/ctf-tools/John" "82. SySS-Research/Seth"
+		Stampa " 83. s0md3v/Hash-Buster" "120. NetSPI/PS_MultiCrack" "41. shmilylty/cheetah"
+		Stampa " 126. timbo05sec/autocrack" "127. igorMatsunaga/autoCrack" "247. mufeedvh/basecrack"
+		Stampa " 475. MS-WEB-BN/h4rpy" "506. Aarif123456/passwordCracker" "507. GauthamGoli/rar-Password-Cracker/bruteforce"
+		Stampa " 543. praetorian-inc/trident_0.1.3_linux_i386" "544. praetorian-inc/trident_0.1.3_linux_x86_64" "545. praetorian-inc/trident"
+		Stampa " 563. Viralmaniar/Passhunt" "611. jmk-foofus/medusa" "612. openwall/john"
+		Stampa " 630. beurtschipper/Depix" "632. x90skysn3k/brutespray" "762. f0cker/crackq"
+		Stampa " 763. hashcrackq/Crackq" "811. PentesterES/AndroidPINCrack" "838. Tylous/Auto_EAP"
+		Stampa " 924. webpwnized/byepass" "915. 1N3/BruteX" "912. glv2/bruteforce-luks"
+		Stampa " 913. glv2/bruteforce-salted-openssl" "992. D4Vinci/Cr3dOv3r" "2380. frdmn/findmyhash"
+		Stampa " 994. CoalfireLabs/crackHOR" "996. vnik5287/Crackq" "997. averagesecurityguy/crack"
+		Stampa " 1003. DanMcInerney/creds.py" "1008. galkan/crowbar" "1017. Ekultek/Dagon"
+		Stampa " 1019. SideChannelMarvels/Daredevil" "2296. s3inlc/hashtopolis" "2357. fireeye/gocrack"
+		Stampa " 2425. skelsec/pypykatz" "1156. evilsocket/fang" "2466. hemp3l/sucrack"
+		Stampa " 2494. hashtopolis/server" "1273. UltimateHackers/Hash-Buster" "2508. hellman/xortool"
+		Stampa " 2505. KishanBagaria/padding-oracle-attacker" "2506. Ganapati/RsaCtfTool" "2507. ius/rsatool"
+		Stampa " 1276. hashcat/hashcat-utils" "1286. trustedsec/hate_crack" "2595. navin-maverick/BruteBot"
+		Stampa " 1541. MooseDojo/myBFF"
+		echo "$SEP"
+	fi
+	echo "$CBE"" BE. CRAWLING - SPIDERING - SCRAPING"
+	if [[ "$VISZ" == "BE" ]];
+	then
+		Stampa " 586. saeeddhqan/evine" "722. OWASP/OWASP-WebScarab" "733. gotr00t0day/spider00t"
+		Stampa " 938. lgandx/CCrawlDNS" "941. lanrat/certgraph" "2341. Pinperepette/whistory"
+		Stampa " 1014. chamli/CyberCrowl" "1029. kgretzky/dcrawl" "2287. galkan/mail-crawl"
+		Stampa " 2370. spatie/mixed-content-scanner" "1075. maurosoria/dirsearch" "1131. saeeddhqan/evine"
+		Stampa " 1237. s0md3v/goop" "1241. jaeles-project/gospider" "1258. 00xc/h2buster"
+		Stampa " 1230. OJ/gobuster" "2498. blacklanternsecurity/MANSPIDER" "1268. hakluke/hakrawler"
+		echo "$SEP"
+	fi
+	echo "$CBF"" BF. CSRF - XSRF - SSRF"
+	if [[ "$VISZ" == "BF" ]];
+	then
+		Stampa " 406. 0xInfection/XSRFProbe" "2278. s0md3v/Bolt" "1141. Damian89/extended-ssrf-search"
+		Stampa " 2493. pinata-csrf-tool" "2523. google.com/pinata-csrf-tool"
+		echo "$SEP"
+	fi
+	echo "$CZZ"" ZZ. CVE LIST"
+	if [[ "$VISZ" == "ZZ" ]];
+	then
+		Stampa " 2414. dirkjanm/CVE-2020-1472" "2421. twistlock/RunC-CVE-2019-5736" "2428. jas502n/CVE-2019-12384"
+		Stampa " 2488. shadowgatt/CVE-2019-19356" "2530. ButrintKomoni/cve-2020-0796" "2531. jiansiting/CVE-2020-0796"
+		Stampa " 2532. ZecOps/CVE-2020-0796-RCE-POC" "2495. cube0x0/CVE-2021-1675" "2627. fullhunt/log4j-scan"
+		Stampa " 2628. kozmer/log4j-shell-poc"
+		echo "$SEP"
+	fi
+	echo "$CBG"" BG. D"
+	if [[ "$VISZ" == "BG" ]];
+	then
+		Stampa " 1090. dlang-community/D-Scanner"
+		echo "$SEP"
+	fi
+	echo "$CBH"" BH. DATABASES"
+	if [[ "$VISZ" == "BH" ]];
+	then
+		Stampa " 1421. woj-ciech/LeakLooker" "1490. evanmiller/mdbtools" "1531. BlackArch/msfdb"
+		echo "$SEP"
+	fi
+	echo "$CBI"" BI. DEBUGGING - DECOMPILING"
+	if [[ "$VISZ" == "BI" ]];
+	then
+		Stampa " 144. snare/voltron" "125. detailyang/readelf" "222. vivisect/vivisect"
+		Stampa " 223. unicorn-engine/unicorn" "848. icsharpcode/AvaloniaILSpy" "882. Vector35/binaryninja-python"
+		Stampa " 926. Konloch/bytecode-viewer" "1030. 0xd4d/de4dot" "1106. iGio90/Dwarf"
+		Stampa " 1113. eteran/edb-debugger" "1164. fesh0r/fernflower" "1209. cs01/gdbgui"
+		Stampa " 1367. skylot/jadx" "1371. kwart/jd-cli" "1377. jindrapetrik/jpexs-decompiler"
+		Stampa " 1466. deathmarine/Luyten"
+		echo "$SEP"
+	fi
+	echo "$CBJ"" BJ. DECRYPTING"
+	if [[ "$VISZ" == "BJ" ]];
+	then
+		Stampa " 332. Ciphey/Ciphey"
+		echo "$SEP"
+	fi
+	echo "$CBK"" BK. DIRBUSTERING"
+	if [[ "$VISZ" == "BK" ]];
+	then
+		Stampa " 54. aboul3la/Sublist3r" "411. H4ckForJob/dirmap" "774. nccgroup/dirble"
+		Stampa " 1050. digination/dirbuster-ng" "1052. Cillian-Collins/dirscraper" "1053. maurosoria/dirsearch"
+		Stampa " 1054. stefanoj3/dirstalk"
+		echo "$SEP"
+	fi
+	echo "$CBL"" BL. DISASSEMBLING"
+	if [[ "$VISZ" == "BL" ]];
+	then
+		Stampa " 216. gdbinit/MachOView" "217. cseagle/fREedom" "218. google/binnavi"
+		Stampa " 336. sciencemanx/x86-analysis" "340. wisk/medusa" "341. REDasmOrg/REDasm"
+		Stampa " 337. cryptator/assembly-code-analysis" "338. plasma-disassembler/plasma" "339. cea-sec/miasm"
+		Stampa " 342. vivisect/vivisect" "791. MITRECND/abcd" "948. 0xbc/chiasm-shell"
+		Stampa " 1055. gdabah/distorm" "948. 0xbc/chiasm-shell" "1482. ApertureLabsLtd/marc4dasm"
+		echo "$SEP"
+	fi
+	echo "$CBM"" BM. DISCOVERING"
+	if [[ "$VISZ" == "BM" ]];
+	then
+		Stampa " 559. epi052/feroxbuster" "573. robre/scripthunter" "729. chris408/ct-exposer"
+		Stampa " 736. gotr00t0day/VulnBanner" "760. fnk0c/cangibrina" "795. sahakkhotsanyan/adfind"
+		Stampa " 139. OWASP/cwe-tool" "2440. assetnote/kiterunner" "2491. edoardottt/cariddi"
+		Stampa " 1446. GerbenJavado/LinkFinder"
+		echo "$SEP"
+	fi
+	echo "$CBN"" BN. DNS - DOMAIN"
+	if [[ "$VISZ" == "BN" ]];
+	then
+		Stampa " 30. m57/dnsteal" "31. skelsec/jackdaw" "35. projectdiscovery/dnsprobe"
+		Stampa " 88. m57/dnsteal" "269. dariusztytko/vhosts-sieve" "286. iphelix/dnschef"
+		Stampa " 335. mschwager/fierce" "464. fwaeytens/dnsenum" "491. TeamFoxtrot-GitHub/DNSMap"
+		Stampa " 492. darkoperator/dnsrecon" "493. neiltyagi/DNSRECON" "496. rs/dnstrace"
+		Stampa " 497. redsift/dnstrace" "498. dkorunic/dnstrace" "528. mfocuz/DNS_Hunter"
+		Stampa " 752. theMiddleBlue/DNSenum" "753. rbsec/dnscan" "1057. lorenzog/dns-parallel-prober"
+		Stampa " 783. gr3yc4t/dns-poisoning-tool" "784. SemyonMakhaev/dns-poison" "1506. daehee/mildew"
+		Stampa " 785. ShanjinurIslam/Computer-Security-DNS-Cache-Poisoning"
+		Stampa " 799. blark/aiodnsbrute" "803. infosec-au/altdns" "831. tomnomnom/assetfinder"
+		Stampa " 945. projectdiscovery/chaos-client" "1063. erbbysam/DNSGrep" "2293. ProjectAnte/dnsgen"
+		Stampa " 1065. evilsocket/dnssearch" "1066. elceef/dnstwist" "1067. vortexau/dnsvalidator"
+		Stampa " 1068. projectdiscovery/dnsx" "1070. MarkBaggett/domain_stats" "2306. tismayil/rsdl"
+		Stampa " 2401. A3h1nt/Subcert" "2402. r3curs1v3-pr0xy/sub404" "2432. eslam3kl/crtfinder"
+		Stampa " 1165. stealth/fernmelder" "1173. Edu4rdSHL/findomain" "1190. kirei/fpdns"
+		Stampa " 1235. zombiesam/googlesub" "1269. hakluke/hakrevdns" "1374. utkusen/jeopardize"
+		Stampa " 1407. guelfoweb/knock" "1487. blechschmidt/massdns" "1492. chadillac/mdns_recon"
+		Stampa " 1525. waytoalpit/ManOnTheSideAttack-DNS-Spoofing"
+		echo "$SEP"
+	fi
+	echo "$CBO"" BO. DOCKER"
+	if [[ "$VISZ" == "BO" ]];
+	then
+		Stampa " 351. cr0hn/dockerscan" "352. RhinoSecurityLabs/ccat" "2420. kost/dockscan"
+		Stampa " 2482. Ullaakut/Gorsair"
+		echo "$SEP"
+	fi
+	echo "$CBP"" BP. DRUPAL"
+	if [[ "$VISZ" == "BP" ]];
+	then
+		Stampa " 1088. Tethik/drupal-module-enumeration" "1089. immunIT/drupwn"
+		echo "$SEP"
+	fi
+	echo "$CBQ"" BQ. DUMPING - EXTRACTING - RIPPING"
+	if [[ "$VISZ" == "BQ" ]];
+	then
+		Stampa " 121. AlessandroZ/LaZagne" "170. sevagas/swap_digger" "49. Greenwolf/ntlm_theft"
+		Stampa " 197. sowdust/pdfxplr" "213. Arno0x/NtlmRelayToEWS" "221. 504ensicsLabs/LiME"
+		Stampa " 285. louisabraham/ffpass" "294. TryCatchHCF/Cloakify" "441. laramies/metagoofil"
+		Stampa " 533. securing/DumpsterDiver" "862. deepzec/Bad-Pdf" "1110. brav0hax/easy-creds"
+		Stampa " 879. mazen160/bfac" "880. tmbinc/bgrep" "1021. itsmehacker/DarkScrape"
+		Stampa " 1101. 0verl0ad/Dumb0" "1105. kost/dvcs-ripper" "2429. ifsnop/mysqldump-php"
+		Stampa " 1142. bwall/ExtractHosts" "1196. Nightbringer21/fridump" "1301. hasherezade/hollows_hunter"
+		Stampa " 1442. kd8bny/LiMEaide"
+		echo "$SEP"
+	fi
+	echo "$CBR"" BR. EDITOR"
+	if [[ "$VISZ" == "BR" ]];
+	then
+		Stampa " 894. afrantzis/bless"
+		echo "$SEP"
+	fi
+	echo "$CBS"" BS. ENUMERATION"
+	if [[ "$VISZ" == "BS" ]];
+	then
+		Stampa " 163. luke-goddard/enumy" "209. Knowledge-Wisdom-Understanding/recon"
+		Stampa " 619. cddmp/enum4linux-ng" "735. gotr00t0day/oswalkpy" "840. skahwah/automato"
+		Stampa " 1007. m8r0wn/crosslinked" "1033. SpiderLabs/deblaze" "1072. vysecurity/DomLink"
+		Stampa " 1096. anantshri/DS_Store_crawler_parser" "1121. dejanlevaja/enum_shares"
+		Stampa " 2546. santiko/KnockPy" "1361. lavalamp-/ipv666" "1365. salesforce/ja3"
+		Stampa " 1392. hotelzululima/kacak" "1423. carlospolop/legion" "2629. SecuProject/ADenum"
+		Stampa " 1532. wez3/msfenum"
+		echo "$SEP"
+	fi
+	echo "$CBT"" BT. EVASION - BYPASSING - OBFUSCATION"
+	if [[ "$VISZ" == "BT" ]];
+	then
+		Stampa " 167. govolution/avet" "134. khalilbijjou/WAFNinja" "174. stormshadow07/HackTheWorld"
+		Stampa " 268. wintrmvte/SNOWCRASH" "275. CBHue/PyFuscation" "293. OsandaMalith/PE2HTML"
+		Stampa " 309. mdsecactivebreach/Chameleon" "576. Veil-Framework/Veil" "605. shadowlabscc/Kaiten"
+		Stampa " 688. lobuhi/byp4xx" "731. gotr00t0day/forbiddenpass" "792. LandGrey/abuse-ssl-bypass-waf"
+		Stampa " 824. tokyoneon/Armor" "869. Bashfuscator/Bashfuscator" "925. vincentcox/bypass-firewalls-by-DNS-history"
+		Stampa " 944. TarlogicSecurity/Chankro" "953. epsylon/cintruder" "956. frohoff/ciphr"
+		Stampa " 965. trycatchhcf/cloakify" "1036. nccgroup/demiguise" "1081. D4Vinci/Dr0p1t-Framework"
+		Stampa " 2356. Mr-Un1k0d3r/UniByAv" "2355. paranoidninja/CarbonCopy" "2389. samhaxr/AnonX"
+		Stampa " 1134. OsandaMalith/Exe2Image" "2463. d4rckh/vaf" "2462. FunnyWolf/pystinger"
+		Stampa " 1200. lostincynicism/FuzzAP" "1248. Ekultek/Graffiti" "2478. asaurusrex/Forblaze"
+		Stampa " 2496. mhaskar/DNSStager" "2525. h4wkst3r/InvisibilityCloak" "2535. WazeHell/LightMe"
+		Stampa " 1285. HatBashBR/HatCloud" "1347. Hnfull/Intensio-Obfuscator" "1360. milo2012/ipv4Bypass"
+		Stampa " 1381. zigoo0/JSONBee" "1498. a0rtega/metame"
+		echo "$SEP"
+	fi
+	echo "$CBU"" BU. EXCHANGE"
+	if [[ "$VISZ" == "BU" ]];
+	then
+		Stampa " 571. sensepost/ruler" "2351. dirkjanm/PrivExchange" "2404. RickGeex/ProxyLogon"
+		Stampa " 2554. dmaasland/proxyshell-poc"
+		echo "$SEP"
+	fi
+	echo "$CBV"" BV. EXFILTRATION"
+	if [[ "$VISZ" == "BV" ]];
+	then
+		Stampa " 314. danielwolfmann/Invoke-WordThief/logger" "593. TryCatchHCF/PacketWhisper" "2444. foofus-sph1nx/PyMailSniper"
+		Stampa " 2479. antman1p/GDir-Thief"
+		echo "$SEP"
+	fi
+	echo "$CBW"" BW. EXPLOIT"
+	if [[ "$VISZ" == "BW" ]];
+	then
+		Stampa " 10. exploit-db/linux - remote scripts" "11. exploit-db/linux_x86 - remote scripts" "12. exploit-db/linux_x86-64 - remote scripts"
+		Stampa " 13. exploit-db/windows - remote scripts" "14. exploit-db/windows_x86 - remote scripts" "15. exploit-db/windows_x86-64 - remote scripts"
+		Stampa " 16. sundaysec/Android-Exploits/remote" "17. offensive-security/exploitdb/android/remote"
+		Stampa " 18. offensive-security/exploitdb/ios remote exploits" "617. Download an exploit from exploit-db site web"
+		Stampa " 815. Acey9/Chimay-Red" "846. NullArray/AutoSploit" "19. all remote exploits from offensive-security/exploitdb"
+		Stampa " 1071. coldfusion39/domi-owned" "2331. offensive-security/exploitdb" "1213. vulnersCom/getsploit"
+		Stampa " 2386. Download impacket's tools" "2443. System00-Security/Git-Cve" "1488. jm33-m0/mec"
+		Stampa " 2509. intrd/nozzlr" "2510. hellman/libformatstr" "2511. david942j/one_gadget"
+		echo "$SEP"
+	fi
+	echo "$CBX"" BX. EXTRA - EXTENSIONS"
+	if [[ "$VISZ" == "BX" ]];
+	then
+		Stampa " 252. LionSec/katoolin" "1177. mazen160/Firefox-Security-Toolkit"
+		echo "$SEP"
+	fi
+	echo "$CBY"" BY. FACEBOOK"
+	if [[ "$VISZ" == "BY" ]];
+	then
+		Stampa " 1148. tomoneill19/facebookOSINT" "1149. pun1sh3r/facebot" "1150. PowerScript/facebrok"
+		Stampa " 1151. emerinohdz/FaceBrute" "1159. chinoogawa/fbht"
+		Stampa " 1160. xHak9x/fbi" "1161. guelfoweb/fbid"
+		echo "$SEP"
+	fi
+	echo "$CBZ"" BZ. FILE - SYSTEM"
+	if [[ "$VISZ" == "BZ" ]];
+	then
+		Stampa " 446. aarsakian/MFTExtractor"
+		echo "$SEP"
+	fi
+	echo "$CCA"" CA. FINGER"
+	if [[ "$VISZ" == "CA" ]];
+	then
+		Stampa " 609. pentestmonkey/finger-user-enum"
+		echo "$SEP"
+	fi
+	echo "$CCB"" CB. FOOTPRINTING - FINGERPRINTING"
+	if [[ "$VISZ" == "CB" ]];
+	then
+		Stampa " 132. Zarcolio/sitedorks" "133. s0md3v/photon" "276. m3n0sd0n4ld/uDork"
+		Stampa " 414. hhhrrrttt222111/Dorkify" "415. Chr0m0s0m3s/DeadTrap" "420. techgaun/github-dorks"
+		Stampa " 531. CERT-Polska/hfinger" "581. EnableSecurity/wafw00f" "779. ethicalhackingplayground/dorkX"
+		Stampa " 781. E4rr0r4/XGDork" "854. aliasrobotics/aztarna" "884. Hood3dRob1n/BinGoo"
+		Stampa " 1539. falcon-lnhg/mwebfp"
+		echo "$SEP"
+	fi
+	echo "$CCC"" CC. FREQUENCY"
+	if [[ "$VISZ" == "CC" ]];
+	then
+		Stampa " 1534. EliasOenal/multimon-ng"
+		echo "$SEP"
+	fi
+	echo "$CCD"" CD. FTP"
+	if [[ "$VISZ" == "CD" ]];
+	then
+		Stampa " 147. WalderlanSena/ftpbrute" "149. AlphaRoy14/km985ytv-ftp-exploit"
+		Stampa " 150. GitHackTools/FTPBruter" "151. DevilSquidSecOps/FTP" "154. pentestmonkey/ftp-user-enum"
+		Stampa " 175. jtpereyda/boofuzz-ftp/ftp"
+		echo "$SEP"
+	fi
+	echo "$CCE"" CE. FUZZING"
+	if [[ "$VISZ" == "CE" ]];
+	then
+		Stampa " 34. devanshbatham/ParamSpider" "56. jtpereyda/boofuzz" "50. fuzzdb-project/fuzzdb"
+		Stampa " 130. google/AFL" "72. corelan/mona" "73. OpenRCE/sulley"
+		Stampa " 465. wireghoul/dotdotpwn" "517. dwisiswant0/crlfuzz" "597. googleprojectzero/fuzzilli"
+		Stampa " 687. renatahodovan/grammarinator" "686. nccgroup/fuzzowski" "685. OblivionDev/fuzzdiff"
+		Stampa " 684. nol13/fuzzball" "683. k0retux/fuddly" "682. nccgroup/FrisbeeLite"
+		Stampa " 681. zznop/flyr" "680. wireghoul/doona" "679. googleprojectzero/domato"
+		Stampa " 678. ernw/dizzy" "677. MozillaSecurity/dharma" "675. hadoocn/conscan"
+		Stampa " 674. dobin/ffw" "673. CENSUS/choronzon" "672. RootUp/BFuzz"
+		Stampa " 671. localh0t/backfuzz" "670. doyensec/ajpfuzzer" "702. HSASec/ProFuzz"
+		Stampa " 689. savio-code/hexorbase" "690. nccgroup/Hodor" "691. google/honggfuzz"
+		Stampa " 692. tehmoon/http-fuzzer" "693. andresriancho/websocket-fuzzer" "694. twilsonb/jbrofuzz"
+		Stampa " 695. cisco-sas/kitty" "696. mxmssh/manul" "697. IOActive/Melkor_ELF_Fuzzer"
+		Stampa " 698. mazzoo/ohrwurm" "699. MozillaSecurity/peach" "700. calebstewart/peach"
+		Stampa " 701. marcinguy/powerfuzzer" "703. hgascon/pulsar" "2442. denandz/fuzzotron"
+		Stampa " 704. mseclab/PyJFuzz" "705. akihe/radamsa" "707. Battelle/sandsifter"
+		Stampa " 708. mfontanini/sloth-fuzzer" "709. nopper/archpwn" "711. landw1re/socketfuzz"
+		Stampa " 712. allfro/sploitego" "715. rsmusllp/termineter" "716. droberson/thefuzz"
+		Stampa " 717. kernelslacker/trinity" "718. PAGalaxyLab/uniFuzzer" "720. nullsecuritynet/uniofuzz"
+		Stampa " 721. andresriancho/w3af" "723. wereallfeds/webshag" "724. samhocevar/zzuf"
+		Stampa " 798. tintinweb/aggroArgs" "2334. lcamtuf.coredump/afl" "1166. ffuf/ffuf"
+		Stampa " 1168. henshin/filebuster" "2468. intrudir/403fuzzer" "1189. Owlz/formatStringExploiter"
+		Stampa " 1201. mdiazcl/fuzzbunch-debian" "1252. trailofbits/grr" "2528. AFLplusplus/AFLplusplus"
+		Stampa " 2555. junegunn/fzf" "1300. nccgroup/hodor" "2600. s41r4j/phomber"
+		Stampa " 1341. BountyStrike/Injectus"
+		echo "$SEP"
+	fi
+	echo "$CCF"" CF. GATHERING - OSINT - DOXING"
+	if [[ "$VISZ" == "CF" ]];
+	then
+		Stampa " 168. Screetsec/Sudomy" "177. HightechSec/git-scanner/gitscanner" "89. urbanadventurer/WhatWeb"
+		Stampa " 215. evanmiller/hecate" "246. danieleperera/OnionIngestor" "248. evyatarmeged/Raccoon"
+		Stampa " 300. laramies/theHarvester" "306. lockfale/OSINT-Framework" "307. Netflix-Skunkworks/Scumblr"
+		Stampa " 315. M0tHs3C/Hikxploit" "316. sundowndev/PhoneInfoga" "358. intelowlproject/IntelOwl"
+		Stampa " 364. opsdisk/pagodo" "179. BullsEye0/shodan-eye" "470. HatBashBR/ShodanHat"
+		Stampa " 472. random-robbie/My-Shodan-Scripts" "474. m4ll0k/Shodanfy.py" "1453. lulz3xploit/LittleBrother"
+		Stampa " 477. gelim/censys" "478. twelvesec/gasmask" "476. sdnewhop/grinder"
+		Stampa " 486. sowdust/tafferugli" "537. adnane-X-tebbaa/Katana" "555. m8r0wn/subscraper"
+		Stampa " 560. Datalux/Osintgram" "585. thewhiteh4t/FinalRecon" "588. AzizKpln/Moriarty-Project"
+		Stampa " 589. mxrch/GHunt" "613. bdblackhat/admin-panel-finder" "625. TermuxHacking000/phonia"
+		Stampa " 631. Anon-Exploiter/SiteBroker" "646. nandydark/grim" "653. adnane-X-tebbaa/GRecon"
+		Stampa " 725. alpkeskin/mosint" "730. gotr00t0day/IGF" "734. gotr00t0day/subdomainbrute"
+		Stampa " 778. ethicalhackingplayground/SubNuke" "881. GitHackTools/BillCipher" "936. packetassailant/catnthecanary"
+		Stampa " 935. itsmehacker/CardPwn" "138. OWASP/Amass" "2259. nitefood/asn"
+		Stampa " 1002. lightos/credmap" "1005. ilektrojohn/creepy" "1042. DanMcInerney/device-pharmer"
+		Stampa " 1076. utiso/dorkbot" "1077. blueudp/DorkMe" "1078. NullArray/DorkNet"
+		Stampa " 1118. martinvigo/email2phonenumber" "2302. josh0xA/darkdump" "2314. FortyNorthSecurity/Just-Metadata"
+		Stampa " 2316. davidtavarez/pwndb" "2326. j3ers3/Searpy" "1628. behindthefirewalls/Parsero"
+		Stampa " 2352. bhavsec/reconspider" "2376. caffix/amass" "2406. an00byss/godehashed"
+		Stampa " 845. bharshbarger/AutOSINT" "875. aancw/Belati" "2294. pixelbubble/ProtOSINT"
+		Stampa " 2345. SharadKumar97/OSINT-SPY" "2439. matamorphosis/Scrummage" "1182. galkan/flashlight"
+		Stampa " 1187. byt3smith/Forager" "1240. Nhoya/gOSINT" "1271. Te-k/harpoon"
+		Stampa " 2500. jakejarvis/awesome-shodan-queries" "2501. interference-security/zoomeye-data" "2526. A3h1nt/Grawler"
+		Stampa " 2534. sc1341/TikTok-OSINT" "2538. nccgroup/Solitude" "2565. C0MPL3XDEV/E4GL30S1NT"
+		Stampa " 2597. DedSecInside/gotor" "2610. xadhrit/terra" "1329. BillyV4/ID-entify"
+		Stampa " 1340. m4ll0k/infoga" "1342. penafieljlm/inquisitor" "1344. sc1341/InstagramOSINT"
+		Stampa " 1355. Rajkumrdusad/IP-Tracer" "2616. emrekybs/Expulso" "2619. Q0120S/NoobWebHunter"
+		Stampa " 1445. initstring/linkedin2username" "1469. HurricaneLabs/machinae" "1483. saeeddhqan/Maryam"
+		Stampa " 1497. j3ssie/metabigor"
+		echo "$SEP"
+	fi
+	echo "$CCG"" CG. GIT - REPOS"
+	if [[ "$VISZ" == "CG" ]];
+	then
+		Stampa " 487. arthaud/git-dumper" "553. Ebryx/GitDump" "2315. metac0rtex/GitHarvester"
+		Stampa " 2422. michenriksen/gitrob" "1216. bahamas10/node-git-dump" "1217. tillson/git-hound"
+		Stampa " 1218. obheda12/GitDorker" "1219. mschwager/gitem" "1220. hisxo/gitGraber"
+		Stampa " 1221. lijiejie/githack" "1222. mazen160/GithubCloner" "1223. zricethezav/gitleaks"
+		Stampa " 1224. giovanifss/gitmails" "1225. danilovazb/GitMiner" "1226. internetwache/GitTools"
+		Stampa " 2492. liamg/gitjacker"
+		echo "$SEP"
+	fi
+	echo "$CCH"" CH. GITLAB"
+	if [[ "$VISZ" == "CH" ]];
+	then
+		Stampa " 2407. dotPY-hax/gitlab_RCE"
+		echo "$SEP"
+	fi
+	echo "$CCI"" CI. GOPHER"
+	if [[ "$VISZ" == "CI" ]];
+	then
+		Stampa " 1238. tarunkant/Gopherus"
+		echo "$SEP"
+	fi
+	echo "$CCJ"" CJ. GRAPHQL"
+	if [[ "$VISZ" == "CJ" ]];
+	then
+		Stampa " 1249. swisskyrepo/GraphQLmap"
+		echo "$SEP"
+	fi
+	echo "$CCK"" CK. GSM"
+	if [[ "$VISZ" == "CK" ]];
+	then
+		Stampa " 1394. steve-m/kalibrate-rtl"
+		echo "$SEP"
+	fi
+	echo "$CCM"" CM. GTFO"
+	if [[ "$VISZ" == "CM" ]];
+	then
+		Stampa " 1255. mzfr/gtfo" "1256. nccgroup/GTFOBLookup"
+		echo "$SEP"
+	fi
+	echo "$CCN"" CN. GVM"
+	if [[ "$VISZ" == "CN" ]];
+	then
+		Stampa " 1251. greenbone/gsa" "1257. greenbone/gvmd"
+		echo "$SEP"
+	fi
+	echo "$CCO"" CO. HARDWARE"
+	if [[ "$VISZ" == "CO" ]];
+	then
+		Stampa " 2458. samyk/glitchsink" "1526. iamckn/mousejack_transmit"
+		echo "$SEP"
+	fi
+	echo "$CCP"" CP. HASH"
+	if [[ "$VISZ" == "CP" ]];
+	then
+		Stampa " 2260. cube0x0/HashSpray.py" "2446. MichaelDim02/houndsniff" "1274. iagox86/hash_extender"
+		Stampa " 1275. blackploit/hash-identifier" "1281. rurapenthe/hashfind" "1282. psypanda/hashID"
+		Stampa " 1283. bwall/HashPump" "1284. SmeegeSec/HashTag"
+		echo "$SEP"
+	fi
+	echo "$CCQ"" CQ. HDCP"
+	if [[ "$VISZ" == "CQ" ]];
+	then
+		Stampa " 1291. rjw57/hdcp-genkey"
+		echo "$SEP"
+	fi
+	echo "$CCR"" CR. HEAP"
+	if [[ "$VISZ" == "CR" ]];
+	then
+		Stampa " 2484. gand3lf/heappy"
+		echo "$SEP"
+	fi
+	echo "$CCS"" CS. HID"
+	if [[ "$VISZ" == "CS" ]];
+	then
+		Stampa " 1396. samratashok/Kautilya"
+		echo "$SEP"
+	fi
+	echo "$CCT"" CT. HIKVISION"
+	if [[ "$VISZ" == "CF" ]];
+	then
+		Stampa " 1298. 4n4nk3/HikPwn"
+		echo "$SEP"
+	fi
+	echo "$CCU"" CU. HOOKING - HIJACKING - INJECTION"
+	if [[ "$VISZ" == "CU" ]];
+	then
+		Stampa " 140. zznop/drow" "173. J3wker/DLLicous-MaliciousDLL" "185. cybercitizen7/Ps1jacker"
+		Stampa " 196. thelinuxchoice/spyeye" "353. ujjwal96/njaXt" "354. toxic-ig/SQL-XSS"
+		Stampa " 355. swisskyrepo/SSRFmap" "453. zt2/sqli-hunter" "467. JohnTroony/Blisqy"
+		Stampa " 518. chinarulezzz/pixload/bmp" "519. chinarulezzz/pixload/gif" "520. chinarulezzz/pixload/jpg"
+		Stampa " 521. chinarulezzz/pixload/png" "522. chinarulezzz/pixload/webp" "569. commixproject/commix"
+		Stampa " 676. rudSarkar/crlf-injector" "765. infobyte/evilgrade" "802. lanjelot/albatar"
+		Stampa " 870. neohapsis/bbqsql" "889. nbshelton/bitdump" "895. libeclipse/blind-sql-bitshifting"
+		Stampa " 896. missDronio/blindy" "917. enjoiz/BSQLinjector" "1120. cr0hn/enteletaor"
+		Stampa " 1020. BlackArch/darkmysqli" "1032. UndeadSec/Debinject" "2298. the-robot/sqliv"
+		Stampa " 2536. dlegs/php-jpeg-injector" "1310. PaulSec/HQLmap" "1334. jklmnn/imagejs"
+		Stampa " 1383. ron190/jsql-injection" "1419. sduverger/ld-shatner" "1450. gaffe23/linux-inject"
+		Stampa " 1480. z0noxz/mando.me" "1524. kevinkoo001/MotS"
+		echo "$SEP"
+	fi
+	echo "$CCV"" CV. HTTP - HTTP/2"
+	if [[ "$VISZ" == "CV" ]];
+	then
+		Stampa " 1260. summerwind/h2spec" "1313. lijiejie/htpwdScan" "1418. wireghoul/lbmap"
+		Stampa " 1519. RedTeamPentesting/monsoon"
+		echo "$SEP"
+	fi
+	echo "$CCW"" CW. IIS"
+	if [[ "$VISZ" == "CW" ]];
+	then
+		Stampa " 22. 0x09AL/IIS-Raid" "23. thelinuxchoice/evilreg" "24. thelinuxchoice/eviloffice"
+		Stampa " 25. thelinuxchoice/evildll" "158. gehaxelt/Python-dsstore" "250. edwardz246003/IIS_exploit"
+		Stampa " 251. irsdl/IIS-ShortName-Scanner" "2272. srnframe/eviloffice" "2273. 8L4NK/evilreg"
+		Stampa " 2275. CrackerCat/evildll" "1331. lijiejie/IIS_shortname_Scanner"
+		echo "$SEP"
+	fi
+	echo "$CCX"" CX. IKE"
+	if [[ "$VISZ" == "CX" ]];
+	then
+		Stampa " 526. 0x90/vpn-arsenal" "726. SpiderLabs/ikeforce" "727. royhills/ike-scan"
+		echo "$SEP"
+	fi
+	echo "$CCY"" CY. IMAP"
+	if [[ "$VISZ" == "CY" ]];
+	then
+		Stampa " 204. byt3bl33d3r/SprayingToolkit" "205. mrexodia/haxxmap" "207. iomoath/IMAP-Cracker"
+		Stampa " 2379. kurobeats/fimap"
+		echo "$SEP"
+	fi
+	echo "$CCZ"" CZ. IMSI"
+	if [[ "$VISZ" == "CY" ]];
+	then
+		Stampa " 387. Oros42/IMSI-catcher" "386. sharyer/GSMEvil/ImsiEvil"
+		echo "$SEP"
+	fi
+	echo "$CDA"" DA. iOS"
+	if [[ "$VISZ" == "DA" ]];
+	then
+		Stampa " 360. tokyoneon/Arcane" "442. Flo354/iOSForensic" "443. as0ler/iphone-dataprotection"
+		Stampa " 444. jantrim/iosbackupexaminer" "666. yuejd/ios_Restriction_PassCode_Crack---Python-version"
+		Stampa " 864. ChiChou/bagbak" "2286. seemoo-lab/toothpicker" "2308. RealityNet/ios_triage"
+		Stampa " 2309. abrignoni/iLEAPP" "1194. AloneMonkey/frida-ios-dump"
+		echo "$SEP"
+	fi
+	echo "$CDB"" DB. IoT"
+	if [[ "$VISZ" == "DB" ]];
+	then
+		Stampa " 748. SafeBreach-Labs/SirepRAT" "1302. ElevenPaths/HomePWN"
+		echo "$SEP"
+	fi
+	echo "$CDC"" DC. IPCAM - DVR"
+	if [[ "$VISZ" == "DC" ]];
+	then
+		Stampa " 398. CCrashBandicot/IPCam" "399. nathan242/ipcam-cctv" "400. Benehiko/GoNetworkCameraScanner"
+		Stampa " 401. vanpersiexp/expcamera" "656. spicesouls/reosploit" "929. Ullaakut/cameradar"
+		Stampa " 2485. EntySec/CamRaptor" "2486. AngelSecurityTeam/Cam-Hackers" "1395. woj-ciech/kamerka"
+		echo "$SEP"
+	fi
+	echo "$CDD"" DD. IPMI"
+	if [[ "$VISZ" == "DD" ]];
+	then
+		Stampa " 1356. AnarchyAngel/IPMIPWN"
+		echo "$SEP"
+	fi
+	echo "$CDE"" DE. IRC"
+	if [[ "$VISZ" == "DE" ]];
+	then
+		Stampa " 1362. bwall/ircsnapshot"
+		echo "$SEP"
+	fi
+	echo "$CDF"" DF. ISCSI"
+	if [[ "$VISZ" == "DF" ]];
+	then
+		Stampa " 2303. bitvijays/Pentest-Scripts/isciadm" "2304. open-iscsi/open-iscsi"
+		echo "$SEP"
+	fi
+	echo "$CDG"" DG. iTUNES"
+	if [[ "$VISZ" == "DG" ]];
+	then
+		Stampa " 665. jos666/itunes_hack"
+		echo "$SEP"
+	fi
+	echo "$CDH"" DH. JAVA"
+	if [[ "$VISZ" == "DH" ]];
+	then
+		Stampa " 227. pxb1988/dex2jar" "346. benf/cfr" "356. java-decompiler/jd-gui"
+		Stampa " 2276. qtc-de/remote-method-guesser" "1372. frohoff/jdeserialize"
+		echo "$SEP"
+	fi
+	echo "$CDI"" DI. JBOSS"
+	if [[ "$VISZ" == "DI" ]];
+	then
+		Stampa " 1370. SpiderLabs/jboss-autopwn" "1375. joaomatosf/jexboss"
+		echo "$SEP"
+	fi
+	echo "$CDJ"" DJ. JENKINS"
+	if [[ "$VISZ" == "DJ" ]];
+	then
+		Stampa " 356. gquere/pwn_jenkins"
+		echo "$SEP"
+	fi
+	echo "$CDK"" DK. JOOMLA"
+	if [[ "$VISZ" == "DK" ]];
+	then
+		Stampa " 2335. oppsec/juumla" "1376. black-hawk-97/jooforce"
+		echo "$SEP"
+	fi
+	echo "$CDL"" DL. JWT"
+	if [[ "$VISZ" == "DL" ]];
+	then
+		Stampa " 1389. brendan-rius/c-jwt-cracker" "1390. ticarpi/jwt_tool" "1391. aress31/jwtcat"
+		Stampa " 1542. mBouamama/MyJWT"
+		echo "$SEP"
+	fi
+	echo "$CDM"" DM. KERBEROS"
+	if [[ "$VISZ" == "DM" ]];
+	then
+		Stampa " 3. ropnop/kerbrute" "26. TarlogicSecurity/kerbrute" "5. CroweCybersecurity/ad-ldap-enum"
+		Stampa " 6. proabiral/inception" "362. nidem/kerberoast" "516. NotMedic/NetNTLMtoSilverTicket/dementor"
+		Stampa " 1409. dirkjanm/krbrelayx"
+		echo "$SEP"
+	fi
+	echo "$CDN"" DN. KNX"
+	if [[ "$VISZ" == "DN" ]];
+	then
+		Stampa " 1408. ernw/knxmap"
+		echo "$SEP"
+	fi
+	echo "$CDO"" DO. KUBERNETES"
+	if [[ "$VISZ" == "DO" ]];
+	then
+		Stampa " 374. liggitt/audit2rbac" "375. mhausenblas/kaput" "647. vchinnipilli/kubestrike"
+		Stampa " 648. cyberark/KubiScan" "2395. swisskyrepo/PayloadsAllTheThings/Kubernetes"
+		Stampa " 2396. Shopify/kubeaudit" "2397. controlplaneio/kubesec" "2398. aquasecurity/kube-bench"
+		Stampa " 1410. aquasecurity/kube-hunter" "1411. averonesis/kubolt"
+		echo "$SEP"
+	fi
+	echo "$CDP"" DP. LDAP"
+	if [[ "$VISZ" == "DP" ]];
+	then
+		Stampa " 1. CasperGN/ActiveDirectoryEnumeration" "2. dirkjanm/ldapdomaindump" "4. ropnop/windapsearch"
+		Stampa " 64. dinigalab/ldapsearch" "84. 3rdDegree/dapper" "85. m8r0wn/ldap_search"
+		Stampa " 728. droope/ldap-brute" "2399. swisskyrepo/PayloadsAllTheThings/LDA_Injection/README"
+		Stampa " 1420. franc-pentest/ldeep"
+		echo "$SEP"
+	fi
+	echo "$CDQ"" DQ. LFI"
+	if [[ "$VISZ" == "DQ" ]];
+	then
+		Stampa " 1431. aepereyra/lfimap" "2614. kostas-pa/LFITester" "1430. OsandaMalith/LFiFreak"
+		Stampa " 1432. D35m0nd142/LFISuite" "1440. mzfr/liffy"
+		echo "$SEP"
+	fi
+	echo "$CDR"" DR. LTE"
+	if [[ "$VISZ" == "DR" ]];
+	then
+		Stampa " 1464. Evrytania/LTE-Cell-Scanner"
+		echo "$SEP"
+	fi
+	echo "$CDS"" DS. MACRO"
+	if [[ "$VISZ" == "DS" ]];
+	then
+		Stampa " 1468. infosecn1nja/MaliciousMacroMSBuild"
+		echo "$SEP"
+	fi
+	echo "$CDT"" DT. MAGENTO"
+	if [[ "$VISZ" == "DT" ]];
+	then
+		Stampa " 1471. steverobbins/magescan"
+		echo "$SEP"
+	fi
+	echo "$CDU"" DU. MAIL"
+	if [[ "$VISZ" == "DU" ]];
+	then
+		Stampa " 1262. khast3x/h8mail"
+		echo "$SEP"
+	fi
+	echo "$CDV"" DV. MALWARE"
+	if [[ "$VISZ" == "DV" ]];
+	then
+		Stampa " 407. avinashkranjan/Malware-with-Backdoor-and-Keylogger"
+		Stampa " 2567. 0xFreddox/KeyLogger-WebService" "2596. Revise7/ViperVenom" "1478. technoskald/maltrieve"
+		echo "$SEP"
+	fi
+	echo "$CDW"" DW. MEMCACHEDAEMON"
+	if [[ "$VISZ" == "DW" ]];
+	then
+		Stampa " 166. linsomniac/python-memcached"
+		echo "$SEP"
+	fi
+	echo "$CDX"" DX. MISC - FRAMEWORKS"
+	if [[ "$VISZ" == "DX" ]];
+	then
+		Stampa " 20. trustedsec scripts" "21. Hood3dRob1n scripts" "33. fox-it/BloodHound"
+		Stampa " 67. byt3bl33d3r/CrackMapExec" "52. tismayil/ohmybackup" "40. SecureAuthCorp/impacket"
+		Stampa " 141. pry0cc/axiom" "7. dark-warlord14/ffufplus" "45. porterhau5/BloodHound-Owned"
+		Stampa " 90. jivoi/pentest/tools" "186. Manisso/fsociety" "228. koutto/jok3r"
+		Stampa " 244. s0md3v/Striker" "253. b3-v3r/Hunner" "254. PowerScript/KatanaFramework"
+		Stampa " 255. unkn0wnh4ckr/hackers-tool-kit" "256. santatic/web2attack" "257. andyvaikunth/roxysploit"
+		Stampa " 258. x3omdax/PenBox" "259. dhondta/dronesploit" "282. m4n3dw0lf/pythem"
+		Stampa " 284. brutemap-dev/brutemap" "288. dark-lbp/isf" "289. onccgroup/redsnarf"
+		Stampa " 296. Z4nzu/hackingtool" "304. GitHackTools/BruteDum/brutedum" "1080. ucsb-seclab/dr_checker"
+		Stampa " 310. future-architect/vuls" "311. ethicalhackerproject/TaiPan" "319. marcrowProject/Bramble"
+		Stampa " 320. stevemcilwain/quiver" "322. abdulr7mann/hackerEnv" "2391. ztgrace/mole"
+		Stampa " 392. zerosum0x0/koadic" "403. Screetsec/TheFatRat" "2250. its-a-feature/Mythic"
+		Stampa " 408. AdrianVollmer/PowerHub" "439. DarkSecDevelopers/HiddenEye" "481. 0xInfection/TIDoS-Framework"
+		Stampa " 485. r3dxpl0it/TheXFramework" "488. Taguar258/Raven-Storm" "514. maxlandon/wiregost"
+		Stampa " 523. nerodtm/ReconCobra---Complete-Automated-Pentest-Framework-For-Information-Gatheringt"
+		Stampa " 527. Moham3dRiahi/XAttacker" "529. riusksk/StrutScan" "530. AlisamTechnology/ATSCAN"
+		Stampa " 554. FluxionNetwork/fluxion" "557. knassar702/scant3r" "567. Leviathan36/kaboom"
+		Stampa " 568. archerysec/archerysec" "579. AnonymousAt3/cybermap" "604. qsecure-labs/overlord"
+		Stampa " 606. Chudry/Xerror" "616. rajkumardusad/Tool-X" "626. GoVanguard/legion"
+		Stampa " 640. KALILINUXTRICKSYT/easysploit" "650. edoardottt/scilla" "742. rajkumardusad/onex"
+		Stampa " 761. toniblyx/prowler" "766. helich0pper/Karkinos" "770. jaeles-project/jaeles"
+		Stampa " 775. aaaguirrep/offensive-docker" "818. dpnishant/appmon" "842. m4ll0k/AutoNSE"
+		Stampa " 843. nccgroup/autopwn" "863. ThunderGunExpress/BADministration" "1597. D4Vinci/One-Lin3r"
+		Stampa " 888. sensepost/birp" "890. sepehrdaddev/blackbox" "900. darryllane/Bluto"
+		Stampa " 2243. CoolHandSquid/TireFire" "907. zcutlip/bowcaster" "909. gabemarshall/Brosec"
+		Stampa " 951. MITRECND/chopshop" "974. hatRiot/clusterd" "494. optiv/ScareCrow"
+		Stampa " 993. Hack-Hut/CrabStick" "1015. medbenali/CyberScan" "1022. M4cs/DarkSpiritz"
+		Stampa " 2288. thehackingsage/hacktronian" "2295. beefproject/beef" "1049. DidierStevens/DidierStevensSuite"
+		Stampa " 1079. maxousc59/Blue-Sky-Information-Security" "1074. AeonDave/doork" "1082. screetsec/Dracnmap"
+		Stampa " 1119. BC-SECURITY/Empire" "2299. dr-3am/M-Evil" "2317. mdsecactivebreach/SharpShooter"
+		Stampa " 2327. spicesouls/spicescript" "2328. spicesouls/spicescript2" "2329. CMEPW/Smersh"
+		Stampa " 2342. guardicore/monkey" "2347. sidaf/homebrew-pentest" "2364. 1N3/BlackWidow"
+		Stampa " 2365. mikesplain/openvas-docker" "2377. programmingAthlete/BruteSniffing_Fisher"
+		Stampa " 2381. andrew-d/static-binaries/linux/x86_64" "2382. andrew-d/static-binaries/linux/x86"
+		Stampa " 2383. andrew-d/static-binaries/linux/arm" "2400. r3curs1v3-pr0xy/vajra" "1125. gteissier/erl-matter"
+		Stampa " 2445. ra1nb0rn/avain" "1162. chrispetrou/FDsploit" "1184. thewhiteh4t/flashsploit"
+		Stampa " 1174. 1N3/findsploit" "1195. AndroidTamer/frida-push" "1228. OWASP/glue"
+		Stampa " 1233. golismero/golismero" "1234. anarcoder/google_explorer" "1236. 1N3/Goohak"
+		Stampa " 2474. bahaabdelwahed/killshot" "1263. portantier/habu" "1267. 4shadoww/hakkuframework"
+		Stampa " 2514. P1kachu/v0lt" "651. leebaird/discover" "2550. s1l3nt78/sifter"
+		Stampa " 1296. dstotijn/hetty" "2588. aufzayed/HydraRecon" "2592. Malam-X/DragonMS"
+		Stampa " 2605. FunnyWolf/Viper" "2617. hpthreatresearch/subcrawl" "1428. leviathan-framework/leviathan"
+		Stampa " 2620. AsjadOooO/Zero-attacker" "1460. api0cradle/LOLBAS" "1465. lateralblast/lunar"
+		Stampa " 1484. 1N3/Sn1per"
+		echo "$SEP"
+	fi
+	echo "$CDY"" DY. MITM - SNIFFING"
+	if [[ "$VISZ" == "DY" ]];
+	then
+		Stampa " 249. kgretzky/evilginx2" "331. mkdirlove/SSLSTRIP-NG/sslstrip-ng" "541. wifiphisher/wifiphisher"
+		Stampa " 764. Esser420/EvilTwinFramework" "801. Josue87/Airopy" "872. secretsquirrel/BDFProxy"
+		Stampa " 2240. kpcyrd/sniffglue" "934. MobSF/CapFuzz" "2245. kismetwireless/kismet"
+		Stampa " 999. codepr/creak" "38. secdev/scapy" "1126. DoubleThreatSecurity/Espionage"
+		Stampa " 1109. s0lst1c3/eaphammer" "2384. SpiderLabs/Responder" "359. lgandx/Responder"
+		Stampa " 2385. hausec/ProxyLogon" "2435. eslam3kl/PackSniff" "1126. DoubleThreatSecurity/Espionage"
+		Stampa " 1130. bitbrute/evillimiter" "1133. Exa-Networks/exabgp" "1153. Crypt0s/FakeDns"
+		Stampa " 1154. fireeye/flare-fakenet-ng" "1185. 7h3rAm/flowinspect" "1204. michaeltelford/gatecrasher"
+		Stampa " 1266. haka-security/haka" "1277. staz0t/hashcatch" "1288. ZerBea/hcxdumptool"
+		Stampa " 1292. ApertureLabsLtd/hdmi-sniff" "1305. xme/hoover" "1308. schollz/howmanypeoplearearound"
+		Stampa " 1322. nbuechler/hungry-interceptor" "1325. xiam/hyperfox" "1364. juphoff/issniff"
+		Stampa " 1386. rixed/junkie" "1416. DanMcInerney/LANs.py" "1479. sensepost/mana"
+		Stampa " 1510. blackeko/mitm" "1511. jrmdev/mitm_relay" "1512. dirkjanm/mitm6"
+		Stampa " 1513. xdavidhu/mitmAP" "1514. husam212/MITMer" "1515. byt3bl33d3r/MITMf"
+		Stampa " 1517. arkime/arkime"
+		echo "$SEP"
+	fi
+	echo "$CDZ"" DZ. MOBILE"
+	if [[ "$VISZ" == "DZ" ]];
+	then
+		Stampa " 2344. sensepost/objection" "2593. tegal1337/CiLocks"
+		echo "$SEP"
+	fi
+	echo "$CEA"" EA. MODEM"
+	if [[ "$VISZ" == "EA" ]];
+	then
+		Stampa " 1509. kamalmostafa/minimodem"
+		echo "$SEP"
+	fi
+	echo "$CEB"" EB. MONGODB - NOSQL"
+	if [[ "$VISZ" == "EB" ]];
+	then
+		Stampa " 230. youngyangyang04/NoSQLAttack" "231. codingo/NoSQLMap" "232. torque59/Nosql-Exploitation-Framework"
+		Stampa " 1518. stampery/mongoaudit"
+		echo "$SEP"
+	fi
+	echo "$CEC"" EC. MRT"
+	if [[ "$VISZ" == "EC" ]];
+	then
+		Stampa " 1529. t2mune/mrtparse"
+		echo "$SEP"
+	fi
+	echo "$CED"" ED. MYSQL"
+	if [[ "$VISZ" == "ED" ]];
+	then
+		Stampa " 301. ufuksungu/MySqlBruteForce/mysql"
+		echo "$SEP"
+	fi
+	echo "$CEE"" EE. NAS"
+	if [[ "$VISZ" == "EE" ]];
+	then
+		Stampa " 402. TrustMe00/experience_synology_attack"
+		echo "$SEP"
+	fi
+	echo "$CEF"" EF. NETLOGON"
+	if [[ "$VISZ" == "EF" ]];
+	then
+		Stampa " 508. risksense/zerologon" "509. bb00/zer0dump" "510. VoidSec/CVE-2020-1472"
+		echo "$SEP"
+	fi
+	echo "$CEG"" EG. NETWORK - TCP - UDP"
+	if [[ "$VISZ" == "EG" ]];
+	then
+		Stampa " 2504. tomac/yersinia" "1527. CiscoCXSecurity/mptcp-abuse" "1543. mehrdadrad/mylg"
+		echo "$SEP"
+	fi
+	echo "$CEH"" EH. NGINX"
+	if [[ "$VISZ" == "EH" ]];
+	then
+		Stampa " 2461. stark0de/nginxpwner"
+		echo "$SEP"
+	fi
+	echo "$CEI"" EI. NSE"
+	if [[ "$VISZ" == "EI" ]];
+	then
+		Stampa " 2635. Diverto/nse-log4shell" "2636. psc4re/NSE-scripts" "2637. hackertarget/nmap-nse-scripts"
+		Stampa " 2638. hkm/nmap-nse-scripts" "2639. takeshixx/nmap-scripts" "2640. giterlizzi/nmap-log4shell"
+		Stampa " 2641. 4ARMED/nmap-nse-scripts"
+		echo "$SEP"
+	fi
+	echo "$CEJ"" EJ. NTP"
+	if [[ "$VISZ" == "EJ" ]];
+	then
+		Stampa " 178. PentesterES/Delorean"
+		echo "$SEP"
+	fi
+	echo "$CEK"" EK. OWA"
+	if [[ "$VISZ" == "EK" ]];
+	then
+		Stampa " 343. busterb/msmailprobe" "344. 0xZDH/o365spray" "345. gremwell/o365enum"
+		echo "$SEP"
+	fi
+	echo "$CEL"" EL. PASSWORD"
+	if [[ "$VISZ" == "EL" ]];
+	then
+		Stampa " 393. clr2of8/DPAT"
+		echo "$SEP"
+	fi
+	echo "$CEM"" EM. PAYLOAD"
+	if [[ "$VISZ" == "EM" ]];
+	then
+		Stampa " 1270. Rich5/Harness" "1295. EgeBalci/HERCULES" "1343. 4w4k3/Insanity-Framework"
+		Stampa " 2618. Deadpool2000/Paybag" "1412. sensepost/kwetza" "1530. g0tmi1k/mpc"
+		echo "$SEP"
+	fi
+	echo "$CEN"" EN. PDF"
+	if [[ "$VISZ" == "EN" ]];
+	then
+		Stampa " 46. thelinuxchoice/evilpdf" "47. robins/pdfcrack" "48. BroadbentT/PDF-CRACKER/pdf-cracker"
+		Stampa " 2274. superzerosec/evilpdf" "1333. coderofsalvation/imagegrep-bash"
+		echo "$SEP"
+	fi
+	echo "$CEO"" EO. PERSISTENCE"
+	if [[ "$VISZ" == "EO" ]];
+	then
+		Stampa " 2393. swisskyrepo/PayloadsAllTheThings/Methodology_and_Resources/Linux_-_Persistence"
+		echo "$SEP"
+	fi
+	echo "$CEP"" EP. PHISHING - SOCIAL ENGINEERING"
+	if [[ "$VISZ" == "EP" ]];
+	then
+		Stampa " 385. blark/cli-phisher" "412. kurogai/nero-phishing-server" "413. KnightSec-Official/Phlexish"
+		Stampa " 489. david3107/squatm3" "490. netevert/dnsmorph" "767. htr-tech/zphisher"
+		Stampa " 771. xxhax-team/vk-phishing" "937. ring0lab/catphish" "983. htr-tech/nexphisher"
+		Stampa " 2277. suljot/shellphish" "1004. ustayready/CredSniper" "2239. Pinperepette/Geotweet_GUI"
+		Stampa " 2340. Pinperepette/GeoTweet" "2343. UndeadSec/EvilURL" "2460. ultrasecurity/Storm-Breaker"
+		Stampa " 1239. gophish/gophish" "2524. tokyoneon/CredPhish/dns_server" "1294. ytisf/hemingway"
+		Stampa " 2621. sky9262/phishEye"
+		echo "$SEP"
+	fi
+	echo "$CEQ"" EQ. PHP"
+	if [[ "$VISZ" == "EQ" ]];
+	then
+		Stampa " 2247. ecriminal/phpvuln" "2248. ZaleHack/phpexploit"
+		echo "$SEP"
+	fi
+	echo "$CER"" ER. POST-EXPLOITATION"
+	if [[ "$VISZ" == "ER" ]];
+	then
+		Stampa " 2241. master-of-servers/mose"
+		echo "$SEP"
+	fi
+	echo "$CES"" ES. POSTGRESQL"
+	if [[ "$VISZ" == "ES" ]];
+	then
+		Stampa " 303. KTN1990/PostgreSQL--Attack-on-default-password-AUTOEXPLOITING-/DB"
+		echo "$SEP"
+	fi
+	echo "$CET"" ET. PRINTER"
+	if [[ "$VISZ" == "ET" ]];
+	then
+		Stampa " 639. RUB-NDS/PRET" "2603. BeetleChunks/SpoolSploit"
+		echo "$SEP"
+	fi
+	echo "$CEU"" EU. PRIVESC"
+	if [[ "$VISZ" == "EU" ]];
+	then
+		Stampa " 2394. swisskyrepo/PayloadsAllTheThings/Methodology_and_Resources/Linux-PrivilegeEscalation"
+		echo "$SEP"
+	fi
+	echo "$CEV"" EV. PROXY - REVERSE PROXY"
+	if [[ "$VISZ" == "EV" ]];
+	then
+		Stampa " 162. fozavci/viproy-VoIPkit" "610. audibleblink/doxycannon" "885. nccgroup/BinProxy"
+		Stampa " 1058. StalkR/dns-reverse-proxy" "1059. maurotfilho/dns-spoof" "1060. d4rkcat/dnsbrute"
+		Stampa " 1061. dmitescu/dnscobra" "1062. leonjza/dnsfilexfer" "2403. p3nt4/Invoke-SocksProxy/ReverseSocksProxyHandler"
+		Stampa " 1475. justmao945/mallory" "1538. muraenateam/muraena"
+		echo "$SEP"
+	fi
+	echo "$CEW"" EW. PRY"
+	if [[ "$VISZ" == "EW" ]];
+	then
+		Stampa " 743. deivid-rodriguez/pry-byebug"
+		echo "$SEP"
+	fi
+	echo "$CEX"" EX. PST"
+	if [[ "$VISZ" == "EX" ]];
+	then
+		Stampa " 2269. righettod/pst-digger"
+		echo "$SEP"
+	fi
+	echo "$CEY"" EY. QUERIES"
+	if [[ "$VISZ" == "EY" ]];
+	then
+		Stampa " 2253. CompassSecurity/BloodHoundQueries"
+		echo "$SEP"
+	fi
+	echo "$CEZ"" EZ. RABBITMQ"
+	if [[ "$VISZ" == "EZ" ]];
+	then
+		Stampa " 989. QKaiser/cottontail"
+		echo "$SEP"
+	fi
+	echo "$CFA"" FA. RADIO"
+	if [[ "$VISZ" == "FA" ]];
+	then
+		Stampa " 1244. bistromath/gr-air-modes" "1245. ptrkrysik/gr-gsm" "1246. drmpeg/gr-paint"
+		Stampa " 1265. mossmann/hackrf"
+		echo "$SEP"
+	fi
+	echo "$CFB"" FB. RAINBOW TABLE - PLAINMASTERKEYS"
+	if [[ "$VISZ" == "FB" ]];
+	then
+		Stampa " 260. clu8/RainbowTable" "261. zcdziura/leprechaun" "262. CyberKnight00/RainbowHash"
+		Stampa " 263. dgleebits/Double-Rainbow" "264. jtesta/rainbowcrackalack" "265. sepehrdaddev/hashcobra"
+		Stampa " 1289. ZerBea/hcxkeys"
+		echo "$SEP"
+	fi
+	echo "$CFC"" FC. RANSOMWARE"
+	if [[ "$VISZ" == "FC" ]];
+	then
+		Stampa "2497. leonv024/RAASNet"
+		echo "$SEP"
+	fi
+	echo "$CFD"" FD. RAR"
+	if [[ "$VISZ" == "FD" ]];
+	then
+		Stampa " 273. dunossauro/PyRarCrack/pyrarcrack"
+		echo "$SEP"
+	fi
+	echo "$CFE"" FE. RASPBERRY"
+	if [[ "$VISZ" == "FE" ]];
+	then
+		Stampa " 584. BusesCanFly/rpi-hunter"
+		echo "$SEP"
+	fi
+	echo "$CFF"" FF. RAT"
+	if [[ "$VISZ" == "FF" ]];
+	then
+		Stampa " 536. Pure-L0G1C/Loki" "2230. fadinglr/Parat" "2235. BenChaliah/Arbitrium-RAT"
+		Stampa " 2330. FrenchCisco/RATel" "2359. khaleds-brain/Bella" "2375. nathanlopez/Stitch"
+		echo "$SEP"
+	fi
+	echo "$CFG"" FG. RDP"
+	if [[ "$VISZ" == "FG" ]];
+	then
+		Stampa " 86. ekultek/bluekeep" "328. citronneur/rdpy" "329. aerissecure/rdpy"
+		Stampa " 330. fhirschmann/rdp" "452. Vulnerability-scanner/Lazy-RDP" "636. xFreed0m/RDPassSpray"
+		Stampa " 637. Viralmaniar/Remote-Desktop-Caching"
+		echo "$SEP"
+	fi
+	echo "$CFH"" FH. RECONIZING"
+	if [[ "$VISZ" == "FH" ]];
+	then
+		Stampa " 131. leobeosab/sharingan" "94. samhaxr/recox" "129. sowdust/ffff"
+		Stampa " 214. j3ssie/Osmedeus" "242. smicallef/spiderfoot" "308. yogeshojha/rengine"
+		Stampa " 390. lanmaster53/recon-ng" "391. methos2016/recon-ng" "501. LukaSikic/subzy"
+		Stampa " 556. skynet0x01/tugarecon" "594. r3vn/badKarma" "599. utkusen/urlhunter"
+		Stampa " 601. UnaPibaGeek/ctfr" "607. thewhiteh4t/seeker" "732. gotr00t0day/spyhunt"
+		Stampa " 768. capt-meelo/LazyRecon" "769. nahamsec/lazyrecon" "772. eslam3kl/3klCon"
+		Stampa " 2228. drsigned/sigurlx" "820. michenriksen/aquatone" "836. superhedgy/AttackSurfaceMapper"
+		Stampa " 844. Tib3rius/AutoRecon" "2236. six2dez/reconftw" "2244. yassineaboukir/Asnlookup"
+		Stampa " 1877. projectdiscovery/shuffledns" "1983. projectdiscovery/subfinder" "922. sham00n/buster"
+		Stampa " 2282. s0md3v/ReconDog" "998. Ganapati/Crawlic" "1024. upgoingstar/datasploit"
+		Stampa " 1122. Gilks/enumerid" "2405. c0dejump/HawkScan" "2431. heilla/SecurityTesting"
+		Stampa " 2433. eslam3kl/3klector" "2434. eslam3kl/Explorer" "1158. devanshbatham/FavFreak"
+		Stampa " 2606. sumo2001/Trishul" "1306. gabamnml/hoper" "1307. SpiderLabs/HostHunter"
+		Stampa " 473. woj-ciech/Kamerka-GUI" "1400. clirimemini/Keye" "1434. blindfuzzy/LHF"
+		echo "$SEP"
+	fi
+	echo "$CFI"" FI. REDIS"
+	if [[ "$VISZ" == "FI" ]];
+	then
+		Stampa " 759. Avinash-acid/Redis-Server-Exploit" "1264. Ridter/hackredis"
+		echo "$SEP"
+	fi
+	echo "$CFJ"" FJ. REST"
+	if [[ "$VISZ" == "FJ" ]];
+	then
+		Stampa " 832. flipkart-incubator/astra"
+		echo "$SEP"
+	fi
+	echo "$CFK"" FK. REVERSING"
+	if [[ "$VISZ" == "FK" ]];
+	then
+		Stampa " 361. yeggor/UEFI_RETool" "737. gotr00t0day/b1n4ryR3v3rs3" "866. programa-stic/barf-project"
+		Stampa " 1124. thorkill/eresi" "2349. 4w4k3/rePy2exe" "2390. nodauf/Girsh"
+		Stampa " 2408. mentebinaria/retoolkit" "1179. rampageX/firmware-mod-kit" "1193. OALabs/frida-extract"
+		Stampa " 1210. hugsy/gef" "1336. WerWolv/ImHex" "1388. katjahahn/JWScan"
+		echo "$SEP"
+	fi
+	echo "$CFL"" FL. REVSHELL"
+	if [[ "$VISZ" == "FL" ]];
+	then
+		Stampa " 515. 3v4Si0N/HTTP-revshell" "2321. shelld3v/JSshell" "2372. 0dayCTF/reverse-shell-generator"
+		Stampa " 2392. swisskyrepo/PayloadsAllTheThings/Methodology_and_Resources/Reverse_Shell_Cheatsheet"
+		Stampa " 2447. octetsplicer/LAZYPARIAH" "2456. GetRektBoy724/MeterPwrShell" "2608. lawndoc/mediator"
+		Stampa " 1328. inquisb/icmpsh"
+		echo "$SEP"
+	fi
+	echo "$CFM"" FM. RMI"
+	if [[ "$VISZ" == "FM" ]];
+	then
+		Stampa " 867. NickstaDB/BaRMIe"
+		echo "$SEP"
+	fi
+	echo "$CFN"" FN. ROGUE ACCESS POINT"
+	if [[ "$VISZ" == "FN" ]];
+	then
+		Stampa " 575. MS-WEB-BN/c41n"
+		echo "$SEP"
+	fi
+	echo "$CFO"" FO. ROOTKIT"
+	if [[ "$VISZ" == "FO" ]];
+	then
+		Stampa " 853. chokepoint/azazel"
+		echo "$SEP"
+	fi
+	echo "$CFP"" FP. ROUTERS"
+	if [[ "$VISZ" == "FP" ]];
+	then
+		Stampa " 145. threat9/routersploit" "2487. acecilia/OpenWRTInvasion" "1505. kost/mikrotik-npk"
+		Stampa " 1533. kkonradpl/mtscan"
+		echo "$SEP"
+	fi
+	echo "$CFQ"" FQ. RPC"
+	if [[ "$VISZ" == "FQ" ]];
+	then
+		Stampa " 233. aress31/xmlrpc-bruteforcer" "313. s4vitar/rpcenum" "570. hegusung/RPCScan"
+		echo "$SEP"
+	fi
+	echo "$CFR"" FR. RSA"
+	if [[ "$VISZ" == "FR" ]];
+	then
+		Stampa " 57. Ganapati/RsaCtfTool" "69. zweisamkeit/RSHack" "79. pablocelayes/rsa-wiener-attack"
+		echo "$SEP"
+	fi
+	echo "$CFS"" FS. S7"
+	if [[ "$VISZ" == "FS" ]];
+	then
+		Stampa " 2358. klsecservices/s7scan" "2360. hslatman/awesome-industrial-control-system-security/s7-cracker"
+		Stampa " 2361. hslatman/awesome-industrial-control-system-security/s7-brute-offline"
+		echo "$SEP"
+	fi
+	echo "$CFT"" FT. SCANNING"
+	if [[ "$VISZ" == "FT" ]];
+	then
+		Stampa " 188. GrrrDog/FlashAV" "191. m57/piescan" "192. projectdiscovery/naabu"
+		Stampa " 193. ahervias77/portscanner" "206. lanjelot/patator" "208. gh0stwizard/p5-udp-scanner"
+		Stampa " 210. liamg/furious" "211. anvie/port-scanner" "212. anrosent/portscan"
+		Stampa " 235. shodansploit/shodansploit" "236. ninj4c0d3r/ShodanCli" "2246. souravbaghz/RadareEye"
+		Stampa " 266. google/tsunami-security-scanner" "267. deepsecurity-pe/GoGhost" "279. aabeling/portscan"
+		Stampa " 299. brandonskerritt/RustScan" "363. projectdiscovery/nuclei" "448. m0nad/HellRaiser"
+		Stampa " 449. RustScan/RustScan" "450. IFGHou/wapiti" "454. MrSqar-Ye/BadMod"
+		Stampa " 455. future-architect/vuls" "456. almandin/fuxploider" "457. Moham3dRiahi/XAttacker"
+		Stampa " 458. s0md3v/Corsy" "459. skavngr/rapidscan" "460. s0md3v/Silver"
+		Stampa " 534. TheNittam/RPOscanner" "538. smackerdodi/CVE-bruter" "546. tstillz/webshell-scan"
+		Stampa " 547. jofpin/fuckshell" "548. followboy1999/webshell-scanner" "549. emposha/Shell-Detector"
+		Stampa " 627. w-digital-scanner/w13scan" "641. m4ll0k/Konan" "741. PaytmLabs/nerve"
+		Stampa " 835. AlisamTechnology/ATSCAN-V3.1" "871. lijiejie/bbscan" "873. invictus1306/beebug"
+		Stampa " 927. auraltension/c5scan" "943. ztgrace/changeme" "1097. stamparm/DSXS"
+		Stampa " 1092. stamparm/DSFS" "1094. stamparm/DSJS" "1095. stamparm/DSSS"
+		Stampa " 2366. lengjibo/dedecmscan" "2426. sensepost/glypeahead" "2430. Checkmarx/kics"
+		Stampa " 2367. k8gege/K8PortScan" "2368. k8gege/K8tools" "2369. xs25cn/scanPort"
+		Stampa " 2436. eslam3kl/NetScanner" "1127. peterpt/eternal_scanner" "1136. NullHypothesis/exitmap"
+		Stampa " 1167. sfan5/fi6s" "2499. v-byte-cpu/sx" "2527. kleiton0x00/ppmap"
+		Stampa " 2541. avilum/portsscan" "2568. Abhay2342/Network-Scanner" "2569. xadhrit/d9scan"
+		Stampa " 2607. idealeer/xmap" "2613. RedSection/jspanda" "1427. onthefrontline/LetMeFuckIt-Scanner"
+		Stampa " 2623. michelin/ChopChop" "1485. robertdavidgraham/masscan" "1486. trevordavenport/MasscanAutomation"
+		echo "$SEP"
+	fi
+	echo "$CFU"" FU. SHELL"
+	if [[ "$VISZ" == "FU" ]];
+	then
+		Stampa " 70. sameera-madushan/Print-My-Shell" "71. flozz/p0wny-shell/shell" "87. rastating/slae"
+		Stampa " 95. TBGSecurity/splunk_shells" "281. berkgoksel/SierraTwo" "295. wintrmvte/Shellab"
+		Stampa " 348. brimstone/go-shellcode" "349. TheBinitGhimire/Web-Shells/smevk" "432. offensive-security/exploitdb/shellcodes/android"
+		Stampa " 433. offensive-security/exploitdb/shellcodes/linux" "434. offensive-security/exploitdb/shellcodes/linux_x86-64"
+		Stampa " 435. offensive-security/exploitdb/shellcodes/linux_x86"
+		Stampa " 436. offensive-security/exploitdb/shellcodes/windows"
+		Stampa " 437. offensive-security/exploitdb/shellcodes/windows_x86-64"
+		Stampa " 438. offensive-security/exploitdb/shellcodes/windows_x86"
+		Stampa " 654. Rover141/Shellter" "825. alexpark07/ARMSCGen" "136. b1tg/rust-windows-shellcode"
+		Stampa " 2320. Den1al/JSShell" "2333. packetstormsecurity/aesshell" "2489. baktoft/yaps"
+		Stampa " 2604. d4t4s3c/Shelly" "1380. s0md3v/JShell"
+		echo "$SEP"
+	fi
+	echo "$CFV"" FV. SHELLSHOCK"
+	if [[ "$VISZ" == "FV" ]];
+	then
+		Stampa " 2279. MrCl0wnLab/ShellShockHunter" "2280. DanMcInerney/shellshock-hunter"
+		echo "$SEP"
+	fi
+	echo "$CFW"" FW. SIP"
+	if [[ "$VISZ" == "FW" ]];
+	then
+		Stampa " 1363. halitalptekin/isip" "1528. meliht/mr.sip"
+		echo "$SEP"
+	fi
+	echo "$CFX"" FX. SMB"
+	if [[ "$VISZ" == "FX" ]];
+	then
+		Stampa " 68. m4ll0k/SMBrute" "58. mvelazc0/Invoke-SMBLogin/smblogin" "65. ShawnDEvans/smbmap"
+		Stampa " 157. 0v3rride/Enum4LinuxPy" "8. ZecOps/CVE-2020-0796-RCE-POC" "91. NickSanzotta/smbShakedown"
+		Stampa " 92. quickbreach/SMBetray" "93. aress31/smbaudit" "312. T-S-A/smbspider"
+		Stampa " 333. CoreSecurity/impacket/smbserver" "578. CiscoCXSecurity/creddump7" "2249. deepsecurity-pe/GoGhost"
+		Stampa " 2284. deepsecurity-pe/GoGhost_amd64" "2285. deepsecurity-pe/GoGhost" "1127. peterpt/eternal_scanner"
+		Stampa " 2312. nccgroup/keimpx" "2332. portcullis/acccheck"
+		echo "$SEP"
+	fi
+	echo "$CFY"" FY. SMS"
+	if [[ "$VISZ" == "FY" ]];
+	then
+		Stampa " 388. sharyer/GSMEvil/SmsEvil"
+		echo "$SEP"
+	fi
+	echo "$CFZ"" FZ. SMTP"
+	if [[ "$VISZ" == "FZ" ]];
+	then
+		Stampa " 418. pentestmonkey/smtp-user-enum" "419. altjx/ipwn/iSMTP" "421. tango-j/SMTP-Open-Relay-Attack-Test-Tool"
+		Stampa " 422. crazywifi/SMTP_Relay_Phisher" "423. NickSanzotta/smbShakedown" "424. balaganeshgbhackers/Emailspoofing"
+		Stampa " 425. RobinMeis/MITMsmtp" "426. mikechabot/smtp-email-spoofer-py" "525. jetmore/swaks"
+		Stampa " 2305. aron-tn/Smtp-cracker" "2553. mrlew1s/BrokenSMTP" "2596. DrPython3/MailRipV2"
+		echo "$SEP"
+	fi
+	echo "$CGA"" GA. SNMP"
+	if [[ "$VISZ" == "GA" ]];
+	then
+		Stampa " 74. hatlord/snmpwn" "75. etingof/pysnmp" "77. InteliSecureLabs/SNMPPLUX"
+		Stampa " 78. cysboy/SnmpCrack" "710. LukasRypl/snmp-fuzzer" "957. nccgroup/cisco-snmp-enumeration"
+		Stampa " 958. nccgroup/cisco-snmp-slap"
+		echo "$SEP"
+	fi
+	echo "$CGB"" GB. SOCIAL MEDIA"
+	if [[ "$VISZ" == "GB" ]];
+	then
+		Stampa " 427. yasserjanah/ZeS0MeBr" "551. Cyb0r9/SocialBox" "642. th3unkn0n/facebash-termux"
+		echo "$SEP"
+	fi
+	echo "$CGC"" GC. SPOOFING"
+	if [[ "$VISZ" == "GC" ]];
+	then
+		Stampa " 290. initstring/evil-ssdp" "291. KALILINUXTRICKSYT/easymacchanger" "292. sbdchd/macchanger"
+		Stampa " 2438. eslam3kl/MAC_Changer" "2437. eslam3kl/ARP-Spoofer"
+		echo "$SEP"
+	fi
+	echo "$CGD"" GD. SQL"
+	if [[ "$VISZ" == "GD" ]];
+	then
+		Stampa " 159. ccpgames/sqlcmd" "160. sqlmapproject/sqlmap"
+		Stampa " 161. payloadbox/sql-injection-payload-list" "347. kayak/pypika" "713. GDSSecurity/SQLBrute"
+		echo "$SEP"
+	fi
+	echo "$CGE"" GE. SS7"
+	if [[ "$VISZ" == "GA" ]];
+	then
+		Stampa " 384. ernw/ss7MAPer"
+		echo "$SEP"
+	fi
+	echo "$CGF"" GF. SSH"
+	if [[ "$VISZ" == "GF" ]];
+	then
+		Stampa " 59. R4stl1n/SSH-Brute-Forcer" "152. matricali/brutekrag" "153. c0r3dump3d/osueta"
+		Stampa " 155. W-GOULD/ssh-user-enumeration/ssh-check-username" "156. nccgroup/ssh_user_enum/ssh_enum"
+		Stampa " 297. OffXec/fastssh" "368. Neetx/sshdodge" "369. trustedsec/meterssh"
+		Stampa " 370. norksec/torcrack" "372. aryanrtm/sshBrutal" "714. wireghoul/sploit-dev/sshfuzz"
+		Stampa " 738. gotr00t0day/SSHbrute" "876. chokepoint/Beleth" "2472. EntySec/Shreder"
+		Stampa " 2490. k4yt3x/orbitaldump"
+		echo "$SEP"
+	fi
+	echo "$CGG"" GG. SSL"
+	if [[ "$VISZ" == "GG" ]];
+	then
+		Stampa " 190. moxie0/sslstrip" "194. indutny/heartbleed" "195. roflcer/heartbleed-vuln/attack"
+		Stampa " 298. rbsec/sslscan" "790. hahwul/a2sv" "954. mozilla/cipherscan"
+		Stampa " 1293. robertdavidgraham/heartleech"
+		echo "$SEP"
+	fi
+	echo "$CGH"" GH. STEGANALYSIS"
+	if [[ "$VISZ" == "GH" ]];
+	then
+		Stampa " 270. Va5c0/Steghide-Brute-Force-Tool/steg_brute" "271. daniellerch/aletheia"
+		Stampa " 272. Diefunction/stegbrute" "603. Paradoxis/StegCracker"
+		echo "$SEP"
+	fi
+	echo "$CGI"" GI. TACACS"
+	if [[ "$VISZ" == "GI" ]];
+	then
+		Stampa " 187. GrrrDog/TacoTaco"
+		echo "$SEP"
+	fi
+	echo "$CGJ"" GJ. TERMUX"
+	if [[ "$VISZ" == "GJ" ]];
+	then
+		Stampa " 615. install metasploit first method" "622. install metasploit second method" "624. install sudo (no rooting phone)"
+		Stampa " 633. TermuxHacking000/distrux" "634. TermuxHacking000/SysO-Termux" "635. TermuxHacking000/PortmapSploit"
+		Stampa " 776. cSploit/android" "777. routerkeygen/routerkeygenAndroid" "782. intercepter-ng"
+		Stampa " 2234. OnionApps/Chat.onion" "2254. LinkClink/Rainbow-Wifi-Hack-Utility-Android" "2255. trevatk/Wifi-Cracker"
+		Stampa " 2256. trevatk/Wifi-Cracker" "2257. faizann24/wifi-bruteforcer-fsecurify" "2258. faizann24/wifi-bruteforcer-fsecurify"
+		Stampa " 2412. urbanadventurer/Android-PIN-Bruteforce" "2450. modded-ubuntu/modded-ubuntu"
+		echo "$SEP"
+	fi
+	echo "$CGK"" GK. TFTP"
+	if [[ "$VISZ" == "GK" ]];
+	then
+		Stampa " 719. nullsecuritynet/tftp-fuzz" "1199. RubenRocha/ftpscout"
+		echo "$SEP"
+	fi
+	echo "$CGL"" GL. TLS"
+	if [[ "$VISZ" == "GL" ]];
+	then
+		Stampa " 189. GrrrDog/sni_bruter" "428. tintinweb/striptls" "2265. tlsfuzzer/tlsfuzzer"
+		Stampa " 2270. righettod/tls-cert-discovery"
+		echo "$SEP"
+	fi
+	echo "$CGM"" GM. TONES"
+	if [[ "$VISZ" == "GM" ]];
+	then
+		Stampa " 240. luickk/gan-audio-generator" "241. rzbrk/mfv"
+		echo "$SEP"
+	fi
+	echo "$CGN"" GN. TROJANS"
+	if [[ "$VISZ" == "GN" ]];
+	then
+		Stampa " 1404. ChaitanyaHaritash/kimi"
+		echo "$SEP"
+	fi
+	echo "$CGO"" GO. TRUECRYPT"
+	if [[ "$VISZ" == "GO" ]];
+	then
+		Stampa " 321. lvaccaro/truecrack"
+		echo "$SEP"
+	fi
+	echo "$CGP"" GP. TUNNELLING"
+	if [[ "$VISZ" == "GP" ]];
+	then
+		Stampa " 60. yarrick/iodine" "61. T3rry7f/ICMPTunnel/IcmpTunnel_S" "62. blackarrowsec/pivotnacci"
+		Stampa " 63. rofl0r/microsocks" "66. cgrates/rpcclient" "143. sysdream/ligolo"
+		Stampa " 986. patpadgett/corkscrew" "1010. chokepoint/CryptHook" "1176. BishopFox/firecat"
+		Stampa " 1191. stealth/fraud-bridge" "1319. larsbrinkhoff/httptunnel" "1354. takeshixx/ip-https-tools"
+		Stampa " 1397. xtaci/kcptun"
+		echo "$SEP"
+	fi
+	echo "$CGQ"" GQ. UPNP"
+	if [[ "$VISZ" == "GQ" ]];
+	then
+		Stampa " 146. tenable/upnp_info" "2264. dhishan/UPnP-Hack" "1128. google.com/miranda-upnp"
+		Stampa " 2271. dc414/Upnp-Exploiter"
+		echo "$SEP"
+	fi
+	echo "$CGR"" GR. USB"
+	if [[ "$VISZ" == "GR" ]];
+	then
+		Stampa " 2231. nccgroup/umap2" "2232. usb-tools/ViewSB" "2233. Merimetso-Code/USB-Hacking/usbfind" "2459. hak5darren/USB-Rubber-Ducky"
+		echo "$SEP"
+	fi
+	echo "$CGS"" GS. UTILITIES"
+	if [[ "$VISZ" == "GS" ]];
+	then
+		Stampa " 99. Clone a Repo from GitHub" "100. Enable forlder to HttpServer" "101. listen reverse shell from Windows"
+		Stampa " 102. listen reverse shell from Linux" "103. create ssh keys in this folder" "104. Base64 for Windows (utf16)"
+		Stampa " 105. Base64 utf8" "110. create simple php shell POST request" "111. Dump file to escaped hex"
+		Stampa " 112. print a python reverse shell" "113. print a perl reverse shell" "114. print a ruby reverse shell"
+		Stampa " 115. print a bash reverse shell" "116. print a php reverse shell" "243. print a powershell reverse shell"
+		Stampa " 165. Mount cifs in folder" "203. Download informations from IMAP email account"
+		Stampa " 317. get all DNS info" "324. Bluetooth scanning" "334. Hydra login-attack"
+		Stampa " 350. dirbustering with gobuster" "365. Add jpg header to a php revshell"
+		Stampa " 366. create simple php shell GET request" "367. create simple php shell with REQUESTS"
+		Stampa " 389. packets capture" "416. try to install repository" "417. get email addresses (mx data)"
+		Stampa " 429. wipe an external device" "430. wipe a file" "431. shred a file"
+		Stampa " 561. get a remote file in base64 encode" "596. download all files inside a folder shared via smb or samba"
+		Stampa " 598. get some useful files from remote url or ip" "600. upload a shell with PUT method"
+		Stampa " 618. enum users with finger" "628. ssh dictionary remote attack with optional port forwarding"
+		Stampa " 638. get all keys set in memcached remotely" "643. get netmask infos" "649. extract tar.gz file"
+		Stampa " 652. get docker version from IP" "669. analyze an executable file with strace and ltrace"
+		Stampa " 739. install tor from torproject siteweb" "740. install tor via apt-transport-tor"
+		Stampa " 744. get mx record from domain with dig" "745. get dns infos with host" "746. get ntp infos with ntpq"
+		Stampa " 747. get netbios infos with nmblookup" "749. download all files from IP in ftp with anonymous creds"
+		Stampa " 750. username and password dictionary attack with wget and ftp protocol"
+		Stampa " 754. get RPC info" "755. get RPC connect" "2423. get aws token and meta-data"
+		Stampa " 756. smb connection" "757. rlogin dictionary attack" "758. rdesktop dictionary attack"
+		Stampa " 9. wifi WPA with deauth attack" "2251. SSTI RCE" "2252. SSTI jinja2 RevShell"
+		Stampa " 76. print all functions of a binary" "135. dump all opcodes from a binary"
+		Stampa " 2261. Encrypt and Encode a file to pass in remote host" "2267. install a python hacking package"
+		Stampa " 2268. install a python3 hacking package" "2289. install a ruby hacking gem" "Prepare RevShell for Windows"
+		Stampa " 2337. install a deb package" "2338. install a browser" "2353. Pull a Docker image"
+		Stampa " 2452. AWS S3 copy file to remote host" "2453. AWS S3 list file in remote host" "2454. AWS S3 dump dynamodb tables"
+		Stampa " 2457. install poetry" "2503. run dbg and disassembling a bin file" "751. RCE with finger"
+		Stampa " 2515. Create a Reverse Shell for Android and run a listener"
+		Stampa " 2539. Create a Reverse Shell for Windows x86 and run a listener"
+		Stampa " 2540. Create a Reverse Shell for Windows x64 and run a listener"
+		Stampa " 2542. get ASN and infos of target IP from cymru.com" "2543. create an encrypted and encoded payload with metasploit"
+		Stampa " 2547. list all pulled docker images" "2624. download a zipbomb from unforgettable.dk"
+		Stampa " 2548. run a docker image" "2549. docker process list" "2552. use nmap to scan ports for vulnerabilities"
+		Stampa " 2556. Executione command line to Remote IP with RPC" "2564. display all binsry's headers with objdump"
+		Stampa " 2570. Anonymization" "2572. Steal Cookie from Panel/Manager/CMS with XSS" "2575. use nmap to scan ports with authentication"
+		Stampa " 2576. use nmap to scan ports with broadcast" "2577. use nmap to scan ports with brute" "2578. use nmap to scan ports with default"
+		Stampa " 2579. use nmap to scan ports with discovery" "2580. use nmap to scan ports with dos" "2581. use nmap to scan ports with exploit"
+		Stampa " 2582. use nmap to scan ports with external" "2583. use nmap to scan ports with fuzzer" "2584. use nmap to scan ports with intrusive"
+		Stampa " 2585. use nmap to scan ports with malware" "2586. use nmap to scan ports with safe" "2587. use nmap to scan ports with version"
+		Stampa " 2591. read symbols and other infos from binary" "2625. create a zipbomb manually" "2626. use metasploit"
+		Stampa " 2633. Try a manual SQLinjectio" "2563. disassemble binary with objdump" "2642. Discover OS from ICMP ttl"
+		Stampa " 2643. Crack pdf password with John the Ripper"
+		echo "$SEP"
+	fi
+	echo "$CGT"" GT. VIRTUAL COINS - CURRENCIES"
+	if [[ "$VISZ" == "GT" ]];
+	then
+		Stampa " 511. Isaacdelly/Plutus" "512. dan-v/bruteforce-bitcoin-brainwallet" "513. SMH17/bitcoin-hacking-tools"
+		Stampa " 2465. litneet64/etherblob-explorer" "1212. KarmaHostage/gethspoit"
+		echo "$SEP"
+	fi
+	echo "$CGU"" GU. VOIP"
+	if [[ "$VISZ" == "GU" ]];
+	then
+		Stampa " 461. haasosaurus/ace-voip" "629. voipmonitor/sniffer" "898. jesusprubio/bluebox-ng"
+		echo "$SEP"
+	fi
+	echo "$CGV"" GV. VPN"
+	if [[ "$VISZ" == "GV" ]];
+	then
+		Stampa " 595. 7Elements/Fortigate" "2262. darrenmartyn/VisualDoor" "1040. galkan/openvpn-brute"
+		echo "$SEP"
+	fi
+	echo "$CGW"" GW. WAF"
+	if [[ "$VISZ" == "GW" ]];
+	then
+		Stampa " 1330. stamparm/identYwaf" "1441. lightbulb-framework/lightbulb-framework"
+		echo "$SEP"
+	fi
+	echo "$CGX"" GX. WALLET"
+	if [[ "$VISZ" == "GX" ]];
+	then
+		Stampa " 914. glv2/bruteforce-wallet"
+		echo "$SEP"
+	fi
+	echo "$CGY"" GY. WEBAPP - WEBSITES"
+	if [[ "$VISZ" == "GY" ]];
+	then
+		Stampa " 96. m4ll0k/WPSeku" "97. swisskyrepo/Wordpresscan" "98. RamadhanAmizudin/Wordpress-scanner"
+		Stampa " 122. rezasp/joomscan" "123. rastating/joomlavs" "124. RedVirus0/BlackDir-Framework"
+		Stampa " 198. wpscanteam/wpscan" "200. 04x/WpscaN/ICgWpScaNNer" "2362. oppsec/Squid"
+		Stampa " 201. The404Hacking/wpscan" "202. drego85/JoomlaScan" "287. boku7/LibreHealth-authRCE"
+		Stampa " 466. FortyNorthSecurity/EyeWitness" "614. dariusztytko/jwt-key-id-injector"
+		Stampa " 621. s0md3v/Arjun" "789. CoolerVoid/0d1n" "2242. poerschke/Uniscan"
+		Stampa " 2283. koutto/web-brutator" "1026. thesp0nge/dawnscanner" "2297. xmendez/wfuzz"
+		Stampa " 2346. infosecsecurity/Spaghetti" "2363. lirantal/is-website-vulnerable" "1261. gildasio/h2t"
+		Stampa " 1145. ChrisTruncer/EyeWitness" "2464. nim-lang/choosenim/vaf" "1186. tismayil/fockcache"
+		Stampa " 2483. AvalZ/WAF-A-MoLE" "2589. xchopath/pathprober" "2594. WangYihang/SourceLeakHacker"
+		Stampa " 2609. V1n1v131r4/webdiscover" "1311. riramar/hsecscan" "1312. segment-srl/htcap"
+		Stampa " 1317. tomnomnom/httprobe" "1318. breenmachine/httpscreenshot" "1368. stasinopoulos/jaidam"
+		Stampa " 1393. P0cL4bs/Kadimus" "2615. rivalsec/pathbuster" "1414. takeshixx/laf"
+		echo "$SEP"
+	fi
+	echo "$CGZ"" GZ. WEBDAV"
+	if [[ "$VISZ" == "GZ" ]];
+	then
+		Stampa " 1025. Graph-X/davscan"
+		echo "$SEP"
+	fi
+	echo "$CHA"" HA. WEBCAMS"
+	if [[ "$VISZ" == "HA" ]];
+	then
+		Stampa " 395. JettChenT/scan-for-webcams" "396. entynetproject/entropy" "397. indexnotfound404/spycam"
+		Stampa " 471. jimywork/shodanwave" "479. SuperBuker/CamHell" "564. vanhienfs/saycheese"
+		Stampa " 2374. techchipnet/CamPhish"
+		echo "$SEP"
+	fi
+	echo "$CHB"" HB. WEBSHELL"
+	if [[ "$VISZ" == "HB" ]];
+	then
+		Stampa " 562. tennc/webshell" "574. epinna/weevely3" "608. jackrendor/cookiedoor"
+		Stampa " 2544. EatonChips/wsh" "2599. oldkingcone/slopShell" "1315. wireghoul/htshells"
+		echo "$SEP"
+	fi
+	echo "$CHC"" HC. WEBSOCKET"
+	if [[ "$VISZ" == "HC" ]];
+	then
+		Stampa " 2632. PalindromeLabs/STEWS"
+		echo "$SEP"
+	fi
+	echo "$CHD"" HD. WIFI - WPA2 - WEP - PSK - 802.11"
+	if [[ "$VISZ" == "HD" ]];
+	then
+		Stampa " 540. blunderbuss-wctf/wacker" "550. calebmadrigal/trackerjacker" "580. JPaulMora/Pyrit"
+		Stampa " 591. hash3liZer/WiFiBroot" "592. SValkanov/wifivoid" "800. v1s1t0r1sh3r3/airgeddon"
+		Stampa " 833. NORMA-Inc/AtEar" "904. M1ND-B3ND3R/BoopSuite" "921. aanarchyy/bully"
+		Stampa " 990. joswr1ght/cowpatty" "2263. luc10/zykgen" "2281. 0xd012/wifuzzit"
+		Stampa " 1046. elceef/dhcpf" "1047. kamorin/DHCPig" "1048. misje/dhcpoptinj"
+		Stampa " 1108. securestate/eapeak" "2336. whid-injector/WHID" "2427. IGRSoft/KisMac2"
+		Stampa " 1192. kylemcdonald/FreeWifi" "2502. ankit0183/Wifi-Hacking" "1447. vk496/linset"
+		Stampa " 1491. aircrack-ng/mdk4"
+		echo "$SEP"
+	fi
+	echo "$CHE"" HE. WINRM"
+	if [[ "$VISZ" == "HE" ]];
+	then
+		Stampa " 42. Hackplayers/evil-winrm"
+		echo "$SEP"
+	fi
+	echo "$CHF"" HF. WORDLIST"
+	if [[ "$VISZ" == "HF" ]];
+	then
+		Stampa " 51. danielmiessler/SecLists" "53. dariusztytko/words-scraper" "245. LandGrey/pydictor"
+		Stampa " 542. digininja/CeWL" "905. R3nt0n/bopscrk" "1103. nil0x42/duplicut"
+		Stampa " 302. duyet/bruteforce-database" "318. digininja/pipal" "535. nil0x42/cracking-utils"
+		Stampa " 985. assetnote/commonspeak2" "404. OWASP/D4N155" "2300. shamrin/diceware"
+		Stampa " 2388. DavidWittman/wpxmlrpcbrute/1000-most-common-passwords"
+		Stampa " 2449. google/spraygen" "1467. initstring/lyricpass" "1495. sc0tfree/mentalist"
+		Stampa " 2470. scrapmaker/rockyou.txt" "2473. digininja/RSMangler" "2537. D4Vinci/elpscrk"
+		echo "$SEP"
+	fi
+	echo "$CHG"" HG. WORDPRESS"
+	if [[ "$VISZ" == "HG" ]];
+	then
+		Stampa " 468. n00py/WPForce" "469. BlackXploits/WPBrute" "566. 0xAbdullah/0xWPBF"
+		Stampa " 655. Moham3dRiahi/WPGrabInfo" "667. ShayanDeveloper/WordPress-Hacker"
+		Stampa " 668. Jamalc0m/wphunter" "199. MrCl0wnLab/afdWordpress"
+		echo "$SEP"
+	fi
+	echo "$CHI"" HI. XSS - XPATH"
+	if [[ "$VISZ" == "HI" ]];
+	then
+		Stampa " 55. hahwul/dalfox" "164. s0md3v/XSStrike" "44. lc/gau"
+		Stampa " 176. sullo/nikto" "180. faizann24/XssPy" "2371. The404Hacking/XsSCan"
+		Stampa " 181. secdec/xssmap" "182. gbrindisi/xsssniper" "183. pwn0sec/PwnXSS"
+		Stampa " 184. lwzSoviet/NoXss" "394. Jewel591/xssmap" "558. dwisiswant0/findom-xss"
+		Stampa " 620. hahwul/XSpear" "623. r0oth3x49/Xpath" "780. capture0x/XSS-LOADER"
+		Stampa " 814. lewangbtcc/anti-XSS" "1069. whitel1st/docem" "1183. riusksk/FlashScanner"
+		Stampa " 2475. yehia-mamdouh/XSSYA-V-2.0" "1316. Danladi/HttpPwnly" "1523. koto/mosquito"
+		echo "$SEP"
+	fi
+	echo "$CHJ"" HJ. ZIGBEE"
+	if [[ "$VISZ" == "HJ" ]];
+	then
+		Stampa " 1403. riverloopsec/killerbee"
+		echo "$SEP"
+	fi
+	echo "$CHK"" HK. ZIP"
+	if [[ "$VISZ" == "HK" ]];
+	then
+		Stampa " 43. The404Hacking/ZIP-Password-BruteForcer" "237. mnismt/CompressedCrack"
+		Stampa " 2612. Tylous/ZipExec"
+		echo "$SEP"
+	fi
+	echo "$CHL"" HL. PROXY SERVERS (HTTP SOCKS4 SOCKS5)"
+	if [[ "$VISZ" == "HL" ]];
+	then
+		Stampa " 106. clarketm/proxy-list" "107. opsxcq/proxy-list" "108. a2u/free-proxy-list"
+		Stampa " 109. cristiangonzales/Amazon-Discounts/proxy-list" "117. TheSpeedX/PROXY-List" "118. labic/ze-the-scraper/proxies-list"
+		Stampa " 119. samrocketman/proxylist"
+		echo "$SEP"
+	fi
+	echo "$CHM"" HM. ? - OTHERS"
+	if [[ "$VISZ" == "HM" ]];
+	then
+		Stampa " 36. SigPloiter/HLR-Lookups" "37. i3visio/osrframework" "2354. py2exe/py2exe"
+		Stampa " 39. vanhauser-thc/thc-ipv6" "225. idapython/src" "226. erocarrera/pefile"
+		Stampa " 325. projectdiscovery/httpx" "796. sshock/AFFLIBv3" "839. MRGEffitas/scripts"
+		Stampa " 1000. oblique/create_ap" "1031. byt3bl33d3r/DeathStar" "1034. UltimateHackers/Decodify"
+		Stampa " 1091. szechyjs/dsd" "1098. fleetcaptain/dtp-spoof" "1099. insomniacslk/dublin-traceroute"
+		Stampa " 1100. kevthehermit/DuckToolkit" "1102. MalcolmRobb/dump1090" "1035. takeshixx/deen"
+		Stampa " 2451. google/security-research" "1155. mubix/FakeNetBIOS" "1169. 0blio/fileGPS"
+		Stampa " 1171. subinacls/Filibuster" "1188. ALSchwalm/foresight" "1197. miaouPlop/fs"
+		Stampa " 1243. osqzss/gps-sdr-sim" "1254. hackerschoice/gsocket" "1259. BishopFox/h2csmuggler"
+		Stampa " 1214. jeanphix/Ghost.py" "2471. sec-consult/aggrokatz" "1290. ZerBea/hcxtools"
+		Stampa " 1297. sharkdp/hexyl" "1324. vanhauser-thc/thc-hydra" "1378. incogbyte/jsearch"
+		Stampa " 1382. nahamsec/JSParser" "1387. telerik/JustDecompileEngine" "1406. klee/klee"
+		Stampa " 1415. rflynn/lanmap2" "1422. mmicu/leena" "2630. 9emin1/charlotte"
+		Stampa " 1481. trailofbits/manticore" "1516. fox-it/mkYARA"
+		echo "$SEP"
+	fi
+	echo "$CHN"" HN. PLUGIN"
+	if [[ "$VISZ" == "HN" ]];
+	then
+		Stampa " 1499. hahwul/metasploit-autopwn/db_autopwn"
+		echo "$SEP"
+	fi
 	echo "$SEP"
 	echo "GLOBAL VARIABLES"
-	Stampa " 2559. Target Username" "2560. Target Password" "2561. Target Domain"
-	Stampa " 2557. Target IP" "2558. Target PORT" "2562. wordlist file"
-	Stampa " 2573. Your IP" "2574. Your Port" "2634. Target URL"
+		Stampa " 2559. Target Username" "2560. Target Password" "2561. Target Domain"
+		Stampa " 2557. Target IP" "2558. Target PORT" "2562. wordlist file"
+		Stampa " 2573. Your IP" "2574. Your Port" "2634. Target URL"
 	echo -e "\nTarget: ""$TIP"":$TPRT|\tTarget domain: ""$TDOM""|\tTarget username: ""$TUSRN""|\tTarget password: ""$TPSSW"""
 	echo -e "Wordlist: ""$WORDLIST""|\tYOU: ""$MIP"":$MPRT|\tTarget URL: ""$TURL""\n"
 	echo -e "Anonymization: $ANON"
+	echo -ne "\n 0. exit\n"
 	echo "$SEP"
 	read -p "Choose a script: " SCELTA
 	case "$SCELTA" in
@@ -11511,6 +12283,2009 @@ while true; do
 				fi
 			fi
 		done
+	;;
+	"2643")
+		ls | egrep '\.pdf$'
+		echo "Digit a pdf file"
+		read -e -p "(example, protected.pdf): " PDF
+		if [[ -f $PDF ]];
+		then
+			echo "Digit a wordlist, if you digit default, it will be used default wordlist"
+			read -e -p "(example, /usr/share/wordlist/rockyou.txt, default is default): " WRDL
+			WRDF=""
+			if [[ "$WRDL" != "default" ]];
+			then
+				if [[ -f $WRDL ]];
+				then
+					WRDF="--wordlist=""$WRDL"
+				fi
+			fi
+			PTJ=$(locate pdf2john)
+			if [[ "$PTJ" != "" ]];
+			then
+				if [[ -f $PTJ ]];
+				then
+					$PTJ "$PDF" > pdf-crack.john
+					if [[ "$WRDF" == "" ]];
+					then
+						john pdf-crack.john
+					else
+						john pdf-crack.john "$WRDF"
+					fi
+					john --show pdf-crack.john
+				fi
+			fi
+		fi
+	;;
+	"AA")
+		if [[ $CAA == "[+]" ]];
+		then
+			CAA="[-]"
+			VISZ="AA"
+		else
+			CAA="[+]"
+			VISZ=""
+		fi
+	;;
+	"AB")
+		if [[ $CAB == "[+]" ]];
+		then
+			CAB="[-]"
+			VISZ="AB"
+		else
+			CAb="[+]"
+			VISZ=""
+		fi
+	;;
+	"AC")
+		if [[ $CAC == "[+]" ]];
+		then
+			CAC="[-]"
+			VISZ="AC"
+		else
+			CAC="[+]"
+			VISZ=""
+		fi
+	;;
+	"AD")
+		if [[ $CAD == "[+]" ]];
+		then
+			CAD="[-]"
+			VISZ="AD"
+		else
+			CAD="[+]"
+			VISZ=""
+		fi
+	;;
+	"AE")
+		if [[ $CAE == "[+]" ]];
+		then
+			CAE="[-]"
+			VISZ="AE"
+		else
+			CAE="[+]"
+			VISZ=""
+		fi
+	;;
+	"AF")
+		if [[ $CAF == "[+]" ]];
+		then
+			CAF="[-]"
+			VISZ="AF"
+		else
+			CAF="[+]"
+			VISZ=""
+		fi
+	;;
+	"AG")
+		if [[ $CAG == "[+]" ]];
+		then
+			CAG="[-]"
+			VISZ="AG"
+		else
+			CAG="[+]"
+			VISZ=""
+		fi
+	;;
+	"AH")
+		if [[ $CAH == "[+]" ]];
+		then
+			CAH="[-]"
+			VISZ="AH"
+		else
+			CAH="[+]"
+			VISZ=""
+		fi
+	;;
+	"AI")
+		if [[ $CAI == "[+]" ]];
+		then
+			CAI="[-]"
+			VISZ="AI"
+		else
+			CAI="[+]"
+			VISZ=""
+		fi
+	;;
+	"AJ")
+		if [[ $CAJ == "[+]" ]];
+		then
+			CAJ="[-]"
+			VISZ="AJ"
+		else
+			CAJ="[+]"
+			VISZ=""
+		fi
+	;;
+	"AK")
+		if [[ $CAK == "[+]" ]];
+		then
+			CAK="[-]"
+			VISZ="AK"
+		else
+			CAK="[+]"
+			VISZ=""
+		fi
+	;;
+	"AL")
+		if [[ $CAL == "[+]" ]];
+		then
+			CAL="[-]"
+			VISZ="L"
+		else
+			CAL="[+]"
+			VISZ=""
+		fi
+	;;
+	"AM")
+		if [[ $CAM == "[+]" ]];
+		then
+			CAM="[-]"
+			VISZ="AM"
+		else
+			CAM="[+]"
+			VISZ=""
+		fi
+	;;
+	"AN")
+		if [[ $CAN == "[+]" ]];
+		then
+			CAN="[-]"
+			VISZ="AN"
+		else
+			CAN="[+]"
+			VISZ=""
+		fi
+	;;
+	"AO")
+		if [[ $CAO == "[+]" ]];
+		then
+			CAO="[-]"
+			VISZ="AO"
+		else
+			CAO="[+]"
+			VISZ=""
+		fi
+	;;
+	"AP")
+		if [[ $CAP == "[+]" ]];
+		then
+			CAP="[-]"
+			VISZ="AP"
+		else
+			CAP="[+]"
+			VISZ=""
+		fi
+	;;
+	"AQ")
+		if [[ $CAQ == "[+]" ]];
+		then
+			CAQ="[-]"
+			VISZ="AQ"
+		else
+			CAQ="[+]"
+			VISZ=""
+		fi
+	;;
+	"AR")
+		if [[ $CAR == "[+]" ]];
+		then
+			CAR="[-]"
+			VISZ="AR"
+		else
+			CAR="[+]"
+			VISZ=""
+		fi
+	;;
+	"AS")
+		if [[ $CAS == "[+]" ]];
+		then
+			CAS="[-]"
+			VISZ="AS"
+		else
+			CAS="[+]"
+			VISZ=""
+		fi
+	;;
+	"AT")
+		if [[ $CAT == "[+]" ]];
+		then
+			CAT="[-]"
+			VISZ="AT"
+		else
+			CAT="[+]"
+			VISZ=""
+		fi
+	;;
+	"AU")
+		if [[ $CAU == "[+]" ]];
+		then
+			CAU="[-]"
+			VISZ="AU"
+		else
+			CAU="[+]"
+			VISZ=""
+		fi
+	;;
+	"AV")
+		if [[ $CAV == "[+]" ]];
+		then
+			CAV="[-]"
+			VISZ="AV"
+		else
+			CAV="[+]"
+			VISZ=""
+		fi
+	;;
+	"AW")
+		if [[ $CAW == "[+]" ]];
+		then
+			CAW="[-]"
+			VISZ="AW"
+		else
+			CAW="[+]"
+			VISZ=""
+		fi
+	;;
+	"AX")
+		if [[ $CAX == "[+]" ]];
+		then
+			CAX="[-]"
+			VISZ="AX"
+		else
+			CAX="[+]"
+			VISZ=""
+		fi
+	;;
+	"AY")
+		if [[ $CAY == "[+]" ]];
+		then
+			CAY="[-]"
+			VISZ="AY"
+		else
+			CAY="[+]"
+			VISZ=""
+		fi
+	;;
+	"AZ")
+		if [[ $CAZ == "[+]" ]];
+		then
+			CAZ="[-]"
+			VISZ="AZ"
+		else
+			CAZ="[+]"
+			VISZ=""
+		fi
+	;;
+	"BA")
+		if [[ $CBA == "[+]" ]];
+		then
+			CBA="[-]"
+			VISZ="BA"
+		else
+			CBA="[+]"
+			VISZ=""
+		fi
+	;;
+	"BB")
+		if [[ $CBB == "[+]" ]];
+		then
+			CBB="[-]"
+			VISZ="BB"
+		else
+			CBB="[+]"
+			VISZ=""
+		fi
+	;;
+	"BC")
+		if [[ $CBC == "[+]" ]];
+		then
+			CBC="[-]"
+			VISZ="BC"
+		else
+			CBC="[+]"
+			VISZ=""
+		fi
+	;;
+	"BD")
+		if [[ $CBD == "[+]" ]];
+		then
+			CBD="[-]"
+			VISZ="BD"
+		else
+			CBD="[+]"
+			VISZ=""
+		fi
+	;;
+	"BE")
+		if [[ $CBE == "[+]" ]];
+		then
+			CBE="[-]"
+			VISZ="BE"
+		else
+			CBE="[+]"
+			VISZ=""
+		fi
+	;;
+	"BF")
+		if [[ $CBF == "[+]" ]];
+		then
+			CBF="[-]"
+			VISZ="BF"
+		else
+			CBF="[+]"
+			VISZ=""
+		fi
+	;;
+	"BG")
+		if [[ $CBG == "[+]" ]];
+		then
+			CBG="[-]"
+			VISZ="BG"
+		else
+			CBG="[+]"
+			VISZ=""
+		fi
+	;;
+	"BH")
+		if [[ $CBH == "[+]" ]];
+		then
+			CBH="[-]"
+			VISZ="BH"
+		else
+			CBH="[+]"
+			VISZ=""
+		fi
+	;;
+	"BI")
+		if [[ $CBI == "[+]" ]];
+		then
+			CBI="[-]"
+			VISZ="BI"
+		else
+			CBI="[+]"
+			VISZ=""
+		fi
+	;;
+	"BJ")
+		if [[ $CBJ == "[+]" ]];
+		then
+			CBJ="[-]"
+			VISZ="BJ"
+		else
+			CBJ="[+]"
+			VISZ=""
+		fi
+	;;
+	"BK")
+		if [[ $CBK == "[+]" ]];
+		then
+			CBK="[-]"
+			VISZ="BK"
+		else
+			CBK="[+]"
+			VISZ=""
+		fi
+	;;
+	"BL")
+		if [[ $CBL == "[+]" ]];
+		then
+			CBL="[-]"
+			VISZ="BL"
+		else
+			CBL="[+]"
+			VISZ=""
+		fi
+	;;
+	"BM")
+		if [[ $CBM == "[+]" ]];
+		then
+			CBM="[-]"
+			VISZ="BM"
+		else
+			CBM="[+]"
+			VISZ=""
+		fi
+	;;
+	"BN")
+		if [[ $CBN == "[+]" ]];
+		then
+			CBN="[-]"
+			VISZ="BN"
+		else
+			CBN="[+]"
+			VISZ=""
+		fi
+	;;
+	"BO")
+		if [[ $CBO == "[+]" ]];
+		then
+			CBO="[-]"
+			VISZ="BO"
+		else
+			CBO="[+]"
+			VISZ=""
+		fi
+	;;
+	"BP")
+		if [[ $CBP == "[+]" ]];
+		then
+			CBP="[-]"
+			VISZ="BP"
+		else
+			CBP="[+]"
+			VISZ=""
+		fi
+	;;
+	"BQ")
+		if [[ $CBQ == "[+]" ]];
+		then
+			CBQ="[-]"
+			VISZ="BQ"
+		else
+			CBQ="[+]"
+			VISZ=""
+		fi
+	;;
+	"BR")
+		if [[ $CBR == "[+]" ]];
+		then
+			CBR="[-]"
+			VISZ="BR"
+		else
+			CBR="[+]"
+			VISZ=""
+		fi
+	;;
+	"BS")
+		if [[ $CBS == "[+]" ]];
+		then
+			CBS="[-]"
+			VISZ="BS"
+		else
+			CBS="[+]"
+			VISZ=""
+		fi
+	;;
+	"BT")
+		if [[ $CBT == "[+]" ]];
+		then
+			CBT="[-]"
+			VISZ="BT"
+		else
+			CBT="[+]"
+			VISZ=""
+		fi
+	;;
+	"BU")
+		if [[ $CBU == "[+]" ]];
+		then
+			CBU="[-]"
+			VISZ="BU"
+		else
+			CBU="[+]"
+			VISZ=""
+		fi
+	;;
+	"BV")
+		if [[ $CBV == "[+]" ]];
+		then
+			CBV="[-]"
+			VISZ="BV"
+		else
+			CBV="[+]"
+			VISZ=""
+		fi
+	;;
+	"BW")
+		if [[ $CBW == "[+]" ]];
+		then
+			CBW="[-]"
+			VISZ="BW"
+		else
+			CBW="[+]"
+			VISZ=""
+		fi
+	;;
+	"BX")
+		if [[ $CBX == "[+]" ]];
+		then
+			CBX="[-]"
+			VISZ="BX"
+		else
+			CBX="[+]"
+			VISZ=""
+		fi
+	;;
+	"BY")
+		if [[ $CBY == "[+]" ]];
+		then
+			CBY="[-]"
+			VISZ="BY"
+		else
+			CBY="[+]"
+			VISZ=""
+		fi
+	;;
+	"BZ")
+		if [[ $CBZ == "[+]" ]];
+		then
+			CBZ="[-]"
+			VISZ="BZ"
+		else
+			CBZ="[+]"
+			VISZ=""
+		fi
+	;;
+	"CA")
+		if [[ $CCA == "[+]" ]];
+		then
+			CCA="[-]"
+			VISZ="CA"
+		else
+			CCA="[+]"
+			VISZ=""
+		fi
+	;;
+	"CB")
+		if [[ $CCB == "[+]" ]];
+		then
+			CCB="[-]"
+			VISZ="CB"
+		else
+			CCB="[+]"
+			VISZ=""
+		fi
+	;;
+	"CC")
+		if [[ $CCC == "[+]" ]];
+		then
+			CCC="[-]"
+			VISZ="CC"
+		else
+			CCC="[+]"
+			VISZ=""
+		fi
+	;;
+	"CD")
+		if [[ $CCD == "[+]" ]];
+		then
+			CCD="[-]"
+			VISZ="CD"
+		else
+			CCD="[+]"
+			VISZ=""
+		fi
+	;;
+	"CE")
+		if [[ $CCE == "[+]" ]];
+		then
+			CCE="[-]"
+			VISZ="CE"
+		else
+			CCE="[+]"
+			VISZ=""
+		fi
+	;;
+	"CF")
+		if [[ $CCF == "[+]" ]];
+		then
+			CCF="[-]"
+			VISZ="CF"
+		else
+			CCF="[+]"
+			VISZ=""
+		fi
+	;;
+	"CG")
+		if [[ $CCG == "[+]" ]];
+		then
+			CCG="[-]"
+			VISZ="CG"
+		else
+			CCG="[+]"
+			VISZ=""
+		fi
+	;;
+	"CH")
+		if [[ $CCH == "[+]" ]];
+		then
+			CCH="[-]"
+			VISZ="CH"
+		else
+			CCH="[+]"
+			VISZ=""
+		fi
+	;;
+	"CI")
+		if [[ $CCI == "[+]" ]];
+		then
+			CCI="[-]"
+			VISZ="CI"
+		else
+			CCI="[+]"
+			VISZ=""
+		fi
+	;;
+	"CJ")
+		if [[ $CCJ == "[+]" ]];
+		then
+			CCJ="[-]"
+			VISZ="CJ"
+		else
+			CCJ="[+]"
+			VISZ=""
+		fi
+	;;
+	"CK")
+		if [[ $CCK == "[+]" ]];
+		then
+			CCK="[-]"
+			VISZ="CK"
+		else
+			CCK="[+]"
+			VISZ=""
+		fi
+	;;
+	"CL")
+		if [[ $CCL == "[+]" ]];
+		then
+			CCL="[-]"
+			VISZ="CL"
+		else
+			CCL="[+]"
+			VISZ=""
+		fi
+	;;
+	"CM")
+		if [[ $CCM == "[+]" ]];
+		then
+			CCM="[-]"
+			VISZ="CM"
+		else
+			CCM="[+]"
+			VISZ=""
+		fi
+	;;
+	"CN")
+		if [[ $CCN == "[+]" ]];
+		then
+			CCN="[-]"
+			VISZ="CN"
+		else
+			CCN="[+]"
+			VISZ=""
+		fi
+	;;
+	"CO")
+		if [[ $CCO == "[+]" ]];
+		then
+			CCO="[-]"
+			VISZ="CO"
+		else
+			CCO="[+]"
+			VISZ=""
+		fi
+	;;
+	"CP")
+		if [[ $CCP == "[+]" ]];
+		then
+			CCP="[-]"
+			VISZ="CP"
+		else
+			CCP="[+]"
+			VISZ=""
+		fi
+	;;
+	"CQ")
+		if [[ $CCQ == "[+]" ]];
+		then
+			CCQ="[-]"
+			VISZ="CQ"
+		else
+			CCQ="[+]"
+			VISZ=""
+		fi
+	;;
+	"CR")
+		if [[ $CCR == "[+]" ]];
+		then
+			CCR="[-]"
+			VISZ="CR"
+		else
+			CCR="[+]"
+			VISZ=""
+		fi
+	;;
+	"CS")
+		if [[ $CCS == "[+]" ]];
+		then
+			CCS="[-]"
+			VISZ="CS"
+		else
+			CCS="[+]"
+			VISZ=""
+		fi
+	;;
+	"CT")
+		if [[ $CCT == "[+]" ]];
+		then
+			CCT="[-]"
+			VISZ="CT"
+		else
+			CCT="[+]"
+			VISZ=""
+		fi
+	;;
+	"CU")
+		if [[ $CCU == "[+]" ]];
+		then
+			CCU="[-]"
+			VISZ="CU"
+		else
+			CCU="[+]"
+			VISZ=""
+		fi
+	;;
+	"CV")
+		if [[ $CCV == "[+]" ]];
+		then
+			CCV="[-]"
+			VISZ="CV"
+		else
+			CCV="[+]"
+			VISZ=""
+		fi
+	;;
+	"CW")
+		if [[ $CCW == "[+]" ]];
+		then
+			CCW="[-]"
+			VISZ="CW"
+		else
+			CCW="[+]"
+			VISZ=""
+		fi
+	;;
+	"CX")
+		if [[ $CCX == "[+]" ]];
+		then
+			CCX="[-]"
+			VISZ="CX"
+		else
+			CCX="[+]"
+			VISZ=""
+		fi
+	;;
+	"CY")
+		if [[ $CCY == "[+]" ]];
+		then
+			CCY="[-]"
+			VISZ="CY"
+		else
+			CCY="[+]"
+			VISZ=""
+		fi
+	;;
+	"CZ")
+		if [[ $CCZ == "[+]" ]];
+		then
+			CCZ="[-]"
+			VISZ="CZ"
+		else
+			CCZ="[+]"
+			VISZ=""
+		fi
+	;;
+	"DA")
+		if [[ $CDA == "[+]" ]];
+		then
+			CDA="[-]"
+			VISZ="DA"
+		else
+			CDA="[+]"
+			VISZ=""
+		fi
+	;;
+	"DB")
+		if [[ $CDB == "[+]" ]];
+		then
+			CDB="[-]"
+			VISZ="DB"
+		else
+			CDB="[+]"
+			VISZ=""
+		fi
+	;;
+	"DC")
+		if [[ $CDC == "[+]" ]];
+		then
+			CDC="[-]"
+			VISZ="DC"
+		else
+			CDC="[+]"
+			VISZ=""
+		fi
+	;;
+	"DD")
+		if [[ $CDD == "[+]" ]];
+		then
+			CDD="[-]"
+			VISZ="DD"
+		else
+			CDD="[+]"
+			VISZ=""
+		fi
+	;;
+	"DE")
+		if [[ $CDE == "[+]" ]];
+		then
+			CDE="[-]"
+			VISZ="DE"
+		else
+			CDE="[+]"
+			VISZ=""
+		fi
+	;;
+	"DF")
+		if [[ $CDF == "[+]" ]];
+		then
+			CDF="[-]"
+			VISZ="DF"
+		else
+			CDF="[+]"
+			VISZ=""
+		fi
+	;;
+	"DG")
+		if [[ $CDG == "[+]" ]];
+		then
+			CDG="[-]"
+			VISZ="DG"
+		else
+			CDG="[+]"
+			VISZ=""
+		fi
+	;;
+	"DH")
+		if [[ $CDH == "[+]" ]];
+		then
+			CDH="[-]"
+			VISZ="DH"
+		else
+			CDH="[+]"
+			VISZ=""
+		fi
+	;;
+	"DI")
+		if [[ $CDI == "[+]" ]];
+		then
+			CDI="[-]"
+			VISZ="DI"
+		else
+			CDI="[+]"
+			VISZ=""
+		fi
+	;;
+	"DJ")
+		if [[ $CDJ == "[+]" ]];
+		then
+			CDJ="[-]"
+			VISZ="DJ"
+		else
+			CDJ="[+]"
+			VISZ=""
+		fi
+	;;
+	"DK")
+		if [[ $CDK == "[+]" ]];
+		then
+			CDK="[-]"
+			VISZ="DK"
+		else
+			CDK="[+]"
+			VISZ=""
+		fi
+	;;
+	"DL")
+		if [[ $CDL == "[+]" ]];
+		then
+			CDL="[-]"
+			VISZ="DL"
+		else
+			CDL="[+]"
+			VISZ=""
+		fi
+	;;
+	"DM")
+		if [[ $CDM == "[+]" ]];
+		then
+			CDM="[-]"
+			VISZ="DM"
+		else
+			CDM="[+]"
+			VISZ=""
+		fi
+	;;
+	"DN")
+		if [[ $CDN == "[+]" ]];
+		then
+			CDN="[-]"
+			VISZ="DN"
+		else
+			CDN="[+]"
+			VISZ=""
+		fi
+	;;
+	"DO")
+		if [[ $CDO == "[+]" ]];
+		then
+			CDO="[-]"
+			VISZ="DO"
+		else
+			CDO="[+]"
+			VISZ=""
+		fi
+	;;
+	"DP")
+		if [[ $CDP == "[+]" ]];
+		then
+			CDP="[-]"
+			VISZ="DP"
+		else
+			CDP="[+]"
+			VISZ=""
+		fi
+	;;
+	"DQ")
+		if [[ $CDQ == "[+]" ]];
+		then
+			CDQ="[-]"
+			VISZ="DQ"
+		else
+			CDQ="[+]"
+			VISZ=""
+		fi
+	;;
+	"DR")
+		if [[ $CDR == "[+]" ]];
+		then
+			CDR="[-]"
+			VISZ="DR"
+		else
+			CDR="[+]"
+			VISZ=""
+		fi
+	;;
+	"DS")
+		if [[ $CDS == "[+]" ]];
+		then
+			CDS="[-]"
+			VISZ="DS"
+		else
+			CDS="[+]"
+			VISZ=""
+		fi
+	;;
+	"DT")
+		if [[ $CDT == "[+]" ]];
+		then
+			CDT="[-]"
+			VISZ="DT"
+		else
+			CDT="[+]"
+			VISZ=""
+		fi
+	;;
+	"DU")
+		if [[ $CDU == "[+]" ]];
+		then
+			CDU="[-]"
+			VISZ="DU"
+		else
+			CDU="[+]"
+			VISZ=""
+		fi
+	;;
+	"DV")
+		if [[ $CDV == "[+]" ]];
+		then
+			CDV="[-]"
+			VISZ="DV"
+		else
+			CDV="[+]"
+			VISZ=""
+		fi
+	;;
+	"DW")
+		if [[ $CDW == "[+]" ]];
+		then
+			CDW="[-]"
+			VISZ="DW"
+		else
+			CDW="[+]"
+			VISZ=""
+		fi
+	;;
+	"DX")
+		if [[ $CDX == "[+]" ]];
+		then
+			CDX="[-]"
+			VISZ="DX"
+		else
+			CDX="[+]"
+			VISZ=""
+		fi
+	;;
+	"DY")
+		if [[ $CDY == "[+]" ]];
+		then
+			CDY="[-]"
+			VISZ="DY"
+		else
+			CDY="[+]"
+			VISZ=""
+		fi
+	;;
+	"DZ")
+		if [[ $CDZ == "[+]" ]];
+		then
+			CDZ="[-]"
+			VISZ="DZ"
+		else
+			CDZ="[+]"
+			VISZ=""
+		fi
+	;;
+	"EA")
+		if [[ $CEA == "[+]" ]];
+		then
+			CEA="[-]"
+			VISZ="EA"
+		else
+			CEA="[+]"
+			VISZ=""
+		fi
+	;;
+	"EB")
+		if [[ $CEB == "[+]" ]];
+		then
+			CEB="[-]"
+			VISZ="EB"
+		else
+			CEB="[+]"
+			VISZ=""
+		fi
+	;;
+	"EC")
+		if [[ $CEC == "[+]" ]];
+		then
+			CEC="[-]"
+			VISZ="EC"
+		else
+			CEC="[+]"
+			VISZ=""
+		fi
+	;;
+	"ED")
+		if [[ $CED == "[+]" ]];
+		then
+			CED="[-]"
+			VISZ="ED"
+		else
+			CED="[+]"
+			VISZ=""
+		fi
+	;;
+	"EE")
+		if [[ $CEE == "[+]" ]];
+		then
+			CEE="[-]"
+			VISZ="EE"
+		else
+			CEE="[+]"
+			VISZ=""
+		fi
+	;;
+	"EF")
+		if [[ $CEF == "[+]" ]];
+		then
+			CEF="[-]"
+			VISZ="EF"
+		else
+			CEF="[+]"
+			VISZ=""
+		fi
+	;;
+	"EG")
+		if [[ $CEG == "[+]" ]];
+		then
+			CEG="[-]"
+			VISZ="EG"
+		else
+			CEG="[+]"
+			VISZ=""
+		fi
+	;;
+	"EH")
+		if [[ $CEH == "[+]" ]];
+		then
+			CEH="[-]"
+			VISZ="EH"
+		else
+			CEH="[+]"
+			VISZ=""
+		fi
+	;;
+	"EI")
+		if [[ $CEI == "[+]" ]];
+		then
+			CEI="[-]"
+			VISZ="EI"
+		else
+			CEI="[+]"
+			VISZ=""
+		fi
+	;;
+	"EJ")
+		if [[ $CEJ == "[+]" ]];
+		then
+			CEJ="[-]"
+			VISZ="EJ"
+		else
+			CEJ="[+]"
+			VISZ=""
+		fi
+	;;
+	"EK")
+		if [[ $CEK == "[+]" ]];
+		then
+			CEK="[-]"
+			VISZ="EK"
+		else
+			CEK="[+]"
+			VISZ=""
+		fi
+	;;
+	"EL")
+		if [[ $CEL == "[+]" ]];
+		then
+			CEL="[-]"
+			VISZ="EL"
+		else
+			CEL="[+]"
+			VISZ=""
+		fi
+	;;
+	"EM")
+		if [[ $CEM == "[+]" ]];
+		then
+			CEM="[-]"
+			VISZ="EM"
+		else
+			CEM="[+]"
+			VISZ=""
+		fi
+	;;
+	"EN")
+		if [[ $CEN == "[+]" ]];
+		then
+			CEN="[-]"
+			VISZ="EN"
+		else
+			CEN="[+]"
+			VISZ=""
+		fi
+	;;
+	"EO")
+		if [[ $CEO == "[+]" ]];
+		then
+			CEO="[-]"
+			VISZ="EO"
+		else
+			CEO="[+]"
+			VISZ=""
+		fi
+	;;
+	"EP")
+		if [[ $CEP == "[+]" ]];
+		then
+			CEP="[-]"
+			VISZ="EP"
+		else
+			CEP="[+]"
+			VISZ=""
+		fi
+	;;
+	"EQ")
+		if [[ $CEQ == "[+]" ]];
+		then
+			CEQ="[-]"
+			VISZ="EQ"
+		else
+			CEQ="[+]"
+			VISZ=""
+		fi
+	;;
+	"ER")
+		if [[ $CER == "[+]" ]];
+		then
+			CER="[-]"
+			VISZ="ER"
+		else
+			CER="[+]"
+			VISZ=""
+		fi
+	;;
+	"ES")
+		if [[ $CES == "[+]" ]];
+		then
+			CES="[-]"
+			VISZ="ES"
+		else
+			CES="[+]"
+			VISZ=""
+		fi
+	;;
+	"ET")
+		if [[ $CET == "[+]" ]];
+		then
+			CET="[-]"
+			VISZ="ET"
+		else
+			CET="[+]"
+			VISZ=""
+		fi
+	;;
+	"EU")
+		if [[ $CEU == "[+]" ]];
+		then
+			CEU="[-]"
+			VISZ="EU"
+		else
+			CEU="[+]"
+			VISZ=""
+		fi
+	;;
+	"EV")
+		if [[ $CEV == "[+]" ]];
+		then
+			CEV="[-]"
+			VISZ="EV"
+		else
+			CEV="[+]"
+			VISZ=""
+		fi
+	;;
+	"EW")
+		if [[ $CEW == "[+]" ]];
+		then
+			CEW="[-]"
+			VISZ="EW"
+		else
+			CEW="[+]"
+			VISZ=""
+		fi
+	;;
+	"EX")
+		if [[ $CEX == "[+]" ]];
+		then
+			CEX="[-]"
+			VISZ="EX"
+		else
+			CEX="[+]"
+			VISZ=""
+		fi
+	;;
+	"EY")
+		if [[ $CEY == "[+]" ]];
+		then
+			CEY="[-]"
+			VISZ="EY"
+		else
+			CEY="[+]"
+			VISZ=""
+		fi
+	;;
+	"EZ")
+		if [[ $CEZ == "[+]" ]];
+		then
+			CEZ="[-]"
+			VISZ="EZ"
+		else
+			CEZ="[+]"
+			VISZ=""
+		fi
+	;;
+	"FA")
+		if [[ $CFA == "[+]" ]];
+		then
+			CFA="[-]"
+			VISZ="FA"
+		else
+			CFA="[+]"
+			VISZ=""
+		fi
+	;;
+	"FB")
+		if [[ $CFB == "[+]" ]];
+		then
+			CFB="[-]"
+			VISZ="FB"
+		else
+			CFB="[+]"
+			VISZ=""
+		fi
+	;;
+	"FC")
+		if [[ $CFC == "[+]" ]];
+		then
+			CFC="[-]"
+			VISZ="FC"
+		else
+			CFC="[+]"
+			VISZ=""
+		fi
+	;;
+	"FD")
+		if [[ $CFD == "[+]" ]];
+		then
+			CFD="[-]"
+			VISZ="FD"
+		else
+			CFD="[+]"
+			VISZ=""
+		fi
+	;;
+	"FE")
+		if [[ $CFE == "[+]" ]];
+		then
+			CFE="[-]"
+			VISZ="FE"
+		else
+			CFE="[+]"
+			VISZ=""
+		fi
+	;;
+	"FF")
+		if [[ $CFF == "[+]" ]];
+		then
+			CFF="[-]"
+			VISZ="FF"
+		else
+			CFF="[+]"
+			VISZ=""
+		fi
+	;;
+	"FG")
+		if [[ $CFG == "[+]" ]];
+		then
+			CFG="[-]"
+			VISZ="FG"
+		else
+			CFG="[+]"
+			VISZ=""
+		fi
+	;;
+	"FH")
+		if [[ $CFH == "[+]" ]];
+		then
+			CFH="[-]"
+			VISZ="FH"
+		else
+			CFH="[+]"
+			VISZ=""
+		fi
+	;;
+	"FI")
+		if [[ $CFI == "[+]" ]];
+		then
+			CFI="[-]"
+			VISZ="FI"
+		else
+			CFI="[+]"
+			VISZ=""
+		fi
+	;;
+	"FJ")
+		if [[ $CFJ == "[+]" ]];
+		then
+			CFJ="[-]"
+			VISZ="FJ"
+		else
+			CFJ="[+]"
+			VISZ=""
+		fi
+	;;
+	"FK")
+		if [[ $CFK == "[+]" ]];
+		then
+			CFK="[-]"
+			VISZ="FK"
+		else
+			CFK="[+]"
+			VISZ=""
+		fi
+	;;
+	"FL")
+		if [[ $CFL == "[+]" ]];
+		then
+			CFL="[-]"
+			VISZ="FL"
+		else
+			CFL="[+]"
+			VISZ=""
+		fi
+	;;
+	"FM")
+		if [[ $CFM == "[+]" ]];
+		then
+			CFM="[-]"
+			VISZ="FM"
+		else
+			CFM="[+]"
+			VISZ=""
+		fi
+	;;
+	"FN")
+		if [[ $CFN == "[+]" ]];
+		then
+			CFN="[-]"
+			VISZ="FN"
+		else
+			CFN="[+]"
+			VISZ=""
+		fi
+	;;
+	"FO")
+		if [[ $CFO == "[+]" ]];
+		then
+			CFO="[-]"
+			VISZ="FO"
+		else
+			CFO="[+]"
+			VISZ=""
+		fi
+	;;
+	"FP")
+		if [[ $CFP == "[+]" ]];
+		then
+			CFP="[-]"
+			VISZ="FP"
+		else
+			CFP="[+]"
+			VISZ=""
+		fi
+	;;
+	"FQ")
+		if [[ $CFQ == "[+]" ]];
+		then
+			CFQ="[-]"
+			VISZ="FQ"
+		else
+			CFQ="[+]"
+			VISZ=""
+		fi
+	;;
+	"FR")
+		if [[ $CFR == "[+]" ]];
+		then
+			CFR="[-]"
+			VISZ="FR"
+		else
+			CFR="[+]"
+			VISZ=""
+		fi
+	;;
+	"FS")
+		if [[ $CFS == "[+]" ]];
+		then
+			CFS="[-]"
+			VISZ="FS"
+		else
+			CFS="[+]"
+			VISZ=""
+		fi
+	;;
+	"FT")
+		if [[ $CFT == "[+]" ]];
+		then
+			CFT="[-]"
+			VISZ="FT"
+		else
+			CFT="[+]"
+			VISZ=""
+		fi
+	;;
+	"FU")
+		if [[ $CFU == "[+]" ]];
+		then
+			CFU="[-]"
+			VISZ="FU"
+		else
+			CFU="[+]"
+			VISZ=""
+		fi
+	;;
+	"FV")
+		if [[ $CFV == "[+]" ]];
+		then
+			CFV="[-]"
+			VISZ="FV"
+		else
+			CFV="[+]"
+			VISZ=""
+		fi
+	;;
+	"FW")
+		if [[ $CFW == "[+]" ]];
+		then
+			CFW="[-]"
+			VISZ="FW"
+		else
+			CFW="[+]"
+			VISZ=""
+		fi
+	;;
+	"FX")
+		if [[ $CFX == "[+]" ]];
+		then
+			CFX="[-]"
+			VISZ="FX"
+		else
+			CFX="[+]"
+			VISZ=""
+		fi
+	;;
+	"FY")
+		if [[ $CFY == "[+]" ]];
+		then
+			CFY="[-]"
+			VISZ="FY"
+		else
+			CFY="[+]"
+			VISZ=""
+		fi
+	;;
+	"FZ")
+		if [[ $CFZ == "[+]" ]];
+		then
+			CFZ="[-]"
+			VISZ="FZ"
+		else
+			CFZ="[+]"
+			VISZ=""
+		fi
+	;;
+	"GA")
+		if [[ $CGA == "[+]" ]];
+		then
+			CGA="[-]"
+			VISZ="GA"
+		else
+			CGA="[+]"
+			VISZ=""
+		fi
+	;;
+	"GB")
+		if [[ $CGB == "[+]" ]];
+		then
+			CGB="[-]"
+			VISZ="GB"
+		else
+			CGB="[+]"
+			VISZ=""
+		fi
+	;;
+	"GC")
+		if [[ $CGC == "[+]" ]];
+		then
+			CGC="[-]"
+			VISZ="GC"
+		else
+			CGC="[+]"
+			VISZ=""
+		fi
+	;;
+	"GD")
+		if [[ $CGD == "[+]" ]];
+		then
+			CGD="[-]"
+			VISZ="GD"
+		else
+			CGD="[+]"
+			VISZ=""
+		fi
+	;;
+	"GE")
+		if [[ $CGE == "[+]" ]];
+		then
+			CGE="[-]"
+			VISZ="GE"
+		else
+			CGE="[+]"
+			VISZ=""
+		fi
+	;;
+	"GF")
+		if [[ $CGF == "[+]" ]];
+		then
+			CGF="[-]"
+			VISZ="GF"
+		else
+			CGF="[+]"
+			VISZ=""
+		fi
+	;;
+	"GG")
+		if [[ $CGG == "[+]" ]];
+		then
+			CGG="[-]"
+			VISZ="GG"
+		else
+			CGG="[+]"
+			VISZ=""
+		fi
+	;;
+	"GH")
+		if [[ $CGH == "[+]" ]];
+		then
+			CGH="[-]"
+			VISZ="GH"
+		else
+			CGH="[+]"
+			VISZ=""
+		fi
+	;;
+	"GI")
+		if [[ $CGI == "[+]" ]];
+		then
+			CGI="[-]"
+			VISZ="GI"
+		else
+			CGI="[+]"
+			VISZ=""
+		fi
+	;;
+	"GJ")
+		if [[ $CGJ == "[+]" ]];
+		then
+			CGJ="[-]"
+			VISZ="GJ"
+		else
+			CGJ="[+]"
+			VISZ=""
+		fi
+	;;
+	"GK")
+		if [[ $CGK == "[+]" ]];
+		then
+			CGK="[-]"
+			VISZ="GK"
+		else
+			CGK="[+]"
+			VISZ=""
+		fi
+	;;
+	"GL")
+		if [[ $CGL == "[+]" ]];
+		then
+			CGL="[-]"
+			VISZ="GL"
+		else
+			CGL="[+]"
+			VISZ=""
+		fi
+	;;
+	"GM")
+		if [[ $CGM == "[+]" ]];
+		then
+			CGM="[-]"
+			VISZ="GM"
+		else
+			CGM="[+]"
+			VISZ=""
+		fi
+	;;
+	"GN")
+		if [[ $CGN == "[+]" ]];
+		then
+			CGN="[-]"
+			VISZ="GN"
+		else
+			CGN="[+]"
+			VISZ=""
+		fi
+	;;
+	"GO")
+		if [[ $CGO == "[+]" ]];
+		then
+			CGO="[-]"
+			VISZ="GO"
+		else
+			CGO="[+]"
+			VISZ=""
+		fi
+	;;
+	"GP")
+		if [[ $CGP == "[+]" ]];
+		then
+			CGP="[-]"
+			VISZ="GP"
+		else
+			CGP="[+]"
+			VISZ=""
+		fi
+	;;
+	"GQ")
+		if [[ $CGQ == "[+]" ]];
+		then
+			CGQ="[-]"
+			VISZ="GQ"
+		else
+			CGQ="[+]"
+			VISZ=""
+		fi
+	;;
+	"GR")
+		if [[ $CGR == "[+]" ]];
+		then
+			CGR="[-]"
+			VISZ="GR"
+		else
+			CGR="[+]"
+			VISZ=""
+		fi
+	;;
+	"GS")
+		if [[ $CGS == "[+]" ]];
+		then
+			CGS="[-]"
+			VISZ="GS"
+		else
+			CGS="[+]"
+			VISZ=""
+		fi
+	;;
+	"GT")
+		if [[ $GT == "[+]" ]];
+		then
+			CGT="[-]"
+			VISZ="GT"
+		else
+			CGT="[+]"
+			VISZ=""
+		fi
+	;;
+	"GU")
+		if [[ $CGU == "[+]" ]];
+		then
+			CGU="[-]"
+			VISZ="GU"
+		else
+			CGU="[+]"
+			VISZ=""
+		fi
+	;;
+	"GV")
+		if [[ $CGV == "[+]" ]];
+		then
+			CGV="[-]"
+			VISZ="GV"
+		else
+			CGV="[+]"
+			VISZ=""
+		fi
+	;;
+	"GW")
+		if [[ $CGW == "[+]" ]];
+		then
+			CGW="[-]"
+			VISZ="GW"
+		else
+			CGW="[+]"
+			VISZ=""
+		fi
+	;;
+	"GX")
+		if [[ $CGX == "[+]" ]];
+		then
+			CGX="[-]"
+			VISZ="GX"
+		else
+			CGX="[+]"
+			VISZ=""
+		fi
+	;;
+	"GY")
+		if [[ $CGY == "[+]" ]];
+		then
+			CGY="[-]"
+			VISZ="GY"
+		else
+			CGY="[+]"
+			VISZ=""
+		fi
+	;;
+	"GZ")
+		if [[ $CGZ == "[+]" ]];
+		then
+			CGZ="[-]"
+			VISZ="GZ"
+		else
+			CGZ="[+]"
+			VISZ=""
+		fi
+	;;
+	"HA")
+		if [[ $CHA == "[+]" ]];
+		then
+			CHA="[-]"
+			VISZ="HA"
+		else
+			CHA="[+]"
+			VISZ=""
+		fi
+	;;
+	"HB")
+		if [[ $CHB == "[+]" ]];
+		then
+			CHB="[-]"
+			VISZ="HB"
+		else
+			CHB="[+]"
+			VISZ=""
+		fi
+	;;
+	"HC")
+		if [[ $CHC == "[+]" ]];
+		then
+			CHC="[-]"
+			VISZ="HC"
+		else
+			CHC="[+]"
+			VISZ=""
+		fi
+	;;
+	"HD")
+		if [[ $CHD == "[+]" ]];
+		then
+			CHD="[-]"
+			VISZ="HD"
+		else
+			CHD="[+]"
+			VISZ=""
+		fi
+	;;
+	"HE")
+		if [[ $CHE == "[+]" ]];
+		then
+			CHE="[-]"
+			VISZ="HE"
+		else
+			CHE="[+]"
+			VISZ=""
+		fi
+	;;
+	"HF")
+		if [[ $CHF == "[+]" ]];
+		then
+			CHF="[-]"
+			VISZ="HF"
+		else
+			CHF="[+]"
+			VISZ=""
+		fi
+	;;
+	"HG")
+		if [[ $CHG == "[+]" ]];
+		then
+			CHG="[-]"
+			VISZ="HG"
+		else
+			CHG="[+]"
+			VISZ=""
+		fi
+	;;
+	"HH")
+		if [[ $CHH == "[+]" ]];
+		then
+			CHH="[-]"
+			VISZ="HH"
+		else
+			CHH="[+]"
+			VISZ=""
+		fi
+	;;
+	"HI")
+		if [[ $CHI == "[+]" ]];
+		then
+			CHI="[-]"
+			VISZ="HI"
+		else
+			CHI="[+]"
+			VISZ=""
+		fi
+	;;
+	"HJ")
+		if [[ $CHJ == "[+]" ]];
+		then
+			CHJ="[-]"
+			VISZ="HJ"
+		else
+			CHJ="[+]"
+			VISZ=""
+		fi
+	;;
+	"HK")
+		if [[ $CHK == "[+]" ]];
+		then
+			CHK="[-]"
+			VISZ="HK"
+		else
+			CHK="[+]"
+			VISZ=""
+		fi
+	;;
+	"HL")
+		if [[ $CHL == "[+]" ]];
+		then
+			CHL="[-]"
+			VISZ="HL"
+		else
+			CHL="[+]"
+			VISZ=""
+		fi
+	;;
+	"HM")
+		if [[ $CHM == "[+]" ]];
+		then
+			CHM="[-]"
+			VISZ="HM"
+		else
+			CHM="[+]"
+			VISZ=""
+		fi
+	;;
+	"HN")
+		if [[ $CHN == "[+]" ]];
+		then
+			CHN="[-]"
+			VISZ="HN"
+		else
+			CHN="[+]"
+			VISZ=""
+		fi
+	;;
+	"ZZ")
+		if [[ $CZZ == "[+]" ]];
+		then
+			CZZ="[-]"
+			VISZ="ZZ"
+		else
+			CZZ="[+]"
+			VISZ=""
+		fi
 	;;
 	*)
 		echo "error, invalid choice"
