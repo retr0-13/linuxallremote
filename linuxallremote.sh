@@ -506,7 +506,7 @@ CZZ="[+]"
 while true; do
 	echo "$SEP"
 	echo "$CAA"" AA. ACTIVE DIRECTORY"
-	if [[ "$VISZ" == "AA" ]];
+	if [[ "$CAA" == "[-]" ]];
 	then
 		Stampa " 27. Greenwolf/Spray" "229. DanMcInerney/icebreaker" "283. optiv/Talon"
 		Stampa " 524. tothi/rbcd-attack/rbcd" "587. PaperMtn/lil-pwny" "793. fox-it/aclpwn.py"
@@ -514,19 +514,19 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CAB"" AB. ACQUISITION"
-	if [[ "$VISZ" == "AB" ]];
+	if [[ "$CAB" == "[-]" ]];
 	then
 		Stampa " 171. Silv3rHorn/ArtifactExtractor" "172. SekoiaLab/Fastir_Collector"
 		echo "$SEP"
 	fi
 	echo "$CAC"" AC. AES"
-	if [[ "$VISZ" == "AC" ]];
+	if [[ "$CAC" == "[-]" ]];
 	then
 		Stampa " 28. bfaure/AES-128_Cracker" "29. unicornsasfuel/keybrute"
 		echo "$SEP"
 	fi
 	echo "$CAD"" AD. ANALIZING"
-	if [[ "$VISZ" == "AD" ]];
+	if [[ "$CAD" == "[-]" ]];
 	then
 		Stampa " 142. saferwall/saferwall" "169. fireeye/flare-floss" "219. BinaryAnalysisPlatform/bap"
 		Stampa " 220. angr/angr" "224. cogent/origami-pdf" "451. Ettercap/ettercap"
@@ -548,7 +548,7 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CAE"" AE. ANDROID - APK"
-	if [[ "$VISZ" == "AE" ]];
+	if [[ "$CAE" == "[-]" ]];
 	then
 		Stampa " 128. xtiankisutsa/MARA_Framework" "274. yasoob/nrc-exporter" "277. mzfr/slicer"
 		Stampa " 323. ASHWIN990/ADB-Toolkit" "326. metachar/PhoneSploit" "327. xtiankisutsa/twiga"
@@ -566,28 +566,28 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CAF"" AF. ANONYMIZATION"
-	if [[ "$VISZ" == "AF" ]];
+	if [[ "$CAF" == "[-]" ]];
 	then
 		Stampa " 2229. htrgouvea/nipe" "2348. realgam3/pymultitor" "2350. torsocks/torsocks"
 		Stampa " 2623. omer-dogan/kali-whoami"
 		echo "$SEP"
 	fi
 	echo "$CAG"" AG. ANTI-FORENSICS - SECURITY"
-	if [[ "$VISZ" == "AG" ]];
+	if [[ "$CAG" == "[-]" ]];
 	then
 		Stampa " 480. AndyCyberSec/direncrypt" "577. KuroLabs/stegcloak" "590. 1tayH/noisy"
 		Stampa " 940. 0xPoly/Centry" "1208. GasparVardanyan/GCrypt" "1489. fgrimme/Matroschka"
 		echo "$SEP"
 	fi
 	echo "$CAH"" AH. APACHE"
-	if [[ "$VISZ" == "AH" ]];
+	if [[ "$CAH" == "[-]" ]];
 	then
 		Stampa " 278. mgeeky/tomcatWarDeployer" "280. hypn0s/AJPy" "829. mthbernardes/ARTLAS"
 		Stampa " 2424. antonio-morales/Apache-HTTP-Fuzzing" "2565. knightm4re/tomcter"
 		echo "$SEP"
 	fi
 	echo "$CAI"" AI. APPLE"
-	if [[ "$VISZ" == "AI" ]];
+	if [[ "$CAI" == "[-]" ]];
 	then
 		Stampa " 644. Pr0x13/iDict" "645. foozzi/iCloudBrutter" "2325. gwatts/pinfinder"
 		Stampa " 2322. Hacktivation/iOS-Hacktivation-Toolkit" "2323. dnikles/removeActivationLock" "2324. tuttarealstep/iUnlock"
@@ -595,7 +595,7 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CAJ"" AJ. ARP"
-	if [[ "$VISZ" == "AJ" ]];
+	if [[ "$CAJ" == "[-]" ]];
 	then
 		Stampa " 462. royhills/arp-scan" "582. byt3bl33d3r/arpspoof" "583. ammarx/ARP-spoofing/mmattack"
 		Stampa " 786. dracipn/arp-cache-poisoning" "787. EONRaider/Arp-Spoofer" "788. EmreOvunc/ARP-Poisoning-Tool"
@@ -603,7 +603,7 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CAK"" AK. AWS"
-	if [[ "$VISZ" == "AK" ]];
+	if [[ "$CAK" == "[-]" ]];
 	then
 		Stampa " 657. sa7mon/S3Scanner" "659. aljazceru/s3-bucket-scanner" "660. ankane/s3tk"
 		Stampa " 661. bear/s3scan" "662. haroonawanofficial/Amazon-AWS-Hack" "663. nagwww/101-AWS-S3-Hacks"
@@ -616,13 +616,13 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CAL"" AL. AZURE"
-	if [[ "$VISZ" == "AL" ]];
+	if [[ "$CAL" == "[-]" ]];
 	then
 		Stampa " 32. dirkjanm/ROADtools"
 		echo "$SEP"
 	fi
 	echo "$CAM"" AM. BACKDOOR - SHELLCODE"
-	if [[ "$VISZ" == "AM" ]];
+	if [[ "$CAM" == "[-]" ]];
 	then
 		Stampa " 409. tz4678/backshell" "565. AnonymousAt3/cyberdoor" "855. mrjopino/backcookie"
 		Stampa " 856. dana-at-cp/backdoor-apk" "857. secretsquirrel/the-backdoor-factory" "858. Kkevsterrr/backdoorme"
@@ -634,7 +634,7 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CAN"" AN. BLUETOOTH"
-	if [[ "$VISZ" == "AN" ]];
+	if [[ "$CAN" == "[-]" ]];
 	then
 		Stampa " 305. lucaboni92/BlueFuzz" "440. fO-000/bluescan" "447. MillerTechnologyPeru/hcitool"
 		Stampa " 482. francozappa/knob" "505. joswr1ght/btfind" "899. olivo/BluPhish"
@@ -642,26 +642,26 @@ while true; do
 		Stampa " 2594. nccgroup/Sniffle"
 		echo "$SEP"
 	fi
-	echo "$CAO"" CAO. BOT - AI"
-	if [[ "$VISZ" == "AO" ]];
+	echo "$CAO"" AO. BOT - AI"
+	if [[ "$CAO" == "[-]" ]];
 	then
 		Stampa " 445. evilsocket/kitsune" "1144. BishopFox/eyeballer"
 		echo "$SEP"
 	fi
-	echo "$CAP"" CAP. BOTNET"
-	if [[ "$VISZ" == "AP" ]];
+	echo "$CAP"" AP. BOTNET"
+	if [[ "$CAP" == "[-]" ]];
 	then
 		Stampa " 773. UBoat-Botnet/UBoat" "2455. twitu/byob"
 		echo "$SEP"
 	fi
-	echo "$CAQ"" CAQ. BRAINF**K"
-	if [[ "$VISZ" == "AQ" ]];
+	echo "$CAQ"" AQ. BRAINF**K"
+	if [[ "$CAQ" == "[-]" ]];
 	then
 		Stampa " 238. brain-lang/brainfuck" "239. fabianishere/brainfuck"
 		echo "$SEP"
 	fi
-	echo "$CAR"" CAR. C2 - CeC - Command and Control"
-	if [[ "$VISZ" == "AR" ]];
+	echo "$CAR"" AR. C2 - CeC - Command and Control"
+	if [[ "$CAR" == "[-]" ]];
 	then
 		Stampa " 499. hyp3rlinx/DarkFinger-C2" "500. nettitude/PoshC2" "502. sensepost/godoh"
 		Stampa " 503. lu4p/ToRat" "602. nil0x42/phpsploit" "137. xtr4nge/FruityC2"
@@ -669,32 +669,32 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CAS"" AS. CARS"
-	if [[ "$VISZ" == "AS" ]];
+	if [[ "$CAS" == "[-]" ]];
 	then
 		Stampa " 933. schutzwerk/CANalyzat0r" "2310. shipcod3/mazda_getInfo" "2311. P1kachu/talking-with-cars"
 		Stampa " 2593. souravbaghz/CarPunk"
 		echo "$SEP"
 	fi
 	echo "$CAT"" AT. CDN"
-	if [[ "$VISZ" == "AT" ]];
+	if [[ "$CAT" == "[-]" ]];
 	then
 		Stampa " 971. MrH0wl/Cloudmare"
 		echo "$SEP"
 	fi
 	echo "$CAU"" AU. CEC - HEC"
-	if [[ "$VISZ" == "AU" ]];
+	if [[ "$CAU" == "[-]" ]];
 	then
 		Stampa " 939. nccgroup/CECster"
 		echo "$SEP"
 	fi
 	echo "$CAV"" AV. CHAP"
-	if [[ "$VISZ" == "AV" ]];
+	if [[ "$CAV" == "[-]" ]];
 	then
 		Stampa " 946. moxie0/chapcrack" "2582. sensepost/assless-chaps"
 		echo "$SEP"
 	fi
 	echo "$CAW"" AW. CHAT ENCRYPTED"
-	if [[ "$VISZ" == "AW" ]];
+	if [[ "$CAW" == "[-]" ]];
 	then
 		Stampa " 376. mjm918/python-AES-encryption-socket-secure-chat" "377. SusmithKrishnan/neuron"
 		Stampa " 378. ludvigknutsmark/python-chat" "379. sathwikv143/Encrypted-Python-Chat" "380. osalpekar/Encrypted-Chat"
@@ -702,33 +702,33 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CAX"" AX. CHROMECAST"
-	if [[ "$VISZ" == "AX" ]];
+	if [[ "$CAX" == "[-]" ]];
 	then
 		Stampa " 1402. thewhiteh4t/killcast"
 		echo "$SEP"
 	fi
 	echo "$CAY"" AY. CISCO"
-	if [[ "$VISZ" == "AY" ]];
+	if [[ "$CAY" == "[-]" ]];
 	then
 		Stampa " 463. Zapotek/cdpsnarf" "959. madrisan/cisco7crack" "2378. madrisan/cisco5crack"
 		echo "$SEP"
 	fi
 	echo "$CAZ"" AZ. CLOUDFLARE"
-	if [[ "$VISZ" == "AZ" ]];
+	if [[ "$CAZ" == "[-]" ]];
 	then
 		Stampa " 966. SageHack/cloud-buster" "967. m0rtem/CloudFail" "968. mandatoryprogrammer/cloudflare_enum"
 		Stampa " 969. eudemonics/cloudget" "973. greycatz/CloudUnflare"
 		echo "$SEP"
 	fi
 	echo "$CBA"" BA. CLOUDS"
-	if [[ "$VISZ" == "BA" ]];
+	if [[ "$CBA" == "[-]" ]];
 	then
 		Stampa " 658. SimplySecurity/SimplyEmail" "664. aquasecurity/cloudsploit" "911. Matrix07ksa/Brute_Force"
 		Stampa " 970. projectdiscovery/cloudlist" "972. cloudsploit/scans"
 		echo "$SEP"
 	fi
 	echo "$CBB"" BB. CMS"
-	if [[ "$VISZ" == "BB" ]];
+	if [[ "$CBB" == "[-]" ]];
 	then
 		Stampa " 483. TheDevFromKer/CMS-Attack" "484. Dionach/CMSmap" "234. n4xh4ck5/CMSsc4n"
 		Stampa " 976. FlorianHeigl/cms-explorer" "977. Tuhinshubhra/CMSeeK" "979. ajinabraham/CMSScan"
@@ -736,13 +736,13 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CBC"" BC. CORS"
-	if [[ "$VISZ" == "BC" ]];
+	if [[ "$CBC" == "[-]" ]];
 	then
 		Stampa " 987. chenjj/CORScanner" "988. RUB-NDS/CORStest"
 		echo "$SEP"
 	fi
 	echo "$CBD"" BD. CRACKING - GUESSING"
-	if [[ "$VISZ" == "BD" ]];
+	if [[ "$CBD" == "[-]" ]];
 	then
 		Stampa " 80. magnumripper/JohnTheRipper" "81. truongkma/ctf-tools/John" "82. SySS-Research/Seth"
 		Stampa " 83. s0md3v/Hash-Buster" "120. NetSPI/PS_MultiCrack" "41. shmilylty/cheetah"
@@ -765,7 +765,7 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CBE"" BE. CRAWLING - SPIDERING - SCRAPING"
-	if [[ "$VISZ" == "BE" ]];
+	if [[ "$CBE" == "[-]" ]];
 	then
 		Stampa " 586. saeeddhqan/evine" "722. OWASP/OWASP-WebScarab" "733. gotr00t0day/spider00t"
 		Stampa " 938. lgandx/CCrawlDNS" "941. lanrat/certgraph" "2341. Pinperepette/whistory"
@@ -776,14 +776,14 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CBF"" BF. CSRF - XSRF - SSRF"
-	if [[ "$VISZ" == "BF" ]];
+	if [[ "$CBF" == "[-]" ]];
 	then
 		Stampa " 406. 0xInfection/XSRFProbe" "2278. s0md3v/Bolt" "1141. Damian89/extended-ssrf-search"
 		Stampa " 2493. pinata-csrf-tool" "2523. google.com/pinata-csrf-tool"
 		echo "$SEP"
 	fi
 	echo "$CZZ"" ZZ. CVE LIST"
-	if [[ "$VISZ" == "ZZ" ]];
+	if [[ "$CZZ" == "ZZ" ]];
 	then
 		Stampa " 2414. dirkjanm/CVE-2020-1472" "2421. twistlock/RunC-CVE-2019-5736" "2428. jas502n/CVE-2019-12384"
 		Stampa " 2488. shadowgatt/CVE-2019-19356" "2530. ButrintKomoni/cve-2020-0796" "2531. jiansiting/CVE-2020-0796"
@@ -792,19 +792,19 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CBG"" BG. D"
-	if [[ "$VISZ" == "BG" ]];
+	if [[ "$CBG" == "[-]" ]];
 	then
 		Stampa " 1090. dlang-community/D-Scanner"
 		echo "$SEP"
 	fi
 	echo "$CBH"" BH. DATABASES"
-	if [[ "$VISZ" == "BH" ]];
+	if [[ "$CBH" == "[-]" ]];
 	then
 		Stampa " 1421. woj-ciech/LeakLooker" "1490. evanmiller/mdbtools" "1531. BlackArch/msfdb"
 		echo "$SEP"
 	fi
 	echo "$CBI"" BI. DEBUGGING - DECOMPILING"
-	if [[ "$VISZ" == "BI" ]];
+	if [[ "$CBI" == "[-]" ]];
 	then
 		Stampa " 144. snare/voltron" "125. detailyang/readelf" "222. vivisect/vivisect"
 		Stampa " 223. unicorn-engine/unicorn" "848. icsharpcode/AvaloniaILSpy" "882. Vector35/binaryninja-python"
@@ -815,13 +815,13 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CBJ"" BJ. DECRYPTING"
-	if [[ "$VISZ" == "BJ" ]];
+	if [[ "$CBJ" == "[-]" ]];
 	then
 		Stampa " 332. Ciphey/Ciphey"
 		echo "$SEP"
 	fi
 	echo "$CBK"" BK. DIRBUSTERING"
-	if [[ "$VISZ" == "BK" ]];
+	if [[ "$CBK" == "[-]" ]];
 	then
 		Stampa " 54. aboul3la/Sublist3r" "411. H4ckForJob/dirmap" "774. nccgroup/dirble"
 		Stampa " 1050. digination/dirbuster-ng" "1052. Cillian-Collins/dirscraper" "1053. maurosoria/dirsearch"
@@ -829,7 +829,7 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CBL"" BL. DISASSEMBLING"
-	if [[ "$VISZ" == "BL" ]];
+	if [[ "$CBL" == "[-]" ]];
 	then
 		Stampa " 216. gdbinit/MachOView" "217. cseagle/fREedom" "218. google/binnavi"
 		Stampa " 336. sciencemanx/x86-analysis" "340. wisk/medusa" "341. REDasmOrg/REDasm"
@@ -839,7 +839,7 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CBM"" BM. DISCOVERING"
-	if [[ "$VISZ" == "BM" ]];
+	if [[ "$CBM" == "[-]" ]];
 	then
 		Stampa " 559. epi052/feroxbuster" "573. robre/scripthunter" "729. chris408/ct-exposer"
 		Stampa " 736. gotr00t0day/VulnBanner" "760. fnk0c/cangibrina" "795. sahakkhotsanyan/adfind"
@@ -848,7 +848,7 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CBN"" BN. DNS - DOMAIN"
-	if [[ "$VISZ" == "BN" ]];
+	if [[ "$CBN" == "[-]" ]];
 	then
 		Stampa " 30. m57/dnsteal" "31. skelsec/jackdaw" "35. projectdiscovery/dnsprobe"
 		Stampa " 88. m57/dnsteal" "269. dariusztytko/vhosts-sieve" "286. iphelix/dnschef"
@@ -870,20 +870,20 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CBO"" BO. DOCKER"
-	if [[ "$VISZ" == "BO" ]];
+	if [[ "$CBD" == "[-]" ]];
 	then
 		Stampa " 351. cr0hn/dockerscan" "352. RhinoSecurityLabs/ccat" "2420. kost/dockscan"
 		Stampa " 2482. Ullaakut/Gorsair"
 		echo "$SEP"
 	fi
 	echo "$CBP"" BP. DRUPAL"
-	if [[ "$VISZ" == "BP" ]];
+	if [[ "$CBP" == "[-]" ]];
 	then
 		Stampa " 1088. Tethik/drupal-module-enumeration" "1089. immunIT/drupwn"
 		echo "$SEP"
 	fi
 	echo "$CBQ"" BQ. DUMPING - EXTRACTING - RIPPING"
-	if [[ "$VISZ" == "BQ" ]];
+	if [[ "$CBQ" == "[-]" ]];
 	then
 		Stampa " 121. AlessandroZ/LaZagne" "170. sevagas/swap_digger" "49. Greenwolf/ntlm_theft"
 		Stampa " 197. sowdust/pdfxplr" "213. Arno0x/NtlmRelayToEWS" "221. 504ensicsLabs/LiME"
@@ -896,13 +896,13 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CBR"" BR. EDITOR"
-	if [[ "$VISZ" == "BR" ]];
+	if [[ "$CBR" == "[-]" ]];
 	then
 		Stampa " 894. afrantzis/bless"
 		echo "$SEP"
 	fi
 	echo "$CBS"" BS. ENUMERATION"
-	if [[ "$VISZ" == "BS" ]];
+	if [[ "$CBS" == "[-]" ]];
 	then
 		Stampa " 163. luke-goddard/enumy" "209. Knowledge-Wisdom-Understanding/recon"
 		Stampa " 619. cddmp/enum4linux-ng" "735. gotr00t0day/oswalkpy" "840. skahwah/automato"
@@ -914,7 +914,7 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CBT"" BT. EVASION - BYPASSING - OBFUSCATION"
-	if [[ "$VISZ" == "BT" ]];
+	if [[ "$CBT" == "[-]" ]];
 	then
 		Stampa " 167. govolution/avet" "134. khalilbijjou/WAFNinja" "174. stormshadow07/HackTheWorld"
 		Stampa " 268. wintrmvte/SNOWCRASH" "275. CBHue/PyFuscation" "293. OsandaMalith/PE2HTML"
@@ -932,21 +932,21 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CBU"" BU. EXCHANGE"
-	if [[ "$VISZ" == "BU" ]];
+	if [[ "$CBU" == "[-]" ]];
 	then
 		Stampa " 571. sensepost/ruler" "2351. dirkjanm/PrivExchange" "2404. RickGeex/ProxyLogon"
 		Stampa " 2554. dmaasland/proxyshell-poc"
 		echo "$SEP"
 	fi
 	echo "$CBV"" BV. EXFILTRATION"
-	if [[ "$VISZ" == "BV" ]];
+	if [[ "$CBV" == "[-]" ]];
 	then
 		Stampa " 314. danielwolfmann/Invoke-WordThief/logger" "593. TryCatchHCF/PacketWhisper" "2444. foofus-sph1nx/PyMailSniper"
 		Stampa " 2479. antman1p/GDir-Thief"
 		echo "$SEP"
 	fi
 	echo "$CBW"" BW. EXPLOIT"
-	if [[ "$VISZ" == "BW" ]];
+	if [[ "$CBW" == "[-]" ]];
 	then
 		Stampa " 10. exploit-db/linux - remote scripts" "11. exploit-db/linux_x86 - remote scripts" "12. exploit-db/linux_x86-64 - remote scripts"
 		Stampa " 13. exploit-db/windows - remote scripts" "14. exploit-db/windows_x86 - remote scripts" "15. exploit-db/windows_x86-64 - remote scripts"
@@ -959,13 +959,13 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CBX"" BX. EXTRA - EXTENSIONS"
-	if [[ "$VISZ" == "BX" ]];
+	if [[ "$CBX" == "[-]" ]];
 	then
 		Stampa " 252. LionSec/katoolin" "1177. mazen160/Firefox-Security-Toolkit"
 		echo "$SEP"
 	fi
 	echo "$CBY"" BY. FACEBOOK"
-	if [[ "$VISZ" == "BY" ]];
+	if [[ "$CBY" == "[-]" ]];
 	then
 		Stampa " 1148. tomoneill19/facebookOSINT" "1149. pun1sh3r/facebot" "1150. PowerScript/facebrok"
 		Stampa " 1151. emerinohdz/FaceBrute" "1159. chinoogawa/fbht"
@@ -973,19 +973,19 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CBZ"" BZ. FILE - SYSTEM"
-	if [[ "$VISZ" == "BZ" ]];
+	if [[ "$CBZ" == "[-]" ]];
 	then
 		Stampa " 446. aarsakian/MFTExtractor"
 		echo "$SEP"
 	fi
 	echo "$CCA"" CA. FINGER"
-	if [[ "$VISZ" == "CA" ]];
+	if [[ "$CCA" == "[-]" ]];
 	then
 		Stampa " 609. pentestmonkey/finger-user-enum"
 		echo "$SEP"
 	fi
 	echo "$CCB"" CB. FOOTPRINTING - FINGERPRINTING"
-	if [[ "$VISZ" == "CB" ]];
+	if [[ "$CCB" == "[-]" ]];
 	then
 		Stampa " 132. Zarcolio/sitedorks" "133. s0md3v/photon" "276. m3n0sd0n4ld/uDork"
 		Stampa " 414. hhhrrrttt222111/Dorkify" "415. Chr0m0s0m3s/DeadTrap" "420. techgaun/github-dorks"
@@ -995,13 +995,13 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CCC"" CC. FREQUENCY"
-	if [[ "$VISZ" == "CC" ]];
+	if [[ "$CCC" == "[-]" ]];
 	then
 		Stampa " 1534. EliasOenal/multimon-ng"
 		echo "$SEP"
 	fi
 	echo "$CCD"" CD. FTP"
-	if [[ "$VISZ" == "CD" ]];
+	if [[ "$CCD" == "[-]" ]];
 	then
 		Stampa " 147. WalderlanSena/ftpbrute" "149. AlphaRoy14/km985ytv-ftp-exploit"
 		Stampa " 150. GitHackTools/FTPBruter" "151. DevilSquidSecOps/FTP" "154. pentestmonkey/ftp-user-enum"
@@ -1009,7 +1009,7 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CCE"" CE. FUZZING"
-	if [[ "$VISZ" == "CE" ]];
+	if [[ "$CCE" == "[-]" ]];
 	then
 		Stampa " 34. devanshbatham/ParamSpider" "56. jtpereyda/boofuzz" "50. fuzzdb-project/fuzzdb"
 		Stampa " 130. google/AFL" "72. corelan/mona" "73. OpenRCE/sulley"
@@ -1037,7 +1037,7 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CCF"" CF. GATHERING - OSINT - DOXING"
-	if [[ "$VISZ" == "CF" ]];
+	if [[ "$CCF" == "[-]" ]];
 	then
 		Stampa " 168. Screetsec/Sudomy" "177. HightechSec/git-scanner/gitscanner" "89. urbanadventurer/WhatWeb"
 		Stampa " 215. evanmiller/hecate" "246. danieleperera/OnionIngestor" "248. evyatarmeged/Raccoon"
@@ -1071,7 +1071,7 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CCG"" CG. GIT - REPOS"
-	if [[ "$VISZ" == "CG" ]];
+	if [[ "$CCG" == "[-]" ]];
 	then
 		Stampa " 487. arthaud/git-dumper" "553. Ebryx/GitDump" "2315. metac0rtex/GitHarvester"
 		Stampa " 2422. michenriksen/gitrob" "1216. bahamas10/node-git-dump" "1217. tillson/git-hound"
@@ -1082,49 +1082,49 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CCH"" CH. GITLAB"
-	if [[ "$VISZ" == "CH" ]];
+	if [[ "$CCH" == "[-]" ]];
 	then
 		Stampa " 2407. dotPY-hax/gitlab_RCE"
 		echo "$SEP"
 	fi
 	echo "$CCI"" CI. GOPHER"
-	if [[ "$VISZ" == "CI" ]];
+	if [[ "$CCI" == "[-]" ]];
 	then
 		Stampa " 1238. tarunkant/Gopherus"
 		echo "$SEP"
 	fi
 	echo "$CCJ"" CJ. GRAPHQL"
-	if [[ "$VISZ" == "CJ" ]];
+	if [[ "$CCJ" == "[-]" ]];
 	then
 		Stampa " 1249. swisskyrepo/GraphQLmap"
 		echo "$SEP"
 	fi
 	echo "$CCK"" CK. GSM"
-	if [[ "$VISZ" == "CK" ]];
+	if [[ "$CCK" == "[-]" ]];
 	then
 		Stampa " 1394. steve-m/kalibrate-rtl"
 		echo "$SEP"
 	fi
 	echo "$CCM"" CM. GTFO"
-	if [[ "$VISZ" == "CM" ]];
+	if [[ "$CCM" == "[-]" ]];
 	then
 		Stampa " 1255. mzfr/gtfo" "1256. nccgroup/GTFOBLookup"
 		echo "$SEP"
 	fi
 	echo "$CCN"" CN. GVM"
-	if [[ "$VISZ" == "CN" ]];
+	if [[ "$CCN" == "[-]" ]];
 	then
 		Stampa " 1251. greenbone/gsa" "1257. greenbone/gvmd"
 		echo "$SEP"
 	fi
 	echo "$CCO"" CO. HARDWARE"
-	if [[ "$VISZ" == "CO" ]];
+	if [[ "$CCO" == "[-]" ]];
 	then
 		Stampa " 2458. samyk/glitchsink" "1526. iamckn/mousejack_transmit"
 		echo "$SEP"
 	fi
 	echo "$CCP"" CP. HASH"
-	if [[ "$VISZ" == "CP" ]];
+	if [[ "$CCP" == "[-]" ]];
 	then
 		Stampa " 2260. cube0x0/HashSpray.py" "2446. MichaelDim02/houndsniff" "1274. iagox86/hash_extender"
 		Stampa " 1275. blackploit/hash-identifier" "1281. rurapenthe/hashfind" "1282. psypanda/hashID"
@@ -1132,31 +1132,31 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CCQ"" CQ. HDCP"
-	if [[ "$VISZ" == "CQ" ]];
+	if [[ "$CCQ" == "[-]" ]];
 	then
 		Stampa " 1291. rjw57/hdcp-genkey"
 		echo "$SEP"
 	fi
 	echo "$CCR"" CR. HEAP"
-	if [[ "$VISZ" == "CR" ]];
+	if [[ "$CCR" == "[-]" ]];
 	then
 		Stampa " 2484. gand3lf/heappy"
 		echo "$SEP"
 	fi
 	echo "$CCS"" CS. HID"
-	if [[ "$VISZ" == "CS" ]];
+	if [[ "$CCS" == "[-]" ]];
 	then
 		Stampa " 1396. samratashok/Kautilya"
 		echo "$SEP"
 	fi
 	echo "$CCT"" CT. HIKVISION"
-	if [[ "$VISZ" == "CF" ]];
+	if [[ "$CCT" == "[-]" ]];
 	then
 		Stampa " 1298. 4n4nk3/HikPwn"
 		echo "$SEP"
 	fi
 	echo "$CCU"" CU. HOOKING - HIJACKING - INJECTION"
-	if [[ "$VISZ" == "CU" ]];
+	if [[ "$CCU" == "[-]" ]];
 	then
 		Stampa " 140. zznop/drow" "173. J3wker/DLLicous-MaliciousDLL" "185. cybercitizen7/Ps1jacker"
 		Stampa " 196. thelinuxchoice/spyeye" "353. ujjwal96/njaXt" "354. toxic-ig/SQL-XSS"
@@ -1173,14 +1173,14 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CCV"" CV. HTTP - HTTP/2"
-	if [[ "$VISZ" == "CV" ]];
+	if [[ "$CCV" == "[-]" ]];
 	then
 		Stampa " 1260. summerwind/h2spec" "1313. lijiejie/htpwdScan" "1418. wireghoul/lbmap"
 		Stampa " 1519. RedTeamPentesting/monsoon"
 		echo "$SEP"
 	fi
 	echo "$CCW"" CW. IIS"
-	if [[ "$VISZ" == "CW" ]];
+	if [[ "$CCW" == "[-]" ]];
 	then
 		Stampa " 22. 0x09AL/IIS-Raid" "23. thelinuxchoice/evilreg" "24. thelinuxchoice/eviloffice"
 		Stampa " 25. thelinuxchoice/evildll" "158. gehaxelt/Python-dsstore" "250. edwardz246003/IIS_exploit"
@@ -1189,26 +1189,26 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CCX"" CX. IKE"
-	if [[ "$VISZ" == "CX" ]];
+	if [[ "$CCX" == "[-]" ]];
 	then
 		Stampa " 526. 0x90/vpn-arsenal" "726. SpiderLabs/ikeforce" "727. royhills/ike-scan"
 		echo "$SEP"
 	fi
 	echo "$CCY"" CY. IMAP"
-	if [[ "$VISZ" == "CY" ]];
+	if [[ "$CCY" == "[-]" ]];
 	then
 		Stampa " 204. byt3bl33d3r/SprayingToolkit" "205. mrexodia/haxxmap" "207. iomoath/IMAP-Cracker"
 		Stampa " 2379. kurobeats/fimap"
 		echo "$SEP"
 	fi
 	echo "$CCZ"" CZ. IMSI"
-	if [[ "$VISZ" == "CY" ]];
+	if [[ "$CCZ" == "[-]" ]];
 	then
 		Stampa " 387. Oros42/IMSI-catcher" "386. sharyer/GSMEvil/ImsiEvil"
 		echo "$SEP"
 	fi
 	echo "$CDA"" DA. iOS"
-	if [[ "$VISZ" == "DA" ]];
+	if [[ "$CDA" == "[-]" ]];
 	then
 		Stampa " 360. tokyoneon/Arcane" "442. Flo354/iOSForensic" "443. as0ler/iphone-dataprotection"
 		Stampa " 444. jantrim/iosbackupexaminer" "666. yuejd/ios_Restriction_PassCode_Crack---Python-version"
@@ -1217,13 +1217,13 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CDB"" DB. IoT"
-	if [[ "$VISZ" == "DB" ]];
+	if [[ "$CDB" == "[-]" ]];
 	then
 		Stampa " 748. SafeBreach-Labs/SirepRAT" "1302. ElevenPaths/HomePWN"
 		echo "$SEP"
 	fi
 	echo "$CDC"" DC. IPCAM - DVR"
-	if [[ "$VISZ" == "DC" ]];
+	if [[ "$CDC" == "[-]" ]];
 	then
 		Stampa " 398. CCrashBandicot/IPCam" "399. nathan242/ipcam-cctv" "400. Benehiko/GoNetworkCameraScanner"
 		Stampa " 401. vanpersiexp/expcamera" "656. spicesouls/reosploit" "929. Ullaakut/cameradar"
@@ -1231,63 +1231,63 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CDD"" DD. IPMI"
-	if [[ "$VISZ" == "DD" ]];
+	if [[ "$CDD" == "[-]" ]];
 	then
 		Stampa " 1356. AnarchyAngel/IPMIPWN"
 		echo "$SEP"
 	fi
 	echo "$CDE"" DE. IRC"
-	if [[ "$VISZ" == "DE" ]];
+	if [[ "$CDE" == "[-]" ]];
 	then
 		Stampa " 1362. bwall/ircsnapshot"
 		echo "$SEP"
 	fi
 	echo "$CDF"" DF. ISCSI"
-	if [[ "$VISZ" == "DF" ]];
+	if [[ "$CDF" == "[-]" ]];
 	then
 		Stampa " 2303. bitvijays/Pentest-Scripts/isciadm" "2304. open-iscsi/open-iscsi"
 		echo "$SEP"
 	fi
 	echo "$CDG"" DG. iTUNES"
-	if [[ "$VISZ" == "DG" ]];
+	if [[ "$CDG" == "[-]" ]];
 	then
 		Stampa " 665. jos666/itunes_hack"
 		echo "$SEP"
 	fi
 	echo "$CDH"" DH. JAVA"
-	if [[ "$VISZ" == "DH" ]];
+	if [[ "$CDH" == "[-]" ]];
 	then
 		Stampa " 227. pxb1988/dex2jar" "346. benf/cfr" "356. java-decompiler/jd-gui"
 		Stampa " 2276. qtc-de/remote-method-guesser" "1372. frohoff/jdeserialize"
 		echo "$SEP"
 	fi
 	echo "$CDI"" DI. JBOSS"
-	if [[ "$VISZ" == "DI" ]];
+	if [[ "$CDI" == "[-]" ]];
 	then
 		Stampa " 1370. SpiderLabs/jboss-autopwn" "1375. joaomatosf/jexboss"
 		echo "$SEP"
 	fi
 	echo "$CDJ"" DJ. JENKINS"
-	if [[ "$VISZ" == "DJ" ]];
+	if [[ "$CDJ" == "[-]" ]];
 	then
 		Stampa " 356. gquere/pwn_jenkins"
 		echo "$SEP"
 	fi
 	echo "$CDK"" DK. JOOMLA"
-	if [[ "$VISZ" == "DK" ]];
+	if [[ "$CDK" == "[-]" ]];
 	then
 		Stampa " 2335. oppsec/juumla" "1376. black-hawk-97/jooforce"
 		echo "$SEP"
 	fi
 	echo "$CDL"" DL. JWT"
-	if [[ "$VISZ" == "DL" ]];
+	if [[ "$CDL" == "[-]" ]];
 	then
 		Stampa " 1389. brendan-rius/c-jwt-cracker" "1390. ticarpi/jwt_tool" "1391. aress31/jwtcat"
 		Stampa " 1542. mBouamama/MyJWT"
 		echo "$SEP"
 	fi
 	echo "$CDM"" DM. KERBEROS"
-	if [[ "$VISZ" == "DM" ]];
+	if [[ "$CDM" == "[-]" ]];
 	then
 		Stampa " 3. ropnop/kerbrute" "26. TarlogicSecurity/kerbrute" "5. CroweCybersecurity/ad-ldap-enum"
 		Stampa " 6. proabiral/inception" "362. nidem/kerberoast" "516. NotMedic/NetNTLMtoSilverTicket/dementor"
@@ -1295,13 +1295,13 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CDN"" DN. KNX"
-	if [[ "$VISZ" == "DN" ]];
+	if [[ "$CDN" == "[-]" ]];
 	then
 		Stampa " 1408. ernw/knxmap"
 		echo "$SEP"
 	fi
 	echo "$CDO"" DO. KUBERNETES"
-	if [[ "$VISZ" == "DO" ]];
+	if [[ "$CDO" == "[-]" ]];
 	then
 		Stampa " 374. liggitt/audit2rbac" "375. mhausenblas/kaput" "647. vchinnipilli/kubestrike"
 		Stampa " 648. cyberark/KubiScan" "2395. swisskyrepo/PayloadsAllTheThings/Kubernetes"
@@ -1310,7 +1310,7 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CDP"" DP. LDAP"
-	if [[ "$VISZ" == "DP" ]];
+	if [[ "$CDP" == "[-]" ]];
 	then
 		Stampa " 1. CasperGN/ActiveDirectoryEnumeration" "2. dirkjanm/ldapdomaindump" "4. ropnop/windapsearch"
 		Stampa " 64. dinigalab/ldapsearch" "84. 3rdDegree/dapper" "85. m8r0wn/ldap_search"
@@ -1319,51 +1319,51 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CDQ"" DQ. LFI"
-	if [[ "$VISZ" == "DQ" ]];
+	if [[ "$CDQ" == "[-]" ]];
 	then
 		Stampa " 1431. aepereyra/lfimap" "2606. kostas-pa/LFITester" "1430. OsandaMalith/LFiFreak"
 		Stampa " 1432. D35m0nd142/LFISuite" "1440. mzfr/liffy"
 		echo "$SEP"
 	fi
 	echo "$CDR"" DR. LTE"
-	if [[ "$VISZ" == "DR" ]];
+	if [[ "$CDR" == "[-]" ]];
 	then
 		Stampa " 1464. Evrytania/LTE-Cell-Scanner"
 		echo "$SEP"
 	fi
 	echo "$CDS"" DS. MACRO"
-	if [[ "$VISZ" == "DS" ]];
+	if [[ "$CDS" == "[-]" ]];
 	then
 		Stampa " 1468. infosecn1nja/MaliciousMacroMSBuild"
 		echo "$SEP"
 	fi
 	echo "$CDT"" DT. MAGENTO"
-	if [[ "$VISZ" == "DT" ]];
+	if [[ "$CDT" == "[-]" ]];
 	then
 		Stampa " 1471. steverobbins/magescan"
 		echo "$SEP"
 	fi
 	echo "$CDU"" DU. MAIL"
-	if [[ "$VISZ" == "DU" ]];
+	if [[ "$CDU" == "[-]" ]];
 	then
 		Stampa " 1262. khast3x/h8mail"
 		echo "$SEP"
 	fi
 	echo "$CDV"" DV. MALWARE"
-	if [[ "$VISZ" == "DV" ]];
+	if [[ "$CDV" == "[-]" ]];
 	then
 		Stampa " 407. avinashkranjan/Malware-with-Backdoor-and-Keylogger"
 		Stampa " 2561. 0xFreddox/KeyLogger-WebService" "2588. Revise7/ViperVenom" "1478. technoskald/maltrieve"
 		echo "$SEP"
 	fi
 	echo "$CDW"" DW. MEMCACHEDAEMON"
-	if [[ "$VISZ" == "DW" ]];
+	if [[ "$CDW" == "[-]" ]];
 	then
 		Stampa " 166. linsomniac/python-memcached"
 		echo "$SEP"
 	fi
 	echo "$CDX"" DX. MISC - FRAMEWORKS"
-	if [[ "$VISZ" == "DX" ]];
+	if [[ "$CDX" == "[-]" ]];
 	then
 		Stampa " 20. trustedsec scripts" "21. Hood3dRob1n scripts" "33. fox-it/BloodHound"
 		Stampa " 67. byt3bl33d3r/CrackMapExec" "52. tismayil/ohmybackup" "40. SecureAuthCorp/impacket"
@@ -1412,7 +1412,7 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CDY"" DY. MITM - SNIFFING"
-	if [[ "$VISZ" == "DY" ]];
+	if [[ "$CDY" == "[-]" ]];
 	then
 		Stampa " 249. kgretzky/evilginx2" "331. mkdirlove/SSLSTRIP-NG/sslstrip-ng" "541. wifiphisher/wifiphisher"
 		Stampa " 764. Esser420/EvilTwinFramework" "801. Josue87/Airopy" "872. secretsquirrel/BDFProxy"
@@ -1432,62 +1432,62 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CDZ"" DZ. MOBILE"
-	if [[ "$VISZ" == "DZ" ]];
+	if [[ "$CDZ" == "[-]" ]];
 	then
 		Stampa " 2344. sensepost/objection" "2585. tegal1337/CiLocks"
 		echo "$SEP"
 	fi
 	echo "$CEA"" EA. MODEM"
-	if [[ "$VISZ" == "EA" ]];
+	if [[ "$CEA" == "[-]" ]];
 	then
 		Stampa " 1509. kamalmostafa/minimodem"
 		echo "$SEP"
 	fi
 	echo "$CEB"" EB. MONGODB - NOSQL"
-	if [[ "$VISZ" == "EB" ]];
+	if [[ "$CEB" == "[-]" ]];
 	then
 		Stampa " 230. youngyangyang04/NoSQLAttack" "231. codingo/NoSQLMap" "232. torque59/Nosql-Exploitation-Framework"
 		Stampa " 1518. stampery/mongoaudit"
 		echo "$SEP"
 	fi
 	echo "$CEC"" EC. MRT"
-	if [[ "$VISZ" == "EC" ]];
+	if [[ "$CEC" == "[-]" ]];
 	then
 		Stampa " 1529. t2mune/mrtparse"
 		echo "$SEP"
 	fi
 	echo "$CED"" ED. MYSQL"
-	if [[ "$VISZ" == "ED" ]];
+	if [[ "$CED" == "[-]" ]];
 	then
 		Stampa " 301. ufuksungu/MySqlBruteForce/mysql"
 		echo "$SEP"
 	fi
 	echo "$CEE"" EE. NAS"
-	if [[ "$VISZ" == "EE" ]];
+	if [[ "$CEE" == "[-]" ]];
 	then
 		Stampa " 402. TrustMe00/experience_synology_attack"
 		echo "$SEP"
 	fi
 	echo "$CEF"" EF. NETLOGON"
-	if [[ "$VISZ" == "EF" ]];
+	if [[ "$CEF" == "[-]" ]];
 	then
 		Stampa " 508. risksense/zerologon" "509. bb00/zer0dump" "510. VoidSec/CVE-2020-1472"
 		echo "$SEP"
 	fi
 	echo "$CEG"" EG. NETWORK - TCP - UDP"
-	if [[ "$VISZ" == "EG" ]];
+	if [[ "$CEG" == "[-]" ]];
 	then
 		Stampa " 2504. tomac/yersinia" "1527. CiscoCXSecurity/mptcp-abuse" "1543. mehrdadrad/mylg"
 		echo "$SEP"
 	fi
 	echo "$CEH"" EH. NGINX"
-	if [[ "$VISZ" == "EH" ]];
+	if [[ "$CEH" == "[-]" ]];
 	then
 		Stampa " 2461. stark0de/nginxpwner"
 		echo "$SEP"
 	fi
 	echo "$CEI"" EI. NSE"
-	if [[ "$VISZ" == "EI" ]];
+	if [[ "$CEI" == "[-]" ]];
 	then
 		Stampa " 2626. Diverto/nse-log4shell" "2627. psc4re/NSE-scripts" "2628. hackertarget/nmap-nse-scripts"
 		Stampa " 2629. hkm/nmap-nse-scripts" "2630. takeshixx/nmap-scripts" "2631. giterlizzi/nmap-log4shell"
@@ -1495,45 +1495,45 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CEJ"" EJ. NTP"
-	if [[ "$VISZ" == "EJ" ]];
+	if [[ "$CEJ" == "[-]" ]];
 	then
 		Stampa " 178. PentesterES/Delorean"
 		echo "$SEP"
 	fi
 	echo "$CEK"" EK. OWA"
-	if [[ "$VISZ" == "EK" ]];
+	if [[ "$CEK" == "[-]" ]];
 	then
 		Stampa " 343. busterb/msmailprobe" "344. 0xZDH/o365spray" "345. gremwell/o365enum"
 		echo "$SEP"
 	fi
 	echo "$CEL"" EL. PASSWORD"
-	if [[ "$VISZ" == "EL" ]];
+	if [[ "$CEL" == "[-]" ]];
 	then
 		Stampa " 393. clr2of8/DPAT"
 		echo "$SEP"
 	fi
 	echo "$CEM"" EM. PAYLOAD"
-	if [[ "$VISZ" == "EM" ]];
+	if [[ "$CEM" == "[-]" ]];
 	then
 		Stampa " 1270. Rich5/Harness" "1295. EgeBalci/HERCULES" "1343. 4w4k3/Insanity-Framework"
 		Stampa " 2610. Deadpool2000/Paybag" "1412. sensepost/kwetza" "1530. g0tmi1k/mpc"
 		echo "$SEP"
 	fi
 	echo "$CEN"" EN. PDF"
-	if [[ "$VISZ" == "EN" ]];
+	if [[ "$CEN" == "[-]" ]];
 	then
 		Stampa " 46. thelinuxchoice/evilpdf" "47. robins/pdfcrack" "48. BroadbentT/PDF-CRACKER/pdf-cracker"
 		Stampa " 2274. superzerosec/evilpdf" "1333. coderofsalvation/imagegrep-bash"
 		echo "$SEP"
 	fi
 	echo "$CEO"" EO. PERSISTENCE"
-	if [[ "$VISZ" == "EO" ]];
+	if [[ "$CEO" == "[-]" ]];
 	then
 		Stampa " 2393. swisskyrepo/PayloadsAllTheThings/Methodology_and_Resources/Linux_-_Persistence"
 		echo "$SEP"
 	fi
 	echo "$CEP"" EP. PHISHING - SOCIAL ENGINEERING"
-	if [[ "$VISZ" == "EP" ]];
+	if [[ "$CEP" == "[-]" ]];
 	then
 		Stampa " 385. blark/cli-phisher" "412. kurogai/nero-phishing-server" "413. KnightSec-Official/Phlexish"
 		Stampa " 489. david3107/squatm3" "490. netevert/dnsmorph" "767. htr-tech/zphisher"
@@ -1545,37 +1545,37 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CEQ"" EQ. PHP"
-	if [[ "$VISZ" == "EQ" ]];
+	if [[ "$CEQ" == "[-]" ]];
 	then
 		Stampa " 2247. ecriminal/phpvuln" "2248. ZaleHack/phpexploit"
 		echo "$SEP"
 	fi
 	echo "$CER"" ER. POST-EXPLOITATION"
-	if [[ "$VISZ" == "ER" ]];
+	if [[ "$CER" == "[-]" ]];
 	then
 		Stampa " 2241. master-of-servers/mose"
 		echo "$SEP"
 	fi
 	echo "$CES"" ES. POSTGRESQL"
-	if [[ "$VISZ" == "ES" ]];
+	if [[ "$CES" == "[-]" ]];
 	then
 		Stampa " 303. KTN1990/PostgreSQL--Attack-on-default-password-AUTOEXPLOITING-/DB"
 		echo "$SEP"
 	fi
 	echo "$CET"" ET. PRINTER"
-	if [[ "$VISZ" == "ET" ]];
+	if [[ "$CET" == "[-]" ]];
 	then
 		Stampa " 639. RUB-NDS/PRET" "2595. BeetleChunks/SpoolSploit"
 		echo "$SEP"
 	fi
 	echo "$CEU"" EU. PRIVESC"
-	if [[ "$VISZ" == "EU" ]];
+	if [[ "$CEU" == "[-]" ]];
 	then
 		Stampa " 2394. swisskyrepo/PayloadsAllTheThings/Methodology_and_Resources/Linux-PrivilegeEscalation"
 		echo "$SEP"
 	fi
 	echo "$CEV"" EV. PROXY - REVERSE PROXY"
-	if [[ "$VISZ" == "EV" ]];
+	if [[ "$CEV" == "[-]" ]];
 	then
 		Stampa " 162. fozavci/viproy-VoIPkit" "610. audibleblink/doxycannon" "885. nccgroup/BinProxy"
 		Stampa " 1058. StalkR/dns-reverse-proxy" "1059. maurotfilho/dns-spoof" "1060. d4rkcat/dnsbrute"
@@ -1584,38 +1584,38 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CEW"" EW. PRY"
-	if [[ "$VISZ" == "EW" ]];
+	if [[ "$CEW" == "[-]" ]];
 	then
 		Stampa " 743. deivid-rodriguez/pry-byebug"
 		echo "$SEP"
 	fi
 	echo "$CEX"" EX. PST"
-	if [[ "$VISZ" == "EX" ]];
+	if [[ "$CEX" == "[-]" ]];
 	then
 		Stampa " 2269. righettod/pst-digger"
 		echo "$SEP"
 	fi
 	echo "$CEY"" EY. QUERIES"
-	if [[ "$VISZ" == "EY" ]];
+	if [[ "$CEY" == "[-]" ]];
 	then
 		Stampa " 2253. CompassSecurity/BloodHoundQueries"
 		echo "$SEP"
 	fi
 	echo "$CEZ"" EZ. RABBITMQ"
-	if [[ "$VISZ" == "EZ" ]];
+	if [[ "$CEZ" == "[-]" ]];
 	then
 		Stampa " 989. QKaiser/cottontail"
 		echo "$SEP"
 	fi
 	echo "$CFA"" FA. RADIO"
-	if [[ "$VISZ" == "FA" ]];
+	if [[ "$CFA" == "[-]" ]];
 	then
 		Stampa " 1244. bistromath/gr-air-modes" "1245. ptrkrysik/gr-gsm" "1246. drmpeg/gr-paint"
 		Stampa " 1265. mossmann/hackrf"
 		echo "$SEP"
 	fi
 	echo "$CFB"" FB. RAINBOW TABLE - PLAINMASTERKEYS"
-	if [[ "$VISZ" == "FB" ]];
+	if [[ "$CFB" == "[-]" ]];
 	then
 		Stampa " 260. clu8/RainbowTable" "261. zcdziura/leprechaun" "262. CyberKnight00/RainbowHash"
 		Stampa " 263. dgleebits/Double-Rainbow" "264. jtesta/rainbowcrackalack" "265. sepehrdaddev/hashcobra"
@@ -1623,32 +1623,32 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CFC"" FC. RANSOMWARE"
-	if [[ "$VISZ" == "FC" ]];
+	if [[ "$CFC" == "[-]" ]];
 	then
 		Stampa "2497. leonv024/RAASNet"
 		echo "$SEP"
 	fi
 	echo "$CFD"" FD. RAR"
-	if [[ "$VISZ" == "FD" ]];
+	if [[ "$CFD" == "[-]" ]];
 	then
 		Stampa " 273. dunossauro/PyRarCrack/pyrarcrack"
 		echo "$SEP"
 	fi
 	echo "$CFE"" FE. RASPBERRY"
-	if [[ "$VISZ" == "FE" ]];
+	if [[ "$CFE" == "[-]" ]];
 	then
 		Stampa " 584. BusesCanFly/rpi-hunter"
 		echo "$SEP"
 	fi
 	echo "$CFF"" FF. RAT"
-	if [[ "$VISZ" == "FF" ]];
+	if [[ "$CFF" == "[-]" ]];
 	then
 		Stampa " 536. Pure-L0G1C/Loki" "2230. fadinglr/Parat" "2235. BenChaliah/Arbitrium-RAT"
 		Stampa " 2330. FrenchCisco/RATel" "2359. khaleds-brain/Bella" "2375. nathanlopez/Stitch"
 		echo "$SEP"
 	fi
 	echo "$CFG"" FG. RDP"
-	if [[ "$VISZ" == "FG" ]];
+	if [[ "$CFG" == "[-]" ]];
 	then
 		Stampa " 86. ekultek/bluekeep" "328. citronneur/rdpy" "329. aerissecure/rdpy"
 		Stampa " 330. fhirschmann/rdp" "452. Vulnerability-scanner/Lazy-RDP" "636. xFreed0m/RDPassSpray"
@@ -1656,7 +1656,7 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CFH"" FH. RECONIZING"
-	if [[ "$VISZ" == "FH" ]];
+	if [[ "$CFH" == "[-]" ]];
 	then
 		Stampa " 131. leobeosab/sharingan" "94. samhaxr/recox" "129. sowdust/ffff"
 		Stampa " 214. j3ssie/Osmedeus" "242. smicallef/spiderfoot" "308. yogeshojha/rengine"
@@ -1675,19 +1675,19 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CFI"" FI. REDIS"
-	if [[ "$VISZ" == "FI" ]];
+	if [[ "$CFG" == "[-]" ]];
 	then
 		Stampa " 759. Avinash-acid/Redis-Server-Exploit" "1264. Ridter/hackredis"
 		echo "$SEP"
 	fi
 	echo "$CFJ"" FJ. REST"
-	if [[ "$VISZ" == "FJ" ]];
+	if [[ "$CFJ" == "[-]" ]];
 	then
 		Stampa " 832. flipkart-incubator/astra"
 		echo "$SEP"
 	fi
 	echo "$CFK"" FK. REVERSING"
-	if [[ "$VISZ" == "FK" ]];
+	if [[ "$CFK" == "[-]" ]];
 	then
 		Stampa " 361. yeggor/UEFI_RETool" "737. gotr00t0day/b1n4ryR3v3rs3" "866. programa-stic/barf-project"
 		Stampa " 1124. thorkill/eresi" "2349. 4w4k3/rePy2exe" "2390. nodauf/Girsh"
@@ -1696,7 +1696,7 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CFL"" FL. REVSHELL"
-	if [[ "$VISZ" == "FL" ]];
+	if [[ "$CFL" == "[-]" ]];
 	then
 		Stampa " 515. 3v4Si0N/HTTP-revshell" "2321. shelld3v/JSshell" "2372. 0dayCTF/reverse-shell-generator"
 		Stampa " 2392. swisskyrepo/PayloadsAllTheThings/Methodology_and_Resources/Reverse_Shell_Cheatsheet"
@@ -1705,51 +1705,51 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CFM"" FM. RMI"
-	if [[ "$VISZ" == "FM" ]];
+	if [[ "$CFM" == "[-]" ]];
 	then
 		Stampa " 867. NickstaDB/BaRMIe"
 		echo "$SEP"
 	fi
 	echo "$CFN"" FN. ROGUE ACCESS POINT"
-	if [[ "$VISZ" == "FN" ]];
+	if [[ "$CFN" == "[-]" ]];
 	then
 		Stampa " 575. MS-WEB-BN/c41n"
 		echo "$SEP"
 	fi
 	echo "$CFO"" FO. ROOTKIT"
-	if [[ "$VISZ" == "FO" ]];
+	if [[ "$CFO" == "[-]" ]];
 	then
 		Stampa " 853. chokepoint/azazel"
 		echo "$SEP"
 	fi
 	echo "$CFP"" FP. ROUTERS"
-	if [[ "$VISZ" == "FP" ]];
+	if [[ "$CFP" == "[-]" ]];
 	then
 		Stampa " 145. threat9/routersploit" "2487. acecilia/OpenWRTInvasion" "1505. kost/mikrotik-npk"
 		Stampa " 1533. kkonradpl/mtscan"
 		echo "$SEP"
 	fi
 	echo "$CFQ"" FQ. RPC"
-	if [[ "$VISZ" == "FQ" ]];
+	if [[ "$CFQ" == "[-]" ]];
 	then
 		Stampa " 233. aress31/xmlrpc-bruteforcer" "313. s4vitar/rpcenum" "570. hegusung/RPCScan"
 		echo "$SEP"
 	fi
 	echo "$CFR"" FR. RSA"
-	if [[ "$VISZ" == "FR" ]];
+	if [[ "$CFR" == "[-]" ]];
 	then
 		Stampa " 57. Ganapati/RsaCtfTool" "69. zweisamkeit/RSHack" "79. pablocelayes/rsa-wiener-attack"
 		echo "$SEP"
 	fi
 	echo "$CFS"" FS. S7"
-	if [[ "$VISZ" == "FS" ]];
+	if [[ "$CFS" == "[-]" ]];
 	then
 		Stampa " 2358. klsecservices/s7scan" "2360. hslatman/awesome-industrial-control-system-security/s7-cracker"
 		Stampa " 2361. hslatman/awesome-industrial-control-system-security/s7-brute-offline"
 		echo "$SEP"
 	fi
 	echo "$CFT"" FT. SCANNING"
-	if [[ "$VISZ" == "FT" ]];
+	if [[ "$CFT" == "[-]" ]];
 	then
 		Stampa " 188. GrrrDog/FlashAV" "191. m57/piescan" "192. projectdiscovery/naabu"
 		Stampa " 193. ahervias77/portscanner" "206. lanjelot/patator" "208. gh0stwizard/p5-udp-scanner"
@@ -1776,7 +1776,7 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CFU"" FU. SHELL"
-	if [[ "$VISZ" == "FU" ]];
+	if [[ "$CFU" == "[-]" ]];
 	then
 		Stampa " 70. sameera-madushan/Print-My-Shell" "71. flozz/p0wny-shell/shell" "87. rastating/slae"
 		Stampa " 95. TBGSecurity/splunk_shells" "281. berkgoksel/SierraTwo" "295. wintrmvte/Shellab"
@@ -1792,19 +1792,19 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CFV"" FV. SHELLSHOCK"
-	if [[ "$VISZ" == "FV" ]];
+	if [[ "$CFV" == "[-]" ]];
 	then
 		Stampa " 2279. MrCl0wnLab/ShellShockHunter" "2280. DanMcInerney/shellshock-hunter"
 		echo "$SEP"
 	fi
 	echo "$CFW"" FW. SIP"
-	if [[ "$VISZ" == "FW" ]];
+	if [[ "$CFW" == "[-]" ]];
 	then
 		Stampa " 1363. halitalptekin/isip" "1528. meliht/mr.sip"
 		echo "$SEP"
 	fi
 	echo "$CFX"" FX. SMB"
-	if [[ "$VISZ" == "FX" ]];
+	if [[ "$CFX" == "[-]" ]];
 	then
 		Stampa " 68. m4ll0k/SMBrute" "58. mvelazc0/Invoke-SMBLogin/smblogin" "65. ShawnDEvans/smbmap"
 		Stampa " 157. 0v3rride/Enum4LinuxPy" "8. ZecOps/CVE-2020-0796-RCE-POC" "91. NickSanzotta/smbShakedown"
@@ -1815,13 +1815,13 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CFY"" FY. SMS"
-	if [[ "$VISZ" == "FY" ]];
+	if [[ "$CFY" == "[-]" ]];
 	then
 		Stampa " 388. sharyer/GSMEvil/SmsEvil"
 		echo "$SEP"
 	fi
 	echo "$CFZ"" FZ. SMTP"
-	if [[ "$VISZ" == "FZ" ]];
+	if [[ "$CFZ" == "[-]" ]];
 	then
 		Stampa " 418. pentestmonkey/smtp-user-enum" "419. altjx/ipwn/iSMTP" "421. tango-j/SMTP-Open-Relay-Attack-Test-Tool"
 		Stampa " 422. crazywifi/SMTP_Relay_Phisher" "423. NickSanzotta/smbShakedown" "424. balaganeshgbhackers/Emailspoofing"
@@ -1830,7 +1830,7 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CGA"" GA. SNMP"
-	if [[ "$VISZ" == "GA" ]];
+	if [[ "$CGA" == "[-]" ]];
 	then
 		Stampa " 74. hatlord/snmpwn" "75. etingof/pysnmp" "77. InteliSecureLabs/SNMPPLUX"
 		Stampa " 78. cysboy/SnmpCrack" "710. LukasRypl/snmp-fuzzer" "957. nccgroup/cisco-snmp-enumeration"
@@ -1838,33 +1838,33 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CGB"" GB. SOCIAL MEDIA"
-	if [[ "$VISZ" == "GB" ]];
+	if [[ "$CGB" == "[-]" ]];
 	then
 		Stampa " 427. yasserjanah/ZeS0MeBr" "551. Cyb0r9/SocialBox" "642. th3unkn0n/facebash-termux"
 		echo "$SEP"
 	fi
 	echo "$CGC"" GC. SPOOFING"
-	if [[ "$VISZ" == "GC" ]];
+	if [[ "$CGC" == "[-]" ]];
 	then
 		Stampa " 290. initstring/evil-ssdp" "291. KALILINUXTRICKSYT/easymacchanger" "292. sbdchd/macchanger"
 		Stampa " 2438. eslam3kl/MAC_Changer" "2437. eslam3kl/ARP-Spoofer"
 		echo "$SEP"
 	fi
 	echo "$CGD"" GD. SQL"
-	if [[ "$VISZ" == "GD" ]];
+	if [[ "$CGD" == "[-]" ]];
 	then
 		Stampa " 159. ccpgames/sqlcmd" "160. sqlmapproject/sqlmap"
 		Stampa " 161. payloadbox/sql-injection-payload-list" "347. kayak/pypika" "713. GDSSecurity/SQLBrute"
 		echo "$SEP"
 	fi
 	echo "$CGE"" GE. SS7"
-	if [[ "$VISZ" == "GA" ]];
+	if [[ "$CGE" == "[-]" ]];
 	then
 		Stampa " 384. ernw/ss7MAPer"
 		echo "$SEP"
 	fi
 	echo "$CGF"" GF. SSH"
-	if [[ "$VISZ" == "GF" ]];
+	if [[ "$CGF" == "[-]" ]];
 	then
 		Stampa " 59. R4stl1n/SSH-Brute-Forcer" "152. matricali/brutekrag" "153. c0r3dump3d/osueta"
 		Stampa " 155. W-GOULD/ssh-user-enumeration/ssh-check-username" "156. nccgroup/ssh_user_enum/ssh_enum"
@@ -1875,7 +1875,7 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CGG"" GG. SSL"
-	if [[ "$VISZ" == "GG" ]];
+	if [[ "$CGG" == "[-]" ]];
 	then
 		Stampa " 190. moxie0/sslstrip" "194. indutny/heartbleed" "195. roflcer/heartbleed-vuln/attack"
 		Stampa " 298. rbsec/sslscan" "790. hahwul/a2sv" "954. mozilla/cipherscan"
@@ -1883,20 +1883,20 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CGH"" GH. STEGANALYSIS"
-	if [[ "$VISZ" == "GH" ]];
+	if [[ "$CGH" == "[-]" ]];
 	then
 		Stampa " 270. Va5c0/Steghide-Brute-Force-Tool/steg_brute" "271. daniellerch/aletheia"
 		Stampa " 272. Diefunction/stegbrute" "603. Paradoxis/StegCracker"
 		echo "$SEP"
 	fi
 	echo "$CGI"" GI. TACACS"
-	if [[ "$VISZ" == "GI" ]];
+	if [[ "$CGI" == "[-]" ]];
 	then
 		Stampa " 187. GrrrDog/TacoTaco"
 		echo "$SEP"
 	fi
 	echo "$CGJ"" GJ. TERMUX"
-	if [[ "$VISZ" == "GJ" ]];
+	if [[ "$CGJ" == "[-]" ]];
 	then
 		Stampa " 615. install metasploit first method" "622. install metasploit second method" "624. install sudo (no rooting phone)"
 		Stampa " 633. TermuxHacking000/distrux" "634. TermuxHacking000/SysO-Termux" "635. TermuxHacking000/PortmapSploit"
@@ -1907,38 +1907,38 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CGK"" GK. TFTP"
-	if [[ "$VISZ" == "GK" ]];
+	if [[ "$CGK" == "[-]" ]];
 	then
 		Stampa " 719. nullsecuritynet/tftp-fuzz" "1199. RubenRocha/ftpscout"
 		echo "$SEP"
 	fi
 	echo "$CGL"" GL. TLS"
-	if [[ "$VISZ" == "GL" ]];
+	if [[ "$CGL" == "[-]" ]];
 	then
 		Stampa " 189. GrrrDog/sni_bruter" "428. tintinweb/striptls" "2265. tlsfuzzer/tlsfuzzer"
 		Stampa " 2270. righettod/tls-cert-discovery"
 		echo "$SEP"
 	fi
 	echo "$CGM"" GM. TONES"
-	if [[ "$VISZ" == "GM" ]];
+	if [[ "$CGM" == "[-]" ]];
 	then
 		Stampa " 240. luickk/gan-audio-generator" "241. rzbrk/mfv"
 		echo "$SEP"
 	fi
 	echo "$CGN"" GN. TROJANS"
-	if [[ "$VISZ" == "GN" ]];
+	if [[ "$CGN" == "[-]" ]];
 	then
 		Stampa " 1404. ChaitanyaHaritash/kimi"
 		echo "$SEP"
 	fi
 	echo "$CGO"" GO. TRUECRYPT"
-	if [[ "$VISZ" == "GO" ]];
+	if [[ "$CGO" == "[-]" ]];
 	then
 		Stampa " 321. lvaccaro/truecrack"
 		echo "$SEP"
 	fi
 	echo "$CGP"" GP. TUNNELLING"
-	if [[ "$VISZ" == "GP" ]];
+	if [[ "$CGP" == "[-]" ]];
 	then
 		Stampa " 60. yarrick/iodine" "61. T3rry7f/ICMPTunnel/IcmpTunnel_S" "62. blackarrowsec/pivotnacci"
 		Stampa " 63. rofl0r/microsocks" "66. cgrates/rpcclient" "143. sysdream/ligolo"
@@ -1948,20 +1948,20 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CGQ"" GQ. UPNP"
-	if [[ "$VISZ" == "GQ" ]];
+	if [[ "$CGQ" == "[-]" ]];
 	then
 		Stampa " 146. tenable/upnp_info" "2264. dhishan/UPnP-Hack" "1128. google.com/miranda-upnp"
 		Stampa " 2271. dc414/Upnp-Exploiter"
 		echo "$SEP"
 	fi
 	echo "$CGR"" GR. USB"
-	if [[ "$VISZ" == "GR" ]];
+	if [[ "$CGR" == "[-]" ]];
 	then
 		Stampa " 2231. nccgroup/umap2" "2232. usb-tools/ViewSB" "2233. Merimetso-Code/USB-Hacking/usbfind" "2459. hak5darren/USB-Rubber-Ducky"
 		echo "$SEP"
 	fi
 	echo "$CGS"" GS. UTILITIES"
-	if [[ "$VISZ" == "GS" ]];
+	if [[ "$CGS" == "[-]" ]];
 	then
 		Stampa " 99. Clone a Repo from GitHub" "100. Enable forlder to HttpServer" "101. listen reverse shell from Windows"
 		Stampa " 102. listen reverse shell from Linux" "103. create ssh keys in this folder" "104. Base64 for Windows (utf16)"
@@ -2009,38 +2009,38 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CGT"" GT. VIRTUAL COINS - CURRENCIES"
-	if [[ "$VISZ" == "GT" ]];
+	if [[ "$CGT" == "[-]" ]];
 	then
 		Stampa " 511. Isaacdelly/Plutus" "512. dan-v/bruteforce-bitcoin-brainwallet" "513. SMH17/bitcoin-hacking-tools"
 		Stampa " 2465. litneet64/etherblob-explorer" "1212. KarmaHostage/gethspoit"
 		echo "$SEP"
 	fi
 	echo "$CGU"" GU. VOIP"
-	if [[ "$VISZ" == "GU" ]];
+	if [[ "$CGU" == "[-]" ]];
 	then
 		Stampa " 461. haasosaurus/ace-voip" "629. voipmonitor/sniffer" "898. jesusprubio/bluebox-ng"
 		echo "$SEP"
 	fi
 	echo "$CGV"" GV. VPN"
-	if [[ "$VISZ" == "GV" ]];
+	if [[ "$CGV" == "[-]" ]];
 	then
 		Stampa " 595. 7Elements/Fortigate" "2262. darrenmartyn/VisualDoor" "1040. galkan/openvpn-brute"
 		echo "$SEP"
 	fi
 	echo "$CGW"" GW. WAF"
-	if [[ "$VISZ" == "GW" ]];
+	if [[ "$CGW" == "[-]" ]];
 	then
 		Stampa " 1330. stamparm/identYwaf" "1441. lightbulb-framework/lightbulb-framework"
 		echo "$SEP"
 	fi
 	echo "$CGX"" GX. WALLET"
-	if [[ "$VISZ" == "GX" ]];
+	if [[ "$CGX" == "[-]" ]];
 	then
 		Stampa " 914. glv2/bruteforce-wallet"
 		echo "$SEP"
 	fi
 	echo "$CGY"" GY. WEBAPP - WEBSITES"
-	if [[ "$VISZ" == "GY" ]];
+	if [[ "$CGY" == "[-]" ]];
 	then
 		Stampa " 96. m4ll0k/WPSeku" "97. swisskyrepo/Wordpresscan" "98. RamadhanAmizudin/Wordpress-scanner"
 		Stampa " 122. rezasp/joomscan" "123. rastating/joomlavs" "124. RedVirus0/BlackDir-Framework"
@@ -2058,13 +2058,13 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CGZ"" GZ. WEBDAV"
-	if [[ "$VISZ" == "GZ" ]];
+	if [[ "$CGZ" == "[-]" ]];
 	then
 		Stampa " 1025. Graph-X/davscan"
 		echo "$SEP"
 	fi
 	echo "$CHA"" HA. WEBCAMS"
-	if [[ "$VISZ" == "HA" ]];
+	if [[ "$CHA" == "[-]" ]];
 	then
 		Stampa " 395. JettChenT/scan-for-webcams" "396. entynetproject/entropy" "397. indexnotfound404/spycam"
 		Stampa " 471. jimywork/shodanwave" "479. SuperBuker/CamHell" "564. vanhienfs/saycheese"
@@ -2072,20 +2072,20 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CHB"" HB. WEBSHELL"
-	if [[ "$VISZ" == "HB" ]];
+	if [[ "$CHB" == "[-]" ]];
 	then
 		Stampa " 562. tennc/webshell" "574. epinna/weevely3" "608. jackrendor/cookiedoor"
 		Stampa " 2544. EatonChips/wsh" "2591. oldkingcone/slopShell" "1315. wireghoul/htshells"
 		echo "$SEP"
 	fi
 	echo "$CHC"" HC. WEBSOCKET"
-	if [[ "$VISZ" == "HC" ]];
+	if [[ "$CHC" == "[-]" ]];
 	then
 		Stampa " 2624. PalindromeLabs/STEWS"
 		echo "$SEP"
 	fi
 	echo "$CHD"" HD. WIFI - WPA2 - WEP - PSK - 802.11"
-	if [[ "$VISZ" == "HD" ]];
+	if [[ "$CHD" == "[-]" ]];
 	then
 		Stampa " 540. blunderbuss-wctf/wacker" "550. calebmadrigal/trackerjacker" "580. JPaulMora/Pyrit"
 		Stampa " 591. hash3liZer/WiFiBroot" "592. SValkanov/wifivoid" "800. v1s1t0r1sh3r3/airgeddon"
@@ -2098,13 +2098,13 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CHE"" HE. WINRM"
-	if [[ "$VISZ" == "HE" ]];
+	if [[ "$CHE" == "[-]" ]];
 	then
 		Stampa " 42. Hackplayers/evil-winrm"
 		echo "$SEP"
 	fi
 	echo "$CHF"" HF. WORDLIST"
-	if [[ "$VISZ" == "HF" ]];
+	if [[ "$CHF" == "[-]" ]];
 	then
 		Stampa " 51. danielmiessler/SecLists" "53. dariusztytko/words-scraper" "245. LandGrey/pydictor"
 		Stampa " 542. digininja/CeWL" "905. R3nt0n/bopscrk" "1103. nil0x42/duplicut"
@@ -2116,7 +2116,7 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CHG"" HG. WORDPRESS"
-	if [[ "$VISZ" == "HG" ]];
+	if [[ "$CHG" == "[-]" ]];
 	then
 		Stampa " 468. n00py/WPForce" "469. BlackXploits/WPBrute" "566. 0xAbdullah/0xWPBF"
 		Stampa " 655. Moham3dRiahi/WPGrabInfo" "667. ShayanDeveloper/WordPress-Hacker"
@@ -2124,7 +2124,7 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CHI"" HI. XSS - XPATH"
-	if [[ "$VISZ" == "HI" ]];
+	if [[ "$CHI" == "[-]" ]];
 	then
 		Stampa " 55. hahwul/dalfox" "164. s0md3v/XSStrike" "44. lc/gau"
 		Stampa " 176. sullo/nikto" "180. faizann24/XssPy" "2371. The404Hacking/XsSCan"
@@ -2136,20 +2136,20 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CHJ"" HJ. ZIGBEE"
-	if [[ "$VISZ" == "HJ" ]];
+	if [[ "$CHJ" == "[-]" ]];
 	then
 		Stampa " 1403. riverloopsec/killerbee"
 		echo "$SEP"
 	fi
 	echo "$CHK"" HK. ZIP"
-	if [[ "$VISZ" == "HK" ]];
+	if [[ "$CHK" == "[-]" ]];
 	then
 		Stampa " 43. The404Hacking/ZIP-Password-BruteForcer" "237. mnismt/CompressedCrack"
 		Stampa " 2604. Tylous/ZipExec"
 		echo "$SEP"
 	fi
 	echo "$CHL"" HL. PROXY SERVERS (HTTP SOCKS4 SOCKS5)"
-	if [[ "$VISZ" == "HL" ]];
+	if [[ "$CHL" == "[-]" ]];
 	then
 		Stampa " 106. clarketm/proxy-list" "107. opsxcq/proxy-list" "108. a2u/free-proxy-list"
 		Stampa " 109. cristiangonzales/Amazon-Discounts/proxy-list" "117. TheSpeedX/PROXY-List"
@@ -2157,7 +2157,7 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CHM"" HM. ? - OTHERS"
-	if [[ "$VISZ" == "HM" ]];
+	if [[ "$CHM" == "[-]" ]];
 	then
 		Stampa " 36. SigPloiter/HLR-Lookups" "37. i3visio/osrframework" "2354. py2exe/py2exe"
 		Stampa " 39. vanhauser-thc/thc-ipv6" "225. idapython/src" "226. erocarrera/pefile"
@@ -2176,7 +2176,7 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$CHN"" HN. PLUGIN"
-	if [[ "$VISZ" == "HN" ]];
+	if [[ "$CHN" == "[-]" ]];
 	then
 		Stampa " 1499. hahwul/metasploit-autopwn/db_autopwn"
 		echo "$SEP"
@@ -12282,1970 +12282,1576 @@ while true; do
 		if [[ $CAA == "[+]" ]];
 		then
 			CAA="[-]"
-			VISZ="AA"
 		else
 			CAA="[+]"
-			VISZ=""
 		fi
 	;;
 	"AB")
 		if [[ $CAB == "[+]" ]];
 		then
 			CAB="[-]"
-			VISZ="AB"
 		else
-			CAb="[+]"
-			VISZ=""
+			CAB="[+]"
 		fi
 	;;
 	"AC")
 		if [[ $CAC == "[+]" ]];
 		then
 			CAC="[-]"
-			VISZ="AC"
 		else
 			CAC="[+]"
-			VISZ=""
 		fi
 	;;
 	"AD")
 		if [[ $CAD == "[+]" ]];
 		then
 			CAD="[-]"
-			VISZ="AD"
 		else
 			CAD="[+]"
-			VISZ=""
 		fi
 	;;
 	"AE")
 		if [[ $CAE == "[+]" ]];
 		then
 			CAE="[-]"
-			VISZ="AE"
 		else
 			CAE="[+]"
-			VISZ=""
 		fi
 	;;
 	"AF")
 		if [[ $CAF == "[+]" ]];
 		then
 			CAF="[-]"
-			VISZ="AF"
 		else
 			CAF="[+]"
-			VISZ=""
 		fi
 	;;
 	"AG")
 		if [[ $CAG == "[+]" ]];
 		then
 			CAG="[-]"
-			VISZ="AG"
 		else
 			CAG="[+]"
-			VISZ=""
 		fi
 	;;
 	"AH")
 		if [[ $CAH == "[+]" ]];
 		then
 			CAH="[-]"
-			VISZ="AH"
 		else
 			CAH="[+]"
-			VISZ=""
 		fi
 	;;
 	"AI")
 		if [[ $CAI == "[+]" ]];
 		then
 			CAI="[-]"
-			VISZ="AI"
 		else
 			CAI="[+]"
-			VISZ=""
 		fi
 	;;
 	"AJ")
 		if [[ $CAJ == "[+]" ]];
 		then
 			CAJ="[-]"
-			VISZ="AJ"
 		else
 			CAJ="[+]"
-			VISZ=""
 		fi
 	;;
 	"AK")
 		if [[ $CAK == "[+]" ]];
 		then
 			CAK="[-]"
-			VISZ="AK"
 		else
 			CAK="[+]"
-			VISZ=""
 		fi
 	;;
 	"AL")
 		if [[ $CAL == "[+]" ]];
 		then
 			CAL="[-]"
-			VISZ="L"
 		else
 			CAL="[+]"
-			VISZ=""
 		fi
 	;;
 	"AM")
 		if [[ $CAM == "[+]" ]];
 		then
 			CAM="[-]"
-			VISZ="AM"
 		else
 			CAM="[+]"
-			VISZ=""
 		fi
 	;;
 	"AN")
 		if [[ $CAN == "[+]" ]];
 		then
 			CAN="[-]"
-			VISZ="AN"
 		else
 			CAN="[+]"
-			VISZ=""
 		fi
 	;;
 	"AO")
 		if [[ $CAO == "[+]" ]];
 		then
 			CAO="[-]"
-			VISZ="AO"
 		else
 			CAO="[+]"
-			VISZ=""
 		fi
 	;;
 	"AP")
 		if [[ $CAP == "[+]" ]];
 		then
 			CAP="[-]"
-			VISZ="AP"
 		else
 			CAP="[+]"
-			VISZ=""
 		fi
 	;;
 	"AQ")
 		if [[ $CAQ == "[+]" ]];
 		then
 			CAQ="[-]"
-			VISZ="AQ"
 		else
 			CAQ="[+]"
-			VISZ=""
 		fi
 	;;
 	"AR")
 		if [[ $CAR == "[+]" ]];
 		then
 			CAR="[-]"
-			VISZ="AR"
 		else
 			CAR="[+]"
-			VISZ=""
 		fi
 	;;
 	"AS")
 		if [[ $CAS == "[+]" ]];
 		then
 			CAS="[-]"
-			VISZ="AS"
 		else
 			CAS="[+]"
-			VISZ=""
 		fi
 	;;
 	"AT")
 		if [[ $CAT == "[+]" ]];
 		then
 			CAT="[-]"
-			VISZ="AT"
 		else
 			CAT="[+]"
-			VISZ=""
 		fi
 	;;
 	"AU")
 		if [[ $CAU == "[+]" ]];
 		then
 			CAU="[-]"
-			VISZ="AU"
 		else
 			CAU="[+]"
-			VISZ=""
 		fi
 	;;
 	"AV")
 		if [[ $CAV == "[+]" ]];
 		then
 			CAV="[-]"
-			VISZ="AV"
 		else
 			CAV="[+]"
-			VISZ=""
 		fi
 	;;
 	"AW")
 		if [[ $CAW == "[+]" ]];
 		then
 			CAW="[-]"
-			VISZ="AW"
 		else
 			CAW="[+]"
-			VISZ=""
 		fi
 	;;
 	"AX")
 		if [[ $CAX == "[+]" ]];
 		then
 			CAX="[-]"
-			VISZ="AX"
 		else
 			CAX="[+]"
-			VISZ=""
 		fi
 	;;
 	"AY")
 		if [[ $CAY == "[+]" ]];
 		then
 			CAY="[-]"
-			VISZ="AY"
 		else
 			CAY="[+]"
-			VISZ=""
 		fi
 	;;
 	"AZ")
 		if [[ $CAZ == "[+]" ]];
 		then
 			CAZ="[-]"
-			VISZ="AZ"
 		else
 			CAZ="[+]"
-			VISZ=""
 		fi
 	;;
 	"BA")
 		if [[ $CBA == "[+]" ]];
 		then
 			CBA="[-]"
-			VISZ="BA"
 		else
 			CBA="[+]"
-			VISZ=""
 		fi
 	;;
 	"BB")
 		if [[ $CBB == "[+]" ]];
 		then
 			CBB="[-]"
-			VISZ="BB"
 		else
 			CBB="[+]"
-			VISZ=""
 		fi
 	;;
 	"BC")
 		if [[ $CBC == "[+]" ]];
 		then
 			CBC="[-]"
-			VISZ="BC"
 		else
 			CBC="[+]"
-			VISZ=""
 		fi
 	;;
 	"BD")
 		if [[ $CBD == "[+]" ]];
 		then
 			CBD="[-]"
-			VISZ="BD"
 		else
 			CBD="[+]"
-			VISZ=""
 		fi
 	;;
 	"BE")
 		if [[ $CBE == "[+]" ]];
 		then
 			CBE="[-]"
-			VISZ="BE"
 		else
 			CBE="[+]"
-			VISZ=""
 		fi
 	;;
 	"BF")
 		if [[ $CBF == "[+]" ]];
 		then
 			CBF="[-]"
-			VISZ="BF"
 		else
 			CBF="[+]"
-			VISZ=""
 		fi
 	;;
 	"BG")
 		if [[ $CBG == "[+]" ]];
 		then
 			CBG="[-]"
-			VISZ="BG"
 		else
 			CBG="[+]"
-			VISZ=""
 		fi
 	;;
 	"BH")
 		if [[ $CBH == "[+]" ]];
 		then
 			CBH="[-]"
-			VISZ="BH"
 		else
 			CBH="[+]"
-			VISZ=""
 		fi
 	;;
 	"BI")
 		if [[ $CBI == "[+]" ]];
 		then
 			CBI="[-]"
-			VISZ="BI"
 		else
 			CBI="[+]"
-			VISZ=""
 		fi
 	;;
 	"BJ")
 		if [[ $CBJ == "[+]" ]];
 		then
 			CBJ="[-]"
-			VISZ="BJ"
 		else
 			CBJ="[+]"
-			VISZ=""
 		fi
 	;;
 	"BK")
 		if [[ $CBK == "[+]" ]];
 		then
 			CBK="[-]"
-			VISZ="BK"
 		else
 			CBK="[+]"
-			VISZ=""
 		fi
 	;;
 	"BL")
 		if [[ $CBL == "[+]" ]];
 		then
 			CBL="[-]"
-			VISZ="BL"
 		else
 			CBL="[+]"
-			VISZ=""
 		fi
 	;;
 	"BM")
 		if [[ $CBM == "[+]" ]];
 		then
 			CBM="[-]"
-			VISZ="BM"
 		else
 			CBM="[+]"
-			VISZ=""
 		fi
 	;;
 	"BN")
 		if [[ $CBN == "[+]" ]];
 		then
 			CBN="[-]"
-			VISZ="BN"
 		else
 			CBN="[+]"
-			VISZ=""
 		fi
 	;;
 	"BO")
 		if [[ $CBO == "[+]" ]];
 		then
 			CBO="[-]"
-			VISZ="BO"
 		else
 			CBO="[+]"
-			VISZ=""
 		fi
 	;;
 	"BP")
 		if [[ $CBP == "[+]" ]];
 		then
 			CBP="[-]"
-			VISZ="BP"
 		else
 			CBP="[+]"
-			VISZ=""
 		fi
 	;;
 	"BQ")
 		if [[ $CBQ == "[+]" ]];
 		then
 			CBQ="[-]"
-			VISZ="BQ"
 		else
 			CBQ="[+]"
-			VISZ=""
 		fi
 	;;
 	"BR")
 		if [[ $CBR == "[+]" ]];
 		then
 			CBR="[-]"
-			VISZ="BR"
 		else
 			CBR="[+]"
-			VISZ=""
 		fi
 	;;
 	"BS")
 		if [[ $CBS == "[+]" ]];
 		then
 			CBS="[-]"
-			VISZ="BS"
 		else
 			CBS="[+]"
-			VISZ=""
 		fi
 	;;
 	"BT")
 		if [[ $CBT == "[+]" ]];
 		then
 			CBT="[-]"
-			VISZ="BT"
 		else
 			CBT="[+]"
-			VISZ=""
 		fi
 	;;
 	"BU")
 		if [[ $CBU == "[+]" ]];
 		then
 			CBU="[-]"
-			VISZ="BU"
 		else
 			CBU="[+]"
-			VISZ=""
 		fi
 	;;
 	"BV")
 		if [[ $CBV == "[+]" ]];
 		then
 			CBV="[-]"
-			VISZ="BV"
 		else
 			CBV="[+]"
-			VISZ=""
 		fi
 	;;
 	"BW")
 		if [[ $CBW == "[+]" ]];
 		then
 			CBW="[-]"
-			VISZ="BW"
 		else
 			CBW="[+]"
-			VISZ=""
 		fi
 	;;
 	"BX")
 		if [[ $CBX == "[+]" ]];
 		then
 			CBX="[-]"
-			VISZ="BX"
 		else
 			CBX="[+]"
-			VISZ=""
 		fi
 	;;
 	"BY")
 		if [[ $CBY == "[+]" ]];
 		then
 			CBY="[-]"
-			VISZ="BY"
 		else
 			CBY="[+]"
-			VISZ=""
 		fi
 	;;
 	"BZ")
 		if [[ $CBZ == "[+]" ]];
 		then
 			CBZ="[-]"
-			VISZ="BZ"
 		else
 			CBZ="[+]"
-			VISZ=""
 		fi
 	;;
 	"CA")
 		if [[ $CCA == "[+]" ]];
 		then
 			CCA="[-]"
-			VISZ="CA"
 		else
 			CCA="[+]"
-			VISZ=""
 		fi
 	;;
 	"CB")
 		if [[ $CCB == "[+]" ]];
 		then
 			CCB="[-]"
-			VISZ="CB"
 		else
 			CCB="[+]"
-			VISZ=""
 		fi
 	;;
 	"CC")
 		if [[ $CCC == "[+]" ]];
 		then
 			CCC="[-]"
-			VISZ="CC"
 		else
 			CCC="[+]"
-			VISZ=""
 		fi
 	;;
 	"CD")
 		if [[ $CCD == "[+]" ]];
 		then
 			CCD="[-]"
-			VISZ="CD"
 		else
 			CCD="[+]"
-			VISZ=""
 		fi
 	;;
 	"CE")
 		if [[ $CCE == "[+]" ]];
 		then
 			CCE="[-]"
-			VISZ="CE"
 		else
 			CCE="[+]"
-			VISZ=""
 		fi
 	;;
 	"CF")
 		if [[ $CCF == "[+]" ]];
 		then
 			CCF="[-]"
-			VISZ="CF"
 		else
 			CCF="[+]"
-			VISZ=""
 		fi
 	;;
 	"CG")
 		if [[ $CCG == "[+]" ]];
 		then
 			CCG="[-]"
-			VISZ="CG"
 		else
 			CCG="[+]"
-			VISZ=""
 		fi
 	;;
 	"CH")
 		if [[ $CCH == "[+]" ]];
 		then
 			CCH="[-]"
-			VISZ="CH"
 		else
 			CCH="[+]"
-			VISZ=""
 		fi
 	;;
 	"CI")
 		if [[ $CCI == "[+]" ]];
 		then
 			CCI="[-]"
-			VISZ="CI"
 		else
 			CCI="[+]"
-			VISZ=""
 		fi
 	;;
 	"CJ")
 		if [[ $CCJ == "[+]" ]];
 		then
 			CCJ="[-]"
-			VISZ="CJ"
 		else
 			CCJ="[+]"
-			VISZ=""
 		fi
 	;;
 	"CK")
 		if [[ $CCK == "[+]" ]];
 		then
 			CCK="[-]"
-			VISZ="CK"
 		else
 			CCK="[+]"
-			VISZ=""
 		fi
 	;;
 	"CL")
 		if [[ $CCL == "[+]" ]];
 		then
 			CCL="[-]"
-			VISZ="CL"
 		else
 			CCL="[+]"
-			VISZ=""
 		fi
 	;;
 	"CM")
 		if [[ $CCM == "[+]" ]];
 		then
 			CCM="[-]"
-			VISZ="CM"
 		else
 			CCM="[+]"
-			VISZ=""
 		fi
 	;;
 	"CN")
 		if [[ $CCN == "[+]" ]];
 		then
 			CCN="[-]"
-			VISZ="CN"
 		else
 			CCN="[+]"
-			VISZ=""
 		fi
 	;;
 	"CO")
 		if [[ $CCO == "[+]" ]];
 		then
 			CCO="[-]"
-			VISZ="CO"
 		else
 			CCO="[+]"
-			VISZ=""
 		fi
 	;;
 	"CP")
 		if [[ $CCP == "[+]" ]];
 		then
 			CCP="[-]"
-			VISZ="CP"
 		else
 			CCP="[+]"
-			VISZ=""
 		fi
 	;;
 	"CQ")
 		if [[ $CCQ == "[+]" ]];
 		then
 			CCQ="[-]"
-			VISZ="CQ"
 		else
 			CCQ="[+]"
-			VISZ=""
 		fi
 	;;
 	"CR")
 		if [[ $CCR == "[+]" ]];
 		then
 			CCR="[-]"
-			VISZ="CR"
 		else
 			CCR="[+]"
-			VISZ=""
 		fi
 	;;
 	"CS")
 		if [[ $CCS == "[+]" ]];
 		then
 			CCS="[-]"
-			VISZ="CS"
 		else
 			CCS="[+]"
-			VISZ=""
 		fi
 	;;
 	"CT")
 		if [[ $CCT == "[+]" ]];
 		then
 			CCT="[-]"
-			VISZ="CT"
 		else
 			CCT="[+]"
-			VISZ=""
 		fi
 	;;
 	"CU")
 		if [[ $CCU == "[+]" ]];
 		then
 			CCU="[-]"
-			VISZ="CU"
 		else
 			CCU="[+]"
-			VISZ=""
 		fi
 	;;
 	"CV")
 		if [[ $CCV == "[+]" ]];
 		then
 			CCV="[-]"
-			VISZ="CV"
 		else
 			CCV="[+]"
-			VISZ=""
 		fi
 	;;
 	"CW")
 		if [[ $CCW == "[+]" ]];
 		then
 			CCW="[-]"
-			VISZ="CW"
 		else
 			CCW="[+]"
-			VISZ=""
 		fi
 	;;
 	"CX")
 		if [[ $CCX == "[+]" ]];
 		then
 			CCX="[-]"
-			VISZ="CX"
 		else
 			CCX="[+]"
-			VISZ=""
 		fi
 	;;
 	"CY")
 		if [[ $CCY == "[+]" ]];
 		then
 			CCY="[-]"
-			VISZ="CY"
 		else
 			CCY="[+]"
-			VISZ=""
 		fi
 	;;
 	"CZ")
 		if [[ $CCZ == "[+]" ]];
 		then
 			CCZ="[-]"
-			VISZ="CZ"
 		else
 			CCZ="[+]"
-			VISZ=""
 		fi
 	;;
 	"DA")
 		if [[ $CDA == "[+]" ]];
 		then
 			CDA="[-]"
-			VISZ="DA"
 		else
 			CDA="[+]"
-			VISZ=""
 		fi
 	;;
 	"DB")
 		if [[ $CDB == "[+]" ]];
 		then
 			CDB="[-]"
-			VISZ="DB"
 		else
 			CDB="[+]"
-			VISZ=""
 		fi
 	;;
 	"DC")
 		if [[ $CDC == "[+]" ]];
 		then
 			CDC="[-]"
-			VISZ="DC"
 		else
 			CDC="[+]"
-			VISZ=""
 		fi
 	;;
 	"DD")
 		if [[ $CDD == "[+]" ]];
 		then
 			CDD="[-]"
-			VISZ="DD"
 		else
 			CDD="[+]"
-			VISZ=""
 		fi
 	;;
 	"DE")
 		if [[ $CDE == "[+]" ]];
 		then
 			CDE="[-]"
-			VISZ="DE"
 		else
 			CDE="[+]"
-			VISZ=""
 		fi
 	;;
 	"DF")
 		if [[ $CDF == "[+]" ]];
 		then
 			CDF="[-]"
-			VISZ="DF"
 		else
 			CDF="[+]"
-			VISZ=""
 		fi
 	;;
 	"DG")
 		if [[ $CDG == "[+]" ]];
 		then
 			CDG="[-]"
-			VISZ="DG"
 		else
 			CDG="[+]"
-			VISZ=""
 		fi
 	;;
 	"DH")
 		if [[ $CDH == "[+]" ]];
 		then
 			CDH="[-]"
-			VISZ="DH"
 		else
 			CDH="[+]"
-			VISZ=""
 		fi
 	;;
 	"DI")
 		if [[ $CDI == "[+]" ]];
 		then
 			CDI="[-]"
-			VISZ="DI"
 		else
 			CDI="[+]"
-			VISZ=""
 		fi
 	;;
 	"DJ")
 		if [[ $CDJ == "[+]" ]];
 		then
 			CDJ="[-]"
-			VISZ="DJ"
 		else
 			CDJ="[+]"
-			VISZ=""
 		fi
 	;;
 	"DK")
 		if [[ $CDK == "[+]" ]];
 		then
 			CDK="[-]"
-			VISZ="DK"
 		else
 			CDK="[+]"
-			VISZ=""
 		fi
 	;;
 	"DL")
 		if [[ $CDL == "[+]" ]];
 		then
 			CDL="[-]"
-			VISZ="DL"
 		else
 			CDL="[+]"
-			VISZ=""
 		fi
 	;;
 	"DM")
 		if [[ $CDM == "[+]" ]];
 		then
 			CDM="[-]"
-			VISZ="DM"
 		else
 			CDM="[+]"
-			VISZ=""
 		fi
 	;;
 	"DN")
 		if [[ $CDN == "[+]" ]];
 		then
 			CDN="[-]"
-			VISZ="DN"
 		else
 			CDN="[+]"
-			VISZ=""
 		fi
 	;;
 	"DO")
 		if [[ $CDO == "[+]" ]];
 		then
 			CDO="[-]"
-			VISZ="DO"
 		else
 			CDO="[+]"
-			VISZ=""
 		fi
 	;;
 	"DP")
 		if [[ $CDP == "[+]" ]];
 		then
 			CDP="[-]"
-			VISZ="DP"
 		else
 			CDP="[+]"
-			VISZ=""
 		fi
 	;;
 	"DQ")
 		if [[ $CDQ == "[+]" ]];
 		then
 			CDQ="[-]"
-			VISZ="DQ"
 		else
 			CDQ="[+]"
-			VISZ=""
 		fi
 	;;
 	"DR")
 		if [[ $CDR == "[+]" ]];
 		then
 			CDR="[-]"
-			VISZ="DR"
 		else
 			CDR="[+]"
-			VISZ=""
 		fi
 	;;
 	"DS")
 		if [[ $CDS == "[+]" ]];
 		then
 			CDS="[-]"
-			VISZ="DS"
 		else
 			CDS="[+]"
-			VISZ=""
 		fi
 	;;
 	"DT")
 		if [[ $CDT == "[+]" ]];
 		then
 			CDT="[-]"
-			VISZ="DT"
 		else
 			CDT="[+]"
-			VISZ=""
 		fi
 	;;
 	"DU")
 		if [[ $CDU == "[+]" ]];
 		then
 			CDU="[-]"
-			VISZ="DU"
 		else
 			CDU="[+]"
-			VISZ=""
 		fi
 	;;
 	"DV")
 		if [[ $CDV == "[+]" ]];
 		then
 			CDV="[-]"
-			VISZ="DV"
 		else
 			CDV="[+]"
-			VISZ=""
 		fi
 	;;
 	"DW")
 		if [[ $CDW == "[+]" ]];
 		then
 			CDW="[-]"
-			VISZ="DW"
 		else
 			CDW="[+]"
-			VISZ=""
 		fi
 	;;
 	"DX")
 		if [[ $CDX == "[+]" ]];
 		then
 			CDX="[-]"
-			VISZ="DX"
 		else
 			CDX="[+]"
-			VISZ=""
 		fi
 	;;
 	"DY")
 		if [[ $CDY == "[+]" ]];
 		then
 			CDY="[-]"
-			VISZ="DY"
 		else
 			CDY="[+]"
-			VISZ=""
 		fi
 	;;
 	"DZ")
 		if [[ $CDZ == "[+]" ]];
 		then
 			CDZ="[-]"
-			VISZ="DZ"
 		else
 			CDZ="[+]"
-			VISZ=""
 		fi
 	;;
 	"EA")
 		if [[ $CEA == "[+]" ]];
 		then
 			CEA="[-]"
-			VISZ="EA"
 		else
 			CEA="[+]"
-			VISZ=""
 		fi
 	;;
 	"EB")
 		if [[ $CEB == "[+]" ]];
 		then
 			CEB="[-]"
-			VISZ="EB"
 		else
 			CEB="[+]"
-			VISZ=""
 		fi
 	;;
 	"EC")
 		if [[ $CEC == "[+]" ]];
 		then
 			CEC="[-]"
-			VISZ="EC"
 		else
 			CEC="[+]"
-			VISZ=""
 		fi
 	;;
 	"ED")
 		if [[ $CED == "[+]" ]];
 		then
 			CED="[-]"
-			VISZ="ED"
 		else
 			CED="[+]"
-			VISZ=""
 		fi
 	;;
 	"EE")
 		if [[ $CEE == "[+]" ]];
 		then
 			CEE="[-]"
-			VISZ="EE"
 		else
 			CEE="[+]"
-			VISZ=""
 		fi
 	;;
 	"EF")
 		if [[ $CEF == "[+]" ]];
 		then
 			CEF="[-]"
-			VISZ="EF"
 		else
 			CEF="[+]"
-			VISZ=""
 		fi
 	;;
 	"EG")
 		if [[ $CEG == "[+]" ]];
 		then
 			CEG="[-]"
-			VISZ="EG"
 		else
 			CEG="[+]"
-			VISZ=""
 		fi
 	;;
 	"EH")
 		if [[ $CEH == "[+]" ]];
 		then
 			CEH="[-]"
-			VISZ="EH"
 		else
 			CEH="[+]"
-			VISZ=""
 		fi
 	;;
 	"EI")
 		if [[ $CEI == "[+]" ]];
 		then
 			CEI="[-]"
-			VISZ="EI"
 		else
 			CEI="[+]"
-			VISZ=""
 		fi
 	;;
 	"EJ")
 		if [[ $CEJ == "[+]" ]];
 		then
 			CEJ="[-]"
-			VISZ="EJ"
 		else
 			CEJ="[+]"
-			VISZ=""
 		fi
 	;;
 	"EK")
 		if [[ $CEK == "[+]" ]];
 		then
 			CEK="[-]"
-			VISZ="EK"
 		else
 			CEK="[+]"
-			VISZ=""
 		fi
 	;;
 	"EL")
 		if [[ $CEL == "[+]" ]];
 		then
 			CEL="[-]"
-			VISZ="EL"
 		else
 			CEL="[+]"
-			VISZ=""
 		fi
 	;;
 	"EM")
 		if [[ $CEM == "[+]" ]];
 		then
 			CEM="[-]"
-			VISZ="EM"
 		else
 			CEM="[+]"
-			VISZ=""
 		fi
 	;;
 	"EN")
 		if [[ $CEN == "[+]" ]];
 		then
 			CEN="[-]"
-			VISZ="EN"
 		else
 			CEN="[+]"
-			VISZ=""
 		fi
 	;;
 	"EO")
 		if [[ $CEO == "[+]" ]];
 		then
 			CEO="[-]"
-			VISZ="EO"
 		else
 			CEO="[+]"
-			VISZ=""
 		fi
 	;;
 	"EP")
 		if [[ $CEP == "[+]" ]];
 		then
 			CEP="[-]"
-			VISZ="EP"
 		else
 			CEP="[+]"
-			VISZ=""
 		fi
 	;;
 	"EQ")
 		if [[ $CEQ == "[+]" ]];
 		then
 			CEQ="[-]"
-			VISZ="EQ"
 		else
 			CEQ="[+]"
-			VISZ=""
 		fi
 	;;
 	"ER")
 		if [[ $CER == "[+]" ]];
 		then
 			CER="[-]"
-			VISZ="ER"
 		else
 			CER="[+]"
-			VISZ=""
 		fi
 	;;
 	"ES")
 		if [[ $CES == "[+]" ]];
 		then
 			CES="[-]"
-			VISZ="ES"
 		else
 			CES="[+]"
-			VISZ=""
 		fi
 	;;
 	"ET")
 		if [[ $CET == "[+]" ]];
 		then
 			CET="[-]"
-			VISZ="ET"
 		else
 			CET="[+]"
-			VISZ=""
 		fi
 	;;
 	"EU")
 		if [[ $CEU == "[+]" ]];
 		then
 			CEU="[-]"
-			VISZ="EU"
 		else
 			CEU="[+]"
-			VISZ=""
 		fi
 	;;
 	"EV")
 		if [[ $CEV == "[+]" ]];
 		then
 			CEV="[-]"
-			VISZ="EV"
 		else
 			CEV="[+]"
-			VISZ=""
 		fi
 	;;
 	"EW")
 		if [[ $CEW == "[+]" ]];
 		then
 			CEW="[-]"
-			VISZ="EW"
 		else
 			CEW="[+]"
-			VISZ=""
 		fi
 	;;
 	"EX")
 		if [[ $CEX == "[+]" ]];
 		then
 			CEX="[-]"
-			VISZ="EX"
 		else
 			CEX="[+]"
-			VISZ=""
 		fi
 	;;
 	"EY")
 		if [[ $CEY == "[+]" ]];
 		then
 			CEY="[-]"
-			VISZ="EY"
 		else
 			CEY="[+]"
-			VISZ=""
 		fi
 	;;
 	"EZ")
 		if [[ $CEZ == "[+]" ]];
 		then
 			CEZ="[-]"
-			VISZ="EZ"
 		else
 			CEZ="[+]"
-			VISZ=""
 		fi
 	;;
 	"FA")
 		if [[ $CFA == "[+]" ]];
 		then
 			CFA="[-]"
-			VISZ="FA"
 		else
 			CFA="[+]"
-			VISZ=""
 		fi
 	;;
 	"FB")
 		if [[ $CFB == "[+]" ]];
 		then
 			CFB="[-]"
-			VISZ="FB"
 		else
 			CFB="[+]"
-			VISZ=""
 		fi
 	;;
 	"FC")
 		if [[ $CFC == "[+]" ]];
 		then
 			CFC="[-]"
-			VISZ="FC"
 		else
 			CFC="[+]"
-			VISZ=""
 		fi
 	;;
 	"FD")
 		if [[ $CFD == "[+]" ]];
 		then
 			CFD="[-]"
-			VISZ="FD"
 		else
 			CFD="[+]"
-			VISZ=""
 		fi
 	;;
 	"FE")
 		if [[ $CFE == "[+]" ]];
 		then
 			CFE="[-]"
-			VISZ="FE"
 		else
 			CFE="[+]"
-			VISZ=""
 		fi
 	;;
 	"FF")
 		if [[ $CFF == "[+]" ]];
 		then
 			CFF="[-]"
-			VISZ="FF"
 		else
 			CFF="[+]"
-			VISZ=""
 		fi
 	;;
 	"FG")
 		if [[ $CFG == "[+]" ]];
 		then
 			CFG="[-]"
-			VISZ="FG"
 		else
 			CFG="[+]"
-			VISZ=""
 		fi
 	;;
 	"FH")
 		if [[ $CFH == "[+]" ]];
 		then
 			CFH="[-]"
-			VISZ="FH"
 		else
 			CFH="[+]"
-			VISZ=""
 		fi
 	;;
 	"FI")
 		if [[ $CFI == "[+]" ]];
 		then
 			CFI="[-]"
-			VISZ="FI"
 		else
 			CFI="[+]"
-			VISZ=""
 		fi
 	;;
 	"FJ")
 		if [[ $CFJ == "[+]" ]];
 		then
 			CFJ="[-]"
-			VISZ="FJ"
 		else
 			CFJ="[+]"
-			VISZ=""
 		fi
 	;;
 	"FK")
 		if [[ $CFK == "[+]" ]];
 		then
 			CFK="[-]"
-			VISZ="FK"
 		else
 			CFK="[+]"
-			VISZ=""
 		fi
 	;;
 	"FL")
 		if [[ $CFL == "[+]" ]];
 		then
 			CFL="[-]"
-			VISZ="FL"
 		else
 			CFL="[+]"
-			VISZ=""
 		fi
 	;;
 	"FM")
 		if [[ $CFM == "[+]" ]];
 		then
 			CFM="[-]"
-			VISZ="FM"
 		else
 			CFM="[+]"
-			VISZ=""
 		fi
 	;;
 	"FN")
 		if [[ $CFN == "[+]" ]];
 		then
 			CFN="[-]"
-			VISZ="FN"
 		else
 			CFN="[+]"
-			VISZ=""
 		fi
 	;;
 	"FO")
 		if [[ $CFO == "[+]" ]];
 		then
 			CFO="[-]"
-			VISZ="FO"
 		else
 			CFO="[+]"
-			VISZ=""
 		fi
 	;;
 	"FP")
 		if [[ $CFP == "[+]" ]];
 		then
 			CFP="[-]"
-			VISZ="FP"
 		else
 			CFP="[+]"
-			VISZ=""
 		fi
 	;;
 	"FQ")
 		if [[ $CFQ == "[+]" ]];
 		then
 			CFQ="[-]"
-			VISZ="FQ"
 		else
 			CFQ="[+]"
-			VISZ=""
 		fi
 	;;
 	"FR")
 		if [[ $CFR == "[+]" ]];
 		then
 			CFR="[-]"
-			VISZ="FR"
 		else
 			CFR="[+]"
-			VISZ=""
 		fi
 	;;
 	"FS")
 		if [[ $CFS == "[+]" ]];
 		then
 			CFS="[-]"
-			VISZ="FS"
 		else
 			CFS="[+]"
-			VISZ=""
 		fi
 	;;
 	"FT")
 		if [[ $CFT == "[+]" ]];
 		then
 			CFT="[-]"
-			VISZ="FT"
 		else
 			CFT="[+]"
-			VISZ=""
 		fi
 	;;
 	"FU")
 		if [[ $CFU == "[+]" ]];
 		then
 			CFU="[-]"
-			VISZ="FU"
 		else
 			CFU="[+]"
-			VISZ=""
 		fi
 	;;
 	"FV")
 		if [[ $CFV == "[+]" ]];
 		then
 			CFV="[-]"
-			VISZ="FV"
 		else
 			CFV="[+]"
-			VISZ=""
 		fi
 	;;
 	"FW")
 		if [[ $CFW == "[+]" ]];
 		then
 			CFW="[-]"
-			VISZ="FW"
 		else
 			CFW="[+]"
-			VISZ=""
 		fi
 	;;
 	"FX")
 		if [[ $CFX == "[+]" ]];
 		then
 			CFX="[-]"
-			VISZ="FX"
 		else
 			CFX="[+]"
-			VISZ=""
 		fi
 	;;
 	"FY")
 		if [[ $CFY == "[+]" ]];
 		then
 			CFY="[-]"
-			VISZ="FY"
 		else
 			CFY="[+]"
-			VISZ=""
 		fi
 	;;
 	"FZ")
 		if [[ $CFZ == "[+]" ]];
 		then
 			CFZ="[-]"
-			VISZ="FZ"
 		else
 			CFZ="[+]"
-			VISZ=""
 		fi
 	;;
 	"GA")
 		if [[ $CGA == "[+]" ]];
 		then
 			CGA="[-]"
-			VISZ="GA"
 		else
 			CGA="[+]"
-			VISZ=""
 		fi
 	;;
 	"GB")
 		if [[ $CGB == "[+]" ]];
 		then
 			CGB="[-]"
-			VISZ="GB"
 		else
 			CGB="[+]"
-			VISZ=""
 		fi
 	;;
 	"GC")
 		if [[ $CGC == "[+]" ]];
 		then
 			CGC="[-]"
-			VISZ="GC"
 		else
 			CGC="[+]"
-			VISZ=""
 		fi
 	;;
 	"GD")
 		if [[ $CGD == "[+]" ]];
 		then
 			CGD="[-]"
-			VISZ="GD"
 		else
 			CGD="[+]"
-			VISZ=""
 		fi
 	;;
 	"GE")
 		if [[ $CGE == "[+]" ]];
 		then
 			CGE="[-]"
-			VISZ="GE"
 		else
 			CGE="[+]"
-			VISZ=""
 		fi
 	;;
 	"GF")
 		if [[ $CGF == "[+]" ]];
 		then
 			CGF="[-]"
-			VISZ="GF"
 		else
 			CGF="[+]"
-			VISZ=""
 		fi
 	;;
 	"GG")
 		if [[ $CGG == "[+]" ]];
 		then
 			CGG="[-]"
-			VISZ="GG"
 		else
 			CGG="[+]"
-			VISZ=""
 		fi
 	;;
 	"GH")
 		if [[ $CGH == "[+]" ]];
 		then
 			CGH="[-]"
-			VISZ="GH"
 		else
 			CGH="[+]"
-			VISZ=""
 		fi
 	;;
 	"GI")
 		if [[ $CGI == "[+]" ]];
 		then
 			CGI="[-]"
-			VISZ="GI"
 		else
 			CGI="[+]"
-			VISZ=""
 		fi
 	;;
 	"GJ")
 		if [[ $CGJ == "[+]" ]];
 		then
 			CGJ="[-]"
-			VISZ="GJ"
 		else
 			CGJ="[+]"
-			VISZ=""
 		fi
 	;;
 	"GK")
 		if [[ $CGK == "[+]" ]];
 		then
 			CGK="[-]"
-			VISZ="GK"
 		else
 			CGK="[+]"
-			VISZ=""
 		fi
 	;;
 	"GL")
 		if [[ $CGL == "[+]" ]];
 		then
 			CGL="[-]"
-			VISZ="GL"
 		else
 			CGL="[+]"
-			VISZ=""
 		fi
 	;;
 	"GM")
 		if [[ $CGM == "[+]" ]];
 		then
 			CGM="[-]"
-			VISZ="GM"
 		else
 			CGM="[+]"
-			VISZ=""
 		fi
 	;;
 	"GN")
 		if [[ $CGN == "[+]" ]];
 		then
 			CGN="[-]"
-			VISZ="GN"
 		else
 			CGN="[+]"
-			VISZ=""
 		fi
 	;;
 	"GO")
 		if [[ $CGO == "[+]" ]];
 		then
 			CGO="[-]"
-			VISZ="GO"
 		else
 			CGO="[+]"
-			VISZ=""
 		fi
 	;;
 	"GP")
 		if [[ $CGP == "[+]" ]];
 		then
 			CGP="[-]"
-			VISZ="GP"
 		else
 			CGP="[+]"
-			VISZ=""
 		fi
 	;;
 	"GQ")
 		if [[ $CGQ == "[+]" ]];
 		then
 			CGQ="[-]"
-			VISZ="GQ"
 		else
 			CGQ="[+]"
-			VISZ=""
 		fi
 	;;
 	"GR")
 		if [[ $CGR == "[+]" ]];
 		then
 			CGR="[-]"
-			VISZ="GR"
 		else
 			CGR="[+]"
-			VISZ=""
 		fi
 	;;
 	"GS")
 		if [[ $CGS == "[+]" ]];
 		then
 			CGS="[-]"
-			VISZ="GS"
 		else
 			CGS="[+]"
-			VISZ=""
 		fi
 	;;
 	"GT")
 		if [[ $GT == "[+]" ]];
 		then
 			CGT="[-]"
-			VISZ="GT"
 		else
 			CGT="[+]"
-			VISZ=""
 		fi
 	;;
 	"GU")
 		if [[ $CGU == "[+]" ]];
 		then
 			CGU="[-]"
-			VISZ="GU"
 		else
 			CGU="[+]"
-			VISZ=""
 		fi
 	;;
 	"GV")
 		if [[ $CGV == "[+]" ]];
 		then
 			CGV="[-]"
-			VISZ="GV"
 		else
 			CGV="[+]"
-			VISZ=""
 		fi
 	;;
 	"GW")
 		if [[ $CGW == "[+]" ]];
 		then
 			CGW="[-]"
-			VISZ="GW"
 		else
 			CGW="[+]"
-			VISZ=""
 		fi
 	;;
 	"GX")
 		if [[ $CGX == "[+]" ]];
 		then
 			CGX="[-]"
-			VISZ="GX"
 		else
 			CGX="[+]"
-			VISZ=""
 		fi
 	;;
 	"GY")
 		if [[ $CGY == "[+]" ]];
 		then
 			CGY="[-]"
-			VISZ="GY"
 		else
 			CGY="[+]"
-			VISZ=""
 		fi
 	;;
 	"GZ")
 		if [[ $CGZ == "[+]" ]];
 		then
 			CGZ="[-]"
-			VISZ="GZ"
 		else
 			CGZ="[+]"
-			VISZ=""
 		fi
 	;;
 	"HA")
 		if [[ $CHA == "[+]" ]];
 		then
 			CHA="[-]"
-			VISZ="HA"
 		else
 			CHA="[+]"
-			VISZ=""
 		fi
 	;;
 	"HB")
 		if [[ $CHB == "[+]" ]];
 		then
 			CHB="[-]"
-			VISZ="HB"
 		else
 			CHB="[+]"
-			VISZ=""
 		fi
 	;;
 	"HC")
 		if [[ $CHC == "[+]" ]];
 		then
 			CHC="[-]"
-			VISZ="HC"
 		else
 			CHC="[+]"
-			VISZ=""
 		fi
 	;;
 	"HD")
 		if [[ $CHD == "[+]" ]];
 		then
 			CHD="[-]"
-			VISZ="HD"
 		else
 			CHD="[+]"
-			VISZ=""
 		fi
 	;;
 	"HE")
 		if [[ $CHE == "[+]" ]];
 		then
 			CHE="[-]"
-			VISZ="HE"
 		else
 			CHE="[+]"
-			VISZ=""
 		fi
 	;;
 	"HF")
 		if [[ $CHF == "[+]" ]];
 		then
 			CHF="[-]"
-			VISZ="HF"
 		else
 			CHF="[+]"
-			VISZ=""
 		fi
 	;;
 	"HG")
 		if [[ $CHG == "[+]" ]];
 		then
 			CHG="[-]"
-			VISZ="HG"
 		else
 			CHG="[+]"
-			VISZ=""
 		fi
 	;;
 	"HH")
 		if [[ $CHH == "[+]" ]];
 		then
 			CHH="[-]"
-			VISZ="HH"
 		else
 			CHH="[+]"
-			VISZ=""
 		fi
 	;;
 	"HI")
 		if [[ $CHI == "[+]" ]];
 		then
 			CHI="[-]"
-			VISZ="HI"
 		else
 			CHI="[+]"
-			VISZ=""
 		fi
 	;;
 	"HJ")
 		if [[ $CHJ == "[+]" ]];
 		then
 			CHJ="[-]"
-			VISZ="HJ"
 		else
 			CHJ="[+]"
-			VISZ=""
 		fi
 	;;
 	"HK")
 		if [[ $CHK == "[+]" ]];
 		then
 			CHK="[-]"
-			VISZ="HK"
 		else
 			CHK="[+]"
-			VISZ=""
 		fi
 	;;
 	"HL")
 		if [[ $CHL == "[+]" ]];
 		then
 			CHL="[-]"
-			VISZ="HL"
 		else
 			CHL="[+]"
-			VISZ=""
 		fi
 	;;
 	"HM")
 		if [[ $CHM == "[+]" ]];
 		then
 			CHM="[-]"
-			VISZ="HM"
 		else
 			CHM="[+]"
-			VISZ=""
 		fi
 	;;
 	"HN")
 		if [[ $CHN == "[+]" ]];
 		then
 			CHN="[-]"
-			VISZ="HN"
 		else
 			CHN="[+]"
-			VISZ=""
 		fi
 	;;
 	"ZZ")
 		if [[ $CZZ == "[+]" ]];
 		then
 			CZZ="[-]"
-			VISZ="ZZ"
 		else
 			CZZ="[+]"
-			VISZ=""
 		fi
 	;;
 	*)
