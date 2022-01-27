@@ -501,6 +501,7 @@ CHK="[+]"
 CHL="[+]"
 CHM="[+]"
 CHN="[+]"
+CHO="[+]"
 CZZ="[+]"
 
 while true; do
@@ -1067,7 +1068,8 @@ while true; do
 		Stampa " 1329. BillyV4/ID-entify" "1340. m4ll0k/infoga" "1342. penafieljlm/inquisitor"
 		Stampa " 1344. sc1341/InstagramOSINT" "1355. Rajkumrdusad/IP-Tracer" "2608. emrekybs/Expulso"
 		Stampa " 2611. Q0120S/NoobWebHunter" "1445. initstring/linkedin2username" "1469. HurricaneLabs/machinae"
-		Stampa " 1483. saeeddhqan/Maryam" "1497. j3ssie/metabigor"
+		Stampa " 1483. saeeddhqan/Maryam" "1497. j3ssie/metabigor" "2635. kennbroorg/iKy"
+		Stampa " 2636. machine1337/userfinder/osint"
 		echo "$SEP"
 	fi
 	echo "$CCG"" CG. GIT - REPOS"
@@ -2037,6 +2039,12 @@ while true; do
 	if [[ "$CGX" == "[-]" ]];
 	then
 		Stampa " 914. glv2/bruteforce-wallet"
+		echo "$SEP"
+	fi
+	echo "$CHO"" HO. WHATSAPP"
+	if [[ "$CHO" == "[-]" ]];
+	then
+		Stampa " 2637. TheSpeedX/WhatScraper"
 		echo "$SEP"
 	fi
 	echo "$CGY"" GY. WEBAPP - WEBSITES"
@@ -12278,8 +12286,23 @@ while true; do
 			fi
 		fi
 	;;
+	"2635")
+		Clone "kennbroorg/iKy"
+	;;
+	"2636")
+		if [[ $(Warning) == "Y" ]];
+		then
+			Scarica "$ENTRAW""machine1337/userfinder/main/osint.sh"
+		fi
+	;;
+	"2637")
+		if [[ $(Warning) == "Y" ]];
+		then
+			Clone "TheSpeedX/WhatScraper"
+		fi
+	;;
 	"AA")
-		if [[ $CAA == "[+]" ]];
+		if [[ "$CAA" == "[+]" ]];
 		then
 			CAA="[-]"
 		else
@@ -12287,7 +12310,7 @@ while true; do
 		fi
 	;;
 	"AB")
-		if [[ $CAB == "[+]" ]];
+		if [[ "$CAB" == "[+]" ]];
 		then
 			CAB="[-]"
 		else
@@ -12295,7 +12318,7 @@ while true; do
 		fi
 	;;
 	"AC")
-		if [[ $CAC == "[+]" ]];
+		if [[ "$CAC" == "[+]" ]];
 		then
 			CAC="[-]"
 		else
@@ -12303,7 +12326,7 @@ while true; do
 		fi
 	;;
 	"AD")
-		if [[ $CAD == "[+]" ]];
+		if [[ "$CAD" == "[+]" ]];
 		then
 			CAD="[-]"
 		else
@@ -12311,7 +12334,7 @@ while true; do
 		fi
 	;;
 	"AE")
-		if [[ $CAE == "[+]" ]];
+		if [[ "$CAE" == "[+]" ]];
 		then
 			CAE="[-]"
 		else
@@ -12319,7 +12342,7 @@ while true; do
 		fi
 	;;
 	"AF")
-		if [[ $CAF == "[+]" ]];
+		if [[ "$CAF" == "[+]" ]];
 		then
 			CAF="[-]"
 		else
@@ -12327,7 +12350,7 @@ while true; do
 		fi
 	;;
 	"AG")
-		if [[ $CAG == "[+]" ]];
+		if [[ "$CAG" == "[+]" ]];
 		then
 			CAG="[-]"
 		else
@@ -12335,7 +12358,7 @@ while true; do
 		fi
 	;;
 	"AH")
-		if [[ $CAH == "[+]" ]];
+		if [[ "$CAH" == "[+]" ]];
 		then
 			CAH="[-]"
 		else
@@ -12343,7 +12366,7 @@ while true; do
 		fi
 	;;
 	"AI")
-		if [[ $CAI == "[+]" ]];
+		if [[ "$CAI" == "[+]" ]];
 		then
 			CAI="[-]"
 		else
@@ -12351,7 +12374,7 @@ while true; do
 		fi
 	;;
 	"AJ")
-		if [[ $CAJ == "[+]" ]];
+		if [[ "$CAJ" == "[+]" ]];
 		then
 			CAJ="[-]"
 		else
@@ -12359,7 +12382,7 @@ while true; do
 		fi
 	;;
 	"AK")
-		if [[ $CAK == "[+]" ]];
+		if [[ "$CAK" == "[+]" ]];
 		then
 			CAK="[-]"
 		else
@@ -12367,7 +12390,7 @@ while true; do
 		fi
 	;;
 	"AL")
-		if [[ $CAL == "[+]" ]];
+		if [[ "$CAL" == "[+]" ]];
 		then
 			CAL="[-]"
 		else
@@ -12375,7 +12398,7 @@ while true; do
 		fi
 	;;
 	"AM")
-		if [[ $CAM == "[+]" ]];
+		if [[ "$CAM" == "[+]" ]];
 		then
 			CAM="[-]"
 		else
@@ -12383,7 +12406,7 @@ while true; do
 		fi
 	;;
 	"AN")
-		if [[ $CAN == "[+]" ]];
+		if [[ "$CAN" == "[+]" ]];
 		then
 			CAN="[-]"
 		else
@@ -12391,7 +12414,7 @@ while true; do
 		fi
 	;;
 	"AO")
-		if [[ $CAO == "[+]" ]];
+		if [[ "$CAO" == "[+]" ]];
 		then
 			CAO="[-]"
 		else
@@ -12399,7 +12422,7 @@ while true; do
 		fi
 	;;
 	"AP")
-		if [[ $CAP == "[+]" ]];
+		if [[ "$CAP" == "[+]" ]];
 		then
 			CAP="[-]"
 		else
@@ -12407,7 +12430,7 @@ while true; do
 		fi
 	;;
 	"AQ")
-		if [[ $CAQ == "[+]" ]];
+		if [[ "$CAQ" == "[+]" ]];
 		then
 			CAQ="[-]"
 		else
@@ -12415,7 +12438,7 @@ while true; do
 		fi
 	;;
 	"AR")
-		if [[ $CAR == "[+]" ]];
+		if [[ "$CAR" == "[+]" ]];
 		then
 			CAR="[-]"
 		else
@@ -12423,7 +12446,7 @@ while true; do
 		fi
 	;;
 	"AS")
-		if [[ $CAS == "[+]" ]];
+		if [[ "$CAS" == "[+]" ]];
 		then
 			CAS="[-]"
 		else
@@ -12431,7 +12454,7 @@ while true; do
 		fi
 	;;
 	"AT")
-		if [[ $CAT == "[+]" ]];
+		if [[ "$CAT" == "[+]" ]];
 		then
 			CAT="[-]"
 		else
@@ -12439,7 +12462,7 @@ while true; do
 		fi
 	;;
 	"AU")
-		if [[ $CAU == "[+]" ]];
+		if [[ "$CAU" == "[+]" ]];
 		then
 			CAU="[-]"
 		else
@@ -12447,7 +12470,7 @@ while true; do
 		fi
 	;;
 	"AV")
-		if [[ $CAV == "[+]" ]];
+		if [[ "$CAV" == "[+]" ]];
 		then
 			CAV="[-]"
 		else
@@ -12455,7 +12478,7 @@ while true; do
 		fi
 	;;
 	"AW")
-		if [[ $CAW == "[+]" ]];
+		if [[ "$CAW" == "[+]" ]];
 		then
 			CAW="[-]"
 		else
@@ -12463,7 +12486,7 @@ while true; do
 		fi
 	;;
 	"AX")
-		if [[ $CAX == "[+]" ]];
+		if [[ "$CAX" == "[+]" ]];
 		then
 			CAX="[-]"
 		else
@@ -12471,7 +12494,7 @@ while true; do
 		fi
 	;;
 	"AY")
-		if [[ $CAY == "[+]" ]];
+		if [[ "$CAY" == "[+]" ]];
 		then
 			CAY="[-]"
 		else
@@ -12479,7 +12502,7 @@ while true; do
 		fi
 	;;
 	"AZ")
-		if [[ $CAZ == "[+]" ]];
+		if [[ "$CAZ" == "[+]" ]];
 		then
 			CAZ="[-]"
 		else
@@ -12487,7 +12510,7 @@ while true; do
 		fi
 	;;
 	"BA")
-		if [[ $CBA == "[+]" ]];
+		if [[ "$CBA" == "[+]" ]];
 		then
 			CBA="[-]"
 		else
@@ -12495,7 +12518,7 @@ while true; do
 		fi
 	;;
 	"BB")
-		if [[ $CBB == "[+]" ]];
+		if [[ "$CBB" == "[+]" ]];
 		then
 			CBB="[-]"
 		else
@@ -12503,7 +12526,7 @@ while true; do
 		fi
 	;;
 	"BC")
-		if [[ $CBC == "[+]" ]];
+		if [[ "$CBC" == "[+]" ]];
 		then
 			CBC="[-]"
 		else
@@ -12511,7 +12534,7 @@ while true; do
 		fi
 	;;
 	"BD")
-		if [[ $CBD == "[+]" ]];
+		if [[ "$CBD" == "[+]" ]];
 		then
 			CBD="[-]"
 		else
@@ -12519,7 +12542,7 @@ while true; do
 		fi
 	;;
 	"BE")
-		if [[ $CBE == "[+]" ]];
+		if [[ "$CBE" == "[+]" ]];
 		then
 			CBE="[-]"
 		else
@@ -12527,7 +12550,7 @@ while true; do
 		fi
 	;;
 	"BF")
-		if [[ $CBF == "[+]" ]];
+		if [[ "$CBF" == "[+]" ]];
 		then
 			CBF="[-]"
 		else
@@ -12535,7 +12558,7 @@ while true; do
 		fi
 	;;
 	"BG")
-		if [[ $CBG == "[+]" ]];
+		if [[ "$CBG" == "[+]" ]];
 		then
 			CBG="[-]"
 		else
@@ -12543,7 +12566,7 @@ while true; do
 		fi
 	;;
 	"BH")
-		if [[ $CBH == "[+]" ]];
+		if [[ "$CBH" == "[+]" ]];
 		then
 			CBH="[-]"
 		else
@@ -12551,7 +12574,7 @@ while true; do
 		fi
 	;;
 	"BI")
-		if [[ $CBI == "[+]" ]];
+		if [[ "$CBI" == "[+]" ]];
 		then
 			CBI="[-]"
 		else
@@ -12559,7 +12582,7 @@ while true; do
 		fi
 	;;
 	"BJ")
-		if [[ $CBJ == "[+]" ]];
+		if [[ "$CBJ" == "[+]" ]];
 		then
 			CBJ="[-]"
 		else
@@ -12567,7 +12590,7 @@ while true; do
 		fi
 	;;
 	"BK")
-		if [[ $CBK == "[+]" ]];
+		if [[ "$CBK" == "[+]" ]];
 		then
 			CBK="[-]"
 		else
@@ -12575,7 +12598,7 @@ while true; do
 		fi
 	;;
 	"BL")
-		if [[ $CBL == "[+]" ]];
+		if [[ "$CBL" == "[+]" ]];
 		then
 			CBL="[-]"
 		else
@@ -12583,7 +12606,7 @@ while true; do
 		fi
 	;;
 	"BM")
-		if [[ $CBM == "[+]" ]];
+		if [[ "$CBM" == "[+]" ]];
 		then
 			CBM="[-]"
 		else
@@ -12591,7 +12614,7 @@ while true; do
 		fi
 	;;
 	"BN")
-		if [[ $CBN == "[+]" ]];
+		if [[ "$CBN" == "[+]" ]];
 		then
 			CBN="[-]"
 		else
@@ -12599,7 +12622,7 @@ while true; do
 		fi
 	;;
 	"BO")
-		if [[ $CBO == "[+]" ]];
+		if [[ "$CBO" == "[+]" ]];
 		then
 			CBO="[-]"
 		else
@@ -12607,7 +12630,7 @@ while true; do
 		fi
 	;;
 	"BP")
-		if [[ $CBP == "[+]" ]];
+		if [[ "$CBP" == "[+]" ]];
 		then
 			CBP="[-]"
 		else
@@ -12615,7 +12638,7 @@ while true; do
 		fi
 	;;
 	"BQ")
-		if [[ $CBQ == "[+]" ]];
+		if [[ "$CBQ" == "[+]" ]];
 		then
 			CBQ="[-]"
 		else
@@ -12623,7 +12646,7 @@ while true; do
 		fi
 	;;
 	"BR")
-		if [[ $CBR == "[+]" ]];
+		if [[ "$CBR" == "[+]" ]];
 		then
 			CBR="[-]"
 		else
@@ -12631,7 +12654,7 @@ while true; do
 		fi
 	;;
 	"BS")
-		if [[ $CBS == "[+]" ]];
+		if [[ "$CBS" == "[+]" ]];
 		then
 			CBS="[-]"
 		else
@@ -12639,7 +12662,7 @@ while true; do
 		fi
 	;;
 	"BT")
-		if [[ $CBT == "[+]" ]];
+		if [[ "$CBT" == "[+]" ]];
 		then
 			CBT="[-]"
 		else
@@ -12647,7 +12670,7 @@ while true; do
 		fi
 	;;
 	"BU")
-		if [[ $CBU == "[+]" ]];
+		if [[ "$CBU" == "[+]" ]];
 		then
 			CBU="[-]"
 		else
@@ -12655,7 +12678,7 @@ while true; do
 		fi
 	;;
 	"BV")
-		if [[ $CBV == "[+]" ]];
+		if [[ "$CBV" == "[+]" ]];
 		then
 			CBV="[-]"
 		else
@@ -12663,7 +12686,7 @@ while true; do
 		fi
 	;;
 	"BW")
-		if [[ $CBW == "[+]" ]];
+		if [[ "$CBW" == "[+]" ]];
 		then
 			CBW="[-]"
 		else
@@ -12671,7 +12694,7 @@ while true; do
 		fi
 	;;
 	"BX")
-		if [[ $CBX == "[+]" ]];
+		if [[ "$CBX" == "[+]" ]];
 		then
 			CBX="[-]"
 		else
@@ -12679,7 +12702,7 @@ while true; do
 		fi
 	;;
 	"BY")
-		if [[ $CBY == "[+]" ]];
+		if [[ "$CBY" == "[+]" ]];
 		then
 			CBY="[-]"
 		else
@@ -12687,7 +12710,7 @@ while true; do
 		fi
 	;;
 	"BZ")
-		if [[ $CBZ == "[+]" ]];
+		if [[ "$CBZ" == "[+]" ]];
 		then
 			CBZ="[-]"
 		else
@@ -12695,7 +12718,7 @@ while true; do
 		fi
 	;;
 	"CA")
-		if [[ $CCA == "[+]" ]];
+		if [[ "$CCA" == "[+]" ]];
 		then
 			CCA="[-]"
 		else
@@ -12703,7 +12726,7 @@ while true; do
 		fi
 	;;
 	"CB")
-		if [[ $CCB == "[+]" ]];
+		if [[ "$CCB" == "[+]" ]];
 		then
 			CCB="[-]"
 		else
@@ -12711,7 +12734,7 @@ while true; do
 		fi
 	;;
 	"CC")
-		if [[ $CCC == "[+]" ]];
+		if [[ "$CCC" == "[+]" ]];
 		then
 			CCC="[-]"
 		else
@@ -12719,7 +12742,7 @@ while true; do
 		fi
 	;;
 	"CD")
-		if [[ $CCD == "[+]" ]];
+		if [[ "$CCD" == "[+]" ]];
 		then
 			CCD="[-]"
 		else
@@ -12727,7 +12750,7 @@ while true; do
 		fi
 	;;
 	"CE")
-		if [[ $CCE == "[+]" ]];
+		if [[ "$CCE" == "[+]" ]];
 		then
 			CCE="[-]"
 		else
@@ -12735,7 +12758,7 @@ while true; do
 		fi
 	;;
 	"CF")
-		if [[ $CCF == "[+]" ]];
+		if [[ "$CCF" == "[+]" ]];
 		then
 			CCF="[-]"
 		else
@@ -12743,7 +12766,7 @@ while true; do
 		fi
 	;;
 	"CG")
-		if [[ $CCG == "[+]" ]];
+		if [[ "$CCG" == "[+]" ]];
 		then
 			CCG="[-]"
 		else
@@ -12751,7 +12774,7 @@ while true; do
 		fi
 	;;
 	"CH")
-		if [[ $CCH == "[+]" ]];
+		if [[ "$CCH" == "[+]" ]];
 		then
 			CCH="[-]"
 		else
@@ -12759,7 +12782,7 @@ while true; do
 		fi
 	;;
 	"CI")
-		if [[ $CCI == "[+]" ]];
+		if [[ "$CCI" == "[+]" ]];
 		then
 			CCI="[-]"
 		else
@@ -12767,7 +12790,7 @@ while true; do
 		fi
 	;;
 	"CJ")
-		if [[ $CCJ == "[+]" ]];
+		if [[ "$CCJ" == "[+]" ]];
 		then
 			CCJ="[-]"
 		else
@@ -12775,7 +12798,7 @@ while true; do
 		fi
 	;;
 	"CK")
-		if [[ $CCK == "[+]" ]];
+		if [[ "$CCK" == "[+]" ]];
 		then
 			CCK="[-]"
 		else
@@ -12783,7 +12806,7 @@ while true; do
 		fi
 	;;
 	"CL")
-		if [[ $CCL == "[+]" ]];
+		if [[ "$CCL" == "[+]" ]];
 		then
 			CCL="[-]"
 		else
@@ -12791,7 +12814,7 @@ while true; do
 		fi
 	;;
 	"CM")
-		if [[ $CCM == "[+]" ]];
+		if [[ "$CCM" == "[+]" ]];
 		then
 			CCM="[-]"
 		else
@@ -12799,7 +12822,7 @@ while true; do
 		fi
 	;;
 	"CN")
-		if [[ $CCN == "[+]" ]];
+		if [[ "$CCN" == "[+]" ]];
 		then
 			CCN="[-]"
 		else
@@ -12807,7 +12830,7 @@ while true; do
 		fi
 	;;
 	"CO")
-		if [[ $CCO == "[+]" ]];
+		if [[ "$CCO" == "[+]" ]];
 		then
 			CCO="[-]"
 		else
@@ -12815,7 +12838,7 @@ while true; do
 		fi
 	;;
 	"CP")
-		if [[ $CCP == "[+]" ]];
+		if [[ "$CCP" == "[+]" ]];
 		then
 			CCP="[-]"
 		else
@@ -12823,7 +12846,7 @@ while true; do
 		fi
 	;;
 	"CQ")
-		if [[ $CCQ == "[+]" ]];
+		if [[ "$CCQ" == "[+]" ]];
 		then
 			CCQ="[-]"
 		else
@@ -12831,7 +12854,7 @@ while true; do
 		fi
 	;;
 	"CR")
-		if [[ $CCR == "[+]" ]];
+		if [[ "$CCR" == "[+]" ]];
 		then
 			CCR="[-]"
 		else
@@ -12839,7 +12862,7 @@ while true; do
 		fi
 	;;
 	"CS")
-		if [[ $CCS == "[+]" ]];
+		if [[ "$CCS" == "[+]" ]];
 		then
 			CCS="[-]"
 		else
@@ -12847,7 +12870,7 @@ while true; do
 		fi
 	;;
 	"CT")
-		if [[ $CCT == "[+]" ]];
+		if [[ "$CCT" == "[+]" ]];
 		then
 			CCT="[-]"
 		else
@@ -12855,7 +12878,7 @@ while true; do
 		fi
 	;;
 	"CU")
-		if [[ $CCU == "[+]" ]];
+		if [[ "$CCU" == "[+]" ]];
 		then
 			CCU="[-]"
 		else
@@ -12863,7 +12886,7 @@ while true; do
 		fi
 	;;
 	"CV")
-		if [[ $CCV == "[+]" ]];
+		if [[ "$CCV" == "[+]" ]];
 		then
 			CCV="[-]"
 		else
@@ -12871,7 +12894,7 @@ while true; do
 		fi
 	;;
 	"CW")
-		if [[ $CCW == "[+]" ]];
+		if [[ "$CCW" == "[+]" ]];
 		then
 			CCW="[-]"
 		else
@@ -12879,7 +12902,7 @@ while true; do
 		fi
 	;;
 	"CX")
-		if [[ $CCX == "[+]" ]];
+		if [[ "$CCX" == "[+]" ]];
 		then
 			CCX="[-]"
 		else
@@ -12887,7 +12910,7 @@ while true; do
 		fi
 	;;
 	"CY")
-		if [[ $CCY == "[+]" ]];
+		if [[ "$CCY" == "[+]" ]];
 		then
 			CCY="[-]"
 		else
@@ -12895,7 +12918,7 @@ while true; do
 		fi
 	;;
 	"CZ")
-		if [[ $CCZ == "[+]" ]];
+		if [[ "$CCZ" == "[+]" ]];
 		then
 			CCZ="[-]"
 		else
@@ -12903,7 +12926,7 @@ while true; do
 		fi
 	;;
 	"DA")
-		if [[ $CDA == "[+]" ]];
+		if [[ "$CDA" == "[+]" ]];
 		then
 			CDA="[-]"
 		else
@@ -12911,7 +12934,7 @@ while true; do
 		fi
 	;;
 	"DB")
-		if [[ $CDB == "[+]" ]];
+		if [[ "$CDB" == "[+]" ]];
 		then
 			CDB="[-]"
 		else
@@ -12919,7 +12942,7 @@ while true; do
 		fi
 	;;
 	"DC")
-		if [[ $CDC == "[+]" ]];
+		if [[ "$CDC" == "[+]" ]];
 		then
 			CDC="[-]"
 		else
@@ -12927,7 +12950,7 @@ while true; do
 		fi
 	;;
 	"DD")
-		if [[ $CDD == "[+]" ]];
+		if [[ "$CDD" == "[+]" ]];
 		then
 			CDD="[-]"
 		else
@@ -12935,7 +12958,7 @@ while true; do
 		fi
 	;;
 	"DE")
-		if [[ $CDE == "[+]" ]];
+		if [[ "$CDE" == "[+]" ]];
 		then
 			CDE="[-]"
 		else
@@ -12943,7 +12966,7 @@ while true; do
 		fi
 	;;
 	"DF")
-		if [[ $CDF == "[+]" ]];
+		if [[ "$CDF" == "[+]" ]];
 		then
 			CDF="[-]"
 		else
@@ -12951,7 +12974,7 @@ while true; do
 		fi
 	;;
 	"DG")
-		if [[ $CDG == "[+]" ]];
+		if [[ "$CDG" == "[+]" ]];
 		then
 			CDG="[-]"
 		else
@@ -12959,7 +12982,7 @@ while true; do
 		fi
 	;;
 	"DH")
-		if [[ $CDH == "[+]" ]];
+		if [[ "$CDH" == "[+]" ]];
 		then
 			CDH="[-]"
 		else
@@ -12967,7 +12990,7 @@ while true; do
 		fi
 	;;
 	"DI")
-		if [[ $CDI == "[+]" ]];
+		if [[ "$CDI" == "[+]" ]];
 		then
 			CDI="[-]"
 		else
@@ -12975,7 +12998,7 @@ while true; do
 		fi
 	;;
 	"DJ")
-		if [[ $CDJ == "[+]" ]];
+		if [[ "$CDJ" == "[+]" ]];
 		then
 			CDJ="[-]"
 		else
@@ -12983,7 +13006,7 @@ while true; do
 		fi
 	;;
 	"DK")
-		if [[ $CDK == "[+]" ]];
+		if [[ "$CDK" == "[+]" ]];
 		then
 			CDK="[-]"
 		else
@@ -12991,7 +13014,7 @@ while true; do
 		fi
 	;;
 	"DL")
-		if [[ $CDL == "[+]" ]];
+		if [[ "$CDL" == "[+]" ]];
 		then
 			CDL="[-]"
 		else
@@ -12999,7 +13022,7 @@ while true; do
 		fi
 	;;
 	"DM")
-		if [[ $CDM == "[+]" ]];
+		if [[ "$CDM" == "[+]" ]];
 		then
 			CDM="[-]"
 		else
@@ -13007,7 +13030,7 @@ while true; do
 		fi
 	;;
 	"DN")
-		if [[ $CDN == "[+]" ]];
+		if [[ "$CDN" == "[+]" ]];
 		then
 			CDN="[-]"
 		else
@@ -13015,7 +13038,7 @@ while true; do
 		fi
 	;;
 	"DO")
-		if [[ $CDO == "[+]" ]];
+		if [[ "$CDO" == "[+]" ]];
 		then
 			CDO="[-]"
 		else
@@ -13023,7 +13046,7 @@ while true; do
 		fi
 	;;
 	"DP")
-		if [[ $CDP == "[+]" ]];
+		if [[ "$CDP" == "[+]" ]];
 		then
 			CDP="[-]"
 		else
@@ -13031,7 +13054,7 @@ while true; do
 		fi
 	;;
 	"DQ")
-		if [[ $CDQ == "[+]" ]];
+		if [[ "$CDQ" == "[+]" ]];
 		then
 			CDQ="[-]"
 		else
@@ -13039,7 +13062,7 @@ while true; do
 		fi
 	;;
 	"DR")
-		if [[ $CDR == "[+]" ]];
+		if [[ "$CDR" == "[+]" ]];
 		then
 			CDR="[-]"
 		else
@@ -13047,7 +13070,7 @@ while true; do
 		fi
 	;;
 	"DS")
-		if [[ $CDS == "[+]" ]];
+		if [[ "$CDS" == "[+]" ]];
 		then
 			CDS="[-]"
 		else
@@ -13055,7 +13078,7 @@ while true; do
 		fi
 	;;
 	"DT")
-		if [[ $CDT == "[+]" ]];
+		if [[ "$CDT" == "[+]" ]];
 		then
 			CDT="[-]"
 		else
@@ -13063,7 +13086,7 @@ while true; do
 		fi
 	;;
 	"DU")
-		if [[ $CDU == "[+]" ]];
+		if [[ "$CDU" == "[+]" ]];
 		then
 			CDU="[-]"
 		else
@@ -13071,7 +13094,7 @@ while true; do
 		fi
 	;;
 	"DV")
-		if [[ $CDV == "[+]" ]];
+		if [[ "$CDV" == "[+]" ]];
 		then
 			CDV="[-]"
 		else
@@ -13079,7 +13102,7 @@ while true; do
 		fi
 	;;
 	"DW")
-		if [[ $CDW == "[+]" ]];
+		if [[ "$CDW" == "[+]" ]];
 		then
 			CDW="[-]"
 		else
@@ -13087,7 +13110,7 @@ while true; do
 		fi
 	;;
 	"DX")
-		if [[ $CDX == "[+]" ]];
+		if [[ "$CDX" == "[+]" ]];
 		then
 			CDX="[-]"
 		else
@@ -13095,7 +13118,7 @@ while true; do
 		fi
 	;;
 	"DY")
-		if [[ $CDY == "[+]" ]];
+		if [[ "$CDY" == "[+]" ]];
 		then
 			CDY="[-]"
 		else
@@ -13103,7 +13126,7 @@ while true; do
 		fi
 	;;
 	"DZ")
-		if [[ $CDZ == "[+]" ]];
+		if [[ "$CDZ" == "[+]" ]];
 		then
 			CDZ="[-]"
 		else
@@ -13111,7 +13134,7 @@ while true; do
 		fi
 	;;
 	"EA")
-		if [[ $CEA == "[+]" ]];
+		if [[ "$CEA" == "[+]" ]];
 		then
 			CEA="[-]"
 		else
@@ -13119,7 +13142,7 @@ while true; do
 		fi
 	;;
 	"EB")
-		if [[ $CEB == "[+]" ]];
+		if [[ "$CEB" == "[+]" ]];
 		then
 			CEB="[-]"
 		else
@@ -13127,7 +13150,7 @@ while true; do
 		fi
 	;;
 	"EC")
-		if [[ $CEC == "[+]" ]];
+		if [[ "$CEC" == "[+]" ]];
 		then
 			CEC="[-]"
 		else
@@ -13135,7 +13158,7 @@ while true; do
 		fi
 	;;
 	"ED")
-		if [[ $CED == "[+]" ]];
+		if [[ "$CED" == "[+]" ]];
 		then
 			CED="[-]"
 		else
@@ -13143,7 +13166,7 @@ while true; do
 		fi
 	;;
 	"EE")
-		if [[ $CEE == "[+]" ]];
+		if [[ "$CEE" == "[+]" ]];
 		then
 			CEE="[-]"
 		else
@@ -13151,7 +13174,7 @@ while true; do
 		fi
 	;;
 	"EF")
-		if [[ $CEF == "[+]" ]];
+		if [[ "$CEF" == "[+]" ]];
 		then
 			CEF="[-]"
 		else
@@ -13159,7 +13182,7 @@ while true; do
 		fi
 	;;
 	"EG")
-		if [[ $CEG == "[+]" ]];
+		if [[ "$CEG" == "[+]" ]];
 		then
 			CEG="[-]"
 		else
@@ -13167,7 +13190,7 @@ while true; do
 		fi
 	;;
 	"EH")
-		if [[ $CEH == "[+]" ]];
+		if [[ "$CEH" == "[+]" ]];
 		then
 			CEH="[-]"
 		else
@@ -13175,7 +13198,7 @@ while true; do
 		fi
 	;;
 	"EI")
-		if [[ $CEI == "[+]" ]];
+		if [[ "$CEI" == "[+]" ]];
 		then
 			CEI="[-]"
 		else
@@ -13183,7 +13206,7 @@ while true; do
 		fi
 	;;
 	"EJ")
-		if [[ $CEJ == "[+]" ]];
+		if [[ "$CEJ" == "[+]" ]];
 		then
 			CEJ="[-]"
 		else
@@ -13191,7 +13214,7 @@ while true; do
 		fi
 	;;
 	"EK")
-		if [[ $CEK == "[+]" ]];
+		if [[ "$CEK" == "[+]" ]];
 		then
 			CEK="[-]"
 		else
@@ -13199,7 +13222,7 @@ while true; do
 		fi
 	;;
 	"EL")
-		if [[ $CEL == "[+]" ]];
+		if [[ "$CEL" == "[+]" ]];
 		then
 			CEL="[-]"
 		else
@@ -13207,7 +13230,7 @@ while true; do
 		fi
 	;;
 	"EM")
-		if [[ $CEM == "[+]" ]];
+		if [[ "$CEM" == "[+]" ]];
 		then
 			CEM="[-]"
 		else
@@ -13215,7 +13238,7 @@ while true; do
 		fi
 	;;
 	"EN")
-		if [[ $CEN == "[+]" ]];
+		if [[ "$CEN" == "[+]" ]];
 		then
 			CEN="[-]"
 		else
@@ -13223,7 +13246,7 @@ while true; do
 		fi
 	;;
 	"EO")
-		if [[ $CEO == "[+]" ]];
+		if [[ "$CEO" == "[+]" ]];
 		then
 			CEO="[-]"
 		else
@@ -13231,7 +13254,7 @@ while true; do
 		fi
 	;;
 	"EP")
-		if [[ $CEP == "[+]" ]];
+		if [[ "$CEP" == "[+]" ]];
 		then
 			CEP="[-]"
 		else
@@ -13239,7 +13262,7 @@ while true; do
 		fi
 	;;
 	"EQ")
-		if [[ $CEQ == "[+]" ]];
+		if [[ "$CEQ" == "[+]" ]];
 		then
 			CEQ="[-]"
 		else
@@ -13247,7 +13270,7 @@ while true; do
 		fi
 	;;
 	"ER")
-		if [[ $CER == "[+]" ]];
+		if [[ "$CER" == "[+]" ]];
 		then
 			CER="[-]"
 		else
@@ -13255,7 +13278,7 @@ while true; do
 		fi
 	;;
 	"ES")
-		if [[ $CES == "[+]" ]];
+		if [[ "$CES" == "[+]" ]];
 		then
 			CES="[-]"
 		else
@@ -13263,7 +13286,7 @@ while true; do
 		fi
 	;;
 	"ET")
-		if [[ $CET == "[+]" ]];
+		if [[ "$CET" == "[+]" ]];
 		then
 			CET="[-]"
 		else
@@ -13271,7 +13294,7 @@ while true; do
 		fi
 	;;
 	"EU")
-		if [[ $CEU == "[+]" ]];
+		if [[ "$CEU" == "[+]" ]];
 		then
 			CEU="[-]"
 		else
@@ -13279,7 +13302,7 @@ while true; do
 		fi
 	;;
 	"EV")
-		if [[ $CEV == "[+]" ]];
+		if [[ "$CEV" == "[+]" ]];
 		then
 			CEV="[-]"
 		else
@@ -13287,7 +13310,7 @@ while true; do
 		fi
 	;;
 	"EW")
-		if [[ $CEW == "[+]" ]];
+		if [[ "$CEW" == "[+]" ]];
 		then
 			CEW="[-]"
 		else
@@ -13295,7 +13318,7 @@ while true; do
 		fi
 	;;
 	"EX")
-		if [[ $CEX == "[+]" ]];
+		if [[ "$CEX" == "[+]" ]];
 		then
 			CEX="[-]"
 		else
@@ -13303,7 +13326,7 @@ while true; do
 		fi
 	;;
 	"EY")
-		if [[ $CEY == "[+]" ]];
+		if [[ "$CEY" == "[+]" ]];
 		then
 			CEY="[-]"
 		else
@@ -13311,7 +13334,7 @@ while true; do
 		fi
 	;;
 	"EZ")
-		if [[ $CEZ == "[+]" ]];
+		if [[ "$CEZ" == "[+]" ]];
 		then
 			CEZ="[-]"
 		else
@@ -13319,7 +13342,7 @@ while true; do
 		fi
 	;;
 	"FA")
-		if [[ $CFA == "[+]" ]];
+		if [[ "$CFA" == "[+]" ]];
 		then
 			CFA="[-]"
 		else
@@ -13327,7 +13350,7 @@ while true; do
 		fi
 	;;
 	"FB")
-		if [[ $CFB == "[+]" ]];
+		if [[ "$CFB" == "[+]" ]];
 		then
 			CFB="[-]"
 		else
@@ -13335,7 +13358,7 @@ while true; do
 		fi
 	;;
 	"FC")
-		if [[ $CFC == "[+]" ]];
+		if [[ "$CFC" == "[+]" ]];
 		then
 			CFC="[-]"
 		else
@@ -13343,7 +13366,7 @@ while true; do
 		fi
 	;;
 	"FD")
-		if [[ $CFD == "[+]" ]];
+		if [[ "$CFD" == "[+]" ]];
 		then
 			CFD="[-]"
 		else
@@ -13351,7 +13374,7 @@ while true; do
 		fi
 	;;
 	"FE")
-		if [[ $CFE == "[+]" ]];
+		if [[ "$CFE" == "[+]" ]];
 		then
 			CFE="[-]"
 		else
@@ -13359,7 +13382,7 @@ while true; do
 		fi
 	;;
 	"FF")
-		if [[ $CFF == "[+]" ]];
+		if [[ "$CFF" == "[+]" ]];
 		then
 			CFF="[-]"
 		else
@@ -13367,7 +13390,7 @@ while true; do
 		fi
 	;;
 	"FG")
-		if [[ $CFG == "[+]" ]];
+		if [[ "$CFG" == "[+]" ]];
 		then
 			CFG="[-]"
 		else
@@ -13375,7 +13398,7 @@ while true; do
 		fi
 	;;
 	"FH")
-		if [[ $CFH == "[+]" ]];
+		if [[ "$CFH" == "[+]" ]];
 		then
 			CFH="[-]"
 		else
@@ -13383,7 +13406,7 @@ while true; do
 		fi
 	;;
 	"FI")
-		if [[ $CFI == "[+]" ]];
+		if [[ "$CFI" == "[+]" ]];
 		then
 			CFI="[-]"
 		else
@@ -13391,7 +13414,7 @@ while true; do
 		fi
 	;;
 	"FJ")
-		if [[ $CFJ == "[+]" ]];
+		if [[ "$CFJ" == "[+]" ]];
 		then
 			CFJ="[-]"
 		else
@@ -13399,7 +13422,7 @@ while true; do
 		fi
 	;;
 	"FK")
-		if [[ $CFK == "[+]" ]];
+		if [[ "$CFK" == "[+]" ]];
 		then
 			CFK="[-]"
 		else
@@ -13407,7 +13430,7 @@ while true; do
 		fi
 	;;
 	"FL")
-		if [[ $CFL == "[+]" ]];
+		if [[ "$CFL" == "[+]" ]];
 		then
 			CFL="[-]"
 		else
@@ -13415,7 +13438,7 @@ while true; do
 		fi
 	;;
 	"FM")
-		if [[ $CFM == "[+]" ]];
+		if [[ "$CFM" == "[+]" ]];
 		then
 			CFM="[-]"
 		else
@@ -13423,7 +13446,7 @@ while true; do
 		fi
 	;;
 	"FN")
-		if [[ $CFN == "[+]" ]];
+		if [[ "$CFN" == "[+]" ]];
 		then
 			CFN="[-]"
 		else
@@ -13431,7 +13454,7 @@ while true; do
 		fi
 	;;
 	"FO")
-		if [[ $CFO == "[+]" ]];
+		if [[ "$CFO" == "[+]" ]];
 		then
 			CFO="[-]"
 		else
@@ -13439,7 +13462,7 @@ while true; do
 		fi
 	;;
 	"FP")
-		if [[ $CFP == "[+]" ]];
+		if [[ "$CFP" == "[+]" ]];
 		then
 			CFP="[-]"
 		else
@@ -13447,7 +13470,7 @@ while true; do
 		fi
 	;;
 	"FQ")
-		if [[ $CFQ == "[+]" ]];
+		if [[ "$CFQ" == "[+]" ]];
 		then
 			CFQ="[-]"
 		else
@@ -13455,7 +13478,7 @@ while true; do
 		fi
 	;;
 	"FR")
-		if [[ $CFR == "[+]" ]];
+		if [[ "$CFR" == "[+]" ]];
 		then
 			CFR="[-]"
 		else
@@ -13463,7 +13486,7 @@ while true; do
 		fi
 	;;
 	"FS")
-		if [[ $CFS == "[+]" ]];
+		if [[ "$CFS" == "[+]" ]];
 		then
 			CFS="[-]"
 		else
@@ -13471,7 +13494,7 @@ while true; do
 		fi
 	;;
 	"FT")
-		if [[ $CFT == "[+]" ]];
+		if [[ "$CFT" == "[+]" ]];
 		then
 			CFT="[-]"
 		else
@@ -13479,7 +13502,7 @@ while true; do
 		fi
 	;;
 	"FU")
-		if [[ $CFU == "[+]" ]];
+		if [[ "$CFU" == "[+]" ]];
 		then
 			CFU="[-]"
 		else
@@ -13487,7 +13510,7 @@ while true; do
 		fi
 	;;
 	"FV")
-		if [[ $CFV == "[+]" ]];
+		if [[ "$CFV" == "[+]" ]];
 		then
 			CFV="[-]"
 		else
@@ -13495,7 +13518,7 @@ while true; do
 		fi
 	;;
 	"FW")
-		if [[ $CFW == "[+]" ]];
+		if [[ "$CFW" == "[+]" ]];
 		then
 			CFW="[-]"
 		else
@@ -13503,7 +13526,7 @@ while true; do
 		fi
 	;;
 	"FX")
-		if [[ $CFX == "[+]" ]];
+		if [[ "$CFX" == "[+]" ]];
 		then
 			CFX="[-]"
 		else
@@ -13511,7 +13534,7 @@ while true; do
 		fi
 	;;
 	"FY")
-		if [[ $CFY == "[+]" ]];
+		if [[ "$CFY" == "[+]" ]];
 		then
 			CFY="[-]"
 		else
@@ -13519,7 +13542,7 @@ while true; do
 		fi
 	;;
 	"FZ")
-		if [[ $CFZ == "[+]" ]];
+		if [[ "$CFZ" == "[+]" ]];
 		then
 			CFZ="[-]"
 		else
@@ -13527,7 +13550,7 @@ while true; do
 		fi
 	;;
 	"GA")
-		if [[ $CGA == "[+]" ]];
+		if [[ "$CGA" == "[+]" ]];
 		then
 			CGA="[-]"
 		else
@@ -13535,7 +13558,7 @@ while true; do
 		fi
 	;;
 	"GB")
-		if [[ $CGB == "[+]" ]];
+		if [[ "$CGB" == "[+]" ]];
 		then
 			CGB="[-]"
 		else
@@ -13543,7 +13566,7 @@ while true; do
 		fi
 	;;
 	"GC")
-		if [[ $CGC == "[+]" ]];
+		if [[ "$CGC" == "[+]" ]];
 		then
 			CGC="[-]"
 		else
@@ -13551,7 +13574,7 @@ while true; do
 		fi
 	;;
 	"GD")
-		if [[ $CGD == "[+]" ]];
+		if [[ "$CGD" == "[+]" ]];
 		then
 			CGD="[-]"
 		else
@@ -13559,7 +13582,7 @@ while true; do
 		fi
 	;;
 	"GE")
-		if [[ $CGE == "[+]" ]];
+		if [[ "$CGE" == "[+]" ]];
 		then
 			CGE="[-]"
 		else
@@ -13567,7 +13590,7 @@ while true; do
 		fi
 	;;
 	"GF")
-		if [[ $CGF == "[+]" ]];
+		if [[ "$CGF" == "[+]" ]];
 		then
 			CGF="[-]"
 		else
@@ -13575,7 +13598,7 @@ while true; do
 		fi
 	;;
 	"GG")
-		if [[ $CGG == "[+]" ]];
+		if [[ "$CGG" == "[+]" ]];
 		then
 			CGG="[-]"
 		else
@@ -13583,7 +13606,7 @@ while true; do
 		fi
 	;;
 	"GH")
-		if [[ $CGH == "[+]" ]];
+		if [[ "$CGH" == "[+]" ]];
 		then
 			CGH="[-]"
 		else
@@ -13591,7 +13614,7 @@ while true; do
 		fi
 	;;
 	"GI")
-		if [[ $CGI == "[+]" ]];
+		if [[ "$CGI" == "[+]" ]];
 		then
 			CGI="[-]"
 		else
@@ -13599,7 +13622,7 @@ while true; do
 		fi
 	;;
 	"GJ")
-		if [[ $CGJ == "[+]" ]];
+		if [[ "$CGJ" == "[+]" ]];
 		then
 			CGJ="[-]"
 		else
@@ -13607,7 +13630,7 @@ while true; do
 		fi
 	;;
 	"GK")
-		if [[ $CGK == "[+]" ]];
+		if [[ "$CGK" == "[+]" ]];
 		then
 			CGK="[-]"
 		else
@@ -13615,7 +13638,7 @@ while true; do
 		fi
 	;;
 	"GL")
-		if [[ $CGL == "[+]" ]];
+		if [[ "$CGL" == "[+]" ]];
 		then
 			CGL="[-]"
 		else
@@ -13623,7 +13646,7 @@ while true; do
 		fi
 	;;
 	"GM")
-		if [[ $CGM == "[+]" ]];
+		if [[ "$CGM" == "[+]" ]];
 		then
 			CGM="[-]"
 		else
@@ -13631,7 +13654,7 @@ while true; do
 		fi
 	;;
 	"GN")
-		if [[ $CGN == "[+]" ]];
+		if [[ "$CGN" == "[+]" ]];
 		then
 			CGN="[-]"
 		else
@@ -13639,7 +13662,7 @@ while true; do
 		fi
 	;;
 	"GO")
-		if [[ $CGO == "[+]" ]];
+		if [[ "$CGO" == "[+]" ]];
 		then
 			CGO="[-]"
 		else
@@ -13647,7 +13670,7 @@ while true; do
 		fi
 	;;
 	"GP")
-		if [[ $CGP == "[+]" ]];
+		if [[ "$CGP" == "[+]" ]];
 		then
 			CGP="[-]"
 		else
@@ -13655,7 +13678,7 @@ while true; do
 		fi
 	;;
 	"GQ")
-		if [[ $CGQ == "[+]" ]];
+		if [[ "$CGQ" == "[+]" ]];
 		then
 			CGQ="[-]"
 		else
@@ -13663,7 +13686,7 @@ while true; do
 		fi
 	;;
 	"GR")
-		if [[ $CGR == "[+]" ]];
+		if [[ "$CGR" == "[+]" ]];
 		then
 			CGR="[-]"
 		else
@@ -13671,7 +13694,7 @@ while true; do
 		fi
 	;;
 	"GS")
-		if [[ $CGS == "[+]" ]];
+		if [[ "$CGS" == "[+]" ]];
 		then
 			CGS="[-]"
 		else
@@ -13679,7 +13702,7 @@ while true; do
 		fi
 	;;
 	"GT")
-		if [[ $GT == "[+]" ]];
+		if [[ "$CGT" == "[+]" ]];
 		then
 			CGT="[-]"
 		else
@@ -13687,7 +13710,7 @@ while true; do
 		fi
 	;;
 	"GU")
-		if [[ $CGU == "[+]" ]];
+		if [[ "$CGU" == "[+]" ]];
 		then
 			CGU="[-]"
 		else
@@ -13695,7 +13718,7 @@ while true; do
 		fi
 	;;
 	"GV")
-		if [[ $CGV == "[+]" ]];
+		if [[ "$CGV" == "[+]" ]];
 		then
 			CGV="[-]"
 		else
@@ -13703,7 +13726,7 @@ while true; do
 		fi
 	;;
 	"GW")
-		if [[ $CGW == "[+]" ]];
+		if [[ "$CGW" == "[+]" ]];
 		then
 			CGW="[-]"
 		else
@@ -13711,7 +13734,7 @@ while true; do
 		fi
 	;;
 	"GX")
-		if [[ $CGX == "[+]" ]];
+		if [[ "$CGX" == "[+]" ]];
 		then
 			CGX="[-]"
 		else
@@ -13719,7 +13742,7 @@ while true; do
 		fi
 	;;
 	"GY")
-		if [[ $CGY == "[+]" ]];
+		if [[ "$CGY" == "[+]" ]];
 		then
 			CGY="[-]"
 		else
@@ -13727,7 +13750,7 @@ while true; do
 		fi
 	;;
 	"GZ")
-		if [[ $CGZ == "[+]" ]];
+		if [[ "$CGZ" == "[+]" ]];
 		then
 			CGZ="[-]"
 		else
@@ -13735,7 +13758,7 @@ while true; do
 		fi
 	;;
 	"HA")
-		if [[ $CHA == "[+]" ]];
+		if [[ "$CHA" == "[+]" ]];
 		then
 			CHA="[-]"
 		else
@@ -13743,7 +13766,7 @@ while true; do
 		fi
 	;;
 	"HB")
-		if [[ $CHB == "[+]" ]];
+		if [[ "$CHB" == "[+]" ]];
 		then
 			CHB="[-]"
 		else
@@ -13751,7 +13774,7 @@ while true; do
 		fi
 	;;
 	"HC")
-		if [[ $CHC == "[+]" ]];
+		if [[ "$CHC" == "[+]" ]];
 		then
 			CHC="[-]"
 		else
@@ -13759,7 +13782,7 @@ while true; do
 		fi
 	;;
 	"HD")
-		if [[ $CHD == "[+]" ]];
+		if [[ "$CHD" == "[+]" ]];
 		then
 			CHD="[-]"
 		else
@@ -13767,7 +13790,7 @@ while true; do
 		fi
 	;;
 	"HE")
-		if [[ $CHE == "[+]" ]];
+		if [[ "$CHE" == "[+]" ]];
 		then
 			CHE="[-]"
 		else
@@ -13775,7 +13798,7 @@ while true; do
 		fi
 	;;
 	"HF")
-		if [[ $CHF == "[+]" ]];
+		if [[ "$CHF" == "[+]" ]];
 		then
 			CHF="[-]"
 		else
@@ -13783,7 +13806,7 @@ while true; do
 		fi
 	;;
 	"HG")
-		if [[ $CHG == "[+]" ]];
+		if [[ "$CHG" == "[+]" ]];
 		then
 			CHG="[-]"
 		else
@@ -13791,7 +13814,7 @@ while true; do
 		fi
 	;;
 	"HH")
-		if [[ $CHH == "[+]" ]];
+		if [[ "$CHH" == "[+]" ]];
 		then
 			CHH="[-]"
 		else
@@ -13799,7 +13822,7 @@ while true; do
 		fi
 	;;
 	"HI")
-		if [[ $CHI == "[+]" ]];
+		if [[ "$CHI" == "[+]" ]];
 		then
 			CHI="[-]"
 		else
@@ -13807,7 +13830,7 @@ while true; do
 		fi
 	;;
 	"HJ")
-		if [[ $CHJ == "[+]" ]];
+		if [[ "$CHJ" == "[+]" ]];
 		then
 			CHJ="[-]"
 		else
@@ -13815,7 +13838,7 @@ while true; do
 		fi
 	;;
 	"HK")
-		if [[ $CHK == "[+]" ]];
+		if [[ "$CHK" == "[+]" ]];
 		then
 			CHK="[-]"
 		else
@@ -13823,7 +13846,7 @@ while true; do
 		fi
 	;;
 	"HL")
-		if [[ $CHL == "[+]" ]];
+		if [[ "$CHL" == "[+]" ]];
 		then
 			CHL="[-]"
 		else
@@ -13831,7 +13854,7 @@ while true; do
 		fi
 	;;
 	"HM")
-		if [[ $CHM == "[+]" ]];
+		if [[ "$CHM" == "[+]" ]];
 		then
 			CHM="[-]"
 		else
@@ -13839,15 +13862,23 @@ while true; do
 		fi
 	;;
 	"HN")
-		if [[ $CHN == "[+]" ]];
+		if [[ "$CHN" == "[+]" ]];
 		then
 			CHN="[-]"
 		else
 			CHN="[+]"
 		fi
 	;;
+	"HO")
+		if [[ "$CHO" == "[+]" ]];
+		then
+			CHO="[-]"
+		else
+			CHO="[+]"
+		fi
+	;;
 	"ZZ")
-		if [[ $CZZ == "[+]" ]];
+		if [[ "$CZZ" == "[+]" ]];
 		then
 			CZZ="[-]"
 		else
