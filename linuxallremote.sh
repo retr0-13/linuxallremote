@@ -261,7 +261,7 @@ function Stampa
 	fi
 }
 
-for TOOL in "lynx" "tput" "git" "strace" "ltrace" "hydra" "nmblookup" "rlogin" "docker" "john"
+for TOOL in "lynx" "tput" "git" "strace" "ltrace" "hydra" "nmblookup" "rlogin" "docker" "john" "gzip"
 do
 	if [[ ! -f $(which $TOOL) ]];
 	then
@@ -2023,6 +2023,7 @@ while true; do
 		Stampa " 2577. use nmap to scan ports with malware" "2578. use nmap to scan ports with safe" "2579. use nmap to scan ports with version"
 		Stampa " 2583. read symbols and other info from binary" "2617. create a zipbomb manually" "2618. use metasploit"
 		Stampa " 2625. Try a manual SQLinjection" "2633. Discover OS from ICMP ttl" "2634. crack pdf password with John the Ripper"
+		Stampa " 2642. Extract a gz compressed file" "2643. run chisel in server mode"
 		echo "$SEP"
 	fi
 	echo "$CGT"" GT. VIRTUAL COINS - CURRENCIES"
@@ -12329,6 +12330,38 @@ while true; do
 		if [[ $(Warning) == "Y" ]];
 		then
 			Clona "CodeX-ID/Temp-mail"
+		fi
+	;;
+	"2642")
+		echo "Digit a gz compressed file to extract"
+		read -e -p "(example, example.gz): " FLTR
+		if [[ -f "$FLTR" ]];
+		then
+			gzip -d "$FLTR"
+		fi
+	;;
+	"2643")
+		if [[ -f chisel ]];
+		then
+			echo "Digit a port to listening the chisel client"
+			read -p "(example, 8080): " MPRT
+			if [[ "$MPRT" != "" ]];
+			then
+				sudo chisel server --socks5 --reverse --port $MPRT
+			fi
+		else
+			echo "Digit the chisel release versio"
+			read -e -p "(example, chisel_1.7.7_linux_amd64): " CHSL
+			if [[ -f $CHSL && "$CHSL" != "" ]]
+			then
+				echo "Digit a port to listening the chisel client"
+				read -p "(example, 8080): " MPRT
+				if [[ "$MPRT" != "" ]];
+				then
+					chmod +x ./$CHSL
+					sudo ./$CHSL server --socks5 --reverse --port $MPRT
+				fi
+			fi
 		fi
 	;;
 	"AA")
