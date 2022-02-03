@@ -512,6 +512,7 @@ CHL="[+]"
 CHM="[+]"
 CHN="[+]"
 CHO="[+]"
+CHP="[+]"
 CZZ="[+]"
 
 while true; do
@@ -1785,6 +1786,7 @@ while true; do
 		Stampa " 2541. avilum/portsscan" "2568. Abhay2342/Network-Scanner" "2569. xadhrit/d9scan"
 		Stampa " 2607. idealeer/xmap" "2613. RedSection/jspanda" "1427. onthefrontline/LetMeFuckIt-Scanner"
 		Stampa " 2623. michelin/ChopChop" "1485. robertdavidgraham/masscan" "1486. trevordavenport/MasscanAutomation"
+		Stampa " 2647. MrLion7/Lmap"
 		echo "$SEP"
 	fi
 	echo "$CFU"" FU. SHELL"
@@ -1899,6 +1901,12 @@ while true; do
 	then
 		Stampa " 270. Va5c0/Steghide-Brute-Force-Tool/steg_brute" "271. daniellerch/aletheia"
 		Stampa " 272. Diefunction/stegbrute" "603. Paradoxis/StegCracker"
+		echo "$SEP"
+	fi
+	echo "$CHP"" HP. SYNOPSYS"
+	if [[ "$CHP" == "[-]" ]];
+	then
+		Stampa " 2648. blackducksoftware/synopsys-detect"
 		echo "$SEP"
 	fi
 	echo "$CGI"" GI. TACACS"
@@ -12325,7 +12333,7 @@ while true; do
 		fi
 	;;
 	"2644")
-		Clone "kennbroorg/iKy"
+		Clona "kennbroorg/iKy"
 	;;
 	"2645")
 		if [[ $(Warning) == "Y" ]];
@@ -12336,97 +12344,103 @@ while true; do
 	"2646")
 		if [[ $(Warning) == "Y" ]];
 		then
-			Clone "TheSpeedX/WhatScraper"
+			Clona "TheSpeedX/WhatScraper"
 		fi
 	;;
+	"2647")
+		Clona "MrLion7/Lmap"
+	;;
+	"2648")
+		Clona "blackducksoftware/synopsys-detect"
+	;;
 	"AA")
-	if [[ "$CAA" == "[+]" ]];
-	then
-	CAA="[-]"
-	else
-		CAA="[+]"
+		if [[ "$CAA" == "[+]" ]];
+		then
+			CAA="[-]"
+		else
+			CAA="[+]"
 		fi
-		;;
+	;;
 	"AB")
-	if [[ "$CAB" == "[+]" ]];
-	then
-	CAB="[-]"
-	else
-		CAB="[+]"
+		if [[ "$CAB" == "[+]" ]];
+		then
+			CAB="[-]"
+		else
+			CAB="[+]"
 		fi
-		;;
+	;;
 	"AC")
-	if [[ "$CAC" == "[+]" ]];
-	then
-	CAC="[-]"
-	else
-		CAC="[+]"
+		if [[ "$CAC" == "[+]" ]];
+		then
+			CAC="[-]"
+		else
+			CAC="[+]"
 		fi
-		;;
+	;;
 	"AD")
-	if [[ "$CAD" == "[+]" ]];
-	then
-	CAD="[-]"
-	else
-		CAD="[+]"
+		if [[ "$CAD" == "[+]" ]];
+		then
+			CAD="[-]"
+		else
+			CAD="[+]"
 		fi
-		;;
+	;;
 	"AE")
-	if [[ "$CAE" == "[+]" ]];
-	then
-	CAE="[-]"
-	else
-		CAE="[+]"
+		if [[ "$CAE" == "[+]" ]];
+		then
+			CAE="[-]"
+		else
+			CAE="[+]"
 		fi
-		;;
+	;;
 	"AF")
-	if [[ "$CAF" == "[+]" ]];
-	then
-	CAF="[-]"
-	else
-		CAF="[+]"
+		if [[ "$CAF" == "[+]" ]];
+		then
+			CAF="[-]"
+		else
+			CAF="[+]"
 		fi
-		;;
+	;;
 	"AG")
-	if [[ "$CAG" == "[+]" ]];
-	then
-	CAG="[-]"
-	else
-		CAG="[+]"
+		if [[ "$CAG" == "[+]" ]];
+		then
+			CAG="[-]"
+		else
+			CAG="[+]"
 		fi
-		;;
+	;;
 	"AH")
-	if [[ "$CAH" == "[+]" ]];
-	then
-	CAH="[-]"
-	else
-		CAH="[+]"
+		if [[ "$CAH" == "[+]" ]];
+		then
+			CAH="[-]"
+		else
+			CAH="[+]"
 		fi
-		;;
+	;;
 	"AI")
-	if [[ "$CAI" == "[+]" ]];
-	then
-	CAI="[-]"
-	else
-		CAI="[+]"
+		if [[ "$CAI" == "[+]" ]];
+		then
+			CAI="[-]"
+		else
+			CAI="[+]"
 		fi
-		;;
+	;;
 	"AJ")
-	if [[ "$CAJ" == "[+]" ]];
-	then
-	CAJ="[-]"
-	else
-		CAJ="[+]"
+		if [[ "$CAJ" == "[+]" ]];
+		then
+			CAJ="[-]"
+		else
+			CAJ="[+]"
 		fi
-		;;
+	;;
 	"AK")
-	if [[ "$CAK" == "[+]" ]];
-	then
-	CAK="[-]"
-	else
-		CAK="[+]"
+		if [[ "$CAK" == "[+]" ]];
+		then
+			CAK="[-]"
+		else
+			CAK="[+]"
 		fi
-		;;
+	;;
 	"AL")
 	if [[ "$CAL" == "[+]" ]];
 	then
@@ -13915,14 +13929,22 @@ while true; do
 			CHO="[+]"
 		fi
 	;;
-	"ZZ")
-	if [[ "$CZZ" == "[+]" ]];
-	then
-	CZZ="[-]"
-	else
-		CZZ="[+]"
+	"HP")
+		if [[ "$CHP" == "[+]" ]];
+		then
+			CHP="[-]"
+		else
+			CHP="[+]"
 		fi
-		;;
+	;;
+	"ZZ")
+		if [[ "$CZZ" == "[+]" ]];
+		then
+			CZZ="[-]"
+		else
+			CZZ="[+]"
+		fi
+	;;
 	*)
 		echo "error, invalid choice"
 	;;

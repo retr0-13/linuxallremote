@@ -502,6 +502,7 @@ CHL="[+]"
 CHM="[+]"
 CHN="[+]"
 CHO="[+]"
+CHP="[+]"
 CZZ="[+]"
 
 while true; do
@@ -1775,6 +1776,7 @@ while true; do
 		Stampa " 2541. avilum/portsscan" "2562. Abhay2342/Network-Scanner" "2563. xadhrit/d9scan"
 		Stampa " 2599. idealeer/xmap" "2605. RedSection/jspanda" "1427. onthefrontline/LetMeFuckIt-Scanner"
 		Stampa " 2615. michelin/ChopChop" "1485. robertdavidgraham/masscan" "1486. trevordavenport/MasscanAutomation"
+		Stampa " 2638. MrLion7/Lmap"
 		echo "$SEP"
 	fi
 	echo "$CFU"" FU. SHELL"
@@ -1889,6 +1891,12 @@ while true; do
 	then
 		Stampa " 270. Va5c0/Steghide-Brute-Force-Tool/steg_brute" "271. daniellerch/aletheia"
 		Stampa " 272. Diefunction/stegbrute" "603. Paradoxis/StegCracker"
+		echo "$SEP"
+	fi
+	echo "$CHP"" HP. SYNOPSYS"
+	if [[ "$CHP" == "[-]" ]];
+	then
+		Stampa " 2639. blackducksoftware/synopsys-detect"
 		echo "$SEP"
 	fi
 	echo "$CGI"" GI. TACACS"
@@ -12287,7 +12295,7 @@ while true; do
 		fi
 	;;
 	"2635")
-		Clone "kennbroorg/iKy"
+		Clona "kennbroorg/iKy"
 	;;
 	"2636")
 		if [[ $(Warning) == "Y" ]];
@@ -12298,8 +12306,14 @@ while true; do
 	"2637")
 		if [[ $(Warning) == "Y" ]];
 		then
-			Clone "TheSpeedX/WhatScraper"
+			Clona "TheSpeedX/WhatScraper"
 		fi
+	;;
+	"2638")
+		Clona "MrLion7/Lmap"
+	;;
+	"2639")
+		Clona "blackducksoftware/synopsys-detect"
 	;;
 	"AA")
 		if [[ "$CAA" == "[+]" ]];
@@ -13875,6 +13889,14 @@ while true; do
 			CHO="[-]"
 		else
 			CHO="[+]"
+		fi
+	;;
+	"HP")
+		if [[ "$CHP" == "[+]" ]];
+		then
+			CHP="[-]"
+		else
+			CHP="[+]"
 		fi
 	;;
 	"ZZ")
