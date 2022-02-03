@@ -503,6 +503,7 @@ CHM="[+]"
 CHN="[+]"
 CHO="[+]"
 CHP="[+]"
+CHQ="[+]"
 CZZ="[+]"
 
 while true; do
@@ -1201,7 +1202,7 @@ while true; do
 	if [[ "$CCY" == "[-]" ]];
 	then
 		Stampa " 204. byt3bl33d3r/SprayingToolkit" "205. mrexodia/haxxmap" "207. iomoath/IMAP-Cracker"
-		Stampa " 2379. kurobeats/fimap"
+		Stampa " 2379. kurobeats/fimap" "2640. rm1984/IMAPLoginTester"
 		echo "$SEP"
 	fi
 	echo "$CCZ"" CZ. IMSI"
@@ -1903,6 +1904,12 @@ while true; do
 	if [[ "$CGI" == "[-]" ]];
 	then
 		Stampa " 187. GrrrDog/TacoTaco"
+		echo "$SEP"
+	fi
+	echo "$CHQ"" HQ. TEMP-MAIL"
+	if [[ "$CHQ" == "[-]" ]];
+	then
+		Stampa " 2641. CodeX-ID/Temp-mail"
 		echo "$SEP"
 	fi
 	echo "$CGJ"" GJ. TERMUX"
@@ -12315,6 +12322,15 @@ while true; do
 	"2639")
 		Clona "blackducksoftware/synopsys-detect"
 	;;
+	"2640")
+		Clona "rm1984/IMAPLoginTester"
+	;;
+	"2641")
+		if [[ $(Warning) == "Y" ]];
+		then
+			Clona "CodeX-ID/Temp-mail"
+		fi
+	;;
 	"AA")
 		if [[ "$CAA" == "[+]" ]];
 		then
@@ -13897,6 +13913,14 @@ while true; do
 			CHP="[-]"
 		else
 			CHP="[+]"
+		fi
+	;;
+	"HQ")
+		if [[ "$CHQ" == "[+]" ]];
+		then
+			CHQ="[-]"
+		else
+			CHQ="[+]"
 		fi
 	;;
 	"ZZ")
