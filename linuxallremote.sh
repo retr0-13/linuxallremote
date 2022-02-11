@@ -4,7 +4,7 @@
 #email: 4starfds@gmail.com
 
 PYPAK="0trace 3proxy 3proxy-win32 42zip ace admid-pack afflib afpfs-ng against aiengine aimage air airgraph-ng american-fuzzy-lop androguard android-apktool android-ndk android-sdk-platform-tools android-sdk android-udev-rules arachni arduino argus argus-clients armitage arp-scan artillery asp-audit athena-ssl-scanner auto-xor-decryptor autopsy azazel b2sum backdoor-factory balbuzard bamf-framework batman-adv bbqsql bbrecon bed beef beholder bgp-md5crack bing-ip2hosts bing-lfi-rfi binwalk bios_memimage blackarch-menus bletchley bluebox-ng bluelog blueprint bmap-tools bob-the-butcher braa braces browser-fuzzer brutus bsdiff bss bt_audit bulk-extractor bully bunny burpsuite bvi cadaver canari capstone casefile centry cewl cflow check-weak-dh-ssh checkpwd checksec chiron chownat chrome-decode cidr2range ciphertest cirt-fuzzer cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-router-config cisco-scanner cisco-torch cisco5crack cisco7crack ciscos climber cloudsplaining clusterd cms-explorer cms-few codetective complemento conpot cookie-cadger cppcheck cpptest crackle create-ap creds creepy crunch cuckoo cupp cutycapt darkd0rk3r dbd dc3dd ddrescue device-pharmer dex2jar dff-scanner dhcpig dirb dirbuster dirs3arch dislocker dissector dizzy dmitry dns-spoof dns2geoip dns2tcp dnsa dnschef dnsmap dnsrecon dnsutils domain-analyzer dradis dripper dsd dsniff dumb0 dump1090 eapmd5pass easy-creds eazy edb eindeutig elettra elettra-gui elite-proxy-finder enabler ent enum-shares enum4linux erase-registrations ettercap exiv2 exploit-db eyewitness facebot fakeap fakedns fakemail fang fern-wifi-cracker fierce fiked filibuster fimap findmyhash firmware-mod-kit fl0p flare flasm flawfinder flunym0us foremost fping fport fraud-bridge freeipmi freeradius fs-nyarl ftp-fuzz ftp-scanner ftp-spider fusil fuzzdb g72x++ galleta gdb geoip ghost-phisher ghost-py gnuradio gnutls2 goldeneye golismero goog-mail gqrx grabber gtalk-decode gtp-scan hackersh halberd halcyon hamster handle hasere hash-identifier hashcat hashcat-utils hasher hashid hashpump hashtag haystack hdcp-genkey hdmi-sniff heartbleed-honeypot hex2bin honeyd honssh host-extract hostbox-ssh hotpatch hotspotter hpfeeds hping http-enum http-fuzz http-put http-traceroute httpforge httping httprint-win32 hulk hwk hydra hyenae hyperion ike-scan imagejs inception intercepter-ng interrogate intersect inundator iodine ip-https-tools iputils ipv6toolkit isr-form jad jboss-autopwn jd-gui jhead jigsaw john johnny joomscan js-beautify jsql junkie jynx2 kalibrate-rtl kippo kismet kismet-earth kismet2earth klogger kolkata kraken laf lans latd lbd leo leroy-jenkins lfi-autopwn lfi-exploiter lfi-fuzzploit lfi-scanner lfi-sploiter lft liffy linenum linux-exploit-suggester list-urls logkeys loki lynis mac-robber macchanger maclookup magictree make-pdf malheur maligno maltego maltrieve malware-check-tool marc4dasm maskprocessor masscan mat md5deep mdbtools mdk3 mdns-scan medusa melkor memdump metasploit miranda-upnp missionplanner mitmproxy mkbrutus moloch monocle mp3nema mptcp mptcp-abuse ms-sys mtr mutator mysql2sqlite nbtool ncrack nemesis netbios-share-scanner netcon netdiscover netmap netmask netscan netsniff-ng netzob ngrep nield nikto nipper nmap nsec3walker ntds-decode o-saft oat obfsproxy objection oclhashcat ocs ollydbg onesixtyone onionsearch onionshare openvas-cli openvas-libraries openvas-manager openvas-scanner origami ostinato owasp-bywaf owtf p0f pack packet-o-matic packeth packit padbuster panoptic paros parsero pasco passe-partout passivedns patator pathod pcredz pdf-parser pdfbook-analyzer pdfid pdfresurrect peach peda peepdf perl-image-exiftool perl-tftp pev php-mt-seed php-rfi-payload-decoder php-vulnerability-hunter plecost pompem posttester powersploit prometheus protos-sip proxychains-ng proxycheck proxyp proxytunnel pscan pshitt pwd-hash pwn pwntools py2exe pyew pyinstaller pyrasite pyrit python-utidylib python2-binaryornot python2-yara radamsa radare2 radiography rarcrack rawr rcracki-mt rdesktop-brute reaver rebind recon-ng regeorg relay-scanner responder rfcat rfidiot rkhunter rlogin-scanner ropgadget ropper rrs rtlsdr-scanner rtp-flood ruby-msgpack ruby-ronin ruby-ronin-support ruby-uri-query_params rww-attack safecopy sakis3g sandy sasm sb0x sbd scalpel scanmem scapy schnappi-dhcp scout2 scrapy scrounge-ntfs seat secure-delete sees sergio-proxy sessionlist set shellme siege silk simple-ducky simple-lan-scan sinfp sipp sipvicious skipfish skype-dump sleuthkit slowloris smali smartphone-pentest-framework smbexec smtp-fuzz smtp-user-enum smtp-vrfy sn00p snmp-fuzzer snoopy-ng snort snow socat soot spade spectools spiderfoot spiderpig-pdffuzzer spike spike-proxy splint sploitego sps sqid sqlmap sqlninja ssh-privkey-crack sshuttle ssl-hostname-resolver ssl-phuck3r ssldump sslh sslscan sslstrip sslyze starttls-mitm steghide stompy storm-ring stunnel subdomainer sulley suricata svn-extractor swaks synflood synscan sysdig sysinternals-suite t50 tbear tcpcontrol-fuzzer tcpdump tcpextract tcpflow tcpreplay tcpwatch teardown tekdefense-automater termineter tftp-bruteforce tftp-fuzz tftp-proxy thc-ipv6 thc-keyfinder thc-pptp-bruter thc-smartbrute thc-ssl-dos theharvester tiger tilt tinc tinyproxy tlsenum tor tor-autocircuit tor-browser-en torshammer torsocks traceroute trid trinity trixd00r truecrypt tsh tsh-sctp twofi u3-pwn ubertooth udis86 uefi-firmware-parser ufo-wardriving umap umit unhide unicorn unicornscan unix-privesc-check unsecure upx username-anarchy usernamer uw-loveimap uw-offish uw-udpscan uw-zone v3n0m valgrind vanguard vega veil viper vivisect vnc-bypauth volatility w3af wapiti web-soul webhandler webpwn3r webshells websockify webspa websploit weevely wfuzz whatweb wi-feye wifi-honey wifi-monitor wifiphisher wig wikigen winexe winfo wireless-ids wireshark-cli wireshark-gtk wlan2eth wmat wol-e wpscan ws-attacker x-scan xcavator xf86-video-qxl-git xortool xsser xsss yara ycrawler yersinia zaproxy zmap zulu zzuf"
-RUPAK="activemodel activerecord activesupport addressable ansi apscanner apullo arp_scan  async async-dns async-http async-io async-pool atomic benchmark bigdecimal brakeman bscan buftok bundler celluloid celluloid-io cgi cms_scanner colorize concurrent-ruby concurrent-ruby-edge console csv daemons date dawnscanner dbm delegate did_you_mean dockscan domain_name domains_scanner DrupalScan em-websocket equalizer erubis espeak-ruby etc ethon eventmachine execjs fast_port_scanner fcntl ffi ffi-compiler fiber-local fiddle fileutils forwardable gdbm get_process_mem getoptlong google-cloud-web_security_scanner hacker-gems ham hashie hashie-forbidden_attributes hitimes http http-accept http-cookie http-form_data http-parser http_parser.rb httpclient http_scanner i18n io-console ipaddr ipaddress irb json logger matrix maxmind-db memoizable mime mime-types mime-types-data mini_exiftool minitest mojo_magick msfrpc-client msgpack multi_json multipart-post mustermann mutex_m naught net-http-digest_auth net-pop net-smtp net-telnet netrc network_scanner nio4r nokogiri observer oj open3 openssl opt_parse_validator ostruct otr-activerecord parseconfig password_crack pkg-config portfinder portscanner power_assert prime protocol-hpack protocol-http protocol-http1 protocol-http2 pstore psych public_suffix qr4r racc rack rack-protection rake rchardet rdoc readline readline-ext recog reline rest-client rexml rpc-mapper rqrcode_core rss ruby-progressbar ruby_wifi_scanner ruby2_keywords rubydns rubygems-update rubyzip rushover scanny ScanSSL sdbm simple_oauth sinatra singleton slack-notifier smb-client snmp snmpdumper snmpscan spider sqlite3 ssh-exec ssh_scan ssl_scan ssl_scanner stringio strscan sync term-ansicolor test-unit thin thread_safe tilt timeout timers tins tracer twitter typhoeus tzinfo uglifier unf unf_ext uri w3map webrick wordstress wpscan xmlrpc XSpear xss yajl-ruby yaml zeitwerk zlib zola"
+RUPAK="activemodel activerecord activesupport addressable ansi apscanner apullo arp_scan  async async-dns async-http async-io async-pool atomic benchmark bigdecimal brakeman bscan buftok bundler celluloid celluloid-io cgi cms_scanner colorize concurrent-ruby concurrent-ruby-edge console csv daemons date dawnscanner dbm delegate did_you_mean dockscan domain_name domains_scanner DrupalScan em-websocket equalizer erubis espeak-ruby etc ethon eventmachine execjs fast_port_scanner fcntl ffi ffi-compiler fiber-local fiddle fileutils forwardable gdbm get_process_mem getoptlong google-cloud-web_security_scanner hacker-gems ham hashie hashie-forbidden_attributes hitimes http http-accept http-cookie http-form_data http-parser http_parser.rb httpclient http_scanner i18n io-console ipaddr ipaddress irb json logger matrix maxmind-db mdless memoizable mime mime-types mime-types-data mini_exiftool minitest mojo_magick msfrpc-client msgpack multi_json multipart-post mustermann mutex_m naught net-http-digest_auth net-pop net-smtp net-telnet netrc network_scanner nio4r nokogiri observer oj open3 openssl opt_parse_validator ostruct otr-activerecord parseconfig password_crack pkg-config portfinder portscanner power_assert prime protocol-hpack protocol-http protocol-http1 protocol-http2 pstore psych public_suffix qr4r racc rack rack-protection rake rchardet rdoc readline readline-ext recog reline rest-client rexml rpc-mapper rqrcode_core rss ruby-progressbar ruby_wifi_scanner ruby2_keywords rubydns rubygems-update rubyzip rushover scanny ScanSSL sdbm simple_oauth sinatra singleton slack-notifier smb-client snmp snmpdumper snmpscan spider sqlite3 ssh-exec ssh_scan ssl_scan ssl_scanner stringio strscan sync term-ansicolor test-unit thin thread_safe tilt timeout timers tins tracer twitter typhoeus tzinfo uglifier unf unf_ext uri w3map webrick wordstress wpscan xmlrpc XSpear xss yajl-ruby yaml zeitwerk zlib zola"
 ENTSSL="https://github.com/"
 ENTRAW="https://raw.githubusercontent.com/"
 ENTLAB="https://gitlab.com/"
@@ -20,6 +20,21 @@ WBE="For a better experience, please install "
 FMSG="press ENTER to continue..."
 CURLANON=""
 ANON="Disabled"
+SECL="$ENTRAW""danielmiessler/SecLists/master/"
+DISC="Discovery/Web-Content/"
+GHWPL=("CMS/wordpress.fuzz.txt" "CMS/wp-plugins.fuzz.txt" "CMS/wp-themes.fuzz.txt" "URLs/urls-wordpress-3.3.1.txt")
+APACH=("Apache.fuzz.txt" "ApacheTomcat.fuzz.txt" "apache.txt" "tomcat.txt")
+DIRLIST="directory-list-1.0.txt directory-list-2.3-big.txt directory-list-2.3-medium.txt directory-list-2.3-small.txt"
+
+function Controlla
+{
+	if [[ "$ANON" == "Enabled" ]];
+	then
+		curl -s -k -L -I $CURLANON "$1"
+	else
+		wget --no-check-certificate --spider "$1"
+	fi
+}
 
 function ScaricaIn
 {
@@ -189,12 +204,18 @@ function Clona
 		git clone "$ENTSSL""$1"".git"
 	;;
 	"4")
+		if [[ -f $(which mdless) ]];
+		then
+			LESS="mdless"
+		else
+			LESS="less"
+		fi
 		if [[ $(wget -q -S --spider "$ENTRAW""$1""/master/README.md" 2>&1) == *"200 OK"* ]];
 		then
-			curl -s -k -L "$ENTRAW""$1""/master/README.md" | less
+			curl -s -k -L "$ENTRAW""$1""/master/README.md" | $LESS
 		elif [[ $(wget -q -S --spider "$ENTRAW""$1""/main/README.md" 2>&1) == *"200 OK"* ]];
 		then
-			curl -s -k -L "$ENTRAW""$1""/main/README.md" | less
+			curl -s -k -L "$ENTRAW""$1""/main/README.md" | $LESS
 		else
 			echo "There is not any README.md file"
 		fi
@@ -202,6 +223,16 @@ function Clona
 	*)
 	;;
 	esac
+}
+
+function ScaricaWL
+{
+	if [[ "$ANON" == "Enabled" ]];
+	then
+		curl -s -k -L $CURLANON "$1"
+	else
+		wget --no-check-certificate "$1" -O -
+	fi
 }
 
 function Scarica
@@ -261,7 +292,7 @@ function Stampa
 	fi
 }
 
-for TOOL in "lynx" "tput" "git" "strace" "ltrace" "hydra" "nmblookup" "rlogin" "docker" "john" "gzip"
+for TOOL in "lynx" "tput" "git" "strace" "ltrace" "hydra" "nmblookup" "rlogin" "docker" "john" "gzip" "mdless"
 do
 	if [[ ! -f $(which $TOOL) ]];
 	then
@@ -2023,7 +2054,8 @@ while true; do
 		Stampa " 2577. use nmap to scan ports with malware" "2578. use nmap to scan ports with safe" "2579. use nmap to scan ports with version"
 		Stampa " 2583. read symbols and other info from binary" "2617. create a zipbomb manually" "2618. use metasploit"
 		Stampa " 2625. Try a manual SQLinjection" "2633. Discover OS from ICMP ttl" "2634. crack pdf password with John the Ripper"
-		Stampa " 2642. Extract a gz compressed file" "2643. run chisel in server mode"
+		Stampa " 2642. Extract a gz compressed file" "2643. run chisel in server mode" "2644. scan for WORDPRESS dirs"
+		Stampa " 2645. scan for APACHE and TOMCAT dirs"
 		echo "$SEP"
 	fi
 	echo "$CGT"" GT. VIRTUAL COINS - CURRENCIES"
@@ -12350,9 +12382,9 @@ while true; do
 				sudo chisel server --socks5 --reverse --port $MPRT
 			fi
 		else
-			echo "Digit the chisel release versio"
+			echo "Digit the chisel release version"
 			read -e -p "(example, chisel_1.7.7_linux_amd64): " CHSL
-			if [[ -f $CHSL && "$CHSL" != "" ]]
+			if [[ -f $CHSL && "$CHSL" != "" ]];
 			then
 				echo "Digit a port to listening the chisel client"
 				read -p "(example, 8080): " MPRT
@@ -12362,6 +12394,48 @@ while true; do
 					sudo ./$CHSL server --socks5 --reverse --port $MPRT
 				fi
 			fi
+		fi
+	;;
+	"2644")
+		echo "WORDPRESS scan, Digit a taget URL"
+		read -p "(example, https://www.target.com): " TURL
+		if [[ "$TURL" != "" ]];
+		then
+			for ELEM in "${GHWPL[@]}"
+			do
+				WDIRS=($(ScaricaWL "$SECL""$DISC""$ELEM"))
+				for WDIR in "${WDIRS[@]}"
+				do
+					if [[ "$WDIR" != "/"* ]];
+					then
+						NWDIR="/""$WDIR"
+					else
+						NWDIR="$WDIR"
+					fi
+					Controlla "$TURL""$NWDIR"
+				done
+			done
+		fi
+	;;
+	"2645")
+		echo "APACHE and TOMCAT scan, Digit a taget URL"
+		read -p "(example, https://www.target.com): " TURL
+		if [[ "$TURL" != "" ]];
+		then
+			for ELEM in "${APACH[@]}"
+			do
+				WDIRS=($(ScaricaWL "$SECL""$DISC""$ELEM"))
+				for WDIR in "${WDIRS[@]}"
+				do
+					if [[ "$WDIR" != "/"* ]];
+					then
+						NWDIR="/""$WDIR"
+					else
+						NWDIR="$WDIR"
+					fi
+					Controlla "$TURL""$NWDIR"
+				done
+			done
 		fi
 	;;
 	"AA")
