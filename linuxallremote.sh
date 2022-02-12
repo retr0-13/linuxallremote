@@ -19,6 +19,7 @@ RLDW="$RLS""/download"
 WBE="For a better experience, please install "
 FMSG="press ENTER to continue..."
 CURLANON=""
+DEFANON=""
 ANON="Disabled"
 SECL="$ENTRAW""danielmiessler/SecLists/master/"
 DISC="Discovery/Web-Content/"
@@ -11688,6 +11689,7 @@ while true; do
 				sv start tor
 			fi
 			CURLANON="--socks5 127.0.0.1:9050"
+			DEFANON="127.0.0.1:9050"
 		else
 			echo "Disabling Anonymization"
 			ANON="Disabled"
@@ -11699,6 +11701,7 @@ while true; do
 				sv stop tor
 			fi
 			CURLANON=""
+			DEFANON=""
 		fi
 	;;
 	"2565")
@@ -12401,19 +12404,60 @@ while true; do
 		read -p "(example, https://www.target.com): " TURL
 		if [[ "$TURL" != "" ]];
 		then
-			for ELEM in "${GHWPL[@]}"
+			if [[ -f $(which gobuster) ]];
+			then
+				GOB="gobuster"
+			fi
+			if [[ -f $(which wfuzz) ]];
+			then
+				WFZ="wfuzz"
+			fi
+			echo "Do You want use a specific tool or use wget/curl? Make your choice"
+			echo "(default is wget/curl): "
+			select RSP in "$GOB" "$WFZ" "wget/curl"
 			do
-				WDIRS=($(ScaricaWL "$SECL""$DISC""$ELEM"))
-				for WDIR in "${WDIRS[@]}"
-				do
-					if [[ "$WDIR" != "/"* ]];
-					then
-						NWDIR="/""$WDIR"
-					else
-						NWDIR="$WDIR"
-					fi
-					Controlla "$TURL""$NWDIR"
-				done
+				if [[ "$RSP" == "gobuster" ]];
+				then
+					for ELEM in "${GHWPL[@]}"
+					do
+						QUI=$(echo "$ELEM"|awk -F '/' '{print $NF}')
+						Scarica "$SECL""$DISC""$ELEM" "$QUI"
+						if [[ "$ANON" == "Enabled" ]];
+						then
+							gobuster dir -k -p "socks5://""$DEFANON" -w "./""$QUI" -u "$TURL"
+						else
+							gobuster dir -k -w "./""$QUI" -u "$TURL"
+						fi
+					done
+				elif [[ "$RSP" == "wfuzz" ]];
+				then
+					for ELEM in "${GHWPL[@]}"
+					do
+						QUI=$(echo "$ELEM"|awk -F '/' '{print $NF}')
+						Scarica "$SECL""$DISC""$ELEM" "$QUI"
+						if [[ "$ANON" == "Enabled" ]];
+						then
+							wfuzz -p "$DEFANON"":socks5" -w "./""$QUI" -u "$TURL""/FUZZ"
+						else
+							wfuzz -w "./""$QUI" -u "$TURL""/FUZZ"
+						fi
+					done
+				else
+					for ELEM in "${GHWPL[@]}"
+					do
+						WDIRS=($(ScaricaWL "$SECL""$DISC""$ELEM"))
+						for WDIR in "${WDIRS[@]}"
+						do
+							if [[ "$WDIR" != "/"* ]];
+							then
+								NWDIR="/""$WDIR"
+							else
+								NWDIR="$WDIR"
+							fi
+							Controlla "$TURL""$NWDIR"
+						done
+					done
+				fi
 			done
 		fi
 	;;
@@ -12422,19 +12466,60 @@ while true; do
 		read -p "(example, https://www.target.com): " TURL
 		if [[ "$TURL" != "" ]];
 		then
-			for ELEM in "${APACH[@]}"
+			if [[ -f $(which gobuster) ]];
+			then
+				GOB="gobuster"
+			fi
+			if [[ -f $(which wfuzz) ]];
+			then
+				WFZ="wfuzz"
+			fi
+			echo "Do You want use a specific tool or use wget/curl? Make your choice"
+			echo "(default is wget/curl): "
+			select RSP in "$GOB" "$WFZ" "wget/curl"
 			do
-				WDIRS=($(ScaricaWL "$SECL""$DISC""$ELEM"))
-				for WDIR in "${WDIRS[@]}"
-				do
-					if [[ "$WDIR" != "/"* ]];
-					then
-						NWDIR="/""$WDIR"
-					else
-						NWDIR="$WDIR"
-					fi
-					Controlla "$TURL""$NWDIR"
-				done
+				if [[ "$RSP" == "gobuster" ]];
+				then
+					for ELEM in "${APACH[@]}"
+					do
+						QUI=$(echo "$ELEM"|awk -F '/' '{print $NF}')
+						Scarica "$SECL""$DISC""$ELEM" "$QUI"
+						if [[ "$ANON" == "Enabled" ]];
+						then
+							gobuster dir -k -p "socks5://""$DEFANON" -w "./""$QUI" -u "$TURL"
+						else
+							gobuster dir -k -w "./""$QUI" -u "$TURL"
+						fi
+					done
+				elif [[ "$RSP" == "wfuzz" ]];
+				then
+					for ELEM in "${APACH[@]}"
+					do
+						QUI=$(echo "$ELEM"|awk -F '/' '{print $NF}')
+						Scarica "$SECL""$DISC""$ELEM" "$QUI"
+						if [[ "$ANON" == "Enabled" ]];
+						then
+							wfuzz -p "$DEFANON"":socks5" -w "./""$QUI" -u "$TURL""/FUZZ"
+						else
+							wfuzz -w "./""$QUI" -u "$TURL""/FUZZ"
+						fi
+					done
+				else
+					for ELEM in "${APACH[@]}"
+					do
+						WDIRS=($(ScaricaWL "$SECL""$DISC""$ELEM"))
+						for WDIR in "${WDIRS[@]}"
+						do
+							if [[ "$WDIR" != "/"* ]];
+							then
+								NWDIR="/""$WDIR"
+							else
+								NWDIR="$WDIR"
+							fi
+							Controlla "$TURL""$NWDIR"
+						done
+					done
+				fi
 			done
 		fi
 	;;

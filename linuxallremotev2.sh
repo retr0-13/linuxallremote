@@ -28,12 +28,14 @@ TPSSW=""
 WORDLIST=""
 TDOM=""
 CURLANON=""
+DEFANON=""
 ANON="Disabled"
 SECL="$ENTRAW""danielmiessler/SecLists/master/"
 DISC="Discovery/Web-Content/"
 GHWPL=("CMS/wordpress.fuzz.txt" "CMS/wp-plugins.fuzz.txt" "CMS/wp-themes.fuzz.txt" "URLs/urls-wordpress-3.3.1.txt")
 APACH=("Apache.fuzz.txt" "ApacheTomcat.fuzz.txt" "apache.txt" "tomcat.txt")
 DIRLIST="directory-list-1.0.txt directory-list-2.3-big.txt directory-list-2.3-medium.txt directory-list-2.3-small.txt"
+
 
 function ScaricaIn
 {
@@ -11741,6 +11743,7 @@ while true; do
 				sv start tor
 			fi
 			CURLANON="--socks5 127.0.0.1:9050"
+			DEFANON="127.0.0.1:9050"
 		else
 			echo "Disabling Anonymization"
 			ANON="Disabled"
@@ -11752,6 +11755,7 @@ while true; do
 				sv stop tor
 			fi
 			CURLANON=""
+			DEFANON=""
 		fi
 	;;
 	"2571")
@@ -12439,19 +12443,61 @@ while true; do
 			echo "WORDPRESS scan, Digit a taget URL"
 			read -p "(example, https://www.target.com): " TURL
 		fi
-		for ELEM in "${GHWPL[@]}"
+		if [[ -f $(which gobuster) ]];
+		then
+			GOB="gobuster"
+		fi
+		if [[ -f $(which wfuzz) ]];
+		then
+			WFZ="wfuzz"
+		fi
+		echo "Do You want use a specific tool or use wget/curl? Make your choice"
+		echo "(default is wget/curl): "
+		select RSP in "$GOB" "$WFZ" "wget/curl"
 		do
-			WDIRS=($(ScaricaWL "$SECL""$DISC""$ELEM"))
-			for WDIR in "${WDIRS[@]}"
+			if [[ "$RSP" == "gobuster" ]];
+			then
+			for ELEM in "${GHWPL[@]}"
 			do
-				if [[ "$WDIR" != "/"* ]];
+				QUI=$(echo "$ELEM"|awk -F '/' '{print $NF}')
+				Scarica "$SECL""$DISC""$ELEM" "$QUI"
+				if [[ "$ANON" == "Enabled" ]];
 				then
-					NWDIR="/""$WDIR"
+					gobuster dir -k -p "socks5://""$DEFANON" -w "./""$QUI" -u "$TURL"
 				else
-					NWDIR="$WDIR"
+					gobuster dir -k -w "./""$QUI" -u "$TURL"
 				fi
-				Controlla "$TURL""$NWDIR"
-			done
+				done
+			elif [[ "$RSP" == "wfuzz" ]];
+			then
+				for ELEM in "${GHWPL[@]}"
+				do
+					QUI=$(echo "$ELEM"|awk -F '/' '{print $NF}')
+					Scarica "$SECL""$DISC""$ELEM" "$QUI"
+					if [[ "$ANON" == "Enabled" ]];
+					then
+						wfuzz -p "$DEFANON"":socks5" -w "./""$QUI" -u "$TURL""/FUZZ"
+					else
+						wfuzz -w "./""$QUI" -u "$TURL""/FUZZ"
+					fi
+				done
+			else
+				for ELEM in "${GHWPL[@]}"
+				do
+					WDIRS=($(ScaricaWL "$SECL""$DISC""$ELEM"))
+					for WDIR in "${WDIRS[@]}"
+					do
+						if [[ "$WDIR" != "/"* ]];
+						then
+							NWDIR="/""$WDIR"
+						else
+							NWDIR="$WDIR"
+						fi
+						Controlla "$TURL""$NWDIR"
+					done
+				done
+			fi
+			break
 		done
 	;;
 	"2654")
@@ -12460,19 +12506,61 @@ while true; do
 			echo "APACHE and TOMCAT scan, Digit a taget URL"
 			read -p "(example, https://www.target.com): " TURL
 		fi
-		for ELEM in "${APACH[@]}"
+		if [[ -f $(which gobuster) ]];
+		then
+			GOB="gobuster"
+		fi
+		if [[ -f $(which wfuzz) ]];
+		then
+			WFZ="wfuzz"
+		fi
+		echo "Do You want use a specific tool or use wget/curl? Make your choice"
+		echo "(default is wget/curl): "
+		select RSP in "$GOB" "$WFZ" "wget/curl"
 		do
-			WDIRS=($(ScaricaWL "$SECL""$DISC""$ELEM"))
-			for WDIR in "${WDIRS[@]}"
-			do
-				if [[ "$WDIR" != "/"* ]];
-				then
-					NWDIR="/""$WDIR"
-				else
-					NWDIR="$WDIR"
-				fi
-				Controlla "$TURL""$NWDIR"
-			done
+			if [[ "$RSP" == "gobuster" ]];
+			then
+				for ELEM in "${APACH[@]}"
+				do
+					QUI=$(echo "$ELEM"|awk -F '/' '{print $NF}')
+					Scarica "$SECL""$DISC""$ELEM" "$QUI"
+					if [[ "$ANON" == "Enabled" ]];
+					then
+						gobuster dir -k -p "socks5://""$DEFANON" -w "./""$QUI" -u "$TURL"
+					else
+						gobuster dir -k -w "./""$QUI" -u "$TURL"
+					fi
+				done
+			elif [[ "$RSP" == "wfuzz" ]];
+			then
+				for ELEM in "${APACH[@]}"
+				do
+					QUI=$(echo "$ELEM"|awk -F '/' '{print $NF}')
+					Scarica "$SECL""$DISC""$ELEM" "$QUI"
+					if [[ "$ANON" == "Enabled" ]];
+					then
+						wfuzz -p "$DEFANON"":socks5" -w "./""$QUI" -u "$TURL""/FUZZ"
+					else
+						wfuzz -w "./""$QUI" -u "$TURL""/FUZZ"
+					fi
+				done
+			else
+				for ELEM in "${APACH[@]}"
+				do
+					WDIRS=($(ScaricaWL "$SECL""$DISC""$ELEM"))
+					for WDIR in "${WDIRS[@]}"
+					do
+						if [[ "$WDIR" != "/"* ]];
+						then
+							NWDIR="/""$WDIR"
+						else
+							NWDIR="$WDIR"
+						fi
+						Controlla "$TURL""$NWDIR"
+					done
+				done
+			fi
+			break
 		done
 	;;
 	"AA")
