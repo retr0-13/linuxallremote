@@ -14204,6 +14204,22 @@ while true; do
 			CHQ="[+]"
 		fi
 	;;
+	"HR")
+		if [[ "$CHR" == "[+]" ]];
+		then
+			CHR="[-]"
+		else
+			CHR="[+]"
+		fi
+	;;
+	"HS")
+		if [[ "$CHS" == "[+]" ]];
+		then
+			CHS="[-]"
+		else
+			CHS="[+]"
+		fi
+	;;
 	"ZZ")
 		if [[ "$CZZ" == "[+]" ]];
 		then
