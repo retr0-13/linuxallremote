@@ -536,6 +536,8 @@ CHN="[+]"
 CHO="[+]"
 CHP="[+]"
 CHQ="[+]"
+CHR="[+]"
+CHS="[+]"
 CZZ="[+]"
 
 while true; do
@@ -665,7 +667,7 @@ while true; do
 		Stampa " 861. giuliocomi/backoori" "1027. gitdurandal/dbd" "1083. Shellntel/backdoors"
 		Stampa " 1056. Mr-Un1k0d3r/DKMC" "1073. TheWover/donut" "1084. emptymonkey/drinkme"
 		Stampa " 2313. cribdragg3r/Alaris" "1206. byt3bl33d3r/gcat" "1229. razc411/GoBD"
-		Stampa " 2551. ORCA666/EarlyBird" "2614. phath0m/JadedWraith" "1504. Screetsec/Microsploit"
+		Stampa " 2551. ORCA666/EarlyBird" "2614. phath0m/JadedWraith" "1504. screetsec/Microsploit"
 		echo "$SEP"
 	fi
 	echo "$CAN"" AN. BLUETOOTH"
@@ -882,7 +884,7 @@ while true; do
 		Stampa " 1446. GerbenJavado/LinkFinder"
 		echo "$SEP"
 	fi
-	echo "$CBN"" BN. DNS - DOMAIN"
+	echo "$CBN"" BN. DNS - DOMAIN - VIRTUAL HOST"
 	if [[ "$CBN" == "[-]" ]];
 	then
 		Stampa " 30. m57/dnsteal" "31. skelsec/jackdaw" "35. projectdiscovery/dnsprobe"
@@ -901,7 +903,7 @@ while true; do
 		Stampa " 1165. stealth/fernmelder" "1173. Edu4rdSHL/findomain" "1190. kirei/fpdns"
 		Stampa " 1235. zombiesam/googlesub" "1269. hakluke/hakrevdns" "1374. utkusen/jeopardize"
 		Stampa " 1407. guelfoweb/knock" "1487. blechschmidt/massdns" "1492. chadillac/mdns_recon"
-		Stampa " 1525. waytoalpit/ManOnTheSideAttack-DNS-Spoofing"
+		Stampa " 1525. waytoalpit/ManOnTheSideAttack-DNS-Spoofing" "1549. PentesterES/Necromant"
 		echo "$SEP"
 	fi
 	echo "$CBO"" BO. DOCKER"
@@ -1026,7 +1028,7 @@ while true; do
 		Stampa " 414. hhhrrrttt222111/Dorkify" "415. Chr0m0s0m3s/DeadTrap" "420. techgaun/github-dorks"
 		Stampa " 531. CERT-Polska/hfinger" "581. EnableSecurity/wafw00f" "779. ethicalhackingplayground/dorkX"
 		Stampa " 781. E4rr0r4/XGDork" "854. aliasrobotics/aztarna" "884. Hood3dRob1n/BinGoo"
-		Stampa " 1539. falcon-lnhg/mwebfp"
+		Stampa " 1539. falcon-lnhg/mwebfp" "1552. PherricOxide/Neighbor-Cache-Fingerprinter"
 		echo "$SEP"
 	fi
 	echo "$CCC"" CC. FREQUENCY"
@@ -1249,7 +1251,7 @@ while true; do
 		Stampa " 360. tokyoneon/Arcane" "442. Flo354/iOSForensic" "443. as0ler/iphone-dataprotection"
 		Stampa " 444. jantrim/iosbackupexaminer" "666. yuejd/ios_Restriction_PassCode_Crack---Python-version"
 		Stampa " 864. ChiChou/bagbak" "2286. seemoo-lab/toothpicker" "2308. RealityNet/ios_triage"
-		Stampa " 2309. abrignoni/iLEAPP" "1194. AloneMonkey/frida-ios-dump"
+		Stampa " 2309. abrignoni/iLEAPP" "1194. AloneMonkey/frida-ios-dump" "1550. mwrlabs/needle"
 		echo "$SEP"
 	fi
 	echo "$CDB"" DB. IoT"
@@ -1464,7 +1466,7 @@ while true; do
 		Stampa " 1386. rixed/junkie" "1416. DanMcInerney/LANs.py" "1479. sensepost/mana"
 		Stampa " 1510. blackeko/mitm" "1511. jrmdev/mitm_relay" "1512. dirkjanm/mitm6"
 		Stampa " 1513. xdavidhu/mitmAP" "1514. husam212/MITMer" "1515. byt3bl33d3r/MITMf"
-		Stampa " 1517. arkime/arkime"
+		Stampa " 1517. arkime/arkime" "1555. DanMcInerney/net-creds" "1558. NytroRST/NetRipper"
 		echo "$SEP"
 	fi
 	echo "$CDZ"" DZ. MOBILE"
@@ -1498,10 +1500,22 @@ while true; do
 		Stampa " 301. ufuksungu/MySqlBruteForce/mysql"
 		echo "$SEP"
 	fi
+	echo "$CHR"" HR. N1QL"
+	if [[ "$CHR" == "[-]" ]];
+	then
+		Stampa " 1545. FSecureLABS/N1QLMap"
+		echo "$SEP"
+	fi
 	echo "$CEE"" EE. NAS"
 	if [[ "$CEE" == "[-]" ]];
 	then
-		Stampa " 402. TrustMe00/experience_synology_attack"
+		Stampa " 402. TrustMe00/experience_synology_attack" "1547. tcstool/nasnum"
+		echo "$SEP"
+	fi
+	echo "$CHS"" HS. NETBIOS"
+	if [[ "$CHS" == "[-]" ]];
+	then
+		Stampa " 1548. resurrecting-open-source-projects/nbtscan"
 		echo "$SEP"
 	fi
 	echo "$CEF"" EF. NETLOGON"
@@ -1510,10 +1524,11 @@ while true; do
 		Stampa " 508. risksense/zerologon" "509. bb00/zer0dump" "510. VoidSec/CVE-2020-1472"
 		echo "$SEP"
 	fi
-	echo "$CEG"" EG. NETWORK - TCP - UDP"
+	echo "$CEG"" EG. NETWORK - TCP - UDP - 802.x"
 	if [[ "$CEG" == "[-]" ]];
 	then
 		Stampa " 2504. tomac/yersinia" "1527. CiscoCXSecurity/mptcp-abuse" "1543. mehrdadrad/mylg"
+		Stampa " 1546. carmaa/nacker" "1553. troglobit/nemesis" "1559. walchko/netscan2"
 		echo "$SEP"
 	fi
 	echo "$CEH"" EH. NGINX"
@@ -1809,7 +1824,7 @@ while true; do
 		Stampa " 2541. avilum/portsscan" "2562. Abhay2342/Network-Scanner" "2563. xadhrit/d9scan"
 		Stampa " 2599. idealeer/xmap" "2605. RedSection/jspanda" "1427. onthefrontline/LetMeFuckIt-Scanner"
 		Stampa " 2615. michelin/ChopChop" "1485. robertdavidgraham/masscan" "1486. trevordavenport/MasscanAutomation"
-		Stampa " 2638. MrLion7/Lmap"
+		Stampa " 2638. MrLion7/Lmap" "1556. chrizator/netattack2"
 		echo "$SEP"
 	fi
 	echo "$CFU"" FU. SHELL"
@@ -2056,7 +2071,7 @@ while true; do
 		Stampa " 2583. read symbols and other info from binary" "2617. create a zipbomb manually" "2618. use metasploit"
 		Stampa " 2625. Try a manual SQLinjection" "2633. Discover OS from ICMP ttl" "2634. crack pdf password with John the Ripper"
 		Stampa " 2642. Extract a gz compressed file" "2643. run chisel in server mode" "2644. scan for WORDPRESS dirs"
-		Stampa " 2645. scan for APACHE and TOMCAT dirs"
+		Stampa " 2645. scan for APACHE and TOMCAT dirs" "2646. scan DIRECTORIES" "2647. bettercap arp poisoning MITM"
 		echo "$SEP"
 	fi
 	echo "$CGT"" GT. VIRTUAL COINS - CURRENCIES"
@@ -2229,7 +2244,7 @@ while true; do
 		Stampa " 1297. sharkdp/hexyl" "1324. vanhauser-thc/thc-hydra" "1378. incogbyte/jsearch"
 		Stampa " 1382. nahamsec/JSParser" "1387. telerik/JustDecompileEngine" "1406. klee/klee"
 		Stampa " 1415. rflynn/lanmap2" "1422. mmicu/leena" "2622. 9emin1/charlotte"
-		Stampa " 1481. trailofbits/manticore" "1516. fox-it/mkYARA"
+		Stampa " 1481. trailofbits/manticore" "1516. fox-it/mkYARA" "1554. L-codes/Neo-reGeorg"
 		echo "$SEP"
 	fi
 	echo "$CHN"" HN. PLUGIN"
@@ -8009,7 +8024,7 @@ while true; do
 		Clona "jschicht/MftRef2Name"
 	;;
 	"1504")
-		Clona "Screetsec/Microsploit"
+		Clona "screetsec/Microsploit"
 	;;
 	"1505")
 		Clona "kost/mikrotik-npk"
@@ -12521,6 +12536,80 @@ while true; do
 					done
 				fi
 			done
+		fi
+	;;
+	"2646")
+		echo "DIRECTORIES scan, Digit a taget URL"
+		read -p "(example, https://www.target.com): " TURL
+		if [[ "$TURL" != "" ]];
+		then
+			if [[ -f $(which gobuster) ]];
+			then
+				GOB="gobuster"
+			fi
+			if [[ -f $(which wfuzz) ]];
+			then
+				WFZ="wfuzz"
+			fi
+			echo "Do You want use a specific tool or use wget/curl? Make your choice"
+			echo "(default is wget/curl): "
+			select RSP in "$GOB" "$WFZ" "wget/curl"
+			do
+				if [[ "$RSP" == "gobuster" ]];
+				then
+					echo "Choose a directory list"
+					select ELEM in $DIRLIST
+					do
+						QUI=$(echo "$ELEM"|awk -F '/' '{print $NF}')
+						Scarica "$SECL""$DISC""$ELEM" "$QUI"
+						if [[ "$ANON" == "Enabled" ]];
+						then
+							gobuster dir -k -p "socks5://""$DEFANON" -w "./""$QUI" -u "$TURL"
+						else
+							gobuster dir -k -w "./""$QUI" -u "$TURL"
+						fi
+						break
+					done
+				elif [[ "$RSP" == "wfuzz" ]];
+				then
+					select ELEM in $DIRLIST
+					do
+						QUI=$(echo "$ELEM"|awk -F '/' '{print $NF}')
+						Scarica "$SECL""$DISC""$ELEM" "$QUI"
+						if [[ "$ANON" == "Enabled" ]];
+						then
+							wfuzz -p "$DEFANON"":socks5" -w "./""$QUI" -u "$TURL""/FUZZ"
+						else
+							wfuzz -w "./""$QUI" -u "$TURL""/FUZZ"
+						fi
+						break
+					done
+				else
+					select ELEM in $DIRLIST
+					do
+						WDIRS=($(ScaricaWL "$SECL""$DISC""$ELEM"))
+						for WDIR in "${WDIRS[@]}"
+						do
+							if [[ "$WDIR" != "/"* ]];
+							then
+								NWDIR="/""$WDIR"
+							else
+								NWDIR="$WDIR"
+							fi
+							Controlla "$TURL""$NWDIR"
+						done
+						break
+					done
+				fi
+			done
+		fi
+	;;
+	"2647")
+		echo "Digit a target IP to spoof"
+		read -p "(example, 192.168.1.10): " TIP
+		if [[ "$TIP" != "" ]];
+		then
+			bettercap -eval "set arp.spoof.target $TIP; arp.spoof on; net.probe on; net.sniff on"
 		fi
 	;;
 	"AA")
