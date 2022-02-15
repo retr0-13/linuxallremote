@@ -293,7 +293,7 @@ function Stampa
 	fi
 }
 
-for TOOL in "lynx" "tput" "git" "strace" "ltrace" "hydra" "nmblookup" "rlogin" "docker" "john" "gzip" "mdless"
+for TOOL in "lynx" "tput" "git" "strace" "ltrace" "hydra" "nmblookup" "rlogin" "docker" "john" "gzip" "mdless" "bettercap"
 do
 	if [[ ! -f $(which $TOOL) ]];
 	then
@@ -2063,7 +2063,7 @@ while true; do
 		Stampa " 2547. list all pulled docker images" "2616. download zipbomb form unforgettable.dk"
 		Stampa " 2548. run a docker image" "2549. docker process list" "2552. use nmap to scan ports for vulnerabilities"
 		Stampa " 2556. Execute remote command with rpcclient" "2557. disassemble binary with objdump" "2558. display all binary's headers with objdump"
-		Stampa " 2564. Anonymization" "2566. Steal Cookie from Panel/Manager/CMS with XSS" "2567. use nmap to scan ports with authentication"
+		Stampa " 2566. Steal Cookie from Panel/Manager/CMS with XSS" "2567. use nmap to scan ports with authentication"
 		Stampa " 2568. use nmap to scan ports with broadcast" "2569. use nmap to scan ports with brute" "2570. use nmap to scan ports with default"
 		Stampa " 2571. use nmap to scan ports with discovery" "2572. use nmap to scan ports with dos" "2573. use nmap to scan ports with exploit"
 		Stampa " 2574. use nmap to scan ports with external" "2575. use nmap to scan ports with fuzzer" "2576. use nmap to scan ports with intrusive"
@@ -2072,6 +2072,10 @@ while true; do
 		Stampa " 2625. Try a manual SQLinjection" "2633. Discover OS from ICMP ttl" "2634. crack pdf password with John the Ripper"
 		Stampa " 2642. Extract a gz compressed file" "2643. run chisel in server mode" "2644. scan for WORDPRESS dirs"
 		Stampa " 2645. scan for APACHE and TOMCAT dirs" "2646. scan DIRECTORIES" "2647. bettercap arp poisoning MITM"
+		Stampa " 2648. XOR bitwise a string value" "2649. XOR bitwise an array of chars converted in INT values"
+		Stampa " 2650. AND bitwise an array of chars converted in INT values"
+		Stampa " 2651. OR bitwise an array of chars converted in INT values"
+		Stampa " 2652. AND bitwise string value" "2653. OR bitwise string value"
 		echo "$SEP"
 	fi
 	echo "$CGT"" GT. VIRTUAL COINS - CURRENCIES"
@@ -2254,7 +2258,9 @@ while true; do
 		echo "$SEP"
 	fi
 	echo "$SEP"
-	echo -ne " 0. exit\tAnonymization: $ANON\n"
+	echo "Anonymization: $ANON"
+	echo "$SEP"
+	Stampa " 0. exit" "2564. Anonymization"
 	echo "$SEP"
 
 	read -p "Choose a script: " SCELTA
@@ -12605,11 +12611,92 @@ while true; do
 		fi
 	;;
 	"2647")
-		echo "Digit a target IP to spoof"
-		read -p "(example, 192.168.1.10): " TIP
-		if [[ "$TIP" != "" ]];
+		if [[ -f $(which bettercap) ]];
 		then
-			bettercap -eval "set arp.spoof.target $TIP; arp.spoof on; net.probe on; net.sniff on"
+			echo "Digit a target IP to spoof"
+			read -p "(example, 192.168.1.10): " TIP
+			if [[ "$TIP" != "" ]];
+			then
+				bettercap -eval "set arp.spoof.target $TIP; arp.spoof on; net.probe on; net.sniff on"
+			fi
+		fi
+	;;
+	"2648")
+		echo "Digit or paste a string to xor"
+		read -p "(example, gm\`fzih!ftx] |): " TXT
+		if [[ "$TXT" != "" ]];
+		then
+			echo "Digit a value of xoring"
+			read -p "(example, 0x29a): " XOR
+			if [[ "$XOR" != "" ]];
+			then
+				echo  -e "from pwn import *\n\ntxt=list(\"""$TXT""\")\nprint(txt)\no=0\narray=[]\nfor a in txt:\n\tarray.append(ord(a))\n\to=o+1\nxored = \"\"\nfor i in array:\n\txored += (chr(i ^ ""$XOR""))\n\nprint(xored)"|python
+			fi
+		fi
+	;;
+	"2649")
+		echo "Digit or paste a sequence of values to xor"
+		read -p "(example, 0x2c5,0x2ee,0x2aa): " TXT
+		if [[ "$TXT" != "" ]];
+		then
+			echo "Digit a value of xoring"
+			read -p "(example, 0x29a): " XOR
+			if [[ "$XOR" != "" ]];
+			then
+				echo  -e "from pwn import *\n\narray=[""$TXT""]\nxored = \"\"\nfor i in array:\n\txored += (chr(i ^ ""$XOR""))\n\nprint(xored)"|python
+			fi
+		fi
+	;;
+	"2650")
+		echo "Digit or paste a sequence of values to AND"
+		read -p "(example, 0x2c5,0x2ee,0x2aa): " TXT
+		if [[ "$TXT" != "" ]];
+		then
+			echo "Digit a value of AND bitwise"
+			read -p "(example, 0x29a): " SAND
+			if [[ "$SAND" != "" ]];
+			then
+				echo  -e "from pwn import *\n\narray=[""$TXT""]\nxored = \"\"\nfor i in array:\n\txored += (chr(i & ""$SAND""))\n\nprint(xored)"|python
+			fi
+		fi
+	;;
+	"2651")
+		echo "Digit or paste a sequence of values to OR"
+		read -p "(example, 0x2c5,0x2ee,0x2aa): " TXT
+		if [[ "$TXT" != "" ]];
+		then
+			echo "Digit a value of OR bitwise"
+			read -p "(example, 0x29a): " SOR
+			if [[ "$SOR" != "" ]];
+			then
+				echo  -e "from pwn import *\n\narray=[""$TXT""]\nxored = \"\"\nfor i in array:\n\txored += (chr(i | ""$SOR""))\n\nprint(xored)"|python
+			fi
+		fi
+	;;
+	"2652")
+		echo "Digit or paste a string to AND"
+		read -p "(example, gm\`fzih!ftx] |): " TXT
+		if [[ "$TXT" != "" ]];
+		then
+			echo "Digit a value of XOR bitwise"
+			read -p "(example, 0x29a): " SAND
+			if [[ "$SAND" != "" ]];
+			then
+				echo  -e "from pwn import *\n\ntxt=list(\"""$TXT""\")\nprint(txt)\no=0\narray=[]\nfor a in txt:\n\tarray.append(ord(a))\n\to=o+1\nxored = \"\"\nfor i in array:\n\txored += (chr(i & ""$SAND""))\n\nprint(xored)"|python
+			fi
+		fi
+	;;
+	"2653")
+		echo "Digit or paste a string to OR"
+		read -p "(example, gm\`fzih!ftx] |): " TXT
+		if [[ "$TXT" != "" ]];
+		then
+			echo "Digit a value of OR bitwise"
+			read -p "(example, 0x29a): " SOR
+			if [[ "$SOR" != "" ]];
+			then
+				echo  -e "from pwn import *\n\ntxt=list(\"""$TXT""\")\nprint(txt)\no=0\narray=[]\nfor a in txt:\n\tarray.append(ord(a))\n\to=o+1\nxored = \"\"\nfor i in array:\n\txored += (chr(i | ""$SOR""))\n\nprint(xored)"|python
+			fi
 		fi
 	;;
 	"AA")
