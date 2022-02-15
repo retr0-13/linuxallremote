@@ -14,28 +14,30 @@ You can choose between two versions:
 Over 1500 tools and utilities:
 - download or clone other frameworks;
 - remote hack tools and exploits;
-- attack many protocols, rpc, smb, ssh, ftp and more;
-- dumping credentials and packets;
-- evasion and tunneling;
+- attack many protocols, <strong>RPC</strong>, <strong>SMB</strong>, <strong>SSH</strong>, <strong>FTP</strong> and more;
+- <strong>Dumping</strong> credentials and packets;
+- <strong>Evasion</strong> and <strong>Tunneling</strong>;
 - port forwarding;
-- Reverse Engineering;
-- Generic and Specific Social Engineering attacks;
+- <strong>Reverse Engineering</strong>;
+- Generic and Specific <strong>Social Engineering</strong> attacks;
 - attack other OS, Android too;
 - Forensics and Anti-Forensics tools;
-- cracking, guessing and brute-forcing passwords;
-- install all hacking tools in Android Termux too;
-- download hacking APKs for Android rooted devices;
-- interactive python and ruby hacking packages install by pip, pip3 and gem;
-- pull new Docker images;
+- <strong>Cracking</strong>, <strong>Guessing and</strong> <strong>Brute-Forcing</strong> <strong>passwords</strong>;
+- install all hacking tools in <strong>Android Termux</strong> too;
+- download hacking <strong>APKs</strong> for <strong>Android</strong> rooted devices;
+- interactive <strong>PYTHON</strong> and <strong>RUBY</strong> hacking packages install by pip, pip3 and gem;
+- pull new <strong>Docker</strong> images;
 - choose between Dockerfile and binary versions;
 - distributed cracking using remote hacked hosts;
 - RaaS and ransomware;
 - download RAT for android;
-- creating Reverse Shell with metasploit;
-- manage docker containers and images;
+- creating <strong>Reverse Shell</strong> with <strong>metasploit</strong>;
+- manage <strong>Docker</strong> containers and images;
 - download and use the last PoC remote exploits;
 - download some tools and attack with curl via Tor;
-- XSS techniques;
+- <strong>XSS</strong> techniques;
+- <strong>Sniffing</strong> and MITM attacks;
+- <strong>Bitwise</strong> operations;
 
 and much more...
 
