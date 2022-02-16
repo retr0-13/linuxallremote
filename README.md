@@ -3,9 +3,25 @@ This bash script will help you to hack remote hosts
 The goal of this project is to implement all hacking tools for a complete environment.
 Transform your distro in a PenTest OS with the most complete script for hacking.
 
+
+## Installation of Dependencies:
+to improve the expenrience and use many features, you jave got to install some third party tools
+COPY and PASTE this line
+```
+sudo apt install -y lynx tput git strace ltrace hydra nmblookup rlogin docker john gzip bettercap & gem install mdless
+```
+
+## Use:
 You can choose between two versions:
-- linuxallremote.sh, the classic version;
-- linuxallremotev2.sh, an advanced version with global variables inside;
+- linuxallremote.sh, the classic version without global variables;
+```
+chmod +x ./linuxallremote.sh && ./linuxallremote.sh
+```
+- linuxallremotev2.sh, an advanced version with global variables inside (automatic choice of target PORT,IP,URL, your IP,PORT, WORDLIST and more);
+```
+chmod +x ./linuxallremotev2.sh && ./linuxallremotev2.sh
+```
+
 
 ## Note:
 1. you will use hacking tools, so you have got to consider them untrusted; be careful using them!
