@@ -28,6 +28,7 @@ TDOM=""
 CURLANON=""
 DEFANON=""
 HEADERS=("")
+SHEADER=""
 USERAGENT=""
 ANON="Disabled"
 SECL="$ENTRAW""danielmiessler/SecLists/master/"
