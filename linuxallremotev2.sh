@@ -12755,11 +12755,11 @@ while true; do
 					if [[ "$USERAGENT" != "" ]];
 					then
 						USERAGENT=""
-						USERAGENT="--user-agent ""$USERAGENT"
+						USERAGENT="--user-agent \"""$USERAGENT""\""
 					fi
 				else
 					USERAGENT=""
-					USERAGENT="--user-agent ""$CHOICE"
+					USERAGENT="--user-agent \"""$CHOICE""\""
 				fi
 			fi
 			break
@@ -12783,9 +12783,9 @@ while true; do
 		do
 			if [[ "$SHEADER" != "" ]];
 			then
-				SHEADER="$SHEADER"" --header ""$HDR"
+				SHEADER="$SHEADER"" --header \"""$HDR""\""
 			else
-				SHEADER="--header ""$HDR"
+				SHEADER="--header \"""$HDR""\""
 			fi
 		done
 	;;
