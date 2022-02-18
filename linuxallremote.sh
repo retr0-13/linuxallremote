@@ -34,7 +34,7 @@ function Controlla
 {
 	if [[ "$ANON" == "Enabled" ]];
 	then
-		curl $CCOOKIE $WCOOKIE $SHEADER $USERAGENT -s -k -L -I $CURLANON "$1"
+		curl $CCOOKIE $SHEADER $USERAGENT -s -k -L -I $CURLANON "$1"
 	else
 		wget $SHEADER $USERAGENT --no-check-certificate --spider "$1"
 	fi
