@@ -11024,9 +11024,9 @@ while true; do
 			export TOKEN=`curl -X PUT -H "X-aws-ec2-metadata-token-ttl-seconds: 21600" "$TIP/latest/api/token"`
 			if [[ "$ANON" == "Enabled" ]];
 			then
-				curl -s -k -L --socks5 "$SANON" -H "X-aws-ec2-metadata-token:$TOKEN" -v "$TURL/latest/meta-data"
+				curl -s -k -L --socks5 "$SANON" -H "X-aws-ec2-metadata-token:$TOKEN" -v "$TIP/latest/meta-data"
 			else
-				curl -s -k -L -H "X-aws-ec2-metadata-token:$TOKEN" -v "$TURL/latest/meta-data"
+				curl -s -k -L -H "X-aws-ec2-metadata-token:$TOKEN" -v "$TIP/latest/meta-data"
 			fi
 		fi
 	;;
