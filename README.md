@@ -54,6 +54,7 @@ Over 1500 tools and utilities:
 - <strong>XSS</strong> techniques;
 - <strong>Sniffing</strong> and MITM attacks;
 - <strong>Bitwise</strong> operations;
+- Customize <strong>wget</strong> and <strong>curl</strong> configuration files to improve bypass and evasion techniques;
 
 and much more...
 
