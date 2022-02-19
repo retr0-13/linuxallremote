@@ -2090,8 +2090,8 @@ while true; do
 		Stampa " 2650. AND bitwise an array of chars converted in INT values"
 		Stampa " 2651. OR bitwise an array of chars converted in INT values"
 		Stampa " 2652. AND bitwise string value" "2653. OR bitwise string value" "2654. set User-Agent"
-		Stampa " 2655. set Header" "2654. print custom Headers and User-Agent files" "2656. set Cookies"
-		Stampa " 2657. print HTTP headers values" "2658. print Cookies"
+		Stampa " 2655. set Header" "2656. set Cookies" "2658. print Cookies"
+		Stampa " 2657. print HTTP headers values"
 		echo "$SEP"
 	fi
 	echo "$CGT"" GT. VIRTUAL COINS - CURRENCIES"
