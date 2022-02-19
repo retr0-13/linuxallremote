@@ -15,4 +15,6 @@ NOTE: You will see many categories for remote scanning or attacking; Utilities a
 
 3. Chooce a category to download one o more tools to use them, ore choose <strong>Utilities</strong> to improve attacks, scanning, craft payloads, install tools and much more;
 <hr>
-4. Happy Hacking!
+4. You cano edit <strong>wget</strong> and <strong>curl</strong> config files to immprove evasions and bypass techniques;
+<hr>
+5. Happy Hacking!
