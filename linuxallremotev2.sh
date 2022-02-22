@@ -11512,8 +11512,10 @@ while true; do
 			read -p "(default, 9001): " -i "9001" MPRT
 			if [[ "$MPRT" =~ ^[0-9]+$ ]];
 			then
+				echo "Select format"
 				select EXT in $(msfvenom -l formats | awk '{print $1}')
 				do
+					echo "Select encoder"
 					select ENC in $(msfvenom -l encoders | awk '{print $1}')
 					do
 						echo "Digit how many iterations of encoding"
@@ -11540,8 +11542,10 @@ while true; do
 			read -p "(default, 9001): " -i "9001" MPRT
 			if [[ "$MPRT" =~ ^[0-9]+$ ]];
 			then
+				echo "Select format"
 				select EXT in $(msfvenom -l formats | awk '{print $1}')
 				do
+					echo "Select encoder"
 					select ENC in $(msfvenom -l encoders | awk '{print $1}')
 					do
 						echo "Digit how many iterations of encoding"
