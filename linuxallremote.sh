@@ -2093,7 +2093,7 @@ while true; do
 		Stampa " 2652. AND bitwise string value" "2653. OR bitwise string value" "2654. set User-Agent"
 		Stampa " 2655. set Header" "2656. set Cookies" "2658. print Cookies"
 		Stampa " 2657. print HTTP headers values" "2660. xmlrpc list methods" "2659. xmlrpc password brute force attack"
-		Stampa " 2662. check binary's security"
+		Stampa " 2662. check binary's security" "2664. discover dns subdomains"
 		echo "$SEP"
 	fi
 	echo "$CGT"" GT. VIRTUAL COINS - CURRENCIES"
@@ -12898,7 +12898,7 @@ while true; do
 			read -e -p "(example, /opt/SecList/Discovery/DNS/subdomains-top1million-110000.txt): " DNSW
 			if [[ "$DNSW" != "" && -f "$DNSW" ]];
 			then
-				gobuster dns --wildchard -d "$TDM" -w "$DNSW"
+				gobuster dns --wildcard -d "$TDM" -w "$DNSW"
 			fi
 		fi
 	;;
