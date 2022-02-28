@@ -317,7 +317,7 @@ function Stampa
 	fi
 }
 
-for TOOL in "lynx" "tput" "git" "strace" "ltrace" "hydra" "nmblookup" "rlogin" "docker" "john" "gzip" "mdless" "bettercap" "checksec"
+for TOOL in "lynx" "tput" "git" "strace" "ltrace" "hydra" "nmblookup" "rlogin" "docker" "john" "gzip" "mdless" "bettercap" "checksec" "gobuster" "wfuzz"
 do
 	if [[ ! -f $(which $TOOL) ]];
 	then
