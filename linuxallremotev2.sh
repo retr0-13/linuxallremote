@@ -58,9 +58,9 @@ function ControllaDNS
 	fi
 	if [[ "$ANON" == "Enabled" ]];
 	then
-		curl -s -k -L -I --config $CURLCONFIG --socks5 "$SANON" "$1" &>> "$1"
+		curl -s -k -L -I --config $CURLCONFIG --socks5 "$SANON" "$1""$2" &>> "$1"
 	else
-		wget --config $WGETCONFIG --no-check-certificate --spider "$1" &>> "$1"
+		wget --config $WGETCONFIG --no-check-certificate --spider "$1""$2" &>> "$1"
 	fi
 }
 
@@ -12981,7 +12981,7 @@ while true; do
 			else
 				for DNS in $(cat "$DNSW")
 				do
-					ControllaDNS "$TDM"
+					ControllaDNS "$TDM" "$DNS"
 				done
 			fi
 		fi
