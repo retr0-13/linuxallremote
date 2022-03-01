@@ -51,6 +51,20 @@ function Controlla
 	fi
 }
 
+function ControllaDNS
+{
+	if [[ -f "$1" ]];
+	then
+		rm "$1"
+	fi
+	if [[ "$ANON" == "Enabled" ]];
+	then
+		curl -s -k -L -I --config $CURLCONFIG --socks5 "$SANON" "$1" &>> "$1"
+	else
+		wget --config $WGETCONFIG --no-check-certificate --spider "$1" &>> "$1"
+	fi
+}
+
 function ScaricaIn
 {
 	if [[ -d "$ALD" ]];
@@ -12861,7 +12875,7 @@ while true; do
 				then
 					for PSS in $(cat "$WRDL")
 					do
-						curl -X POST -d "<?xml version=\"1.0\" encoding=\"UTF-8\"?><methodCall><methodName>wp.getUsersBlogs</methodName><params><param><value>""$USRN""</value></param><param><value>""$PSS""</value></param></params></methodCall>" "$TURL"
+						curl --config $CURLCONFIG -X POST -d "<?xml version=\"1.0\" encoding=\"UTF-8\"?><methodCall><methodName>wp.getUsersBlogs</methodName><params><param><value>""$USRN""</value></param><param><value>""$PSS""</value></param></params></methodCall>" "$TURL"
 					done
 				fi
 			fi
@@ -12898,7 +12912,15 @@ while true; do
 			read -e -p "(example, /opt/SecList/Discovery/DNS/subdomains-top1million-110000.txt): " DNSW
 			if [[ "$DNSW" != "" && -f "$DNSW" ]];
 			then
-				gobuster dns --wildcard -d "$TDM" -w "$DNSW"
+				if [[ -f $(which gobuster) ]];
+				then
+					gobuster dns --wildcard -d "$TDM" -w "$DNSW"
+				else
+					for DNS in $(cat "$DNSW")
+					do
+						ControllaDNS "$TDM"
+					done
+				fi
 			fi
 		fi
 	;;

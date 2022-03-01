@@ -50,6 +50,20 @@ then
 fi
 echo -e "User-Agent = \"curl/7.74.0\"\nheader = \"Accept: */*\"" > $CURLCONFIG
 
+function ControllaDNS
+{
+	if [[ -f "$1" ]];
+	then
+		rm "$1"
+	fi
+	if [[ "$ANON" == "Enabled" ]];
+	then
+		curl -s -k -L -I --config $CURLCONFIG --socks5 "$SANON" "$1" &>> "$1"
+	else
+		wget --config $WGETCONFIG --no-check-certificate --spider "$1" &>> "$1"
+	fi
+}
+
 function ScaricaIn
 {
 	if [[ -d "$ALD" ]];
@@ -12934,7 +12948,7 @@ while true; do
 		read -p "(example, https://www.target.com/xmlrpc.php): " TURLX
 		if [[ "$TURLX" != "" ]];
 		then
-			curl -X POST -d "<?xml version=\"1.0\" encoding=\"utf-8\"?><methodCall><methodName>system.listMethods</methodName><params></params></methodCall>" "$TURLX"
+			curl --config $CURLCONFIG -X POST -d "<?xml version=\"1.0\" encoding=\"utf-8\"?><methodCall><methodName>system.listMethods</methodName><params></params></methodCall>" "$TURLX"
 		fi
 	;;
 	"2668")
@@ -12961,7 +12975,15 @@ while true; do
 		read -e -p "(example, /opt/SecList/Discovery/DNS/subdomains-top1million-110000.txt): " DNSW
 		if [[ "$DNSW" != "" && -f "$DNSW" ]];
 		then
-			gobuster dns --wildcard -d "$TDM" -w "$DNSW"
+			if [[ -f $(which gobuster) ]];
+			then
+				gobuster dns --wildcard -d "$TDM" -w "$DNSW"
+			else
+				for DNS in $(cat "$DNSW")
+				do
+					ControllaDNS "$TDM"
+				done
+			fi
 		fi
 	;;
 	"AA")
