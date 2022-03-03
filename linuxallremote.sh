@@ -321,7 +321,7 @@ function Stampa
 	fi
 }
 
-for TOOL in "lynx" "tput" "git" "strace" "ltrace" "hydra" "nmblookup" "rlogin" "docker" "john" "gzip" "mdless" "bettercap" "checksec" "gobuster" "wfuzz"
+for TOOL in "lynx" "tput" "git" "strace" "ltrace" "hydra" "nmblookup" "rlogin" "docker" "john" "gzip" "mdless" "bettercap" "checksec" "gobuster" "wfuzz" "amass"
 do
 	if [[ ! -f $(which $TOOL) ]];
 	then
@@ -2107,7 +2107,7 @@ while true; do
 		Stampa " 2652. AND bitwise string value" "2653. OR bitwise string value" "2654. set User-Agent"
 		Stampa " 2655. set Header" "2656. set Cookies" "2658. print Cookies"
 		Stampa " 2657. print HTTP headers values" "2660. xmlrpc list methods" "2659. xmlrpc password brute force attack"
-		Stampa " 2662. check binary's security" "2664. discover dns subdomains"
+		Stampa " 2662. check binary's security" "2664. discover target dns subdomains" "2665. discover target ASN and CIDR"
 		echo "$SEP"
 	fi
 	echo "$CGT"" GT. VIRTUAL COINS - CURRENCIES"
@@ -12921,6 +12921,60 @@ while true; do
 						ControllaDNS "$TDM" "$DNS"
 					done
 				fi
+			fi
+		fi
+	;;
+	"2665")
+		if [[ -f $(which amass) ]];
+		then
+			echo "Digit the target company name"
+			read -p "(example, google): " CMPN
+			if [[ "$CMPN" != "" ]];
+			then
+				amass intel -org "$CMPN"
+			fi
+			echo "Digit the target company name ASNs divided by space, if the company has not ASN, digit -cidr for CIDR"
+			read -p "(example, 123456 789012): " TASNS
+			if [[ "$TASNS" != "-cidr" ]];
+			then
+				if [[ "$TASNS" != "" ]];
+				then
+					for TASN in $TASNS
+					do
+						amass intel -active -src -asn "$TASN"
+					done
+				fi
+			else
+				echo "Digit the target company CIDRs divided by space"
+				read -p "(example, 1.2.3.4/24 5.6.7.8/20): " TCIDRS
+				if [[ "$TCIDRS" != "" ]];
+				then
+					for TCIDR in $TCIDRS
+					do
+						amass intel -active -src -cidr "$TCIDR"
+					done
+				fi
+			fi
+			echo "Digit the target company domains divided by space"
+			read -p "(example, google.com a.google.com b.google.com): " TDMS
+			if [[ "$TDMS" != "" ]];
+			then
+				echo "Do you want use active mode? You will do dns resolutions (target company could be alerted)"
+				read -p "(Y/n, default is n): " RSP
+				for TDM in $TDMS
+				do
+					amass intel -whois -d "$TDM"
+					if [[ "$RSP" == "Y" ]];
+					then
+						amass enum -active -src -ip -d "$TDM"
+					else
+						amass enum -passive -src -d "$TDM"
+					fi
+					for TASN in $TASNS
+					do
+						amass intel -whois -asn "$TASN" -d "$TDM"
+					done
+				done
 			fi
 		fi
 	;;
