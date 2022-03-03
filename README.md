@@ -8,7 +8,7 @@ Transform your distro in a PenTest OS with the most complete script for hacking.
 to improve the expenrience and use many features, you jave got to install some third party tools
 COPY and PASTE this line
 ```
-sudo apt install -y lynx tput git strace ltrace hydra nmblookup rlogin docker john gzip bettercap & gem install mdless
+sudo apt install -y lynx tput git strace ltrace hydra nmblookup rlogin docker john gzip bettercap checksec gobuster wfuzz amass & gem install mdless
 ```
 
 ## Use:
